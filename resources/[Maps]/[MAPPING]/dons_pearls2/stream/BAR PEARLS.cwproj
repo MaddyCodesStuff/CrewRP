@@ -1,0 +1,29 @@
+<CodeWalkerProject>
+  <Name>New CodeWalker Project</Name>
+  <Version value="1" />
+  <YmapFilenames>
+    <Item>dons_pearls2_milo_.ymap</Item>
+    <Item>hei_sm_22_strm_0.ymap</Item>
+    <Item>..\..\dons_pearls\stream\dons_pearls_milo_.ymap</Item>
+    <Item>..\..\dons_pearls\stream\hei_sm_22_strm_0.ymap</Item>
+    <Item>..\..\dons_pearls\stream\hei_sm_occl_00.ymap</Item>
+    <Item>..\..\dons_pearls\stream\sm_22_strm_0.ymap</Item>
+    <Item>..\..\dons_pearls\stream\sm_occl_00.ymap</Item>
+  </YmapFilenames>
+  <YtypFilenames>
+    <Item>dons_pearls2.ytyp</Item>
+    <Item>..\..\dons_pearls\stream\dons_pearls.ytyp</Item>
+  </YtypFilenames>
+  <YbnFilenames>
+    <Item>..\..\dons_pearls\stream\dons_pearls_col.ybn</Item>
+    <Item>..\..\dons_pearls\stream\hei_sm_22_1.ybn</Item>
+    <Item>..\..\dons_pearls\stream\hi@hei_sm_22_2.ybn</Item>
+    <Item>..\..\dons_pearls\stream\hi@sm_22_2.ybn</Item>
+    <Item>..\..\dons_pearls\stream\sm_22_1.ybn</Item>
+  </YbnFilenames>
+  <YndFilenames />
+  <YnvFilenames />
+  <TrainsFilenames />
+  <ScenarioFilenames />
+  <AudioRelFilenames />
+</CodeWalkerProject>

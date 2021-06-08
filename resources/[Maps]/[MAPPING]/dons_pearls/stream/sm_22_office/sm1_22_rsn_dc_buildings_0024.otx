@@ -1,0 +1,10 @@
+Version 13 30
+{
+	Image sm1_22_rsn_dc_buildings_0024.dds
+	Type Regular
+	PixelFormat DXT1
+	Levels 7
+	Usage DIFFUSE
+	UsageFlags  HD_SPLIT
+	ExtraFlags 0
+}

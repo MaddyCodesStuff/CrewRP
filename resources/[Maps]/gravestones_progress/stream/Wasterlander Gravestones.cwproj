@@ -1,0 +1,20 @@
+<CodeWalkerProject>
+  <Name>Wasterlander Gravestones</Name>
+  <Version value="1" />
+  <YmapFilenames>
+    <Item>wl_gravestones.ymap</Item>
+    <Item>lr_cs6_08_strm_2.ymap</Item>
+    <Item>..\gravestones_final\hei_ch1_01_strm_7.ymap</Item>
+    <Item>lr_cs6_08_critical_2.ymap</Item>
+  </YmapFilenames>
+  <YtypFilenames />
+  <YbnFilenames>
+    <Item>..\gravestones_final\hi@lr_cs6_08_4.ybn</Item>
+    <Item>..\gravestones_final\lr_cs6_08_8.ybn</Item>
+  </YbnFilenames>
+  <YndFilenames />
+  <YnvFilenames />
+  <TrainsFilenames />
+  <ScenarioFilenames />
+  <AudioRelFilenames />
+</CodeWalkerProject>

@@ -1,0 +1,19 @@
+<CodeWalkerProject>
+  <Name>New Lodge 2020</Name>
+  <Version value="1" />
+  <YmapFilenames>
+    <Item>stream\cs1_occl_04.ymap</Item>
+    <Item>stream\cs1_occl_05.ymap</Item>
+    <Item>stream\cs1_occl_07.ymap</Item>
+    <Item>stream\int_pbcafe_milo_.ymap</Item>
+  </YmapFilenames>
+  <YtypFilenames>
+    <Item>stream\int_pbcafe.ytyp</Item>
+  </YtypFilenames>
+  <YbnFilenames />
+  <YndFilenames />
+  <YnvFilenames />
+  <TrainsFilenames />
+  <ScenarioFilenames />
+  <AudioRelFilenames />
+</CodeWalkerProject>

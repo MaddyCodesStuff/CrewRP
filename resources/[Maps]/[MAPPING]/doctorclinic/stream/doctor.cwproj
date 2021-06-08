@@ -1,0 +1,20 @@
+<CodeWalkerProject>
+  <Name>New CodeWalker Project</Name>
+  <Version value="1" />
+  <YmapFilenames>
+    <Item>fluorine4305_vinewood1134_milo_.ymap</Item>
+    <Item>apa_ch2_occl_04.ymap</Item>
+    <Item>apa_ss1_occl_03.ymap</Item>
+    <Item>fluorine4305_vinewood1134_int_milo_.ymap</Item>
+  </YmapFilenames>
+  <YtypFilenames>
+    <Item>fluorine4305_vinewood1134.ytyp</Item>
+    <Item>fluorine4305_vinewood1134_int.ytyp</Item>
+  </YtypFilenames>
+  <YbnFilenames />
+  <YndFilenames />
+  <YnvFilenames />
+  <TrainsFilenames />
+  <ScenarioFilenames />
+  <AudioRelFilenames />
+</CodeWalkerProject>

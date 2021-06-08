@@ -1,0 +1,254 @@
+Version 165 32
+{
+	Shaders
+	{
+		normal_pxm_tnt.sps
+		{
+			BumpSampler sc1_23_chicken\im_roof02_n.otx
+			DiffuseSampler sc1_23_chicken\im_roof02_tint.otx
+			HeightSampler sc1_23_chicken\im_roof02_tf_h.otx
+			TintPaletteSampler sc1_23_chicken\sc1_23_chicken_pal.otx
+			Bumpiness 1.0000000
+			HardAlphaBlend 1.0000000
+			HeightBias 0.0150000
+			HeightScale 0.0150000
+			ParallaxSelfShadowAmount 0.9500000
+			SpecularFalloffMult 40.0000000
+			SpecularFresnel 0.7500000
+			SpecularIntensityMult 0.0000000
+			TintPaletteSelector 0.0000000 0.0000000
+			UseTessellation 0.0000000
+		}
+		normal.sps
+		{
+			BumpSampler sc1_23_chicken\sc1_23_rsn_ns_walls_0002_n.otx
+			DiffuseSampler sc1_23_chicken\sc1_23_rsn_ns_walls_0002.otx
+			Bumpiness 1.0000000
+			HardAlphaBlend 1.0000000
+			SpecularFalloffMult 75.0000000
+			SpecularFresnel 0.9600000
+			SpecularIntensityMult 0.1250000
+			UseTessellation 0.0000000
+		}
+		normal.sps
+		{
+			BumpSampler SC1_34_RSN_NS_Wall_0003_N
+			DiffuseSampler SC1_34_RSN_NS_Wall_0003
+			Bumpiness 0.7000000
+			HardAlphaBlend 1.0000000
+			SpecularFalloffMult 40.0000000
+			SpecularFresnel 0.7500000
+			SpecularIntensityMult 0.1500000
+			UseTessellation 0.0000000
+		}
+		default.sps
+		{
+			DiffuseSampler sc1_23_chicken\sc1_30_rsn_ns_walls_0003.otx
+			HardAlphaBlend 1.0000000
+			UseTessellation 0.0000000
+		}
+		normal.sps
+		{
+			BumpSampler sc1_23_chicken\rsn_ns_teracottatile_0001_n.otx
+			DiffuseSampler sc1_23_chicken\rsn_ns_teracottatile_0001.otx
+			Bumpiness 1.0000000
+			HardAlphaBlend 1.0000000
+			SpecularFalloffMult 40.0000000
+			SpecularFresnel 0.7500000
+			SpecularIntensityMult 0.4500000
+			UseTessellation 0.0000000
+		}
+		normal_spec_pxm.sps
+		{
+			BumpSampler sc1_23_chicken\sjm_vbwall5_n.otx
+			DiffuseSampler sc1_23_chicken\sjm_vbwall5.otx
+			HeightSampler sc1_23_chicken\sjm_vbwall5_h.otx
+			SpecSampler sc1_23_chicken\sjm_vbwall5_s.otx
+			Bumpiness 1.0000000
+			HardAlphaBlend 1.0000000
+			HeightBias 0.0150000
+			HeightScale 0.0300000
+			ParallaxSelfShadowAmount 0.9500000
+			SpecMapIntMask 1.0000000 0.0000000 0.0000000
+			SpecularFalloffMult 30.0000000
+			SpecularFresnel 0.7500000
+			SpecularIntensityMult 0.4000000
+			UseTessellation 0.0000000
+		}
+		normal_spec.sps
+		{
+			BumpSampler IM_Roof4_N
+			DiffuseSampler IM_Roof04
+			SpecSampler IM_Roof04_S
+			Bumpiness 1.0000000
+			HardAlphaBlend 1.0000000
+			SpecMapIntMask 1.0000000 0.0000000 0.0000000
+			SpecularFalloffMult 100.0000000
+			SpecularFresnel 0.7500000
+			SpecularIntensityMult 0.1250000
+			UseTessellation 0.0000000
+		}
+		normal.sps
+		{
+			BumpSampler sc1_23_chicken\ref_refinerymain11b_nrm.otx
+			DiffuseSampler sc1_23_chicken\absref_refinerymain11.otx
+			Bumpiness 1.0000000
+			HardAlphaBlend 1.0000000
+			SpecularFalloffMult 10.0000000
+			SpecularFresnel 0.7500000
+			SpecularIntensityMult 0.1000000
+			UseTessellation 0.0000000
+		}
+		normal.sps
+		{
+			BumpSampler sc1_23_chicken\sc1_15_rsn_ns_wall_0013_n.otx
+			DiffuseSampler sc1_23_chicken\sc1_15_rsn_ns_wall_0013.otx
+			Bumpiness 1.0000000
+			HardAlphaBlend 1.0000000
+			SpecularFalloffMult 40.0000000
+			SpecularFresnel 0.7500000
+			SpecularIntensityMult 0.1500000
+			UseTessellation 0.0000000
+		}
+		normal_detail.sps
+		{
+			BumpSampler sc1_23_chicken\sc1_15_rsn_ns_wall_0013_n.otx
+			DetailSampler ENV_SMOOTH_CONCRETE2
+			DiffuseSampler sc1_23_chicken\sc1_23_rsn_ns_walls_0003.otx
+			Bumpiness 1.0000000
+			DetailSettings 0.0000000 0.0000000 24.0000000 24.0000000
+			HardAlphaBlend 1.0000000
+			SpecularFalloffMult 40.0000000
+			SpecularFresnel 0.7500000
+			SpecularIntensityMult 0.1500000
+			UseTessellation 0.0000000
+		}
+		spec.sps
+		{
+			DiffuseSampler sc1_23_chicken\sc1_23_rsn_ns_windows_0001.otx
+			SpecSampler sc1_23_chicken\sc1_23_rsn_ns_windows_0001_s.otx
+			HardAlphaBlend 1.0000000
+			SpecMapIntMask 1.0000000 0.0000000 0.0000000
+			SpecularFalloffMult 70.0000000
+			SpecularFresnel 0.7500000
+			SpecularIntensityMult 0.5500000
+			UseTessellation 0.0000000
+		}
+		normal.sps
+		{
+			BumpSampler sc1_23_chicken\sc1_23_rsn_ns_windows_0002_n.otx
+			DiffuseSampler sc1_23_chicken\sc1_23_rsn_ns_windows_0002.otx
+			Bumpiness 1.0000000
+			HardAlphaBlend 1.0000000
+			SpecularFalloffMult 60.0000000
+			SpecularFresnel 0.7500000
+			SpecularIntensityMult 0.4500000
+			UseTessellation 0.0000000
+		}
+		spec.sps
+		{
+			DiffuseSampler sc1_23_t_page12
+			SpecSampler sc1_23_t_page12_s
+			HardAlphaBlend 1.0000000
+			SpecMapIntMask 1.0000000 0.0000000 0.0000000
+			SpecularFalloffMult 512.0000000
+			SpecularFresnel 0.9600000
+			SpecularIntensityMult 0.7500000
+			UseTessellation 0.0000000
+		}
+		cutout.sps
+		{
+			DiffuseSampler sc1_23_chicken\sc1_23_t_page11sc1_23_t_page11_a.otx
+			HardAlphaBlend 1.0000000
+			UseTessellation 0.0000000
+		}
+		decal.sps
+		{
+			DiffuseSampler sc1_23_chicken\rsn_leopolds_bricks_big_w.otx
+			SpecularFalloffMult 1.0000000
+			SpecularFresnel 0.7500000
+			SpecularIntensityMult 0.0100000
+			UseTessellation 0.0000000
+		}
+		decal.sps
+		{
+			DiffuseSampler sc1_23_chicken\ck_bishops_chickenck_bishops_chicken_a.otx
+			SpecularFalloffMult 1.0000000
+			SpecularFresnel 0.9700000
+			SpecularIntensityMult 0.0100000
+			UseTessellation 0.0000000
+		}
+		default.sps
+		{
+			DiffuseSampler sc1_23_chicken\sc1_23_t_page13.otx
+			HardAlphaBlend 1.0000000
+			UseTessellation 0.0000000
+		}
+		spec.sps
+		{
+			DiffuseSampler sc1_23_t_page12
+			SpecSampler sc1_23_t_page12_s
+			HardAlphaBlend 1.0000000
+			SpecMapIntMask 1.0000000 0.0000000 0.0000000
+			SpecularFalloffMult 300.0000000
+			SpecularFresnel 0.5000000
+			SpecularIntensityMult 0.6000000
+			UseTessellation 0.0000000
+		}
+		emissivenight.sps
+		{
+			DiffuseSampler sc1_23_chicken\sc1_28_chick_em.otx
+			EmissiveMultiplier 5.0000000
+			HardAlphaBlend 1.0000000
+			UseTessellation 0.0000000
+		}
+		normal_spec_pxm.sps
+		{
+			BumpSampler sc1_23_chicken\rsn_leopolds_bricks_big_n.otx
+			DiffuseSampler sc1_23_chicken\rsn_leopolds_bricks_big.otx
+			HeightSampler sc1_23_chicken\rsn_leopolds_bricks_big_h.otx
+			SpecSampler sc1_23_chicken\rsn_leopolds_bricks_big_s.otx
+			Bumpiness 1.0000000
+			HardAlphaBlend 1.0000000
+			HeightBias 0.0150000
+			HeightScale 0.0300000
+			ParallaxSelfShadowAmount 0.9500000
+			SpecMapIntMask 1.0000000 0.0000000 0.0000000
+			SpecularFalloffMult 40.0000000
+			SpecularFresnel 0.7500000
+			SpecularIntensityMult 0.0100000
+			UseTessellation 0.0000000
+		}
+		normal_tnt.sps
+		{
+			BumpSampler sc1_23_chicken\im_roof02_n.otx
+			DiffuseSampler sc1_23_chicken\im_roof02_tint.otx
+			TintPaletteSampler sc1_23_chicken\sc1_23_chicken_pal.otx
+			Bumpiness 1.0000000
+			HardAlphaBlend 1.0000000
+			SpecularFalloffMult 40.0000000
+			SpecularFresnel 0.7500000
+			SpecularIntensityMult 0.0000000
+			TintPaletteSelector 0.0000000 0.0000000
+			UseTessellation 0.0000000
+		}
+	}
+	Skeleton null
+	LodGroup
+	{
+		High 9998.0
+		{
+			sc1_23_chicken\sc1_23_chicken_high.mesh 0
+		}
+		Med 9998.0
+		Low 9998.0
+		Vlow 9998.0
+		AABBMin -38.7744102 -36.7963905 -15.1840801
+		AABBMax 33.7148399 35.2714806 0.6328125
+		Radius 51.7171
+		Center -2.5297852 -0.7624550 -7.2756338
+	}
+	Light sc1_23_chicken\sc1_23_chicken.light
+	Bound null
+	Joints null
+}
