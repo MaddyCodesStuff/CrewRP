@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <title>Tablet</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <script src="https://kit.fontawesome.com/b8a84bfd4c.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="tab-container" style="display: none;">
+    <div class="tab-wrap">
+        <span class="dot"></span>
+        <div class="tab">
+            <div id="embedwrapper">
+                <div id="embed"></div>
+            </div>
+            <footer class="tab-content">
+                <ul>
+                    <li data-title="Phonebook">
+                        <a class="nav-embed" href="html/phonebook.html">
+                            <i class="myicon far fa-address-book"></i>
+                        </a>
+                    </li>
+                    <li data-title="Public Records">
+                        <a class="nav-embed" href="html/mdt.html">
+                            <i class="myicon fas fa-laptop"></i>
+                        </a>
+                    </li>
+                    <li data-title="YellowPages">
+                        <a class="nav-embed" href="html/yellowpages.html">
+                            <i class="myicon fas fa-phone"></i>
+                        </a>
+                    </li>
+                    <li data-title="Classifieds">
+                        <a class="nav-embed" href="html/classifieds.html">
+                            <i class="myicon fas fa-briefcase"></i>
+                        </a>
+                    </li>
+                    <li data-title="Snake">
+                        <a class="nav-embed" href="html/_snake.html">
+                            <i class="myicon fas fa-gamepad"></i>
+                        </a>
+                    </li>
+                    <li data-title="Unpaid Fines" id="unpaidfines" style="display: none;">
+                        <a class="nav-embed" href="html/unpaidfines.html">
+                            <i class="myicon fas fa-file-invoice-dollar"></i>
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+</div>
+</body>
+</html>

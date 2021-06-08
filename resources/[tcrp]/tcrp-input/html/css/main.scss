@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Roboto+Condensed&display=swap');
+
+body {
+    align-items: center;
+    border: none;
+    display: flex;
+    font-family: 'Lalezar', cursive;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.input {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid white;
+    color: white;
+    display: block;
+    padding: 1vw;
+    width: 25vw;
+
+    &.hidden {
+        display: none;
+    }
+
+    label {
+        display: block;
+        font-size: 2vh;
+        font-weight: bold;
+    }
+
+    input,
+    textarea,
+    button {
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 1px solid white;
+        color: white;
+        display: block;
+        margin-top: 1vw;
+        padding: .5vw;
+        width: 25vw;
+    }
+
+    textarea {
+        height: 15vh;
+        resize: none;
+    }
+
+    button {
+        font-weight: bold;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+        }
+
+        &:active {
+            background-color: rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+    }
+}

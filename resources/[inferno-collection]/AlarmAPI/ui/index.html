@@ -1,0 +1,63 @@
+<!--
+Inferno Collection AlarmAPI, FiveM Resource
+Copyright (C) 2019 Daniel A. Hawton <daniel@hawton.org>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="nui://game/ui/jquery.js"></script>
+    <style>
+        html {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<script>
+    $(() => {
+        let alarms         = {
+            industrial: 'sounds/industrial.mp3'
+        };
+        const activeAlarms = {};
+
+        window.addEventListener('message', event => {
+            if (event.data.type === 'init') {
+                alarms = event.data.alarms;
+            } else if (event.data.type === 'ActivateAlarm') {
+                if (activeAlarms[event.data.alarm]) {
+                    activeAlarms[event.data.alarm].pause();
+                }
+
+                activeAlarms[event.data.alarm]        = new Audio(alarms[event.data.alarmtype]);
+                activeAlarms[event.data.alarm].volume = event.data.volume;
+                activeAlarms[event.data.alarm].loop   = true;
+                activeAlarms[event.data.alarm].play();
+            } else if (event.data.type === 'StopAlarm') {
+                if (activeAlarms[event.data.alarm]) {
+                    activeAlarms[event.data.alarm].loop = false;
+                    setTimeout(() => (activeAlarms[event.data.alarm] = undefined), 5000);
+                }
+            } else if (event.data.type === 'SetAlarmVolume') {
+                if (activeAlarms[event.data.alarm]) {
+                    activeAlarms[event.data.alarm].volume = event.data.volume;
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>

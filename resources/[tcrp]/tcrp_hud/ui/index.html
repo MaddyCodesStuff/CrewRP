@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+
+        <!-- styles for this little demo page -->
+        <style type="text/css">
+            .clearfix:before,.clearfix:after {content: " "; display: table;}
+            .clearfix:after {clear: both;}
+            .clearfix {*zoom: 1;}
+        </style>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <script src="js/app.js"></script>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+      
+	  <div class='parent-noti'>
+		  <!-- <div class='messagesdiv'> -->
+			<!-- <i class='fas fa-comment-dots' style='font-size:1em;color:orange'>  </i>  <span class="message">New message from: </span><span class="sender"></span> -->
+		  <!-- </div> -->
+		  <!-- <div id="phonecalls">
+			<i class="fa fa-phone" style="font-size:1em;color:orange">  </i>  <span class="callmessage">Incoming call from: </span><span class="caller"></span>
+		  </div> -->
+		  <!-- <div id="bank">
+			<i class="fa fa-bank" style="font-size:1em;color:red">  </i>  <span class="bank">You received your salary: </span><span class="cash"></span>
+		  </div> -->
+		  <!-- <div id="general"> -->
+			<!-- <i class="fa fa-info-circle" style="font-size:1.2em;color:cyan">  </i>  <span class="general">This is a general message</span> -->
+		  <!-- </div> -->
+	  </div>
+		
+	  <div id="streetview" class="">
+		<span class="direction">N</span> / <span class="streets">Popular Street and Hawick Ave</span>
+	  </div>
+
+	  <div id="seatbelt" class="carview">
+		<span class="seatbelt" class="carspan">Seatbelt off</span>
+	  </div>
+	  <div id="cruise" class="carview">
+		<span class="cruise" class="carspan">Cruise</span>
+	  </div>
+	  <div id="fuel" class="carview">
+		<span class="fuellabel" class="carspan">Fuel:</span> <span class="fuel"></span>
+	  </div>
+	  <div id="speedometer" class="carview">
+		<span class="speedprim">0</span>  <span class="labelprim"></span>
+	  </div>
+	  
+	  
+      <div id="hud" class="hud-left">
+        <div class="page">
+            <!-- default -->
+            <div class="clearfix">
+                <!-- Health bar -->
+                <div class="c100 p0 small red" id="health">
+                    <span><i class="fas fa-heart red"></i></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+                <!-- Armor bar -->
+                <div class="c100 p0 small blue" id="armor">
+                    <span><i class="fas fa-shield-alt"></i></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+                <!-- Hunger bar -->
+                <div class="c100 p0 small orange" id="hunger">
+                    <span><i class="fas fa-hamburger"></i></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+                <!-- Thirst bar -->
+                <div class="c100 p0 small aqua" id="thirst">
+                    <span><i class="fas fa-glass-whiskey"></i></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+                <!-- Oxygen bar -->
+                <div class="c100 p0 small blue" id="stamina">
+                    <span><i class="fas fa-wind"></i></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+                <!-- Speech level -->
+                <div class="c100 p0 small yellow" id="voice">
+                    <span><i class="fas fa-volume-up"></i></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+                <!-- Radio -->
+                <div class="c100 p0 small burnt" id="radio">
+                    <span><i class="fas fa-broadcast-tower"></i></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div id="hud2" class="hud2-left">
+        <div class="page">
+            <!-- default -->
+            <div class="clearfix">
+                <!-- High bar -->
+                <div class="c100 p0 small lime" id="high">
+                    <span><i class="fas fa-cannabis"></i></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+                <!-- Drunk bar -->
+                <div class="c100 p0 small orange" id="drunk">
+                    <span><i class="fas fa-wine-bottle"></i></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+                <!-- Poison bar -->
+                <div class="c100 p0 small purple" id="poison">
+                    <span><i class="fas fa-skull-crossbones"></i></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+	  
+	  
+      </div>
+    </body>
+</html>

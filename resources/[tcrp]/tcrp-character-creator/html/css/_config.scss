@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Roboto+Condensed&display=swap');
+
+$tcrp-logo: url('../img/logo.png');
+
+$menu-colour: #2f2f2f;
+$secondary-menu-colour: #222222;
+$secondary-menu-border: 1px solid #414141;
+$selected-secondary-menu-color: #375a7f;
+$text-colour: white;
+
+$paragraph-font-family: 'Roboto Condensed', sans-serif;
+$title-font-family: 'Lalezar', cursive;
+
+// Button colours
+$activate-button-colour: #375a7f;
+$activate-button-text-colour: white;
+$warning-button-colour: #e74c3c;
+$warning-button-text-colour: white;
+$success-button-colour: #3ce74c;
+$success-button-text-colour: white;

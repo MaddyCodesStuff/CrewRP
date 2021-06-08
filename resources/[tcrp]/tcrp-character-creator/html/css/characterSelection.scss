@@ -1,0 +1,210 @@
+@import 'config';
+
+body {
+    background-image: $tcrp-logo;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 2.5vw;
+    border: none;
+    font-family: $paragraph-font-family;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.character-selection {
+    background-color: $menu-colour;
+    bottom: 0;
+    color: $text-colour;
+    display: block;
+    height: 100vh;
+    left: 0;
+    padding: 0 1vw;
+    position: absolute;
+    top: 0;
+    width: 18vw;
+
+    h1 {
+        font-family: $title-font-family;
+        font-size: 5vh;
+        font-weight: normal;
+        height: 10vh;
+        line-height: 10vh;
+        margin: 0;
+        text-align: left;
+        width: 18vw;
+    }
+
+    .characters {
+        background-color: $secondary-menu-colour;
+        border: $secondary-menu-border;
+        height: 80vh;
+        margin: 0;
+        overflow: auto;
+        overflow-x: hidden;
+        padding: 0;
+        position: relative;
+        width: 18vw;
+
+        .character-wrapper, .character-create-wrapper {
+            cursor: pointer;
+            padding: 0 2vh 2vh;
+
+            .character {
+                border-top: $secondary-menu-border;
+                padding-top: 2vh;
+
+                h2 {
+                    font-family: $title-font-family;
+                    font-size: 2vh;
+                    font-weight: normal;
+                    margin: 0;
+                }
+
+                span {
+                    display: inline-block;
+                    font-size: 1.5vh;
+
+                    margin: 0;
+                    padding: 0 0 .5vh;
+
+                    &:nth-child(3) {
+                        float: right;
+                    }
+                }
+            }
+
+            .create {
+                padding-top: 2vh;
+                text-align: center;
+
+                h2 {
+                    font-family: $title-font-family;
+                    font-size: 2vh;
+                    font-weight: normal;
+                    margin: 0;
+                }
+            }
+
+            &.selected {
+                background-color: #33658a;
+            }
+        }
+    }
+
+    .buttons {
+        align-items: center;
+        display: flex;
+        height: 10vh;
+        justify-content: space-evenly;
+        position: absolute;
+        text-align: center;
+        width: 18vw;
+
+        button {
+            border: none;
+            cursor: pointer;
+            font-family: $title-font-family;
+            font-size: 2vh;
+            margin: 0;
+            padding: 1vh;
+            text-transform: uppercase;
+
+            &.play {
+                background-color: $activate-button-colour;
+                color: $activate-button-text-colour;
+            }
+
+            &.delete {
+                background-color: $warning-button-colour;
+                color: $warning-button-text-colour;
+            }
+
+            &.create {
+                background-color: $success-button-colour;
+                color: $success-button-text-colour;
+            }
+        }
+    }
+}
+
+.exit-button {
+    bottom: 0;
+    padding: .5vh;
+    position: absolute;
+    right: 0;
+
+    button {
+        border: none;
+        cursor: pointer;
+        font-family: $title-font-family;
+        font-size: 2vh;
+        margin: 0;
+        padding: 1vh;
+        text-transform: uppercase;
+
+        &.exit {
+            background-color: $warning-button-colour;
+            color: $warning-button-text-colour;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.alert {
+    background-color: $menu-colour;
+    color: $text-colour;
+    height: 18vh;
+    margin: 40vh 40vw;
+    padding: 1vh 1vw;
+    position: absolute;
+    width: 18vw;
+    z-index: 100;
+
+    h2 {
+        font-family: $title-font-family;
+        font-size: 4vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    p {
+        font-size: 2vh;
+        margin: 0 0 2vh;
+        padding: 0;
+    }
+
+    .buttons {
+        align-items: center;
+        bottom: 2vh;
+        display: flex;
+        height: 4vh;
+        justify-content: space-evenly;
+        position: absolute;
+        text-align: center;
+        width: 18vw;
+
+        button {
+            border: none;
+            cursor: pointer;
+            font-family: $title-font-family;
+            font-size: 2vh;
+            margin: 0;
+            padding: 1vh;
+            text-transform: uppercase;
+
+            &.yes {
+                background-color: $success-button-colour;
+                color: $success-button-text-colour;
+            }
+
+            &.no {
+                background-color: $warning-button-colour;
+                color: $warning-button-text-colour;
+            }
+        }
+    }
+}

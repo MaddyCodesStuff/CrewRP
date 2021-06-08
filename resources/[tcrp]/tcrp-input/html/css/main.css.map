@@ -1,0 +1,10 @@
+{
+    "version":    3,
+    "sourceRoot": "",
+    "sources":    [
+        "main.scss"
+    ],
+    "names":      [],
+    "mappings":   "AAAQ,+FAER,KACI,YACA,8BACA,aACA,uBACA,mBACA,SACA,gBACA,UAGJ,OACI,gCACA,WACA,YACA,WACA,sBACA,cAEA,cACI,aAGJ,aACI,cACA,cACA,iBAGJ,2CAGI,gCACA,sBACA,WACA,cACA,eACA,aACA,WAGJ,gBACI,YACA,YAGJ,cACI,iBAEA,oBACI,gCACA,eAGJ,qBACI,gCACA",
+    "file":       "main.css"
+}

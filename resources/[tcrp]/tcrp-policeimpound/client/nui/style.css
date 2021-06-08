@@ -1,0 +1,79 @@
+#container {
+    width: 750px;
+    height: 500px;
+    margin: auto;
+    background: url('screen.png') no-repeat;
+    color: green;
+    padding: 50px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+#title {
+    font-weight: bold;
+}
+
+#carlist {
+    height: 335px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#carlist::-webkit-scrollbar {
+    width: 12px;
+}
+
+#carlist::-webkit-scrollbar-track {
+    background: black;
+}
+  
+#carlist::-webkit-scrollbar-thumb {
+    background-color: green;
+    border-radius: 20px;
+}
+
+.car {
+    width: 100%;
+    border-top: green 1px solid;
+    border-bottom: green 1px solid;
+}
+
+.car:hover {
+    background: rgba(0, 255, 0, 0.1);
+}
+
+#selected {
+    background: rgba(0, 255, 0, 0.1);
+}
+
+.plate {
+    width: 25%;
+    display: inline-block;
+}
+
+.model {
+    width: 25%;
+    display: inline-block;
+}
+
+.owner {
+    width: 40%;
+    display: inline-block;
+}
+
+#bottom {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+#bottom > div {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: green 1px solid;
+}

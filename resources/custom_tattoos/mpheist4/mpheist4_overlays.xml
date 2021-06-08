@@ -1,0 +1,3026 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PedDecorationCollection>
+  <bRequiredForSync value="true" />
+  <presets>
+  	<Item>
+      <uvPos x="0.520000" y="0.660000" />
+      <scale x="0.200000" y="0.250000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_000_M</nameHash>
+      <txdHash>MP_Heist4_Tat_000</txdHash>
+      <txtHash>MP_Heist4_Tat_000</txtHash>
+      <zone>ZONE_RIGHT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.520000" y="0.640000" />
+      <scale x="0.200000" y="0.280000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_000_F</nameHash>
+      <txdHash>MP_Heist4_Tat_000</txdHash>
+      <txtHash>MP_Heist4_Tat_000</txtHash>
+      <zone>ZONE_RIGHT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.460000" y="0.800000" />
+      <scale x="0.190000" y="0.180000" />
+      <rotation value="-1.000000" />
+      <nameHash>MP_Heist4_Tat_001_M</nameHash>
+      <txdHash>MP_Heist4_Tat_001</txdHash>
+      <txtHash>MP_Heist4_Tat_001</txtHash>
+      <zone>ZONE_RIGHT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.460000" y="0.790000" />
+      <scale x="0.200000" y="0.190000" />
+      <rotation value="2.000000" />
+      <nameHash>MP_Heist4_Tat_001_F</nameHash>
+      <txdHash>MP_Heist4_Tat_001</txdHash>
+      <txtHash>MP_Heist4_Tat_001</txtHash>
+      <zone>ZONE_RIGHT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.525000" y="0.800000" />
+      <scale x="0.120000" y="0.150000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_002_M</nameHash>
+      <txdHash>MP_Heist4_Tat_002</txdHash>
+      <txtHash>MP_Heist4_Tat_002</txtHash>
+      <zone>ZONE_RIGHT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.545000" y="0.810000" />
+      <scale x="0.170000" y="0.160000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_002_F</nameHash>
+      <txdHash>MP_Heist4_Tat_002</txdHash>
+      <txtHash>MP_Heist4_Tat_002</txtHash>
+      <zone>ZONE_RIGHT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.490000" y="0.860000" />
+      <scale x="0.070000" y="0.090000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_003_M</nameHash>
+      <txdHash>MP_Heist4_Tat_003</txdHash>
+      <txtHash>MP_Heist4_Tat_003</txtHash>
+      <zone>ZONE_RIGHT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.490000" y="0.870000" />
+      <scale x="0.090000" y="0.090000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_003_F</nameHash>
+      <txdHash>MP_Heist4_Tat_003</txdHash>
+      <txtHash>MP_Heist4_Tat_003</txtHash>
+      <zone>ZONE_RIGHT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.925000" y="0.310000" />
+      <scale x="0.150000" y="0.150000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_004_M</nameHash>
+      <txdHash>MP_Heist4_Tat_004</txdHash>
+      <txtHash>MP_Heist4_Tat_004</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.900000" y="0.395000" />
+      <scale x="0.150000" y="0.100000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_004_F</nameHash>
+      <txdHash>MP_Heist4_Tat_004</txdHash>
+      <txtHash>MP_Heist4_Tat_004</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.510000" y="0.770000" />
+      <scale x="0.130000" y="0.130000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_005_M</nameHash>
+      <txdHash>MP_Heist4_Tat_005</txdHash>
+      <txtHash>MP_Heist4_Tat_005</txtHash>
+      <zone>ZONE_RIGHT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.490000" y="0.750000" />
+      <scale x="0.170000" y="0.140000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_005_F</nameHash>
+      <txdHash>MP_Heist4_Tat_005</txdHash>
+      <txtHash>MP_Heist4_Tat_005</txtHash>
+      <zone>ZONE_RIGHT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.510000" y="0.770000" />
+      <scale x="0.130000" y="0.130000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_006_M</nameHash>
+      <txdHash>MP_Heist4_Tat_006</txdHash>
+      <txtHash>MP_Heist4_Tat_006</txtHash>
+      <zone>ZONE_RIGHT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.490000" y="0.760000" />
+      <scale x="0.170000" y="0.140000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_006_F</nameHash>
+      <txdHash>MP_Heist4_Tat_006</txdHash>
+      <txtHash>MP_Heist4_Tat_006</txtHash>
+      <zone>ZONE_RIGHT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.510000" y="0.840000" />
+      <scale x="0.060000" y="0.080000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_007_M</nameHash>
+      <txdHash>MP_Heist4_Tat_007</txdHash>
+      <txtHash>MP_Heist4_Tat_007</txtHash>
+      <zone>ZONE_RIGHT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.480000" y="0.840000" />
+      <scale x="0.080000" y="0.090000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_007_F</nameHash>
+      <txdHash>MP_Heist4_Tat_007</txdHash>
+      <txtHash>MP_Heist4_Tat_007</txtHash>
+      <zone>ZONE_RIGHT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.500000" y="0.810000" />
+      <scale x="0.130000" y="0.120000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_008_M</nameHash>
+      <txdHash>MP_Heist4_Tat_008</txdHash>
+      <txtHash>MP_Heist4_Tat_008</txtHash>
+      <zone>ZONE_RIGHT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.460000" y="0.830000" />
+      <scale x="0.160000" y="0.130000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_008_F</nameHash>
+      <txdHash>MP_Heist4_Tat_008</txdHash>
+      <txtHash>MP_Heist4_Tat_008</txtHash>
+      <zone>ZONE_RIGHT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.525000" y="0.820000" />
+      <scale x="0.110000" y="0.110000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_009_M</nameHash>
+      <txdHash>MP_Heist4_Tat_009</txdHash>
+      <txtHash>MP_Heist4_Tat_009</txtHash>
+      <zone>ZONE_LEFT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.540000" y="0.840000" />
+      <scale x="0.140000" y="0.110000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_009_F</nameHash>
+      <txdHash>MP_Heist4_Tat_009</txdHash>
+      <txtHash>MP_Heist4_Tat_009</txtHash>
+      <zone>ZONE_LEFT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.260000" y="0.370000" />
+      <scale x="0.170000" y="0.150000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_010_M</nameHash>
+      <txdHash>MP_Heist4_Tat_010</txdHash>
+      <txtHash>MP_Heist4_Tat_010</txtHash>
+      <zone>ZONE_LEFT_LEG</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.230000" y="0.360000" />
+      <scale x="0.180000" y="0.150000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_010_F</nameHash>
+      <txdHash>MP_Heist4_Tat_010</txdHash>
+      <txtHash>MP_Heist4_Tat_010</txtHash>
+      <zone>ZONE_LEFT_LEG</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.510000" y="0.770000" />
+      <scale x="0.130000" y="0.130000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_011_M</nameHash>
+      <txdHash>MP_Heist4_Tat_011</txdHash>
+      <txtHash>MP_Heist4_Tat_011</txtHash>
+      <zone>ZONE_RIGHT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.490000" y="0.750000" />
+      <scale x="0.170000" y="0.140000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_011_F</nameHash>
+      <txdHash>MP_Heist4_Tat_011</txdHash>
+      <txtHash>MP_Heist4_Tat_011</txtHash>
+      <zone>ZONE_RIGHT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.510000" y="0.770000" />
+      <scale x="0.130000" y="0.130000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_012_M</nameHash>
+      <txdHash>MP_Heist4_Tat_012</txdHash>
+      <txtHash>MP_Heist4_Tat_012</txtHash>
+      <zone>ZONE_RIGHT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.490000" y="0.750000" />
+      <scale x="0.170000" y="0.140000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_012_F</nameHash>
+      <txdHash>MP_Heist4_Tat_012</txdHash>
+      <txtHash>MP_Heist4_Tat_012</txtHash>
+      <zone>ZONE_RIGHT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.215000" y="0.700000" />
+      <scale x="0.140000" y="0.140000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_013_M</nameHash>
+      <txdHash>MP_Heist4_Tat_013</txdHash>
+      <txtHash>MP_Heist4_Tat_013</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.240000" y="0.760000" />
+      <scale x="0.140000" y="0.110000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_013_F</nameHash>
+      <txdHash>MP_Heist4_Tat_013</txdHash>
+      <txtHash>MP_Heist4_Tat_013</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.225000" y="0.640000" />
+      <scale x="0.200000" y="0.200000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_014_M</nameHash>
+      <txdHash>MP_Heist4_Tat_014</txdHash>
+      <txtHash>MP_Heist4_Tat_014</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.240000" y="0.700000" />
+      <scale x="0.190000" y="0.160000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_014_F</nameHash>
+      <txdHash>MP_Heist4_Tat_014</txdHash>
+      <txtHash>MP_Heist4_Tat_014</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.225000" y="0.500000" />
+      <scale x="0.300000" y="0.320000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_015_M</nameHash>
+      <txdHash>MP_Heist4_Tat_015</txdHash>
+      <txtHash>MP_Heist4_Tat_015</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.240000" y="0.590000" />
+      <scale x="0.310000" y="0.260000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_015_F</nameHash>
+      <txdHash>MP_Heist4_Tat_015</txdHash>
+      <txtHash>MP_Heist4_Tat_015</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.230000" y="0.550000" />
+      <scale x="0.210000" y="0.260000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_016_M</nameHash>
+      <txdHash>MP_Heist4_Tat_016</txdHash>
+      <txtHash>MP_Heist4_Tat_016</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.240000" y="0.620000" />
+      <scale x="0.240000" y="0.220000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_016_F</nameHash>
+      <txdHash>MP_Heist4_Tat_016</txdHash>
+      <txtHash>MP_Heist4_Tat_016</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.230000" y="0.540000" />
+      <scale x="0.250000" y="0.280000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_017_M</nameHash>
+      <txdHash>MP_Heist4_Tat_017</txdHash>
+      <txtHash>MP_Heist4_Tat_017</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.240000" y="0.600000" />
+      <scale x="0.300000" y="0.220000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_017_F</nameHash>
+      <txdHash>MP_Heist4_Tat_017</txdHash>
+      <txtHash>MP_Heist4_Tat_017</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.225000" y="0.540000" />
+      <scale x="0.200000" y="0.240000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_018_M</nameHash>
+      <txdHash>MP_Heist4_Tat_018</txdHash>
+      <txtHash>MP_Heist4_Tat_018</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.240000" y="0.600000" />
+      <scale x="0.230000" y="0.200000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_018_F</nameHash>
+      <txdHash>MP_Heist4_Tat_018</txdHash>
+      <txtHash>MP_Heist4_Tat_018</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.225000" y="0.680000" />
+      <scale x="0.170000" y="0.170000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_019_M</nameHash>
+      <txdHash>MP_Heist4_Tat_019</txdHash>
+      <txtHash>MP_Heist4_Tat_019</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.240000" y="0.720000" />
+      <scale x="0.170000" y="0.140000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_019_F</nameHash>
+      <txdHash>MP_Heist4_Tat_019</txdHash>
+      <txtHash>MP_Heist4_Tat_019</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.230000" y="0.500000" />
+      <scale x="0.230000" y="0.240000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_020_M</nameHash>
+      <txdHash>MP_Heist4_Tat_020</txdHash>
+      <txtHash>MP_Heist4_Tat_020</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.240000" y="0.580000" />
+      <scale x="0.280000" y="0.20000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_020_F</nameHash>
+      <txdHash>MP_Heist4_Tat_020</txdHash>
+      <txtHash>MP_Heist4_Tat_020</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.230000" y="0.480000" />
+      <scale x="0.300000" y="0.300000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_021_M</nameHash>
+      <txdHash>MP_Heist4_Tat_021</txdHash>
+      <txtHash>MP_Heist4_Tat_021</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.250000" y="0.560000" />
+      <scale x="0.330000" y="0.200000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_021_F</nameHash>
+      <txdHash>MP_Heist4_Tat_021</txdHash>
+      <txtHash>MP_Heist4_Tat_021</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.725000" y="0.640000" />
+      <scale x="0.180000" y="0.170000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_022_M</nameHash>
+      <txdHash>MP_Heist4_Tat_022</txdHash>
+      <txtHash>MP_Heist4_Tat_022</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.740000" y="0.660000" />
+      <scale x="0.190000" y="0.140000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_022_F</nameHash>
+      <txdHash>MP_Heist4_Tat_022</txdHash>
+      <txtHash>MP_Heist4_Tat_022</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.725000" y="0.640000" />
+      <scale x="0.160000" y="0.130000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_023_M</nameHash>
+      <txdHash>MP_Heist4_Tat_023</txdHash>
+      <txtHash>MP_Heist4_Tat_023</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.740000" y="0.670000" />
+      <scale x="0.170000" y="0.110000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_023_F</nameHash>
+      <txdHash>MP_Heist4_Tat_023</txdHash>
+      <txtHash>MP_Heist4_Tat_023</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.225000" y="0.350000" />
+      <scale x="0.170000" y="0.170000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_024_M</nameHash>
+      <txdHash>MP_Heist4_Tat_024</txdHash>
+      <txtHash>MP_Heist4_Tat_024</txtHash>
+      <zone>ZONE_LEFT_LEG</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.200000" y="0.360000" />
+      <scale x="0.170000" y="0.160000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_024_F</nameHash>
+      <txdHash>MP_Heist4_Tat_024</txdHash>
+      <txtHash>MP_Heist4_Tat_024</txtHash>
+      <zone>ZONE_LEFT_LEG</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.625000" y="0.750000" />
+      <scale x="0.170000" y="0.200000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_025_M</nameHash>
+      <txdHash>MP_Heist4_Tat_025</txdHash>
+      <txtHash>MP_Heist4_Tat_025</txtHash>
+      <zone>ZONE_LEFT_LEG</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.620000" y="0.790000" />
+      <scale x="0.180000" y="0.220000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_025_F</nameHash>
+      <txdHash>MP_Heist4_Tat_025</txdHash>
+      <txtHash>MP_Heist4_Tat_025</txtHash>
+      <zone>ZONE_LEFT_LEG</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.490000" y="0.810000" />
+      <scale x="0.140000" y="0.170000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_026_M</nameHash>
+      <txdHash>MP_Heist4_Tat_026</txdHash>
+      <txtHash>MP_Heist4_Tat_026</txtHash>
+      <zone>ZONE_RIGHT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.490000" y="0.810000" />
+      <scale x="0.190000" y="0.170000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_026_F</nameHash>
+      <txdHash>MP_Heist4_Tat_026</txdHash>
+      <txtHash>MP_Heist4_Tat_026</txtHash>
+      <zone>ZONE_RIGHT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.725000" y="0.350000" />
+      <scale x="0.170000" y="0.170000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_027_M</nameHash>
+      <txdHash>MP_Heist4_Tat_027</txdHash>
+      <txtHash>MP_Heist4_Tat_027</txtHash>
+      <zone>ZONE_RIGHT_LEG</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.750000" y="0.360000" />
+      <scale x="0.170000" y="0.160000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_027_F</nameHash>
+      <txdHash>MP_Heist4_Tat_027</txdHash>
+      <txtHash>MP_Heist4_Tat_027</txtHash>
+      <zone>ZONE_RIGHT_LEG</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.225000" y="0.360000" />
+      <scale x="0.120000" y="0.130000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_028_M</nameHash>
+      <txdHash>MP_Heist4_Tat_028</txdHash>
+      <txtHash>MP_Heist4_Tat_028</txtHash>
+      <zone>ZONE_LEFT_LEG</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.240000" y="0.390000" />
+      <scale x="0.130000" y="0.120000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_028_F</nameHash>
+      <txdHash>MP_Heist4_Tat_028</txdHash>
+      <txtHash>MP_Heist4_Tat_028</txtHash>
+      <zone>ZONE_LEFT_LEG</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.225000" y="0.350000" />
+      <scale x="0.130000" y="0.170000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_029_M</nameHash>
+      <txdHash>MP_Heist4_Tat_029</txdHash>
+      <txtHash>MP_Heist4_Tat_029</txtHash>
+      <zone>ZONE_LEFT_LEG</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.240000" y="0.350000" />
+      <scale x="0.150000" y="0.160000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_029_F</nameHash>
+      <txdHash>MP_Heist4_Tat_029</txdHash>
+      <txtHash>MP_Heist4_Tat_029</txtHash>
+      <zone>ZONE_LEFT_LEG</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.725000" y="0.360000" />
+      <scale x="0.140000" y="0.110000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_030_M</nameHash>
+      <txdHash>MP_Heist4_Tat_030</txdHash>
+      <txtHash>MP_Heist4_Tat_030</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.730000" y="0.410000" />
+      <scale x="0.170000" y="0.090000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_030_F</nameHash>
+      <txdHash>MP_Heist4_Tat_030</txdHash>
+      <txtHash>MP_Heist4_Tat_030</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.510000" y="0.780000" />
+      <scale x="0.120000" y="0.160000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_031_M</nameHash>
+      <txdHash>MP_Heist4_Tat_031</txdHash>
+      <txtHash>MP_Heist4_Tat_031</txtHash>
+      <zone>ZONE_RIGHT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.440000" y="0.780000" />
+      <scale x="0.160000" y="0.190000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_031_F</nameHash>
+      <txdHash>MP_Heist4_Tat_031</txdHash>
+      <txtHash>MP_Heist4_Tat_031</txtHash>
+      <zone>ZONE_RIGHT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.510000" y="0.770000" />
+      <scale x="0.130000" y="0.130000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_032_M</nameHash>
+      <txdHash>MP_Heist4_Tat_032</txdHash>
+      <txtHash>MP_Heist4_Tat_032</txtHash>
+      <zone>ZONE_RIGHT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.490000" y="0.760000" />
+      <scale x="0.170000" y="0.140000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tat_032_F</nameHash>
+      <txdHash>MP_Heist4_Tat_032</txdHash>
+      <txtHash>MP_Heist4_Tat_032</txtHash>
+      <zone>ZONE_RIGHT_ARM</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+  	<Item>
+      <uvPos x="0.737000" y="0.680000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_000_M</nameHash>
+      <txdHash>MP_Heist4_Tee_000</txdHash>
+      <txtHash>MP_Heist4_Tee_000</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.667000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_000_F</nameHash>
+      <txdHash>MP_Heist4_Tee_000</txdHash>
+      <txtHash>MP_Heist4_Tee_000</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.680000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_001_M</nameHash>
+      <txdHash>MP_Heist4_Tee_001</txdHash>
+      <txtHash>MP_Heist4_Tee_001</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.657000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_001_F</nameHash>
+      <txdHash>MP_Heist4_Tee_001</txdHash>
+      <txtHash>MP_Heist4_Tee_001</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.680000" />
+      <scale x="0.150000" y="0.125000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_002_M</nameHash>
+      <txdHash>MP_Heist4_Tee_002</txdHash>
+      <txtHash>MP_Heist4_Tee_002</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.657000" />
+      <scale x="0.150000" y="0.125000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_002_F</nameHash>
+      <txdHash>MP_Heist4_Tee_002</txdHash>
+      <txtHash>MP_Heist4_Tee_002</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.700000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_003_M</nameHash>
+      <txdHash>MP_Heist4_Tee_003</txdHash>
+      <txtHash>MP_Heist4_Tee_003</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.657000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_003_F</nameHash>
+      <txdHash>MP_Heist4_Tee_003</txdHash>
+      <txtHash>MP_Heist4_Tee_003</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.690000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_004_M</nameHash>
+      <txdHash>MP_Heist4_Tee_004</txdHash>
+      <txtHash>MP_Heist4_Tee_004</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.657000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_004_F</nameHash>
+      <txdHash>MP_Heist4_Tee_004</txdHash>
+      <txtHash>MP_Heist4_Tee_004</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.690000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_005_M</nameHash>
+      <txdHash>MP_Heist4_Tee_005</txdHash>
+      <txtHash>MP_Heist4_Tee_005</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.710000" y="0.657000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_005_F</nameHash>
+      <txdHash>MP_Heist4_Tee_005</txdHash>
+      <txtHash>MP_Heist4_Tee_005</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.690000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_006_M</nameHash>
+      <txdHash>MP_Heist4_Tee_006</txdHash>
+      <txtHash>MP_Heist4_Tee_006</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.657000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_006_F</nameHash>
+      <txdHash>MP_Heist4_Tee_006</txdHash>
+      <txtHash>MP_Heist4_Tee_006</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.640000" />
+      <scale x="0.150000" y="0.125000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_007_M</nameHash>
+      <txdHash>MP_Heist4_Tee_007</txdHash>
+      <txtHash>MP_Heist4_Tee_007</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.627000" />
+      <scale x="0.150000" y="0.125000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_007_F</nameHash>
+      <txdHash>MP_Heist4_Tee_007</txdHash>
+      <txtHash>MP_Heist4_Tee_007</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.670000" />
+      <scale x="0.140000" y="0.115000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_008_M</nameHash>
+      <txdHash>MP_Heist4_Tee_008</txdHash>
+      <txtHash>MP_Heist4_Tee_008</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.637000" />
+      <scale x="0.140000" y="0.115000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_008_F</nameHash>
+      <txdHash>MP_Heist4_Tee_008</txdHash>
+      <txtHash>MP_Heist4_Tee_008</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.670000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_009_M</nameHash>
+      <txdHash>MP_Heist4_Tee_009</txdHash>
+      <txtHash>MP_Heist4_Tee_009</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.637000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_009_F</nameHash>
+      <txdHash>MP_Heist4_Tee_009</txdHash>
+      <txtHash>MP_Heist4_Tee_009</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.700000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_010_M</nameHash>
+      <txdHash>MP_Heist4_Tee_010</txdHash>
+      <txtHash>MP_Heist4_Tee_010</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.667000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_010_F</nameHash>
+      <txdHash>MP_Heist4_Tee_010</txdHash>
+      <txtHash>MP_Heist4_Tee_010</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.650000" />
+      <scale x="0.120000" y="0.095000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_011_M</nameHash>
+      <txdHash>MP_Heist4_Tee_011</txdHash>
+      <txtHash>MP_Heist4_Tee_011</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.627000" />
+      <scale x="0.120000" y="0.095000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_011_F</nameHash>
+      <txdHash>MP_Heist4_Tee_011</txdHash>
+      <txtHash>MP_Heist4_Tee_011</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.620000" />
+      <scale x="0.140000" y="0.115000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_012_M</nameHash>
+      <txdHash>MP_Heist4_Tee_012</txdHash>
+      <txtHash>MP_Heist4_Tee_012</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.607000" />
+      <scale x="0.140000" y="0.115000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_012_F</nameHash>
+      <txdHash>MP_Heist4_Tee_012</txdHash>
+      <txtHash>MP_Heist4_Tee_012</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.680000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_013_M</nameHash>
+      <txdHash>MP_Heist4_Tee_013</txdHash>
+      <txtHash>MP_Heist4_Tee_013</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.647000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_013_F</nameHash>
+      <txdHash>MP_Heist4_Tee_013</txdHash>
+      <txtHash>MP_Heist4_Tee_013</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.680000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_014_M</nameHash>
+      <txdHash>MP_Heist4_Tee_014</txdHash>
+      <txtHash>MP_Heist4_Tee_014</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.647000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_014_F</nameHash>
+      <txdHash>MP_Heist4_Tee_014</txdHash>
+      <txtHash>MP_Heist4_Tee_014</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item><Item>
+      <uvPos x="0.737000" y="0.660000" />
+      <scale x="0.140000" y="0.115000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_015_M</nameHash>
+      <txdHash>MP_Heist4_Tee_015</txdHash>
+      <txtHash>MP_Heist4_Tee_015</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.627000" />
+      <scale x="0.140000" y="0.115000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_015_F</nameHash>
+      <txdHash>MP_Heist4_Tee_015</txdHash>
+      <txtHash>MP_Heist4_Tee_015</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.650000" />
+      <scale x="0.160000" y="0.125000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_016_M</nameHash>
+      <txdHash>MP_Heist4_Tee_016</txdHash>
+      <txtHash>MP_Heist4_Tee_016</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.627000" />
+      <scale x="0.160000" y="0.125000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_016_F</nameHash>
+      <txdHash>MP_Heist4_Tee_016</txdHash>
+      <txtHash>MP_Heist4_Tee_016</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.660000" />
+      <scale x="0.140000" y="0.115000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_017_M</nameHash>
+      <txdHash>MP_Heist4_Tee_017</txdHash>
+      <txtHash>MP_Heist4_Tee_017</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.617000" />
+      <scale x="0.140000" y="0.115000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_017_F</nameHash>
+      <txdHash>MP_Heist4_Tee_017</txdHash>
+      <txtHash>MP_Heist4_Tee_017</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.700000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_018_M</nameHash>
+      <txdHash>MP_Heist4_Tee_018</txdHash>
+      <txtHash>MP_Heist4_Tee_018</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.667000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_018_F</nameHash>
+      <txdHash>MP_Heist4_Tee_018</txdHash>
+      <txtHash>MP_Heist4_Tee_018</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.690000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_019_M</nameHash>
+      <txdHash>MP_Heist4_Tee_019</txdHash>
+      <txtHash>MP_Heist4_Tee_019</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.667000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_019_F</nameHash>
+      <txdHash>MP_Heist4_Tee_019</txdHash>
+      <txtHash>MP_Heist4_Tee_019</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.690000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_020_M</nameHash>
+      <txdHash>MP_Heist4_Tee_020</txdHash>
+      <txtHash>MP_Heist4_Tee_020</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.667000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_020_F</nameHash>
+      <txdHash>MP_Heist4_Tee_020</txdHash>
+      <txtHash>MP_Heist4_Tee_020</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.700000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_021_M</nameHash>
+      <txdHash>MP_Heist4_Tee_021</txdHash>
+      <txtHash>MP_Heist4_Tee_021</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.667000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_021_F</nameHash>
+      <txdHash>MP_Heist4_Tee_021</txdHash>
+      <txtHash>MP_Heist4_Tee_021</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.660000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_022_M</nameHash>
+      <txdHash>MP_Heist4_Tee_022</txdHash>
+      <txtHash>MP_Heist4_Tee_022</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.627000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_022_F</nameHash>
+      <txdHash>MP_Heist4_Tee_022</txdHash>
+      <txtHash>MP_Heist4_Tee_022</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.710000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_023_M</nameHash>
+      <txdHash>MP_Heist4_Tee_023</txdHash>
+      <txtHash>MP_Heist4_Tee_023</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.657000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_023_F</nameHash>
+      <txdHash>MP_Heist4_Tee_023</txdHash>
+      <txtHash>MP_Heist4_Tee_023</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.68000" />
+      <scale x="0.130000" y="0.105000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_024_M</nameHash>
+      <txdHash>MP_Heist4_Tee_024</txdHash>
+      <txtHash>MP_Heist4_Tee_024</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.637000" />
+      <scale x="0.130000" y="0.105000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_024_F</nameHash>
+      <txdHash>MP_Heist4_Tee_024</txdHash>
+      <txtHash>MP_Heist4_Tee_024</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.680000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_025_M</nameHash>
+      <txdHash>MP_Heist4_Tee_025</txdHash>
+      <txtHash>MP_Heist4_Tee_025</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.657000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_025_F</nameHash>
+      <txdHash>MP_Heist4_Tee_025</txdHash>
+      <txtHash>MP_Heist4_Tee_025</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.680000" />
+      <scale x="0.140000" y="0.115000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_026_M</nameHash>
+      <txdHash>MP_Heist4_Tee_026</txdHash>
+      <txtHash>MP_Heist4_Tee_026</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.657000" />
+      <scale x="0.140000" y="0.115000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_026_F</nameHash>
+      <txdHash>MP_Heist4_Tee_026</txdHash>
+      <txtHash>MP_Heist4_Tee_026</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.690000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_027_M</nameHash>
+      <txdHash>MP_Heist4_Tee_027</txdHash>
+      <txtHash>MP_Heist4_Tee_027</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.667000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_027_F</nameHash>
+      <txdHash>MP_Heist4_Tee_027</txdHash>
+      <txtHash>MP_Heist4_Tee_027</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.710000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_028_M</nameHash>
+      <txdHash>MP_Heist4_Tee_028</txdHash>
+      <txtHash>MP_Heist4_Tee_028</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.667000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_028_F</nameHash>
+      <txdHash>MP_Heist4_Tee_028</txdHash>
+      <txtHash>MP_Heist4_Tee_028</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.680000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_029_M</nameHash>
+      <txdHash>MP_Heist4_Tee_029</txdHash>
+      <txtHash>MP_Heist4_Tee_029</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.657000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_029_F</nameHash>
+      <txdHash>MP_Heist4_Tee_029</txdHash>
+      <txtHash>MP_Heist4_Tee_029</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.690000" />
+      <scale x="0.180000" y="0.155000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_030_M</nameHash>
+      <txdHash>MP_Heist4_Tee_030</txdHash>
+      <txtHash>MP_Heist4_Tee_030</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.667000" />
+      <scale x="0.180000" y="0.155000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_030_F</nameHash>
+      <txdHash>MP_Heist4_Tee_030</txdHash>
+      <txtHash>MP_Heist4_Tee_030</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.690000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_031_M</nameHash>
+      <txdHash>MP_Heist4_Tee_031</txdHash>
+      <txtHash>MP_Heist4_Tee_031</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.657000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_031_F</nameHash>
+      <txdHash>MP_Heist4_Tee_031</txdHash>
+      <txtHash>MP_Heist4_Tee_031</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.670000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_032_M</nameHash>
+      <txdHash>MP_Heist4_Tee_032</txdHash>
+      <txtHash>MP_Heist4_Tee_032</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.647000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_032_F</nameHash>
+      <txdHash>MP_Heist4_Tee_032</txdHash>
+      <txtHash>MP_Heist4_Tee_032</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.670000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_033_M</nameHash>
+      <txdHash>MP_Heist4_Tee_033</txdHash>
+      <txtHash>MP_Heist4_Tee_033</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.627000" />
+      <scale x="0.160000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_033_F</nameHash>
+      <txdHash>MP_Heist4_Tee_033</txdHash>
+      <txtHash>MP_Heist4_Tee_033</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.700000" />
+      <scale x="0.150000" y="0.125000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_034_M</nameHash>
+      <txdHash>MP_Heist4_Tee_034</txdHash>
+      <txtHash>MP_Heist4_Tee_034</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.687000" />
+      <scale x="0.150000" y="0.125000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_034_F</nameHash>
+      <txdHash>MP_Heist4_Tee_034</txdHash>
+      <txtHash>MP_Heist4_Tee_034</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.700000" />
+      <scale x="0.150000" y="0.125000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_035_M</nameHash>
+      <txdHash>MP_Heist4_Tee_035</txdHash>
+      <txtHash>MP_Heist4_Tee_035</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.687000" />
+      <scale x="0.150000" y="0.125000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_035_F</nameHash>
+      <txdHash>MP_Heist4_Tee_035</txdHash>
+      <txtHash>MP_Heist4_Tee_035</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.700000" />
+      <scale x="0.150000" y="0.125000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_036_M</nameHash>
+      <txdHash>MP_Heist4_Tee_036</txdHash>
+      <txtHash>MP_Heist4_Tee_036</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.687000" />
+      <scale x="0.150000" y="0.125000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_036_F</nameHash>
+      <txdHash>MP_Heist4_Tee_036</txdHash>
+      <txtHash>MP_Heist4_Tee_036</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.700000" />
+      <scale x="0.150000" y="0.125000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_037_M</nameHash>
+      <txdHash>MP_Heist4_Tee_037</txdHash>
+      <txtHash>MP_Heist4_Tee_037</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.687000" />
+      <scale x="0.150000" y="0.125000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_037_F</nameHash>
+      <txdHash>MP_Heist4_Tee_037</txdHash>
+      <txtHash>MP_Heist4_Tee_037</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.700000" />
+      <scale x="0.150000" y="0.125000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_038_M</nameHash>
+      <txdHash>MP_Heist4_Tee_038</txdHash>
+      <txtHash>MP_Heist4_Tee_038</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.687000" />
+      <scale x="0.150000" y="0.125000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_038_F</nameHash>
+      <txdHash>MP_Heist4_Tee_038</txdHash>
+      <txtHash>MP_Heist4_Tee_038</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.670000" />
+      <scale x="0.180000" y="0.155000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_039_M</nameHash>
+      <txdHash>MP_Heist4_Tee_039</txdHash>
+      <txtHash>MP_Heist4_Tee_039</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.667000" />
+      <scale x="0.170000" y="0.155000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_039_F</nameHash>
+      <txdHash>MP_Heist4_Tee_039</txdHash>
+      <txtHash>MP_Heist4_Tee_039</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.237000" y="0.670000" />
+      <scale x="0.180000" y="0.155000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_040_M</nameHash>
+      <txdHash>MP_Heist4_Tee_040</txdHash>
+      <txtHash>MP_Heist4_Tee_040</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.240000" y="0.667000" />
+      <scale x="0.180000" y="0.155000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_040_F</nameHash>
+      <txdHash>MP_Heist4_Tee_040</txdHash>
+      <txtHash>MP_Heist4_Tee_040</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.670000" />
+      <scale x="0.180000" y="0.155000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_041_M</nameHash>
+      <txdHash>MP_Heist4_Tee_041</txdHash>
+      <txtHash>MP_Heist4_Tee_041</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.667000" />
+      <scale x="0.170000" y="0.155000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_041_F</nameHash>
+      <txdHash>MP_Heist4_Tee_041</txdHash>
+      <txtHash>MP_Heist4_Tee_041</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.237000" y="0.670000" />
+      <scale x="0.180000" y="0.155000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_042_M</nameHash>
+      <txdHash>MP_Heist4_Tee_042</txdHash>
+      <txtHash>MP_Heist4_Tee_042</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.240000" y="0.667000" />
+      <scale x="0.180000" y="0.155000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_042_F</nameHash>
+      <txdHash>MP_Heist4_Tee_042</txdHash>
+      <txtHash>MP_Heist4_Tee_042</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.670000" />
+      <scale x="0.180000" y="0.155000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_043_M</nameHash>
+      <txdHash>MP_Heist4_Tee_043</txdHash>
+      <txtHash>MP_Heist4_Tee_043</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.667000" />
+      <scale x="0.170000" y="0.155000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_043_F</nameHash>
+      <txdHash>MP_Heist4_Tee_043</txdHash>
+      <txtHash>MP_Heist4_Tee_043</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.237000" y="0.670000" />
+      <scale x="0.180000" y="0.155000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_044_M</nameHash>
+      <txdHash>MP_Heist4_Tee_044</txdHash>
+      <txtHash>MP_Heist4_Tee_044</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.240000" y="0.667000" />
+      <scale x="0.180000" y="0.155000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_044_F</nameHash>
+      <txdHash>MP_Heist4_Tee_044</txdHash>
+      <txtHash>MP_Heist4_Tee_044</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.695000" />
+      <scale x="0.120000" y="0.120000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_045_M</nameHash>
+      <txdHash>MP_Heist4_Tee_045</txdHash>
+      <txtHash>MP_Heist4_Tee_045</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.735000" y="0.670000" />
+      <scale x="0.115000" y="0.115000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_045_F</nameHash>
+      <txdHash>MP_Heist4_Tee_045</txdHash>
+      <txtHash>MP_Heist4_Tee_045</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.670000" />
+      <scale x="0.150000" y="0.150000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_046_M</nameHash>
+      <txdHash>MP_Heist4_Tee_046</txdHash>
+      <txtHash>MP_Heist4_Tee_046</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.725000" y="0.660000" />
+      <scale x="0.140000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_046_F</nameHash>
+      <txdHash>MP_Heist4_Tee_046</txdHash>
+      <txtHash>MP_Heist4_Tee_046</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.680000" />
+      <scale x="0.140000" y="0.130000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_047_M</nameHash>
+      <txdHash>MP_Heist4_Tee_047</txdHash>
+      <txtHash>MP_Heist4_Tee_047</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.725000" y="0.660000" />
+      <scale x="0.140000" y="0.115000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_047_F</nameHash>
+      <txdHash>MP_Heist4_Tee_047</txdHash>
+      <txtHash>MP_Heist4_Tee_047</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.630000" />
+      <scale x="0.200000" y="0.200000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_048_M</nameHash>
+      <txdHash>MP_Heist4_Tee_048</txdHash>
+      <txtHash>MP_Heist4_Tee_048</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.725000" y="0.630000" />
+      <scale x="0.210000" y="0.170000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_048_F</nameHash>
+      <txdHash>MP_Heist4_Tee_048</txdHash>
+      <txtHash>MP_Heist4_Tee_048</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.830000" y="0.685000" />
+      <scale x="0.040000" y="0.040000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_049_M</nameHash>
+      <txdHash>MP_Heist4_Tee_049</txdHash>
+      <txtHash>MP_Heist4_Tee_049</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.820000" y="0.670000" />
+      <scale x="0.040000" y="0.040000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_049_F</nameHash>
+      <txdHash>MP_Heist4_Tee_049</txdHash>
+      <txtHash>MP_Heist4_Tee_049</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.250000" y="0.730000" />
+      <scale x="0.230000" y="0.240000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_050_M</nameHash>
+      <txdHash>MP_Heist4_Tee_050</txdHash>
+      <txtHash>MP_Heist4_Tee_050</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.240000" y="0.750000" />
+      <scale x="0.230000" y="0.210000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_050_F</nameHash>
+      <txdHash>MP_Heist4_Tee_050</txdHash>
+      <txtHash>MP_Heist4_Tee_050</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.830000" y="0.685000" />
+      <scale x="0.040000" y="0.040000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_051_M</nameHash>
+      <txdHash>MP_Heist4_Tee_051</txdHash>
+      <txtHash>MP_Heist4_Tee_051</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.820000" y="0.670000" />
+      <scale x="0.040000" y="0.040000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_051_F</nameHash>
+      <txdHash>MP_Heist4_Tee_051</txdHash>
+      <txtHash>MP_Heist4_Tee_051</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.250000" y="0.730000" />
+      <scale x="0.230000" y="0.240000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_052_M</nameHash>
+      <txdHash>MP_Heist4_Tee_052</txdHash>
+      <txtHash>MP_Heist4_Tee_052</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.240000" y="0.750000" />
+      <scale x="0.230000" y="0.210000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_052_F</nameHash>
+      <txdHash>MP_Heist4_Tee_052</txdHash>
+      <txtHash>MP_Heist4_Tee_052</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.625000" />
+      <scale x="0.170000" y="0.160000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_053_M</nameHash>
+      <txdHash>MP_Heist4_Tee_053</txdHash>
+      <txtHash>MP_Heist4_Tee_053</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.725000" y="0.625000" />
+      <scale x="0.180000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_053_F</nameHash>
+      <txdHash>MP_Heist4_Tee_053</txdHash>
+      <txtHash>MP_Heist4_Tee_053</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.590000" />
+      <scale x="0.190000" y="0.190000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_054_M</nameHash>
+      <txdHash>MP_Heist4_Tee_054</txdHash>
+      <txtHash>MP_Heist4_Tee_054</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.725000" y="0.590000" />
+      <scale x="0.210000" y="0.170000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_054_F</nameHash>
+      <txdHash>MP_Heist4_Tee_054</txdHash>
+      <txtHash>MP_Heist4_Tee_054</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.670000" />
+      <scale x="0.135000" y="0.125000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_055_M</nameHash>
+      <txdHash>MP_Heist4_Tee_055</txdHash>
+      <txtHash>MP_Heist4_Tee_055</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.660000" />
+      <scale x="0.125000" y="0.115000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_055_F</nameHash>
+      <txdHash>MP_Heist4_Tee_055</txdHash>
+      <txtHash>MP_Heist4_Tee_055</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.237000" y="0.695000" />
+      <scale x="0.180000" y="0.170000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_056_M</nameHash>
+      <txdHash>MP_Heist4_Tee_056</txdHash>
+      <txtHash>MP_Heist4_Tee_056</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.225000" y="0.695000" />
+      <scale x="0.180000" y="0.160000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_056_F</nameHash>
+      <txdHash>MP_Heist4_Tee_056</txdHash>
+      <txtHash>MP_Heist4_Tee_056</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.670000" />
+      <scale x="0.135000" y="0.125000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_057_M</nameHash>
+      <txdHash>MP_Heist4_Tee_057</txdHash>
+      <txtHash>MP_Heist4_Tee_057</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.660000" />
+      <scale x="0.125000" y="0.115000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_057_F</nameHash>
+      <txdHash>MP_Heist4_Tee_057</txdHash>
+      <txtHash>MP_Heist4_Tee_057</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.237000" y="0.690000" />
+      <scale x="0.160000" y="0.170000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_058_M</nameHash>
+      <txdHash>MP_Heist4_Tee_058</txdHash>
+      <txtHash>MP_Heist4_Tee_058</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.225000" y="0.690000" />
+      <scale x="0.170000" y="0.170000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_058_F</nameHash>
+      <txdHash>MP_Heist4_Tee_058</txdHash>
+      <txtHash>MP_Heist4_Tee_058</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.655000" />
+      <scale x="0.185000" y="0.165000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_059_M</nameHash>
+      <txdHash>MP_Heist4_Tee_059</txdHash>
+      <txtHash>MP_Heist4_Tee_059</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.725000" y="0.645000" />
+      <scale x="0.175000" y="0.145000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_059_F</nameHash>
+      <txdHash>MP_Heist4_Tee_059</txdHash>
+      <txtHash>MP_Heist4_Tee_059</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.230000" y="0.880000" />
+      <scale x="0.070000" y="0.040000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_060_M</nameHash>
+      <txdHash>MP_Heist4_Tee_060</txdHash>
+      <txtHash>MP_Heist4_Tee_060</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.220000" y="0.880000" />
+      <scale x="0.045000" y="0.040000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_060_F</nameHash>
+      <txdHash>MP_Heist4_Tee_060</txdHash>
+      <txtHash>MP_Heist4_Tee_060</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.655000" />
+      <scale x="0.145000" y="0.135000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_061_M</nameHash>
+      <txdHash>MP_Heist4_Tee_061</txdHash>
+      <txtHash>MP_Heist4_Tee_061</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.720000" y="0.650000" />
+      <scale x="0.145000" y="0.125000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_061_F</nameHash>
+      <txdHash>MP_Heist4_Tee_061</txdHash>
+      <txtHash>MP_Heist4_Tee_061</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.230000" y="0.880000" />
+      <scale x="0.070000" y="0.040000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_062_M</nameHash>
+      <txdHash>MP_Heist4_Tee_062</txdHash>
+      <txtHash>MP_Heist4_Tee_062</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.220000" y="0.880000" />
+      <scale x="0.045000" y="0.040000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_062_F</nameHash>
+      <txdHash>MP_Heist4_Tee_062</txdHash>
+      <txtHash>MP_Heist4_Tee_062</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.820000" y="0.695000" />
+      <scale x="0.050000" y="0.050000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_063_M</nameHash>
+      <txdHash>MP_Heist4_Tee_063</txdHash>
+      <txtHash>MP_Heist4_Tee_063</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.820000" y="0.695000" />
+      <scale x="0.055000" y="0.050000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_063_F</nameHash>
+      <txdHash>MP_Heist4_Tee_063</txdHash>
+      <txtHash>MP_Heist4_Tee_063</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.24500" y="0.685000" />
+      <scale x="0.275000" y="0.260000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_064_M</nameHash>
+      <txdHash>MP_Heist4_Tee_064</txdHash>
+      <txtHash>MP_Heist4_Tee_064</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.235000" y="0.695000" />
+      <scale x="0.250000" y="0.230000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_064_F</nameHash>
+      <txdHash>MP_Heist4_Tee_064</txdHash>
+      <txtHash>MP_Heist4_Tee_064</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.737000" y="0.615000" />
+      <scale x="0.205000" y="0.190000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_065_M</nameHash>
+      <txdHash>MP_Heist4_Tee_065</txdHash>
+      <txtHash>MP_Heist4_Tee_065</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.725000" y="0.615000" />
+      <scale x="0.215000" y="0.160000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_065_F</nameHash>
+      <txdHash>MP_Heist4_Tee_065</txdHash>
+      <txtHash>MP_Heist4_Tee_065</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.230000" y="0.880000" />
+      <scale x="0.070000" y="0.040000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_066_M</nameHash>
+      <txdHash>MP_Heist4_Tee_066</txdHash>
+      <txtHash>MP_Heist4_Tee_066</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	<Item>
+      <uvPos x="0.220000" y="0.880000" />
+      <scale x="0.045000" y="0.040000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Heist4_Tee_066_F</nameHash>
+      <txdHash>MP_Heist4_Tee_066</txdHash>
+      <txtHash>MP_Heist4_Tee_066</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_BADGE</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+  </presets>
+  <nameHash>mpHeist4_overlays</nameHash>
+  <medalLocations content="vector2_array">
+    0.140000	0.070000	
+    0.370000	0.070000	
+    0.600000	0.070000	
+    0.835000	0.070000	
+    0.140000	0.150000	
+    0.370000	0.150000	
+    0.600000	0.150000	
+    0.835000	0.150000	
+    0.140000	0.230000	
+    0.370000	0.230000	
+    0.600000	0.230000	
+    0.835000	0.230000	
+    0.100000	0.700000	
+    0.300000	0.700000	
+    0.500000	0.700000	
+    0.700000	0.700000	
+  </medalLocations>
+  <medalScale x="0.240000" y="0.100000" />
+</PedDecorationCollection>

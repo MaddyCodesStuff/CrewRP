@@ -1,0 +1,92 @@
+body {
+    position: relative;
+    font-family: sans-serif;
+    overflow: hidden;
+    display: none;
+    top: 0;
+}
+
+/*
+.radio {
+ background-image: url("../img/radio.png");
+ background-repeat: no-repeat;
+ background-size: auto;
+ background-attachment: fixed;
+
+}
+*/
+
+#cursor {
+    position: absolute;
+    z-index: 999999;
+    display: none;
+}
+
+#radio {
+  width: 367px;
+  height: 795px;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+
+#onoff {
+  position: absolute;
+  top: 20%;
+  right: 40%;
+  padding: 40px 40px;
+  opacity: .0;
+}
+
+.onoff button {
+ padding: 40px 55px;
+
+ opacity: .0;
+}
+
+.ekran {
+  position: absolute;
+  /* background-color: rgb(170, 176, 153); */
+  padding: 95px 70px;
+  top: 50%;
+  left: 26.5%;
+}
+
+.channel {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.channel span {
+  text-align: center;
+}
+
+.channel input {
+  text-align: center;
+  border: none;
+  background-color: rgba(170, 176, 153, 0.0);
+  padding: 38px 6px;
+  font-size: 24px;
+  /* width: 100%; */
+}
+
+.button {
+  cursor: pointer;
+  background-color: transparent;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  width: 60px;
+  height: 30px;
+  position: absolute;
+  top: 172%;
+  left: 26.5%;
+}
+
+.submit {
+
+  top: 172%;
+  left: 26.5%;
+}

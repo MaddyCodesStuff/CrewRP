@@ -1,0 +1,38 @@
+<head>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="scripts.js" type="text/javascript"></script>
+    <script src="debounce.min.js" type="text/javascript"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="full-screen">
+    <div class="taxi-container">
+        <div class="header">
+            <h3 class="sans">TAXI METER <span class="sans" style="font-size: 10px; text-align: left;">CTRL+B to toggle Meter | B to toggle a fare | L to reset fare</span>
+            </h3>
+        </div>
+        <div class="body">
+            <TABLE border="1" style="width: 100%; border: 3px solid black; border-style: solid;">
+                <tr class="taxifare" style="color: red;">
+                    <td class="currentfare"></td>
+                    <td class="currentmiles"></td>
+                    <td>1</td>
+                </tr>
+                <tr align="center" class="sans" style="color: white;">
+                    <td><b>FARE</td>
+                    <td><b>MILES</td>
+                    <td><b>TARIFF</td>
+                </tr>
+            </table>
+            <div style="margin-left: 25px; text-align: left;">
+                <span class="notactive sans" id="hired">HIRED</span> <span
+                    style="display:inline-block; width: 20px;"></span><span class="active sans"
+                                                                            id="timeoff">TIME OFF</span>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>

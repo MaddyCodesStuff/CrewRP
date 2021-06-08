@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CWeaponModelInfo__InitDataList>
+	<InitDatas>
+    <Item>
+      <modelName>W_SR_RIFLE</modelName>
+      <txdName>W_SR_Rifle</txdName>
+      <ptfxAssetName>null</ptfxAssetName>
+      <lodDist value="500"/>
+    </Item>
+    <Item>
+      <modelName>W_SR_RIFLE_Mag1</modelName>
+      <txdName>W_SR_Rifle_mag1</txdName>
+      <ptfxAssetName>null</ptfxAssetName>
+      <lodDist value="500"/>
+    </Item>
+  </InitDatas>
+</CWeaponModelInfo__InitDataList>

@@ -1,0 +1,22 @@
+body {
+    /*background-color: transparent;*/
+    color: #ffffff;
+}
+
+#container {
+    display: none;
+}
+
+.counters {
+    position: absolute;
+    top:      50px;
+    right:    20px;
+}
+
+.counters i {
+    color: #ffffff;
+}
+
+.counter {
+    display: none;
+}

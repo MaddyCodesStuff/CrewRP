@@ -1,0 +1,97 @@
+input[type=range] {
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    background: transparent; /* Otherwise white in Chrome */
+    padding: 0 10px;
+    vertical-align: middle;
+    width: 280px; /* Specific width is required for Firefox. */
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+    background: transparent;
+    border-color: transparent;
+
+    /* Hides the slider so custom styles can be added */
+    color: transparent;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #ffffff;
+    border-radius: 100%;
+    cursor: pointer;
+    height: 12px;
+    margin-top: -6px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    width: 12px;
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+    background: #ffffff;
+    border-radius: 100%;
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+    background: #ffffff;
+    border-radius: 100%;
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    background: rgba(255, 255, 255, .2);
+    cursor: pointer;
+    height: 2px;
+    width: 330px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: rgba(255, 255, 255, .2);
+}
+
+input[type=range]::-moz-range-track {
+    background: rgba(255, 255, 255, .2);
+    cursor: pointer;
+    height: 2px;
+    width: 330px;
+}
+
+input[type=range]::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+    cursor: pointer;
+    height: 2px;
+    width: 330px;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: rgba(255, 255, 255, .2);
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: rgba(255, 255, 255, .2);
+}
+
+input[type=range]::-ms-fill-upper {
+    background: rgba(255, 255, 255, .2);
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: rgba(255, 255, 255, .2);
+}

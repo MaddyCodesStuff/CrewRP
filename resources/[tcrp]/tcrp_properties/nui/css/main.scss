@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Sans&family=PT+Serif&display=swap');
+
+$screen-margin: 4em;
+$border-size: 2em;
+
+$font-mono: 'PT Mono', monospace;
+$font-sans: 'PT Sans', sans-serif;
+$font-serif: 'PT Serif', serif;
+
+body {
+    border: none;
+    font-family: $font-sans;
+    margin: 0;
+    padding: 0;
+}
+
+.computer {
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+
+    .hidden {
+        display: none;
+    }
+
+    .screen {
+        background-color: white;
+        border: $border-size solid #000000;
+        border-radius: 1em;
+        bottom: $screen-margin;
+        left: $screen-margin;
+        overflow: auto;
+        position: absolute;
+        right: $screen-margin;
+        top: $screen-margin;
+
+        .close {
+            background-color: red;
+            border: none;
+            color: white;
+            font-family: $font-mono;
+            font-size: 1em;
+            font-weight: bold;
+            height: 2em;
+            padding: .5em;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 2em;
+
+            &:hover {
+                background-color: darkred;
+                cursor: pointer;
+            }
+        }
+
+        nav {
+            width: 100%;
+        }
+
+        header {
+            background-image: url('../img/logo_black.svg');
+            background-position: left center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 10%;
+            margin: 1em 1em;
+            width: calc(100% - 2em);
+        }
+
+        .banner {
+            background-attachment: fixed;
+            background-image: url('../img/bg.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 30%;
+            max-height: 1660px;
+            max-width: 4916px;
+            width: 100%;
+        }
+
+        .login,
+        .real-estate-agent,
+        .property-manager {
+            margin: auto;
+            max-width: calc(100% - 2em);
+            position: relative;
+            text-align: center;
+
+            h2 {
+                font-size: 2em;
+            }
+
+            .buttons {
+                button {
+                    background-color: white;
+                    border: 1px solid black;
+                    font-size: 1em;
+                    font-weight: bold;
+                    margin-bottom: 1em;
+                    padding: .5em;
+
+                    &:hover {
+                        background-color: lightgray;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .real-estate-agent,
+        .property-manager {
+            table {
+                border-spacing: 0;
+                font-size: 1em;
+                width: 100%;
+
+                th {
+                    font-size: 1.5em;
+                }
+
+                td {
+                    padding: .5em;
+                }
+
+                input {
+                    padding: .5em;
+                    text-align: center;
+                    width: calc(100% - 1em);
+                }
+
+                tr:nth-child(even) td {
+                    background-color: lightgray;
+                }
+
+                tr:nth-child(odd) td {
+                    background-color: white;
+                }
+
+                button {
+                    background-color: white;
+                    border: 1px solid black;
+                    font-weight: bold;
+                    padding: .5em;
+
+                    &:hover {
+                        background-color: lightgray;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

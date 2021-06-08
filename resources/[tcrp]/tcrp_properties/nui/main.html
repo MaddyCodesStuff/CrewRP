@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TCRP Properties</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="computer">
+    <div class="screen hidden">
+        <button class="close" id="close">X</button>
+        <header></header>
+        <div class="banner"></div>
+        <div class="login">
+            <h2>Please Log In</h2>
+            <div class="buttons">
+                <button id="real-estate-agent">I'm a Real Estate Agent</button>
+                <button id="property-manager">I'm a Property Manager</button>
+            </div>
+        </div>
+        <div class="real-estate-agent hidden">
+            <h2>Real Estate Agent</h2>
+            <button class="close" id="close-real-estate-agent">X</button>
+            <div class="buttons">
+                <button id="for-sale">For Sale</button>
+                <button id="sold">Sold</button>
+            </div>
+            <div class="for-sale">
+                <h3>Properties For Sale</h3>
+                <table>
+                    <tr>
+                        <th>Address</th>
+                        <th>Zone</th>
+                        <th>Price</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr id="property-sale-123">
+                        <td>69 Main Street</td>
+                        <td>Upper Vinewood</td>
+                        <td>$ 42 069</td>
+                        <td>
+                            <button>Sell</button>
+                            <button>Show</button>
+                        </td>
+                    </tr>
+                    <tr id="property-sale-124">
+                        <td>221B Baker Street</td>
+                        <td>Downtown London</td>
+                        <td>$ 69 420</td>
+                        <td>
+                            <button>Sell</button>
+                            <button>Show</button>
+                        </td>
+                    </tr>
+                    <tr id="property-sale-125">
+                        <td>420 High Street</td>
+                        <td>Strawberry</td>
+                        <td>$ 42 069</td>
+                        <td>
+                            <button>Sell</button>
+                            <button>Show</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="sold hidden">
+                <h3>Sold Properties</h3>
+                <table>
+                    <tr>
+                        <th>Address</th>
+                        <th>Zone</th>
+                        <th>Price</th>
+                        <th>Owner</th>
+                    </tr>
+                    <tr id="property-sold-123">
+                        <td>69 Main Street</td>
+                        <td>Upper Vinewood</td>
+                        <td>$ 42 069</td>
+                        <td>
+                            Harry Potter
+                        </td>
+                    </tr>
+                    <tr id="property-sold-124">
+                        <td>221B Baker Street</td>
+                        <td>Downtown London</td>
+                        <td>$ 69 420</td>
+                        <td>
+                            Sherlock Holmes
+                        </td>
+                    </tr>
+                    <tr id="property-sold-125">
+                        <td>420 High Street</td>
+                        <td>Strawberry</td>
+                        <td>$ 42 069</td>
+                        <td>
+                            Bob Marley
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="property-manager hidden">
+            <h2>Property Manager</h2>
+            <button class="close" id="close-property-manager">X</button>
+            <div class="buttons">
+                <button id="active">Active</button>
+                <button id="inactive">Inactive</button>
+            </div>
+            <div class="active">
+                <h3>Active Properties</h3>
+                <table>
+                    <tr>
+                        <th>Address</th>
+                        <th>Zone</th>
+                        <th>Price</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr id="property-active-123">
+                        <td>69 Main Street</td>
+                        <td>Upper Vinewood</td>
+                        <td>$ 42 069</td>
+                        <td>
+                            <button>Deactivate</button>
+                            <button>Edit</button>
+                        </td>
+                    </tr>
+                    <tr id="property-active-124">
+                        <td>221B Baker Street</td>
+                        <td>Downtown London</td>
+                        <td>$ 69 420</td>
+                        <td>
+                            <button>Deactivate</button>
+                            <button>Edit</button>
+                        </td>
+                    </tr>
+                    <tr id="property-active-125">
+                        <td>420 High Street</td>
+                        <td>Strawberry</td>
+                        <td>$ 42 069</td>
+                        <td>
+                            <button>Deactivate</button>
+                            <button>Edit</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="inactive hidden">
+                <h3>Inactive Properties</h3>
+                <table>
+                    <tr>
+                        <th>Address</th>
+                        <th>Zone</th>
+                        <th>Price</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr id="property-inactive-123">
+                        <td>69 Main Street</td>
+                        <td>Upper Vinewood</td>
+                        <td>$ 42 069</td>
+                        <td>
+                            <button>Activate</button>
+                            <button>Edit</button>
+                        </td>
+                    </tr>
+                    <tr id="property-inactive-124">
+                        <td>221B Baker Street</td>
+                        <td>Downtown London</td>
+                        <td>$ 69 420</td>
+                        <td>
+                            <button>Activate</button>
+                            <button>Edit</button>
+                        </td>
+                    </tr>
+                    <tr id="property-inactive-125">
+                        <td>420 High Street</td>
+                        <td>Strawberry</td>
+                        <td>$ 42 069</td>
+                        <td>
+                            <button>Activate</button>
+                            <button>Edit</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

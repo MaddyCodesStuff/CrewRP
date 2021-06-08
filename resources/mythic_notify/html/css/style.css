@@ -1,0 +1,111 @@
+body {
+    background-color: transparent !important;
+}
+
+.template, .notification {
+    display: none;
+}
+
+.notif-container {
+    width:     50%;
+    position:  absolute;
+    right:     5%;
+    display:   flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.left {
+    /*padding: 10px;*/
+    float: left;
+    width: 75%;
+}
+
+.right {
+    padding-top: 10px;
+    margin: auto;
+    text-align: center;
+    float: right;
+    width: 25%;
+}
+
+i.large {
+    font-size: 25px;
+}
+
+.notification {
+    padding:       5px;
+    width:         50%;
+    /*border-radius: 5px;*/
+    margin:        2px;
+    font:          caption;
+    font-size:     12px;
+    font-weight:   bold;
+    max-width:     28%;
+}
+
+.success {
+    /*background: rgba(114, 204, 114, .35);*/
+    background-color: rgba(0, 0, 0, .6);
+    color:      #ffffff;
+    border-bottom: 2px solid rgb(114, 204, 114);
+}
+
+.inform {
+    /*background-color: rgba(47, 92, 115, .6);*/
+    background-color: rgba(0, 0, 0, .35);
+    color:            #ffffff;
+    border-bottom: 2px solid rgb(47, 92, 115);
+}
+
+.error {
+    /*background: rgba(224, 50, 50, .5);*/
+    background-color: rgba(0, 0, 0, .35);
+    color:      #ffffff;
+    border-bottom: 2px solid rgb(244, 50, 50);
+}
+
+.cop {
+    /*background: rgba(52, 52, 235, .6);*/
+    background-color: rgba(0, 0, 0, .35);
+    color:      rgba(255, 255, 255,1);
+    border-bottom: 2px solid rgb(52, 52, 235);
+}
+
+.title {
+    font-size:      12px;
+    padding-bottom: 5px;
+    width:          100%;
+}
+
+.coptitle {
+    font-size:      12px;
+    padding-bottom: 5px;
+    width:          100%;
+}
+
+.ems {
+    /*background: rgba(203, 66, 245, .6);*/
+    background-color: rgba(0, 0, 0, .35);
+    color:      #ffffff;
+    border-bottom: 2px solid rgb(203, 66, 245);
+}
+
+.emstitle {
+    font-size:      12px;
+    padding-bottom: 5px;
+    width:          100%;
+}
+
+.fire {
+    /*background: rgba(245, 170, 66, .35);*/
+    background-color: rgba(0, 0, 0, .6);
+    color:      #ffffff;
+    border-bottom: 2px solid rgb(245, 170, 66);
+}
+
+.firetitle {
+    font-size:      12px;
+    padding-bottom: 5px;
+    width:          100%;
+}

@@ -1,0 +1,6 @@
+Citizen.CreateThread(function()
+    AddTextEntry("amggtsprior", "AMG GTS by Prior Design")
+    AddTextEntry("M5", "BMW M5 2016")
+    AddTextEntry("rs6", "AUDI RS6 C7")
+    AddTextEntry("rs5r", "AUDI RS5-R By ABT")
+end)

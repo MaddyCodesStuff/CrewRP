@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- Fix By Claude_III -->
+<CWeaponComponentInfoBlob>
+  
+  <Infos>
+    <Item type="CWeaponComponentScopeInfo">
+      <Name>COMPONENT_AT_RIFLE_SCOPE_LARGE</Name>
+      <Model>NULL</Model>
+      <LocName>WCT_SCOPE_LRG</LocName>
+      <LocDesc>WCD_SCOPE_LRG</LocDesc>
+      <AttachBone>AAPScop</AttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="true" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="5" />
+      <HudRange value="0" />
+      <CameraHash>SNIPER_FIXED_ZOOM_AIM_CAMERA</CameraHash>
+      <RecoilShakeAmplitude value="0.280000" />
+      <ExtraZoomFactorForAccurateMode value="0.000000" />
+      <ReticuleHash>SNIPER_LARGE</ReticuleHash>
+    </Item>
+    <Item type="CWeaponComponentClipInfo">
+      <Name>COMPONENT_RIFLE_CLIP_01</Name>
+      <Model>w_sr_rifle_mag1</Model>
+      <LocName>WCT_CLIP1</LocName>
+      <LocDesc>WCD_SR_CLIP1</LocDesc>
+      <AttachBone>AAPClip</AttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="true" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <ClipSize value="1" />
+      <ReloadData ref="RELOAD_DEFAULT" />
+    </Item>
+  </Infos>
+  <InfoBlobName>AKP</InfoBlobName>
+</CWeaponComponentInfoBlob>

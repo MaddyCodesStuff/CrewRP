@@ -1,0 +1,215 @@
+@import url(https://fonts.googleapis.com/css?family=Bebas+Neue);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none
+}
+
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+#container {
+    float: right;
+    color: #fff;
+    font-family: Bebas Neue;
+    margin-right: 1vh;
+    transform: scale(1)
+}
+
+.box {
+    width: 50vh;
+    height: 94vh;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 1.5vh
+}
+
+.box #logo_loja img {
+    width: 50vh;
+    height: 35vh;
+    opacity: .75;
+    border-top-left-radius: 1.5vh;
+    border-top-right-radius: 1.5vh
+}
+
+.box #titulo_principal {
+    font-size: 3vh;
+    background-color: hsla(0, 0%, 65.5%, .15);
+    margin-top: -.75vh;
+    border-bottom-left-radius: 4vh;
+    border-bottom-right-radius: 4vh;
+    border-bottom: .2vh solid hsla(0, 0%, 65.5%, .5)
+}
+
+.box #instrucao,
+.box #titulo_principal {
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh
+}
+
+.box #instrucao {
+    font-size: 2vh;
+    margin-top: 1vh
+}
+
+.box #tatuagens_lista {
+    position: absolute;
+    width: 50vh;
+    height: 36vh;
+    border-bottom-left-radius: 1.5vh;
+    border-bottom-right-radius: 1.5vh;
+    border-top-left-radius: 4vh;
+    border-top-right-radius: 4vh;
+    background-color: rgba(0, 0, 0, .15);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-top: .2vh solid hsla(0, 0%, 65.5%, .5);
+    -webkit-animation: move-open2;
+    animation: move-open2;
+    -webkit-animation-duration: .2s;
+    animation-duration: .2s
+}
+
+.box #tatuagens_lista::-webkit-scrollbar {
+    width: 0
+}
+
+#local_range {
+    padding: 2vh 2vh
+}
+
+#local_range li {
+    position: absolute;
+    font-size: 3vh
+}
+
+#local_range img {
+    position: absolute;
+    widows: 6vh;
+    height: 6vh
+}
+
+#local_range:hover,
+.hover {
+    background-color: hsla(0, 0%, 65.5%, .15);
+    border-radius: 2vh;
+    padding: 2vh 2vh
+}
+
+#RemoverTodasTatuagens {
+    font-size: 2vh;
+    text-align: center;
+    width: 30vh;
+    margin-top: 6vh;
+    margin-left: 10vh;
+    -webkit-animation: move-open2;
+    animation: move-open2;
+    -webkit-animation-duration: .2s;
+    animation-duration: .2s;
+    border: .2vh solid rgba(255, 0, 0, .3)
+}
+
+.hover2 {
+    background-color: hsla(0, 0%, 65.5%, .25);
+    border-radius: 2vh;
+    padding: .5vh .5vh;
+    color: red
+}
+
+#info_tatto {
+    margin-left: 4.5vh;
+    font-size: 2vh
+}
+
+.dlc_possui,
+.dlc_suas_total,
+.dlc_total,
+.dlc_valor {
+    background-color: rgba(0, 0, 0, .25);
+    border-radius: 5vh;
+    padding: .5vh .5vh;
+    -webkit-animation: move-open2;
+    animation: move-open2;
+    -webkit-animation-duration: .2s;
+    animation-duration: .2s
+}
+
+@-webkit-keyframes move-open2 {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes move-open2 {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 35vh;
+    height: 2vh;
+    outline: none;
+    background-color: #1c1f20;
+    background-size: 10vh 10vh;
+    border-radius: .3vh;
+    margin-left: 6.25vh
+}
+
+.slider:hover {
+    opacity: 1
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1vh;
+    height: 2vh;
+    cursor: pointer;
+    background-color: rgba(57, 139, 80, .75)
+}
+
+.slider::-moz-range-thumb {
+    width: 30.75px;
+    height: 45.75px;
+    cursor: pointer
+}
+
+#setasSimulacao {
+    position: absolute;
+    margin-top: 50vh;
+    transform: scale(.75);
+    margin-left: -5vh
+}
+
+#SetaBaixo,
+#SetaCima,
+#SetaDireita,
+#SetaEsquerda {
+    float: left;
+    padding: 1vh 1vh;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff
+}
+
+#SetaBaixo:hover,
+#SetaCima:hover,
+#SetaDireita:hover,
+#SetaEsquerda:hover {
+    background-color: rgba(0, 0, 0, .8)
+}
