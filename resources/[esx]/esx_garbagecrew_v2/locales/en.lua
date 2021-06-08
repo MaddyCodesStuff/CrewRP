@@ -1,0 +1,19 @@
+Locales['en'] = {
+  ['cloakroom']	= 'Garbage Time Clock',
+  ['job_wear'] = 'clock-In',
+  ['citizen_wear'] = 'clock-Out',
+  ['vehiclespawner'] = 'Select Truck', 
+  ['already_have_truck'] = 'We have already provided a truck!', 
+  ['collection'] = '~INPUT_PICKUP~ to Pickup.',
+  ['return_depot'] = 'Return to the depot.',
+  ['blip_job'] = 'Hobby - Garbage', --'Garbage company',
+  ['blip_delivery'] = 'Hobby - Garbage : Pick-up Point', --'Garbage company : Delivery',
+  ['blip_goal'] = 'Hobby - Garbage : Return Point', --'Garbage company : Delivery point',
+  ['cancel_mission'] = '~INPUT_PICKUP~ to End/Cancel the mission',
+  ['collect_bags'] = '~INPUT_PICKUP~ to collect bag (%s left)',
+  ['not_near_truck'] = 'No truck nearby to deposit bags into.',
+  ['need_work_truck'] = 'You must be in company truck to start collection.',
+  ['toss_bag'] = '~INPUT_PICKUP~ to place bag in truck.',
+  ['drive_to_collection'] = 'Drive to pickup location.',
+  ['no_trash_aviable'] = 'No trash available for pickup at this location.'
+}

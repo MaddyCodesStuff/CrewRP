@@ -1,0 +1,122 @@
+@font-face {
+    font-family: bankgothic;
+    src:         url('../fonts/bankgothic.ttf');
+}
+
+@font-face {
+    font-family: pcdown;
+    src:         url('../fonts/pdown.ttf');
+}
+
+.menu {
+    font-family:   bankgothic;
+    min-width:     400px;
+    color:         #ffffff;
+    box-shadow:    0px 0px 50px 0px #000000;
+    position:      absolute;
+    border:        1px solid #c0c0c0;
+    border-radius: 25px;
+}
+
+.menu.align-left {
+    left:      40;
+    top:       50%;
+    transform: translate(0, -50%);
+    overflow:  hidden;
+}
+
+.menu.align-top-left {
+    left:     40;
+    top:      40;
+    overflow: hidden;
+}
+
+.menu.align-top {
+    left:      50%;
+    top:       40;
+    transform: translate(-50%, 0);
+    overflow:  hidden;
+}
+
+.menu.align-top-right {
+    right:    10;
+    top:      40;
+    overflow: hidden;
+}
+
+.menu.align-right {
+    right:     40;
+    top:       50%;
+    transform: translate(0, -50%);
+    overflow:  hidden;
+}
+
+.menu.align-bottom-right {
+    right:    40;
+    bottom:   40;
+    overflow: hidden;
+}
+
+.menu.align-bottom {
+    left:      50%;
+    bottom:    40;
+    transform: translate(-50%, 0);
+    overflow:  hidden;
+}
+
+.menu.align-bottom-left {
+    left:     40;
+    bottom:   40;
+    overflow: hidden;
+}
+
+.menu.align-center {
+    left:      50%;
+    top:       50%;
+    transform: translate(-50%, -50%);
+    overflow:  hidden;
+}
+
+.menu .head {
+    /*background-color: #000000;*/
+    background-image:    url('../img/background_darker.jpg');
+    background-repeat:   no-repeat;
+    background-position: center;
+    background-size:     cover;
+    text-align:          center;
+    height:              100px;
+    line-height:         100px;
+    font-size:           32px;
+    /*font-family: "Pricedown";*/
+}
+
+.menu .menu-items {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.menu .menu-items .menu-item {
+    height:           40px;
+    display:          block;
+    background-color: #ffffff;
+    box-shadow:       inset 1px 0px 0px 1px #b8b8b8;
+    height:           32px;
+    line-height:      32px;
+    color:            #000000;
+    text-align:       center;
+= =
+}
+
+.menu .menu-items .menu-item.selected {
+    background-color: #0076be;
+    /*border: 1px solid #ffffff;*/
+    color:            #ffffff;
+}
+
+.menu .menu-items .menu-item.selected:before {
+    content: '>';
+}
+
+.menu .menu-items .menu-item.selected:after {
+    content: '<';
+}

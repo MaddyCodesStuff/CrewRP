@@ -1,0 +1,23 @@
+body {
+	background-color: lightblue;
+}
+
+#counter {
+	position:         absolute;
+	bottom:           15px;
+	right:            50px;
+	background-color: #000000;
+	border:           1px solid #ffffff;
+	padding:          5px;
+	opacity:          1;
+}
+
+#police, #ems, #pdm, #fire {
+	float: left;
+}
+
+.policeCount, .emsCount, .pdmCount, .fireCount {
+	padding-right: 10px;
+	font-size:     20px;
+	color:         #ffffff !important;
+}

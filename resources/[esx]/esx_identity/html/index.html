@@ -1,0 +1,24 @@
+<html>
+<head>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<img id="cursor" src="cursor.png">
+<div class="dialog">
+    <form id="register">
+        <h1>Register</h1>
+        <input id="firstname" placeholder="First name" type="text"><br>
+        <input id="lastname" placeholder="Last name" type="text"><br>
+        <input id="dateofbirth" placeholder="Date of Birth (YYYY-MM-DD)" type="text"><br>
+        <input id="height" placeholder="Height (140-200 cm)" type="text"><br>
+        <center>
+            <input checked name="sex" type="radio" value="m">Male
+            <input name="sex" type="radio" value="f">Female<br></center>
+        <button id="submit" type="submit">Create</button>
+    </form>
+</div>
+<script src="script.js" type="text/javascript"></script>
+</body>
+</html>

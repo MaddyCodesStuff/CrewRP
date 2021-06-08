@@ -1,0 +1,145 @@
+body {
+    width:    100vw;
+    height:   100vh;
+    position: absolute;
+    top:      0;
+    left:     0;
+    overflow: hidden;
+}
+
+.panel-body {
+    background-color: #f1f3f5 !important;
+}
+
+#hc-container {
+    display:    block;
+    margin-top: 200px;
+}
+
+#home {
+    display: none;
+}
+
+.btnClose {
+    background-color: transparent !important;
+    border:           0px !important;
+}
+
+input {
+    margin-top:    15px;
+    border-radius: 0px !important;
+}
+
+.btn-primary,
+.btn-success,
+.btn-danger,
+.btn-warning {
+    width:         100%;
+    margin-top:    12px;
+    padding:       15px !important;
+    border-radius: 0px;
+}
+
+#home .btn-primary:first-child {
+    margin-top: 0px;
+}
+
+div.alert {
+    border-radius:  0px !important;
+    padding-top:    25px;
+    padding-bottom: 25px;
+    text-align:     center;
+}
+
+div.tbpad {
+    padding-top:    25px !important;
+    padding-bottom: 25px !important;
+}
+
+div#withdraw {
+    display: none;
+}
+
+div#deposit {
+    display: none;
+}
+
+body {
+    font-family: 'Roboto' !important;
+    background:  transparent !important;
+}
+
+div#transfer {
+    display: none;
+}
+
+.panel {
+    border-radius: 0px !important;
+}
+
+#card1 {
+    background-color: #ffffff;
+    height:           245px;
+}
+
+#card2 {
+    background-color: #ffffff;
+    height:           145px;
+}
+
+#card3 {
+    background-color: #ffffff;
+    height:           175px;
+}
+
+span.welcome {
+    font-size:   16px;
+    font-weight: bold;
+    position:    absolute;
+    top:         25px;
+    left:        50px;
+    color:       #777777;
+}
+
+span.name {
+    color:       #337ab7;
+    font-size:   24px;
+    font-weight: bold;
+    position:    absolute;
+    top:         50px;
+    left:        75px;
+}
+
+span.balance-intro {
+    color:       #777777;
+    font-size:   16px;
+    font-weight: bold;
+    position:    absolute;
+    top:         100px;
+    left:        50px;
+}
+
+span.balance {
+    position:  absolute;
+    top:       125px;
+    left:      75px;
+    font-size: 30px;
+    color:     orange;
+}
+
+span.wallet-intro {
+    color:       #777777;
+    font-size:   16px;
+    font-weight: bold;
+    position:    absolute;
+    top:         180px;
+    left:        50px;
+}
+
+span.wallet {
+    position:  absolute;
+    top:       210px;
+    left:      75px;
+    font-size: 30px;
+    color:     green;
+}
