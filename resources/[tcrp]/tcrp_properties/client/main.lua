@@ -118,7 +118,7 @@ Citizen.CreateThread(function()
 
                 -- Radius to make sure a player is inside of a property (in case they were TPd in, or TPd out)
                 if in_property ~= i and #(coords - vector3(property.inside.x, property.inside.y,
-                                                           property.inside.z)) < 20 and zDiff < zCheck and zDiff > (zCheck * -1) then 
+                                                           property.inside.z)) < 30 and zDiff < zCheck and zDiff > (zCheck * -1) then 
                     in_property   = i
                     last_property = i
                 end
@@ -162,7 +162,7 @@ Citizen.CreateThread(function()
                                             AccessWardrobe(i)
                                         end
                                     else
-                                        ESX.ShowHelpNotification("House Wardrobe")
+                                        ESX.ShowHelpNotification("Property Wardrobe")
                                     end
                                 end
                             end
@@ -189,7 +189,7 @@ Citizen.CreateThread(function()
                                             AccessStorage(property.id)
                                         end
                                     else
-                                        ESX.ShowHelpNotification("House Storage")
+                                        ESX.ShowHelpNotification("Property Storage")
                                     end
                                 end
                             end
@@ -210,13 +210,13 @@ Citizen.CreateThread(function()
 
                                 if #(coords - vector3(property.owneractions.x, property.owneractions.y, property.owneractions.z)) < 1.5 then
                                     if property.owned == 1 or property.owned == 2 then
-                                        ESX.ShowHelpNotification("Press ~INPUT_CONTEXT~ to access ~y~House Actions")
+                                        ESX.ShowHelpNotification("Press ~INPUT_CONTEXT~ to access ~y~Property Actions")
 
                                         if IsControlJustReleased(0, Keys['E']) then
                                             AccessOwnerMenu(property.id)
                                         end
                                     else
-                                        ESX.ShowHelpNotification("House Actions")
+                                        ESX.ShowHelpNotification("Property Actions")
                                     end
                                 end
                             end
@@ -624,13 +624,15 @@ function AccessOwnerMenu(id)
             --{label = 'Purchase Options', value = 'purchase_options'}, Later patch
         }
     end
-
-    table.insert(elements, { label = "Invite Player", value = "invite_player" })
+    if properties[pid].type == 'home' then
+        table.insert(elements, { label = "Invite Player", value = "invite_player" })
+    end
+    
 
     ESX.UI.Menu.CloseAll()
 
     ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'owner_actions', {
-        title    = 'House Actions',
+        title    = 'Property Actions',
         align    = 'top-right',
         elements = elements,
     },
@@ -648,7 +650,7 @@ function AccessOwnerMenu(id)
                              for i = 1, #players, 1 do
                                  local coords = GetEntityCoords(GetPlayerPed(players[i]))
                                  if GetDistanceBetweenCoords(coords, entrance.x, entrance.y, entrance.z,
-                                                             true) <= 10.0 then
+                                                             true) <= 2.5 then
                                      table.insert(playerList, GetPlayerServerId(players[i]))
                                  end
                              end
@@ -921,7 +923,7 @@ AddEventHandler('tcrp_properties:showProperty', function(property)
 
     SetNewWaypoint(coords.x, coords.y)
 
-    exports['mythic_notify']:DoLongHudText('inform', 'House marked on your GPS.')
+    exports['mythic_notify']:DoLongHudText('inform', 'Property marked on your GPS.')
 end)
 
 -- Helper function to find the property root key inside of the properties array based on the database id
@@ -978,19 +980,19 @@ AddEventHandler('tcrp_properties:updateUI',
 
 RegisterNUICallback('save', function(data)
     TriggerServerEvent('tcrp_properties:saveProperty', data)
-    exports['mythic_notify']:DoLongHudText('inform', 'House ' .. data.address .. ' updated.')
+    exports['mythic_notify']:DoLongHudText('inform', 'Property ' .. data.address .. ' updated.')
     TriggerEvent('tcrp_properties:updatePropertiesUI')
 end)
 
 RegisterNUICallback('activate', function(data)
     TriggerServerEvent('tcrp_properties:activateProperty', data.id)
-    exports['mythic_notify']:DoLongHudText('inform', 'House now marked for sale.')
+    exports['mythic_notify']:DoLongHudText('inform', 'Property now marked for sale.')
     TriggerEvent('tcrp_properties:updatePropertiesUI')
 end)
 
 RegisterNUICallback('deactivate', function(data)
     TriggerServerEvent('tcrp_properties:deactivateProperty', data.id)
-    exports['mythic_notify']:DoLongHudText('inform', 'House no longer marked for sale.')
+    exports['mythic_notify']:DoLongHudText('inform', 'Property no longer marked for sale.')
     TriggerEvent('tcrp_properties:updatePropertiesUI')
 end)
 
