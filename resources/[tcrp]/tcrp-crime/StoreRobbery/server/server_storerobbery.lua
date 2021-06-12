@@ -26,22 +26,24 @@ end)
 
 RegisterServerEvent('tcrp-crime:safeSuccess')
 AddEventHandler('tcrp-crime:safeSuccess', function(store)
-    _source = source
-    player = ESX.GetPlayerFromId(_source)
-
-    loot = {}
-    HighValueDrops(loot)
-    MedValueDrops(loot)
-    for k,v in pairs(loot) do
-        print(v)
-        player.addInventoryItem(v, 1)
-    end
-    CashDrop(_source)
-
     
+        _source = source
+        player = ESX.GetPlayerFromId(_source)
 
+        loot = {}
+        HighValueDrops(loot)
+        MedValueDrops(loot)
+        loot = {}
+        for v in pairs(loot) do
+          player.addInventoryItem(v, 1)
+          TriggerClientEvent('esx:showNotification', source,
+          'Obtained ~g~' .. xPlayer.getInventoryItem(v.name).label)
+        end
 
+        CashDrop(_source)
 end)
+
+
 function HighValueDrops(loot)
     local roll = math.random()
     local lastChance = 0
