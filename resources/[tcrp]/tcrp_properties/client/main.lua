@@ -340,6 +340,15 @@ RegisterCommand('syncproperties', function()
     TriggerServerEvent('tcrp_properties:SyncProperties')
 end)
 
+RegisterCommand('fixui', function()
+    SetNuiFocus(false)
+    SendNUIMessage({
+
+        action = "hide"
+    })
+
+end)
+ 
 function EnterProperty(id)
     -- Check if an entity is attached to an entity. If it is, we need to set that attached entities property to the entered property as well
 
