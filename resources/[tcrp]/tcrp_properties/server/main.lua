@@ -37,7 +37,8 @@ AddEventHandler('tcrp_properties:SyncProperties', function()
                 price = v.price,
                 owner = v.owner,
                 zone = v.zone,
-                sell_price = v.sell_price
+                sell_price = v.sell_price,
+                type = v.type
             })
         end
     end
@@ -68,7 +69,8 @@ AddEventHandler('tcrp_properties:SyncProperties', function()
                     price = v.price,
                     owner = v.owner,
                     zone = v.zone,
-                    sell_price = v.sell_price
+                    sell_price = v.sell_price,
+                    type = v.type
                 })
             end
         end
@@ -102,7 +104,8 @@ AddEventHandler('tcrp_properties:SyncProperties', function()
                     price = v.price,
                     owner = v.owner,
                     zone = v.zone,
-                    sell_price = v.sell_price
+                    sell_price = v.sell_price,
+                    type = v.type
                 })
             end
         end
@@ -135,7 +138,8 @@ AddEventHandler('tcrp_properties:SyncProperties', function()
                     price = v.price,
                     owner = v.owner,
                     zone = v.zone,
-                    sell_price = v.sell_price
+                    sell_price = v.sell_price,
+                    type = v.type
                 })
             end
         end
@@ -1126,7 +1130,7 @@ AddEventHandler('tcrp_properties:sellProperty',
     sendSyncProperties()
     TriggerClientEvent('mythic_notify:client:SendAlert', xPlayer.source, {
         type = 'inform',
-        text = 'You\'ve been given keys to a house.'
+        text = 'You\'ve been given keys to a property.'
     })
 end)
 
@@ -1183,7 +1187,7 @@ AddEventHandler('tcrp_properties:buyBackProperty',
             TriggerClientEvent('mythic_notify:client:SendAlert', found, {
                 type = 'inform',
                 text = 'You\'ve been given ' .. refund_amount ..
-                    ' for your house.'
+                    ' for your property.'
             })
         else
             UpdatePlayerBank(owner, refund_amount)

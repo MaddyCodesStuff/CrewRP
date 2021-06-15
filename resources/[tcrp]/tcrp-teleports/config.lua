@@ -1345,4 +1345,29 @@ Config.Elevators    = {
          }, 
      },
     },
+    { -- Bahama Outside 
+    name    = "Bahama Mamas Front",
+    Pos     = { x = -1389.37, y = -592.17, z = 30.32 },
+    options = {
+         {
+            label   = "Bar",
+            name    = "Bar",
+            pos     = { x = -1385.45, y = -606.67, z = 29.32 },
+            heading = 122.41,
+         }, 
+     },
+    },
+
+    { -- Bahama Behind
+    name    = "Bahama Mamas Bar",
+    Pos     = { x = -1385.11, y = -606.48, z = 30.32 },
+    options = {
+         {
+            label   = "Front Door",
+            name    = "Front Door",
+            pos     = { x = -1389.57, y = -591.71, z = 29.32 },
+            heading = 33.47,
+         }, 
+     },
+    },
 }
