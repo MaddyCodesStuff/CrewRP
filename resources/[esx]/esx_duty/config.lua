@@ -14,7 +14,7 @@ Config.Zones        = {
     },
 
     PoliceDutyLS        = {
-        Pos   = { x = 444.52, y = -979.82, z = 29.70 },
+        Pos   = { x = 458.81, y = -997.74, z = 29.70 },
         Size  = { x = 1.5, y = 1.5, z = 1.5 },
         Color = { r = 0, g = 0, b = 255 },
         Type  = 27,
