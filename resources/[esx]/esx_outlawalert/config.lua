@@ -56,6 +56,7 @@ Config.WhitelistedWeapons = {
     'WEAPON_MOLOTOV',
     'WEAPON_FIREEXTINGUISHER',
     'WEAPON_STICKYBOMB',
+    "WEAPON_SMOKEGRENADE",
 }
 
 Config.GunshotAlertDelay  = 10
