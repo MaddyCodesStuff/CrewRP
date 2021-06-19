@@ -11,4 +11,4 @@ end)
 --Defines Weapon-Wheel Name for Weapon
  
 SetFlashLightKeepOnWhileMoving(true)
-SetWeaponNoAutoswap(true)
+SetWeaponsNoAutoswap(true)
