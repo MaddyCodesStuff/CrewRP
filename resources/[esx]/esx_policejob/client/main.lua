@@ -493,6 +493,7 @@ function OpenPoliceActionsMenu()
 		{ label = "Fines & Jail", value = 'jail_menu' },
 		{ label = _U('vehicle_interaction'), value = 'vehicle_interaction' },
 		{ label = _U('object_spawner'), value = 'object_spawner' },
+		{ label = 'Clock Off', value = 'mobile_clockinoff' },
 	}
 
 	if (exports['esx-radios'].isDedicatedDispatch()) then
@@ -842,6 +843,23 @@ function OpenPoliceActionsMenu()
 					end, function(_, menu2)
 						menu2.close()
 					end)
+				elseif data.current.value == 'mobile_clockinoff' then
+					ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'mobile_clockinoff',
+								 {
+									 title    = 'Mobile Clock Off',
+									 align    = 'top-right',
+									 elements = {
+										{ label = 'Clock Off', value = 'clockinoff' }
+	
+									}
+								}, function(data, menu)
+	
+							if data.current.value == 'clockinoff' then
+								TriggerEvent('duty:onoff')
+							end
+					   end, function(data, menu)
+						   menu.close()
+				end)
 			end
 		
 	
