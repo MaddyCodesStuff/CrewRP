@@ -5,10 +5,8 @@ TriggerEvent('esx:getSharedObject', function(obj)
 end)
 
 if GetCurrentResourceName() == 'Lenzh_chopshop' then
-
-    print("\n###############################")
     print("\n" .. GetCurrentResourceName() .. " Loaded ")
-    print("\n###############################")
+    
 
     ESX.RegisterServerCallback('Lenzh_chopshop:anycops', function(source, cb)
         local anycops    = 0
@@ -88,9 +86,4 @@ if GetCurrentResourceName() == 'Lenzh_chopshop' then
                            { type = 'success', text = _U('sold', amount, xItem.label,
                                                          ESX.Math.GroupDigits(price)), length = 10000 })
     end)
-else
-    print("\n###############################")
-    print("\n DO NOT RENAME MY CHOPSHOP FUCKERS... Change it " .. GetCurrentResourceName() .. " should be:\n" .. 'Lenzh_chopshop')
-    print("\n###############################")
 
-end
