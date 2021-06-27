@@ -48,7 +48,7 @@ Config.Zones                    = {
     Chopshop6 = { coords = vector3(464.73, -1315.15,
                                    29.23), name = _U('map_blip'), color = 49, sprite = 225, radius = 100.0, Pos = { x = 464.73, y = -1315.15, z = 29.23 }, Size = { x = 5.0, y = 5.0, z = 0.5 }, locationName = "Little Bighorn", },
     Chopshop7 = { coords = vector3(1010.52, -114.63,
-                                   73.92, name = _U('map_blip'), color = 49, sprite = 225, radius = 100.0, Pos = { x = 1010.52, y = -114.63, z = 73.92 }, Size = { x = 5.0, y = 5.0, z = 0.5 }, locationName = "Mirror Park Blvd", },                                                        
+                                   73.92), name = _U('map_blip'), color = 49, sprite = 225, radius = 100.0, Pos = { x = 1010.52, y = -114.63, z = 73.92 }, Size = { x = 5.0, y = 5.0, z = 0.5 }, locationName = "Mirror Park Blvd", },                                                        
     Shop      = { coords = vector3(-55.42, 6392.8,
                                    30.5), name = _U('map_blip_shop'), color = 50, sprite = 120, radius = 25.0, Pos = { x = -55.42, y = 6392.8, z = 30.5 }, Size = { x = 3.0, y = 3.0, z = 1.0 }, },
 }
@@ -62,7 +62,7 @@ Config.Items                    = {
     "stockrim",
     "airbag",
     "highradio",
-    "highrim"
+    "highrim",
 }
 
 Config.Itemsprice               = {
@@ -72,7 +72,7 @@ Config.Itemsprice               = {
     stockrim  = 125,
     highrim   = 175,
     airbag    = 110,
-    plastic   = 5
+    plastic   = 5,
 }
 
 Config.Itemschance              = {

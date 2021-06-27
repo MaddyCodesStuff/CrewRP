@@ -3,11 +3,6 @@ ESX = nil
 TriggerEvent('esx:getSharedObject', function(obj)
     ESX = obj
 end)
-
-if GetCurrentResourceName() == 'Lenzh_chopshop' then
-    print("\n" .. GetCurrentResourceName() .. " Loaded ")
-    
-
     ESX.RegisterServerCallback('Lenzh_chopshop:anycops', function(source, cb)
         local anycops    = 0
         local playerList = GetPlayers()
