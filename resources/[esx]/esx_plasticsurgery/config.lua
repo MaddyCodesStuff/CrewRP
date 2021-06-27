@@ -13,7 +13,7 @@ Config.BlipPlasticSurgery   = {
     Scale   = 1.0
 }
 
-Config.Price                = 500 -- Edit to your liking.
+Config.Price                = 0 -- Edit to your liking.
 
 Config.EnableUnemployedOnly = false -- If true it will only show Blips to Unemployed Players | false shows it to Everyone.
 Config.EnableBlips          = true -- If true then it will show blips | false does the Opposite.

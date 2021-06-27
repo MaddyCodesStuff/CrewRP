@@ -227,41 +227,6 @@ Config.Elevators    = {
             },
         },
     },
-    { -- Helmuts Outside
-        name    = "helmuts",
-        Pos     = { x = -247.62, y = 6213.10, z = 31.94 },
-        options = {
-            {
-                label   = "Inside",
-                name    = "helmutsinside1",
-                pos     = { x = -246.44, y = 6214.43, z = 30.95, h = 315 },
-            },
-        },
-    },
-    { -- Helmuts Inside
-        name    = "helmutsinside1",
-        Pos     = { x = -246.44, y = 6214.43, z = 31.95 },
-        options = {
-            {
-                label   = "Outside",
-                name    = "helmuts",
-                pos     = { x = -247.62, y = 6213.10, z = 30.94, h = 121 },
-            },
-        },
-    },
-
-    { -- Helmuts Inside Garage
-    name    = "Helmut's Garage",
-    Pos     = { x = -239.14, y = 6230.27, z = 31.51 },
-    options = {
-        {
-            label   = "Inside",
-            name    = "helmuts",
-            pos     = { x = -233.61, y = 6225.27, z = 31.52, h = 121 },
-            heading = 223.78,
-        },
-    },
-},
 
     
     { -- Galaxy Outside

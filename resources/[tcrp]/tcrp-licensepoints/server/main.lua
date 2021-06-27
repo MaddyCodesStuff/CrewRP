@@ -109,12 +109,16 @@ RegisterNetEvent('tcrp-licensepoints:addPointsByType')
 AddEventHandler('tcrp-licensepoints:addPointsByType', function(target, license_type, points)
     local _source = source
     TriggerEvent('esx_license:getLicenseID', target, license_type, function(license_id)
-        local license = addLicensePoints(license_id, points)
-        if license and license.points then
-            for _, player in ipairs({_source, target}) do
-                TriggerClientEvent('tcrp-licensepoints:notifyPoints', player, license_type, license.points)
-                if license.suspended_until ~= 0 then
-                    TriggerClientEvent('tcrp-licensepoints:notifySuspend', player, license_type)
+        if license_id == false then
+            TriggerClientEvent('tcrp-licensepoints:notifyNoLicense', _source)
+        else
+            local license = addLicensePoints(license_id, points)
+            if license and license.points then
+                for _, player in ipairs({_source, target}) do
+                    TriggerClientEvent('tcrp-licensepoints:notifyPoints', player, license_type, license.points)
+                    if license.suspended_until ~= 0 then
+                        TriggerClientEvent('tcrp-licensepoints:notifySuspend', player, license_type)
+                    end
                 end
             end
         end
