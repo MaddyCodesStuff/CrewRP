@@ -106,7 +106,7 @@ function createBlip(id)
 		ShowHeadingIndicatorOnBlip(blip, true) -- Player Blip indicator
 		SetBlipRotation(blip, math.ceil(GetEntityHeading(ped))) -- update rotation
 		SetBlipNameToPlayerName(blip, id) -- update blip name
-		SetBlipScale(blip, 0.85) -- set scale
+		SetBlipScale(blip, 1.0) -- set scale
 		SetBlipAsShortRange(blip, true)
 
 		table.insert(blipsAmbulance, blip) -- add blip to array so we can remove it later

@@ -689,7 +689,7 @@ Citizen.CreateThread(function()
     EndTextCommandSetBlipName(blip)
   end
 
-  for k, v in pairs(Config.VehicleSpawners) do
+  --[[for k, v in pairs(Config.VehicleSpawners) do
     local blip = AddBlipForCoord(v.Pos.x, v.Pos.y, v.Pos.z)
     SetBlipSprite(blip, v.Blip.Sprite)
     SetBlipDisplay(blip, 4)
@@ -701,7 +701,7 @@ Citizen.CreateThread(function()
     EndTextCommandSetBlipName(blip)
   end
   --end
-end)
+end)]]--
 
 -- Display markers
 Citizen.CreateThread(function()

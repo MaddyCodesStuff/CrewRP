@@ -346,8 +346,6 @@ Config.Zones            = {
             },
         },
         Color     = { r = 255, g = 0, b = 0 },
-        BlipColor = 1,
-        Blip      = 94,
         Pos       = {
             { x = -928.25, y = -2937.32, z = 12.95 },
         }

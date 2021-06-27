@@ -477,8 +477,8 @@ Citizen.CreateThread(function()
     for k, v in pairs(Config.Zones) do
         if v.ShowBlip then
             local blip = AddBlipForCoord(v.Pos.x, v.Pos.y, v.Pos.z)
-            SetBlipSprite(blip, 72)
-            SetBlipScale(blip, 0.8)
+            SetBlipSprite(blip, 446)
+            SetBlipScale(blip, 1.0)
             SetBlipAsShortRange(blip, true)
             BeginTextCommandSetBlipName("STRING")
             AddTextComponentString(v.Name)

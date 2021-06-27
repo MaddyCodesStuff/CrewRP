@@ -24,8 +24,8 @@ Citizen.CreateThread(function()
 	
 		SetBlipSprite (mainblip, 318)
 		SetBlipDisplay(mainblip, 4)
-		SetBlipScale  (mainblip, 1.2)
-		SetBlipColour (mainblip, 5)
+		SetBlipScale  (mainblip, 1.0)
+		SetBlipColour (mainblip, 40)
 		SetBlipAsShortRange(mainblip, true)
 	
 		BeginTextCommandSetBlipName("STRING")
@@ -167,8 +167,8 @@ AddEventHandler('esx_garbagecrew:jobmarkers', function()
 
 	SetBlipSprite (mainblip, 318)
 	SetBlipDisplay(mainblip, 4)
-	SetBlipScale  (mainblip, 1.2)
-	SetBlipColour (mainblip, 5)
+	SetBlipScale  (mainblip, 1.0)
+	SetBlipColour (mainblip, 40)
 	SetBlipAsShortRange(mainblip, true)
 
 	BeginTextCommandSetBlipName("STRING")

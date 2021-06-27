@@ -110,7 +110,7 @@ AddEventHandler('tcrp_dirtydumpsters:updateDumpsters', function(dumps)
             dumpsterBlips[k] = AddBlipForCoord(coords.x, coords.y, coords.z)
             SetBlipSprite(dumpsterBlips[k], 467)
             SetBlipDisplay(dumpsterBlips[k], 4)
-            SetBlipScale(dumpsterBlips[k], 1.0)
+            SetBlipScale(dumpsterBlips[k], 0.7)
             SetBlipAsShortRange(dumpsterBlips[k], true)
 
             BeginTextCommandSetBlipName("STRING")

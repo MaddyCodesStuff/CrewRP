@@ -402,7 +402,7 @@ Citizen.CreateThread(function()
     SetBlipAsShortRange(miningBlip, true)
 
     BeginTextCommandSetBlipName("STRING")
-    AddTextComponentString('[HOBBY] Mining')
+    AddTextComponentString('Mining')
     EndTextCommandSetBlipName(miningBlip)
 
     local smeltingBlip = AddBlipForCoord(Config.Smelting.coords.x, Config.Smelting.coords.y, Config.Smelting.coords.z)
@@ -413,7 +413,7 @@ Citizen.CreateThread(function()
     SetBlipAsShortRange(smeltingBlip, true)
 
     BeginTextCommandSetBlipName("STRING")
-    AddTextComponentString('[HOBBY] Rock Smelting')
+    AddTextComponentString('Rock Smelting')
     EndTextCommandSetBlipName(smeltingBlip)
 
     local cloakBlip = AddBlipForCoord(892.35, -2172.77, 31.28)
@@ -424,7 +424,7 @@ Citizen.CreateThread(function()
     SetBlipAsShortRange(cloakBlip, true)
 
     BeginTextCommandSetBlipName("STRING")
-    AddTextComponentString('[HOBBY] Mining Changeroom')
+    AddTextComponentString('Mining Changeroom')
     EndTextCommandSetBlipName(cloakBlip)
 end)
 
