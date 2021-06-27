@@ -227,7 +227,6 @@ Config.Elevators    = {
             },
         },
     },
-},
 
     
     { -- Galaxy Outside
