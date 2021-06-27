@@ -116,8 +116,8 @@ Citizen.CreateThread(function()
         local ve   = v.position
 
         local blip = AddBlipForCoord(ve.x, ve.y, ve.z)
-        SetBlipSprite(blip, 439)
-        SetBlipScale(blip, 0.8)
+        SetBlipSprite(blip, 617)
+        SetBlipScale(blip, 1.0)
         SetBlipAsShortRange(blip, true)
         BeginTextCommandSetBlipName("STRING")
         AddTextComponentString(_U('shop_robbery'))
@@ -292,20 +292,6 @@ Citizen.CreateThread(function()
                 TaskPlayAnim(PlayerPedId(), 'missheist_jewel', 'smash_case', 8.0, 8.0, -1, 17, 1, false, false, false)
             end
         end
-    end
-end)
-
-RegisterNetEvent("lester:createBlip")
-AddEventHandler("lester:createBlip", function(type, x, y, z)
-    local blip = AddBlipForCoord(x, y, z)
-    SetBlipSprite(blip, type)
-    SetBlipColour(blip, 1)
-    SetBlipScale(blip, 0.8)
-    SetBlipAsShortRange(blip, true)
-    if (type == 77) then
-        BeginTextCommandSetBlipName("STRING")
-        AddTextComponentString("Lester")
-        EndTextCommandSetBlipName(blip)
     end
 end)
 

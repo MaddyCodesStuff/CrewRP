@@ -332,7 +332,7 @@ Citizen.CreateThread(function()
 
 				SetBlipSprite(garageBlip, 357)
 				SetBlipDisplay(garageBlip, 4)
-				SetBlipScale (garageBlip, 0.8)
+				SetBlipScale (garageBlip, 0.7)
 
 				SetBlipAsShortRange(garageBlip, true)
 				BeginTextCommandSetBlipName("STRING")
@@ -355,19 +355,19 @@ Citizen.CreateThread(function()
 				if garage:find("AIRPORT", 1, true) then
 					SetBlipSprite(garageBlip, 359)
 					SetBlipColour(garageBlip, 46)
-					AddTextComponentString("Public Air Garage")
+					AddTextComponentString("Public Hangar")
 				elseif garage:find("DOCK", 1, true) then
 					SetBlipSprite(garageBlip, 356)
 					SetBlipColour(garageBlip, 49)
-					AddTextComponentString("Public Boat Garage")
+					AddTextComponentString("Public Docks")
 				else
 					SetBlipSprite(garageBlip, 357)
 					SetBlipColour(garageBlip, 67)
-					AddTextComponentString("Public Garage")
+					AddTextComponentString("Public Parking")
 				end
 				
 				SetBlipDisplay(garageBlip, 4)
-				SetBlipScale (garageBlip, 0.8)
+				SetBlipScale (garageBlip, 0.7)
 
 				SetBlipAsShortRange(garageBlip, true)
 
@@ -383,7 +383,7 @@ Citizen.CreateThread(function()
 
 						SetBlipSprite(garageBlip, 357)
 						SetBlipDisplay(garageBlip, 4)
-						SetBlipScale (garageBlip, 0.8)
+						SetBlipScale (garageBlip, 0.7)
 
 						SetBlipAsShortRange(garageBlip, true)
 						BeginTextCommandSetBlipName("STRING")
@@ -596,7 +596,7 @@ AddEventHandler('AS_SimpleGarage-main:updateOwnedProperties', function()
 
 			SetBlipSprite(garageBlip, 357)
 			SetBlipDisplay(garageBlip, 4)
-			SetBlipScale (garageBlip, 0.8)
+			SetBlipScale (garageBlip, 0.7)
 
 			SetBlipAsShortRange(garageBlip, true)
 			BeginTextCommandSetBlipName("STRING")
@@ -626,7 +626,7 @@ AddEventHandler('AS_SimpleGarage-main:updateOwnedProperties', function()
 
 					SetBlipSprite(garageBlip, 357)
 					SetBlipDisplay(garageBlip, 4)
-					SetBlipScale (garageBlip, 0.8)
+					SetBlipScale (garageBlip, 0.7)
 
 					SetBlipAsShortRange(garageBlip, true)
 					BeginTextCommandSetBlipName("STRING")

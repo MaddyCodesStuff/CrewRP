@@ -418,7 +418,7 @@ Config = {
             ["blip"]     = {
                 ["x"]      = 2739.43, ["y"] = 3480.25, ["z"] = 55.67,
                 ["text"]   = "Hardware Store",
-                ["sprite"] = 619,
+                ["sprite"] = 566,
                 ["color"]  = 47,
             },
             ["rob_dist"] = 30.0,
@@ -452,8 +452,8 @@ Config = {
                 { ["x"] = -1195.29, ["y"] = -893.62, ["z"] = 14.0, ["value"] = "checkout" },
             },
             ["blip"]     = {
-                ["sprite"] = 106,
-                ["color"]  = 2,
+                ["sprite"] = 628,
+                ["color"]  = 17,
                 ["x"]      = -1191.43, ["y"] = -890.27, ["z"] = 14.0,
                 ["text"]   = "Burgershot",
             },
@@ -471,10 +471,10 @@ Config = {
                 { ["x"] = -620.85, ["y"] = 230.15, ["z"] = 81.89, ["value"] = "cafebean" },
             },
             ["blip"]     = {
-                ["sprite"] = 89,
+                ["sprite"] = 628,
                 ["color"]  = 31,
                 ["x"]      = -627.64, ["y"] = 235.25, ["z"] = 81.88,
-                ["text"]   = "Coffee Shop",
+                ["text"]   = "Coffee",
             },
             ["rob_dist"] = 15.0,
         }, -- Done
@@ -582,10 +582,10 @@ Config = {
                 { ["x"] = 9.17, ["y"] = -1605.15, ["z"] = 29.38, ["value"] = "checkout" }
             },
             ["blip"]     = {
-                ["sprite"] = 79,
-                ["color"]  = 64,
+                ["sprite"] = 431,
+                ["color"]  = 66,
                 ["x"]      = 11.54, ["y"] = -1606.48, ["z"] = 29.4,
-                ["text"]   = "Tacos",
+                ["text"]   = "Restaurant",
             },
             ["rob_dist"] = 15.0,
         },
@@ -595,8 +595,8 @@ Config = {
                 { ["x"] = -159.57, ["y"] = -241.32, ["z"] = 44.45, ["value"] = "checkout" },
             },
             ["blip"]     = {
-                ["sprite"] = 106,
-                ["color"]  = 2,
+                ["sprite"] = 628,
+                ["color"]  = 17,
                 ["x"]      = -162.57, ["y"] = -241.77, ["z"] = 43.45,
                 ["text"]   = "Burgershot",
             },
@@ -644,10 +644,10 @@ Config = {
                 { ["x"] = -2182.26, ["y"] = 4286.14, ["z"] = 49.18, ["value"] = "snacks" },
             },
             ["blip"]     = {
-                ["sprite"] = 80,
-                ["color"]  = 2,
+                ["sprite"] = 431,
+                ["color"]  = 66,
                 ["x"]      = -2185.58, ["y"] = 4286.43, ["z"] = 49.18,
-                ["text"]   = "Hookies",
+                ["text"]   = "Restaurant",
             },
             ["rob_dist"] = 22.0,
         }, -- Done
@@ -659,10 +659,10 @@ Config = {
                 { ["x"] = 1585.53, ["y"] = 6459.05, ["z"] = 26.01, ["value"] = "snacks" },
             },
             ["blip"]     = {
-                ["sprite"] = 267,
-                ["color"]  = 2,
+                ["sprite"] = 431,
+                ["color"]  = 66,
                 ["x"]      = 1590.43, ["y"] = 6458.01, ["z"] = 26.01,
-                ["text"]   = "Pop's Diner",
+                ["text"]   = "Restaurant",
             },
             ["rob_dist"] = 16.0,
         }, -- Done
@@ -673,10 +673,10 @@ Config = {
             },
 
             ["blip"]     = {
-                ["sprite"] = 80,
-                ["color"]  = 61,
+                ["sprite"] = 431,
+                ["color"]  = 66,
                 ["x"]      = 218.02, ["y"] = -871.48, ["z"] = 30.49,
-                ["text"]   = "Hotdogs",
+                ["text"]   = "Restaurant",
             },
             ["rob_dist"] = 13.0,
         }, -- Done
@@ -693,10 +693,10 @@ Config = {
             },
 
             ["blip"]     = {
-                ["sprite"] = 267,
-                ["color"]  = 29,
+                ["sprite"] = 431,
+                ["color"]  = 66,
                 ["x"]      = -1839.93, ["y"] = -1188.04, ["z"] = 13.30,
-                ["text"]   = "Pearls",
+                ["text"]   = "Restaurant",
             },
             ["rob_dist"] = 30.0,
         }, -- Done
@@ -725,10 +725,10 @@ Config = {
             },
 
             ["blip"]     = {
-                ["sprite"] = 89,
+                ["sprite"] = 628,
                 ["color"]  = 31,
                 ["x"]      = 238.88, ["y"] = -560.48, ["z"] = 43.28,
-                ["text"]   = "Coffee Cart",
+                ["text"]   = "Coffee",
             },
             ["rob_dist"] = 10.0,
         }, -- Done
@@ -744,7 +744,7 @@ Config = {
             },
 
             ["blip"]     = {
-                ["sprite"] = 89,
+                ["sprite"] = 628,
                 ["color"]  = 84,
                 ["x"]      = -465.24, ["y"] = -28.57, ["z"] = 45.76,
                 ["text"]   = "Icecream",
@@ -758,7 +758,7 @@ Config = {
             },
 
             ["blip"]     = {
-                ["sprite"] = 89,
+                ["sprite"] = 628,
                 ["color"]  = 84,
                 ["x"]      = 352.65, ["y"] = -583.48, ["z"] = 28.79,
                 ["text"]   = "Icecream",
@@ -775,7 +775,7 @@ Config = {
             },
 
             ["blip"]     = {
-                ["sprite"] = 0,
+                ["sprite"] = -1,
                 ["color"]  = 0,
                 ["x"]      = 1777.12, ["y"] = 2587.89, ["z"] = 45.71,
                 ["text"]   = "Prison",
@@ -789,7 +789,7 @@ Config = {
             },
 
             ["blip"]     = {
-                ["sprite"] = 89,
+                ["sprite"] = 628,
                 ["color"]  = 84,
                 ["x"]      = -265.04, ["y"] = 6320.53, ["z"] = 32.42,
                 ["text"]   = "Icecream",
@@ -816,7 +816,7 @@ Config = {
                 { ["x"] = -1183.39, ["y"] = -1195.02, ["z"] = 7.79, ["value"] = "flowers" },
             },
             ["blip"]     = {
-                ["sprite"] = 88,
+                ["sprite"] = 431,
                 ["color"]  = 7,
                 ["x"]      = -1183.39, ["y"] = -1195.02, ["z"] = 6.29,
                 ["text"]   = "Cindy's Flowers",
@@ -830,7 +830,7 @@ Config = {
                 --{ ["x"] = 158.23, ["y"] = 6655.77, ["z"] = 31.67, ["value"] = "lockpicks" },
             },
             ["blip"]     = {
-                ["sprite"] = 619,
+                ["sprite"] = 566,
                 ["color"]  = 47,
                 ["x"]      = 157.41, ["y"] = 6650.10, ["z"] = 31.67,
                 ["text"]   = "Hardware Store",
