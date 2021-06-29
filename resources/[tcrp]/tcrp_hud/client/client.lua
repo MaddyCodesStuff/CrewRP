@@ -67,6 +67,17 @@ RegisterCommand('mmap', function(source, args, rawCommand)
     end
 end)
 
+RegisterCommand('hud', function()
+    if showUi then
+        showUi = false
+        TriggerEvent('tcrphud:toggleHud', false)
+    else
+        showUi = true
+        TriggerEvent('tcrphud:toggleHud', true)
+    end
+
+end)
+
 RegisterNetEvent('esx:playerLoaded')
 AddEventHandler('esx:playerLoaded', function()
     ToggleUI()
