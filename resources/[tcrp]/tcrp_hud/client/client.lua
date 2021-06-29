@@ -55,7 +55,7 @@ function updateHUD()
 end
 
 RegisterCommand('mmap', function(source, args, rawCommand)
-    if not inVehicle then
+    if inVehicle then
         toggleMap = not toggleMap
         DisplayRadar(toggleMap)
         SendNUIMessage({
