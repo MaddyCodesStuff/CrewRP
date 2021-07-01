@@ -99,7 +99,7 @@ Citizen.CreateThread(function()
     SetBlipAsShortRange(wineryBlip, true)
 
     BeginTextCommandSetBlipName("STRING")
-    AddTextComponentString('Hobby - Wine Harvesting')
+    AddTextComponentString("Wine Harvesting")
     EndTextCommandSetBlipName(wineryBlip)
 
     local winemakingBlip = AddBlipForCoord(Config.FineWine.pos.x, Config.FineWine.pos.y, Config.FineWine.pos.z)
@@ -110,7 +110,7 @@ Citizen.CreateThread(function()
     SetBlipAsShortRange(winemakingBlip, true)
 
     BeginTextCommandSetBlipName("STRING")
-    AddTextComponentString('Hobby - Wine Making')
+    AddTextComponentString('Wine Making')
     EndTextCommandSetBlipName(winemakingBlip)
 end)
 
