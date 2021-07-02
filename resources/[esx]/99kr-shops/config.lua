@@ -453,9 +453,9 @@ Config = {
             },
             ["blip"]     = {
                 ["sprite"] = 628,
-                ["color"]  = 17,
+                ["color"]  = 66,
                 ["x"]      = -1191.43, ["y"] = -890.27, ["z"] = 14.0,
-                ["text"]   = "Burgershot",
+                ["text"]   = "Restaurant",
             },
             ["cashier"]  = {
                 ["x"]    = -1194.01, ["y"] = -895.56, ["z"] = 13.0, ["h"] = 308.71,
@@ -589,7 +589,7 @@ Config = {
             },
             ["rob_dist"] = 15.0,
         },
-        [32] = { -- Burgershot @ Bowling Alley
+       --[[ [32] = { -- Burgershot @ Bowling Alley
             ["shelfs"]   = {
                 { ["x"] = -162.57, ["y"] = -241.77, ["z"] = 44.45, ["value"] = "burgershot" },
                 { ["x"] = -159.57, ["y"] = -241.32, ["z"] = 44.45, ["value"] = "checkout" },
@@ -601,7 +601,7 @@ Config = {
                 ["text"]   = "Burgershot",
             },
             ["rob_dist"] = 20.0,
-        }, -- Done
+        }, --]] Done
         [33] = { -- Lodge Store
             ["shelfs"]   = {
                 { ["x"] = -676.79, ["y"] = 5834.67, ["z"] = 17.33, ["value"] = "checkout" },
@@ -714,7 +714,7 @@ Config = {
                 ["sprite"] = 93,
                 ["color"]  = 47,
                 ["x"]      = -688.19, ["y"] = 5796.17, ["z"] = 17.33,
-                ["text"]   = "Bayview Lodge",
+                ["text"]   = "Bar",
             },
             ["rob_dist"] = 23.0,
         }, -- Done
@@ -849,7 +849,7 @@ Config = {
                 ["sprite"] = 93,
                 ["color"]  = 47,
                 ["x"]      = 838.11, ["y"] = -112.96, ["z"] = 79.77,
-                ["text"]   = "O'Connors",
+                ["text"]   = "Bar",
             },
             ["rob_dist"] = 30.0,
         },
