@@ -20,7 +20,7 @@ for _, v in ipairs(Config.Processing) do
 		local blip = AddBlipForCoord(v.pos)
 		SetBlipSprite (blip, v.blip)
 		SetBlipDisplay(blip, 4)
-		SetBlipScale  (blip, 1.0)
+		SetBlipScale  (blip, 0.8)
 		SetBlipColour (blip, v.colour)
 		SetBlipAsShortRange(blip, true)
 		BeginTextCommandSetBlipName("STRING")

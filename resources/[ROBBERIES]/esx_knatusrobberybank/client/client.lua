@@ -235,7 +235,7 @@ Citizen.CreateThread(function()
         local blip = AddBlipForCoord(ve.x, ve.y, ve.z)
         SetBlipSprite(blip, 500)--156
         SetBlipScale(blip, 1.0)
-        SetBlipColour(blip, 75)
+        SetBlipColour(blip, 69)
         SetBlipAsShortRange(blip, true)
         BeginTextCommandSetBlipName("STRING")
         AddTextComponentString(_U('bank_robbery'))

@@ -38,6 +38,7 @@ end
 function Blips.CreateAndInitBlip(coords, blipLabel)
     local blip = AddBlipForCoord(coords.x, coords.y, coords.z)
     SetBlipSprite(blip, 513)
+    SetBlipScale(blip, 0.8)
     SetBlipAsShortRange(blip, true)
     BeginTextCommandSetBlipName('STRING')
     AddTextComponentString(blipLabel)

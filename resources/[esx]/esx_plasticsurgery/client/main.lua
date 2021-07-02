@@ -209,38 +209,19 @@ end
 
 function refreshBlips()
     if Config.EnableBlips then
-        if Config.EnableUnemployedOnly then
-            if ESX.PlayerData.job ~= nil and ESX.PlayerData.job.name == 'unemployed' or ESX.PlayerData.job ~= nil and ESX.PlayerData.job.name == 'gang' then
-                for k, v in pairs(Config.Locations) do
-                    local blip = AddBlipForCoord(v.x, v.y)
+        for k, v in pairs(Config.Locations) do
+            local blip = AddBlipForCoord(v.x, v.y)
 
-                    SetBlipSprite(blip, Config.BlipPlasticSurgery.Sprite)
-                    SetBlipDisplay(blip, Config.BlipPlasticSurgery.Display)
-                    SetBlipScale(blip, Config.BlipPlasticSurgery.Scale)
-                    SetBlipColour(blip, Config.BlipPlasticSurgery.Color)
-                    SetBlipAsShortRange(blip, true)
+            SetBlipSprite(blip, Config.BlipPlasticSurgery.Sprite)
+            SetBlipDisplay(blip, Config.BlipPlasticSurgery.Display)
+            SetBlipScale(blip, Config.BlipPlasticSurgery.Scale)
+            SetBlipColour(blip, Config.BlipPlasticSurgery.Color)
+            SetBlipAsShortRange(blip, true)
 
-                    BeginTextCommandSetBlipName("STRING")
-                    AddTextComponentString(_U('blip_plastic_surgery'))
-                    EndTextCommandSetBlipName(blip)
-                    table.insert(BlipList, blip)
-                end
-            end
-        else
-            for k, v in pairs(Config.Locations) do
-                local blip = AddBlipForCoord(v.x, v.y)
-
-                SetBlipSprite(blip, Config.BlipPlasticSurgery.Sprite)
-                SetBlipDisplay(blip, Config.BlipPlasticSurgery.Display)
-                SetBlipScale(blip, Config.BlipPlasticSurgery.Scale)
-                SetBlipColour(blip, Config.BlipPlasticSurgery.Color)
-                SetBlipAsShortRange(blip, true)
-
-                BeginTextCommandSetBlipName("STRING")
-                AddTextComponentString(_U('blip_plastic_surgery'))
-                EndTextCommandSetBlipName(blip)
-                table.insert(BlipList, blip)
-            end
+            BeginTextCommandSetBlipName("STRING")
+            AddTextComponentString(_U('blip_plastic_surgery'))
+            EndTextCommandSetBlipName(blip)
+            table.insert(BlipList, blip)
         end
     end
 end

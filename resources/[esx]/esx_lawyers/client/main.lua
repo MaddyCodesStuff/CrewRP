@@ -193,15 +193,26 @@ end)
 Citizen.CreateThread(function()
     local blip = AddBlipForCoord(-66.63, -802.33, 44.23)
 
-    SetBlipSprite(blip, 408)
+    SetBlipSprite(blip, 525)
     SetBlipDisplay(blip, 4)
     SetBlipScale(blip, 1.0)
-    SetBlipColour(blip, 11)
+    SetBlipColour(blip, 62)
     SetBlipAsShortRange(blip, true)
 
     BeginTextCommandSetBlipName("STRING")
     AddTextComponentString('Law Offices')
     EndTextCommandSetBlipName(blip)
+    local blip2 = AddBlipForCoord(-534.88, -221.66, 37.65)
+
+    SetBlipSprite(blip2, 498)
+    SetBlipDisplay(blip2, 4)
+    SetBlipScale(blip2, 1.0)
+    SetBlipColour(blip2, 62)
+    SetBlipAsShortRange(blip2, true)
+
+    BeginTextCommandSetBlipName("STRING")
+    AddTextComponentString('City Hall')
+    EndTextCommandSetBlipName(blip2)
 end)
 
 function OpenInvoiceDetails(id)
