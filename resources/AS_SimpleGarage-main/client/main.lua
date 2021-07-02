@@ -354,15 +354,15 @@ Citizen.CreateThread(function()
 				BeginTextCommandSetBlipName("STRING")
 				if garage:find("AIRPORT", 1, true) then
 					SetBlipSprite(garageBlip, 359)
-					SetBlipColour(garageBlip, 46)
+					SetBlipColour(garageBlip, 33)
 					AddTextComponentString("Public Hangar")
 				elseif garage:find("DOCK", 1, true) then
 					SetBlipSprite(garageBlip, 356)
-					SetBlipColour(garageBlip, 49)
+					SetBlipColour(garageBlip, 42)
 					AddTextComponentString("Public Docks")
 				else
 					SetBlipSprite(garageBlip, 357)
-					SetBlipColour(garageBlip, 67)
+					SetBlipColour(garageBlip, 65)
 					AddTextComponentString("Public Parking")
 				end
 				

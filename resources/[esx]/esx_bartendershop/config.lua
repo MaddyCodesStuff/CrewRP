@@ -226,7 +226,7 @@ Config.Zones        = {
     },
     GalaxyNightclub           = {
         Items     = BoozeToSell,
-        BlipColor = 47,
+        BlipColor = 7,
         Blip      = 136,
         BlipName  = 'Nightclub',
         ShowBlip  = true,
@@ -236,7 +236,7 @@ Config.Zones        = {
     },
     BahamaMamas           = {
         Items     = BoozeToSell,
-        BlipColor = 47,
+        BlipColor = 7,
         Blip      = 136,
         BlipName  = 'Nightclub',
         ShowBlip  = true,
@@ -246,7 +246,7 @@ Config.Zones        = {
     },
     VanillaUnicorn        = {
         Items     = BoozeToSell,
-        BlipColor = 47,
+        BlipColor = 7,
         Blip      = 136,
         BlipName  = 'Nightclub',
         ShowBlip  = true,

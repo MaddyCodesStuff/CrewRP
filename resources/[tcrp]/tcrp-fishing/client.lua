@@ -40,7 +40,7 @@ for _, info in pairs(Config.MarkerZones) do
 	info.blip = AddBlipForCoord(info.Marker)
 	SetBlipSprite(info.blip, 455)
 	SetBlipDisplay(info.blip, 4)
-	SetBlipScale(info.blip, 1.0)
+	SetBlipScale(info.blip, 0.8)
 	SetBlipColour(info.blip, 74)
 	SetBlipAsShortRange(info.blip, true)
 	BeginTextCommandSetBlipName("STRING")
