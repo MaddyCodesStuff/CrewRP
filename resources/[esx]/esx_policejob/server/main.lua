@@ -22,6 +22,25 @@ AddEventHandler('esx_policejob:giveWeapon', function(weapon, ammo)
 	xPlayer.addWeapon(weapon, ammo)
 end)
 
+RegisterServerEvent('esx_policejob:giveItem')
+AddEventHandler('esx_policejob:giveItem', function(itemName)
+	local xPlayer = ESX.GetPlayerFromId(source)
+
+	local xItem = xPlayer.getInventoryItem(itemName)
+	local count = 1
+
+	if xItem.limit ~= -1 then
+		count = xItem.limit - xItem.count
+	end
+
+	if xItem.count < xItem.limit then
+		xPlayer.addInventoryItem(itemName, count)
+		TriggerEvent('mythic_notify:client:SendAlert', {type = 'inform', text = 'Given ' .. count, length = 10000})
+	else
+		TriggerClientEvent('esx:showNotification', source, 'You Cannot Carry Anymore of This Item')
+	end
+end)
+
 RegisterServerEvent('esx_policejob:confiscatePlayerItem')
 AddEventHandler('esx_policejob:confiscatePlayerItem', function(target, itemType, itemName, amount)
 	local _source       = source

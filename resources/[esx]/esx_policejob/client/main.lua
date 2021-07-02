@@ -1892,6 +1892,16 @@ Citizen.CreateThread(function()
 						currentPartNum = i
 					end
 				end
+				
+				for i = 1, #v.PDStore, 1 do
+					if GetDistanceBetweenCoords(coords, v.PDStore[i].x, v.PDStore[i].y, v.PDStore[i].z,
+												true) < Config.MarkerSize.x then
+						isInMarker      = true
+						currentStation = k
+						currentPart     = 'Store'
+						currentPartNum  = i
+					end
+				end
 
 				for i = 1, #v.PDStore, 1 do
 					if GetDistanceBetweenCoords(coords, v.PDStore[i].x, v.PDStore[i].y, v.PDStore[i].z,
