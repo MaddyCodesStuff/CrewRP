@@ -2335,4 +2335,4 @@ function OpenStoreMenu()
 		end, function(data, menu)
 			menu.close()
 		end)
-end 
+end
