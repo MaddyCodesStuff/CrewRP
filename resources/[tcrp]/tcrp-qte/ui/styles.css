@@ -1,0 +1,12 @@
+.quicktimebar{
+    display: hidden;
+    position: absolute;
+    left: 50%;
+    bottom: 175px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 25px;
+    width: fit-content;
+    padding: 5px;
+
+}
