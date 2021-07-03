@@ -647,10 +647,10 @@ Config = {
                 { ["x"] = -159.57, ["y"] = -241.32, ["z"] = 44.45, ["value"] = "checkout" },
             },
             ["blip"]     = {
-                ["sprite"] = -1,
-                ["color"]  = 17,
+                ["sprite"] = 685,
+                ["color"]  = 0,
                 ["x"]      = -162.57, ["y"] = -241.77, ["z"] = 43.45,
-                ["text"]   = "Burgershot",
+                ["text"]   = "Bowling Alley",
             },
             ["rob_dist"] = 20.0,
         }, --]]
@@ -874,8 +874,9 @@ Config = {
             ["blip"]     = {
                 ["sprite"] = 431,
                 ["color"]  = 7,
+                ["scale"]  = 1.2,
                 ["x"]      = -1183.39, ["y"] = -1195.02, ["z"] = 6.29,
-                ["text"]   = "Cindy's Flowers",
+                ["text"]   = "Flower Shop",
             },
             ["rob_dist"] = 13.0,
         }, --Done
