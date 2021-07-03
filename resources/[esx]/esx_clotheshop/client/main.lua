@@ -165,6 +165,7 @@ Citizen.CreateThread(function()
         SetBlipScale(blip, 0.8)
         SetBlipColour(blip, 10)
         SetBlipAsShortRange(blip, true)
+        SetBlipPriority(blip, 9)
 
         BeginTextCommandSetBlipName("STRING")
         AddTextComponentString(_U('clothes'))

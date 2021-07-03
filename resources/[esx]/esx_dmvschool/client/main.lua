@@ -230,6 +230,7 @@ Citizen.CreateThread(function()
 	SetBlipDisplay(blip, 4)
 	SetBlipScale(blip, 1.0)
 	SetBlipAsShortRange(blip, true)
+	SetBlipPriority(blip, 9)
 
 	BeginTextCommandSetBlipName("STRING")
 	AddTextComponentString(_U('driving_school_blip'))

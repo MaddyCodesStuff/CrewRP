@@ -58,6 +58,7 @@ Citizen.CreateThread(function()
         SetBlipColour(blip, 4)
         SetBlipDisplay(blip, 4)
         SetBlipAsShortRange(blip, true)
+        SetBlipPriority(blip, 1)
 
         BeginTextCommandSetBlipName("STRING")
         AddTextComponentString("Gas Station")

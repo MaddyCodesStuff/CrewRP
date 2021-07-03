@@ -252,6 +252,7 @@ Citizen.CreateThread(function()
 		SetBlipScale(blip, v.Blip.Scale)
 		SetBlipColour(blip, v.Blip.Colour)
 		SetBlipAsShortRange(blip, true)
+		SetBlipPriority(blip, 10)
 
 		BeginTextCommandSetBlipName("STRING")
 		AddTextComponentString("Fire Station")
