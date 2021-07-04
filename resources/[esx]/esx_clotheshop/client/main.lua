@@ -118,6 +118,8 @@ function OpenShopMenu()
                      'tshirt_2',
                      'torso_1',
                      'torso_2',
+                     'bproof_1',
+                     'bproof_2',
                      'decals_1',
                      'decals_2',
                      'arms',

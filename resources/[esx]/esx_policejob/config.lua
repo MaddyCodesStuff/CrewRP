@@ -56,6 +56,10 @@ Config.PoliceStations             = {
 			{ x = 474.64, y = -997.03, z = 25.30 },
 		},
 
+		PDStore		  = {
+			{ x = 485.61, y = -995.85, z = 29.70 },
+		},
+
 		-- Vehicles = {
 		-- 	{
 		-- 		Spawner    = { x = 454.69, y = -1017.40, z = 27.50 }, -- Front of PD
@@ -134,6 +138,10 @@ Config.PoliceStations             = {
 			{ x = 1846.73, y = 3680.43, z = 33.27 },
 		},
 
+		PDStore		  = {
+			{ x = 1847.14, y = 3682.85, z = 33.27 },
+		},
+
 		Helicopters       = {
 			--{
 			--	Spawner    = { x = -470.67, y = 6001.42, z = 30.4 },
@@ -182,6 +190,10 @@ Config.PoliceStations             = {
 
 		Armories          = {
 			{ x = -441.51, y = 5987.24, z = 30.62 },
+		},
+
+		PDStore		  = {
+			{ x = -439.7, y = 5991.79, z = 30.72 },
 		},
 
 		Helicopters       = {

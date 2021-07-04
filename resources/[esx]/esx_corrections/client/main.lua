@@ -396,7 +396,8 @@ function OpenCorrectionsActionsMenu()
                          align    = 'top-right',
                          elements = {
                              { label = "Prisoner Interaction", value = "prisoner_menu"},
-                             { label = "Jail Menu", value = "jail_menu"},                
+                             { label = "Jail Menu", value = "jail_menu"},     
+                             { label = 'Clock Off', value = 'mobile_clockinoff' },           
                             
                          }
                      }, function(data, menu)
@@ -455,6 +456,23 @@ function OpenCorrectionsActionsMenu()
                     end, function(_, menu2)
                     menu2.close()
                 end)
+            elseif data.current.value == 'mobile_clockinoff' then
+				ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'mobile_clockinoff',
+							 {
+								 title    = 'Mobile Clock Off',
+								 align    = 'top-right',
+								 elements = {
+									{ label = 'Clock Off', value = 'clockinoff' }
+
+								}
+							}, function(data, menu)
+
+						if data.current.value == 'clockinoff' then
+							TriggerEvent('duty:onoff')
+						end
+				   end, function(data, menu)
+					   menu.close()
+		    end)
             end
             if data.current.value == 'doc_radio_menu' then
                 local elements = {

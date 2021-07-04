@@ -10,6 +10,7 @@ Config.Markers = {
         corrections = { r = 157, b = 157, g = 157 },
         parkranger = { r = 73, b = 84, g = 115 },
         cityclerk = { r = 64, g = 52, b = 235 },
+        humane = { r = 64, g = 52, b = 235 },
     },
     types = {
         car = {
@@ -29,26 +30,27 @@ Config.Markers = {
 
 Config.PDCars = {
     all = {
-        { name = 'LSPD Alamo', model = 'city-alamo', price = 0 },
         { name = 'LSPD Buffalo', model = 'hwy-buffalo', price = 0 },
         { name = 'LSPD Caddy', model = 'pd-caddy', price = 0 },
         { name = 'LSPD Caracara', model = 'emerg-cara', price = 0 },
+        { name = 'LSPD Scorcher', model = 'pdscorcher', price = 0 },
+        { name = 'LSPD Scout', model = 'intscout', price = 0 },
 		{ name = 'Patrol Raiden', model = 'city-raiden', price = 0 },
         { name = 'County Enduro', model = 'county-dirt', price = 0 },
         { name = 'County Yosemite', model = 'county-yo', price = 0 },
-        { name = 'Highway Bullet', model = 'pd-bullet', price = 0 },
         { name = 'Highway Dominator', model = 'hwy-dominator', price = 0 },
 		{ name = 'Highway Hakuchou', model = 'hwy-hak', price = 0 },
         { name = 'Highway Soverign', model = 'hwy-moto', price = 0 },
+        { name = 'Highway Coquette', model = 'hwy-coq', price = 0 },
         { name = 'TAC Granger', model = 'tac-granger', price = 0 },
         { name = 'TAC Insurgent', model = 'tac-insurgent', price = 0 },
 		{ name = 'TAC Mesa', model = 'tac-mesa', price = 0 },
         { name = 'TAC Stockade', model = 'tac-riot', price = 0 },
-        { name = 'Detective Alamo', model = 'det-alamo', price = 0 },
         { name = 'Detective Buffalo', model = 'det-buffals', price = 0 },
         { name = 'Detective Dominator GTX', model = 'det-gtx', price = 0 },
 		{ name = 'Detective Kuruma', model = 'det-kuruma', price = 0 },
 		{ name = 'Detective Stanier', model = 'det-stanier', price = 0 },
+        { name = 'Detective Scout', model = 'truscout', price = 0 },
         { name = 'Undercover Coquette', model = 'det-coq', price = 0 },
         { name = 'Undercover Jackal', model = 'det-jackal', price = 0 },
         { name = 'Undercover Panto', model = 'det-panto', price = 0 },
@@ -146,6 +148,13 @@ Config.ClerkCars = {
     all = {
         { name = 'Records Transport', model = 'drd-records', price = 0 },
         { name = 'Patrol', model = 'drd-patrol', price = 0 },
+    }
+}
+
+Config.HumaneCars = {
+    all = {
+        { name = 'Mule', model = 'mule2', price = 0 },
+        { name = 'Van', model = 'burrito3', price = 0 },
     }
 }
 
@@ -698,5 +707,15 @@ Config.Shops      = {
         shopCoords = vector3(-516.53, -293.51, 36.0),
         type       = "car",
         cars       = Config.ClerkCars
+    },
+    --Humane Job
+    {
+        name       = 'Humane Vehicles',
+        job        = 'humane',
+        coords     = vector3(3638.80, 3770.78, 28.76),
+        heading    = 110.09,
+        shopCoords = vector3(3638.80, 3770.78, 28.76),
+        type       = "car",
+        cars       = Config.HumaneCars
     },
 }
