@@ -179,8 +179,6 @@ function OpenVaultMenu()
   if Config.EnableVaultManagement then
 
     local elements = {
-      {label = ('Withdraw Weapon'), value = 'get_weapon'},
-      {label = ('Deposit Weapon'), value = 'put_weapon'},
       {label = ('Withdraw Item'), value = 'get_stock'},
       {label = ('Deposit Item'), value = 'put_stock'}
     }
@@ -196,14 +194,6 @@ function OpenVaultMenu()
         elements = elements,
       },
       function(data, menu)
-
-        if data.current.value == 'get_weapon' then
-          OpenGetWeaponMenu()
-        end
-
-        if data.current.value == 'put_weapon' then
-          OpenPutWeaponMenu()
-        end
 
         if data.current.value == 'put_stock' then
            OpenPutStocksMenu()
@@ -232,9 +222,6 @@ end
 function OpenGetStocksMenu()
 
   ESX.TriggerServerCallback('tcrp-humane:getStockItems', function(items)
-
-    print(json.encode(items))
-
     local elements = {}
 
     for i=1, #items, 1 do
@@ -345,83 +332,6 @@ function OpenPutStocksMenu()
 
   end)
 
-
-end
-
-function OpenGetWeaponMenu()
-
-  ESX.TriggerServerCallback('tcrp-humane:getVaultWeapons', function(weapons)
-
-    local elements = {}
-
-    for i=1, #weapons, 1 do
-      if weapons[i].count > 0 then
-        table.insert(elements, {label = 'x' .. weapons[i].count .. ' ' .. ESX.GetWeaponLabel(weapons[i].name), value = weapons[i].name})
-      end
-    end
-
-    ESX.UI.Menu.Open(
-      'default', GetCurrentResourceName(), 'vault_get_weapon',
-      {
-        title    = "Weapon Inventory",
-        align    = 'top-left',
-        elements = elements,
-      },
-      function(data, menu)
-
-        menu.close()
-
-        ESX.TriggerServerCallback('tcrp-humane:removeVaultWeapon', function()
-          OpenGetWeaponMenu()
-        end, data.current.value)
-
-      end,
-      function(data, menu)
-        menu.close()
-      end
-    )
-
-  end)
-
-end
-
-function OpenPutWeaponMenu()
-
-  local elements   = {}
-  local playerPed  = GetPlayerPed(-1)
-  local weaponList = ESX.GetWeaponList()
-
-  for i=1, #weaponList, 1 do
-
-    local weaponHash = GetHashKey(weaponList[i].name)
-
-    if HasPedGotWeapon(playerPed,  weaponHash,  false) and weaponList[i].name ~= 'WEAPON_UNARMED' then
-      local ammo = GetAmmoInPedWeapon(playerPed, weaponHash)
-      table.insert(elements, {label = weaponList[i].label, value = weaponList[i].name})
-    end
-
-  end
-
-  ESX.UI.Menu.Open(
-    'default', GetCurrentResourceName(), 'vault_put_weapon',
-    {
-      title    = 'Deposit Weapon',
-      align    = 'top-left',
-      elements = elements,
-    },
-    function(data, menu)
-
-      menu.close()
-
-      ESX.TriggerServerCallback('tcrp-humane:addVaultWeapon', function()
-        OpenPutWeaponMenu()
-      end, data.current.value)
-
-    end,
-    function(data, menu)
-      menu.close()
-    end
-  )
 
 end
 
