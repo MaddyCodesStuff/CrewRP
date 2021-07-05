@@ -25,13 +25,14 @@ AddEventHandler('mining:smelt', function()
         elseif rnd > 50 and rnd < 81 then
             item = "iron"
             label = "Iron"
-            amount = math.random(5, 15)
+            amount = math.random(5, 10)
         elseif rnd > 80 and rnd < 96 then
             item = "gold"
             label = "Gold"
             amount = math.random(1, 5)
         else
             item = "diamond"
+            label = "diamond"
             amount = 1
         end
 

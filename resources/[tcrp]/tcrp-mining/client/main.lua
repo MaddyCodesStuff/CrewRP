@@ -86,7 +86,7 @@ Citizen.CreateThread(function()
                             isSmelting = true
                             exports['mythic_progbar']:Progress({
                                                                    name            = "smelting_action",
-                                                                   duration        = 10000,
+                                                                   duration        = 15000,
                                                                    label           = "Smelting",
                                                                    useWhileDead    = false,
                                                                    canCancel       = false,
@@ -148,7 +148,7 @@ Citizen.CreateThread(function()
                     if hasItem then
                         exports['mythic_progbar']:Progress({
                                                                 name            = "mining_action",
-                                                                duration        = 10000,
+                                                                duration        = 15000,
                                                                 label           = "Mining",
                                                                 useWhileDead    = false,
                                                                 canCancel       = false,
@@ -174,11 +174,11 @@ Citizen.CreateThread(function()
                                 ESX.Game.DeleteObject(nearbyObject)
                                 table.remove(mineralNodes, nearbyID)
                                 spawnedNodes = spawnedNodes - 1
-
                                 -- Do the random logic here to generate random minerals from this node
                                 TriggerServerEvent('mining:giveItems')
                             end
                         end)
+                        Citizen.Wait(5000)
                         isMining = false
                     else
                         ESX.ShowNotification("Missing item: Jackhammer")

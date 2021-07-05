@@ -70,8 +70,8 @@ Config.Smelting         = {
 }
 
 Config.prices = {
-	copper = 10,
-	iron = 20,
+	copper = 5,
+	iron = 17,
 	gold = 50,
 	diamond = 100, 
 } 
