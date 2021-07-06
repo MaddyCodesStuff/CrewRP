@@ -1270,6 +1270,18 @@ Config = {
             { label = "Regular Coffee", item = "coffee", price = 1 },
             { label = "Decaf Coffee", item = "decafcoffee", price = 1 },
         },
+        ["slushies"]       = {
+            { label = "Sludgie Blue Slushy", item = "slushy", price = 3 },
+            { label = "Sludgie Green Slushy", item = "slushy2", price = 3 },
+        },
+        ["limeys"]       = {
+            { label = "Grape Juice", item = "jus_raisin", price = 5 },
+            { label = "Juice", item = "juice", price = 7 },
+            { label = "Sludgie Blue Slushy", item = "slushy", price = 3 },
+            { label = "Sludgie Green Slushy", item = "slushy2", price = 3 },
+            { label = "Regular Coffee", item = "coffee", price = 1 },
+            { label = "Decaf Coffee", item = "decafcoffee", price = 1 },
+        },
         ["lockpicks"]       = {
             { label = "Lockpick", item = "lockpick", price = 500 },
         },
