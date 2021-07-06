@@ -501,7 +501,7 @@ Config = {
                 ["sprite"] = 628,
                 ["color"]  = 73,
                 ["x"]      = -1191.43, ["y"] = -890.27, ["z"] = 14.0,
-                ["text"]   = "Restaurant",
+                ["text"]   = "Burgershot",
             },
             ["cashier"]  = {
                 ["x"]    = -1194.01, ["y"] = -895.56, ["z"] = 13.0, ["h"] = 308.71,
@@ -518,9 +518,9 @@ Config = {
             },
             ["blip"]     = {
                 ["sprite"] = 628,
-                ["color"]  = 66,
+                ["color"]  = 31,
                 ["x"]      = -627.64, ["y"] = 235.25, ["z"] = 81.88,
-                ["text"]   = "Restaurant",
+                ["text"]   = "Coffee Shop",
             },
             ["rob_dist"] = 15.0,
         }, -- Done
@@ -637,7 +637,7 @@ Config = {
                 ["sprite"] = 628,
                 ["color"]  = 73,
                 ["x"]      = 11.54, ["y"] = -1606.48, ["z"] = 29.4,
-                ["text"]   = "Restaurant",
+                ["text"]   = "Taco Farmer",
             },
             ["rob_dist"] = 15.0,
         },
@@ -703,7 +703,7 @@ Config = {
                 ["sprite"] = 628,
                 ["color"]  = 73,
                 ["x"]      = -2185.58, ["y"] = 4286.43, ["z"] = 49.18,
-                ["text"]   = "Restaurant",
+                ["text"]   = "Hookies",
             },
             ["rob_dist"] = 22.0,
         }, -- Done
@@ -718,7 +718,7 @@ Config = {
                 ["sprite"] = 628,
                 ["color"]  = 73,
                 ["x"]      = 1590.43, ["y"] = 6458.01, ["z"] = 26.01,
-                ["text"]   = "Restaurant",
+                ["text"]   = "Pop's Diner",
             },
             ["rob_dist"] = 16.0,
         }, -- Done
@@ -729,7 +729,7 @@ Config = {
             },
 
             ["blip"]     = {
-                ["sprite"] = 628,
+                ["sprite"] = -1,
                 ["color"]  = 73,
                 ["x"]      = 218.02, ["y"] = -871.48, ["z"] = 30.49,
                 ["text"]   = "Restaurant",
@@ -752,7 +752,7 @@ Config = {
                 ["sprite"] = 628,
                 ["color"]  = 73,
                 ["x"]      = -1839.93, ["y"] = -1188.04, ["z"] = 13.30,
-                ["text"]   = "Restaurant",
+                ["text"]   = "Pearls",
             },
             ["rob_dist"] = 30.0,
         }, -- Done
@@ -770,7 +770,7 @@ Config = {
                 ["sprite"] = 93,
                 ["color"]  = 47,
                 ["x"]      = -688.19, ["y"] = 5796.17, ["z"] = 17.33,
-                ["text"]   = "Bar",
+                ["text"]   = "The Lodge",
             },
             ["rob_dist"] = 23.0,
         }, -- Done
@@ -784,7 +784,7 @@ Config = {
                 ["sprite"] = -1,
                 ["color"]  = 31,
                 ["x"]      = 238.88, ["y"] = -560.48, ["z"] = 43.28,
-                ["text"]   = "Coffee",
+                ["text"]   = "Coffee Shop",
             },
             ["rob_dist"] = 10.0,
         }, -- Done
@@ -803,7 +803,7 @@ Config = {
                 ["sprite"] = 628,
                 ["color"]  = 66,
                 ["x"]      = -465.24, ["y"] = -28.57, ["z"] = 45.76,
-                ["text"]   = "Restaurant",
+                ["text"]   = "Ice Cream",
             },
             ["rob_dist"] = 20.0,
         }, -- Done
@@ -907,7 +907,7 @@ Config = {
                 ["sprite"] = 93,
                 ["color"]  = 47,
                 ["x"]      = 838.11, ["y"] = -112.96, ["z"] = 79.77,
-                ["text"]   = "Bar",
+                ["text"]   = "O'Connors",
             },
             ["rob_dist"] = 30.0,
         },
@@ -927,7 +927,7 @@ Config = {
         },
         [50] = { --Grapeseed Juice Stand
             ["shelfs"]   = {
-                { ["x"] = 2742.21, ["y"] = 4413.25, ["z"] = 48.62, ["value"] = "juicestand" },
+                { ["x"] = 2742.21, ["y"] = 4413.25, ["z"] = 48.62, ["value"] = "juice" },
                 { ["x"] = 2740.95, ["y"] = 4412.92, ["z"] = 48.62, ["value"] = "checkout" },
             },
             ["blip"]     = {
@@ -940,7 +940,7 @@ Config = {
         },
         [51] = { --Great Chaparral Juice Stand
             ["shelfs"]   = {
-                { ["x"] = -440.69, ["y"] = 1595.90, ["z"] = 358.47, ["value"] = "juicestand" },
+                { ["x"] = -440.69, ["y"] = 1595.90, ["z"] = 358.47, ["value"] = "juice" },
                 { ["x"] = -441.63, ["y"] = 1594.86, ["z"] = 358.47, ["value"] = "checkout" },
             },
             ["blip"]     = {
@@ -951,6 +951,43 @@ Config = {
             },
             ["rob_dist"] = 10.0,
         },
+        [52] = { --Rex's Diner
+            ["shelfs"]   = {
+                { ["x"] = 2547.30, ["y"] = 2594.40, ["z"] = 38.11, ["value"] = "checkout" },
+                { ["x"] = 2552.10, ["y"] = 2596.60, ["z"] = 38.11, ["value"] = "drinks2" },
+                { ["x"] = 2548.91, ["y"] = 2595.56, ["z"] = 38.11, ["value"] = "pubfood" },
+                { ["x"] = 2551.15, ["y"] = 2593.28, ["z"] = 38.11, ["value"] = "booze" },
+                { ["x"] = 2550.60, ["y"] = 2596.11, ["z"] = 38.11, ["value"] = "booze" },
+                { ["x"] = 2551.05, ["y"] = 2586.05, ["z"] = 38.11, ["value"] = "tacos" },
+                { ["x"] = 2551.96, ["y"] = 2586.39, ["z"] = 38.11, ["value"] = "burgers" },
+                { ["x"] = 2553.50, ["y"] = 2586.95, ["z"] = 38.11, ["value"] = "hotdogs" },
+                { ["x"] = 2555.00, ["y"] = 2589.04, ["z"] = 38.11, ["value"] = "meals" },
+                { ["x"] = 2553.36, ["y"] = 2589.61, ["z"] = 38.11, ["value"] = "pizza" },
+            },
+            ["blip"]     = {
+                ["sprite"] = 628,
+                ["color"]  = 73,
+                ["x"]      = 2550.51, ["y"] = 2596.12, ["z"] = 38.11,
+                ["text"]   = "Rex's Diner",
+            },
+            ["rob_dist"] = 17.5,
+        },
+        [53] = { --Limey's Juice & Smoothies
+            ["shelfs"]   = {
+                { ["x"] = -1245.71, ["y"] = -281.55, ["z"] = 37.48, ["value"] = "limeys" },
+                { ["x"] = -1244.18, ["y"] = -280.75, ["z"] = 37.48, ["value"] = "checkout" },
+                { ["x"] = -1247.56, ["y"] = -274.67, ["z"] = 37.48, ["value"] = "coffee" },
+                { ["x"] = -1249.19, ["y"] = -278.29, ["z"] = 37.48, ["value"] = "slushies" },
+                { ["x"] = -1246.57, ["y"] = -276.79, ["z"] = 37.48, ["value"] = "juice" },
+            },
+            ["blip"]     = {
+                ["sprite"] = 628,
+                ["color"]  = 73,
+                ["x"]      = -1242.74, ["y"] = -278.82, ["z"] = 37.58,
+                ["text"]   = "Limey's",
+            },
+                ["rob_dist"] = 16.5,
+            },
     },
 
     --[[
@@ -967,6 +1004,7 @@ Config = {
         ["checkout"]    = "Cash Register",
         ["booze"]       = "Booze",
         ["drinks"]      = "Drinks",
+        ["drinks2"]     = "Drinks",
         ["snacks"]      = "Snacks",
         ["readymeal"]   = "Ready meal",
         ["diverse"]     = "Diverse Stuff",
@@ -978,16 +1016,21 @@ Config = {
         ["icecream"]    = "Ice Cream",
         ["burgershot"]  = "Order Meals",
         ["burgershot2"] = "Order Food",
+        ["meals"]       = "Cook Meals",
+        ["burgers"]     = "Cook Burgers",
         ["cafebean"]    = "Coffee",
         ["tacos"]       = "Cook Tacos",
+        ["pizza"]       = "Cook Pizza",
         ["hotdogs"]     = "Hotdogs",
         ["pharmacy"]    = "Pharmacy",
         ["prison"]      = "Prison Cafeteria",
         ["drugs"]       = "Drugs",
         ["flowers"]     = "Flower Shop",
         ["pubfood"]     = "Pub Food",
-        ["juicestand"]  = "Order Juice",
-        ["lockpicks"]  = "Lockpicks",
+        ["slushies"]    = "Slushies",
+        ["juice"]       = "Juice",
+        ["limeys"]      = "Order Food",
+        ["lockpicks"]   = "Lockpicks",
     },
 
     Items              = {
@@ -1012,6 +1055,14 @@ Config = {
             { label = "Sludgie Blue Slushy", item = "slushy", price = 3 },
             { label = "Sludgie Green Slushy", item = "slushy2", price = 3 },
             { label = "Milk", item = "milk", price = 3 },
+        },
+        ["drinks2"]      = {
+            { label = "E-Cola", item = "cocacola", price = 5 },
+            { label = "Orange-O-Tang Soda", item = "fanta", price = 5 },
+            { label = "Sprunk", item = "sprite", price = 5 },
+            { label = "Sprunk Light", item = "sprite2", price = 5 },
+            { label = "Water", item = "water", price = 5 },
+            { label = "Drink", item = "drink", price = 3 },
         },
         ["icecream"]    = {
             { label = "Vanilla Ice Cream Cone", item = "icecream", price = 2 },
@@ -1118,6 +1169,30 @@ Config = {
             { label = "Water", item = "water", price = 5 },
             { label = "Drink", item = "drink", price = 3 },
         },
+        ["burgers"] = {
+            { label = "The Bleeder Burger", item = "bleederburger", price = 6 },
+            { label = "Money Shot Burger", item = "moneyshotburger", price = 6 },
+            { label = "Torpedo Sandwich", item = "torpedoburger", price = 6 },
+            { label = "Meat Free Burger", item = "meatfreeburger", price = 7 },
+            { label = "Crappy Burger", item = "crappyburger", price = 8 },
+            { label = "The Heartstopper Burger", item = "heartstopperburger", price = 10 },
+            { label = "Sandwich", item = "bread", price = 5 },
+            { label = "Bacon Roll", item = "burger", price = 7 },
+        },
+        ["meals"] = {
+            { label = "The Bleeder Burger Meal", item = "bleedermeal", price = 10 },
+            { label = "Money Shot Burger Meal", item = "moneyshotmeal", price = 10 },
+            { label = "Torpedo Meal", item = "torpedomeal", price = 10 },
+            { label = "Meat Free Meal", item = "meatfreemeal", price = 11 },
+            { label = "Crappy Meal", item = "crappymeal", price = 12 },
+            { label = "Heartstopper Meal", item = "heartstoppermeal", price = 15 },
+            { label = "Hotdog And Fries", item = "hotdogmeal2", price = 8 },
+            { label = "Hotdog with the Works Meal", item = "hotdogmeal1", price = 10 },
+            { label = "Veggie Dog Meal", item = "veggiedogmeal", price = 10 },
+        },
+        ["pizza"] = {
+            { label = "Pizza", item = "pizza", price = 15 },
+        },
         ["cafebean"]    = {
             { label = "Regular Coffee", item = "coffee", price = 1 },
             { label = "Decaf Coffee", item = "decafcoffee", price = 1 },
@@ -1149,10 +1224,17 @@ Config = {
             { label = "VeggieDog", item = "hotdog4", price = 5 },
             { label = "Cheese Dog", item = "hotdog2", price = 6 },
             { label = "Hotdog with Onion", item = "hotdog5", price = 6 },
-            { label = "Chilli Dog", item = "hotdog3", price = 7 },
+            { label = "Chili Dog", item = "hotdog3", price = 7 },
             { label = "Hotdog And Fries", item = "hotdogmeal2", price = 8 },
             { label = "Hotdog with the Works Meal", item = "hotdogmeal1", price = 10 },
             { label = "Veggie Dog Meal", item = "veggiedogmeal", price = 10 },
+        },
+        ["hotdogs2"]     = {
+            { label = "Plain Hotdog", item = "hotdog1", price = 5 },
+            { label = "VeggieDog", item = "hotdog4", price = 5 },
+            { label = "Cheese Dog", item = "hotdog2", price = 6 },
+            { label = "Hotdog with Onion", item = "hotdog5", price = 6 },
+            { label = "Chili Dog", item = "hotdog3", price = 7 },
         },
         ["drugs"]       = {
             { label = "Baking Sheet", item = "baking_sheet", price = 20 },
@@ -1172,9 +1254,21 @@ Config = {
             { label = "Meat Free Burger", item = "meatfreeburger", price = 7 },
             { label = "Pizza", item = "pizza", price = 15 },
         },
-        ["juicestand"]       = {
+        ["juice"]       = {
             { label = "Grape Juice", item = "jus_raisin", price = 5 },
             { label = "Juice", item = "juice", price = 7 },
+        },
+        ["slushies"]       = {
+            { label = "Sludgie Blue Slushy", item = "slushy", price = 3 },
+            { label = "Sludgie Green Slushy", item = "slushy2", price = 3 },
+        },
+        ["limeys"]       = {
+            { label = "Grape Juice", item = "jus_raisin", price = 5 },
+            { label = "Juice", item = "juice", price = 7 },
+            { label = "Sludgie Blue Slushy", item = "slushy", price = 3 },
+            { label = "Sludgie Green Slushy", item = "slushy2", price = 3 },
+            { label = "Regular Coffee", item = "coffee", price = 1 },
+            { label = "Decaf Coffee", item = "decafcoffee", price = 1 },
         },
         ["lockpicks"]       = {
             { label = "Lockpick", item = "lockpick", price = 500 },
