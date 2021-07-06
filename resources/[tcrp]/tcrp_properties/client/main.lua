@@ -303,9 +303,11 @@ function SyncProperties()
                 SetBlipDisplay(propertyBlips[v.id], 4)
                 SetBlipScale(propertyBlips[v.id], 0.8)
                 SetBlipAsShortRange(propertyBlips[v.id], true)
+                SetBlipCategory(keyBlips[v.id], 11)
+                SetBlipPriority(keyBlips[v.id], 10)
 
                 BeginTextCommandSetBlipName("STRING")
-                AddTextComponentString("Owned Property")
+                AddTextComponentString("Owned")
                 EndTextCommandSetBlipName(propertyBlips[v.id])
             elseif v.owned == 2 then
                 local entrance = v.entrance
@@ -315,9 +317,11 @@ function SyncProperties()
                 SetBlipDisplay(keyBlips[v.id], 4)
                 SetBlipScale(keyBlips[v.id], 1.0)
                 SetBlipAsShortRange(keyBlips[v.id], true)
+                SetBlipCategory(keyBlips[v.id], 11)
+                SetBlipPriority(keyBlips[v.id], 10)
 
                 BeginTextCommandSetBlipName("STRING")
-                AddTextComponentString("Accessible Property")
+                AddTextComponentString("Accessible")
                 EndTextCommandSetBlipName(keyBlips[v.id])
             elseif v.owned == 3 and Config.ShowSaleBlips then
                 local entrance  = v.entrance
@@ -327,6 +331,7 @@ function SyncProperties()
                 SetBlipDisplay(showBlips[v.id], 4)
                 SetBlipScale(showBlips[v.id], 0.5)
                 SetBlipAsShortRange(showBlips[v.id], true)
+                SetBlipPriority(keyBlips[v.id], 5)
 
                 BeginTextCommandSetBlipName("STRING")
                 AddTextComponentString("Property For Sale")

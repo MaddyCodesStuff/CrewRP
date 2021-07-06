@@ -33,7 +33,7 @@ RegisterServerEvent('esx_ambulancejob:heal')
 AddEventHandler('esx_ambulancejob:heal', function(target, type)
 	local xPlayer = ESX.GetPlayerFromId(source)
 
-	if xPlayer.job.name == 'ambulance' or xPlayer.job.name == 'fireman' then
+	if xPlayer.job.name == 'ambulance' or xPlayer.job.name == 'fireman' or xPlayer.job.name == 'humane' then
 		TriggerClientEvent('esx_ambulancejob:heal', target, type)
 	else
 		print(('esx_ambulancejob: %s attempted to heal!'):format(xPlayer.identifier))
@@ -44,7 +44,7 @@ RegisterServerEvent('esx_ambulancejob:putInVehicle')
 AddEventHandler('esx_ambulancejob:putInVehicle', function(target)
 	local xPlayer = ESX.GetPlayerFromId(source)
 
-	if xPlayer.job.name == 'ambulance' or xPlayer.job.name == 'fireman' then
+	if xPlayer.job.name == 'ambulance' or xPlayer.job.name == 'fireman' or xPlayer.job.name == 'humane' then
 		TriggerClientEvent('esx_ambulancejob:putInVehicle', target)
 	else
 		print(('esx_ambulancejob: %s attempted to put in vehicle!'):format(xPlayer.identifier))

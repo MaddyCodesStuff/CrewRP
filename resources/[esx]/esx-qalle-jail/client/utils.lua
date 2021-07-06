@@ -177,6 +177,7 @@ Citizen.CreateThread(function()
     SetBlipScale(blip, 1.2)
     SetBlipColour(blip, 49)
     SetBlipAsShortRange(blip, true)
+    SetBlipPriority(blip, 10)
 
     BeginTextCommandSetBlipName("STRING")
     AddTextComponentString('Bolingbroke Penitentiary')

@@ -102,6 +102,7 @@ Citizen.CreateThread(function()
                 SetBlipScale(blip["id"], blip["scale"] or Config.DefaultScale)
                 SetBlipColour(blip["id"], blip["color"] or Config.DefaultSpriteColor)
                 SetBlipAsShortRange(blip["id"], true)
+                SetBlipPriority(blip["id"], blip["layer"] or Config.DefaultLayer)
 
                 if blip["text"] ~= nil then
                     bliptext = blip["text"]

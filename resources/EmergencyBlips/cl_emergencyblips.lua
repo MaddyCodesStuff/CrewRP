@@ -8,6 +8,7 @@ local ACTIVE_EMERGENCY_PERSONNEL = {}
 ------------
 -- events --
 ------------
+
 RegisterNetEvent("eblips:toggle")
 AddEventHandler("eblips:toggle", function(on)
     -- toggle blip display --
@@ -72,6 +73,7 @@ Citizen.CreateThread(function()
                         SetBlipAsShortRange(blip, true)
                         SetBlipDisplay(blip, 4)
                         SetBlipShowCone(blip, true)
+                        SetBlipCategory(blip, 7)
                         BeginTextCommandSetBlipName("STRING")
                         AddTextComponentString(info.name)
                         EndTextCommandSetBlipName(blip)
