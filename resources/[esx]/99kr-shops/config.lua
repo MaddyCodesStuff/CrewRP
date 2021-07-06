@@ -501,7 +501,7 @@ Config = {
                 ["sprite"] = 628,
                 ["color"]  = 73,
                 ["x"]      = -1191.43, ["y"] = -890.27, ["z"] = 14.0,
-                ["text"]   = "Restaurant",
+                ["text"]   = "Burgershot",
             },
             ["cashier"]  = {
                 ["x"]    = -1194.01, ["y"] = -895.56, ["z"] = 13.0, ["h"] = 308.71,
@@ -518,9 +518,9 @@ Config = {
             },
             ["blip"]     = {
                 ["sprite"] = 628,
-                ["color"]  = 66,
+                ["color"]  = 31,
                 ["x"]      = -627.64, ["y"] = 235.25, ["z"] = 81.88,
-                ["text"]   = "Restaurant",
+                ["text"]   = "Coffee Shop",
             },
             ["rob_dist"] = 15.0,
         }, -- Done
@@ -703,7 +703,7 @@ Config = {
                 ["sprite"] = 628,
                 ["color"]  = 73,
                 ["x"]      = -2185.58, ["y"] = 4286.43, ["z"] = 49.18,
-                ["text"]   = "Restaurant",
+                ["text"]   = "Hookies",
             },
             ["rob_dist"] = 22.0,
         }, -- Done
@@ -718,7 +718,7 @@ Config = {
                 ["sprite"] = 628,
                 ["color"]  = 73,
                 ["x"]      = 1590.43, ["y"] = 6458.01, ["z"] = 26.01,
-                ["text"]   = "Restaurant",
+                ["text"]   = "Pop's Diner",
             },
             ["rob_dist"] = 16.0,
         }, -- Done
@@ -729,7 +729,7 @@ Config = {
             },
 
             ["blip"]     = {
-                ["sprite"] = 628,
+                ["sprite"] = -1,
                 ["color"]  = 73,
                 ["x"]      = 218.02, ["y"] = -871.48, ["z"] = 30.49,
                 ["text"]   = "Restaurant",
@@ -752,7 +752,7 @@ Config = {
                 ["sprite"] = 628,
                 ["color"]  = 73,
                 ["x"]      = -1839.93, ["y"] = -1188.04, ["z"] = 13.30,
-                ["text"]   = "Restaurant",
+                ["text"]   = "Pearls",
             },
             ["rob_dist"] = 30.0,
         }, -- Done
@@ -770,7 +770,7 @@ Config = {
                 ["sprite"] = 93,
                 ["color"]  = 47,
                 ["x"]      = -688.19, ["y"] = 5796.17, ["z"] = 17.33,
-                ["text"]   = "Bar",
+                ["text"]   = "The Lodge",
             },
             ["rob_dist"] = 23.0,
         }, -- Done
@@ -784,7 +784,7 @@ Config = {
                 ["sprite"] = -1,
                 ["color"]  = 31,
                 ["x"]      = 238.88, ["y"] = -560.48, ["z"] = 43.28,
-                ["text"]   = "Coffee",
+                ["text"]   = "Coffee Shop",
             },
             ["rob_dist"] = 10.0,
         }, -- Done
@@ -803,7 +803,7 @@ Config = {
                 ["sprite"] = 628,
                 ["color"]  = 66,
                 ["x"]      = -465.24, ["y"] = -28.57, ["z"] = 45.76,
-                ["text"]   = "Restaurant",
+                ["text"]   = "Ice Cream",
             },
             ["rob_dist"] = 20.0,
         }, -- Done
@@ -907,7 +907,7 @@ Config = {
                 ["sprite"] = 93,
                 ["color"]  = 47,
                 ["x"]      = 838.11, ["y"] = -112.96, ["z"] = 79.77,
-                ["text"]   = "Bar",
+                ["text"]   = "O'Connors",
             },
             ["rob_dist"] = 30.0,
         },
@@ -968,7 +968,7 @@ Config = {
                 ["sprite"] = 628,
                 ["color"]  = 73,
                 ["x"]      = 2550.51, ["y"] = 2596.12, ["z"] = 38.11,
-                ["text"]   = "Restaurant",
+                ["text"]   = "Rex's Diner",
             },
             ["rob_dist"] = 17.5,
         },
@@ -984,7 +984,7 @@ Config = {
                 ["sprite"] = 628,
                 ["color"]  = 73,
                 ["x"]      = -1242.74, ["y"] = -278.82, ["z"] = 37.58,
-                ["text"]   = "Restaurant",
+                ["text"]   = "Limey's",
             },
                 ["rob_dist"] = 16.5,
             },
