@@ -11,7 +11,6 @@ Citizen.CreateThread(function()
     while true do
         if not DecorExistOn(vehicle, Config.FuelDecor) and  vehicle ~= 0 then
             TriggerEvent('tcrp-fuel:setFuel', NetworkGetNetworkIdFromEntity(vehicle), math.random(200, 800) / 10)
-            print(DecorExistOn(vehicle, Config.FuelDecor))
         end
         if vehicle ~= 0 and GetPedInVehicleSeat(vehicle, -1) == PlayerPedId() and IsVehicleEngineOn(vehicle) then
             local rpm = GetVehicleCurrentRpm(vehicle)
@@ -24,44 +23,11 @@ Citizen.CreateThread(function()
     end
 end)
 
---Fix Local Boats Have Less Than 10 Fuel
---Citizen.CreateThread(function()
-  --  while true do
-    --    Citizen.Wait(0)
-      --  local playerPed = PlayerPedId(-1)
-        --local vehicleType, vehicle 
-        --if IsPedGettingIntoAVehicle(playerPed) == 1 then 
-          --  vehicle = GetVehiclePedIsTryingToEnter(playerPed)
-            --vehicleType = GetVehicleClass(GetVehiclePedIsTryingToEnter(playerPed))
-            --if vehicleType == 14 then
-              --  SetVehicleFuelLevel(vehicle, 40.0)
-            --end
-        --end
-    --end
---end)
-
 -- Get ped vehicle
 Citizen.CreateThread(function()
     while true do
         vehicle = GetVehiclePedIsIn(PlayerPedId())
         Wait(2000)
-    end
-end)
-
--- Gas station blips
-Citizen.CreateThread(function()
-    for _, coords in ipairs(Config.GasStations) do
-        local blip = AddBlipForCoord(coords)
-
-        SetBlipSprite(blip, 361)
-        SetBlipScale(blip, 0.9)
-        SetBlipColour(blip, 4)
-        SetBlipDisplay(blip, 4)
-        SetBlipAsShortRange(blip, true)
-
-        BeginTextCommandSetBlipName("STRING")
-        AddTextComponentString("Gas Station")
-        EndTextCommandSetBlipName(blip)
     end
 end)
 

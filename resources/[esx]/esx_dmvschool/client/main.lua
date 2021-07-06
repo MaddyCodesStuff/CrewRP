@@ -68,7 +68,7 @@ function StopTheoryTest(success)
 	SetNuiFocus(false)
 
 	if success then
-		TriggerServerEvent('esx_dmvschool:addLicense', 'dmv')
+		TriggerServerEvent('esx_dmvschool:addLicense', 'drive')
 		ESX.ShowNotification(_U('passed_test'))
 	else
 		ESX.ShowNotification(_U('failed_test'))
@@ -131,38 +131,36 @@ function OpenDMVSchoolMenu()
 		})
 	end
 
-	if ownedLicenses['dmv'] then
-		if not ownedLicenses['drive'] then
-			table.insert(elements, {
-				label = (('%s: <span style="color:green;">%s</span>'):format(_U('road_test_car'),
-																			 _U('school_item',
-																				ESX.Math.GroupDigits(Config.Prices['drive'])))),
-				value = 'drive_test',
-				type  = 'drive'
-			})
-		end
+	-- if ownedLicenses['dmv'] then
+	-- 	if not ownedLicenses['drive'] then
+	-- 		table.insert(elements, {
+	-- 			label = (('%s: <span style="color:green;">%s</span>'):format(_U('road_test_car'),
+	-- 																		 _U('school_item',
+	-- 																			ESX.Math.GroupDigits(Config.Prices['drive'])))),
+	-- 			value = 'drive_test',
+	-- 			type  = 'drive'
+	-- 		})
+	-- 	end
 
-		if not ownedLicenses['drive_bike'] then
-			table.insert(elements, {
-				label = (('%s: <span style="color:green;">%s</span>'):format(_U('road_test_bike'),
-																			 _U('school_item',
-																				ESX.Math.GroupDigits(Config.Prices['drive_bike'])))),
-				value = 'drive_test',
-				type  = 'drive_bike'
-			})
-		end
+	-- 	if not ownedLicenses['drive_bike'] then
+	-- 		table.insert(elements, {
+	-- 			label = (('%s: <span style="color:green;">%s</span>'):format(_U('road_test_bike'),
+	-- 																		 _U('school_item',
+	-- 																			ESX.Math.GroupDigits(Config.Prices['drive_bike'])))),
+	-- 			value = 'drive_test',
+	-- 			type  = 'drive_bike'
+	-- 		})
+	-- 	end
 
-		if not ownedLicenses['drive_truck'] then
-			table.insert(elements, {
-				label = (('%s: <span style="color:green;">%s</span>'):format(_U('drive_truck'),
-																			 _U('school_item',
-																				ESX.Math.GroupDigits(Config.Prices['drive_truck'])))),
-				value = 'drive_test',
-				type  = 'drive_truck'
-			})
-		end
-	end
-
+	-- 	if not ownedLicenses['drive_truck'] then
+	-- 		table.insert(elements, {
+	-- 			label = (('%s: <span style="color:green;">%s</span>'):format(_U('drive_truck'),
+	-- 																		 _U('school_item',
+	-- 																			ESX.Math.GroupDigits(Config.Prices['drive_truck'])))),
+	-- 			value = 'drive_test',
+	-- 			type  = 'drive_truck'
+	-- 		})
+ 	
 	ESX.UI.Menu.CloseAll()
 
 	ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'dmvschool_actions', {

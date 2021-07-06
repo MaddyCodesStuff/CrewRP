@@ -345,6 +345,7 @@ function OpenFireActionsMenu()
 
 	local menuElements = {
 		{ label = "Citizen Interaction", value = 'citizen_menu' },
+		{ label = 'Clock Off', value = 'mobile_clockinoff' },
 	}
 
 	if (exports['esx-radios'].isDedicatedDispatch()) then
@@ -400,6 +401,23 @@ function OpenFireActionsMenu()
 					end, function(data2, menu2)
 						menu2.close()
 					end)
+				elseif data.current.value == 'mobile_clockinoff' then
+					ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'mobile_clockinoff',
+								 {
+									 title    = 'Mobile Clock Off',
+									 align    = 'top-right',
+									 elements = {
+										{ label = 'Clock Off', value = 'clockinoff' }
+	
+									}
+								}, function(data, menu)
+	
+							if data.current.value == 'clockinoff' then
+								TriggerEvent('duty:onoff')
+							end
+					   end, function(data, menu)
+						   menu.close()
+				end)
 			end
 
 			if data.current.value == 'mutual_aid_menu' then

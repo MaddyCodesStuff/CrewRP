@@ -359,20 +359,20 @@ Config.Garages = {
     ["VIPERS MC (PRIVATE)"] = {
         ["positions"] = {
             ["menu"] = {
-                ["position"] = vector3(989.25, -139.92, 72.5)
+                ["position"] = vector3(956.03, -122.92, 74.35)
             },
             ["vehicle"] = {
-                ["position"] = vector3(978.85, -133.5, 72.5), 
-                ["heading"] = 61.92
+                ["position"] = vector3(955.43, -126.57, 74.35), 
+                ["heading"] = 223.06
             }
         },
         ["camera"] = { 
-            ["x"] = 967.86, 
-            ["y"] = -132.91, 
-            ["z"] = 76.67, 
-            ["rotationX"] = -20.401574149728, 
+            ["x"] = 953.31, 
+            ["y"] = -133.47, 
+            ["z"] = 76.25, 
+            ["rotationX"] = 0.401574149728, 
             ["rotationY"] = 0.0, 
-            ["rotationZ"] = -100.40157422423 
+            ["rotationZ"] = -13.40157422423 
         }
     },
     ["GROVE STREET (PRIVATE)"] = {
