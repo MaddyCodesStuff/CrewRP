@@ -35,3 +35,35 @@ Config.BeltWeapons = {
     GetHashKey('WEAPON_NAVYREVOLVER'),
     GetHashKey('WEAPON_MICROSMG'),
 }
+
+--Male T-Shirt Holsters
+Config.maleShirtHolster = {
+    122,
+    130,
+    174,
+}
+
+Config.maleChainHolster = {
+    136,
+    140,
+    141,
+    155,
+    157,
+    159,
+}
+
+--Female Tshirt Hoslters
+Config.femaleShirtHolster = { 
+    152,
+    160,
+    212,
+}
+
+Config.femaleChainHolster = { 
+    105,
+    109,
+    110,
+    116,
+    118,
+    120,
+}
