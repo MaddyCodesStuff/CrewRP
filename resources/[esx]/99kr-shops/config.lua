@@ -1041,6 +1041,7 @@ Config = {
             { label = "Car Cleaning Kit", item = "carcleaner", price = 150 },
             { label = "Fishing Rod", item = "fishingrod", price = 300 },
             { label = "Fish Bait", item = "fishbait", price = 15 },
+            { label = "Jackhammer", item = "jackhammer", price = 2000},
         },
         ["burgershot"]  = {
             { label = "The Bleeder Burger Meal", item = "bleedermeal", price = 10 },
