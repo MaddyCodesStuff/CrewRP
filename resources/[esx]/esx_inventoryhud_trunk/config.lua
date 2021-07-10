@@ -132,7 +132,7 @@ Config.localWeight    = {
     egg           = 4,
     diamond       = 500,
     essence       = 3060,
-    fabric        = 2,
+    fabric        = 500,
     fanta         = 3,
     firstaid      = 1500,
     fish          = 900,
@@ -150,10 +150,11 @@ Config.localWeight    = {
     stone         = 1000,
     washed_stone  = 900,
     water         = 750,
-    wool          = 6,
+    wool          = 500,
     WEAPON_SMG    = 5000,
     meat          = 2000,
-    leather       = 1000
+    leather       = 1000,
+    clothe        = 1000
 }
 
 Config.VehicleLimit   = {
