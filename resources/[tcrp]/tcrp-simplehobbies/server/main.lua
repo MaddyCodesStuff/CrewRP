@@ -83,7 +83,7 @@ AddEventHandler('tailor:clothes', function()
     if quantity >= 1 and clothes < 40 then
         xPlayer.removeInventoryItem('fabric', quantity)
         xPlayer.addInventoryItem('clothe', quantity / 2)
-        TriggerClientEvent('esx:showNotification', source, 'You stitched the fabric into ' .. quantity .. ' clothes.')
+        TriggerClientEvent('esx:showNotification', source, 'You stitched the fabric into ' .. quantity / 2 .. ' clothes.')
     elseif quantity == 0 then 
         TriggerClientEvent('esx:showNotification', source, 'You do not have any fabric!')
     else
