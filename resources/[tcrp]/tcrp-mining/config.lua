@@ -3,13 +3,10 @@ Config                  = {}
 -- Change the washed_stone inside of the database to be mineral ore
 
 Config.MaxNodes         = 5 -- Maximum number of nodes between each cooldown
-Config.Cooldown         = 5 * 60 * 1000 -- How many minutes between cooldown resets?
 
 Config.MaxNodesSpawned  = 25 -- Maximum number of nodes that spawn at a time
 
 Config.NodeModel        = 'prop_rock_4_cl_2'
-Config.CooldownBonus    = 15000 -- how many miliseconds for cooldown bonus
-
 Config.Mine = {
     coords = vec3(-544.02, 1984.27, 127.01),
 }
