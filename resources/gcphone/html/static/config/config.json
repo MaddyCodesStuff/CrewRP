@@ -161,6 +161,20 @@
       ]
     },
 	{
+      "display": "Journalist",
+      "icon": "/html/static/img/icons_app/park.png",
+      "subMenu": [{
+          "title": "Send Message",
+          "action": "sendMessage",
+          "eventName": "esx_addons_gcphone:call",
+          "icons": "fa-comments",
+          "type": {
+            "number": "journalist"
+          }
+        }
+      ]
+    },
+  {
       "display": "Taxi",
       "icon": "/html/static/img/icons_app/taxi.png",
       "subMenu": [{
@@ -200,6 +214,11 @@
       "display": "Park Ranger",
       "icon": "/html/static/img/icons_app/park.png"
     },
+  {
+    "number": "journalist",
+    "display": "Journalists",
+    "icon": " "
+  },
 	{
       "number": "police",
       "display": "Police",
