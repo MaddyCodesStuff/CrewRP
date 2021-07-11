@@ -30,7 +30,7 @@ Config.Processing = {
         onMap = true
     },
     {
-        pos = vec3(2204.55, 5195.83, 60.09), 
+        pos = vec3(2055.79, 4927.90, 20.00), 
         type = 'Gather Wool',
         Text = "Hobby - Tailor-Wool",
         blip = 73,
@@ -61,4 +61,12 @@ Config.Processing = {
         colour = 36,
         onMap = true
     },
+}
+
+Config.MaxNodesSpawned  = 25 -- Maximum number of nodes that spawn at a time
+
+Config.NodeModel        = 'prop_creosote_b_01'
+
+Config.Node             = {
+    coords = vector3(2055.79, 4927.90, 40.96)
 }

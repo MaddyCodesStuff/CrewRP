@@ -14,6 +14,11 @@ local Keys = {
 	["1"] = 185, ["2"] = 158, ["3"] = 160, ["4"] = 164, ["5"] = 165, ["6"] = 159, ["7"] = 161, ["8"] = 162, ["9"] = 163, ["E"] = 38, ["X"] = 73
 }
 
+local spawnedNodes = 0
+local tailoringNodes = {}
+local gatheredNodes   = 0
+local isGathering     = false
+
 
 for _, v in ipairs(Config.Processing) do
 	if v.onMap then
@@ -28,6 +33,14 @@ for _, v in ipairs(Config.Processing) do
 		EndTextCommandSetBlipName(blip)
 	end
 end
+
+AddEventHandler('onResourceStop', function(resource)
+    if resource == GetCurrentResourceName() then
+        for k, v in pairs(tailoringNodes) do
+            ESX.Game.DeleteObject(v)
+        end
+    end
+end)
 
 Citizen.CreateThread(function()
     while true do
@@ -104,25 +117,6 @@ Citizen.CreateThread(function()
                         }, function(status)
                             TriggerServerEvent('fueling:sellOil')
                         end)
-                    elseif IsControlJustReleased(0, Keys['E']) and v.type == 'Gather Wool' and playerInCar == false then
-                        exports['mythic_progbar']:Progress({
-                            name            = "gather_wool",
-                            duration        = 5000,
-                            label           = "Gather Wool",
-                            useWhileDead    = false,
-                            canCancel       = true,
-                            controlDisables = {
-                                disableMovement    = false,
-                                disableCarMovement = true,
-                                disableMouse       = false,
-                                disableCombat      = true,
-                            },
-                            animation       = {
-                                task = 'WORLD_HUMAN_GARDENER_PLANT',
-                            },
-                        }, function(status)
-                            TriggerServerEvent('tailor:wool')
-                        end)
                     elseif IsControlJustReleased(0, Keys['E']) and v.type == 'Refine Wool' and playerInCar == false then
                         exports['mythic_progbar']:Progress({
                             name            = "refine_wool",
@@ -192,3 +186,153 @@ Citizen.CreateThread(function()
 		end
     end
 end)
+
+Citizen.CreateThread(function()
+    while true do
+        Citizen.Wait(0)
+        local playerPed = PlayerPedId()
+        local coords    = GetEntityCoords(playerPed)
+        local nearbyObject, nearbyID
+
+        for i = 1, #tailoringNodes, 1 do
+            if GetDistanceBetweenCoords(coords, GetEntityCoords(tailoringNodes[i]), false) < 1 then
+                nearbyObject, nearbyID = tailoringNodes[i], i
+            end
+        end
+
+        if nearbyObject and IsPedOnFoot(playerPed) then
+
+            if not isGathering then
+                ESX.ShowHelpNotification("Press ~INPUT_CONTEXT~ to pick wool.")
+            end
+
+            if IsControlJustReleased(0, Keys['E']) and not isGathering then
+                isGathering = true                     
+                exports['mythic_progbar']:Progress({
+                                                        name            = "tailoring_action",
+                                                        duration        = 10000,
+                                                        label           = "Picking Wool",
+                                                        useWhileDead    = false,
+                                                        canCancel       = false,
+                                                        controlDisables = {
+                                                            disableMovement    = true,
+                                                            disableCarMovement = true,
+                                                            disableMouse       = false,
+                                                            disableCombat      = true,
+                                                        },
+                                                        animation       = {
+                                                        animDict = 'amb@medic@standing@kneel@idle_a',
+                                                        anim = 'idle_a',
+                                                        },
+                                                        prop            = {
+                                                            -- model = "prop_tool_pickaxe",
+                                                        }
+                                                    }, function(status)
+                    if not status then
+                        gatheredNodes = gatheredNodes + 1
+                        ESX.Game.DeleteObject(nearbyObject)
+                        table.remove(tailoringNodes, nearbyID)
+                        spawnedNodes = spawnedNodes - 1
+                        TriggerServerEvent('tailor:wool')                                  
+                    end
+                end)
+                isGathering = false                
+            end
+        else
+            Citizen.Wait(500)
+        end
+    end
+end)
+
+Citizen.CreateThread(function()
+    while true do
+        Citizen.Wait(0)
+        local coords = GetEntityCoords(PlayerPedId())
+
+        if GetDistanceBetweenCoords(coords, Config.Node.coords, true) < 100 then
+            spawnNodes()
+            Citizen.Wait(500)
+        else
+            Citizen.Wait(500)
+        end
+    end
+end)
+
+function spawnNodes()
+    local prop
+    while spawnedNodes < Config.MaxNodesSpawned do
+        Citizen.Wait(0)
+        local nodeCoords = generateNodeCoords()
+
+        prop = Config.NodeModel
+
+        ESX.Game.SpawnLocalObject(prop, nodeCoords, function(obj)
+            PlaceObjectOnGroundProperly(obj)
+            FreezeEntityPosition(obj, true)
+
+            table.insert(tailoringNodes, obj)
+
+            spawnedNodes = spawnedNodes + 1
+        end)
+    end
+end
+
+function generateNodeCoords()
+    while true do
+        Citizen.Wait(0)
+
+        local nodeCoordX, nodeCoordY
+
+        math.randomseed(GetGameTimer())
+        local modX = math.random(-20, 20)
+
+        Citizen.Wait(100)
+
+        math.randomseed(GetGameTimer())
+        local modY   = math.random(-30, 30)
+
+        nodeCoordX   = Config.Node.coords.x + modX
+        nodeCoordY   = Config.Node.coords.y + modY
+
+        local coordZ = getCoordZ(nodeCoordX, nodeCoordY)
+        local coord  = vector3(nodeCoordX, nodeCoordY, coordZ)
+
+        if validateCoord(coord) then
+            return coord
+        end
+    end
+end
+
+function getCoordZ(x, y)
+    local groundCheckHeights = { 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0 }
+
+    for i, height in ipairs(groundCheckHeights) do
+        local foundGround, z = GetGroundZFor_3dCoord(x, y, height)
+
+        if foundGround then
+            return z
+        end
+    end
+
+    return 43.0
+end
+
+function validateCoord(nodeCoord)
+    if spawnedNodes > 0 then
+        local validate = true
+
+        for k, v in pairs(tailoringNodes) do
+            if GetDistanceBetweenCoords(nodeCoord, GetEntityCoords(v), true) < 5 then
+                validate = false
+            end
+        end
+
+        if GetDistanceBetweenCoords(nodeCoord, Config.Node.coords, false) > 50 then
+            validate = false
+        end
+
+        return validate
+    else
+        return true
+    end
+end
