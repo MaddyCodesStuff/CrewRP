@@ -100,7 +100,7 @@ AddEventHandler('mining:giveItems', function()
         xPlayer.addInventoryItem(item, 2)
         xPlayer.addInventoryItem("clay", 1)
         TriggerClientEvent('esx:showNotification', _source,
-                                    'Obtained ' .. label)
+                                    'Obtained 2 ' .. label)
     end
 end)
 
