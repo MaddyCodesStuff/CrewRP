@@ -1,11 +1,11 @@
 local visible = false
 
 RegisterCommand('qte', function()
-    if visible == false then 
-        print('im here mom')
+    if visible == false then
         SendNUIMessage({
 
-            action = 'showbar'
+            action = 'showbar',
+            difficulty = 3
 
         })
         visible = true

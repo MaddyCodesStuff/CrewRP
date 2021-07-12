@@ -1,12 +1,42 @@
+/* 
 .quicktimebar{
-    display: hidden;
+    display: none;
     position: absolute;
-    left: 50%;
-    bottom: 175px;
-    background-color: blueviolet;
+    background-color:lightgrey;
+    
     color: white;
-    border-radius: 25px;
-    width: fit-content;
-    padding: 5px;
-
+    width: 150px;
 }
+.quicktimeprog{
+    display: none;
+    position: relative;
+    background-color: greenyellow;
+    opacity: 80%;
+    color: white;
+    margin: 0em;
+    padding: 0em;
+
+} */
+
+#quicktimeprog {
+    display: none;
+    position: relative;
+    width: 1%;
+    background-color: greenyellow;
+    height: 30px;
+    opacity: 80%;
+  }
+  
+  #quicktimebar{
+    opacity: 80%;
+    display: none;
+    left: 45%;
+    bottom: 175px;
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    background-color: grey;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+  }
