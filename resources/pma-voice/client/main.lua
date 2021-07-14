@@ -111,7 +111,7 @@ function toggleVoice(plySource, enabled, moduleType)
 	logger.verbose('[main] Updating %s to talking: %s with submix %s', plySource, enabled, moduleType)
 	if enabled then
 		MumbleSetVolumeOverrideByServerId(plySource, enabled and volumes[moduleType])
-		if GetConvarInt('voice_enableSubmix', 0) == 1 then
+		if true then
 			if moduleType then
 				disableSubmixReset[plySource] = true
 				submixFunctions[moduleType](plySource)
@@ -120,7 +120,7 @@ function toggleVoice(plySource, enabled, moduleType)
 			end
 		end
 	else
-		if GetConvarInt('voice_enableSubmix', 0) == 1 then
+		if true then
 			-- garbage collect it
 			disableSubmixReset[plySource] = nil
 			SetTimeout(250, function()
@@ -173,7 +173,6 @@ end
 
 local playerMuted = false
 RegisterCommand('+cycleproximity', function()
-	if GetConvarInt('voice_enableProximity', 1) ~= 1 then return end
 	if playerMuted then return end
 
 	local voiceMode = mode
@@ -332,7 +331,7 @@ Citizen.CreateThread(function()
 			Wait(100)
 		end
 		updateZone()
-		if GetConvarInt('voice_enableUi', 1) == 1 then
+		if true then
 			if lastRadioStatus ~= radioPressed or lastTalkingStatus ~= (NetworkIsPlayerTalking(PlayerId()) == 1) then
 				lastRadioStatus = radioPressed
 				lastTalkingStatus = NetworkIsPlayerTalking(PlayerId()) == 1
@@ -424,7 +423,7 @@ AddEventHandler('onClientResourceStart', function(resource)
 	-- not waiting right here (in testing) let to some cases of the UI 
 	-- just not working at all.
 	Wait(1000)
-	if GetConvarInt('voice_enableUi', 1) == 1 then
+	if true then
 		SendNUIMessage({
 			voiceModes = json.encode(Cfg.voiceModes),
 			voiceMode = mode - 1
