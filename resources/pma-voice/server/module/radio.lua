@@ -17,7 +17,6 @@ end
 ---@param radioChannel number the channel to set them to
 function addPlayerToRadio(source, radioChannel)
 	logger.info('[radio] Added %s to radio %s', source, radioChannel)
-	print('here')
 	-- check if the channel exists, if it does set the varaible to it
 	-- if not create it (basically if not radiodata make radiodata)
 	radioData[radioChannel] = radioData[radioChannel] or {}
@@ -36,9 +35,6 @@ end
 ---@param source number the player to set the channel of
 ---@param radioChannel number the radio channel to set them to (or 0 to remove them from radios)
 function setPlayerRadio(source, radioChannel)
-	print('here3')
-	if GetConvarInt('voice_enableRadios', 1) ~= 1 then return end
-
 	if GetInvokingResource() then
 		-- got set in a export, need to update the client to tell them that their radio
 		-- changed
@@ -66,7 +62,6 @@ end)
 --- syncs the player talking across all radio members
 ---@param talking boolean sets if the palyer is talking.
 function setTalkingOnRadio(talking)
-	if GetConvarInt('voice_enableRadios', 1) ~= 1 then return end
 	voiceData[source] = voiceData[source] or defaultTable(source)
 	local plyVoice = voiceData[source]
 	local radioTbl = radioData[plyVoice.radio]

@@ -77,7 +77,7 @@ RegisterNUICallback('joinRadio', function(data, cb)
         if channel <= Config.RestrictedChannels and PlayerData.job and isServicesJob(PlayerData.job.name) then -- Restricted radio
             exports["pma-voice"]:SetRadioChannel(channel)
             TriggerServerEvent('esx-radios:enableBlip', PlayerData.job.name)
-            TriggerEvent("notification",  Config.messages['joined_to_radio'] .. data.channel .. '.00 MHz </b>', 1)
+            TriggerEvent("tcrp-notification",  'Joined to radio' .. data.channel .. '.00 MHz </b>')
         elseif channel > Config.RestrictedChannels then -- Civ radio
             exports["pma-voice"]:SetRadioChannel(channel)
             TriggerEvent("notification",  Config.messages['joined_to_radio'] .. data.channel .. '.00 MHz </b>', 1)
