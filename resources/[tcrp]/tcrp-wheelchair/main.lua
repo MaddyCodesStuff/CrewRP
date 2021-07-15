@@ -53,6 +53,9 @@ RCCar.MustRagdoll = function()
 	if HasEntityCollidedWithAnything(player) and RCCar.Speed > 7.0 then 
 		return true 
 	end
+	if HasPedBeenDamagedByWeapon(player, 0, 2) then
+		return true
+	end
 	if IsPedDeadOrDying(player, false) then 
 		return true
 	end
@@ -94,7 +97,6 @@ RCCar.HandleKeys = function(distanceCheck)
 				RCCar.Speed = GetEntitySpeed(RCCar.Entity) * 3.6
 				if RCCar.MustRagdoll() then
 					SetEntityCollision(RCCar.Skate, true, true)
-					SetEntityCollision(player, true, true)
 					RCCar.AttachPlayer(false)
 					SetPedToRagdoll(player, 5000, 4000, 0, true, true, false)
 					Attached = false
@@ -275,25 +277,115 @@ RCCar.AttachPlayer = function(toggle)
 	if toggle then
 		TaskPlayAnim(player, "missfinale_c2leadinoutfin_c_int", "_leadin_loop2_lester", 8.0, 8.0, -1, 33, 1.0, false, false, false)
 		AttachEntityToEntity(player, RCCar.Skate, 20, -0.02, -0.03, 0.85, -5.0, 0, 189.0, true, false, false, true, 1, true)
-		SetEntityCollision(player, false, true)
+		SetEntityNoCollisionEntity(player, RCCar.Entity, false)
 		SetEntityCollision(RCCar.Entity, true, true)
 		SetEntityCollision(RCCar.Skate, true, true)
 		SetPedRagdollOnCollision(player, false)
+		SetCurrentPedWeapon(player, 0xA2719263, true)
+		SetPedConfigFlag(player, 48, true)
+		SetPedConfigFlag(player, 122, true)
+		SetPedConfigFlag(player, 64, true)
 		Citizen.CreateThread(function()
 			while Attached do
 				if not IsEntityPlayingAnim(player, "missfinale_c2leadinoutfin_c_int", "_leadin_loop2_lester", 3) then
 					TaskPlayAnim(player, "missfinale_c2leadinoutfin_c_int", "_leadin_loop2_lester", 8.0, 8.0, -1, 33, 1.0, false, false, false)
 				end
 				Citizen.Wait(1000)
-			end 
+			end
+		end)
+		Citizen.CreateThread(function()
+			while Attached do
+				DisableControlAction(0, 29, true)
+				Citizen.Wait(0)
+			end
 		end)
 	elseif not toggle then
 		SetPedRagdollOnCollision(player, false)
 		StopAnimTask(player, "missfinale_c2leadinoutfin_c_int", "_leadin_loop2_lester", 1.0)
 		DetachEntity(player, false, false)
+		SetPedConfigFlag(player, 48, false)
+		SetPedConfigFlag(player, 122, false)
+		SetPedConfigFlag(player, 64, false)
+		SetEntityNoCollisionEntity(player,RCCar.Entity, false)
 		TaskVehicleTempAction(RCCar.Driver, RCCar.Entity, 3, 1)	
 		Citizen.Wait(100)
 		
 	end	
 	Attached = toggle
+end
+
+Citizen.CreateThread(function()
+while true do
+	Citizen.Wait(100)
+	if IsControlJustPressed(0, 113) then
+		local ped = PlayerPedId()
+		local pedCoords = GetEntityCoords(ped)
+		local closestObject = GetClosestObjectOfType(pedCoords, 3.0, GetHashKey("prop_wheelchair_01_s"), false)
+		if DoesEntityExist(closestObject) then
+			PickUp(closestObject)
+		end
+	end
+end
+end)
+
+PickUp = function(strObject)
+    local closestPlayer, closestPlayerDist = GetClosestPlayer()
+
+    if closestPlayer ~= nil and closestPlayerDist <= 1.5 then
+        if IsEntityPlayingAnim(GetPlayerPed(closestPlayer), 'anim@heists@box_carry@', 'idle', 3) then
+            ShowNotification("Somebody is already driving the wheelchair!")
+            return
+        end
+    end
+
+    NetworkRequestControlOfEntity(strObject)
+    RCCar.LoadModels("anim@heists@box_carry@")
+    AttachEntityToEntity(strObject, PlayerPedId(), GetPedBoneIndex(PlayerPedId(),  28422), 0.0, -0.6, -1.43, 180.0, 170.0, 90.0, 0.0, false, false, true, false, 2, true)
+
+    while IsEntityAttachedToEntity(strObject, PlayerPedId()) do
+        Citizen.Wait(5)
+        if not IsEntityPlayingAnim(PlayerPedId(), 'anim@heists@box_carry@', 'idle', 3) then
+            TaskPlayAnim(PlayerPedId(), 'anim@heists@box_carry@', 'idle', 8.0, 8.0, -1, 50, 0, false, false, false)
+        end
+        if IsPedDeadOrDying(PlayerPedId()) then
+            DetachEntity(strObject, true, true)
+        end
+        if IsControlJustPressed(0, 73) then
+            DetachEntity(strObject, true, true)
+        end
+    end
+end
+
+GetClosestPlayer = function()
+    local players = GetPlayers()
+    local closestDistance = -1
+    local closestPlayer = -1
+    local ply = GetPlayerPed(-1)
+    local plyCoords = GetEntityCoords(ply, 0)
+    
+    for index,value in ipairs(players) do
+        local target = GetPlayerPed(value)
+        if(target ~= ply) then
+            local targetCoords = GetEntityCoords(GetPlayerPed(value), 0)
+            local distance = Vdist(targetCoords["x"], targetCoords["y"], targetCoords["z"], plyCoords["x"], plyCoords["y"], plyCoords["z"])
+            if(closestDistance == -1 or closestDistance > distance) then
+                closestPlayer = value
+                closestDistance = distance
+            end
+        end
+    end
+    
+    return closestPlayer, closestDistance
+end
+
+GetPlayers = function()
+    local players = {}
+
+    for i = 0, 256 do
+        if NetworkIsPlayerActive(i) then
+            table.insert(players, i)
+        end
+    end
+
+    return players
 end
