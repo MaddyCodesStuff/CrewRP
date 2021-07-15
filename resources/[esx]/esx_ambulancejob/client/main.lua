@@ -141,9 +141,7 @@ Citizen.CreateThread(function()
 			ped = GetPlayerPed(-1)
 			-- Make player visible to all when dead
 			SetEntityHealth(ped, 101)
-			--Citizen.Wait(10)
 			IsDead = true
-			--Citizen.Wait(1000)
 			if not IsPassedOut then 
 				TriggerEvent('emote:do', 'passout4')
 			end
