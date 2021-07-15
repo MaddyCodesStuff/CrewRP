@@ -3,6 +3,7 @@
 
 local crouched = false
 local proned   = false
+local IsDead   = false
 crouchKey      = 26
 proneKey       = 36
 
@@ -10,7 +11,7 @@ Citizen.CreateThread(function()
     while true do
         Citizen.Wait(1)
         local ped = GetPlayerPed(-1)
-        if (DoesEntityExist(ped) and not IsEntityDead(ped)) and not IsPedBeingStunned(ped) then
+        if (DoesEntityExist(ped) and not IsEntityDead(ped)) and not IsPedBeingStunned(ped) and not IsDead then
             ProneMovement()
             DisableControlAction(0, proneKey, true)
             DisableControlAction(0, crouchKey, true)
@@ -125,4 +126,18 @@ Citizen.CreateThread(function()
         end
     end
 
+end)
+
+RegisterNetEvent("crouch-n-prone:getDeathStatus")
+AddEventHandler("crouch-n-prone:getDeathStatus", function(IsCurrentlyDead)
+
+  IsDead = IsCurrentlyDead  
+
+end)
+
+Citizen.CreateThread(function()
+    while true do
+        Wait(0)    
+        TriggerEvent('esx_ambulancejob:getDeadStatus', "crouch-n-prone:getDeathStatus")
+    end
 end)
