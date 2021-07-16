@@ -688,6 +688,24 @@ Config.Shops      = {
         type       = "car",
         cars       = Config.ParkRangerCars
     },
+    {
+        name       = 'Parks Vehicles',
+        job        = 'parkranger',
+        coords     = vector3(-1495.04, 4980.95, 62.81),
+        heading    = 175.36,
+        shopCoords = vector3(-1491.90, 4979.57, 63.00),
+        type       = "car",
+        cars       = Config.ParkRangerCars
+    },
+    {
+        name       = 'Parks Vehicles Sandy',
+        job        = 'parkranger',
+        coords     = vector3(2096.45, 3565.58, 41.63),
+        heading    = 302.08,
+        shopCoords = vector3(2092.76, 3563.51, 42.01),
+        type       = "car",
+        cars       = Config.ParkRangerCars
+    },
 
     -- City Clerks
     {
