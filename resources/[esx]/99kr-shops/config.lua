@@ -694,10 +694,11 @@ Config = {
         }, -- Done
         [35] = { -- Hookies
             ["shelfs"]   = {
-                { ["x"] = -2183.35, ["y"] = 4287.34, ["z"] = 49.18, ["value"] = "checkout" },
-                { ["x"] = -2190.58, ["y"] = 4280.65, ["z"] = 49.18, ["value"] = "readymeal" },
-                { ["x"] = -2184.06, ["y"] = 4283.65, ["z"] = 49.18, ["value"] = "drinks" },
-                { ["x"] = -2182.26, ["y"] = 4286.14, ["z"] = 49.18, ["value"] = "snacks" },
+                { ["x"] = -2186.90, ["y"] = 4274.79, ["z"] = 49.18, ["value"] = "checkout" },
+                { ["x"] = -2183.80, ["y"] = 4271.89, ["z"] = 49.18, ["value"] = "readymeal" },
+                { ["x"] = -2184.18, ["y"] = 4267.33, ["z"] = 49.18, ["value"] = "drinks" },
+                { ["x"] = -2179.90, ["y"] = 4276.74, ["z"] = 49.18, ["value"] = "booze" },
+                { ["x"] = -2187.30, ["y"] = 4269.16, ["z"] = 49.18, ["value"] = "snacks" },
             },
             ["blip"]     = {
                 ["sprite"] = 628,
@@ -1149,6 +1150,7 @@ Config = {
             { label = "Car Cleaning Kit", item = "carcleaner", price = 150 },
             { label = "Fishing Rod", item = "fishingrod", price = 300 },
             { label = "Fish Bait", item = "fishbait", price = 15 },
+            { label = "Jackhammer", item = "jackhammer", price = 2000},
         },
         ["burgershot"]  = {
             { label = "The Bleeder Burger Meal", item = "bleedermeal", price = 10 },
