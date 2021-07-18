@@ -7,6 +7,7 @@ Cooldown = false
 Hidden = false
 MovingScene = false
 ClientTextScale = 1
+distancetimer = 0
 
 function IncurCooldown(time)
 	Cooldown = true
@@ -239,8 +240,9 @@ end)
 
 local CachedPosition = vec(0,0,0)
 CreateThread(function()
-	while true do Wait(1000)
+	while true do
 		CachedPosition = GetEntityCoords(PlayerPedId())
+		Wait(1000)
 	end
 end)
 
@@ -265,39 +267,45 @@ CreateThread(function()
 	for k,v in pairs(TextureDicts) do while not HasStreamedTextureDictLoaded(v) do Wait(100) RequestStreamedTextureDict(v, true) end end
 	TriggerServerEvent("Scene:Request")
 	local timer = 0
+	local timestamp = GetGameTimer()
 	while true do Wait(0)
-		if not ReadyToCheckLos then
-			timer = timer + 1
-			--print(timer)
-			if timer > 100 then
-				timer = 0
-				LOS = {}
-				ReadyToCheckLos = true
-			end
-		end
-		if not Hidden then
-			for id,i in pairs(Scenes) do
-				local Distance = Distance(i.Location, CachedPosition)
-				if Distance < 10 then
-					if ReadyToCheckLos or LOS[id] == nil then
-						local hit = 1
-						local temp = 5
-						local number = 0
-						hit, temp = CheckLos(i)
-						LOS[id]=(hit == 0 or temp < 1)
-						--[[for k, v in pairs(LOS) do
-							number = number + 1
-							print(number)
-						end]]
-					end
-					if LOS[id] then
-						DrawScene(i,CachedPosition)
+		local mindistance = math.huge
+		local currenttimestamp = GetGameTimer()
+		local elapsedtime = currenttimestamp - timestamp
+		timestamp = currenttimestamp
+		distancetimer = distancetimer - elapsedtime
+		if distancetimer <= 0 then
+			if not Hidden then
+				if not ReadyToCheckLos then
+					timer = timer + 1
+					--print(timer)
+					if timer > 100 then
+						timer = 0
+						LOS = {}
+						ReadyToCheckLos = true
 					end
 				end
+				for id,i in pairs(Scenes) do
+					local Distance = Distance(i.Location, CachedPosition)
+					mindistance = math.min(mindistance , Distance)
+					if Distance < 10 then
+						if ReadyToCheckLos or LOS[id] == nil then
+							local hit = 1
+							local temp = 5
+							local number = 0
+							hit, temp = CheckLos(i)
+							LOS[id]=(hit == 0 or temp < 1)
+						end
+						if LOS[id] then
+							DrawScene(i,CachedPosition)
+						end
+					end
+				end
+				distancetimer = 1000*math.max(0, math.min(10, mindistance/100 - 1))
+				ReadyToCheckLos = false
+			else
+				Wait(1000)
 			end
-			ReadyToCheckLos = false
-		else
-			Wait(1000)
 		end
 	end
 end)

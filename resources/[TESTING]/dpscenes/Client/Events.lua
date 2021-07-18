@@ -1,5 +1,6 @@
 RegisterNetEvent("Scene:Recieve")
 AddEventHandler("Scene:Recieve", function(scene, id)
+	distancetimer = 0
 	Scenes[id] = scene
 end)
 
@@ -21,11 +22,13 @@ end)
 
 RegisterNetEvent("Scene:RecieveAll")
 AddEventHandler("Scene:RecieveAll", function(scenes)
+	distancetimer = 0
 	Scenes = scenes
 end)
 
 RegisterNetEvent("Scene:Create")
 AddEventHandler("Scene:Create", function(T)
+	distancetimer = 0
 	Scene.Text.Text = T
 	if not Scene.State then
 		Scene.State = "Placing"
