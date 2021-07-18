@@ -6,6 +6,7 @@ LOS = {}
 Cooldown = false
 Hidden = false
 MovingScene = false
+ClientTextScale = 1
 
 function IncurCooldown(time)
 	Cooldown = true
@@ -47,7 +48,7 @@ function SceneText(i)
 	if Active then
 		local Font = Fonts[i.Text.Font].Font or 4
 		local Dis = Distance(GetGameplayCamCoords(), vec(x,y,z))
-		local Scale = ((1/Dis)*2)*(1/GetGameplayCamFov())*80
+		local Scale = ((1/Dis)*2)*(1/GetGameplayCamFov())*80*ClientTextScale
 		local RangeAlpha = 10*math.floor(Scale*40)
 		if RangeAlpha > 225 then RangeAlpha = 225 elseif RangeAlpha < 40 then RangeAlpha = 40 end
 		local SceneAlpha = RangeAlpha
@@ -110,52 +111,37 @@ end
 
 function DrawScene(i,p)
 	local Distance = Distance(i.Location, p)
-	if Distance < 10 then
-		if ReadyToCheckLos or LOS[i] == nil then
-			local hit = 1
-			local temp = 5
-			local number = 0
-			hit, temp = CheckLos(i)
-			LOS[i]=(hit == 0 or temp < 1)
-			--[[for k, v in pairs(LOS) do
-				number = number + 1
-				print(number)
-			end]]
-		end
-		if LOS[i] then
-			local s = ((1/Distance)*2)*(1/GetGameplayCamFov())*80
-			local a = 10 * math.floor(s*20)
-			if a > 225 then a = 225 elseif a < 40 then a = 40 end
-			local Age = false
-			if Cache.Time and i.Created then
-				Age = SceneAge(Cache.Time - i.Created)
-			end
-			local ExtraInformation = i
-			ExtraInformation["Age"] = Age
-			ExtraInformation["Alpha"] = a
-			SceneText(ExtraInformation)
-		end
-		if Distance < 1.5 and not Scene.State then
-			if i.Function then
-				if i.Function.Current == "GPS" then
-					SetTextComponentFormat("TWOSTRINGS")
-					AddTextComponentString(Lang("Interact"))
-					AddTextComponentString("\n~b~"..string.format(i.Function.Description or "N/A %s", i.Function.String or "N/A"))
-					EndTextCommandDisplayHelp(0,0,0,-1)
-					if IsControlJustReleased(0, GetKey("E")) then
-						if not HandleSceneInteract(i) then
-							Chat(Lang("CantRightNow"))
-						end
+	local s = ((1/Distance)*2)*(1/GetGameplayCamFov())*80
+	local a = 10 * math.floor(s*20)
+	if a > 225 then a = 225 elseif a < 40 then a = 40 end
+	local Age = false
+	if Cache.Time and i.Created then
+		Age = SceneAge(Cache.Time - i.Created)
+	end
+	local ExtraInformation = i
+	ExtraInformation["Age"] = Age
+	ExtraInformation["Alpha"] = a
+	SceneText(ExtraInformation)
+	if Distance < 1.5 and not Scene.State then
+		if i.Function then
+			if i.Function.Current == "GPS" then
+				SetTextComponentFormat("TWOSTRINGS")
+				AddTextComponentString(Lang("Interact"))
+				AddTextComponentString("\n~b~"..string.format(i.Function.Description or "N/A %s", i.Function.String or "N/A"))
+				EndTextCommandDisplayHelp(0,0,0,-1)
+				if IsControlJustReleased(0, GetKey("E")) then
+					if not HandleSceneInteract(i) then
+						Chat(Lang("CantRightNow"))
 					end
-				elseif i.Function.Current ~= "None"  then
-					SetTextComponentFormat("TWOSTRINGS")
-					AddTextComponentString(Lang("Interact"))
-					AddTextComponentString("\n~b~/"..i.Function.Prefix.." "..i.Function.Variable)
-					EndTextCommandDisplayHelp(0,0,0,-1)
-					if IsControlJustReleased(0, GetKey("E")) then
-						if not HandleSceneInteract(i) then
-							Chat(Lang("CantRightNow"))
-						end
+				end
+			elseif i.Function.Current ~= "None"  then
+				SetTextComponentFormat("TWOSTRINGS")
+				AddTextComponentString(Lang("Interact"))
+				AddTextComponentString("\n~b~/"..i.Function.Prefix.." "..i.Function.Variable)
+				EndTextCommandDisplayHelp(0,0,0,-1)
+				if IsControlJustReleased(0, GetKey("E")) then
+					if not HandleSceneInteract(i) then
+						Chat(Lang("CantRightNow"))
 					end
 				end
 			end
@@ -224,6 +210,19 @@ RegisterCommand("scenemove", function()
 	end
 end)
 
+RegisterCommand("scenescale", function(Arg1,Arg2)
+	local a = tonumber(Arg2[1])
+	if type(a) == 'number' then
+		ClientTextScale = a
+		if ClientTextScale < 1 then
+			ClientTextScale = 1
+		elseif ClientTextScale > 10 then
+			ClientTextScale = 10
+		end
+	else Chat("Input must be a number")
+	end
+end)
+
 function StartMoveScene(scene, id)
 	MovingScene = {
 		Scene = scene,
@@ -255,6 +254,7 @@ function CreateSuggestions()
 	TriggerEvent("chat:addSuggestion", "/scenemove", Lang("MoveSuggestion"))
 	TriggerEvent("chat:addSuggestion", "/scenecopylast", Lang("CopyLastSuggestion"))
 	TriggerEvent("chat:addSuggestion", "/sceneresetpresets", Lang("ResetSuggestion"))
+	TriggerEvent("chat:addSuggestion", "/scenescale", Lang("SceneScaleSuggestion"))
 end
 
 local TextureDicts = {"dpscenes", "commonmenu"}
@@ -276,8 +276,24 @@ CreateThread(function()
 			end
 		end
 		if not Hidden then
-			for k,v in pairs(Scenes) do
-				DrawScene(v,CachedPosition)
+			for id,i in pairs(Scenes) do
+				local Distance = Distance(i.Location, CachedPosition)
+				if Distance < 10 then
+					if ReadyToCheckLos or LOS[id] == nil then
+						local hit = 1
+						local temp = 5
+						local number = 0
+						hit, temp = CheckLos(i)
+						LOS[id]=(hit == 0 or temp < 1)
+						--[[for k, v in pairs(LOS) do
+							number = number + 1
+							print(number)
+						end]]
+					end
+					if LOS[id] then
+						DrawScene(i,CachedPosition)
+					end
+				end
 			end
 			ReadyToCheckLos = false
 		else

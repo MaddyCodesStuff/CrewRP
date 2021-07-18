@@ -56,4 +56,5 @@ Locale.en = {
 	CopyLastSuggestion = "Copies your last copied scene.",
 	ResetSuggestion = "Resets your preset scenes.",
 	OnlyCopyOwn = "Sorry, you can only copy your own scenes.",
+	SceneScaleSuggestion = "Change the scale of all scenes just for you",
 }

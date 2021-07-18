@@ -4,6 +4,7 @@ if Config.Database == "KVP" then
 
 	log("^3You can ignore the error above since you're not using SQL.^7")
 	DB.Timecheck = function()
+		local ExpiredScenes = {}
 		local Today = os.time()
 		local Count = 0
 		for k,v in pairs(Scenes.Current) do
@@ -12,10 +13,13 @@ if Config.Database == "KVP" then
 				DeleteResourceKvp("dpscene"..k)
 				Scenes.Current[k] = nil
 				Count = Count +1
+				ExpiredScenes[#ExpiredScenes + 1] = k
 			end
 		end
 		if Count > 0 then log("Deleted "..Count.." expired scenes.") end
-		TriggerClientEvent("Scene:RecieveAll", -1, Scenes.Current)
+		for i = 1, #ExpiredScenes do
+			TriggerClientEvent("Scene:Delete", -1, ExpiredScenes[i])
+		end
 	end
 
 	DB.NewScene = function(scene, Src, Id, CreationTime, NewScene)
@@ -51,7 +55,7 @@ if Config.Database == "KVP" then
 	DB.RemoveScene = function(id)
 		DeleteResourceKvp("dpscene"..id)
 		Scenes.Current[id] = nil
-		TriggerClientEvent("Scene:RecieveAll", -1, Scenes.Current)
+		TriggerClientEvent("Scene:Delete", -1, id)
 	end
 
 end

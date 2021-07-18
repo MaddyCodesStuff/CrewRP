@@ -9,7 +9,7 @@ Config = {
 	]]--
 	Database = "KVP",
 	-- Max scenes a player is allowed to have on their own.
-	MaxScenes = 20,
+	MaxScenes = 10,
 	FontSize = {
 		Min = 0.25,
 		Max = 0.65
@@ -17,7 +17,8 @@ Config = {
 	-- Amount of hours a scene is allowed to be up for.
 	SceneLength = {
 		{Hours = 1},
-		{Hours = 6},
+		{Hours = 4},
+		{Hours = 8},
 		{Hours = 12},
 		{Hours = 24},
 		{Hours = 48},
