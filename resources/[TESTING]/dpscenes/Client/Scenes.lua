@@ -2,6 +2,7 @@ Scenes = {}
 Scene = {}
 Presets = {}
 Cache = {}
+LOS = {}
 Cooldown = false
 Hidden = false
 MovingScene = false
@@ -110,17 +111,30 @@ end
 function DrawScene(i,p)
 	local Distance = Distance(i.Location, p)
 	if Distance < 10 then
-		local s = ((1/Distance)*2)*(1/GetGameplayCamFov())*80
-		local a = 10 * math.floor(s*20)
-		if a > 225 then a = 225 elseif a < 40 then a = 40 end
-		local Age = false
-		if Cache.Time and i.Created then
-			Age = SceneAge(Cache.Time - i.Created)
+		if ReadyToCheckLos or LOS[i] == nil then
+			local hit = 1
+			local temp = 5
+			local number = 0
+			hit, temp = CheckLos(i)
+			LOS[i]=(hit == 0 or temp < 1)
+			--[[for k, v in pairs(LOS) do
+				number = number + 1
+				print(number)
+			end]]
 		end
-		local ExtraInformation = i
-		ExtraInformation["Age"] = Age
-		ExtraInformation["Alpha"] = a
-		SceneText(ExtraInformation)
+		if LOS[i] then
+			local s = ((1/Distance)*2)*(1/GetGameplayCamFov())*80
+			local a = 10 * math.floor(s*20)
+			if a > 225 then a = 225 elseif a < 40 then a = 40 end
+			local Age = false
+			if Cache.Time and i.Created then
+				Age = SceneAge(Cache.Time - i.Created)
+			end
+			local ExtraInformation = i
+			ExtraInformation["Age"] = Age
+			ExtraInformation["Alpha"] = a
+			SceneText(ExtraInformation)
+		end
 		if Distance < 1.5 and not Scene.State then
 			if i.Function then
 				if i.Function.Current == "GPS" then
@@ -250,11 +264,22 @@ CreateThread(function()
 	ResetScene()
 	for k,v in pairs(TextureDicts) do while not HasStreamedTextureDictLoaded(v) do Wait(100) RequestStreamedTextureDict(v, true) end end
 	TriggerServerEvent("Scene:Request")
+	local timer = 0
 	while true do Wait(0)
+		if not ReadyToCheckLos then
+			timer = timer + 1
+			--print(timer)
+			if timer > 100 then
+				timer = 0
+				LOS = {}
+				ReadyToCheckLos = true
+			end
+		end
 		if not Hidden then
 			for k,v in pairs(Scenes) do
 				DrawScene(v,CachedPosition)
 			end
+			ReadyToCheckLos = false
 		else
 			Wait(1000)
 		end
