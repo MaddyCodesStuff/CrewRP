@@ -20,7 +20,7 @@ Config = {
     1 = Property for Sale, Gas Stations, Car Washes 
     --]]
 
-    Blips          = {
+    Blips = {
                             --Format for adding new blips--
         --[1]  = {
         --    ["name"]    = "Insert Location Name Here, for future reference",
@@ -35,8 +35,6 @@ Config = {
         --    ["opacity"] = 255,
         --    ["hidden"]  = false,
         --},
-        
-        --BANKS--
         [1]  = {
             ["name"]    = "Pacific Standard Bank",
             ["x"] = 249.51, ["y"] = 219.82,
@@ -208,7 +206,7 @@ Config = {
             ["name"]    = "Hookies",
             ["x"] = -2185.72, ["y"] = 4285.61,
             ["category"]= "Restaurant",
-            ["text"]    = "Restaurant",
+            ["text"]    = "Hookies",
             ["sprite"]  = 628,
             ["color"]   = 73,
             ["scale"]   = 1.0,
@@ -216,15 +214,63 @@ Config = {
         },
         [19]  = {
             ["name"]    = "Pop's Diner",
-            ["x"] = -2185.72, ["y"] = 4285.61,
+            ["x"] = 1589.23, ["y"] = 6456.51,
             ["category"]= "Restaurant",
-            ["text"]    = "Restaurant",
+            ["text"]    = "Pop's Diner",
             ["sprite"]  = 628,
             ["color"]   = 73,
             ["scale"]   = 1.0,
             ["layer"]   = 25,
         },
-
-
+        [20]  = {
+            ["name"]    = "Taco Farmer",
+            ["x"] = 11.88, ["y"] = -1602.88,
+            ["category"]= "Restaurant",
+            ["text"]    = "Taco Farmer",
+            ["sprite"]  = 628,
+            ["color"]   = 73,
+            ["scale"]   = 1.0,
+            ["layer"]   = 25,
+        },
+        [21]  = {
+            ["name"]    = "Pearls",
+            ["x"] = -1829.74, ["y"] = -1190.67,
+            ["category"]= "Restaurant",
+            ["text"]    = "Pearls",
+            ["sprite"]  = 628,
+            ["color"]   = 73,
+            ["scale"]   = 1.0,
+            ["layer"]   = 25,
+        },
+        [22]  = {
+            ["name"]    = "Limey's",
+            ["x"] = -1240, ["y"] = -286.05,
+            ["category"]= "Restaurant",
+            ["text"]    = "Limey's",
+            ["sprite"]  = 628,
+            ["color"]   = 73,
+            ["scale"]   = 1.0,
+            ["layer"]   = 25,
+        },
+        [23]  = {
+            ["name"]    = "Cherry Popper",
+            ["x"] = -469.53, ["y"] = -26.95,
+            ["category"]= "Restaurant",
+            ["text"]    = "Cherry Popper",
+            ["sprite"]  = 628,
+            ["color"]   = 73,
+            ["scale"]   = 1.0,
+            ["layer"]   = 25,
+        },
+        [24]  = {
+            ["name"]    = "Rex's Diner",
+            ["x"] = 2557.25, ["y"] = 2591.92,
+            ["category"]= "Restaurant",
+            ["text"]    = "Pearls",
+            ["sprite"]  = 628,
+            ["color"]   = 73,
+            ["scale"]   = 1.0,
+            ["layer"]   = 25,
+        },
     }
 }

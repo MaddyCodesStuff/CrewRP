@@ -1,4 +1,4 @@
-local toggle = true
+toggle = true
 
 CreateThread(function()
     for i = 1, #Config.Blips do
@@ -33,7 +33,7 @@ CreateThread(function()
 
     -- Future Function for players to disable Blips -- 
     --for i = 1, #Config.Disabled do
-    --    local blip = Config.Blips[i]["blip"]
+    --    local blip = Config.Blips[i]
     --    if blip and blip["sprite"]~= -1 then
     --        if DoesBlipExist(blip["id"]) then
     --            SetBlipDisplay(blip, 0)
@@ -45,16 +45,38 @@ CreateThread(function()
 end)
 
 
-AddEventHandler("tcrp-blips:toggleall", function()
-    local toggle = not toggle
+
+RegisterCommand("blips", function()
+    TriggerEvent("tcrp-blips:disableall")
+end)
+
+RegisterCommand("blipscategory", function()
+    TriggerEvent("tcrp-blips:disablecategory")
+end)
+
+AddEventHandler("tcrp-blips:disableall", function()
+    toggle = not toggle
     for i = 1, #Config.Blips do
-            local blip = Config.Blips[i]["blip"]
-            if blip and blip["sprite"]~= -1 then
-                if DoesBlipExist(blip["id"]) and toggle then
-                    SetBlipDisplay(blip, 0)
-                elseif DoesBlipExist(blip["id"]) and not toggle then
-                    SetBlipDisplay(blip, 0)
-            end
-        end 
+        local blip = Config.Blips[i]
+        if toggle and DoesBlipExist(blip["id"]) then
+            SetBlipAlpha(blip["id"], 0)
+        elseif not toggle then
+            SetBlipAlpha(blip["id"], blip["opacity"] or Config.DefaultOpacity)
+        end
     end
 end)
+--[[
+AddEventHandler("tcrp-blips:disablecategory", function()
+    toggle = not toggle
+    for i = 1, #Config.Blips do
+        local blip = Config.Blips[i]
+        if blip["category"] == "Bank" then
+            if toggle and DoesBlipExist(blip["id"]) then
+                SetBlipAlpha(blip["id"], 0)
+            elseif not toggle then
+                SetBlipAlpha(blip["id"], blip["opacity"] or Config.DefaultOpacity)
+            end
+        end
+    end
+end)
+]]--
