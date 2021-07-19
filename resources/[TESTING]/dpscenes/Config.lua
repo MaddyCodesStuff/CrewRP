@@ -7,7 +7,7 @@ Config = {
 		SQL is pretty usual, but KVP does not require mysql-async.
 		If you choose SQL you have to import the sql provided, KVP does not require any extra work.
 	]]--
-	Database = "KVP",
+	Database = "SQL",
 	-- Max scenes a player is allowed to have on their own.
 	MaxScenes = 10,
 	FontSize = {
