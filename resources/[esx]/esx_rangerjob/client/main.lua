@@ -160,19 +160,6 @@ AddEventHandler('esx_rangerjob:hasEnteredEntityZone', function(entity)
 		CurrentActionMsg  = ('remove_prop')
 		CurrentActionData = { entity = entity }
 	end
-
-	if GetEntityModel(entity) == GetHashKey('p_ld_stinger_s') then
-		local playerPed = PlayerPedId()
-		local coords    = GetEntityCoords(playerPed)
-
-		if IsPedInAnyVehicle(playerPed, false) then
-			local vehicle = GetVehiclePedIsIn(playerPed)
-
-			for i = 0, 7, 1 do
-				SetVehicleTyreBurst(vehicle, i, true, 1000)
-			end
-		end
-	end
 end)
 
 AddEventHandler('esx_rangerjob:hasExitedEntityZone', function(entity)
