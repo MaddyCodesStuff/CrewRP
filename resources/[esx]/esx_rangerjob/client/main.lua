@@ -112,6 +112,7 @@ function ParkRangerMenu()
                              { label = "Issue Invoice", value = 'issue_invoice' },
                              { label = "Issue License", value = 'issue_license' },
                              { label = "Revoke License", value = 'revoke_license' },
+                             { label = "Flamingo", value = 'flamingo'}
                          }
                      }, function(data, menu)
             if data.current.value == 'issue_invoice' then
@@ -130,11 +131,100 @@ function ParkRangerMenu()
                 TriggerEvent("esx-radios:toggleRadioByName", data.current.value)
             elseif data.current.value == 'dispatch_menu' then
                 TriggerEvent("esx-radios:toggleRadioByName", 'dispatch')
+             elseif data.current.value == 'flamingo' then
+
+						local playerPed = PlayerPedId()
+						local coords    = GetEntityCoords(playerPed)
+						local forward   = GetEntityForwardVector(playerPed)
+						local x, y, z   = table.unpack(coords + forward * 1.0)
+						ESX.Game.SpawnObject('prop_flamingo', {
+							x = x,
+							y = y,
+							z = z
+						}, function(obj)
+							SetEntityHeading(obj, GetEntityHeading(playerPed))
+							PlaceObjectOnGroundProperly(obj)
+						end)
+					
             end
         end, function(data, menu)
             menu.close()
         end)
 end
+
+AddEventHandler('esx_rangerjob:hasEnteredEntityZone', function(entity)
+	local playerPed = PlayerPedId()
+
+	if PlayerData.job ~= nil and PlayerData.job.name == 'parkranger' and IsPedOnFoot(playerPed) then
+		CurrentAction     = 'remove_entity'
+		CurrentActionMsg  = ('remove_prop')
+		CurrentActionData = { entity = entity }
+	end
+
+	if GetEntityModel(entity) == GetHashKey('p_ld_stinger_s') then
+		local playerPed = PlayerPedId()
+		local coords    = GetEntityCoords(playerPed)
+
+		if IsPedInAnyVehicle(playerPed, false) then
+			local vehicle = GetVehiclePedIsIn(playerPed)
+
+			for i = 0, 7, 1 do
+				SetVehicleTyreBurst(vehicle, i, true, 1000)
+			end
+		end
+	end
+end)
+
+AddEventHandler('esx_rangerjob:hasExitedEntityZone', function(entity)
+	if CurrentAction == 'remove_entity' then
+		CurrentAction = nil
+	end
+end)
+
+Citizen.CreateThread(function()
+	local trackedEntities = {
+		'prop_flamingo'
+		
+	}
+
+	while true do
+		Citizen.Wait(500)
+
+		local playerPed       = PlayerPedId()
+		local coords          = GetEntityCoords(playerPed)
+
+		local closestDistance = -1
+		local closestEntity   = nil
+
+		for i = 1, #trackedEntities, 1 do
+			local object = GetClosestObjectOfType(coords.x, coords.y, coords.z, 3.0, GetHashKey(trackedEntities[i]),
+												  false, false, false)
+
+			if DoesEntityExist(object) then
+				local objCoords = GetEntityCoords(object)
+				local distance  = GetDistanceBetweenCoords(coords.x, coords.y, coords.z, objCoords.x, objCoords.y,
+														   objCoords.z, true)
+
+				if closestDistance == -1 or closestDistance > distance then
+					closestDistance = distance
+					closestEntity   = object
+				end
+			end
+		end
+
+		if closestDistance ~= -1 and closestDistance <= 3.0 then
+			if LastEntity ~= closestEntity then
+				TriggerEvent('esx_rangerjob:hasEnteredEntityZone', closestEntity)
+				LastEntity = closestEntity
+			end
+		else
+			if LastEntity ~= nil then
+				TriggerEvent('esx_rangerjob:hasExitedEntityZone', LastEntity)
+				LastEntity = nil
+			end
+		end
+	end
+end)
 
 -- Invoice player
 function IssueInvoice(player)
@@ -170,6 +260,8 @@ Citizen.CreateThread(function()
                     OpenInventoryMenu()
                 elseif CurrentAction == 'Cloakroom' then
                     OpenCloakroomMenu()
+                elseif CurrentAction == 'remove_entity' then
+					DeleteEntity(CurrentActionData.entity)
                 elseif CurrentAction == 'Alarm' then
                     local store = CurrentActionData.store
                     if canTrigger then
@@ -188,7 +280,7 @@ Citizen.CreateThread(function()
                         ESX.ShowNotification('The silent alarm has already been triggered.')
                     end
                 end
-                -- CurrentAction = nil
+                CurrentAction = nil
             end
         end
     end
