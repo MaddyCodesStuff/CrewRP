@@ -16,12 +16,12 @@ if Config.SharedEmotesEnabled then
                 if DP.Shared[emotename] ~= nil then
                     dict, anim, ename = table.unpack(DP.Shared[emotename])
                     TriggerServerEvent("ServerEmoteRequest", GetPlayerServerId(target), emotename)
-                    SimpleNotify(_U('sentrequestto') .. GetPlayerName(target) .. " ~w~(~g~" .. ename .. "~w~)")
+                    TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', text = 'Request sent to ' .. GetPlayerName(target) , length = 10000 })
                 else
-                    EmoteChatMessage("'" .. emotename .. "' " .. _U('notvalidsharedemote') .. "")
+                    TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', text = 'Emote ' .. emotename .. " is not a valid emote.", length = 10000 })
                 end
             else
-                SimpleNotify(_U('nobodyclose'))
+                TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', text = 'No players are close.', length = 10000 })
             end
         else
             MearbysOnCommand()
@@ -73,10 +73,9 @@ AddEventHandler("SyncPlayEmoteSource", function(emote, player)
 end)
 
 RegisterNetEvent("ClientEmoteRequestReceive")
-AddEventHandler("ClientEmoteRequestReceive", function(emotename, etype)
-    isRequestAnim  = true
+AddEventHandler("ClientEmoteRequestReceive", function(emotename, etype, firstname, lastname)
     requestedemote = emotename
-
+    isRequestAnim  = true
     if etype == 'Dances' then
         a, b, remote = table.unpack(DP.Dances[requestedemote])
     else
@@ -84,7 +83,7 @@ AddEventHandler("ClientEmoteRequestReceive", function(emotename, etype)
     end
 
     PlaySound(-1, "NAV", "HUD_AMMO_SHOP_SOUNDSET", 0, 0, 1)
-    SimpleNotify(_U('doyouwanna') .. remote .. "~w~)")
+    TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', text = "Emote request to " .. remote .. " from " .. firstname .. " " .. lastname .. " press F7 to accept, or L to refuse." , length = 10000 })
 end)
 
 Citizen.CreateThread(function()
@@ -104,10 +103,10 @@ Citizen.CreateThread(function()
                 TriggerServerEvent("ServerValidEmote", GetPlayerServerId(target), requestedemote, otheremote)
                 isRequestAnim = false
             else
-                SimpleNotify(_U('nobodyclose'))
+                TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', text = 'No players are close.', length = 10000 })
             end
         elseif IsControlJustPressed(1, 182) and isRequestAnim then
-            SimpleNotify(_U('refuseemote'))
+            TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', text = 'Emote refused.', length = 10000 })
             isRequestAnim = false
         end
     end
