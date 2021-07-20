@@ -291,10 +291,10 @@ CreateThread(function()
 					if Distance < i.Distance then
 						if ReadyToCheckLos or LOS[id] == nil then
 							local hit = 1
-							local temp = 5
+							local LosCoords = 5
 							local number = 0
-							hit, temp = CheckLos(i)
-							LOS[id]=(hit == 0 or temp < 1)
+							hit, LosCoords = CheckLos(i)
+							LOS[id]=(hit == 0 or LosCoords < 1)
 						end
 						if LOS[id] then
 							DrawScene(i,CachedPosition)
@@ -302,7 +302,7 @@ CreateThread(function()
 					end
 				end
 				distancetimer = 1000*math.max(0, math.min(10, mindistance/200 - .5))
-				ReadyToCheckLos = false
+				--ReadyToCheckLos = false
 			else
 				Wait(1000)
 			end

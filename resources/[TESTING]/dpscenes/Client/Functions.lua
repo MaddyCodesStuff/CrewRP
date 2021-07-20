@@ -120,11 +120,11 @@ end
 
 function CheckLos(scenecoords)
 	local lped = PlayerPedId()
-	local temp = 0
+	local LosCoords = 0
 	local SCX,SCY,SCZ = table.unpack(scenecoords.Location)
 	local player = GetEntityCoords(lped)
 	local handle, hit, endCoords, surfaceNormal, entityHit = GetShapeTestResult(StartExpensiveSynchronousShapeTestLosProbe(player.x, player.y, player.z+.7, SCX, SCY, SCZ, -1, lped, 4))
-	temp = GetDistanceBetweenCoords(endCoords, scenecoords.Location, false)
+	LosCoords = GetDistanceBetweenCoords(endCoords, scenecoords.Location, false)
 	DrawLine(player.x, player.y, player.z+.7, scenecoords.Location,255,0,0,255)
-	return hit, temp
+	return hit, LosCoords
 end

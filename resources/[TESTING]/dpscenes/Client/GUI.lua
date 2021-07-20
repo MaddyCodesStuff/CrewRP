@@ -82,9 +82,9 @@ Menus = {
 		end,
 		Function = function()
 			if CurrentKey("LEFT") then
-				Scene.Background.Settings.h = Scene.Background.Settings.h - 0.002
+				Scene.Background.Settings.h = AlterOverflow(Scene.Background.Settings.h, -0.002, -0.2-.002, 0.2+.002)
 			elseif CurrentKey("RIGHT") then
-				Scene.Background.Settings.h = Scene.Background.Settings.h + 0.002
+				Scene.Background.Settings.h = AlterOverflow(Scene.Background.Settings.h, 0.002, -0.2-.002, 0.2+.002)
 			end
 		end
 	},
@@ -96,9 +96,9 @@ Menus = {
 		end,
 		Function = function()
 			if CurrentKey("LEFT") then
-				Scene.Background.Settings.w = Scene.Background.Settings.w - 0.002
+				Scene.Background.Settings.w = AlterOverflow(Scene.Background.Settings.w, -0.002, -0.2-.002, 0.2+.002)
 			elseif CurrentKey("RIGHT") then
-				Scene.Background.Settings.w = Scene.Background.Settings.w + 0.002
+				Scene.Background.Settings.w = AlterOverflow(Scene.Background.Settings.w, 0.002, -0.2-.002, 0.2+.002)
 			end
 		end
 	},
