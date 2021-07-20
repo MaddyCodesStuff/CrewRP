@@ -125,6 +125,5 @@ function CheckLos(scenecoords)
 	local player = GetEntityCoords(lped)
 	local handle, hit, endCoords, surfaceNormal, entityHit = GetShapeTestResult(StartExpensiveSynchronousShapeTestLosProbe(player.x, player.y, player.z+.7, SCX, SCY, SCZ, -1, lped, 4))
 	LosCoords = GetDistanceBetweenCoords(endCoords, scenecoords.Location, false)
-	DrawLine(player.x, player.y, player.z+.7, scenecoords.Location,255,0,0,255)
 	return hit, LosCoords
 end

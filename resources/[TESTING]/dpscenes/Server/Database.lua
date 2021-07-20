@@ -15,7 +15,7 @@ end
 
 function CanDeleteAnyScene(Src, Identifier)
 	local xPlayer = ESX.GetPlayerFromId(Src)
-	if xPlayer.job.name == 'police' or xPlayer.getGroup() == 'superadmin' or xPlayer.getGroup() == 'admin' then
+	if xPlayer.getGroup() == 'superadmin' or xPlayer.getGroup() == 'admin' then
 		return true
 	else
 		return false

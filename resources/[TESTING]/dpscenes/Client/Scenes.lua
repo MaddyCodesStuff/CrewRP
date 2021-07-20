@@ -302,7 +302,7 @@ CreateThread(function()
 					end
 				end
 				distancetimer = 1000*math.max(0, math.min(10, mindistance/200 - .5))
-				--ReadyToCheckLos = false
+				ReadyToCheckLos = false
 			else
 				Wait(1000)
 			end
