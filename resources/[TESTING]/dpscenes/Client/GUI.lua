@@ -221,6 +221,21 @@ Menus = {
 		end
 	},
 	{
+		Modifier = "Switch",
+		Label = Lang("SceneRenderDistance"),
+		Desc = Lang("SceneRenderDistanceDesc"),
+		Current = function()
+			return Scene.Distance
+		end,
+		Function = function(x,y,control)
+			if CurrentKey("LEFT") then
+				Scene.Distance = AlterOverflow(Scene.Distance, -1.00, Config.Distance.Min, Config.Distance.Max)
+			elseif CurrentKey("RIGHT") then
+				Scene.Distance = AlterOverflow(Scene.Distance, 1.00, Config.Distance.Min, Config.Distance.Max)
+			end
+		end
+	},
+	{
 		Modifier = "Enter",
 		Label = Lang("InteractFunction"),
 		Desc = Lang("InteractDesc"),

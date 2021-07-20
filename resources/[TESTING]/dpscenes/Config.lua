@@ -14,6 +14,10 @@ Config = {
 		Min = 0.25,
 		Max = 0.65
 	},
+	Distance = {
+		Min = 10,
+		Max = 20
+	},
 	-- Amount of hours a scene is allowed to be up for.
 	SceneLength = {
 		{Hours = 1},
@@ -106,7 +110,8 @@ Config = {
 						Arg = ""
 					end
 				end
-				local New = TextInput("What action do you want the scene to trigger?", Arg, 90)
+				local New = TextInput("What action do you want the scene to trigger?", Arg, 99
+				)
 				if New ~= "" then
 					Scene.Function = {
 						Current = "Me",
@@ -140,6 +145,28 @@ Config = {
     				end
 				else
 					Chat("You have to have a waypoint active.")
+				end
+			end
+		},
+		{
+			Name = "Roll",
+			Prefix = "/roll",
+			Alter = function()
+				local Arg = ""
+				if Scene.Function then
+					Arg = Scene.Function.Variable
+					if Scene.Function.Current ~= "Roll" then
+						Arg = ""
+					end
+				end
+				local New = TextInput("What Dice do you want to roll? Format: Die Sides/Number of Die.", Arg, 20)
+				if New ~= "" then
+					Scene.Function = {
+						Current = "Roll",
+						Prefix = "roll",
+						Variable = New,
+					}
+					Scene.State = "Placing"
 				end
 			end
 		},

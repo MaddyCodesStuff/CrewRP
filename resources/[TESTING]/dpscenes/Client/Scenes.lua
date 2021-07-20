@@ -28,6 +28,7 @@ function ResetScene()
 			ColourName = "Black",
 			Settings = {x = 0.00, y = 0.01, w = 0.01, h = 0.01, r = 0.00, o = 120}
 		},
+		Distance = 10,
 		Function = false
 	}
 end
@@ -278,7 +279,6 @@ CreateThread(function()
 			if not Hidden then
 				if not ReadyToCheckLos then
 					timer = timer + 1
-					--print(timer)
 					if timer > 100 then
 						timer = 0
 						LOS = {}
@@ -288,7 +288,7 @@ CreateThread(function()
 				for id,i in pairs(Scenes) do
 					local Distance = Distance(i.Location, CachedPosition)
 					mindistance = math.min(mindistance , Distance)
-					if Distance < 10 then
+					if Distance < i.Distance then
 						if ReadyToCheckLos or LOS[id] == nil then
 							local hit = 1
 							local temp = 5
@@ -303,7 +303,6 @@ CreateThread(function()
 				end
 				distancetimer = 1000*math.max(0, math.min(10, mindistance/200 - .5))
 				ReadyToCheckLos = false
-				--print(distancetimer)
 			else
 				Wait(1000)
 			end
@@ -313,10 +312,9 @@ end)
 
 CreateThread(function()
 	while true do Wait(0)
-		InvalidateIdleCam()
 		if Scene.State then
 			local Player = GetEntityCoords(PlayerPedId())
-			local Hit, Coords, Entity = RayCastGamePlayCamera(10.0)
+			local Hit, Coords, Entity = RayCastGamePlayCamera(Scene.Distance)
 			local Dis = Distance(Player, Coords)
 			local c = false
 			if Scene.State == "Placing" then c = true end
@@ -325,7 +323,7 @@ CreateThread(function()
 				ResetScene()
 				Scene.State = false
 			end
-			if Dis < 15 and Hit then
+			if Dis < Scene.Distance and Hit then
 				local Info = {Entity = Entity, Coords = Coords, Player = Player}
 				local Blocked = false
 				for k,v in pairs(Config.Blacklist) do
