@@ -50,7 +50,7 @@ Config = {
 				end
 			end
 		},
-		{
+		--[[{
 			Error = "~r~Cant place scene in this area.",
 			Function = function(i)
 				local Area = vec(-1559.31, -2712.37, 13.95)
@@ -59,7 +59,7 @@ Config = {
 					return true
 				end
 			end
-		},
+		},]]
 	},
 	--[[ 
 		Scene Functions are functions users can choose to put on their scenes.

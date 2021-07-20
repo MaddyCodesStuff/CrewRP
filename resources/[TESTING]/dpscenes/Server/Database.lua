@@ -1,3 +1,9 @@
+ESX = nil
+
+TriggerEvent('esx:getSharedObject', function(obj)
+    ESX = obj
+end)
+
 DB = {}
 
 function PrepareSceneForDatabase(i)
@@ -7,13 +13,13 @@ function PrepareSceneForDatabase(i)
 	return json.encode(s)
 end
 
-function CanDeleteAnyScene(Identifier)
-	for k,v in pairs(Admins) do
-		if v == Identifier then
-			return true
-		end
+function CanDeleteAnyScene(Src, Identifier)
+	local xPlayer = ESX.GetPlayerFromId(Src)
+	if xPlayer.job.name == 'police' or xPlayer.getGroup() == 'superadmin' or xPlayer.getGroup() == 'admin' then
+		return true
+	else
+		return false
 	end
-	return false
 end
 
 RegisterNetEvent("Scene:New")
@@ -40,7 +46,7 @@ AddEventHandler("Scene:AttemptDelete", function(Id, Move)
 	local Src = source
 	local Me = GetLicense(Src, Config.IdentifierType)
 	local SceneToDelete = Scenes.Current[Id]
-	local Override = CanDeleteAnyScene(Me)
+	local Override = CanDeleteAnyScene(Src, Me)
 	if not Move then
 		if Me == SceneToDelete.Owner or Override then
 			DB.RemoveScene(Id)
@@ -58,7 +64,7 @@ AddEventHandler("Scene:AttemptCopy", function(Id)
 	local Src = source
 	local Me = GetLicense(Src, Config.IdentifierType)
 	local SceneToCopy = Scenes.Current[Id]
-	--local Override = CanDeleteAnyScene(Me)
+	--local Override = CanDeleteAnyScene(Src, Me)
 	if Me == SceneToCopy.Owner then
 		TriggerClientEvent("Scene:RecieveCopy", Src, SceneToCopy)
 	else
