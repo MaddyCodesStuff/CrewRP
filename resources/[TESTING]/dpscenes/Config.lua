@@ -9,7 +9,7 @@ Config = {
 	]]--
 	Database = "SQL",
 	-- Max scenes a player is allowed to have on their own.
-	MaxScenes = 10,
+	MaxScenes = 15,
 	FontSize = {
 		Min = 0.25,
 		Max = 0.80
@@ -211,7 +211,6 @@ Config = {
 		{Name = "Dark Blue", Colour = { 0, 0, 139}},
 		{Name = "Dark Cyan", Colour = { 0, 139, 139}},
 		{Name = "Dark Goldenrod", Colour = {184, 134, 11}},
-		{Name = "Dark Gray", Colour = {169, 169, 169}},
 		{Name = "Dark Green", Colour = { 0, 100, 0}},
 		{Name = "Dark Grey", Colour = {169, 169, 169}},
 		{Name = "Dark Khaki", Colour = {189, 183, 107}},
@@ -224,7 +223,6 @@ Config = {
 		{Name = "Dark Seagreen", Colour = {143, 188, 143}},
 		{Name = "Dark Slateblue", Colour = { 72, 61, 139}},
 		{Name = "Dark Slategray", Colour = { 47, 79, 79}},
-		{Name = "Dark Slategrey", Colour = { 47, 79, 79}},
 		{Name = "Dark Turquoise", Colour = { 0, 206, 209}},
 		{Name = "Dark Violet", Colour = {148, 0, 211}},
 		{Name = "Deep Pink", Colour = {255, 20, 147}},
