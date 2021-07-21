@@ -31,7 +31,7 @@ AddEventHandler('ls-radio:enableBlip', function(job)
         job_name = "[Park Ranger]"
     end
 
-    local xPlayer = ESX.GetPlayerFromId(source)
+    local xPlayer = GetPlayerFromServerId(source)
     local _src    = source
 
     if xPlayer then

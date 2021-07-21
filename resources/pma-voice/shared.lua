@@ -3,6 +3,7 @@ Cfg = {}
 -- possibly GetConvar('voice_modeNames', 'Whisper;Normal;Shouting') and seperate them on runtime?
 
 voice_defaultCycle = 'F1'
+
 if GetConvar('voice_useNativeAudio', 'false') == 'true' then
 	-- native audio distance seems to be larger then regular gta units
 	Cfg.voiceModes = {
