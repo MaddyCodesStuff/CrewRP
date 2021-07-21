@@ -48,7 +48,7 @@ AddEventHandler("Scene:AttemptDelete", function(Id, Move)
 	local SceneToDelete = Scenes.Current[Id]
 	local Override = CanDeleteAnyScene(Src, Me)
 	if not Move then
-		if Me == SceneToDelete.Owner or Override then
+		if Me == SceneToDelete.Owner or SceneToDelete.AnyDelete == 1 or Override then
 			DB.RemoveScene(Id)
 			Chat(Src, Lang("RemovedScene"))
 		else

@@ -236,6 +236,21 @@ Menus = {
 		end
 	},
 	{
+		Modifier = "Switch",
+		Label = Lang("CanAnyoneDelete"),
+		Desc = Lang("CanAnyoneDeleteDesc"),
+		Current = function()
+			return YesNo[Scene.AnyDelete]
+		end,
+		Function = function()
+			if CurrentKey("LEFT") then
+				Scene.AnyDelete = AlterOverflow(Scene.AnyDelete, 1, 1, #YesNo, true)
+			elseif CurrentKey("RIGHT") then
+				Scene.AnyDelete = AlterOverflow(Scene.AnyDelete, -1, 1, #YesNo, true)
+			end
+		end
+	},
+	{
 		Modifier = "Enter",
 		Label = Lang("InteractFunction"),
 		Desc = Lang("InteractDesc"),

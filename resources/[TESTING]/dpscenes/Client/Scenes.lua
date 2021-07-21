@@ -29,6 +29,7 @@ function ResetScene()
 			Settings = {x = 0.00, y = 0.01, w = 0.01, h = 0.01, r = 0.00, o = 120}
 		},
 		Distance = 10,
+		AnyDelete = 2,
 		Function = false
 	}
 end
