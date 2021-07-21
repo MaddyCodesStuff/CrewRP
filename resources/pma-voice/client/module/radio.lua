@@ -123,15 +123,13 @@ end
 
 RegisterCommand('+radiotalk', function()
 	if isDead() then return end
-	if radioPressed then
-		print("test")
 		if radioChannel > 0 then
 			logger.info('[radio] Start broadcasting, update targets and notify server.')
 			playerTargets(radioData, NetworkIsPlayerTalking(PlayerId()) and callData or {})
 			TriggerServerEvent('pma-voice:setTalkingOnRadio', true)
 			radioPressed = true
 			playMicClicks(true)
-			if GetConvarInt('voice_enableRadioAnim', 0) == 1 then
+			if GetConvarInt('voice_enableRadioAnim', 1) == 1 then
 				RequestAnimDict('random@arrests')
 				while not HasAnimDictLoaded('random@arrests') do
 					Citizen.Wait(10)
@@ -148,7 +146,6 @@ RegisterCommand('+radiotalk', function()
 				end
 			end)
 		end
-	end
 end, false)
 
 RegisterCommand('-radiotalk', function()
@@ -163,7 +160,7 @@ RegisterCommand('-radiotalk', function()
 		TriggerServerEvent('pma-voice:setTalkingOnRadio', false)
 	end
 end, false)
-RegisterKeyMapping('+radiotalk', 'Talk over Radio', 'keyboard', GetConvar('voice_defaultRadio', 'LMENU'))
+RegisterKeyMapping('+radiotalk', 'Talk over Radio', 'keyboard', GetConvar('voice_defaultRadio', 'F1'))
 
 --- event syncRadio
 --- syncs the players radio, only happens if the radio was set server side.

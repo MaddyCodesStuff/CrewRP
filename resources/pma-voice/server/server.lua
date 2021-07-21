@@ -83,7 +83,14 @@ end)
 
 AddEventHandler('onResourceStart', function(resource)
 	if resource ~= GetCurrentResourceName() then return end
-	if GetConvar('onesync') == 'on' then
+	if true then
+		SetConvar('voice_useNativeAudio', 1)
+		SetConvar('voice_defaultCycle', 'F1')
+		SetConvar('voice_enableSubmix', 1)
+		SetConvar('voice_enableRadioAnim', 1)
+		SetConvar('voice_defaultRadio', 1)
+		SetConvar('voice_syncData', 1)
+		SetConvar('voice_useSendingRangeOnly', 1)
 		local players = GetPlayers()
 		for i = 1, #players do
 			local ply = players[i]
