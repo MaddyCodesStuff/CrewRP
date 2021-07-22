@@ -158,28 +158,6 @@ Config.Elevators    = {
             },
         },
     },
-    { -- Sandy Medical
-        name    = "Sandy Top Floor",
-        Pos     = { x = 1838.55, y = 3686.77, z = 34.27 }, -- Position of the text to show up
-        options = {
-            {
-                label = "Lower Level",
-                name  = "lowerlevel",
-                pos   = { x = 1839.06, y = 3686.30, z = 29.01 }, -- Position to take you to
-            },
-        },
-    },
-    { -- Sandy Medical
-        name    = "Sandy Lower Floor",
-        Pos     = { x = 1838.72, y = 3686.51, z = 29.01 }, -- Position of the text to show up
-        options = {
-            {
-                label = "Top Level",
-                name  = "toplevel",
-                pos   = { x = 1838.55, y = 3687.04, z = 34.27 }, -- Position to take you to
-            },
-        },
-    },
 
     { -- Safehouse2 Roof Entrance.
         name    = "roofaccess2",
