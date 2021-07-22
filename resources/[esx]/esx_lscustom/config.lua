@@ -174,6 +174,18 @@ Config.Zones        = {
         locked   = false,
         ShowBlip = true,
     },
+    autoexotic = {
+        Pos      = { x = 544.66, y = -189.35, z = 54.49, h = 88.68 },
+        Inner    = { x = 544.66, y = -189.35, z = 54.49, h = 88.68 },
+        Outer    = { x = 544.66, y = -189.35, z = 54.49, h = 88.68 },
+        Size     = { x = 3.0, y = 3.0, z = 0.2 },
+        Color    = { r = 204, g = 204, b = 0 },
+        Marker   = 1,
+        Name     = "Auto Exotic",
+        Hint     = "Press ~INPUT_CONTEXT~ to enter Auto Exotic Customs",
+        locked   = false,
+        ShowBlip = true,
+    },   
     marina = {
         Pos      = { x = -815.43, y = -1500.48, z = 0.00},
         Inner    = { x = -798.4, y = -1500.8, z = 0.00, h = 108.43 },
