@@ -13,7 +13,7 @@ function PrepareSceneForDatabase(i)
 	return json.encode(s)
 end
 
-function CanDeleteAnyScene(Src, Identifier)
+function AdminCheck(Src, Identifier)
 	local xPlayer = ESX.GetPlayerFromId(Src)
 	if xPlayer.getGroup() == 'superadmin' or xPlayer.getGroup() == 'admin' then
 		return true
@@ -46,7 +46,7 @@ AddEventHandler("Scene:AttemptDelete", function(Id, Move)
 	local Src = source
 	local Me = GetLicense(Src, Config.IdentifierType)
 	local SceneToDelete = Scenes.Current[Id]
-	local Override = CanDeleteAnyScene(Src, Me)
+	local Override = AdminCheck(Src, Me)
 	if not Move then
 		if Me == SceneToDelete.Owner or SceneToDelete.AnyDelete == 1 or Override then
 			DB.RemoveScene(Id)
@@ -59,12 +59,25 @@ AddEventHandler("Scene:AttemptDelete", function(Id, Move)
 	end
 end)
 
+RegisterNetEvent("Scene:OwnerCheck")
+AddEventHandler("Scene:OwnerCheck", function(Id)
+	local Src = source
+	local Me = GetLicense(Src, Config.IdentifierType)
+	local SceneToRelay = Scenes.Current[Id]
+	local Override = AdminCheck(Src, Me)
+	if Override then
+		Chat(Src, Lang("SceneOwner") .. SceneToRelay.Owner)
+	else
+		Chat(Src, Lang("NoPerms"))
+	end
+end)
+
 RegisterNetEvent("Scene:AttemptCopy")
 AddEventHandler("Scene:AttemptCopy", function(Id)
 	local Src = source
 	local Me = GetLicense(Src, Config.IdentifierType)
 	local SceneToCopy = Scenes.Current[Id]
-	--local Override = CanDeleteAnyScene(Src, Me)
+	--local Override = AdminCheck(Src, Me)
 	if Me == SceneToCopy.Owner then
 		TriggerClientEvent("Scene:RecieveCopy", Src, SceneToCopy)
 	else

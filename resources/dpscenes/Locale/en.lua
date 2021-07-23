@@ -43,6 +43,7 @@ Locale.en = {
 	TooClose = "This scene is too close to another scene.",
 	TooMany = "You have too many scenes active (%s)",
 	RemovedScene = "Removed scene.",
+	SceneOwner = "Scene Created by: ",
 	NoPerms = "You dont have permission to remove this scene.",
 	HideScenes = "Toggles hiding scenes.",
 	Presets = "Presets",

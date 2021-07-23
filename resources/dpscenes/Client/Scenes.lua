@@ -166,6 +166,21 @@ RegisterCommand("sceneremove", function()
 	end
 end)
 
+RegisterCommand("sceneowner", function()
+	local Hit, Coords, Entity = RayCastGamePlayCamera(10)
+	local Owner = {Id = 0, Distance = 1, test = 0}
+	for k,v in pairs(Scenes) do
+		local Dis = Distance(Coords, v.Location)
+		if Dis < Owner.Distance then
+			Owner = {Id = k, SteamID = v.Owner}
+			print(Owner.SteamID)
+		end
+	end
+	if Owner.Id ~= 0 then
+		TriggerServerEvent("Scene:OwnerCheck", Owner.Id)
+	end
+end)
+
 RegisterCommand("scenecopylast", function()
 	if LastCopiedScene then
 		Scene = LastCopiedScene
