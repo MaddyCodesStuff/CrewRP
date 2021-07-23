@@ -154,7 +154,7 @@ end
 
 RegisterCommand("sceneremove", function()
 	local Hit, Coords, Entity = RayCastGamePlayCamera(10)
-	local Delete = {Id = 0, Distance = 1}
+	local Delete = {Id = 0, Distance = .25}
 	for k,v in pairs(Scenes) do
 		local Dis = Distance(Coords, v.Location)
 		if Dis < Delete.Distance then
