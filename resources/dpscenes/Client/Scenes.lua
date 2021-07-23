@@ -168,7 +168,7 @@ end)
 
 RegisterCommand("sceneowner", function()
 	local Hit, Coords, Entity = RayCastGamePlayCamera(20)
-	local Owner = {Id = 0, Distance = 1, test = 0}
+	local Owner = {Id = 0, Distance = .25, test = 0}
 	for k,v in pairs(Scenes) do
 		local Dis = Distance(Coords, v.Location)
 		if Dis < Owner.Distance then
