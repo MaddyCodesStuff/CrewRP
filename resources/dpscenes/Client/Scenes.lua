@@ -153,10 +153,10 @@ function DrawScene(i,p)
 end
 
 RegisterCommand("sceneremove", function()
-	local Pos = GetEntityCoords(PlayerPedId())
-	local Delete = {Id = 0, Distance = 3}
+	local Hit, Coords, Entity = RayCastGamePlayCamera(10)
+	local Delete = {Id = 0, Distance = 1}
 	for k,v in pairs(Scenes) do
-		local Dis = Distance(Pos, v.Location)
+		local Dis = Distance(Coords, v.Location)
 		if Dis < Delete.Distance then
 			Delete = {Id = k,Distance = Dis}
 		end
