@@ -163,6 +163,9 @@ Blips.Main        = {
         ["sprite"]  = 110,
         ["color"]   = 22,
         ["layer"]   = 15,
+        ["Info.toggle"] = true,
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Gun Store",
+        ["Info.nameLeft"] = "Gun Range",["Info.nameRight"] = "No",
         
     },
     [10]  = {
@@ -173,6 +176,9 @@ Blips.Main        = {
         ["sprite"]  = 110,
         ["color"]   = 22,
         ["layer"]   = 15,
+        ["Info.toggle"] = true,
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Gun Store",
+        ["Info.nameLeft"] = "Gun Range",["Info.nameRight"] = "No",
     },
     [11]  = {
         ["name"]    = "Little Seoul Ammunation",
@@ -182,6 +188,9 @@ Blips.Main        = {
         ["sprite"]  = 110,
         ["color"]   = 22,
         ["layer"]   = 15,
+        ["Info.toggle"] = true,
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Gun Store",
+        ["Info.nameLeft"] = "Gun Range",["Info.nameRight"] = "No",
     },
     [12]  = {
         ["name"]    = "Strawberry Ammunation",
@@ -192,6 +201,9 @@ Blips.Main        = {
         ["color"]   = 22,
         ["scale"]   = 1.0,
         ["layer"]   = 15,
+        ["Info.toggle"] = true,
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Gun Store",
+        ["Info.nameLeft"] = "Gun Range",["Info.nameRight"] = "Yes",
     },
     [13]  = {
         ["name"]    = "Cypress Flats Ammunation",
@@ -202,6 +214,9 @@ Blips.Main        = {
         ["color"]   = 22,
         ["scale"]   = 1.0,
         ["layer"]   = 15,
+        ["Info.toggle"] = true,
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Gun Store",
+        ["Info.nameLeft"] = "Gun Range",["Info.nameRight"] = "Yes",
     },
     [14]  = {
         ["name"]    = "Chumash Ammunation",
@@ -211,6 +226,9 @@ Blips.Main        = {
         ["sprite"]  = 110,
         ["color"]   = 22,
         ["layer"]   = 15,
+        ["Info.toggle"] = true,
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Gun Store",
+        ["Info.nameLeft"] = "Gun Range",["Info.nameRight"] = "No",
     },
     [15]  = {
         ["name"]    = "Route 68 Ammunation",
@@ -220,6 +238,9 @@ Blips.Main        = {
         ["sprite"]  = 110,
         ["color"]   = 22,
         ["layer"]   = 15,
+        ["Info.toggle"] = true,
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Gun Store",
+        ["Info.nameLeft"] = "Gun Range",["Info.nameRight"] = "No",
     },
     [16]  = {
         ["name"]    = "Sandy Shores Ammunation",
@@ -229,6 +250,9 @@ Blips.Main        = {
         ["sprite"]  = 110,
         ["color"]   = 22,
         ["layer"]   = 15,
+        ["Info.toggle"] = true,
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Gun Store",
+        ["Info.nameLeft"] = "Gun Range",["Info.nameRight"] = "No",
     },
     [17]  = {
         ["name"]    = "Paleto Bay Ammunation",
@@ -238,6 +262,9 @@ Blips.Main        = {
         ["sprite"]  = 110,
         ["color"]   = 22,
         ["layer"]   = 15,
+        ["Info.toggle"] = true,
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Gun Store",
+        ["Info.nameLeft"] = "Gun Range",["Info.nameRight"] = "No",
     },
 
     --Restaurants--

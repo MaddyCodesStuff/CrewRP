@@ -25,7 +25,7 @@ for i = 1, #Blips.Main do
             SetBlipHiddenOnLegend(blip["id"], blip["hidden"] or Config.DefaultHidden)
             if blip["Info.toggle"] == true then
                 exports['blip_info']:SetBlipInfoTitle(blip["id"], blip["Info.title"] or blip["name"], false)
-                exports['blip_info']:SetBlipInfoImage(blip["id"], blip["Info.dictionary"] or DefaultDictionary, blip["Info.image"] or DefaultImage)
+                exports['blip_info']:SetBlipInfoImage(blip["id"], blip["Info.dictionary"] or Config.DefaultDictionary, blip["Info.image"] or Config.DefaultImage)
             end
             if blip["Info.textLeft"] and blip["Info.textRight"] ~= nil then
                 exports['blip_info']:AddBlipInfoText(blip["id"], blip["Info.textLeft"], blip["Info.textRight"])
@@ -213,7 +213,7 @@ for i = 1, #HAIR.Blips, 1 do
     SetBlipScale(blip, HAIR.Config["scale"] or Config.DefaultScale)
     SetBlipColour(blip, HAIR.Config["color"] or Config.DefaultColor)
     SetBlipAsShortRange(blip, true)
-    local bliptext = CLOTHING.Config["text"]
+    local bliptext = HAIR.Config["text"]
     AddTextEntry("HAIR", bliptext)
     BeginTextCommandSetBlipName("HAIR")
     EndTextCommandSetBlipName(blip)
