@@ -7,15 +7,48 @@ function Lang(what)
 	return Dict[what]
 end
 
-function TextInput(TextEntry, ExampleText, MaxStringLength)
-	AddTextEntry('FMMC_KEY_TIP1', TextEntry)
-	DisplayOnscreenKeyboard(1, "FMMC_KEY_TIP1", "", ExampleText, "", "", "", MaxStringLength or 20)
-	while UpdateOnscreenKeyboard() ~= 1 and UpdateOnscreenKeyboard() ~= 2 do Wait(0) end
-	if UpdateOnscreenKeyboard() ~= 2 then
-		local Result = GetOnscreenKeyboardResult()
-		Wait(200) return Result
+function TextInput(TextEntry, ExampleText, MaxStringLength, TP)
+	local x = 0
+	local y = 0
+	local z = 0
+	if not TP then
+		AddTextEntry('FMMC_KEY_TIP1', TextEntry)
+		DisplayOnscreenKeyboard(1, "FMMC_KEY_TIP1", "", ExampleText, "", "", "", MaxStringLength or 20)
+		while UpdateOnscreenKeyboard() ~= 1 and UpdateOnscreenKeyboard() ~= 2 do Wait(0) end
+		if UpdateOnscreenKeyboard() ~= 2 then
+			local Result = GetOnscreenKeyboardResult()
+			Wait(200) return Result
+		else
+			Wait(200) return ExampleText
+		end
 	else
-		Wait(200) return ExampleText
+		AddTextEntry('X', 'X Coordinate')
+		DisplayOnscreenKeyboard(1, "X", "", ExampleText, "", "", "", MaxStringLength or 20)
+		while UpdateOnscreenKeyboard() ~= 1 and UpdateOnscreenKeyboard() ~= 2 do Wait(0) end
+		if UpdateOnscreenKeyboard() ~= 2 then
+			local XResult = GetOnscreenKeyboardResult()
+			x = XResult
+			Wait(200)
+		end
+		AddTextEntry('Y', 'Y Coordinate')
+		DisplayOnscreenKeyboard(1, "Y", "", ExampleText, "", "", "", MaxStringLength or 20)
+		while UpdateOnscreenKeyboard() ~= 1 and UpdateOnscreenKeyboard() ~= 2 do Wait(0) end
+		if UpdateOnscreenKeyboard() ~= 2 then
+			local YResult = GetOnscreenKeyboardResult()
+			y = YResult
+			Wait(200)
+		end
+		AddTextEntry('Z', 'Z Coordinate')
+		DisplayOnscreenKeyboard(1, "Z", "", ExampleText, "", "", "", MaxStringLength or 20)
+		while UpdateOnscreenKeyboard() ~= 1 and UpdateOnscreenKeyboard() ~= 2 do Wait(0) end
+		if UpdateOnscreenKeyboard() ~= 2 then
+			local YResult = GetOnscreenKeyboardResult()
+			z = YResult
+			Wait(200)
+			return x, y, z
+		else
+			Wait(200) return ExampleText
+		end
 	end
 end
 

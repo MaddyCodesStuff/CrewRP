@@ -87,6 +87,7 @@ Config = {
 	SceneFunctions = {
 		{
 			Name = "None",
+			Admin = false,
 			Alter = function(e)
 				Scene.Function = false
 			end 
@@ -94,6 +95,7 @@ Config = {
 		{
 			Name = "Emote",
 			Prefix = "/e",
+			Admin = false,
 			Alter = function()
 				local Arg = ""
 				if Scene.Function then
@@ -116,6 +118,7 @@ Config = {
 		{
 			Name = "Me",
 			Prefix = "/me",
+			Admin = false,
 			Alter = function()
 				local Arg = ""
 				if Scene.Function then
@@ -137,7 +140,31 @@ Config = {
 			end
 		},
 		{
+			Name = "Roll",
+			Prefix = "/roll",
+			Admin = false,
+			Alter = function()
+				local Arg = ""
+				if Scene.Function then
+					Arg = Scene.Function.Variable
+					if Scene.Function.Current ~= "Roll" then
+						Arg = ""
+					end
+				end
+				local New = TextInput("What Dice do you want to roll? Format: Die Sides/Number of Die.", Arg, 20)
+				if New ~= "" then
+					Scene.Function = {
+						Current = "Roll",
+						Prefix = "roll",
+						Variable = New,
+					}
+					Scene.State = "Placing"
+				end
+			end
+		},
+		{
 			Name = "GPS",
+			Admin = false,
 			Function = function(c)
 				SetNewWaypoint(c.x, c.y)
 			end,
@@ -155,32 +182,54 @@ Config = {
 							String = GetStreetNameFromHashKey(GetStreetNameAtCoord(coord.x, coord.y, coord.z)),
 						}
     				else
-    					Chat("Error getting waypoint")
+    					Chat(Lang("WaypointError"))
     				end
 				else
-					Chat("You have to have a waypoint active.")
+					Chat(Lang("WaypointNeeded"))
 				end
 			end
 		},
 		{
-			Name = "Roll",
-			Prefix = "/roll",
+			Name = "Teleporter",
+			Admin = true,
+			Function = function(c)
+				SetEntityCoords(PlayerPedId(), c.x, c.y, c.z)
+			end,
 			Alter = function()
 				local Arg = ""
 				if Scene.Function then
 					Arg = Scene.Function.Variable
-					if Scene.Function.Current ~= "Roll" then
+					if Scene.Function.Current ~= "Teleporter" then
 						Arg = ""
 					end
 				end
-				local New = TextInput("What Dice do you want to roll? Format: Die Sides/Number of Die.", Arg, 20)
-				if New ~= "" then
+				local coords = nil
+				local xx = nil
+				local yy = nil
+				local zz = nil
+				if not savedcoords then
+					local x, y, z = TextInput("Where do you want to teleport the user? Enter as X Y Z seperately.", Arg, 50, true)
+					xx = tonumber(x)
+					yy = tonumber(y)
+					zz = tonumber(z)
+					if xx ~= nil and yy ~= nil and zz ~= nil then
+						coords = vector3(xx,yy,zz)
+					end
+				else 
+					coords = savedcoords
+					xx = coords.x
+					yy = coords.y
+				end
+				if coords ~= nil then
 					Scene.Function = {
-						Current = "Roll",
-						Prefix = "roll",
-						Variable = New,
+						Current = "Teleporter",
+						Prefix = false,
+						Description = "Teleport to %s?",
+						Variable = coords,
+						String = GetStreetNameFromHashKey(GetStreetNameAtCoord(xx, yy)),
 					}
-					Scene.State = "Placing"
+				else
+					Chat(Lang("CoordsError"))
 				end
 			end
 		},

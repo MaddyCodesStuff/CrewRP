@@ -45,11 +45,14 @@ CreateThread(function()
 end)
 
 RegisterCommand("scene", function(Src, Arguments)
+	local Me = GetLicense(Src, Config.IdentifierType)
+	local SceneToDelete = Scenes.Current[Id]
+	local Override = AdminCheck(Src, Me)
 	if not Scenes.Cooldowns[Src] then
 		Scenes.Cooldowns[Src] = 1
 		local Input = table.concat(Arguments, " ") local Length = string.len(Input)
 		if Length <= 280 and Length > 3 then
-			TriggerClientEvent("Scene:Create", Src, Input)
+			TriggerClientEvent("Scene:Create", Src, Input, Override)
 		else
 			Chat(Src, Lang("InvalidText"))
 		end

@@ -77,9 +77,9 @@ AddEventHandler("Scene:AttemptCopy", function(Id)
 	local Src = source
 	local Me = GetLicense(Src, Config.IdentifierType)
 	local SceneToCopy = Scenes.Current[Id]
-	--local Override = AdminCheck(Src, Me)
+	local Override = AdminCheck(Src, Me)
 	if Me == SceneToCopy.Owner then
-		TriggerClientEvent("Scene:RecieveCopy", Src, SceneToCopy)
+		TriggerClientEvent("Scene:RecieveCopy", Src, SceneToCopy, Override)
 	else
 		Chat(Src, Lang("OnlyCopyOwn"))
 	end

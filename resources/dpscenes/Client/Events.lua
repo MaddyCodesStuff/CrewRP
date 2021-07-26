@@ -16,7 +16,8 @@ end)
 
 
 RegisterNetEvent("Scene:Reset")
-AddEventHandler("Scene:Reset", function()
+AddEventHandler("Scene:Reset", function(Override)
+	IsAdmin = false
 	ResetScene()
 end)
 
@@ -27,20 +28,22 @@ AddEventHandler("Scene:RecieveAll", function(scenes)
 end)
 
 RegisterNetEvent("Scene:Create")
-AddEventHandler("Scene:Create", function(T)
+AddEventHandler("Scene:Create", function(T, Override)
 	distancetimer = 0
 	Scene.Text.Text = T
 	if not Scene.State then
+		IsAdmin = Override
 		Scene.State = "Placing"
 	end
 end)
 
 LastCopiedScene = nil
 RegisterNetEvent("Scene:RecieveCopy")
-AddEventHandler("Scene:RecieveCopy", function(T)
+AddEventHandler("Scene:RecieveCopy", function(T, Override)
 	LastCopiedScene = T
 	Scene = T
 	if not Scene.State then
+		IsAdmin = Override
 		Scene.State = "Placing"
 	end
 end)

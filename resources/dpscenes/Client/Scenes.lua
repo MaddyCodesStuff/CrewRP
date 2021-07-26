@@ -6,6 +6,7 @@ LOS = {}
 Cooldown = false
 Hidden = false
 MovingScene = false
+IsAdmin = false
 ClientTextScale = 1
 distancetimer = 0
 
@@ -99,13 +100,18 @@ function HandleSceneInteract(i)
 		IncurCooldown(1000) return true
 	else
 		local t = false
+		local f = ""
 		for k,v in pairs(Config.SceneFunctions) do
 			if v.Name == Interact.Current then
 				t = v.Function
+				f = v.Name
 			end
 		end
-		if t then
+		if t and f == 'GPS' then
 			Chat(Lang("WaypointSet"))
+			t(Interact.Variable)
+			IncurCooldown(1000) return true
+		else
 			t(Interact.Variable)
 			IncurCooldown(1000) return true
 		end
@@ -127,7 +133,7 @@ function DrawScene(i,p)
 	SceneText(ExtraInformation)
 	if Distance < 1.5 and not Scene.State then
 		if i.Function then
-			if i.Function.Current == "GPS" then
+			if i.Function.Current == "GPS" or i.Function.Current == "Teleporter" then
 				SetTextComponentFormat("TWOSTRINGS")
 				AddTextComponentString(Lang("Interact"))
 				AddTextComponentString("\n~b~"..string.format(i.Function.Description or "N/A %s", i.Function.String or "N/A"))
@@ -153,8 +159,15 @@ function DrawScene(i,p)
 end
 
 RegisterCommand("sceneremove", function()
-	local Hit, Coords, Entity = RayCastGamePlayCamera(10)
-	local Delete = {Id = 0, Distance = .25}
+	local Hit = nil
+	local Coords = nil 
+	local Entity = nil
+	local Delete = {Id = 0, Distance = 1}
+	for i = 1, 110 do
+		Wait(0)
+		Hit, Coords, Entity = RayCastGamePlayCamera(20)
+		DrawMarker(2, Coords, 0.0, 0.0, 0.0, 0.0, 180.0, 0.0, 0.06, 0.06, 0.06, 0, 200, 255, 255, false, true, false, nil, nil, false)
+	end
 	for k,v in pairs(Scenes) do
 		local Dis = Distance(Coords, v.Location)
 		if Dis < Delete.Distance then
@@ -167,13 +180,20 @@ RegisterCommand("sceneremove", function()
 end)
 
 RegisterCommand("sceneowner", function()
-	local Hit, Coords, Entity = RayCastGamePlayCamera(20)
-	local Owner = {Id = 0, Distance = .25, test = 0}
+	local Hit = nil
+	local Coords = nil 
+	local Entity = nil
+	local Owner = {Id = 0, Distance = 1, SteamID = nil}
+	for i = 1, 100 do
+		Wait(0)
+		Hit, Coords, Entity = RayCastGamePlayCamera(20)
+		DrawMarker(2, Coords, 0.0, 0.0, 0.0, 0.0, 180.0, 0.0, 0.06, 0.06, 0.06, 0, 200, 255, 255, false, true, false, nil, nil, false)
+	end
 	for k,v in pairs(Scenes) do
 		local Dis = Distance(Coords, v.Location)
 		if Dis < Owner.Distance then
-			Owner = {Id = k, SteamID = v.Owner}
-			print(Owner.SteamID)
+			Owner = {Id = k, Distance = Dis, SteamID = v.Owner}
+			break
 		end
 	end
 	if Owner.Id ~= 0 then
@@ -234,10 +254,10 @@ RegisterCommand("scenescale", function(Arg1,Arg2)
 		ClientTextScale = a
 		if ClientTextScale < 1 then
 			ClientTextScale = 1
-		elseif ClientTextScale > 10 then
-			ClientTextScale = 10
+		elseif ClientTextScale > 5 then
+			ClientTextScale = 5
 		end
-	else Chat("Input must be a number")
+	else Chat(Lang("ScaleError"))
 	end
 end)
 
@@ -274,6 +294,7 @@ function CreateSuggestions()
 	TriggerEvent("chat:addSuggestion", "/scenecopylast", Lang("CopyLastSuggestion"))
 	TriggerEvent("chat:addSuggestion", "/sceneresetpresets", Lang("ResetSuggestion"))
 	TriggerEvent("chat:addSuggestion", "/scenescale", Lang("SceneScaleSuggestion"))
+	TriggerEvent("chat:addSuggestion", "/scenecoords", Lang("SceneCoordsSuggestion"))
 end
 
 local TextureDicts = {"dpscenes", "commonmenu"}
@@ -337,6 +358,7 @@ CreateThread(function()
 			DrawMenu(c)
 			if IsControlJustPressed(0, GetKey("X")) then
 				ResetScene()
+				IsAdmin = false
 				Scene.State = false
 			end
 			if Dis < Scene.Distance and Hit then
@@ -411,6 +433,7 @@ CreateThread(function()
 				Wait(250)
 			end
 		else
+			--IsAdmin = false
 			Wait(250)
 		end
 	end

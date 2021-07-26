@@ -257,7 +257,7 @@ Menus = {
 		Current = function()
 			if Scene.Function then
 				local Cs = Scene.Function.Current
-				if Scene.Function.Current == "GPS" then
+				if Scene.Function.Current == "GPS" or Scene.Function.Current == "Teleporter" then
 					Cs = Cs.." ("..Scene.Function.String..")"
 				elseif Scene.Function.Variable ~= "" then
 					Cs = Cs.." ("..Scene.Function.Variable..")"
@@ -408,12 +408,21 @@ function DrawPresets()
 end
 
 function DrawFunctions()
+	local AdminFunctions = 0
 	local x = 0.765 local y = 0.59 local Offset = 0.025
 
+	if not IsAdmin then
+		for k,v in pairs(Config.SceneFunctions) do
+			if v.Admin then
+				AdminFunctions = AdminFunctions + 1
+			end
+		end
+	end
+
 	if CurrentKey("DOWN") then
-		Menu.FunctionOption = AlterOverflow(Menu.FunctionOption, 1, 1, #Config.SceneFunctions, true)
+		Menu.FunctionOption = AlterOverflow(Menu.FunctionOption, 1, 1, #Config.SceneFunctions - AdminFunctions, true)
 	elseif CurrentKey("UP") then
-		Menu.FunctionOption = AlterOverflow(Menu.FunctionOption, -1, 1, #Config.SceneFunctions, true)
+		Menu.FunctionOption = AlterOverflow(Menu.FunctionOption, -1, 1, #Config.SceneFunctions - AdminFunctions, true)
 	end
 
 	if IsControlJustPressed(0, GetKey("BACKSPACE")) then
@@ -421,16 +430,18 @@ function DrawFunctions()
 	end
 
 	for k,v in pairs(Config.SceneFunctions) do
-		Text({Text = v.Name, x = x-0.149, y = y+Offset*k-0.0269, Align = 1, Scale = 0.30, Outline = true})
-		if Menu.FunctionOption == k then
-			DrawSprite("dpscenes", "SlickBar", x-0.089, y+Offset*k-0.015, 0.13, 0.023, 0.0, 0, 120, 210, 255)
-			if IsControlJustPressed(0, GetKey("ENTER")) then
-				if v.Alter then
-					v.Alter()
+		if not v.Admin or IsAdmin then
+			Text({Text = v.Name, x = x-0.149, y = y+Offset*k-0.0269, Align = 1, Scale = 0.30, Outline = true})
+			if Menu.FunctionOption == k then
+				DrawSprite("dpscenes", "SlickBar", x-0.089, y+Offset*k-0.015, 0.13, 0.023, 0.0, 0, 120, 210, 255)
+				if IsControlJustPressed(0, GetKey("ENTER")) then
+					if v.Alter then
+						v.Alter()
+					end
 				end
+			else
+				DrawSprite("dpscenes", "SlickBar", x-0.089, y+Offset*k-0.015, 0.13, 0.023, 0.0, 0, 0, 0, 255)
 			end
-		else
-			DrawSprite("dpscenes", "SlickBar", x-0.089, y+Offset*k-0.015, 0.13, 0.023, 0.0, 0, 0, 0, 255)
 		end
 	end
 end
