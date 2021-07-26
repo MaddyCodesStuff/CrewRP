@@ -9,6 +9,8 @@ Keys = {
 	["TOP"] = 27, ["U"] = 303, ["V"] = 0, ["W"] = 32, ["X"] = 73, ["Y"] = 246, ["Z"] = 20, ["~"] = 243,
 }
 
+savedcoords = nil
+
 Controls = {
 	Current = nil,
 	MenuKeys = {"UP", "DOWN", "LEFT", "RIGHT", "ENTER"},
@@ -18,6 +20,16 @@ Controls = {
 RegisterCommand("ScenesInfo", function()
 	if Scene.State == "Placing" then
 		Scene.Info = not Scene.Info
+	end
+end)
+
+RegisterCommand("scenecoords", function()
+	if savedcoords == nil then
+		savedcoords = (GetEntityCoords(PlayerPedId()))
+		Chat(Lang("CoordsSaved"))
+	else
+		savedcoords = nil
+		Chat(Lang("CoordsCleared"))
 	end
 end)
 
