@@ -98,8 +98,8 @@ Citizen.CreateThread(function()
             if not DoesBlipExist(blip["id"]) then
                 blip["id"] = AddBlipForCoord(blip["x"], blip["y"], blip["z"])
                 SetBlipSprite(blip["id"], blip["sprite"] or Config.DefaultSprite)
-                SetBlipDisplay(blip["id"], 4)
-                SetBlipScale(blip["id"], 1.0)
+                SetBlipDisplay(blip["id"], 1)
+                SetBlipScale(blip["id"], blip["scale"] or Config.DefaultScale)
                 SetBlipColour(blip["id"], blip["color"] or Config.DefaultSpriteColor)
                 SetBlipAsShortRange(blip["id"], true)
 

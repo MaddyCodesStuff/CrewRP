@@ -115,6 +115,7 @@ function CreateBlips()
             SetBlipDisplay(Blips[property.name], 4)
             SetBlipScale(Blips[property.name], 1.0)
             SetBlipAsShortRange(Blips[property.name], true)
+            SetBlipCategory(Blips[property.name], 10)
 
             BeginTextCommandSetBlipName("STRING")
             -- AddTextComponentString(_U('free_prop'))
@@ -264,7 +265,7 @@ function SetPropertyOwned(name, owned)
 
         SetBlipSprite(Blips[enteringName], 357)
         SetBlipAsShortRange(Blips[enteringName], true)
-
+        SetBlipCategory(Blips[enteringName], 11)
         BeginTextCommandSetBlipName("STRING")
         -- AddTextComponentString(_U('property'))
         AddTextComponentString(property.label)

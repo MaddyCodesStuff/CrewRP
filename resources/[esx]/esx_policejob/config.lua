@@ -33,7 +33,7 @@ Config.PoliceStations             = {
 			Sprite  = 60,
 			Display = 4,
 			Scale   = 1.2,
-			Colour  = 29,
+			Colour  = 3,
 		},
 
 		-- https://wiki.rage.mp/index.php?title=Weapons
@@ -115,7 +115,7 @@ Config.PoliceStations             = {
 			Sprite  = 60,
 			Display = 4,
 			Scale   = 1.2,
-			Colour  = 29,
+			Colour  = 3,
 		},
 
 		-- https://wiki.rage.mp/index.php?title=Weapons
@@ -169,7 +169,7 @@ Config.PoliceStations             = {
 			Sprite  = 60,
 			Display = 4,
 			Scale   = 1.2,
-			Colour  = 29,
+			Colour  = 3,
 		},
 
 		-- https://wiki.rage.mp/index.php?title=Weapons
