@@ -29,16 +29,11 @@ Config.MaxLargeFires         = 25 -- Set this to above MinLargeFires
 Config.MaxLargeFireSpread    = 10
 
 Config.VehicleInventory      = {
-	"pd-mav",
-	"lsmd-ambo1",
-	"lsmd-bigambo",
-	"lsmd-firetruk",
-	"lsmd-truck",
-	"lsmd-utility",
-	"lsmd-utility2",
-	"pd-mav",
 	"stairtruck",
-	"emerg-dodo",
+	"LSMD Firetr",
+	"LSMD Ambula",
+	"LSMD Truck",
+	"LSMD Utilit",
 }
 
 Config.FireAlarms            = {

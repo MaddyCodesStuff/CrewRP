@@ -114,6 +114,33 @@ Config.Zones        = {
         locked   = false,
         ShowBlip = true,
     },
+<<<<<<< HEAD
+=======
+    lostcompound    = {
+        Pos      = { x = 978.28, y = -123.31, z = 73.39 },
+        Inner    = { x = 995.48, y = -125.78, z = 73.37, h = 238.39 },
+        Outer    = { x = 978.95, y = -123.52, z = 73.38, h = 63.63 },
+        Size     = { x = 3.0, y = 3.0, z = 0.2 },
+        Color    = { r = 204, g = 204, b = 0 },
+        Marker   = 1,
+        Name     = "Los Santos Customs",
+        Hint     = _U('press_custom'),
+        locked   = false,
+        ShowBlip = true,
+    },
+    pdmbennys    = {
+        Pos      = { x = -30.11, y = -1060.42, z = 27.71 },
+        Inner    = { x = -32.56, y = -1067.14, z = 27.70, h = 159.99 },
+        Outer    = { x = -30.66, y = -1059.70, z = 27.71, h = 339.00 },
+        Size     = { x = 3.0, y = 3.0, z = 0.2 },
+        Color    = { r = 204, g = 204, b = 0 },
+        Marker   = 1,
+        Name     = "Los Santos Customs",
+        Hint     = _U('press_custom'),
+        locked   = false,
+        ShowBlip = true,
+    },
+>>>>>>> origin/master
     hayesrockford    = {
         Pos      = { x = -1423.29, y = -436.73, z = 35.15 },
         Inner    = { x = -1417.21, y = -446.30, z = 35.22, h = 211.39 },
@@ -186,6 +213,18 @@ Config.Zones        = {
         locked   = false,
         ShowBlip = true,
     },
+    autoexotic = {
+        Pos      = { x = 544.66, y = -189.35, z = 54.49, h = 88.68 },
+        Inner    = { x = 544.66, y = -189.35, z = 54.49, h = 88.68 },
+        Outer    = { x = 544.66, y = -189.35, z = 54.49, h = 88.68 },
+        Size     = { x = 3.0, y = 3.0, z = 0.2 },
+        Color    = { r = 204, g = 204, b = 0 },
+        Marker   = 1,
+        Name     = "Auto Exotic",
+        Hint     = "Press ~INPUT_CONTEXT~ to enter Auto Exotic Customs",
+        locked   = false,
+        ShowBlip = true,
+    },   
     marina = {
         Pos      = { x = -798.4, y = -1500.8, z = 0.00, h = 108.43 },
         Inner    = { x = -798.4, y = -1500.8, z = 0.00, h = 108.43 },
