@@ -23,9 +23,15 @@ for i = 1, #Blips.Main do
             SetBlipScale(blip["id"], blip["scale"] or Config.DefaultScale)
             SetBlipColour(blip["id"], blip["color"] or Config.DefaultColor)
             SetBlipHiddenOnLegend(blip["id"], blip["hidden"] or Config.DefaultHidden)
+            if blip["rotation"] ~= nil then
+                SetBlipRotation(blip["id"], blip["rotation"])
+            end
+            if blip["scaleX"] or blip["scaleY"] then
+                SetBlipScaleTransformation(blip["id"], blip["scaleX"] or 1.0,blip["scaleY"] or 1.0)
+            end
             if blip["Info.toggle"] == true then
                 exports['blip_info']:SetBlipInfoTitle(blip["id"], blip["Info.title"] or blip["name"], false)
-                exports['blip_info']:SetBlipInfoImage(blip["id"], blip["Info.dictionary"] or DefaultDictionary, blip["Info.image"] or DefaultImage)
+                exports['blip_info']:SetBlipInfoImage(blip["id"], blip["Info.dictionary"] or Config.DefaultDictionary, blip["Info.image"] or Config.DefaultImage)
             end
             if blip["Info.textLeft"] and blip["Info.textRight"] ~= nil then
                 exports['blip_info']:AddBlipInfoText(blip["id"], blip["Info.textLeft"], blip["Info.textRight"])
@@ -213,9 +219,39 @@ for i = 1, #HAIR.Blips, 1 do
     SetBlipScale(blip, HAIR.Config["scale"] or Config.DefaultScale)
     SetBlipColour(blip, HAIR.Config["color"] or Config.DefaultColor)
     SetBlipAsShortRange(blip, true)
-    local bliptext = CLOTHING.Config["text"]
+    local bliptext = HAIR.Config["text"]
     AddTextEntry("HAIR", bliptext)
     BeginTextCommandSetBlipName("HAIR")
+    EndTextCommandSetBlipName(blip)
+end
+for i = 1, #IMPOUND.Blips, 1 do
+    local blip = AddBlipForCoord(IMPOUND.Blips[i].x, IMPOUND.Blips[i].y, IMPOUND.Blips[i].z)
+    SetBlipSprite(blip, IMPOUND.Config["sprite"] or Config.DefaultSprite)
+    SetBlipDisplay(blip, IMPOUND.Config["display"] or Config.DefaultDisplay)
+    SetBlipAlpha(blip, IMPOUND.Config["opacity"] or Config.DefaultOpacity)
+    SetBlipCategory(blip, IMPOUND.Config["type"] or Config.DefaultType)
+    SetBlipPriority(blip, IMPOUND.Config["layer"] or Config.DefaultLayer)
+    SetBlipScale(blip, IMPOUND.Config["scale"] or Config.DefaultScale)
+    SetBlipColour(blip, IMPOUND.Config["color"] or Config.DefaultColor)
+    SetBlipAsShortRange(blip, true)
+    local bliptext = IMPOUND.Config["text"]
+    AddTextEntry("IMPOUND", bliptext)
+    BeginTextCommandSetBlipName("IMPOUND")
+    EndTextCommandSetBlipName(blip)
+end
+for i = 1, #MASKS.Blips, 1 do
+    local blip = AddBlipForCoord(MASKS.Blips[i].x, MASKS.Blips[i].y, MASKS.Blips[i].z)
+    SetBlipSprite(blip, MASKS.Config["sprite"] or Config.DefaultSprite)
+    SetBlipDisplay(blip, MASKS.Config["display"] or Config.DefaultDisplay)
+    SetBlipAlpha(blip, MASKS.Config["opacity"] or Config.DefaultOpacity)
+    SetBlipCategory(blip, MASKS.Config["type"] or Config.DefaultType)
+    SetBlipPriority(blip, MASKS.Config["layer"] or Config.DefaultLayer)
+    SetBlipScale(blip, MASKS.Config["scale"] or Config.DefaultScale)
+    SetBlipColour(blip, MASKS.Config["color"] or Config.DefaultColor)
+    SetBlipAsShortRange(blip, true)
+    local bliptext = MASKS.Config["text"]
+    AddTextEntry("MASKS", bliptext)
+    BeginTextCommandSetBlipName("MASKS")
     EndTextCommandSetBlipName(blip)
 end
 --Commands--
