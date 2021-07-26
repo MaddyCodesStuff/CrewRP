@@ -793,7 +793,7 @@ Blips.Main        = {
         ["scale"]   = 1.2,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Police Station",
-        ["Info.nameLeft"] = "Captain",["Info.nameRight"] = "Jean Hart",
+        ["Info.nameLeft"] = "Captain",["Info.nameRight"] = "",
     },
     [57]  = {
         ["name"]    = "Pillbox Medical Center",
