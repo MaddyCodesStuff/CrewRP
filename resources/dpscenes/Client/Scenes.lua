@@ -20,17 +20,17 @@ function ResetScene()
 	Scene = {
 		State = false,
 		Info = false,
-		Hours = Config.SceneLength[4].Hours,
+		Hours = 4,
 		ShowAge = 1,
-		Text = {Text = "", Font = 1, Size = Config.FontSize.Min, Outline = 1},
+		Text = {Text = "", Font = 1, Size = .50, Outline = 1},
 		Background = {
 			Sprite = 1,
 			Colour = {0,0,0},
 			ColourName = "Black",
-			Settings = {x = 0.00, y = 0.01, w = 0.01, h = 0.01, r = 0.00, o = 120}
+			Settings = {x = 0.00, y = 0.016, w = 0.01, h = 0.01, r = 0.00, o = 120}
 		},
 		Distance = 10,
-		AnyDelete = 2,
+		AnyDelete = 1,
 		Function = false
 	}
 end
