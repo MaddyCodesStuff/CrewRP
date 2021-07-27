@@ -9,7 +9,7 @@ Config = {
 	]]--
 	Database = "SQL",
 	-- Max scenes a player is allowed to have on their own.
-	MaxScenes = 15,
+	MaxScenes = 50,
 	FontSize = {
 		Min = 0.25,
 		Max = 0.80
