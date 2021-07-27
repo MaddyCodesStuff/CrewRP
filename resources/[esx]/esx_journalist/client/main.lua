@@ -39,7 +39,7 @@ Citizen.CreateThread(function()
     local blipCoord = AddBlipForCoord(blipMarker.Pos.x, blipMarker.Pos.y, blipMarker.Pos.z)
 
     SetBlipSprite (blipCoord, blipMarker.Sprite)
-    SetBlipDisplay(blipCoord, blipMarker.Display)
+    SetBlipDisplay(blipCoord, 0)
     SetBlipScale  (blipCoord, blipMarker.Scale)
     SetBlipColour (blipCoord, blipMarker.Colour)
     SetBlipAsShortRange(blipCoord, true)

@@ -265,7 +265,6 @@ function SetPropertyOwned(name, owned)
         SetBlipSprite(Blips[enteringName], 357)
         SetBlipAsShortRange(Blips[enteringName], true)
         SetBlipCategory(Blips[enteringName], 11)
-
         BeginTextCommandSetBlipName("STRING")
         -- AddTextComponentString(_U('property'))
         AddTextComponentString(property.label)

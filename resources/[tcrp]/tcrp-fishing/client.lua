@@ -26,7 +26,7 @@ for _, v in ipairs(Config.Sell) do
 	if v.onMap then
 		local blip = AddBlipForCoord(v.pos)
 		SetBlipSprite (blip, v.blip)
-		SetBlipDisplay(blip, 4)
+		SetBlipDisplay(blip, 0)
 		SetBlipScale  (blip, 1.0)
 		SetBlipColour (blip, v.colour)
 		SetBlipAsShortRange(blip, true)
@@ -38,8 +38,8 @@ end
 			
 for _, info in pairs(Config.MarkerZones) do
 	info.blip = AddBlipForCoord(info.Marker)
-	SetBlipSprite(info.blip, 455)
-	SetBlipDisplay(info.blip, 4)
+	SetBlipSprite(info.blip, 17)
+	SetBlipDisplay(info.blip, 0)
 	SetBlipScale(info.blip, 0.8)
 	SetBlipColour(info.blip, 74)
 	SetBlipAsShortRange(info.blip, true)

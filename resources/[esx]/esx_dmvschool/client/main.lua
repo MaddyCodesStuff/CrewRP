@@ -225,7 +225,7 @@ Citizen.CreateThread(function()
 								 Config.Zones.DMVSchool.Pos.z)
 
 	SetBlipSprite(blip, 545)
-	SetBlipDisplay(blip, 4)
+	SetBlipDisplay(blip, 0)
 	SetBlipScale(blip, 1.0)
 	SetBlipAsShortRange(blip, true)
 	SetBlipPriority(blip, 9)

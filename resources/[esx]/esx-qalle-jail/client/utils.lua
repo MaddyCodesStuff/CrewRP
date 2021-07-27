@@ -173,7 +173,7 @@ Citizen.CreateThread(function()
                                  Config.Teleports["Entrance"]["z"])
 
     SetBlipSprite(blip, 252)
-    SetBlipDisplay(blip, 4)
+    SetBlipDisplay(blip, 0)
     SetBlipScale(blip, 1.2)
     SetBlipColour(blip, 49)
     SetBlipAsShortRange(blip, true)

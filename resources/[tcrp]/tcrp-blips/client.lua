@@ -49,13 +49,19 @@ for i = 1, #Blips.Main do
                 exports['blip_info']:AddBlipInfoText(blip["id"], blip["Info.text3Left"], blip["Info.text3Right"])
             end
             if blip["Info.name3Left"] and blip["Info.name3Right"] ~= nil then
-                exports['blip_info']:AddBlipInfoName(blip["id"], blip["Info.name2Left"], blip["Info.name2Right"])
+                exports['blip_info']:AddBlipInfoName(blip["id"], blip["Info.name3Left"], blip["Info.name3Right"])
             end
             if blip["Info.text4Left"] and blip["Info.text4Right"] ~= nil then
                 exports['blip_info']:AddBlipInfoText(blip["id"], blip["Info.text4Left"], blip["Info.text4Right"])
             end
+            if blip["Info.name4Left"] and blip["Info.name4Right"] ~= nil then
+                exports['blip_info']:AddBlipInfoName(blip["id"], blip["Info.name4Left"], blip["Info.name4Right"])
+            end
             if blip["Info.text5Left"] and blip["Info.text3Right"] ~= nil then
                 exports['blip_info']:AddBlipInfoText(blip["id"], blip["Info.text5Left"], blip["Info.text5Right"])
+            end
+            if blip["Info.name5Left"] and blip["Info.name5Right"] ~= nil then
+                exports['blip_info']:AddBlipInfoName(blip["id"], blip["Info.name5Left"], blip["Info.name5Right"])
             end
             if blip["Info.headerLeft"] and blip["Info.headerRight"] ~= nil then
                 exports['blip_info']:AddBlipInfoHeader(blip["id"], blip["Info.headerLeft"], blip["Info.headerRight"])
@@ -252,6 +258,36 @@ for i = 1, #MASKS.Blips, 1 do
     local bliptext = MASKS.Config["text"]
     AddTextEntry("MASKS", bliptext)
     BeginTextCommandSetBlipName("MASKS")
+    EndTextCommandSetBlipName(blip)
+end
+for i = 1, #TRASH.Blips, 1 do
+    local blip = AddBlipForCoord(TRASH.Blips[i].x, TRASH.Blips[i].y, TRASH.Blips[i].z)
+    SetBlipSprite(blip, TRASH.Config["sprite"] or Config.DefaultSprite)
+    SetBlipDisplay(blip, TRASH.Config["display"] or Config.DefaultDisplay)
+    SetBlipAlpha(blip, TRASH.Config["opacity"] or Config.DefaultOpacity)
+    SetBlipCategory(blip, TRASH.Config["type"] or Config.DefaultType)
+    SetBlipPriority(blip, TRASH.Config["layer"] or Config.DefaultLayer)
+    SetBlipScale(blip, TRASH.Config["scale"] or Config.DefaultScale)
+    SetBlipColour(blip, TRASH.Config["color"] or Config.DefaultColor)
+    SetBlipAsShortRange(blip, true)
+    local bliptext = TRASH.Config["text"]
+    AddTextEntry("TRASH", bliptext)
+    BeginTextCommandSetBlipName("TRASH")
+    EndTextCommandSetBlipName(blip)
+end
+for i = 1, #HANGAR.Blips, 1 do
+    local blip = AddBlipForCoord(HANGAR.Blips[i].x, HANGAR.Blips[i].y, HANGAR.Blips[i].z)
+    SetBlipSprite(blip, HANGAR.Config["sprite"] or Config.DefaultSprite)
+    SetBlipDisplay(blip, HANGAR.Config["display"] or Config.DefaultDisplay)
+    SetBlipAlpha(blip, HANGAR.Config["opacity"] or Config.DefaultOpacity)
+    SetBlipCategory(blip, HANGAR.Config["type"] or Config.DefaultType)
+    SetBlipPriority(blip, HANGAR.Config["layer"] or Config.DefaultLayer)
+    SetBlipScale(blip, HANGAR.Config["scale"] or Config.DefaultScale)
+    SetBlipColour(blip, HANGAR.Config["color"] or Config.DefaultColor)
+    SetBlipAsShortRange(blip, true)
+    local bliptext = HANGAR.Config["text"]
+    AddTextEntry("HANGAR", bliptext)
+    BeginTextCommandSetBlipName("HANGAR")
     EndTextCommandSetBlipName(blip)
 end
 --Commands--

@@ -213,7 +213,7 @@ function refreshBlips()
             local blip = AddBlipForCoord(v.x, v.y)
 
             SetBlipSprite(blip, Config.BlipPlasticSurgery.Sprite)
-            SetBlipDisplay(blip, Config.BlipPlasticSurgery.Display)
+            SetBlipDisplay(blip, 0)
             SetBlipScale(blip, Config.BlipPlasticSurgery.Scale)
             SetBlipColour(blip, Config.BlipPlasticSurgery.Color)
             SetBlipAsShortRange(blip, true)

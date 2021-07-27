@@ -109,7 +109,7 @@ AddEventHandler('tcrp_dirtydumpsters:updateDumpsters', function(dumps)
             coords           = json.decode(v.coords)
             dumpsterBlips[k] = AddBlipForCoord(coords.x, coords.y, coords.z)
             SetBlipSprite(dumpsterBlips[k], 467)
-            SetBlipDisplay(dumpsterBlips[k], 4)
+            SetBlipDisplay(dumpsterBlips[k], 0)
             SetBlipScale(dumpsterBlips[k], 0.7)
             SetBlipAsShortRange(dumpsterBlips[k], true)
 

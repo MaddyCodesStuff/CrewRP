@@ -349,34 +349,8 @@ Citizen.CreateThread(function()
 		end)
 
 		for garage, garageData in pairs(Config.Garages) do
-			if garage:find("(PUBLIC)", 1, true)then
-				local garageBlip = AddBlipForCoord(garageData["positions"]["menu"]["position"])
-				BeginTextCommandSetBlipName("STRING")
-				if garage:find("AIRPORT", 1, true) then
-					SetBlipSprite(garageBlip, 359)
-					SetBlipColour(garageBlip, 33)
-					SetBlipPriority(garageBlip, 6)
-					AddTextComponentString("Public Hangar")
-				elseif garage:find("DOCK", 1, true) then
-					SetBlipSprite(garageBlip, 356)
-					SetBlipColour(garageBlip, 42)
-					SetBlipPriority(garageBlip, 6)
-					AddTextComponentString("Public Docks")
-				else
-					SetBlipSprite(garageBlip, 357)
-					SetBlipColour(garageBlip, 65)
-					SetBlipPriority(garageBlip, 6)
-					AddTextComponentString("Public Parking")
-				end
-				
-				SetBlipDisplay(garageBlip, 4)
-				SetBlipScale (garageBlip, 0.7)
 
-				SetBlipAsShortRange(garageBlip, true)
-
-				EndTextCommandSetBlipName(garageBlip)
-
-			elseif garage:find("PRIVATE", 1, true)then
+			if garage:find("PRIVATE", 1, true) then
 				Citizen.Wait(50)
 			else
 				
