@@ -7,6 +7,7 @@ Cooldown = false
 Hidden = false
 MovingScene = false
 IsAdmin = false
+savedcoords = nil
 ClientTextScale = 1
 distancetimer = 0
 
@@ -213,10 +214,17 @@ RegisterCommand("scenecopylast", function()
 end)
 
 RegisterCommand("scenecopy", function()
-	local Pos = GetEntityCoords(PlayerPedId())
-	local Copy = {Id = 0, Distance = 3}
+	local Hit = nil
+	local Coords = nil 
+	local Entity = nil
+	local Copy = {Id = 0, Distance = 1}
+	for i = 1, 110 do
+		Wait(0)
+		Hit, Coords, Entity = RayCastGamePlayCamera(20)
+		DrawMarker(2, Coords, 0.0, 0.0, 0.0, 0.0, 180.0, 0.0, 0.06, 0.06, 0.06, 0, 200, 255, 255, false, true, false, nil, nil, false)
+	end
 	for k,v in pairs(Scenes) do
-		local Dis = Distance(Pos, v.Location)
+		local Dis = Distance(Coords, v.Location)
 		if Dis < Copy.Distance then
 			Copy = {Id = k,Distance = Dis}
 		end
@@ -233,10 +241,17 @@ RegisterCommand("scenemove", function()
 		Chat("Cant do this right now.")
 		return
 	end
-	local Pos = GetEntityCoords(PlayerPedId())
-	local Move = {Id = 0, Distance = 3}
+	local Hit = nil
+	local Coords = nil 
+	local Entity = nil
+	local Move = {Id = 0, Distance = 1}
+	for i = 1, 110 do
+		Wait(0)
+		Hit, Coords, Entity = RayCastGamePlayCamera(20)
+		DrawMarker(2, Coords, 0.0, 0.0, 0.0, 0.0, 180.0, 0.0, 0.06, 0.06, 0.06, 0, 200, 255, 255, false, true, false, nil, nil, false)
+	end
 	for k,v in pairs(Scenes) do
-		local Dis = Distance(Pos, v.Location)
+		local Dis = Distance(Coords, v.Location)
 		if Dis < Move.Distance then
 			Move = {Id = k,Distance = Dis}
 		end
@@ -245,6 +260,28 @@ RegisterCommand("scenemove", function()
 		StartMoveScene(Scenes[Move.Id], Move.Id)
 	else
 		Chat(Lang("CouldntFindMove"))
+	end
+end)
+
+RegisterCommand("sceneedit", function()
+	local Hit = nil
+	local Coords = nil 
+	local Entity = nil
+	local Edit = {Id = 0, Distance = 1}
+	for i = 1, 110 do
+		Wait(0)
+		Hit, Coords, Entity = RayCastGamePlayCamera(20)
+		DrawMarker(2, Coords, 0.0, 0.0, 0.0, 0.0, 180.0, 0.0, 0.06, 0.06, 0.06, 0, 200, 255, 255, false, true, false, nil, nil, false)
+	end
+	for k,v in pairs(Scenes) do
+		local Dis = Distance(Coords, v.Location)
+		if Dis < Edit.Distance then
+			Edit = {Id = k,Distance = Dis}
+		end
+	end
+	if Edit.Id ~= 0 then
+		TriggerServerEvent("Scene:AttemptCopy", Edit.Id)
+		TriggerServerEvent("Scene:AttemptDelete", Edit.Id)
 	end
 end)
 
@@ -258,6 +295,16 @@ RegisterCommand("scenescale", function(Arg1,Arg2)
 			ClientTextScale = 5
 		end
 	else Chat(Lang("ScaleError"))
+	end
+end)
+
+RegisterCommand("scenecoords", function()
+	if savedcoords == nil then
+		savedcoords = (GetEntityCoords(PlayerPedId()))
+		Chat(Lang("CoordsSaved"))
+	else
+		savedcoords = nil
+		Chat(Lang("CoordsCleared"))
 	end
 end)
 
