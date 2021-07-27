@@ -12,7 +12,15 @@ Config = {
 	MaxScenes = 50,
 	FontSize = {
 		Min = 0.25,
-		Max = 0.80
+		Max = 1.0
+	},
+	BackgroundXY = {
+		Min = -.22,
+		Max = .22
+	},
+	BackgroundSize = {
+		Min = -.40,
+		Max = .40
 	},
 	Distance = {
 		Min = 10,
@@ -20,27 +28,8 @@ Config = {
 	},
 	-- Amount of hours a scene is allowed to be up for.
 	SceneLength = {
-		{Hours = .50},
-		{Hours = 1},
-		{Hours = 2},
-		{Hours = 4},
-		{Hours = 8},
-		{Hours = 12},
-		{Hours = 16},
-		{Hours = 20},
-		{Hours = 24},
-		{Hours = 28},
-		{Hours = 32},
-		{Hours = 36},
-		{Hours = 40},
-		{Hours = 44},
-		{Hours = 48},
-		{Hours = 52},
-		{Hours = 56},
-		{Hours = 60},
-		{Hours = 64},
-		{Hours = 68},
-		{Hours = 72},
+		Min = .50,
+		Max = 72
 	},
 	MaxSceneLength = 72, -- For validation upon creating a scene, incase someone has a preset saved with Hours = 128 or something.
 	--[[ 
@@ -94,6 +83,7 @@ Config = {
 		},
 		{
 			Name = "Emote",
+			Desc = "Tigger an emote when activated",
 			Prefix = "/e",
 			Admin = false,
 			Alter = function()

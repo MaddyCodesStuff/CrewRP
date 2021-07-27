@@ -82,9 +82,9 @@ Menus = {
 		end,
 		Function = function()
 			if CurrentKey("LEFT") then
-				Scene.Background.Settings.h = AlterOverflow(Scene.Background.Settings.h, -0.002, -0.2-.002, 0.2+.002)
+				Scene.Background.Settings.h = AlterOverflow(Scene.Background.Settings.h, -0.002, Config.BackgroundSize.Min-.002, Config.BackgroundSize.Max+.002)
 			elseif CurrentKey("RIGHT") then
-				Scene.Background.Settings.h = AlterOverflow(Scene.Background.Settings.h, 0.002, -0.2-.002, 0.2+.002)
+				Scene.Background.Settings.h = AlterOverflow(Scene.Background.Settings.h, 0.002, Config.BackgroundSize.Min-.002, Config.BackgroundSize.Max+.002)
 			end
 		end
 	},
@@ -96,9 +96,9 @@ Menus = {
 		end,
 		Function = function()
 			if CurrentKey("LEFT") then
-				Scene.Background.Settings.w = AlterOverflow(Scene.Background.Settings.w, -0.002, -0.2-.002, 0.2+.002)
+				Scene.Background.Settings.w = AlterOverflow(Scene.Background.Settings.w, -0.002, Config.BackgroundSize.Min-.002, Config.BackgroundSize.Max+.002)
 			elseif CurrentKey("RIGHT") then
-				Scene.Background.Settings.w = AlterOverflow(Scene.Background.Settings.w, 0.002, -0.2-.002, 0.2+.002)
+				Scene.Background.Settings.w = AlterOverflow(Scene.Background.Settings.w, 0.002, Config.BackgroundSize.Min-.002, Config.BackgroundSize.Max+.002)
 			end
 		end
 	},
@@ -154,9 +154,9 @@ Menus = {
 		end,
 		Function = function()
 			if CurrentKey("LEFT") then
-				Scene.Background.Settings.x = AlterOverflow(Scene.Background.Settings.x, -0.002, -0.2, 0.2)
+				Scene.Background.Settings.x = AlterOverflow(Scene.Background.Settings.x, -0.002, Config.BackgroundXY.Min-.002, Config.BackgroundXY.Max+.002)
 			elseif CurrentKey("RIGHT") then
-				Scene.Background.Settings.x = AlterOverflow(Scene.Background.Settings.x, 0.002, -0.2, 0.2)
+				Scene.Background.Settings.x = AlterOverflow(Scene.Background.Settings.x, 0.002, Config.BackgroundXY.Min-.002, Config.BackgroundXY.Max+.002)
 			end
 		end
 	},
@@ -168,9 +168,9 @@ Menus = {
 		end,
 		Function = function()
 			if CurrentKey("LEFT") then
-				Scene.Background.Settings.y = AlterOverflow(Scene.Background.Settings.y, -0.002, -0.2, 0.2)
+				Scene.Background.Settings.y = AlterOverflow(Scene.Background.Settings.y, -0.002, Config.BackgroundXY.Min-.002, Config.BackgroundXY.Max+.002)
 			elseif CurrentKey("RIGHT") then
-				Scene.Background.Settings.y = AlterOverflow(Scene.Background.Settings.y, 0.002, -0.2, 0.2)
+				Scene.Background.Settings.y = AlterOverflow(Scene.Background.Settings.y, 0.002, Config.BackgroundXY.Min-.002, Config.BackgroundXY.Max+.002)
 			end
 		end
 	},
@@ -197,11 +197,9 @@ Menus = {
 		end,
 		Function = function(x,y,control)
 			if CurrentKey("LEFT") then
-				Menu.TimeOption = AlterOverflow(Menu.TimeOption, -1, 1, #Config.SceneLength, true)
-				Scene.Hours = Config.SceneLength[Menu.TimeOption].Hours
+				Scene.Hours = AlterOverflow(Scene.Hours, -.5, Config.SceneLength.Min, Config.SceneLength.Max, true)
 			elseif CurrentKey("RIGHT") then
-				Menu.TimeOption = AlterOverflow(Menu.TimeOption, 1, 1, #Config.SceneLength, true)
-				Scene.Hours = Config.SceneLength[Menu.TimeOption].Hours
+				Scene.Hours = AlterOverflow(Scene.Hours, .5, Config.SceneLength.Min, Config.SceneLength.Max, true)
 			end
 		end
 	},
