@@ -27,7 +27,8 @@ AddEventHandler("Scene:New", function(New)
 	local Src = source
 	local Id = GetLicense(Src, Config.IdentifierType)
 	local Count = CountScenes(Id)
-	if Count < Config.MaxScenes then
+	local Override = AdminCheck(Src, Me)
+	if Count < Config.MaxScenes or Override then
 		if not CloseToOtherScene(New) then
 			local NewScene = PrepareSceneForDatabase(New)
 			local CreationTime = os.time()
