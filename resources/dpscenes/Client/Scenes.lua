@@ -380,7 +380,6 @@ CreateThread(function()
 							local number = 0
 							hit, LosCoords = CheckLos(i)
 							LOS[id]=(hit == 0 or LosCoords < .20)
-							print(hit, LosCoords)
 						end
 						if LOS[id] then
 							DrawScene(i,CachedPosition)
