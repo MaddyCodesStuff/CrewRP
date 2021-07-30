@@ -6,61 +6,61 @@ Config.PetShop = {
 	{
 		pet = 'chien',
 		label = _U('rottweiler'),
-		price = 5
+		price = 40000
 	},
 
 	{
 		pet = 'chat',
 		label = _U('cat'),
-		price = 5
+		price = 32000
 	},
 
 	{
 		pet = 'lapin',
 		label = _U('bunny'),
-		price = 5
+		price = 25000
 	},
 
 	{
 		pet = 'husky',
 		label = _U('husky'),
-		price = 5
+		price = 50000
 	},
 
 	{
 		pet = 'cochon',
 		label = _U('pig'),
-		price = 5
+		price = 27000
 	},
 
 	{
 		pet = 'caniche',
 		label = _U('poodle'),
-		price = 5
+		price = 35000
 	},
 
 	{
 		pet = 'carlin',
 		label = _U('pug'),
-		price = 5
+		price = 30000
 	},
 
 	{
 		pet = 'retriever',
 		label = _U('retriever'),
-		price = 5
+		price = 45000
 	},
 
 	{
 		pet = 'berger',
 		label = _U('asatian'),
-		price = 5
+		price = 38000
 	},
 
 	{
 		pet = 'westie',
 		label = _U('westie'),
-		price = 5
+		price = 30000
 	},
 }
 

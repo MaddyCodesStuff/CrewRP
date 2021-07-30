@@ -57,7 +57,7 @@ AMMUNATION_GADGET_ITEMS = {
         label            = 'Baseball',
         label_real       = 'Baseball',
         item             = 'weapon_ball',
-        price            = 10,
+        price            = 5,
         limit            = 1,
     },
 }

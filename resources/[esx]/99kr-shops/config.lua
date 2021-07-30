@@ -1019,7 +1019,7 @@ Config = {
             { label = "Toothpaste", item = "toothpaste", price = 3 },
             { label = "Notepad", item = "notepad", price = 100 },
             { label = "Empty Bottle", item = "empty_bottle", price = 10 },
-            { label = "Pet Food", item = "croquettes", price = 200 },
+            { label = "Pet Food", item = "croquettes", price = 150 },
         },
         ["chemicals"]   = {
             { label = "Bleach", item = "bleach", price = 5 },
