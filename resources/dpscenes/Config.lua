@@ -210,7 +210,6 @@ Config = {
 					end
 				else
 					coords = savedcoords
-					print(coords, cordsx,coordsy,coordsz)
 					xx = coords.x
 					yy = coords.y
 				end
