@@ -300,7 +300,13 @@ end)
 
 RegisterCommand("scenecoords", function()
 	if savedcoords == nil then
-		savedcoords = (GetEntityCoords(PlayerPedId()))
+		local lped = PlayerPedId()
+		coords = GetEntityCoords(lped)
+		local coordsx = coords.x
+		local coordsy = coords.y
+		local coordsz = coords.z - 1
+		local coordsh = GetEntityHeading(lped)
+		savedcoords = vector4(coordsx,coordsy,coordsz,coordsh)
 		Chat(Lang("CoordsSaved"))
 	else
 		savedcoords = nil

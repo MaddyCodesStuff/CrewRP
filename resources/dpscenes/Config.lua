@@ -183,7 +183,9 @@ Config = {
 			Name = "Teleporter",
 			Admin = true,
 			Function = function(c)
-				SetEntityCoords(PlayerPedId(), c.x, c.y, c.z)
+				local lped = PlayerPedId()
+				SetEntityCoords(lped, c.x, c.y, c.z)
+				SetEntityHeading(lped, c.w)
 			end,
 			Alter = function()
 				local Arg = ""
@@ -198,15 +200,17 @@ Config = {
 				local yy = nil
 				local zz = nil
 				if not savedcoords then
-					local x, y, z = TextInput("Where do you want to teleport the user? Enter as X Y Z seperately.", Arg, 50, true)
+					local x, y, z, h = TextInput("Where do you want to teleport the user? Enter as X Y Z seperately.", Arg, 50, true)
 					xx = tonumber(x)
 					yy = tonumber(y)
 					zz = tonumber(z)
-					if xx ~= nil and yy ~= nil and zz ~= nil then
-						coords = vector3(xx,yy,zz)
+					hh = tonumber(h)
+					if xx ~= nil and yy ~= nil and zz ~= nil and hh ~= nil then
+						coords = vector4(xx,yy,zz,hh)
 					end
-				else 
+				else
 					coords = savedcoords
+					print(coords, cordsx,coordsy,coordsz)
 					xx = coords.x
 					yy = coords.y
 				end
