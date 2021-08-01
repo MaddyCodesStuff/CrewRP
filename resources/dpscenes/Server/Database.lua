@@ -27,7 +27,8 @@ AddEventHandler("Scene:New", function(New)
 	local Src = source
 	local Id = GetLicense(Src, Config.IdentifierType)
 	local Count = CountScenes(Id)
-	if Count < Config.MaxScenes then
+	local Override = AdminCheck(Src, Me)
+	if Count < Config.MaxScenes or Override then
 		if not CloseToOtherScene(New) then
 			local NewScene = PrepareSceneForDatabase(New)
 			local CreationTime = os.time()
@@ -78,7 +79,7 @@ AddEventHandler("Scene:AttemptCopy", function(Id)
 	local Me = GetLicense(Src, Config.IdentifierType)
 	local SceneToCopy = Scenes.Current[Id]
 	local Override = AdminCheck(Src, Me)
-	if Me == SceneToCopy.Owner then
+	if Me == SceneToCopy.Owner or Override then
 		TriggerClientEvent("Scene:RecieveCopy", Src, SceneToCopy, Override)
 	else
 		Chat(Src, Lang("OnlyCopyOwn"))

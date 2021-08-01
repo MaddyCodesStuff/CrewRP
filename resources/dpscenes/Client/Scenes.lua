@@ -7,6 +7,7 @@ Cooldown = false
 Hidden = false
 MovingScene = false
 IsAdmin = false
+savedcoords = nil
 ClientTextScale = 1
 distancetimer = 0
 
@@ -20,17 +21,17 @@ function ResetScene()
 	Scene = {
 		State = false,
 		Info = false,
-		Hours = Config.SceneLength[4].Hours,
+		Hours = 4,
 		ShowAge = 1,
-		Text = {Text = "", Font = 1, Size = Config.FontSize.Min, Outline = 1},
+		Text = {Text = "", Font = 1, Size = .50, Outline = 1},
 		Background = {
 			Sprite = 1,
 			Colour = {0,0,0},
 			ColourName = "Black",
-			Settings = {x = 0.00, y = 0.01, w = 0.01, h = 0.01, r = 0.00, o = 120}
+			Settings = {x = 0.00, y = 0.016, w = 0.01, h = 0.01, r = 0.00, o = 120}
 		},
 		Distance = 10,
-		AnyDelete = 2,
+		AnyDelete = 1,
 		Function = false
 	}
 end
@@ -213,10 +214,17 @@ RegisterCommand("scenecopylast", function()
 end)
 
 RegisterCommand("scenecopy", function()
-	local Pos = GetEntityCoords(PlayerPedId())
-	local Copy = {Id = 0, Distance = 3}
+	local Hit = nil
+	local Coords = nil 
+	local Entity = nil
+	local Copy = {Id = 0, Distance = 1}
+	for i = 1, 110 do
+		Wait(0)
+		Hit, Coords, Entity = RayCastGamePlayCamera(20)
+		DrawMarker(2, Coords, 0.0, 0.0, 0.0, 0.0, 180.0, 0.0, 0.06, 0.06, 0.06, 0, 200, 255, 255, false, true, false, nil, nil, false)
+	end
 	for k,v in pairs(Scenes) do
-		local Dis = Distance(Pos, v.Location)
+		local Dis = Distance(Coords, v.Location)
 		if Dis < Copy.Distance then
 			Copy = {Id = k,Distance = Dis}
 		end
@@ -233,10 +241,17 @@ RegisterCommand("scenemove", function()
 		Chat("Cant do this right now.")
 		return
 	end
-	local Pos = GetEntityCoords(PlayerPedId())
-	local Move = {Id = 0, Distance = 3}
+	local Hit = nil
+	local Coords = nil 
+	local Entity = nil
+	local Move = {Id = 0, Distance = 1}
+	for i = 1, 110 do
+		Wait(0)
+		Hit, Coords, Entity = RayCastGamePlayCamera(20)
+		DrawMarker(2, Coords, 0.0, 0.0, 0.0, 0.0, 180.0, 0.0, 0.06, 0.06, 0.06, 0, 200, 255, 255, false, true, false, nil, nil, false)
+	end
 	for k,v in pairs(Scenes) do
-		local Dis = Distance(Pos, v.Location)
+		local Dis = Distance(Coords, v.Location)
 		if Dis < Move.Distance then
 			Move = {Id = k,Distance = Dis}
 		end
@@ -245,6 +260,28 @@ RegisterCommand("scenemove", function()
 		StartMoveScene(Scenes[Move.Id], Move.Id)
 	else
 		Chat(Lang("CouldntFindMove"))
+	end
+end)
+
+RegisterCommand("sceneedit", function()
+	local Hit = nil
+	local Coords = nil 
+	local Entity = nil
+	local Edit = {Id = 0, Distance = 1}
+	for i = 1, 110 do
+		Wait(0)
+		Hit, Coords, Entity = RayCastGamePlayCamera(20)
+		DrawMarker(2, Coords, 0.0, 0.0, 0.0, 0.0, 180.0, 0.0, 0.06, 0.06, 0.06, 0, 200, 255, 255, false, true, false, nil, nil, false)
+	end
+	for k,v in pairs(Scenes) do
+		local Dis = Distance(Coords, v.Location)
+		if Dis < Edit.Distance then
+			Edit = {Id = k,Distance = Dis}
+		end
+	end
+	if Edit.Id ~= 0 then
+		TriggerServerEvent("Scene:AttemptCopy", Edit.Id)
+		TriggerServerEvent("Scene:AttemptDelete", Edit.Id)
 	end
 end)
 
@@ -258,6 +295,22 @@ RegisterCommand("scenescale", function(Arg1,Arg2)
 			ClientTextScale = 5
 		end
 	else Chat(Lang("ScaleError"))
+	end
+end)
+
+RegisterCommand("scenecoords", function()
+	if savedcoords == nil then
+		local lped = PlayerPedId()
+		coords = GetEntityCoords(lped)
+		local coordsx = coords.x
+		local coordsy = coords.y
+		local coordsz = coords.z - 1
+		local coordsh = GetEntityHeading(lped)
+		savedcoords = vector4(coordsx,coordsy,coordsz,coordsh)
+		Chat(Lang("CoordsSaved"))
+	else
+		savedcoords = nil
+		Chat(Lang("CoordsCleared"))
 	end
 end)
 
@@ -291,6 +344,7 @@ function CreateSuggestions()
 	TriggerEvent("chat:addSuggestion", "/scenehide", Lang("HideScenes"))
 	TriggerEvent("chat:addSuggestion", "/scenecopy", Lang("CopySuggestion"))
 	TriggerEvent("chat:addSuggestion", "/scenemove", Lang("MoveSuggestion"))
+	TriggerEvent("chat:addSuggestion", "/sceneedit", Lang("EditSuggestion"))
 	TriggerEvent("chat:addSuggestion", "/scenecopylast", Lang("CopyLastSuggestion"))
 	TriggerEvent("chat:addSuggestion", "/sceneresetpresets", Lang("ResetSuggestion"))
 	TriggerEvent("chat:addSuggestion", "/scenescale", Lang("SceneScaleSuggestion"))
@@ -331,7 +385,7 @@ CreateThread(function()
 							local LosCoords = 5
 							local number = 0
 							hit, LosCoords = CheckLos(i)
-							LOS[id]=(hit == 0 or LosCoords < 1)
+							LOS[id]=(hit == 0 or LosCoords < .20)
 						end
 						if LOS[id] then
 							DrawScene(i,CachedPosition)

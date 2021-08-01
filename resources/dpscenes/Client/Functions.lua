@@ -11,6 +11,7 @@ function TextInput(TextEntry, ExampleText, MaxStringLength, TP)
 	local x = 0
 	local y = 0
 	local z = 0
+	local h = 0
 	if not TP then
 		AddTextEntry('FMMC_KEY_TIP1', TextEntry)
 		DisplayOnscreenKeyboard(1, "FMMC_KEY_TIP1", "", ExampleText, "", "", "", MaxStringLength or 20)
@@ -22,7 +23,7 @@ function TextInput(TextEntry, ExampleText, MaxStringLength, TP)
 			Wait(200) return ExampleText
 		end
 	else
-		AddTextEntry('X', 'X Coordinate')
+		AddTextEntry('X', 'Where do you want to teleport the user? X Coordinate.')
 		DisplayOnscreenKeyboard(1, "X", "", ExampleText, "", "", "", MaxStringLength or 20)
 		while UpdateOnscreenKeyboard() ~= 1 and UpdateOnscreenKeyboard() ~= 2 do Wait(0) end
 		if UpdateOnscreenKeyboard() ~= 2 then
@@ -30,7 +31,7 @@ function TextInput(TextEntry, ExampleText, MaxStringLength, TP)
 			x = XResult
 			Wait(200)
 		end
-		AddTextEntry('Y', 'Y Coordinate')
+		AddTextEntry('Y', 'Where do you want to teleport the user? Y Coordinate.')
 		DisplayOnscreenKeyboard(1, "Y", "", ExampleText, "", "", "", MaxStringLength or 20)
 		while UpdateOnscreenKeyboard() ~= 1 and UpdateOnscreenKeyboard() ~= 2 do Wait(0) end
 		if UpdateOnscreenKeyboard() ~= 2 then
@@ -38,14 +39,22 @@ function TextInput(TextEntry, ExampleText, MaxStringLength, TP)
 			y = YResult
 			Wait(200)
 		end
-		AddTextEntry('Z', 'Z Coordinate')
+		AddTextEntry('Z', 'Where do you want to teleport the user? Z Coordinate.')
 		DisplayOnscreenKeyboard(1, "Z", "", ExampleText, "", "", "", MaxStringLength or 20)
 		while UpdateOnscreenKeyboard() ~= 1 and UpdateOnscreenKeyboard() ~= 2 do Wait(0) end
 		if UpdateOnscreenKeyboard() ~= 2 then
 			local YResult = GetOnscreenKeyboardResult()
-			z = YResult
+			z = YResult - 1
 			Wait(200)
-			return x, y, z
+		end
+		AddTextEntry('H', 'Where do you want to teleport the user? Heading.')
+			DisplayOnscreenKeyboard(1, "H", "", ExampleText, "", "", "", MaxStringLength or 20)
+			while UpdateOnscreenKeyboard() ~= 1 and UpdateOnscreenKeyboard() ~= 2 do Wait(0) end
+			if UpdateOnscreenKeyboard() ~= 2 then
+				local HResult = GetOnscreenKeyboardResult()
+				h = HResult
+				Wait(200)
+			return x, y, z, h
 		else
 			Wait(200) return ExampleText
 		end
