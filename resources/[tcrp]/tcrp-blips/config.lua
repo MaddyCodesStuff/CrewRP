@@ -1188,8 +1188,8 @@ Blips.Main        = {
         ["Info.name2Left"] = "Rental",["Info.name2Right"] = "Yes",
         ["Info.name3Left"] = "Impound",["Info.name3Right"] = "Yes",
     },
-    [87]  = {
-        ["name"]    = "Paleto Bay Docks",
+    [98]  = {
+        ["name"]    = "Catfish View Docks",
         ["x"] =  3825.52, ["y"] = 4463.99,
         ["category"]= "Docks",
         ["text"]    = "Docks",
