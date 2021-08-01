@@ -1210,6 +1210,16 @@ Blips.Main        = {
         ["color"]   = 5,
         ["layer"]   = 30,
     },
+    [93]  = {
+        ["name"]    = "City Hall",
+        ["x"] =  -536.27, ["y"] = -218.59,
+        ["category"]= "Government",
+        ["text"]    = "City Hall",
+        ["sprite"]  =  498,
+        ["color"]   = 0,
+        ["layer"]   = 30,
+        ["scale"]   = 1.2
+    }
 }
 
 ATM = {}
