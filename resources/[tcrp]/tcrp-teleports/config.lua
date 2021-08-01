@@ -1335,4 +1335,52 @@ Config.Elevators    = {
          }, 
      },
     },
+    { -- Casino Into Cashier
+    name    = "Casino Door",
+    Pos     = { x = 978.47, y = 32.13, z = 74.28 },
+    options = {
+         {
+            label   = "Cashier's Booth",
+            name    = "Cashier's Booth",
+            pos     = { x = 982.25, y = 38.41, z = 74.28 },
+            heading = 56.49,
+         }, 
+     },
+    },
+    { -- Casino Exit Cashier
+    name    = "Casino Door",
+    Pos     = { x = 982.25, y = 38.41, z = 73.88 },
+    options = {
+         {
+            label   = "Lounge",
+            name    = "Lounge",
+            pos     = { x = 978.47, y = 32.13, z = 73.88 },
+            heading = 56.49,
+         }, 
+     },
+    },
+    { -- Casino Elevator Up
+    name    = "Casino Elevator",
+    Pos     = { x = 947.72, y = 50.76, z = 74.98 },
+    options = {
+     {
+        label   = "Rooftop",
+        name    = "Rooftop",
+        pos     = { x = 965.01, y = 58.48, z = 112.20 },
+        heading = 52.08,
+     }, 
+ },
+},
+{ -- Casino Elevator down
+    name    = "Casino Elevator",
+    Pos     = { x = 965.00, y = 58.48, z = 112.20 },
+    options = {
+    {
+        label   = "Lounge",
+        name    = "Lounge",
+        pos     = { x = 947.72, y = 50.76, z = 74.98 },
+        heading = 284.9,
+ }, 
+},
+},
 }
