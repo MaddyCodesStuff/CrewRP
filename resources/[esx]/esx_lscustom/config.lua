@@ -13,7 +13,7 @@ Config.Zones        = {
         Name     = "Mechanic",
         Hint     = _U('press_custom'),
         locked   = false,
-        ShowBlip = true
+        ShowBlip = false
     },
     ls2    = {
         Pos      = { x = -1155.536, y = -2007.183, z = 12.9},
@@ -25,7 +25,7 @@ Config.Zones        = {
         Name     = "Mechanic",
         Hint     = _U('press_custom'),
         locked   = false,
-        ShowBlip = true,
+        ShowBlip = false,
     },
     ls3    = {
         -- Pos   = { x = 731.8163, y = -1088.822, z = 21.733},
@@ -38,7 +38,7 @@ Config.Zones        = {
         Name     = "Mechanic",
         Hint     = _U('press_custom'),
         locked   = false,
-        ShowBlip = true,
+        ShowBlip = false,
     },
     ls4    = {
         Pos      = { x = 1175.04, y = 2640.216, z = 37.32177},
@@ -50,7 +50,7 @@ Config.Zones        = {
         Name     = "Mechanic",
         Hint     = _U('press_custom'),
         locked   = false,
-        ShowBlip = true,
+        ShowBlip = false,
     },
     ls5    = {
         -- Pos   = { x = 110.99, y = 6626.39, z = 30.89},
@@ -63,7 +63,7 @@ Config.Zones        = {
         Name     = "Mechanic",
         Hint     = _U('press_custom'),
         locked   = false,
-        ShowBlip = true,
+        ShowBlip = false,
     },
     ls6    = {
         -- Pos   = { x = 110.99, y = 6626.39, z = 30.89},
@@ -76,7 +76,7 @@ Config.Zones        = {
         Name     = "Mechanic Shop",
         Hint     = "Press ~INPUT_CONTEXT~ to personalize your Aircraft",
         locked   = false,
-        ShowBlip = true,
+        ShowBlip = false,
     },
     ls7    = {
         Pos      = { x = -1423.63, y = -450.18, z = 35.91 },
@@ -88,7 +88,7 @@ Config.Zones        = {
         Name     = "Mechanic Shop",
         Hint     = _U('press_custom'),
         locked   = false,
-        ShowBlip = true,
+        ShowBlip = false,
     },
     lostcompound    = {
         Pos      = { x = 978.28, y = -123.31, z = 73.39 },
@@ -100,7 +100,7 @@ Config.Zones        = {
         Name     = "Mechanic",
         Hint     = _U('press_custom'),
         locked   = false,
-        ShowBlip = true,
+        ShowBlip = false,
     },
     pdmbennys    = {
         Pos      = { x = -30.11, y = -1060.42, z = 27.71 },
@@ -112,7 +112,7 @@ Config.Zones        = {
         Name     = "Los Santos Customs",
         Hint     = _U('press_custom'),
         locked   = false,
-        ShowBlip = true,
+        ShowBlip = false,
     },
     lostcompound    = {
         Pos      = { x = 978.28, y = -123.31, z = 73.39 },
@@ -124,7 +124,7 @@ Config.Zones        = {
         Name     = "Los Santos Customs",
         Hint     = _U('press_custom'),
         locked   = false,
-        ShowBlip = true,
+        ShowBlip = false,
     },
     pdmbennys    = {
         Pos      = { x = -30.11, y = -1060.42, z = 27.71 },
@@ -136,7 +136,7 @@ Config.Zones        = {
         Name     = "Los Santos Customs",
         Hint     = _U('press_custom'),
         locked   = false,
-        ShowBlip = true,
+        ShowBlip = false,
     },
     hayesrockford    = {
         Pos      = { x = -1423.29, y = -436.73, z = 35.15 },
@@ -148,7 +148,7 @@ Config.Zones        = {
         Name     = "Los Santos Customs",
         Hint     = _U('press_custom'),
         locked   = false,
-        ShowBlip = true,
+        ShowBlip = false,
     },
     hayeslittlebighorn    = {
         Pos      = { x = 488.16, y = -1313.68, z = 28.56 },
@@ -160,7 +160,7 @@ Config.Zones        = {
         Name     = "Los Santos Customs",
         Hint     = _U('press_custom'),
         locked   = false,
-        ShowBlip = true,
+        ShowBlip = false,
     },
     galaxy    = {
         Pos      = { x = -1626.80, y = -2997.97, z = -78.83 },
@@ -184,7 +184,7 @@ Config.Zones        = {
         Name     = "Los Santos Customs",
         Hint     = _U('press_custom'),
         locked   = false,
-        ShowBlip = true,
+        ShowBlip = false,
     },
     sandyairfield    = {
         Pos      = { x = 1737.00, y = 3289.95, z = 41.95 },
@@ -208,7 +208,7 @@ Config.Zones        = {
         Name     = "Mechanic",
         Hint     = "Press ~INPUT_CONTEXT~ to enter Benny's Customs",
         locked   = false,
-        ShowBlip = true,
+        ShowBlip = false,
     },
     autoexotic = {
         Pos      = { x = 544.66, y = -189.35, z = 54.49, h = 88.68 },
@@ -220,7 +220,7 @@ Config.Zones        = {
         Name     = "Auto Exotic",
         Hint     = "Press ~INPUT_CONTEXT~ to enter Auto Exotic Customs",
         locked   = false,
-        ShowBlip = true,
+        ShowBlip = false,
     },   
     marina = {
         Pos      = { x = -798.4, y = -1500.8, z = 0.00, h = 108.43 },

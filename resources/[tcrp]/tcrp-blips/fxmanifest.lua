@@ -5,10 +5,18 @@ author 'Kunai'
 description 'Handles Map Blips'
 version '1.0.0'
 
-dependency 'blip_info'
-
-client_scripts {
-    'client.lua',
+dependency {
+    'blip_info',
+    'mysql-async'
 }
 
-shared_script 'config.lua'
+client_script 'client.lua'
+
+server_script {
+    '@mysql-async/lib/MySQL.lua',
+    'server.lua'
+}
+shared_scripts {
+    'config.lua',
+    'emergencyconfig.lua'
+}
