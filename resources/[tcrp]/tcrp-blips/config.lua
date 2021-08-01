@@ -12,7 +12,7 @@ Config = {
     DefaultText         = "New Blip",       -- Default text Displayed for Blips in legend
     DefaultName         = "Title",           -- Default name for blip location.
     DefaultDictionary   = "blip_images",
-    DefaultImage        = "DefaultTCRP"
+    DefaultImage        = "DefaultTCRP",
 --[[
 
     --Default Layers--
@@ -557,7 +557,7 @@ Blips.Main        = {
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Recreation",
         ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
     },
-    --Hobby Fuel--
+    --Hobbies--
     [41]  = {
         ["name"]    = "Sell Essense",
         ["x"] =  148.09, ["y"] =  -2391.45,
@@ -623,7 +623,7 @@ Blips.Main        = {
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Hobby",
         ["Info.nameLeft"] = "Type",["Info.nameRight"] = "Delivery",
     },
-    [50]  = {
+    [46]  = {
         ["name"]    = "Grape Harvesting",
         ["x"] =  -1925.12, ["y"] =  1918.79,
         ["category"]= "Wine Hobby",
@@ -636,7 +636,7 @@ Blips.Main        = {
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Hobby",
         ["Info.nameLeft"] = "Type",["Info.nameRight"] = "Wine",
     },
-    [51]  = {
+    [47]  = {
         ["name"]    = "Wine Fermenting",
         ["x"] =  -1881.20, ["y"] =  2063.09,
         ["category"]= "Wine Hobby",
@@ -649,8 +649,8 @@ Blips.Main        = {
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Hobby",
         ["Info.nameLeft"] = "Type",["Info.nameRight"] = "Wine",
     },
-    [75]  = {
-        ["name"]    = " Smeltery",
+    [48]  = {
+        ["name"]    = "Smeltery",
         ["x"] =  1077.96, ["y"] = -1965.83,
         ["category"]= "Mining Hobby",
         ["text"]    = "Hobby - Mining",
@@ -662,7 +662,7 @@ Blips.Main        = {
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Hobby",
         ["Info.nameLeft"] = "Type",["Info.nameRight"] = "Mining",
     },
-    [76]  = {
+    [49]  = {
         ["name"]    = "Mineshaft",
         ["x"] =  -596.41, ["y"] =  2088.56,
         ["category"]= "Mining Hobby",
@@ -674,6 +674,58 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Hobby",
         ["Info.nameLeft"] = "Type",["Info.nameRight"] = "Mining",
+    },
+    [94]  = {
+        ["name"]    = "Gather Pearls",
+        ["x"] =  -2481.85, ["y"] =  -735.3,
+        ["category"]= "Pearls Hobby",
+        ["text"]    = "Hobby - Pearls",
+        ["sprite"]  = 455,
+        ["color"]   = 32,
+        ["layer"]   = 25,
+        ["scale"]   = 1.0,
+        ["Info.toggle"] = true,
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Hobby",
+        ["Info.nameLeft"] = "Type",["Info.nameRight"] = "Pearls",
+    },
+    [95]  = {
+        ["name"]    = "Refine Fabric",
+        ["x"] =  715.5, ["y"] =  -965.99,
+        ["category"]= "Tailor Hobby",
+        ["text"]    = "Hobby - Tailoring",
+        ["sprite"]  = 366,
+        ["color"]   = 54,
+        ["layer"]   = 25,
+        ["scale"]   = 1.0,
+        ["Info.toggle"] = true,
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Hobby",
+        ["Info.nameLeft"] = "Type",["Info.nameRight"] = "Tailoring",
+    },
+    [96]  = {
+        ["name"]    = "Sell Clothes",
+        ["x"] =  455.0, ["y"] =  -801.65,
+        ["category"]= "Tailor Hobby",
+        ["text"]    = "Hobby - Tailoring",
+        ["sprite"]  = 366,
+        ["color"]   = 54,
+        ["layer"]   = 25,
+        ["scale"]   = 1.0,
+        ["Info.toggle"] = true,
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Hobby",
+        ["Info.nameLeft"] = "Type",["Info.nameRight"] = "Tailoring",
+    },
+    [97]  = {
+        ["name"]    = "Harvest Wool",
+        ["x"] =  2055.69, ["y"] =  4927.9,
+        ["category"]= "Tailor Hobby",
+        ["text"]    = "Hobby - Tailoring",
+        ["sprite"]  = 366,
+        ["color"]   = 54,
+        ["layer"]   = 25,
+        ["scale"]   = 1.0,
+        ["Info.toggle"] = true,
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Hobby",
+        ["Info.nameLeft"] = "Type",["Info.nameRight"] = "Tailoring",
     },
     --BARS--
     [46]  = {
@@ -1218,7 +1270,9 @@ Blips.Main        = {
         ["sprite"]  =  498,
         ["color"]   = 0,
         ["layer"]   = 30,
-        ["scale"]   = 1.2
+        ["scale"]   = 1.2,
+        ["Info.toggle"] = true,
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Government",
     }
 }
 
