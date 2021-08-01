@@ -19,7 +19,7 @@ Config = {}
 			onMap = true
 		},
 	{
-			pos = vec3(709.15, 4184.92, 39.71), 
+			pos = vec3(-1641.00, -1017.37, 5.28), 
 			type = "illegal", 
 			sellText = "Fish Black Market",
 			blip = 68,

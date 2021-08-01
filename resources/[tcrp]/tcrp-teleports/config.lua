@@ -158,28 +158,6 @@ Config.Elevators    = {
             },
         },
     },
-    { -- Sandy Medical
-        name    = "Sandy Top Floor",
-        Pos     = { x = 1838.55, y = 3686.77, z = 34.27 }, -- Position of the text to show up
-        options = {
-            {
-                label = "Lower Level",
-                name  = "lowerlevel",
-                pos   = { x = 1839.06, y = 3686.30, z = 29.01 }, -- Position to take you to
-            },
-        },
-    },
-    { -- Sandy Medical
-        name    = "Sandy Lower Floor",
-        Pos     = { x = 1838.72, y = 3686.51, z = 29.01 }, -- Position of the text to show up
-        options = {
-            {
-                label = "Top Level",
-                name  = "toplevel",
-                pos   = { x = 1838.55, y = 3687.04, z = 34.27 }, -- Position to take you to
-            },
-        },
-    },
 
     { -- Safehouse2 Roof Entrance.
         name    = "roofaccess2",
@@ -1335,4 +1313,52 @@ Config.Elevators    = {
          }, 
      },
     },
+    { -- Casino Into Cashier
+    name    = "Casino Door",
+    Pos     = { x = 978.47, y = 32.13, z = 74.28 },
+    options = {
+         {
+            label   = "Cashier's Booth",
+            name    = "Cashier's Booth",
+            pos     = { x = 982.25, y = 38.41, z = 74.28 },
+            heading = 56.49,
+         }, 
+     },
+    },
+    { -- Casino Exit Cashier
+    name    = "Casino Door",
+    Pos     = { x = 982.25, y = 38.41, z = 73.88 },
+    options = {
+         {
+            label   = "Lounge",
+            name    = "Lounge",
+            pos     = { x = 978.47, y = 32.13, z = 73.88 },
+            heading = 56.49,
+         }, 
+     },
+    },
+    { -- Casino Elevator Up
+    name    = "Casino Elevator",
+    Pos     = { x = 947.72, y = 50.76, z = 74.98 },
+    options = {
+     {
+        label   = "Rooftop",
+        name    = "Rooftop",
+        pos     = { x = 965.01, y = 58.48, z = 112.20 },
+        heading = 52.08,
+     }, 
+ },
+},
+{ -- Casino Elevator down
+    name    = "Casino Elevator",
+    Pos     = { x = 965.00, y = 58.48, z = 112.20 },
+    options = {
+    {
+        label   = "Lounge",
+        name    = "Lounge",
+        pos     = { x = 947.72, y = 50.76, z = 74.98 },
+        heading = 284.9,
+ }, 
+},
+},
 }
