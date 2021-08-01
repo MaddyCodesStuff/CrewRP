@@ -17,7 +17,7 @@ Config.Garages = {
     ["BUS STATION (PUBLIC)"] = {
         ["positions"] = {
             ["menu"] = {
-                ["position"] = vector3(430.96, -631.46, 28.5)
+                ["position"] = vector3(431.96, -631.46, 28.5)
             },
             ["vehicle"] = {
                 ["position"] = vector3(421.83, -637.71, 28.5), 
