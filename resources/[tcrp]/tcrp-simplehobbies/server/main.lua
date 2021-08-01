@@ -105,3 +105,30 @@ AddEventHandler('tailor:sell', function()
         TriggerClientEvent('esx:showNotification', source, 'You do not have any clothes!')
     end
 end)
+
+RegisterServerEvent('pearl:gather')
+AddEventHandler('pearl:gather', function()
+	local _source = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    local quantity = xPlayer.getInventoryItem('pearl').count
+    if quantity >= 50 then
+        TriggerClientEvent('esx:showNotification', source, 'You can not carry anymore pearls!')
+    else
+        xPlayer.addInventoryItem('pearl', 1)
+    end
+end)
+
+RegisterServerEvent('pearl:sell')
+AddEventHandler('pearl:sell', function()
+	local _source = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    local quantity = xPlayer.getInventoryItem('pearl').count
+    if quantity >= 1 then
+        local payment = Config.pearlPrice * quantity
+		xPlayer.addMoney(payment)
+        xPlayer.removeInventoryItem('pearl', quantity)
+        TriggerClientEvent('esx:showNotification', source, 'You sold ' .. quantity .. ' pearls for $' .. payment)	
+    else
+        TriggerClientEvent('esx:showNotification', source, 'You do not have any pearls!')
+    end
+end)
