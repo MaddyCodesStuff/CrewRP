@@ -151,7 +151,6 @@ Config.localWeight    = {
     washed_stone  = 2000,
     water         = 750,
     wool          = 500,
-    WEAPON_SMG    = 5000,
     meat          = 2000,
     leather       = 1000,
     clothe        = 1000
