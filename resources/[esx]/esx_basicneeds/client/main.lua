@@ -93,7 +93,6 @@ AddEventHandler('esx_status:loaded', function(status)
             end)
 
             if health ~= prevHealth and not IsDead then
-                print(health,prevHealth)
                 SetEntityHealth(playerPed, health)
             end
         end
