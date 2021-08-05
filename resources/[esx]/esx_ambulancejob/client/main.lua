@@ -91,10 +91,11 @@ Citizen.CreateThread(function()
 			local blip = AddBlipForCoord(v.Blip.Pos.x, v.Blip.Pos.y, v.Blip.Pos.z)
 
 			SetBlipSprite(blip, v.Blip.Sprite)
-			SetBlipDisplay(blip, v.Blip.Display)
+			SetBlipDisplay(blip, 0)
 			SetBlipScale(blip, v.Blip.Scale)
 			SetBlipColour(blip, v.Blip.Colour)
 			SetBlipAsShortRange(blip, true)
+			SetBlipPriority(blip, 10)
 
 			BeginTextCommandSetBlipName('STRING')
 			-- AddTextComponentSubstringPlayerName(_U('hospital'))
@@ -116,7 +117,7 @@ function createBlip(id)
 		ShowHeadingIndicatorOnBlip(blip, true) -- Player Blip indicator
 		SetBlipRotation(blip, math.ceil(GetEntityHeading(ped))) -- update rotation
 		SetBlipNameToPlayerName(blip, id) -- update blip name
-		SetBlipScale(blip, 0.85) -- set scale
+		SetBlipScale(blip, 1.0) -- set scale
 		SetBlipAsShortRange(blip, true)
 
 		table.insert(blipsAmbulance, blip) -- add blip to array so we can remove it later

@@ -31,6 +31,23 @@ Citizen.CreateThread(function()
     end
 end)
 
+-- Gas station blips
+Citizen.CreateThread(function()
+    for _, coords in ipairs(Config.GasStations) do
+        local blip = AddBlipForCoord(coords)
+
+        SetBlipSprite(blip, 361)
+        SetBlipScale(blip, 0.7)
+        SetBlipColour(blip, 4)
+        SetBlipDisplay(blip, 0)
+        SetBlipAsShortRange(blip, true)
+
+        BeginTextCommandSetBlipName("STRING")
+        AddTextComponentString("Gas Station")
+        EndTextCommandSetBlipName(blip)
+    end
+end)
+
 -- Detect if near pump & vehicle
 Citizen.CreateThread(function()
     while true do

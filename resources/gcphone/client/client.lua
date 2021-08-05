@@ -153,7 +153,7 @@ function styleBlip(blip, type, number, player)
   EndTextCommandSetBlipName(blip)
 
   SetBlipSecondaryColour(blip, 255, 0, 0)
-  SetBlipScale(blip, 0.9)
+  SetBlipScale(blip, 1.0)
 end
 
 local checkRate = 5000 -- every 5 seconds

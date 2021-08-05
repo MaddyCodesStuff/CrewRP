@@ -1,4 +1,3 @@
-
 --===============================================================================
 --=== Edited By skiddle pumpkin#0001 4 MERCURY RP================================
 --===================== Direitos Reservados ao Mercury RP =======================
@@ -78,8 +77,10 @@ RegisterNUICallback('joinRadio', function(data, cb)
         radioChannel = channel
         if channel <= Config.RestrictedChannels and PlayerData.job and isServicesJob(PlayerData.job.name) then -- Restricted radio
             exports["pma-voice"]:SetRadioChannel(channel)
-            TriggerServerEvent('esx-radios:enableBlip', PlayerData.job.name)
+
             TriggerEvent("tcrp-displayGeneral",  'Joined to radio' .. data.channel .. '.00 MHz </b>')
+            TriggerServerEvent("tcrp-blips:emergencylist", PlayerData.job.name)
+            TriggerEvent("tcrp-blips:toggle", true)
         elseif channel > Config.RestrictedChannels then -- Civ radio
             exports["pma-voice"]:SetRadioChannel(channel)
             TriggerEvent("notification",  Config.messages['joined_to_radio'] .. data.channel .. '.00 MHz </b>', 1)
@@ -97,7 +98,7 @@ RegisterNUICallback('leaveRadio', function(data, cb)
     local PlayerData = ESX.GetPlayerData(_source)
 
     if PlayerData.job and isServicesJob(PlayerData.job.name) then
-        TriggerServerEvent('esx-radios:disableBlip', job)
+        TriggerEvent("tcrp-blips:toggle", false)
     end
 
     TriggerEvent("notification",  Config.messages['you_leave'], 3)
