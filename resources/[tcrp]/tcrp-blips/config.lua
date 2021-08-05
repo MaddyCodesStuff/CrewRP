@@ -816,7 +816,7 @@ Blips.Main        = {
         ["layer"]   = 25,
         ["scale"]   = 1.0,
         ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Restraunt/Hotel",
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Restaurant/Hotel",
         ["Info.headerLeft"] = "Owner", ["Info.headerRight"] = "~b~Luna Rose",
         ["Info.iconLeft"] = "Phone", ["Info.iconRight"] = "~h~644-5809", ["Info.iconID"] = 5, ["Info.iconColor"] = 1, ["Info.iconCheckmark"] = false,
     },
