@@ -160,7 +160,7 @@ RegisterCommand('-radiotalk', function()
 		TriggerServerEvent('pma-voice:setTalkingOnRadio', false)
 	end
 end, false)
-RegisterKeyMapping('+radiotalk', 'Talk over Radio', 'keyboard', GetConvar('voice_defaultRadio', 'F1'))
+RegisterKeyMapping('+radiotalk', 'Talk over Radio', 'keyboard', 246)
 
 --- event syncRadio
 --- syncs the players radio, only happens if the radio was set server side.
