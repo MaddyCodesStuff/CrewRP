@@ -331,7 +331,10 @@ Blips.Main        = {
         ["layer"]   = 25,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Restaurant",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Uri Jackson",
+        ["Info.text2Left"] = "Phone", ["Info.text2Right"] = "272-0483",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Burger Shot",
     },
     [23]  = {
         ["name"]    = "Limey's",
@@ -343,8 +346,12 @@ Blips.Main        = {
         ["scale"]   = 1.0,
         ["layer"]   = 25,
         ["Info.toggle"] = true,
+        ["Info.title"] = "~b~Quinn's Bakery & Smoothie Bar",
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Restaurant",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "~r~L~o~e~y~n~g~n~b~o~p~x ~b~Quinn",
+        ["Info.text2Left"] = "Phone", ["Info.text2Right"] = "921-0429",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Quinns",
     },
     [24]  = {
         ["name"]    = "Cherry Popper",
@@ -369,10 +376,14 @@ Blips.Main        = {
         ["scale"]   = 1.0,
         ["layer"]   = 25,
         ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Restaurant",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.title"] = "~y~~h~TACO FARMER",
+        ["Info.textLeft"] = "Best Goddamn Tacos In Town", ["Info.textRight"] = "",
+        ["Info.text2Left"] = "We Do Catering Too!", ["Info.text2Right"] = "",
+        ["Info.name2Left"] = "                              258-5415",["Info.name2Right"] = "",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Taco Farmer",
     },
-    [48]  = {
+    [102]  = {
         ["name"]    = "Coffee Shop",
         ["x"] =  -625.12, ["y"] =  238.07,
         ["category"]= "Restaurant",
@@ -419,8 +430,12 @@ Blips.Main        = {
         ["color"]   = 46,
         ["layer"]   = 20,
         ["Info.toggle"] = true,
+        ["Info.title"] = "General Griffon's Motors",
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Mechanic Shop",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Griffon Dallumn",
+        ["Info.iconLeft"] = "Phone", ["Info.iconRight"] = "485-5346", ["Info.iconID"] = 9, ["Info.iconColor"] = 1, ["Info.iconCheckmark"] = false,
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "General Griff",
     },
     [29]  = {
         ["name"]    = "Mechanic",
@@ -431,8 +446,12 @@ Blips.Main        = {
         ["color"]   = 46,
         ["layer"]   = 20,
         ["Info.toggle"] = true,
+        ["Info.title"] = "Reaper Repairs and Customs",
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Mechanic Shop",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Liam McTighe",
+        ["Info.text2Left"] = "Phone",["Info.text2Right"] = "565-7960",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Reaper Repairs",
     },
     [30]  = {
         ["name"]    = "Mechanic",
@@ -467,8 +486,12 @@ Blips.Main        = {
         ["color"]   = 46,
         ["layer"]   = 20,
         ["Info.toggle"] = true,
+        ["Info.title"] = "Hayes Auto Body Shop",
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Mechanic Shop",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Jake Bilotti",
+        ["Info.text2Left"] = "Phone", ["Info.text2Right"] = "674-7479",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Hayes",
     },
     [33]  = {
         ["name"]    = "Mechanic",
@@ -529,6 +552,22 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Mechanic Shop",
         ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+    },
+    [99]  = {
+        ["name"]    = "Mechanic",
+        ["x"] =  533.46, ["y"] = -179.82,
+        ["category"]= "Mechanic Shop",
+        ["text"]    = "Mechanic Shop",
+        ["sprite"]  = 446,
+        ["color"]   = 46,
+        ["layer"]   = 20,
+        ["Info.toggle"] = true,
+        ["Info.title"] = "Auto Exotic",
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Mechanic Shop",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Sheldon Clarke",
+        ["Info.text2Left"] = "Phone",["Info.text2Right"] = "272-0483",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Auto Exotic",
     },
     --Other Stores--
     [39]  = {
@@ -767,6 +806,20 @@ Blips.Main        = {
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Bar",
         ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
     },
+    [100]  = {
+        ["name"]    = "Bayview Lodge",
+        ["x"] =  -691.88, ["y"] =  5800.17,
+        ["category"]= "Bars",
+        ["text"]    = "Bar",
+        ["sprite"]  = 93,
+        ["color"]   = 47,
+        ["layer"]   = 25,
+        ["scale"]   = 1.0,
+        ["Info.toggle"] = true,
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Restraunt/Hotel",
+        ["Info.headerLeft"] = "Owner", ["Info.headerRight"] = "~b~Luna Rose",
+        ["Info.iconLeft"] = "Phone", ["Info.iconRight"] = "~h~644-5809", ["Info.iconID"] = 5, ["Info.iconColor"] = 1, ["Info.iconCheckmark"] = false,
+    },
     --NightClubs--
     [52]  = {
         ["name"]    = "Vanilla Unicorn",
@@ -794,7 +847,7 @@ Blips.Main        = {
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Nightclub",
         ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
     },
-    [54]  = {
+    [101]  = {
         ["name"]    = "Bahama Mama's",
         ["x"] =  -1391.64, ["y"] =  -604.81,
         ["category"]= "Nightclub",
@@ -805,7 +858,8 @@ Blips.Main        = {
         ["scale"]   = 1.0,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Nightclub",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.headerLeft"] = "Owner", ["Info.headerRight"] = "~q~Luna Rose",
+        ["Info.iconLeft"] = "Phone", ["Info.iconRight"] = "~h~644-5809", ["Info.iconID"] = 5, ["Info.iconColor"] = 1, ["Info.iconCheckmark"] = false,
     },
     --Other Blips--
     [54]  = {
@@ -845,7 +899,7 @@ Blips.Main        = {
         ["scale"]   = 1.2,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Police Station",
-        ["Info.nameLeft"] = "Captain",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Captain",["Info.nameRight"] = "John Glants",
     },
     [57]  = {
         ["name"]    = "Pillbox Medical Center",
@@ -1098,6 +1152,8 @@ Blips.Main        = {
         ["scale"]   = 1.0,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Car Dealership",
+        ["Info.headerLeft"] = "Owner", ["Info.headerRight"] = "~g~Luna Rose",
+        ["Info.iconLeft"] = "Phone", ["Info.iconRight"] = "~h~644-5809", ["Info.iconID"] = 5, ["Info.iconColor"] = 1, ["Info.iconCheckmark"] = false,
     },
     [80]  = {
         ["name"]    = "Aircraft Dealership",
@@ -1326,7 +1382,7 @@ ATM.Blips= {
     {['x'] = -0351.534, ['y']  = -0049.52},
     {['x'] = -1570.197, ['y']  = -0546.65},
     {['x'] =  0033.232, ['y']  = -1347.84},
-    {['x'] =  0129.216, ['y']  = -1292.34},
+    {['x'] =  0127.010, ['y']  = -1296.48},
     {['x'] =  0289.012, ['y']  = -1256.54},
     {['x'] =  1686.753, ['y']  =  4815.80},
     {['x'] = -0302.408, ['y']  = -0829.94},
@@ -1360,6 +1416,17 @@ ATM.Blips= {
     {['x'] = -1315.730, ['y']  = -0834.89},
     {['x'] =  0146.070, ['y']  = -1035.10},
     {['x'] =  0147.660, ['y']  = -1035.71},
+    {['x'] = -0616.150, ['y']  =  0242.64},
+    {['x'] =  0527.260, ['y']  = -160.720},
+    {['x'] =  0948.130, ['y']  =  053.070},
+    {['x'] =  0949.030, ['y']  =  048.092},
+    {['x'] =  -867.190, ['y']  = -0186.99},
+    {['x'] =  -549.590, ['y']  = -204.360},
+    {['x'] =  -682.010, ['y']  =  5838.55},
+    {['x'] =  -1091.48, ['y']  =  2708.56},
+    {['x'] =  -613.250, ['y']  = -704.740},
+    {['x'] =  -038.240, ['y']  = -1116.73},
+    {['x'] =  0472.400, ['y']  = -1001.58},
 }
 
 GAS = {}
@@ -1429,6 +1496,7 @@ STORE.Blips = {
     {["x"] =   1705.22,  ["y"] =  4925.39},
     {["x"] =   1734.64,  ["y"] =  6417.04},
     {["x"] =  -0162.50,  ["y"] =  6321.38},
+    {["x"] =  -0675.99,  ["y"] =  5837.02},
 }       
 
 PARKING = {}
