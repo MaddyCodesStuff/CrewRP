@@ -53,6 +53,13 @@ AMMUNATION_GADGET_ITEMS = {
         limit            = 1,
         license_required = 'weapon',
     },
+    {
+        label            = 'Baseball',
+        label_real       = 'Baseball',
+        item             = 'weapon_ball',
+        price            = 5,
+        limit            = 1,
+    },
 }
 
 Config                  = {}

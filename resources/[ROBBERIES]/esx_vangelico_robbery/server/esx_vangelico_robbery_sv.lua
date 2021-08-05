@@ -37,7 +37,7 @@ AddEventHandler('esx_vangelico_robbery:toofar', function(robb)
     rob            = false
     for i = 1, #xPlayers, 1 do
         local xPlayer = ESX.GetPlayerFromId(xPlayers[i])
-        if xPlayer.job.name == 'police' then
+        if xPlayer.job.name == 'police' or xPlayer.job.name == 'journalist' then
             TriggerClientEvent('mythic_notify:client:SendCopAlert', xPlayers[i],
                                { text = _U('robbery_cancelled_at') .. Stores[robb].nameofstore, title = 'Jewelry Heist Reported' })
             TriggerClientEvent('esx_vangelico_robbery:killblip', xPlayers[i])
@@ -58,7 +58,7 @@ AddEventHandler('esx_vangelico_robbery:endrob', function(robb)
     rob            = false
     for i = 1, #xPlayers, 1 do
         local xPlayer = ESX.GetPlayerFromId(xPlayers[i])
-        if xPlayer.job.name == 'police' then
+        if xPlayer.job.name == 'police' or xPlayer.job.name == 'journalist' then
             TriggerClientEvent('mythic_notify:client:SendCopAlert', xPlayers[i],
                                { text = _U('end'), title = 'Jewelry Heist Reported' })
             TriggerClientEvent('esx_vangelico_robbery:killblip', xPlayers[i])

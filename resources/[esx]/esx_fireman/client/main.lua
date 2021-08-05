@@ -345,6 +345,7 @@ function OpenFireActionsMenu()
 
 	local menuElements = {
 		{ label = "Citizen Interaction", value = 'citizen_menu' },
+		{ label = 'Clock Off', value = 'mobile_clockinoff' },
 	}
 
 	if (exports['esx-radios'].isDedicatedDispatch()) then
@@ -400,6 +401,23 @@ function OpenFireActionsMenu()
 					end, function(data2, menu2)
 						menu2.close()
 					end)
+				elseif data.current.value == 'mobile_clockinoff' then
+					ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'mobile_clockinoff',
+								 {
+									 title    = 'Mobile Clock Off',
+									 align    = 'top-right',
+									 elements = {
+										{ label = 'Clock Off', value = 'clockinoff' }
+	
+									}
+								}, function(data, menu)
+	
+							if data.current.value == 'clockinoff' then
+								TriggerEvent('duty:onoff')
+							end
+					   end, function(data, menu)
+						   menu.close()
+				end)
 			end
 
 			if data.current.value == 'mutual_aid_menu' then
@@ -720,7 +738,6 @@ Citizen.CreateThread(function()
 		if PlayerData.job and PlayerData.job.name ~= nil and PlayerData.job.name == 'fireman' then
 			local coords  = GetEntityCoords(PlayerPedId())
 			local vehicle = ESX.Game.GetClosestVehicle()
-
 			if vehicle ~= nil and checkVehicleCanAccessInventory(GetDisplayNameFromVehicleModel(GetEntityModel(vehicle))) and not IsPedInAnyVehicle(PlayerPedId()) then
 				local vehicleCoords = GetEntityCoords(vehicle)
 
@@ -814,9 +831,6 @@ function openFireTruckMenu()
 			elseif data.current.value == 'add_gear' then
 				setUniform('turnout_wear', playerPed)
 				SetPedArmour(playerPed, 100)
-			elseif data.current.value == 'add_suspenders' then
-				setUniform('sus_wear', playerPed)
-				SetPedArmour(playerPed, 0)
 			elseif data.current.value == 'medic_bag' then
 				setUniform('medic_bag', playerPed)
 			elseif data.current.value == 'medic_bag_off' then
@@ -832,7 +846,7 @@ function openFireTruckMenu()
 		end)
 end
 
--- Function to see if the vehicle you are trying to use can access inventory
+-- Function to see if the vehicle you are trying to use can access inventory.
 function checkVehicleCanAccessInventory(vehicle)
 	for i = 1, #Config.VehicleInventory, 1 do
 		if string.upper(Config.VehicleInventory[i]) == string.upper(vehicle) then
