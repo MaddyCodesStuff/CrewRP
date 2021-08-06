@@ -4,6 +4,8 @@ POLICE.Config = {
     ["color"]   = 3,
     ["sprite"]  = 1,
     ["layer"]   = 50,
+    --["Info.dictionary"] = "blip_images",
+    --["Info.image"] = "LSPD Radio",
 }
 MEDICAL = {}
 MEDICAL.Config = {
@@ -11,6 +13,8 @@ MEDICAL.Config = {
     ["color"]   = 1,
     ["sprite"]  = 1,
     ["layer"]   = 50,
+    --["Info.dictionary"] = "blip_images",
+    --["Info.image"] = "LSMD Radio",
 }
 FIRE = {}
 FIRE.Config = {
@@ -18,6 +22,8 @@ FIRE.Config = {
     ["color"]   = 17,
     ["sprite"]  = 1,
     ["layer"]   = 50,
+    ["Info.dictionary"] = "blip_images",
+    ["Info.image"] = "LSFD Radio",
 }
 CORRECTIONS = {}
 CORRECTIONS.Config = {
@@ -25,6 +31,8 @@ CORRECTIONS.Config = {
     ["color"]   = 55,
     ["sprite"]  = 1,
     ["layer"]   = 50,
+    --["Info.dictionary"] = "blip_images",
+    --["Info.image"] = "LSCD Radio",
 }
 PARKS = {}
 PARKS.Config = {
@@ -32,4 +40,6 @@ PARKS.Config = {
     ["color"]   = 2,
     ["sprite"]  = 1,
     ["layer"]   = 50,
+    --["Info.dictionary"] = "blip_images",
+    --["Info.image"] = "SAPD Radio",
 }

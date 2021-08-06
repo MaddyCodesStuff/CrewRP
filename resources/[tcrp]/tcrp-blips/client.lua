@@ -1,4 +1,6 @@
 toggle = true
+--MAKE SURE YOU TURN THIS OFF BEFORE MERGING KAIA
+local Debug.SeeOwnBlip = true
 Citizen.CreateThread(function()
     for i = 1, #Blips.Main do
         local blip = Blips.Main[i]
@@ -413,6 +415,7 @@ AddEventHandler("tcrp-blips:emergency", function(table)
                         EndTextCommandSetBlipName(blip)
 
                     end
+
                 end
             elseif onRadio[k]["active"] == false then
                 local blip = GetBlipFromEntity(ped)
@@ -533,6 +536,21 @@ AddEventHandler("tcrp-blips:addblip", function(blipconfig, entity)
     AddTextEntry("blips", bliptext)
     BeginTextCommandSetBlipName("blips")
     EndTextCommandSetBlipName(blip)
+end)
+
+RegisterNetEvent("tcrp-blips:joinRadio")
+AddEventHandler("tcrp-blips:joinRadio", function(jobname)
+
+    TriggerServerEvent("tcrp-blips:emergencylist", jobname)
+    TriggerEvent('tcrp-blips:toggle', true)
+
+end)
+RegisterNetEvent("tcrp-blips:leaveRadio")
+AddEventHandler("tcrp-blips:leaveRadio", function()
+    TriggerEvent('tcrp-blips:toggle', false)
+    TriggerServerEvent("tcrp-blips:removeEmergency")
+    
+    
 end)
 
 RegisterNetEvent("tcrp-blips:removeblip")

@@ -5,7 +5,6 @@ Citizen.CreateThread(function()
       Citizen.Wait(10)
       end
 end)
-
 Citizen.CreateThread(function()
   while true do
     Citizen.Wait(1000)
