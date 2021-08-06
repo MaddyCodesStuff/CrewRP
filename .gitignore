@@ -12,3 +12,5 @@ yarn-error.log
 .vscode
 resources/\[esx\]/esx_doorlock/server/states.json
 imgui.ini
+\db
+.gitignore
