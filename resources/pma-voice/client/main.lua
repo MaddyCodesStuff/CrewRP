@@ -79,12 +79,12 @@ end)
 -- 0_freq_hi = 4900.0
 
 -- radio submix
-local radioEffectId = CreateAudioSubmix('Radio')
+local radioEffectId = CreateAudioSubmix('radio')
 SetAudioSubmixEffectRadioFx(radioEffectId, 0)
 SetAudioSubmixEffectParamInt(radioEffectId, 0, GetHashKey('default'), 1)
 AddAudioSubmixOutput(radioEffectId, 0)
 
-local phoneEffectId = CreateAudioSubmix('Phone')
+local phoneEffectId = CreateAudioSubmix('phone')
 SetAudioSubmixEffectRadioFx(phoneEffectId, 1)
 SetAudioSubmixEffectParamInt(phoneEffectId, 1, GetHashKey('default'), 1)
 SetAudioSubmixEffectParamFloat(phoneEffectId, 1, GetHashKey('freq_low'), 300.0)
@@ -334,6 +334,7 @@ Citizen.CreateThread(function()
 		if true then
 			if lastRadioStatus ~= radioPressed or lastTalkingStatus ~= (NetworkIsPlayerTalking(PlayerId()) == 1) then
 				lastRadioStatus = radioPressed
+				TriggerEvent('tcrphud:setRadioTalking', radioPressed)
 				lastTalkingStatus = NetworkIsPlayerTalking(PlayerId()) == 1
 				SendNUIMessage({
 					usingRadio = lastRadioStatus,
