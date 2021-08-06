@@ -1,4 +1,5 @@
 toggle = true
+--MAKE SURE YOU TURN THIS OFF BEFORE MERGING KAIA
 local Debug.SeeOwnBlip = true
 Citizen.CreateThread(function()
     for i = 1, #Blips.Main do
