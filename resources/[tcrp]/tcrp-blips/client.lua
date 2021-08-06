@@ -542,9 +542,9 @@ AddEventHandler("tcrp-blips:joinRadio", function(jobname)
 end)
 RegisterNetEvent("tcrp-blips:leaveRadio")
 AddEventHandler("tcrp-blips:leaveRadio", function()
-
-    TriggerServerEvent("tcrp-blips:removeEmergency")
     TriggerEvent('tcrp-blips:toggle', false)
+    TriggerServerEvent("tcrp-blips:removeEmergency")
+    
     
 end)
 
