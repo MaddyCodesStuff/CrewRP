@@ -40,12 +40,10 @@ RegisterNetEvent('3dme:show3dme', function(serverId, text)
 				while displayTime > GetGameTimer() do
 					local tgtPed = GetPlayerPed(tgtPly)
 					local tgtCoords = GetEntityCoords(tgtPed)
-					Draw3DText(tgtCoords + vector3(0, 0, 1.0), text)
+					Draw3DText(tgtCoords + vector3(0,0,0.35), text)
 					Wait(0)
 				end
 			end)
 		end
 	end
 end)
-
-AddEventHandler()
