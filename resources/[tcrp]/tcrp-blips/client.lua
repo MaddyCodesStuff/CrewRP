@@ -531,6 +531,21 @@ AddEventHandler("tcrp-blips:addblip", function(blipconfig, entity)
     EndTextCommandSetBlipName(blip)
 end)
 
+RegisterNetEvent("tcrp-blips:joinRadio")
+AddEventHandler("tcrp-blips:joinRadio", function(jobname)
+
+    TriggerServerEvent("tcrp-blips:emergencylist", jobname)
+    TriggerEvent('tcrp-blips:toggle', true)
+
+end)
+RegisterNetEvent("tcrp-blips:leaveRadio")
+AddEventHandler("tcrp-blips:leaveRadio", function()
+
+    TriggerServerEvent("tcrp-blips:removeEmergency")
+    TriggerEvent('tcrp-blips:toggle', false)
+    
+end)
+
 RegisterNetEvent("tcrp-blips:removeblip")
 AddEventHandler("tcrp-blips:removeblip", function(blip)
     RemoveBlip(blip)
