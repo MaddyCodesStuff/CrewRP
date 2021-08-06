@@ -81,6 +81,8 @@ Blips.Main        = {
         ["layer"]   = 25,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Bank",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Fleeca Default",
     },
     [3]  = {
         ["name"]    = "Legion Bank and Trust",
@@ -92,7 +94,13 @@ Blips.Main        = {
         ["scale"]   = 1.0,
         ["layer"]   = 25,
         ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Bank",
+        ["Info.textLeft"] = 'They say "more money more problems"', ["Info.textRight"] = "",
+        ["Info.nameLeft"] = 'but we say "no money worse problems"',["Info.nameRight"] = "",
+        ["Info.text2Left"] = "Sergio Porgini", ["Info.text2Right"] = "663-6117",
+        ["Info.name2Left"] = "Giorno Porgini",["Info.name2Right"] = "238-6990",
+        ["Info.text3Left"] = "Priscilla Porgini", ["Info.text3Right"] = "655-1911",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "LB&T",
     },
     [4]  = {
         ["name"]    = "Great Ocean Fleeca Bank",
@@ -105,6 +113,8 @@ Blips.Main        = {
         ["layer"]   = 25,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Bank",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Fleeca Default",
     },
     [5]  = {
         ["name"]    = "Route 68 Fleeca Bank",
@@ -117,6 +127,8 @@ Blips.Main        = {
         ["layer"]   = 25,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Bank",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Fleeca Default",
     },
     [6]  = {
         ["name"]    = "Blaine County Savings",
@@ -129,6 +141,8 @@ Blips.Main        = {
         ["layer"]   = 25,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Bank",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Fleeca Default",
     },
     [7]  = {
         ["name"]    = "Rockford Hills Fleeca Bank",
@@ -141,6 +155,8 @@ Blips.Main        = {
         ["layer"]   = 25,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Bank",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Fleeca Default",
     },
     [8]  = {
         ["name"]    = "Vinewood Fleeca Bank",
@@ -153,6 +169,8 @@ Blips.Main        = {
         ["layer"]   = 25,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Bank",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Fleeca Default",
     },
     --AMMUNATIONS--
     [9]  = {
@@ -166,6 +184,8 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Gun Store",
         ["Info.nameLeft"] = "Gun Range",["Info.nameRight"] = "No",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Ammunation Default",
         
     },
     [10]  = {
@@ -179,6 +199,8 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Gun Store",
         ["Info.nameLeft"] = "Gun Range",["Info.nameRight"] = "No",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Ammunation Default",
     },
     [11]  = {
         ["name"]    = "Little Seoul Ammunation",
@@ -191,6 +213,8 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Gun Store",
         ["Info.nameLeft"] = "Gun Range",["Info.nameRight"] = "No",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Ammunation Default",
     },
     [12]  = {
         ["name"]    = "Strawberry Ammunation",
@@ -204,6 +228,8 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Gun Store",
         ["Info.nameLeft"] = "Gun Range",["Info.nameRight"] = "Yes",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Ammunation Default",
     },
     [13]  = {
         ["name"]    = "Cypress Flats Ammunation",
@@ -217,6 +243,8 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Gun Store",
         ["Info.nameLeft"] = "Gun Range",["Info.nameRight"] = "Yes",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Ammunation Default",
     },
     [14]  = {
         ["name"]    = "Chumash Ammunation",
@@ -229,6 +257,8 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Gun Store",
         ["Info.nameLeft"] = "Gun Range",["Info.nameRight"] = "No",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Ammunation Default",
     },
     [15]  = {
         ["name"]    = "Route 68 Ammunation",
@@ -241,6 +271,8 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Gun Store",
         ["Info.nameLeft"] = "Gun Range",["Info.nameRight"] = "No",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Ammunation Default",
     },
     [16]  = {
         ["name"]    = "Sandy Shores Ammunation",
@@ -253,6 +285,8 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Gun Store",
         ["Info.nameLeft"] = "Gun Range",["Info.nameRight"] = "No",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Ammunation Default",
     },
     [17]  = {
         ["name"]    = "Paleto Bay Ammunation",
@@ -265,6 +299,8 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Gun Store",
         ["Info.nameLeft"] = "Gun Range",["Info.nameRight"] = "No",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Ammunation Default",
     },
 
     --Restaurants--
@@ -279,7 +315,9 @@ Blips.Main        = {
         ["layer"]   = 25,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Restaurant",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "None",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Hookies",
     },
     [19]  = {
         ["name"]    = "Pop's Diner",
@@ -292,7 +330,7 @@ Blips.Main        = {
         ["layer"]   = 25,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Restaurant",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Matthew Clark",
     },
     [20]  = {
         ["name"]    = "Rex's Diner",
@@ -305,7 +343,9 @@ Blips.Main        = {
         ["layer"]   = 25,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Restaurant",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "None",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Rex's Diner",
     },
     [21]  = {
         ["name"]    = "Pearls",
@@ -318,7 +358,7 @@ Blips.Main        = {
         ["layer"]   = 25,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Restaurant",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Giorno Giovanna",
     },
     [22]  = {
         ["name"]    = "Burgershot",
@@ -364,7 +404,9 @@ Blips.Main        = {
         ["layer"]   = 25,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Restaurant",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "None",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Cherry Poper",
     },
     [25]  = {
         ["name"]    = "Taco Farmer",
@@ -394,7 +436,7 @@ Blips.Main        = {
         ["scale"]   = 1.0,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Restaurant",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "None",
     },
     --Mechanics--
     [26]  = {
@@ -407,7 +449,9 @@ Blips.Main        = {
         ["layer"]   = 20,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Mechanic Shop",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "None",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Mechanic Default",
     },
     [27]  = {
         ["name"]    = "Mechanic",
@@ -419,7 +463,9 @@ Blips.Main        = {
         ["layer"]   = 20,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Mechanic Shop",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "None",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Mechanic Default",
     },
     [28]  = {
         ["name"]    = "Mechanic",
@@ -462,8 +508,11 @@ Blips.Main        = {
         ["color"]   = 46,
         ["layer"]   = 20,
         ["Info.toggle"] = true,
+        ["Info.title"] = "D&D Automotive",
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Mechanic Shop",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Detroit Collins",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Mechanic Default",
     },
     [31]  = {
         ["name"]    = "Mechanic",
@@ -475,7 +524,9 @@ Blips.Main        = {
         ["layer"]   = 20,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Aircraft Mechanic",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "None",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Mechanic Default",
     },
     [32]  = {
         ["name"]    = "Mechanic",
@@ -503,7 +554,9 @@ Blips.Main        = {
         ["layer"]   = 20,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Mechanic Shop",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "None",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Mechanic Default",
     },
     [34]  = {
         ["name"]    = "Mechanic",
@@ -515,7 +568,9 @@ Blips.Main        = {
         ["layer"]   = 20,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Mechanic Shop",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "None",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Mechanic Default",
     },
     [35]  = {
         ["name"]    = "Mechanic",
@@ -527,7 +582,9 @@ Blips.Main        = {
         ["layer"]   = 20,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Mechanic Shop",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "None",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Mechanic Default",
     },
     [36]  = {
         ["name"]    = "Mechanic",
@@ -539,7 +596,9 @@ Blips.Main        = {
         ["layer"]   = 20,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Mechanic Shop",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "None",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Mechanic Default",
     },
     [37]  = {
         ["name"]    = "Mechanic",
@@ -550,8 +609,9 @@ Blips.Main        = {
         ["color"]   = 46,
         ["layer"]   = 20,
         ["Info.toggle"] = true,
+        ["Info.title"] = "Benny's",
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Mechanic Shop",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Aaliyah Sanchez/Ricky Romero",
     },
     [99]  = {
         ["name"]    = "Mechanic",
@@ -581,7 +641,9 @@ Blips.Main        = {
         ["layer"]   = 25,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Store",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "None",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Cindy's Flowers",
     },
     [40]  = {
         ["name"]    = "Bowling Alley",
@@ -594,7 +656,9 @@ Blips.Main        = {
         ["layer"]   = 25,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Recreation",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "None",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Bowling Alley",
     },
     --Hobbies--
     [41]  = {
@@ -606,9 +670,6 @@ Blips.Main        = {
         ["color"]   = 69,
         ["layer"]   = 20,
         ["scale"]   = 1.0,
-        ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Hobby",
-        ["Info.nameLeft"] = "Type",["Info.nameRight"] = "Fuel",
     },
     [42]  = {
         ["name"]    = "Gather Oil",
@@ -619,9 +680,6 @@ Blips.Main        = {
         ["color"]   = 69,
         ["layer"]   = 20,
         ["scale"]   = 1.0,
-        ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Hobby",
-        ["Info.nameLeft"] = "Type",["Info.nameRight"] = "Fuel",
     },
     [43]  = {
         ["name"]    = "Refine Oil",
@@ -632,9 +690,6 @@ Blips.Main        = {
         ["color"]   = 69,
         ["layer"]   = 20,
         ["scale"]   = 1.0,
-        ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Hobby",
-        ["Info.nameLeft"] = "Type",["Info.nameRight"] = "Fuel",
     },
     [44]  = {
         ["name"]    = "Garbage Facility",
@@ -645,9 +700,6 @@ Blips.Main        = {
         ["color"]   = 40,
         ["layer"]   = 20,
         ["scale"]   = 1.0,
-        ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Hobby",
-        ["Info.nameLeft"] = "Type",["Info.nameRight"] = "Garbage",
     },
     [45]  = {
         ["name"]    = "Delivery Hub",
@@ -658,9 +710,6 @@ Blips.Main        = {
         ["color"]   = 5,
         ["layer"]   = 20,
         ["scale"]   = 1.0,
-        ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Hobby",
-        ["Info.nameLeft"] = "Type",["Info.nameRight"] = "Delivery",
     },
     [46]  = {
         ["name"]    = "Grape Harvesting",
@@ -671,9 +720,6 @@ Blips.Main        = {
         ["color"]   = 7,
         ["layer"]   = 25,
         ["scale"]   = 1.0,
-        ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Hobby",
-        ["Info.nameLeft"] = "Type",["Info.nameRight"] = "Wine",
     },
     [47]  = {
         ["name"]    = "Wine Fermenting",
@@ -684,9 +730,6 @@ Blips.Main        = {
         ["color"]   = 7,
         ["layer"]   = 25,
         ["scale"]   = 1.0,
-        ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Hobby",
-        ["Info.nameLeft"] = "Type",["Info.nameRight"] = "Wine",
     },
     [48]  = {
         ["name"]    = "Smeltery",
@@ -697,9 +740,6 @@ Blips.Main        = {
         ["color"]   = 21,
         ["layer"]   = 25,
         ["scale"]   = 1.0,
-        ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Hobby",
-        ["Info.nameLeft"] = "Type",["Info.nameRight"] = "Mining",
     },
     [49]  = {
         ["name"]    = "Mineshaft",
@@ -710,9 +750,6 @@ Blips.Main        = {
         ["color"]   = 21,
         ["layer"]   = 25,
         ["scale"]   = 1.0,
-        ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Hobby",
-        ["Info.nameLeft"] = "Type",["Info.nameRight"] = "Mining",
     },
     [94]  = {
         ["name"]    = "Gather Pearls",
@@ -723,9 +760,6 @@ Blips.Main        = {
         ["color"]   = 32,
         ["layer"]   = 25,
         ["scale"]   = 1.0,
-        ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Hobby",
-        ["Info.nameLeft"] = "Type",["Info.nameRight"] = "Pearls",
     },
     [95]  = {
         ["name"]    = "Refine Fabric",
@@ -736,9 +770,6 @@ Blips.Main        = {
         ["color"]   = 54,
         ["layer"]   = 25,
         ["scale"]   = 1.0,
-        ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Hobby",
-        ["Info.nameLeft"] = "Type",["Info.nameRight"] = "Tailoring",
     },
     [96]  = {
         ["name"]    = "Sell Clothes",
@@ -749,9 +780,6 @@ Blips.Main        = {
         ["color"]   = 54,
         ["layer"]   = 25,
         ["scale"]   = 1.0,
-        ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Hobby",
-        ["Info.nameLeft"] = "Type",["Info.nameRight"] = "Tailoring",
     },
     [97]  = {
         ["name"]    = "Harvest Wool",
@@ -762,9 +790,6 @@ Blips.Main        = {
         ["color"]   = 54,
         ["layer"]   = 25,
         ["scale"]   = 1.0,
-        ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Hobby",
-        ["Info.nameLeft"] = "Type",["Info.nameRight"] = "Tailoring",
     },
     --BARS--
     [46]  = {
@@ -778,7 +803,9 @@ Blips.Main        = {
         ["scale"]   = 1.0,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Bar",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Avery Elle",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Tequilala",
     },
     [47]  = {
         ["name"]    = "Yellow Jack",
@@ -791,7 +818,10 @@ Blips.Main        = {
         ["scale"]   = 1.0,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Bar",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "~q~Roxi Sinister",
+        ["Info.text2Left"] = "Phone", ["Info.text2Right"] = "628-9504",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "YelllowJack Inn",
     },
     [49]  = {
         ["name"]    = "O'Connors",
@@ -804,7 +834,9 @@ Blips.Main        = {
         ["scale"]   = 1.0,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Bar",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "None",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "O'Conners",
     },
     [100]  = {
         ["name"]    = "Bayview Lodge",
@@ -819,6 +851,8 @@ Blips.Main        = {
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Restaurant/Hotel",
         ["Info.headerLeft"] = "Owner", ["Info.headerRight"] = "~b~Luna Rose",
         ["Info.iconLeft"] = "Phone", ["Info.iconRight"] = "~h~644-5809", ["Info.iconID"] = 5, ["Info.iconColor"] = 1, ["Info.iconCheckmark"] = false,
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Bayview Lodge",
     },
     --NightClubs--
     [52]  = {
@@ -831,8 +865,12 @@ Blips.Main        = {
         ["layer"]   = 25,
         ["scale"]   = 1.0,
         ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Nightclub",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.title"] = "~q~Vanilla Unicorn",
+        ["Info.textLeft"] = "~q~Category", ["Info.textRight"] = "~q~Nightclub",
+        ["Info.nameLeft"] = "~q~Owner",["Info.nameRight"] = "~q~Armin Mikovic",
+        ["Info.text2Left"] = "~q~Phone",["Info.text2Right"] = "~q~851-1041",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Vanilla Unicorn",
     },
     [53]  = {
         ["name"]    = "Galaxy",
@@ -845,7 +883,9 @@ Blips.Main        = {
         ["scale"]   = 1.0,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Nightclub",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "None",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Galaxy",
     },
     [101]  = {
         ["name"]    = "Bahama Mama's",
@@ -860,6 +900,21 @@ Blips.Main        = {
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Nightclub",
         ["Info.headerLeft"] = "Owner", ["Info.headerRight"] = "~q~Luna Rose",
         ["Info.iconLeft"] = "Phone", ["Info.iconRight"] = "~h~644-5809", ["Info.iconID"] = 5, ["Info.iconColor"] = 1, ["Info.iconCheckmark"] = false,
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Bahama Mamas",
+    },
+    [103]  = {
+        ["name"]    = "Split Sides",
+        ["x"] =  -438.57, ["y"] =  269.79,
+        ["category"]= "Nightclub",
+        ["text"]    = "Nightclub",
+        ["sprite"]  = 136,
+        ["color"]   = 7,
+        ["layer"]   = 25,
+        ["scale"]   = 1.0,
+        ["Info.toggle"] = true,
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Nightclub",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Arthur Peragrine",
     },
     --Other Blips--
     [54]  = {
@@ -886,7 +941,7 @@ Blips.Main        = {
         ["scale"]   = 1.2,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Police Station",
-        ["Info.nameLeft"] = "Sheriff",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Sheriff",["Info.nameRight"] = "None",
     },
     [56]  = {
         ["name"]    = "San Andreas Highway Patrol",
@@ -952,6 +1007,8 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Prison",
         ["Info.nameLeft"] = "Warden",["Info.nameRight"] = "Scarlet Knoxx",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Bolingbroke Penitentiary",
     },
     [61]  = {
         ["name"]    = "San Andreas Parks Deparment",
@@ -964,9 +1021,11 @@ Blips.Main        = {
         ["scale"]   = 1.2,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Ranger Station",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Parks Station",
     },
     [62]  = {
-        ["name"]    = "Capital Fire",
+        ["name"]    = "Capital Fire Station",
         ["x"] =  1200.35, ["y"] = -1475.49,
         ["category"]= "Fire Department",
         ["text"]    = "Fire Department",
@@ -975,11 +1034,12 @@ Blips.Main        = {
         ["layer"]   = 30,
         ["scale"]   = 1.2,
         ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Fire Department",
         ["Info.nameLeft"] = "Fire Chief",["Info.nameRight"] = "Jimmy Wales",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Capital Fire",
     },
     [63]  = {
-        ["name"]    = "Davis Fire",
+        ["name"]    = "Davis Fire Station",
         ["x"] =  205.21, ["y"] = -1651.26,
         ["category"]= "Fire Department",
         ["text"]    = "Fire Department",
@@ -988,11 +1048,12 @@ Blips.Main        = {
         ["layer"]   = 30,
         ["scale"]   = 1.2,
         ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Fire Department",
-        ["Info.nameLeft"] = "Fire Chief",["Info.nameRight"] = "",
+        ["Info.nameLeft"] = "Fire Chief",["Info.nameRight"] = "Jimmy Wales",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Davis Fire",
     },
     [64]  = {
-        ["name"]    = "Rockford Fire",
+        ["name"]    = "Rockford Fire Station",
         ["x"] =  -641.83, ["y"] = -120.38,
         ["category"]= "Fire Department",
         ["text"]    = "Fire Department",
@@ -1001,11 +1062,12 @@ Blips.Main        = {
         ["layer"]   = 30,
         ["scale"]   = 1.2,
         ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Fire Department",
         ["Info.nameLeft"] = "Fire Chief",["Info.nameRight"] = "Jimmy Wales",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Rockford Fire",
     },
     [65]  = {
-        ["name"]    = "Sandy Fire",
+        ["name"]    = "Sandy Shores Fire Station",
         ["x"] =  1692.37, ["y"] = 3589.01,
         ["category"]= "Fire Department",
         ["text"]    = "Fire Department",
@@ -1014,11 +1076,12 @@ Blips.Main        = {
         ["layer"]   = 30,
         ["scale"]   = 1.2,
         ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Fire Department",
         ["Info.nameLeft"] = "Fire Chief",["Info.nameRight"] = "Jimmy Wales",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Sandy Fire",
     },
     [66]  = {
-        ["name"]    = "Paleto Fire",
+        ["name"]    = "Paleto Fire Station",
         ["x"] =  -370.34, ["y"] = 6109.85,
         ["category"]= "Fire Department",
         ["text"]    = "Fire Department",
@@ -1027,8 +1090,9 @@ Blips.Main        = {
         ["layer"]   = 30,
         ["scale"]   = 1.2,
         ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Fire Department",
         ["Info.nameLeft"] = "Fire Chief",["Info.nameRight"] = "Jimmy Wales",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Paleto Fire",
     },
     [67]  = {
         ["name"]    = "Metro Bus Terminal",
@@ -1038,8 +1102,6 @@ Blips.Main        = {
         ["sprite"]  = 513,
         ["color"]   = 0,
         ["layer"]   = 15,
-        ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Bus Terminal",
     },
     [68]  = {
         ["name"]    = "Airport Bus Terminal",
@@ -1049,8 +1111,6 @@ Blips.Main        = {
         ["sprite"]  = 513,
         ["color"]   = 0,
         ["layer"]   = 15,
-        ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Bus Terminal",
     },
     [69]  = {
         ["name"]    = "Scenic Bus Terminal",
@@ -1060,8 +1120,6 @@ Blips.Main        = {
         ["sprite"]  = 513,
         ["color"]   = 0,
         ["layer"]   = 15,
-        ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Bus Terminal",
     },
     [70]  = {
         ["name"]    = "Law Offices",
@@ -1072,8 +1130,6 @@ Blips.Main        = {
         ["color"]   = 0,
         ["layer"]   = 30,
         ["scale"]   = 1.0,
-        ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Offices",
     },
     [71]  = {
         ["name"]    = "Real Estate Office",
@@ -1084,8 +1140,6 @@ Blips.Main        = {
         ["color"]   = 75,
         ["layer"]   = 30,
         ["scale"]   = 1.0,
-        ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Office",
     },
     [72]  = {
         ["name"]    = "Job Center",
@@ -1118,7 +1172,7 @@ Blips.Main        = {
         ["scale"]   = 1.0,
     },
     [77]  = {
-        ["name"]    = "Premium Deluxe Motorsports",
+        ["name"]    = "Premium Deluxe Motorsport",
         ["x"] =  -33.78, ["y"] = -1101.92,
         ["category"]= "Car Dealership",
         ["text"]    = "Car Dealership",
@@ -1127,10 +1181,15 @@ Blips.Main        = {
         ["layer"]   = 30,
         ["scale"]   = 1.0,
         ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Car Dealership",
+        ["Info.title"] = "~b~Premium Deluxe Motorsport",
+        ["Info.textLeft"] = "~b~Category", ["Info.textRight"] = "~b~Car Dealership",
+        ["Info.nameLeft"] = "~b~Owner",["Info.nameRight"] = "~b~Armin Mikovic",
+        ["Info.text2Left"] = "~b~Phone",["Info.text2Right"] = "~b~851-1041",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "PDM",
     },
     [78]  = {
-        ["name"]    = "Lery's Automotive",
+        ["name"]    = "Larry's Automotive",
         ["x"] =  1231.97, ["y"] = 2732.92,
         ["category"]= "Car Dealership",
         ["text"]    = "Car Dealership",
@@ -1140,6 +1199,11 @@ Blips.Main        = {
         ["scale"]   = 1.0,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Car Dealership",
+        ["Info.nameLeft"] = "Boris Petrovich", ["Info.nameRight"] = "962-3958",
+        ["Info.headerLeft"] = "Renee Brooks", ["Info.headerRight"] = "708-7331",
+        ["Info.header2Left"] = "Ashley Tomsley", ["Info.header2Right"] = "458-8630",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Larrys",
     },
     [79]  = {
         ["name"]    = "Helmuts European Autos",
@@ -1154,6 +1218,8 @@ Blips.Main        = {
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Car Dealership",
         ["Info.headerLeft"] = "Owner", ["Info.headerRight"] = "~g~Luna Rose",
         ["Info.iconLeft"] = "Phone", ["Info.iconRight"] = "~h~644-5809", ["Info.iconID"] = 5, ["Info.iconColor"] = 1, ["Info.iconCheckmark"] = false,
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Helmuts",
     },
     [80]  = {
         ["name"]    = "Aircraft Dealership",
@@ -1164,8 +1230,6 @@ Blips.Main        = {
         ["color"]   = 26,
         ["layer"]   = 30,
         ["scale"]   = 1.0,
-        ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Aircraft Dealership",
     },
     [81]  = {
         ["name"]    = "Watercraft Dealership",
@@ -1176,8 +1240,6 @@ Blips.Main        = {
         ["color"]   = 26,
         ["layer"]   = 30,
         ["scale"]   = 1.0,
-        ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Car Dealership",
     },
     [82]  = {
         ["name"]    = "Vangelico's",
@@ -1188,8 +1250,6 @@ Blips.Main        = {
         ["color"]   = 0,
         ["layer"]   = 25,
         ["scale"]   = 1.0,
-        ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Jewelry Store",
     },
     [83]  = {
         ["name"]    = "Go-Kart Track",
@@ -1215,6 +1275,8 @@ Blips.Main        = {
         ["Info.nameLeft"] = "Garage",["Info.nameRight"] = "Yes",
         ["Info.name2Left"] = "Rental",["Info.name2Right"] = "Yes",
         ["Info.name3Left"] = "Impound",["Info.name3Right"] = "Yes",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Dock Default",
     },
     [85]  = {
         ["name"]    = "Chumash Docks",
@@ -1229,6 +1291,8 @@ Blips.Main        = {
         ["Info.nameLeft"] = "Garage",["Info.nameRight"] = "Yes",
         ["Info.name2Left"] = "Rental",["Info.name2Right"] = "Yes",
         ["Info.name3Left"] = "Impound",["Info.name3Right"] = "No",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Dock Default",
     },
     [86]  = {
         ["name"]    = "Paleto Bay Docks",
@@ -1243,6 +1307,8 @@ Blips.Main        = {
         ["Info.nameLeft"] = "Garage",["Info.nameRight"] = "Yes",
         ["Info.name2Left"] = "Rental",["Info.name2Right"] = "Yes",
         ["Info.name3Left"] = "Impound",["Info.name3Right"] = "Yes",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Dock Default",
     },
     [98]  = {
         ["name"]    = "Catfish View Docks",
@@ -1257,6 +1323,8 @@ Blips.Main        = {
         ["Info.nameLeft"] = "Garage",["Info.nameRight"] = "Yes",
         ["Info.name2Left"] = "Rental",["Info.name2Right"] = "Yes",
         ["Info.name3Left"] = "Impound",["Info.name3Right"] = "No",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Dock Default",
     },
     [87]  = {
         ["name"]    = "Alamo Sea Docks",
@@ -1271,6 +1339,8 @@ Blips.Main        = {
         ["Info.nameLeft"] = "Garage",["Info.nameRight"] = "Yes",
         ["Info.name2Left"] = "Rental",["Info.name2Right"] = "Yes",
         ["Info.name3Left"] = "Impound",["Info.name3Right"] = "No",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Dock Default",
     },
     [88]  = {
         ["name"]    = "Journalism",
@@ -1329,6 +1399,8 @@ Blips.Main        = {
         ["scale"]   = 1.2,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Government",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "City Hall",
     }
 }
 
