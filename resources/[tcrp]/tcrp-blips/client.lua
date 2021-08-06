@@ -1,4 +1,5 @@
 toggle = true
+local Debug.SeeOwnBlip = true
 Citizen.CreateThread(function()
     for i = 1, #Blips.Main do
         local blip = Blips.Main[i]
@@ -328,7 +329,7 @@ AddEventHandler("tcrp-blips:emergency", function(table)
             local ped    = GetPlayerPed(player)
             local name   = onRadio[k]["name"]
             local job    = onRadio[k]["job"]
-            if GetPlayerPed(-1) ~= ped then
+            if GetPlayerPed(-1) ~= ped or Debug.SeeOwnBlip then
                 if job == "police" then 
                     local blip = AddBlipForEntity(ped)
                     SetBlipSprite(blip, POLICE.Config["sprite"] or Config.DefaultSprite)
