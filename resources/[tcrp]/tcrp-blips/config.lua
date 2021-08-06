@@ -931,7 +931,7 @@ Blips.Main        = {
         ["Info.nameLeft"] = "Captain",["Info.nameRight"] = "Moe Gilgully",
     },
     [55]  = {
-        ["name"]    = "Blaine County Sheriff Department",
+        ["name"]    = "Blaine County Sheriff Office",
         ["x"] =  1857.35, ["y"] =  3687.86,
         ["category"]= "Police Station",
         ["text"]    = "Police Station",
@@ -942,6 +942,8 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Police Station",
         ["Info.nameLeft"] = "Sheriff",["Info.nameRight"] = "None",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "BCSO",
     },
     [56]  = {
         ["name"]    = "San Andreas Highway Patrol",
@@ -955,6 +957,8 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Police Station",
         ["Info.nameLeft"] = "Captain",["Info.nameRight"] = "John Glants",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "SAHP",
     },
     [57]  = {
         ["name"]    = "Pillbox Medical Center",
@@ -968,6 +972,8 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Hospital",
         ["Info.nameLeft"] = "CMO",["Info.nameRight"] = "Quinton Walker",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Pillbox Medical",
     },
     [58]  = {
         ["name"]    = "Sandy Shores Medical Center",
@@ -981,6 +987,8 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Hospital",
         ["Info.nameLeft"] = "CMO",["Info.nameRight"] = "Quinton Walker",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Sandy Medical",
     },
     [59]  = {
         ["name"]    = "Paleto Bay Medical Center",
@@ -994,6 +1002,8 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Hospital",
         ["Info.nameLeft"] = "CMO",["Info.nameRight"] = "Quinton Walker",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Paleto Medical",
     },
     [60]  = {
         ["name"]    = "Bolingbroke Penitentiary",
