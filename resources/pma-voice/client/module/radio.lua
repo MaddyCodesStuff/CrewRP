@@ -138,6 +138,7 @@ RegisterCommand('+radiotalk', function()
 			end
 			Citizen.CreateThread(function()
 				TriggerEvent("pma-voice:radioActive", true)
+			
 				while radioPressed do
 					Wait(0)
 					SetControlNormal(0, 249, 1.0)
@@ -160,7 +161,7 @@ RegisterCommand('-radiotalk', function()
 		TriggerServerEvent('pma-voice:setTalkingOnRadio', false)
 	end
 end, false)
-RegisterKeyMapping('+radiotalk', 'Talk over Radio', 'keyboard', 246)
+RegisterKeyMapping('+radiotalk', 'Talk over Radio', 'keyboard', GetConvar('voice_defaultRadio', 'Y'))
 
 --- event syncRadio
 --- syncs the players radio, only happens if the radio was set server side.
