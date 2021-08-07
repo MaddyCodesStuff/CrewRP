@@ -79,7 +79,7 @@ RegisterNUICallback('joinRadio', function(data, cb)
             exports["pma-voice"]:SetRadioChannel(channel)
 
             TriggerEvent("tcrp-displayGeneral",  'Joined to radio' .. data.channel .. '.00 MHz </b>')
-            TriggerServerEvent("tcrp-blips:emergencytoggle", true)
+            TriggerServerEvent('esx-radios:enableBlip', PlayerData.job.name)
 
         elseif channel > Config.RestrictedChannels then -- Civ radio
             exports["pma-voice"]:SetRadioChannel(channel)
@@ -97,7 +97,9 @@ RegisterNUICallback('leaveRadio', function(data, cb)
     local _source = data
     local PlayerData = ESX.GetPlayerData(_source)
 
-    TriggerServerEvent("tcrp-blips:emergencytoggle", false)
+    if PlayerData.job and isServicesJob(PlayerData.job.name) then
+        TriggerServerEvent('esx-radios:disableBlip', job)
+    end
 
     TriggerEvent("notification",  Config.messages['you_leave'], 3)
     exports["pma-voice"]:SetRadioChannel(0)
