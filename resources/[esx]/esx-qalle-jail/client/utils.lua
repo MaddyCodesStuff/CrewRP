@@ -172,13 +172,14 @@ Citizen.CreateThread(function()
     local blip = AddBlipForCoord(Config.Teleports["Entrance"]["x"], Config.Teleports["Entrance"]["y"],
                                  Config.Teleports["Entrance"]["z"])
 
-    SetBlipSprite(blip, 188)
-    SetBlipDisplay(blip, 4)
-    SetBlipScale(blip, 0.8)
+    SetBlipSprite(blip, 252)
+    SetBlipDisplay(blip, 0)
+    SetBlipScale(blip, 1.2)
     SetBlipColour(blip, 49)
     SetBlipAsShortRange(blip, true)
+    SetBlipPriority(blip, 10)
 
     BeginTextCommandSetBlipName("STRING")
-    AddTextComponentString('Boilingbroke Penitentiary')
+    AddTextComponentString('Bolingbroke Penitentiary')
     EndTextCommandSetBlipName(blip)
 end)

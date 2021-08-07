@@ -1764,10 +1764,11 @@ Citizen.CreateThread(function()
 		local blip = AddBlipForCoord(v.Blip.Pos.x, v.Blip.Pos.y, v.Blip.Pos.z)
 
 		SetBlipSprite(blip, v.Blip.Sprite)
-		SetBlipDisplay(blip, v.Blip.Display)
+		SetBlipDisplay(blip, 0)
 		SetBlipScale(blip, v.Blip.Scale)
 		SetBlipColour(blip, v.Blip.Colour)
 		SetBlipAsShortRange(blip, true)
+		SetBlipPriority(blip, 10)
 
 		BeginTextCommandSetBlipName("STRING")
 		AddTextComponentString(_U('map_blip'))

@@ -55,7 +55,7 @@ for _, v in ipairs(Config.Blips) do
 	if v.onMap then
 		local blip = AddBlipForCoord(v.pos)
 		SetBlipSprite (blip, v.blip)
-		SetBlipDisplay(blip, 4)
+		SetBlipDisplay(blip, 0)
 		SetBlipScale  (blip, 0.8)
 		SetBlipColour (blip, v.colour)
 		SetBlipAsShortRange(blip, true)

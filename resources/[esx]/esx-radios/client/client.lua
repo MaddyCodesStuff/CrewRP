@@ -28,59 +28,13 @@ end)
 
 RegisterNetEvent("esx-radios:toggleCB")
 AddEventHandler("esx-radios:toggleCB", function(channel)
-    if cbRadiosActive[channel] then
-        cbRadiosActive[channel] = false
-        exports.tokovoip_script:removePlayerFromRadio(radio_channels[channel])
-        ESX.ShowNotification("Removed From " .. channelNames[channel])
-    else
-        cbRadiosActive[channel] = true
-        exports.tokovoip_script:addPlayerToRadio(radio_channels[channel])
-        ESX.ShowNotification("Added To " .. channelNames[channel])
-    end
+    
 end)
 
 RegisterNetEvent("esx-radios:toggleDedicatedDispatch")
 AddEventHandler("esx-radios:toggleDedicatedDispatch", function()
-    ESX.PlayerData = ESX.GetPlayerData()
-    local job      = string.lower(ESX.PlayerData.job.name)
-
-    if dedicatedDispatch then
-        disableAllRadios(function()
-            TriggerEvent('mythic_notify:client:SendAlert',
-                         { type = 'error', text = 'Disabling Dedicated Dispatch', length = 1000 })
-            TriggerServerEvent('counters:removeDispatch')
-            TriggerEvent('esx_outlawalert:setDispatch', false)
-
-            TriggerServerEvent('esx-radios:removeFromNumber', 'police')
-            TriggerServerEvent('esx-radios:removeFromNumber', 'ambulance')
-            TriggerServerEvent('esx-radios:removeFromNumber', 'fireman')
-            TriggerServerEvent('esx-radios:AddToNumber', job) -- Restore original job phone
-            TriggerServerEvent('esx-radios:disableBlip', 'dispatch')
-
-            dedicatedDispatch = false;
-        end);
-    else
-        disableAllRadios(function()
-            TriggerEvent('mythic_notify:client:SendAlert',
-                         { type = 'success', text = 'Enabling Dedicated Dispatch', length = 1000 })
-            TriggerServerEvent('counters:addDispatch')
-            TriggerEvent('esx_outlawalert:setDispatch', true)
-
-            TriggerEvent("esx-radios:toggleRadioByName", 'dispatch', false)
-            TriggerEvent("esx-radios:toggleRadioByName", 'pd_radio_1', false)
-            TriggerEvent("esx-radios:toggleRadioByName", 'ems_radio_1', false)
-            TriggerEvent("esx-radios:toggleRadioByName", 'fd_radio_1', false)
-            TriggerEvent("esx-radios:toggleRadioByName", 'doc_radio_1', false)
-
-            TriggerServerEvent('esx-radios:AddToNumber', 'police')
-            TriggerServerEvent('esx-radios:AddToNumber', 'ambulance')
-            TriggerServerEvent('esx-radios:AddToNumber', 'fireman')
-            TriggerServerEvent('esx-radios:disableBlip', job)
-            TriggerServerEvent('esx-radios:enableBlip', 'dispatch')
-
-            dedicatedDispatch = true;
-        end);
-    end
+    
+  
 end)
 
 function disableAllRadios(cb)

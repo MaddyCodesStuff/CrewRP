@@ -36,7 +36,7 @@ Config.RespawnPoint               = { coords = vector3(341.07, -1397.31, 32.51),
 Config.Hospitals                  = {
 
 	Pillbox      = {
-		Name            = 'Pillbox',
+		Name            = 'Hospital',
 		Blip            = {
 			Pos     = { x = 335.89, y = -579.87, z = 27.80 },
 			Sprite  = 586,
@@ -73,7 +73,7 @@ Config.Hospitals                  = {
 		},
 	},
 	Sandy        = {
-		Name            = 'Sandy Medical',
+		Name            = 'Hospital',
 		Blip            = {
 			Pos     = { x = 1839.89, y = 3683.26, z = 33.28 },
 			Sprite  = 586,
@@ -111,7 +111,7 @@ Config.Hospitals                  = {
 		},
 	},
 	Paleto       = {
-		Name            = 'Paleto Medical',
+		Name            = 'Hospital',
 		Blip            = {
 			Pos     = { x = -251.9, y = 6334.23, z = 31.5 },
 			Sprite  = 586,

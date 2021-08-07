@@ -515,7 +515,7 @@ Citizen.CreateThread(function()
                                Config.Zones.TaxiActions.Pos.z)
 
   SetBlipSprite(blip, 198)
-  SetBlipDisplay(blip, 4)
+  SetBlipDisplay(blip, 0)
   SetBlipScale(blip, 1.0)
   SetBlipColour(blip, 5)
   SetBlipAsShortRange(blip, true)

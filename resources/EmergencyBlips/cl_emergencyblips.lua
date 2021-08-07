@@ -49,7 +49,7 @@ function RemoveAnyExistingEmergencyBlips()
 end
 
 function RemoveAnyExistingEmergencyBlipsById(id)
-    local possible_blip = GetBlipFromEntity(GetPlayerPed(GetPlayerFromServerId(id)))
+    local possible_blip = GetBlipFromEntity(GetPlayerPed(GetPlayerFromServerId(id)))s
     if possible_blip ~= 0 then
         RemoveBlip(possible_blip)
         ACTIVE_EMERGENCY_PERSONNEL[id] = nil

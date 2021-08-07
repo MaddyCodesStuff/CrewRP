@@ -916,13 +916,14 @@ end
 
 -- Create Blips
 Citizen.CreateThread(function()
-	for k, v in pairs(Config.Zones) do
+	for k, v in pairs(Config.Zones2) do
 		local blip = AddBlipForCoord(v.ShopEntering.Pos.x, v.ShopEntering.Pos.y, v.ShopEntering.Pos.z)
 
 		SetBlipSprite(blip, 326)
-		SetBlipDisplay(blip, 4)
+		SetBlipDisplay(blip, 0)
 		SetBlipScale(blip, 1.0)
 		SetBlipAsShortRange(blip, true)
+		SetBlipPriority(blip, 10)
 
 		BeginTextCommandSetBlipName("STRING")
 		AddTextComponentString(_U('car_dealer'))
