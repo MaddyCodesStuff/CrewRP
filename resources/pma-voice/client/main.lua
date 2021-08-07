@@ -196,7 +196,7 @@ RegisterCommand('+cycleproximity', function()
 end, false)
 RegisterCommand('-cycleproximity', function()
 end)
-RegisterKeyMapping('+cycleproximity', 'Cycle Proximity', 'keyboard', GetConvar('voice_defaultCycle', 'F1'))
+RegisterKeyMapping('+cycleproximity', 'Cycle Proximity', 'keyboard', 'F1')
 
 --- Toggles the current player muted 
 function toggleMute() 

@@ -79,7 +79,7 @@ RegisterNUICallback('joinRadio', function(data, cb)
             exports["pma-voice"]:SetRadioChannel(channel)
 
             TriggerEvent("tcrp-displayGeneral",  'Joined to radio' .. data.channel .. '.00 MHz </b>')
-            TriggerServerEvent("tcrp-blips:emergencylist", PlayerData.job.name)
+            TriggerServerEvent("tcrp-blips:emergencytoggle", true)
 
         elseif channel > Config.RestrictedChannels then -- Civ radio
             exports["pma-voice"]:SetRadioChannel(channel)

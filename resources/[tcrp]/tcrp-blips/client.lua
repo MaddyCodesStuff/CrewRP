@@ -1,6 +1,5 @@
 toggle = true
 --MAKE SURE YOU TURN THIS OFF BEFORE MERGING KAIA
-local Debug.SeeOwnBlip = true
 Citizen.CreateThread(function()
     for i = 1, #Blips.Main do
         local blip = Blips.Main[i]
@@ -320,13 +319,13 @@ RegisterNetEvent("tcrp-blips:emergency")
 AddEventHandler("tcrp-blips:emergency", function(table)
     local onRadio = table
     local playerid = GetPlayerServerId(PlayerId())
-    if onRadio[playerid]["active"] == true then
-        for k, v in pairs(onRadio) do 
+    if true then
+        for k, v in pairs(onRadio) do
             local player = GetPlayerFromServerId(onRadio[k]["source"])
             local ped    = GetPlayerPed(player)
             local name   = onRadio[k]["name"]
             local job    = onRadio[k]["job"]
-            if onRadio[k]["active"] == true then
+            if onRadio[k].active == true then
                 if ped ~= GetPlayerPed(-1) and not DoesBlipExist(GetBlipFromEntity(ped)) then
                     if job == "police" then 
                         local blip = AddBlipForEntity(ped)
@@ -417,7 +416,7 @@ AddEventHandler("tcrp-blips:emergency", function(table)
                     end
 
                 end
-            elseif onRadio[k]["active"] == false then
+            elseif onRadio[k].active == false then
                 local blip = GetBlipFromEntity(ped)
                 RemoveBlip(blip)
             end
@@ -538,20 +537,6 @@ AddEventHandler("tcrp-blips:addblip", function(blipconfig, entity)
     EndTextCommandSetBlipName(blip)
 end)
 
-RegisterNetEvent("tcrp-blips:joinRadio")
-AddEventHandler("tcrp-blips:joinRadio", function(jobname)
-
-    TriggerServerEvent("tcrp-blips:emergencylist", jobname)
-    TriggerEvent('tcrp-blips:toggle', true)
-
-end)
-RegisterNetEvent("tcrp-blips:leaveRadio")
-AddEventHandler("tcrp-blips:leaveRadio", function()
-    TriggerEvent('tcrp-blips:toggle', false)
-    TriggerServerEvent("tcrp-blips:removeEmergency")
-    
-    
-end)
 
 RegisterNetEvent("tcrp-blips:removeblip")
 AddEventHandler("tcrp-blips:removeblip", function(blip)
