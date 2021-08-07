@@ -142,6 +142,7 @@ Citizen.CreateThread(function()
 			ped = GetPlayerPed(-1)
 			DisablePlayerFiring(ped, true)
 			-- Make player visible to all when dead
+			
 			SetEntityHealth(ped, 101)
 			IsDead = true
 			if not IsPassedOut then 
