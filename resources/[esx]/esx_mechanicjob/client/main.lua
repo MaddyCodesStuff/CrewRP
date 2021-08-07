@@ -701,8 +701,8 @@ Citizen.CreateThread(function()
     AddTextComponentString('Mechanic Garage')
     EndTextCommandSetBlipName(blip)
   end
-  --end
-end)]]--
+  --end]]--
+end)
 
 -- Display markers
 Citizen.CreateThread(function()
