@@ -8,7 +8,6 @@ local ACTIVE_EMERGENCY_PERSONNEL = {}
 ------------
 -- events --
 ------------
-
 RegisterNetEvent("eblips:toggle")
 AddEventHandler("eblips:toggle", function(on)
     -- toggle blip display --
@@ -49,7 +48,7 @@ function RemoveAnyExistingEmergencyBlips()
 end
 
 function RemoveAnyExistingEmergencyBlipsById(id)
-    local possible_blip = GetBlipFromEntity(GetPlayerPed(GetPlayerFromServerId(id)))s
+    local possible_blip = GetBlipFromEntity(GetPlayerPed(GetPlayerFromServerId(id)))
     if possible_blip ~= 0 then
         RemoveBlip(possible_blip)
         ACTIVE_EMERGENCY_PERSONNEL[id] = nil
