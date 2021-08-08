@@ -1,7 +1,11 @@
 RegisterNetEvent("Scene:Recieve")
 AddEventHandler("Scene:Recieve", function(scene, id)
-	distancetimer = 0
-	Scenes[id] = scene
+	if id ~= 0 then
+		distancetimer = 0
+		Scenes[id] = scene
+	else
+		Chat(Lang("SceneError"))
+	end
 end)
 
 RegisterNetEvent("Scene:Cache")
