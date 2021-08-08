@@ -823,7 +823,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "YelllowJack Inn",
     },
-    [49]  = {
+    [104]  = {
         ["name"]    = "O'Connors",
         ["x"] =  841.62, ["y"] =  -113.43,
         ["category"]= "Bars",
