@@ -194,7 +194,6 @@ RegisterCommand("sceneowner", function()
 		local Dis = Distance(Coords, v.Location)
 		if Dis < Owner.Distance then
 			Owner = {Id = k, Distance = Dis, SteamID = v.Owner}
-			break
 		end
 	end
 	if Owner.Id ~= 0 then
