@@ -351,7 +351,7 @@ Citizen.CreateThread(function()
                                  Config.Zones.ShopEntering.Pos.z)
 
     SetBlipSprite(blip, 410)
-    SetBlipDisplay(blip, 4)
+    SetBlipDisplay(blip, 0)
     SetBlipScale(blip, 1.0)
     SetBlipAsShortRange(blip, true)
 

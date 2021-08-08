@@ -61,7 +61,6 @@ AddEventHandler('esx_status:loaded', function(status)
 
             TriggerEvent('esx_status:getStatus', 'hunger', function(status)
                 if status.val == 0 then
-                    print(starvingNotify)
                     if starvingNotify == false then
                         TriggerEvent('tcrp:displayGeneral', "You are starving.")
                         starvingNotify = true
@@ -74,7 +73,6 @@ AddEventHandler('esx_status:loaded', function(status)
                 else
                     starvingNotify = false
                 end
-
             end)
 
             TriggerEvent('esx_status:getStatus', 'thirst', function(status)
@@ -83,7 +81,6 @@ AddEventHandler('esx_status:loaded', function(status)
                     if dehydratingNotify == false then
                         TriggerEvent('tcrp:displayGeneral', "You are dehydrating.")
                         dehydratingNotify = true
-                        print('HI')
                     end
                     if prevHealth <= 150 then
                         health = health - 5
@@ -93,15 +90,12 @@ AddEventHandler('esx_status:loaded', function(status)
                 else
                     dehydratingNotify = false
                 end
-
             end)
 
-            if health ~= prevHealth then
+            if health ~= prevHealth and not IsDead then
                 SetEntityHealth(playerPed, health)
             end
-
         end
-
     end)
 
     Citizen.CreateThread(function()
@@ -115,11 +109,8 @@ AddEventHandler('esx_status:loaded', function(status)
             if IsEntityDead(playerPed) and not IsDead then
                 IsDead = true
             end
-
         end
-
     end)
-
 end)
 
 AddEventHandler('esx_basicneeds:isEating', function(cb)

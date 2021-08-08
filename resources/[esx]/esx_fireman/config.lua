@@ -29,16 +29,11 @@ Config.MaxLargeFires         = 25 -- Set this to above MinLargeFires
 Config.MaxLargeFireSpread    = 10
 
 Config.VehicleInventory      = {
-	"pd-mav",
-	"lsmd-ambo1",
-	"lsmd-bigambo",
-	"lsmd-firetruk",
-	"lsmd-truck",
-	"lsmd-utility",
-	"lsmd-utility2",
-	"pd-mav",
 	"stairtruck",
-	"emerg-dodo",
+	"LSMD Firetr",
+	"LSMD Ambula",
+	"LSMD Truck",
+	"LSMD Utilit",
 }
 
 Config.FireAlarms            = {
@@ -55,7 +50,7 @@ Config.FireStations          = {
 			Sprite  = 648,
 			Display = 4,
 			Scale   = 1.2,
-			Colour  = 47,
+			Colour  = 64,
 		},
 		Cloakrooms        = {
 			{ x = 1209.03, y = -1480.82, z = 33.87 }
@@ -77,7 +72,7 @@ Config.FireStations          = {
 			Sprite  = 648,
 			Display = 4,
 			Scale   = 1.2,
-			Colour  = 47,
+			Colour  = 64,
 		},
 		Cloakrooms        = {
 			{ x = 207.24, y = -1662.30, z = 28.81 }
@@ -99,7 +94,7 @@ Config.FireStations          = {
 			Sprite  = 648,
 			Display = 4,
 			Scale   = 1.2,
-			Colour  = 47,
+			Colour  = 64,
 		},
 		Cloakrooms        = {
 			{ x = -633.82, y = -121.83, z = 38.03 }
@@ -121,7 +116,7 @@ Config.FireStations          = {
 			Sprite  = 648,
 			Display = 4,
 			Scale   = 1.2,
-			Colour  = 47,
+			Colour  = 64,
 		},
 		Cloakrooms        = {
 			{ x = -366.21, y = 6103.34, z = 34.45 }
@@ -143,7 +138,7 @@ Config.FireStations          = {
 			Sprite  = 648,
 			Display = 4,
 			Scale   = 1.2,
-			Colour  = 47,
+			Colour  = 64,
 		},
 		Cloakrooms        = {
 			{ x = 1696.99, y = 3592.42, z = 34.63 }

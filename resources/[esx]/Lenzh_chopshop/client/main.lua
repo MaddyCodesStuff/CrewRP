@@ -140,7 +140,7 @@ function ChopVehicle()
                     ChoppingInProgress      = false
                     print("ERROR: You left the zone!")
                     TriggerEvent('mythic_notify:client:SendAlert',
-                                 { type = 'error', text = 'You Left The Zone. No Rewards For You!', length = 15000 })
+                                 { type = 'error', text = 'You Left The Zone. No Rewards For You!', length = 10000 })
                 end
             else
                 print("ERROR: Not enough cops")
@@ -154,13 +154,13 @@ function ChopVehicle()
         local minsLeft     = math.floor(timerNewChop / 60000)
         if minsLeft > 1 then
             TriggerEvent('mythic_notify:client:SendAlert',
-                         { type = 'error', text = "John is busy. Come back in " .. math.floor(timerNewChop / 60000) .. " minutes", length = 15000 })
+                         { type = 'error', text = "John is busy. Come back in " .. math.floor(timerNewChop / 60000) .. " minutes", length = 10000 })
         elseif minsLeft == 1 then
             TriggerEvent('mythic_notify:client:SendAlert',
-                         { type = 'error', text = "John is busy. Come back in " .. math.floor(timerNewChop / 60000) .. " minute", length = 15000 })
+                         { type = 'error', text = "John is busy. Come back in " .. math.floor(timerNewChop / 60000) .. " minute", length = 10000 })
         else
             TriggerEvent('mythic_notify:client:SendAlert',
-                         { type = 'error', text = "John is just about ready! Wait a moment.", length = 15000 })
+                         { type = 'error', text = "John is just about ready! Wait a moment.", length = 10000 })
         end
     end
 end
@@ -427,7 +427,7 @@ AddEventHandler('outlawChopNotify', function(coords)
         chopLocation = "Unknown"
     end
     TriggerEvent('mythic_notify:client:SendCopAlert',
-                 { title = 'Vehicle chopping in progress', text = 'Someone is chopping a vehicle in ' .. chopLocation })
+                 { title = 'Suspicious Activity', text = 'Suspicious activity reported in this area ' .. chopLocation })
     TriggerEvent('esx_blips:setBlipOnCoord', coords, 300, 5, true, 1.5)
     PlaySoundFrontend(-1, "Event_Start_Text", "GTAO_FM_Events_Soundset", 0)
 end)

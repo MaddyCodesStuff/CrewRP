@@ -55,7 +55,7 @@ function updateHUD()
 end
 
 RegisterCommand('mmap', function(source, args, rawCommand)
-    if not inVehicle then
+    if inVehicle then
         toggleMap = not toggleMap
         DisplayRadar(toggleMap)
         SendNUIMessage({
@@ -65,6 +65,17 @@ RegisterCommand('mmap', function(source, args, rawCommand)
             }
         })
     end
+end)
+
+RegisterCommand('hud', function()
+    if showUi then
+        showUi = false
+        TriggerEvent('tcrphud:toggleHud', false)
+    else
+        showUi = true
+        TriggerEvent('tcrphud:toggleHud', true)
+    end
+
 end)
 
 RegisterNetEvent('esx:playerLoaded')

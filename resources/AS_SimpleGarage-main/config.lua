@@ -359,20 +359,20 @@ Config.Garages = {
     ["VIPERS MC (PRIVATE)"] = {
         ["positions"] = {
             ["menu"] = {
-                ["position"] = vector3(989.25, -139.92, 72.5)
+                ["position"] = vector3(956.03, -122.92, 74.35)
             },
             ["vehicle"] = {
-                ["position"] = vector3(978.85, -133.5, 72.5), 
-                ["heading"] = 61.92
+                ["position"] = vector3(955.43, -126.57, 74.35), 
+                ["heading"] = 223.06
             }
         },
         ["camera"] = { 
-            ["x"] = 967.86, 
-            ["y"] = -132.91, 
-            ["z"] = 76.67, 
-            ["rotationX"] = -20.401574149728, 
+            ["x"] = 953.31, 
+            ["y"] = -133.47, 
+            ["z"] = 76.25, 
+            ["rotationX"] = 0.401574149728, 
             ["rotationY"] = 0.0, 
-            ["rotationZ"] = -100.40157422423 
+            ["rotationZ"] = -13.40157422423 
         }
     },
     ["GROVE STREET (PRIVATE)"] = {
@@ -568,58 +568,58 @@ Config.Garages = {
     ["VESPUCCI MARINA DOCK (PUBLIC)"] = {
         ["positions"] = {
             ["menu"] = {
-                ["position"] = vector3(-846.75, -1367.59, 1.70)
+                ["position"] = vector3(-805.79, -1496.66, 1.60)
             },
             ["vehicle"] = {
-                ["position"] = vector3(-860.19, -1372.01, 1.00), 
-                ["heading"] = 199.12
+                ["position"] = vector3(-814.15, -1487.77, 0.79), 
+                ["heading"] = 100.12
             }
         },
         ["camera"] = { 
-            ["x"] = -862.1, 
-            ["y"] = -1381.86, 
-            ["z"] = 5.08, 
+            ["x"] = -821.05, 
+            ["y"] = -1477.54, 
+            ["z"] = 4.00, 
             ["rotationX"] = -20.401574149728, 
             ["rotationY"] = 0.0, 
-            ["rotationZ"] = -10.40157422423 
+            ["rotationZ"] = 200.40157422423 
         }
     },
     ["ALAMO SEA DOCK (PUBLIC)"] = {
         ["positions"] = {
             ["menu"] = {
-                ["position"] = vector3(713.43, 4093.24, 34.80)
+                ["position"] = vector3(1338.71, 4225.71, 33.92)
             },
             ["vehicle"] = {
-                ["position"] = vector3(701.68, 4095.94,31.00), 
-                ["heading"] = 180.00
+                ["position"] = vector3(1336.43, 4216.05, 33.11), 
+                ["heading"] = 268.00
             }
         },
         ["camera"] = { 
-            ["x"] = 690.02, 
-            ["y"] = 4086.35, 
-            ["z"] = 36.97, 
+            ["x"] = 1340.59, 
+            ["y"] = 4196.18, 
+            ["z"] = 35.63, 
             ["rotationX"] = -20.401574149728, 
             ["rotationY"] = 0.0, 
-            ["rotationZ"] = -40.40157422423 
+            ["rotationZ"] = 0.40157422423 
         }
     },
     ["PALETO DOCK (PUBLIC)"] = {
         ["positions"] = {
             ["menu"] = {
-                ["position"] = vector3(-1611.99, 5262.4, 4.2)
+                ["position"] = vector3(-275.53, 6638.14, 7.47)
             },
             ["vehicle"] = {
-                ["position"] = vector3(-1593.17, 5244.06, 1.7), 
-                ["heading"] = 22.96
+                ["position"] = vector3(-292.24, 6648.27, 0.72), 
+                ["heading"] = 136.00
             }
         },
         ["camera"] = { 
-            ["x"] = -1589.94, 
-            ["y"] = 5258.12, 
-            ["z"] = 6.67, 
+            ["x"] = -292.66, 
+            ["y"] = 6652.88, 
+            ["z"] = 4.32, 
             ["rotationX"] = -20.401574149728, 
             ["rotationY"] = 0.0, 
-            ["rotationZ"] = 150.000 
+            ["rotationZ"] = -150.000 
         }
     },
     ["SAN CHIANSKI DOCK (PUBLIC)"] = {

@@ -201,7 +201,7 @@ Config.Zones        = {
         Items     = BoozeToSell,
         BlipColor = 47,
         Blip      = 93,
-        BlipName  = 'Tequila-la-la',
+        BlipName  = 'Bar',
         ShowBlip  = true,
         Pos       = {
             { x = -562.16, y = 285.49, z = 82.18 },
@@ -218,27 +218,37 @@ Config.Zones        = {
         Items     = BoozeToSell,
         BlipColor = 47,
         Blip      = 93,
-        BlipName  = 'Yellow Jack Inn',
+        BlipName  = 'Bar',
         ShowBlip  = true,
         Pos       = {
             { x = 1982.67, y = 3053.21, z = 47.22 },
         }
     },
-    BahamaMamas           = {
+    GalaxyNightclub           = {
         Items     = BoozeToSell,
-        BlipColor = 47,
-        Blip      = 93,
-        BlipName  = 'Bahama Mamas',
+        BlipColor = 7,
+        Blip      = 136,
+        BlipName  = 'Nightclub',
         ShowBlip  = true,
         Pos       = {
-            { x = -1391.01, y = -606.21, z = 30.32 },
+            { x = -133.77, y = -1273.27, z = 30.32 },
+        }
+    },
+    BahamaMamas           = {
+        Items     = BoozeToSell,
+        BlipColor = 7,
+        Blip      = 136,
+        BlipName  = 'Nightclub',
+        ShowBlip  = true,
+        Pos       = {
+            { x = -1391.64, y = -604.81, z = 30.33 },
         }
     },
     VanillaUnicorn        = {
         Items     = BoozeToSell,
-        BlipColor = 47,
-        Blip      = 93,
-        BlipName  = 'Vanilla Unicorn',
+        BlipColor = 7,
+        Blip      = 136,
+        BlipName  = 'Nightclub',
         ShowBlip  = true,
         Pos       = {
             { x = 129.34, y = -1283.96, z = 29.27 },
@@ -290,7 +300,7 @@ Config.Zones        = {
         Items    = SnacksToSell,
         ShowBlip = false,
         Pos      = {
-            { x = -1385.09, y = -606.34, z = 30.32 },
+            { x = -1390.35, y = -607.31, z = 30.33 },
         }
     },
     VanillaUnicorn_snacks = {

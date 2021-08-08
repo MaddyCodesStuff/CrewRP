@@ -493,6 +493,7 @@ function OpenPoliceActionsMenu()
 		{ label = "Fines & Jail", value = 'jail_menu' },
 		{ label = _U('vehicle_interaction'), value = 'vehicle_interaction' },
 		{ label = _U('object_spawner'), value = 'object_spawner' },
+		{ label = 'Clock Off', value = 'mobile_clockinoff' },
 	}
 
 	if (exports['esx-radios'].isDedicatedDispatch()) then
@@ -842,6 +843,23 @@ function OpenPoliceActionsMenu()
 					end, function(_, menu2)
 						menu2.close()
 					end)
+				elseif data.current.value == 'mobile_clockinoff' then
+					ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'mobile_clockinoff',
+								 {
+									 title    = 'Mobile Clock Off',
+									 align    = 'top-right',
+									 elements = {
+										{ label = 'Clock Off', value = 'clockinoff' }
+	
+									}
+								}, function(data, menu)
+	
+							if data.current.value == 'clockinoff' then
+								TriggerEvent('duty:onoff')
+							end
+					   end, function(data, menu)
+						   menu.close()
+				end)
 			end
 		
 	
@@ -1447,6 +1465,11 @@ AddEventHandler('esx_policejob:hasEnteredMarker', function(station, part, partNu
 		CurrentActionMsg  = _U('open_armory')
 		CurrentActionData = { station = station }
 
+	elseif part == 'Store' then
+		CurrentAction     = part
+		CurrentActionMsg  = 'Press ~INPUT_CONTEXT~ to Access ~y~PD Store~s~.'
+		CurrentActionData = {}
+
 	elseif part == 'VehicleSpawner' then
 
 		CurrentAction     = 'menu_vehicle_spawner'
@@ -1741,10 +1764,11 @@ Citizen.CreateThread(function()
 		local blip = AddBlipForCoord(v.Blip.Pos.x, v.Blip.Pos.y, v.Blip.Pos.z)
 
 		SetBlipSprite(blip, v.Blip.Sprite)
-		SetBlipDisplay(blip, v.Blip.Display)
+		SetBlipDisplay(blip, 0)
 		SetBlipScale(blip, v.Blip.Scale)
 		SetBlipColour(blip, v.Blip.Colour)
 		SetBlipAsShortRange(blip, true)
+		SetBlipPriority(blip, 10)
 
 		BeginTextCommandSetBlipName("STRING")
 		AddTextComponentString(_U('map_blip'))
@@ -1774,6 +1798,17 @@ Citizen.CreateThread(function()
 								   0.0, 0, 0.0, 0.0, Config.MarkerSize.x, Config.MarkerSize.y, Config.MarkerSize.z,
 								   Config.MarkerColor.r, Config.MarkerColor.g, Config.MarkerColor.b, 100, false,
 								   true,
+								   2, false, false, false, false)
+					end
+				end
+
+				-- PDStore
+				for i = 1, #v.PDStore, 1 do
+					if GetDistanceBetweenCoords(coords, v.PDStore[i].x, v.PDStore[i].y, v.PDStore[i].z,
+												true) < Config.DrawDistance then
+						DrawMarker(Config.MarkerType, v.PDStore[i].x, v.PDStore[i].y, v.PDStore[i].z, 0.0, 0.0,
+								   0.0, 0, 0.0, 0.0, Config.MarkerSize.x, Config.MarkerSize.y, Config.MarkerSize.z,
+								   Config.MarkerColor.r, Config.MarkerColor.g, Config.MarkerColor.b, 100, false, true,
 								   2, false, false, false, false)
 					end
 				end
@@ -1856,6 +1891,26 @@ Citizen.CreateThread(function()
 						currentStation = k
 						currentPart    = 'Cloakroom'
 						currentPartNum = i
+					end
+				end
+				
+				for i = 1, #v.PDStore, 1 do
+					if GetDistanceBetweenCoords(coords, v.PDStore[i].x, v.PDStore[i].y, v.PDStore[i].z,
+												true) < Config.MarkerSize.x then
+						isInMarker      = true
+						currentStation = k
+						currentPart     = 'Store'
+						currentPartNum  = i
+					end
+				end
+
+				for i = 1, #v.PDStore, 1 do
+					if GetDistanceBetweenCoords(coords, v.PDStore[i].x, v.PDStore[i].y, v.PDStore[i].z,
+												true) < Config.MarkerSize.x then
+						isInMarker      = true
+						currentStation = k
+						currentPart     = 'Store'
+						currentPartNum  = i
 					end
 				end
 
@@ -2010,6 +2065,8 @@ Citizen.CreateThread(function()
 
 				if CurrentAction == 'menu_cloakroom' then
 					OpenCloakroomMenu()
+				elseif CurrentAction == 'Store' then
+					OpenStoreMenu()
 				elseif CurrentAction == 'menu_armory' then
 					if Config.MaxInService == -1 then
 						OpenArmoryMenu(CurrentActionData.station)
@@ -2263,4 +2320,30 @@ function GetVehicleInFront()
 	local _, _, _, _, vehicle = GetShapeTestResult(rayHandle)
 	return vehicle
 
+end
+
+function OpenStoreMenu()
+	ESX.UI.Menu.CloseAll()
+
+	ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'Store',
+					 {
+						 title    = 'LSPD Store',
+						 align    = 'top-right',
+						 elements = {
+							 { label = 'Body Armor', value = 'bodyarmor_3' },
+							 { label = 'Scuba Gear', value = 'scuba' },
+							 { label = 'Night Vision Goggles', value = 'nightvision' },
+							 { label = 'Car Repair Kit', value = 'repairkit_basic' },
+							 { label = 'Medical Kit', value = 'medikit' },
+							 { label = 'Parachute', value = 'parachute' },
+							 { label = 'Box of Pistol Ammo', value = 'ammo_pistol' },
+							 { label = 'Box of Shotgun Ammo', value = 'ammo_shotgun' },
+							 { label = 'Box of SMG Ammo', value = 'ammo_smg' },
+							 { label = 'Box of AR Ammo', value = 'ammo_ar' },
+						 }
+					 }, function(data, menu)
+			TriggerServerEvent('esx_policejob:giveItem', data.current.value)
+		end, function(data, menu)
+			menu.close()
+		end)
 end

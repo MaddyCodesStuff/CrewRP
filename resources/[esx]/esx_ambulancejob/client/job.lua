@@ -43,6 +43,7 @@ function OpenMobileAmbulanceActionsMenu()
 
 	local menuElements = {
 		{ label = _U('ems_menu'), value = 'citizen_interaction' },
+		{ label = 'Clock Off', value = 'mobile_clockinoff' },
 	}
 
 	if (exports['esx-radios'].isDedicatedDispatch()) then
@@ -255,6 +256,23 @@ function OpenMobileAmbulanceActionsMenu()
 						menu.close()
 					end
 				)
+			elseif data.current.value == 'mobile_clockinoff' then
+				ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'mobile_clockinoff',
+							 {
+								 title    = 'Mobile Clock Off',
+								 align    = 'top-right',
+								 elements = {
+									{ label = 'Clock Off', value = 'clockinoff' }
+
+								}
+							}, function(data, menu)
+
+						if data.current.value == 'clockinoff' then
+							TriggerEvent('duty:onoff')
+						end
+				   end, function(data, menu)
+					   menu.close()
+		    end)
 			end
 
 		end, function(data, menu)
@@ -1323,6 +1341,7 @@ function OpenPharmacyMenu()
 							 { label = _U('pharmacy_take', 'Tylenol'), value = 'tylenol' },
 							 { label = _U('pharmacy_take', 'Body Armor'), value = 'bodyarmor_3' },
 							 { label = _U('pharmacy_take', 'Scuba Gear'), value = 'scuba' },
+							 { label = _U('pharmacy_take', 'Wheelchair'), value = 'wheelchair' },
 						 }
 					 }, function(data, menu)
 			TriggerServerEvent('esx_ambulancejob:giveItem', data.current.value)
