@@ -6,7 +6,6 @@ AddEventHandler('tcrp-crime:handleLockpick', function()
 
     local player = GetPlayerPed(-1)
     local playercoords = GetEntityCoords(player)
-    local robbery = nil
     for key, value in pairs(Config.Stores) do 
         
         local dist = GetDistanceBetweenCoords(playercoords, value.registercoords.x, value.registercoords.y, value.registercoords.z, true)
@@ -22,8 +21,7 @@ AddEventHandler('tcrp-crime:handleLockpick', function()
 end)
 RegisterNetEvent('tcrp-crime:startStore')
 AddEventHandler('tcrp-crime:startStore', function(store)
-    print(store)
-    TriggerEvent('safecracking:start', Config.RegisterDials, 'tcrp-crime:registerSuccess', store)
+    TriggerRegisterEvent('safecracking:start', Config.RegisterDials, 'tcrp-crime:registerSuccess', store)
 
 end)
 
