@@ -3950,7 +3950,7 @@
           <AmmoInfo ref="AMMO_PISTOL" />
           <AimingInfo ref="PISTOL_2H_BASE_STRAFE" />
           <ClipSize value="15" />
-          <AccuracySpread value="1.500000" />
+          <AccuracySpread value="1.000000" />
           <AccurateModeAccuracyModifier value="0.500000" />
           <RunAndGunAccuracyModifier value="2.000000" />
           <RunAndGunAccuracyMinOverride value="-1.000000" />
@@ -4243,7 +4243,7 @@
           <AmmoInfo ref="AMMO_PISTOL" />
           <AimingInfo ref="PISTOL_2H_BASE_STRAFE" />
           <ClipSize value="15" />
-          <AccuracySpread value="1.500000" />
+          <AccuracySpread value="1.000000" />
           <AccurateModeAccuracyModifier value="0.500000" />
           <RunAndGunAccuracyModifier value="2.000000" />
           <RunAndGunAccuracyMinOverride value="-1.000000" />
@@ -4536,7 +4536,7 @@
           <AmmoInfo ref="AMMO_PISTOL" />
           <AimingInfo ref="PISTOL_2H_BASE_STRAFE" />
           <ClipSize value="19" />
-          <AccuracySpread value="3.000000" />
+          <AccuracySpread value="1.000000" />
           <AccurateModeAccuracyModifier value="0.500000" />
           <RunAndGunAccuracyModifier value="2.000000" />
           <RunAndGunAccuracyMinOverride value="-1.000000" />
@@ -5122,7 +5122,7 @@
           <AmmoInfo ref="AMMO_SMG" />
           <AimingInfo ref="SMG_2H_BASE_STRAFE" />
           <ClipSize value="20" />
-          <AccuracySpread value="4.000000" />
+          <AccuracySpread value="1.000000" />
           <AccurateModeAccuracyModifier value="0.500000" />
           <RunAndGunAccuracyModifier value="2.000000" />
           <RunAndGunAccuracyMinOverride value="-1.000000" />
@@ -5425,7 +5425,7 @@
           <AmmoInfo ref="AMMO_SMG" />
           <AimingInfo ref="RIFLE_LO_BASE_STRAFE" />
           <ClipSize value="30" />
-          <AccuracySpread value="3.500000" />
+          <AccuracySpread value="1.000000" />
           <AccurateModeAccuracyModifier value="0.500000" />
           <RunAndGunAccuracyModifier value="2.000000" />
           <RunAndGunAccuracyMinOverride value="-1.000000" />
@@ -5728,7 +5728,7 @@
           <AmmoInfo ref="AMMO_SMG" />
           <AimingInfo ref="SMG_2H_BASE_STRAFE" />
           <ClipSize value="30" />
-          <AccuracySpread value="3.000000" />
+          <AccuracySpread value="1.000000" />
           <AccurateModeAccuracyModifier value="0.500000" />
           <RunAndGunAccuracyModifier value="2.000000" />
           <RunAndGunAccuracyMinOverride value="-1.000000" />
@@ -6031,7 +6031,7 @@
           <AmmoInfo ref="AMMO_RIFLE" />
           <AimingInfo ref="RIFLE_HI_BASE_STRAFE" />
           <ClipSize value="30" />
-          <AccuracySpread value="3.500000" />
+          <AccuracySpread value="1.000000" />
           <AccurateModeAccuracyModifier value="0.500000" />
           <RunAndGunAccuracyModifier value="2.000000" />
           <RunAndGunAccuracyMinOverride value="-1.000000" />
@@ -6343,7 +6343,7 @@
           <AmmoInfo ref="AMMO_RIFLE" />
           <AimingInfo ref="RIFLE_LO_BASE_STRAFE" />
           <ClipSize value="30" />
-          <AccuracySpread value="3.000000" />
+          <AccuracySpread value="1.000000" />
           <AccurateModeAccuracyModifier value="0.500000" />
           <RunAndGunAccuracyModifier value="2.000000" />
           <RunAndGunAccuracyMinOverride value="-1.000000" />
@@ -6659,7 +6659,7 @@
           <AmmoInfo ref="AMMO_RIFLE" />
           <AimingInfo ref="SMG_2H_BASE_STRAFE" />
           <ClipSize value="30" />
-          <AccuracySpread value="2.500000" />
+          <AccuracySpread value="1.000000" />
           <AccurateModeAccuracyModifier value="0.500000" />
           <RunAndGunAccuracyModifier value="2.000000" />
           <RunAndGunAccuracyMinOverride value="-1.000000" />
@@ -6962,7 +6962,7 @@
           <AmmoInfo ref="AMMO_MG" />
           <AimingInfo ref="MG_LOW_BASE_STRAFE" />
           <ClipSize value="100" />
-          <AccuracySpread value="5.500000" />
+          <AccuracySpread value="1.000000" />
           <AccurateModeAccuracyModifier value="0.500000" />
           <RunAndGunAccuracyModifier value="2.000000" />
           <RunAndGunAccuracyMinOverride value="-1.000000" />
@@ -7247,7 +7247,7 @@
           <AmmoInfo ref="AMMO_MG" />
           <AimingInfo ref="MG_LOW_BASE_STRAFE" />
           <ClipSize value="100" />
-          <AccuracySpread value="5.000000" />
+          <AccuracySpread value="1.000000" />
           <AccurateModeAccuracyModifier value="0.500000" />
           <RunAndGunAccuracyModifier value="2.000000" />
           <RunAndGunAccuracyMinOverride value="-1.000000" />
@@ -7541,7 +7541,7 @@
           <AmmoInfo ref="AMMO_SHOTGUN" />
           <AimingInfo ref="RIFLE_LO_PUMP_STRAFE" />
           <ClipSize value="5" />
-          <AccuracySpread value="2.500000" />
+          <AccuracySpread value="1.000000" />
           <AccurateModeAccuracyModifier value="0.500000" />
           <RunAndGunAccuracyModifier value="2.000000" />
           <RunAndGunAccuracyMinOverride value="-1.000000" />
@@ -7815,7 +7815,7 @@
           <AmmoInfo ref="AMMO_SHOTGUN" />
           <AimingInfo ref="RIFLE_LO_PUMP_STRAFE" />
           <ClipSize value="4" />
-          <AccuracySpread value="2.500000" />
+          <AccuracySpread value="1.000000" />
           <AccurateModeAccuracyModifier value="0.500000" />
           <RunAndGunAccuracyModifier value="2.000000" />
           <RunAndGunAccuracyMinOverride value="-1.000000" />
@@ -8071,7 +8071,7 @@
           <AmmoInfo ref="AMMO_SHOTGUN" />
           <AimingInfo ref="RIFLE_LO_BASE_STRAFE" />
           <ClipSize value="6" />
-          <AccuracySpread value="2.500000" />
+          <AccuracySpread value="1.000000" />
           <AccurateModeAccuracyModifier value="0.500000" />
           <RunAndGunAccuracyModifier value="2.000000" />
           <RunAndGunAccuracyMinOverride value="-1.000000" />
@@ -8358,7 +8358,7 @@
           <AmmoInfo ref="AMMO_SHOTGUN" />
           <AimingInfo ref="RIFLE_LO_BASE_STRAFE" />
           <ClipSize value="10" />
-          <AccuracySpread value="2.500000" />
+          <AccuracySpread value="1.000000" />
           <AccurateModeAccuracyModifier value="0.500000" />
           <RunAndGunAccuracyModifier value="2.000000" />
           <RunAndGunAccuracyMinOverride value="-1.000000" />
@@ -8865,7 +8865,7 @@
           <AmmoInfo ref="AMMO_SNIPER" />
           <AimingInfo ref="RIFLE_HI_BASE_STRAFE" />
           <ClipSize value="5" />
-          <AccuracySpread value="5.000000" />
+          <AccuracySpread value="1.000000" />
           <AccurateModeAccuracyModifier value="0.500000" />
           <RunAndGunAccuracyModifier value="2.000000" />
           <RunAndGunAccuracyMinOverride value="0.500000" />
@@ -9126,7 +9126,7 @@
           <AmmoInfo ref="AMMO_SNIPER" />
           <AimingInfo ref="RIFLE_HI_BASE_STRAFE" />
           <ClipSize value="5" />
-          <AccuracySpread value="5.000000" />
+          <AccuracySpread value="1.000000" />
           <AccurateModeAccuracyModifier value="0.500000" />
           <RunAndGunAccuracyModifier value="2.000000" />
           <RunAndGunAccuracyMinOverride value="0.500000" />
@@ -10969,7 +10969,7 @@
           <AmmoInfo ref="AMMO_MINIGUN" />
           <AimingInfo ref="MINIGUN" />
           <ClipSize value="15000" />
-          <AccuracySpread value="4.500000" />
+          <AccuracySpread value="1.000000" />
           <AccurateModeAccuracyModifier value="0.500000" />
           <RunAndGunAccuracyModifier value="2.000000" />
           <RunAndGunAccuracyMinOverride value="-1.000000" />
