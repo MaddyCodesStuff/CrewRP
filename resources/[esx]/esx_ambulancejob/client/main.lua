@@ -130,18 +130,20 @@ Citizen.CreateThread(function()
 		Citizen.Wait(1)
 		if IsDead then
 			DisableAllControlActions(0)
-			EnableControlAction(0, Keys['G'], true)
-			EnableControlAction(0, Keys['T'], true)
-			EnableControlAction(0, Keys['E'], true)
+			EnableControlAction(0, 47, true)
+			EnableControlAction(0, 245, true)
+			EnableControlAction(0, 54, true)
+			EnableControlAction(0, 23, true)
 			EnableControlAction(0, 0, true)
 			EnableControlAction(0, 1, true)
 			EnableControlAction(0, 2, true)
-			EnableControlAction(0, 249, true)
 			EnableControlAction(0, 288, true)
+			EnableControlAction(0, 322, true)
 			EnableControlAction(0, 289, true)
-			DisablePlayerFiring(playerPed, true)
 			ped = GetPlayerPed(-1)
+			DisablePlayerFiring(ped, true)
 			-- Make player visible to all when dead
+			
 			SetEntityHealth(ped, 101)
 			IsDead = true
 			if not IsPassedOut then 
