@@ -681,4 +681,3 @@ AddEventHandler("tcrp-blips:updateblip", function(blipsource, table)
         SetBlipAsShortRange(blip, true)
     end
 end)
-
