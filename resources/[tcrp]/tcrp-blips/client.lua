@@ -314,6 +314,22 @@ for i = 1, #HANGAR.Blips, 1 do
     BeginTextCommandSetBlipName("HANGAR")
     EndTextCommandSetBlipName(blip)
 end
+for i = 1, #HARDWARE.Blips, 1 do
+    local blip = AddBlipForCoord(HARDWARE.Blips[i].x, HARDWARE.Blips[i].y, HARDWARE.Blips[i].z or Config.DefaultZ)
+    SetBlipSprite(blip, HARDWARE.Config["sprite"] or Config.DefaultSprite)
+    SetBlipDisplay(blip, HARDWARE.Config["display"] or Config.DefaultDisplay)
+    SetBlipAlpha(blip, HARDWARE.Config["opacity"] or Config.DefaultOpacity) 
+    SetBlipCategory(blip, HARDWARE.Config["type"] or Config.DefaultType)
+    SetBlipPriority(blip, HARDWARE.Config["layer"] or Config.DefaultLayer)
+    SetBlipScale(blip, HARDWARE.Config["scale"] or Config.DefaultScale)
+    SetBlipColour(blip, HARDWARE.Config["color"] or Config.DefaultColor)
+    SetBlipHiddenOnLegend(blip, HARDWARE.Config["hidden"] or Config.DefaultHidden)
+    SetBlipAsShortRange(blip, true)
+    local bliptext = HARDWARE.Config["text"]
+    AddTextEntry("HARDWARE", bliptext)
+    BeginTextCommandSetBlipName("HARDWARE")
+    EndTextCommandSetBlipName(blip)
+end
 
 RegisterNetEvent("tcrp-blips:emergency")
 AddEventHandler("tcrp-blips:emergency", function(table)

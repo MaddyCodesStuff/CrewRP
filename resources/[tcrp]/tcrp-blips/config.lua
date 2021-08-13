@@ -302,6 +302,20 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Ammunation Default",
     },
+    [105]  = {
+        ["name"]    = "Vespucci Ammunation",
+        ["x"] = 842.99, ["y"] = -1031.78,
+        ["category"]= "Ammu-Nation",
+        ["text"]    = "Ammu-Nation",
+        ["sprite"]  = 110,
+        ["color"]   = 22,
+        ["layer"]   = 15,
+        ["Info.toggle"] = true,
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Gun Store",
+        ["Info.nameLeft"] = "Gun Range",["Info.nameRight"] = "No",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Ammunation Default",
+    },
 
     --Restaurants--
     [18]  = {
@@ -508,11 +522,12 @@ Blips.Main        = {
         ["color"]   = 46,
         ["layer"]   = 20,
         ["Info.toggle"] = true,
-        ["Info.title"] = "D&D Automotive",
+        ["Info.title"] = "D&D Automotive - Paleto Bay",
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Mechanic Shop",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Detroit Collins",
+        ["Info.nameLeft"] = "Detroit",["Info.nameRight"] = "802-3929",
+        ["Info.name2Left"] = "Delli",["Info.name2Right"] = "306-5166",
         ["Info.dictionary"] = "blip_images",
-        ["Info.image"] = "Mechanic Default",
+        ["Info.image"] = "D&DAuto",
     },
     [31]  = {
         ["name"]    = "Mechanic",
@@ -824,7 +839,7 @@ Blips.Main        = {
         ["Info.image"] = "YelllowJack Inn",
     },
     [104]  = {
-        ["name"]    = "O'Connors",
+        ["name"]    = "McLeod's",
         ["x"] =  841.62, ["y"] =  -113.43,
         ["category"]= "Bars",
         ["text"]    = "Bar",
@@ -834,7 +849,7 @@ Blips.Main        = {
         ["scale"]   = 1.0,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Bar",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "None",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Fergus MCLeod",
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "O'Conners",
     },
@@ -914,7 +929,7 @@ Blips.Main        = {
         ["scale"]   = 1.0,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Nightclub",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Arthur Peragrine",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Arthur Peregrine",
     },
     --Other Blips--
     [54]  = {
@@ -929,6 +944,8 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Police Station",
         ["Info.nameLeft"] = "Captain",["Info.nameRight"] = "Moe Gilgully",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "MRPD",
     },
     [55]  = {
         ["name"]    = "Blaine County Sheriff Office",
@@ -1402,7 +1419,7 @@ Blips.Main        = {
         ["name"]    = "City Hall",
         ["x"] =  -536.27, ["y"] = -218.59,
         ["category"]= "Government",
-        ["text"]    = "City Hall",
+        ["text"]    = "Government",
         ["sprite"]  =  498,
         ["color"]   = 0,
         ["layer"]   = 30,
@@ -1411,6 +1428,35 @@ Blips.Main        = {
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Government",
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "City Hall",
+    },
+    [106]  = {
+        ["name"]    = "Courthouse",
+        ["x"] =  231.77, ["y"] = -422.27,
+        ["category"]= "Government",
+        ["text"]    = "Government",
+        ["sprite"]  =  498,
+        ["color"]   = 0,
+        ["layer"]   = 30,
+        ["scale"]   = 1.2,
+        ["Info.toggle"] = true,
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Government",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Court House",
+    },
+    [107]  = {
+        ["name"]    = "Diamond Casino",
+        ["x"] =  942.28, ["y"] = 35.7,
+        ["category"]= "Casino",
+        ["text"]    = "Diamond Casino",
+        ["sprite"]  = 617,
+        ["color"]   = 26,
+        ["layer"]   = 25,
+        ["scale"]   = 1.0,
+        ["Info.toggle"] = true,
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Casino",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Diamond Casino",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "None",
     }
 }
 
@@ -1579,6 +1625,7 @@ STORE.Blips = {
     {["x"] =   1734.64,  ["y"] =  6417.04},
     {["x"] =  -0162.50,  ["y"] =  6321.38},
     {["x"] =  -0675.99,  ["y"] =  5837.02},
+    {["x"] =   165.580,  ["y"] =  6639.37},
 }       
 
 PARKING = {}
@@ -1764,4 +1811,14 @@ HANGAR.Blips = {
     {["x"] =  1723.82, ["y"] =  3288.19},
     {["x"] =  2152.81, ["y"] =  4796.93},
 }
-
+HARDWARE = {}
+HARDWARE.Config = {
+    ["text"]    = "Hardware Store",
+    ["color"]   = 51,
+    ["sprite"]  = 566,
+    ["layer"]   = 15,
+}
+HARDWARE.Blips = {
+    {["x"] =  155.85, ["y"] =  6648.63},
+    {["x"] =  2742.72, ["y"] =  3482.30},
+}
