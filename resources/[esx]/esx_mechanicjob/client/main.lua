@@ -455,14 +455,15 @@ end)
 RegisterNetEvent('esx_mechanicjob:netRepairVehicle')
 AddEventHandler('esx_mechanicjob:netRepairVehicle', function(vehicle, type, police)
   vehicle = NetworkGetEntityFromNetworkId(vehicle)
+  local vehicleFuel = GetVehicleFuelLevel(vehicle) -- get the current fuel level
   if type == "full" then
     SetVehicleFixed(vehicle)
     SetVehicleDeformationFixed(vehicle)
     SetVehicleUndriveable(vehicle, false)
     SetVehicleEngineOn(vehicle, true, true)
     SetVehicleDoorShut(vehicle, 4)
+    SetVehicleFuelLevel(vehicle, vehicleFuel) -- restore the original fuel level
   elseif type == "basic" then
-    local vehicleFuel = GetVehicleFuelLevel(vehicle) -- get the current fuel level
     SetVehicleAutoRepairDisabled(vehicle, true) -- This should stop cars from losing their fuel when they are auto-repaired
     SetVehicleUndriveable(vehicle, false)
     if police then
@@ -689,7 +690,7 @@ Citizen.CreateThread(function()
     EndTextCommandSetBlipName(blip)
   end
 
-  for k, v in pairs(Config.VehicleSpawners) do
+  --[[for k, v in pairs(Config.VehicleSpawners) do
     local blip = AddBlipForCoord(v.Pos.x, v.Pos.y, v.Pos.z)
     SetBlipSprite(blip, v.Blip.Sprite)
     SetBlipDisplay(blip, 4)
@@ -700,7 +701,7 @@ Citizen.CreateThread(function()
     AddTextComponentString('Mechanic Garage')
     EndTextCommandSetBlipName(blip)
   end
-  --end
+  --end]]--
 end)
 
 -- Display markers

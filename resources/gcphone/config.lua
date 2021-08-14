@@ -28,8 +28,8 @@ Config.ShareRealtimeGPSDefaultTimeInMs = 1000 * 60 -- Set default realtime GPS s
 Config.ShareRealtimeGPSJobTimer = 10 -- Default Job GPS Timer (Minutes)
 
 -- Optional Features (Can all be set to true or false.)
-Config.ItemRequired = true -- If true, must have the item "phone" to use it.
-Config.NoPhoneWarning = true -- If true, the player is warned when trying to open the phone that they need a phone. To edit this message go to the locales for your language.
+Config.ItemRequired = false -- If true, must have the item "phone" to use it.
+Config.NoPhoneWarning = false -- If true, the player is warned when trying to open the phone that they need a phone. To edit this message go to the locales for your language.
 
 -- Optional Discord Logging
 Config.UseTwitterLogging = false -- Set the Discord webhook in twitter.lua line 284

@@ -16,6 +16,7 @@ local streetName               = nil
 
 IsDead                         = false
 ESX                            = nil
+IsPassedOut					   = false
 
 Citizen.CreateThread(function()
 	while ESX == nil do
@@ -51,6 +52,7 @@ end)
 
 AddEventHandler('playerSpawned', function()
 	IsDead = false
+	IsPassedOut = false
 	local ped = GetPlayerPed(-1)
 	if GetPedMaxHealth(ped) ~= 200 and not IsEntityDead(ped) then
 		SetPedMaxHealth(ped, 200)
@@ -74,6 +76,14 @@ AddEventHandler('playerSpawned', function()
 	end
 end)
 
+RegisterNetEvent("esx_ambulancejob:getDeadStatus")
+AddEventHandler("esx_ambulancejob:getDeadStatus", function(cb)
+      
+  local IsCurrentlyDead = IsDead
+  TriggerEvent(cb, IsDead)
+
+end)
+
 -- Create blips
 Citizen.CreateThread(function()
 	for k, v in pairs(Config.Hospitals) do
@@ -81,10 +91,11 @@ Citizen.CreateThread(function()
 			local blip = AddBlipForCoord(v.Blip.Pos.x, v.Blip.Pos.y, v.Blip.Pos.z)
 
 			SetBlipSprite(blip, v.Blip.Sprite)
-			SetBlipDisplay(blip, v.Blip.Display)
+			SetBlipDisplay(blip, 0)
 			SetBlipScale(blip, v.Blip.Scale)
 			SetBlipColour(blip, v.Blip.Colour)
 			SetBlipAsShortRange(blip, true)
+			SetBlipPriority(blip, 10)
 
 			BeginTextCommandSetBlipName('STRING')
 			-- AddTextComponentSubstringPlayerName(_U('hospital'))
@@ -106,7 +117,7 @@ function createBlip(id)
 		ShowHeadingIndicatorOnBlip(blip, true) -- Player Blip indicator
 		SetBlipRotation(blip, math.ceil(GetEntityHeading(ped))) -- update rotation
 		SetBlipNameToPlayerName(blip, id) -- update blip name
-		SetBlipScale(blip, 0.85) -- set scale
+		SetBlipScale(blip, 1.0) -- set scale
 		SetBlipAsShortRange(blip, true)
 
 		table.insert(blipsAmbulance, blip) -- add blip to array so we can remove it later
@@ -116,25 +127,27 @@ end
 -- Disable most inputs when dead
 Citizen.CreateThread(function()
 	while true do
-		Citizen.Wait(0)
-
+		Citizen.Wait(1)
 		if IsDead then
-			ped = GetPlayerPed(-1)
-
 			DisableAllControlActions(0)
 			EnableControlAction(0, Keys['G'], true)
 			EnableControlAction(0, Keys['T'], true)
 			EnableControlAction(0, Keys['E'], true)
-
+			EnableControlAction(0, 0, true)
+			EnableControlAction(0, 1, true)
+			EnableControlAction(0, 2, true)
+			EnableControlAction(0, 249, true)
+			EnableControlAction(0, 288, true)
+			EnableControlAction(0, 289, true)
+			DisablePlayerFiring(playerPed, true)
+			ped = GetPlayerPed(-1)
 			-- Make player visible to all when dead
 			SetEntityHealth(ped, 101)
-			Citizen.Wait(10)
-			coords = GetEntityCoords(ped)
-			SetEntityCoords(ped, coords.x, coords.y, coords.z, false, false, false, true)
-			SetPedToRagdoll(ped, 60000, 60000, 0, 0, 0)
-			SetEntityHealth(ped, 100)
 			IsDead = true
-			Citizen.Wait(60000)
+			if not IsPassedOut then 
+				TriggerEvent('emote:do', 'passout4')
+			end
+		
 		else
 			Citizen.Wait(500)
 		end
@@ -145,12 +158,13 @@ function OnPlayerDeath()
 	if not IsDead then
 		IsDead = true
 		TriggerServerEvent('esx_ambulancejob:setDeathStatus', true)
-
+		
 		StartDeathTimer()
 		StartDistressSignal()
 	end
-
-	StartScreenEffect('DeathFailOut', 0, false)
+	ClearPedTasksImmediately(PlayerPedId())
+	
+	TriggerEvent('emote:do', 'passout4')
 end
 
 function StartDistressSignal()
@@ -409,6 +423,9 @@ AddEventHandler('esx_ambulancejob:revive', function()
 	Citizen.CreateThread(function()
 		DoScreenFadeOut(800)
 		ResetPedRagdollTimer(ped)
+		ClearPedTasksImmediately(PlayerPedId())
+		TriggerEvent('emote:cancel', true)
+		
 
 		while not IsScreenFadedOut() do
 			Citizen.Wait(50)
@@ -433,7 +450,7 @@ AddEventHandler('esx_ambulancejob:revive', function()
 			heading = 0.0
 		})
 
-		StopScreenEffect('DeathFailOut')
+		--StopScreenEffect('DeathFailOut')
 		DoScreenFadeIn(800)
 	end)
 end)

@@ -4,7 +4,7 @@ Config.TruckPlateNumb = 0  -- This starts the custom plate for trucks at 0
 Config.MaxStops	= 5 -- Total number of stops a person is allowed to do before having to return to depot.
 Config.MaxBags = 10 -- Total number of bags a person can get out of a bin
 Config.MinBags = 4 -- Min number of bags that a bin can contain.
-Config.BagPay = 50 -- The amount paid to each person per bag
+Config.BagPay = 25 -- The amount paid to each person per bag
 Config.StopPay = 400 -- Total pay for the stop before bagpay.
 Config.JobName = 'garbage'  -- use this to set the jobname that you want to be able to do garbagecrew 
 

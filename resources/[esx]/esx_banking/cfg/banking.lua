@@ -1,7 +1,7 @@
 cfg                      = {}
 
 -- Settings
-cfg.displayBankBlips     = true -- Toggles Bank Blips on the map (Default: true)
+cfg.displayBankBlips     = false -- Toggles Bank Blips on the map (Default: true)
 cfg.displayAtmBlips      = false -- Toggles ATM blips on the map (Default: false) // THIS IS UGLY. SOME ICONS OVERLAP BECAUSE SOME PLACES HAVE MULTIPLE ATM MACHINES. NOT RECOMMENDED
 cfg.enableBankingGui     = true -- Enables the banking GUI (Default: true) // MAY HAVE SOME ISSUES
 cfg.addInterest          = true -- Enables interest rates on banking accounts

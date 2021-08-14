@@ -20,7 +20,7 @@ Citizen.CreateThread(function()
     while true do
         local repairblip = AddBlipForCoord(1148.8618164063, -776.84155273438, 55.598728179932)
         SetBlipSprite(repairblip, 402)
-        SetBlipDisplay(repairblip, 2)
+        SetBlipDisplay(repairblip, 0)
         SetBlipAsShortRange(repairblip, true)
         return
     end
