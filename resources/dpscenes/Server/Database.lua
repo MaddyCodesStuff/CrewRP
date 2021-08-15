@@ -43,17 +43,15 @@ AddEventHandler("Scene:New", function(New)
 end)
 
 RegisterNetEvent("Scene:AttemptDelete")
-AddEventHandler("Scene:AttemptDelete", function(Id, Move, Fire)
+AddEventHandler("Scene:AttemptDelete", function(Id, Move)
 	local Src = source
 	local Me = GetLicense(Src, Config.IdentifierType)
 	local SceneToDelete = Scenes.Current[Id]
 	local Override = AdminCheck(Src, Me)
 	if not Move then
-		if Me == SceneToDelete.Owner or SceneToDelete.AnyDelete == 1 or Override or Fire then
+		if Me == SceneToDelete.Owner or SceneToDelete.AnyDelete == 1 or Override then
 			DB.RemoveScene(Id)
-			if not Fire then
-				Chat(Src, Lang("RemovedScene"))
-			end
+			Chat(Src, Lang("RemovedScene"))
 		else
 			Chat(Src, Lang("NoPerms"))
 		end

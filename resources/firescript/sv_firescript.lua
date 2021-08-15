@@ -54,9 +54,4 @@ RegisterCommand('stopallsmoke', function(source, args, rawCommand)
     end
 end, false)
 
-RegisterNetEvent("SceneStartFire")
-AddEventHandler("SceneStartFire", function(fire)
-    TriggerClientEvent('FireScript:StartFireAtPlayer', -1, source, fire.num, fire.rad, fire.explode == "true")
-end)
-
 print('FireScript by Albo1125 (LUA, C#. FiveM)')

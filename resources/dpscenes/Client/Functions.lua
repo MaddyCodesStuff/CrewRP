@@ -7,8 +7,12 @@ function Lang(what)
 	return Dict[what]
 end
 
-function TextInput(TextEntry, ExampleText, MaxStringLength, TP, Fire)
-	if not TP and not Fire then
+function TextInput(TextEntry, ExampleText, MaxStringLength, TP)
+	local x = 0
+	local y = 0
+	local z = 0
+	local h = 0
+	if not TP then
 		AddTextEntry('FMMC_KEY_TIP1', TextEntry)
 		DisplayOnscreenKeyboard(1, "FMMC_KEY_TIP1", "", ExampleText, "", "", "", MaxStringLength or 20)
 		while UpdateOnscreenKeyboard() ~= 1 and UpdateOnscreenKeyboard() ~= 2 do Wait(0) end
@@ -18,12 +22,7 @@ function TextInput(TextEntry, ExampleText, MaxStringLength, TP, Fire)
 		else
 			Wait(200) return ExampleText
 		end
-	end
-	if TP then
-		local x = 0
-		local y = 0
-		local z = 0
-		local h = 0
+	else
 		AddTextEntry('X', 'Where do you want to teleport the user? X Coordinate.')
 		DisplayOnscreenKeyboard(1, "X", "", ExampleText, "", "", "", MaxStringLength or 20)
 		while UpdateOnscreenKeyboard() ~= 1 and UpdateOnscreenKeyboard() ~= 2 do Wait(0) end
@@ -44,11 +43,8 @@ function TextInput(TextEntry, ExampleText, MaxStringLength, TP, Fire)
 		DisplayOnscreenKeyboard(1, "Z", "", ExampleText, "", "", "", MaxStringLength or 20)
 		while UpdateOnscreenKeyboard() ~= 1 and UpdateOnscreenKeyboard() ~= 2 do Wait(0) end
 		if UpdateOnscreenKeyboard() ~= 2 then
-			local ZResult = GetOnscreenKeyboardResult()
-			ZZResult = tonumber(ZResult)
-			if ZZResult ~= nil then
-				z = ZZResult - 1
-			end
+			local YResult = GetOnscreenKeyboardResult()
+			z = YResult - 1
 			Wait(200)
 		end
 		AddTextEntry('H', 'Where do you want to teleport the user? Heading.')
@@ -62,38 +58,6 @@ function TextInput(TextEntry, ExampleText, MaxStringLength, TP, Fire)
 		else
 			Wait(200) return ExampleText
 		end
-	end
-	if Fire then
-		local numfires = 0
-		local radius = 0
-		local explosion = false
-		AddTextEntry('NumFires', 'How Many Fires?')
-		DisplayOnscreenKeyboard(1, "NumFires", "", ExampleText, "", "", "", MaxStringLength or 20)
-		while UpdateOnscreenKeyboard() ~= 1 and UpdateOnscreenKeyboard() ~= 2 do Wait(0) end
-		if UpdateOnscreenKeyboard() ~= 2 then
-			local numFiresResult = GetOnscreenKeyboardResult()
-			numfires = numFiresResult
-			Wait(200)
-		end
-		AddTextEntry('Radius', 'Redius of Fires?')
-		DisplayOnscreenKeyboard(1, "Radius", "", ExampleText, "", "", "", MaxStringLength or 20)
-		while UpdateOnscreenKeyboard() ~= 1 and UpdateOnscreenKeyboard() ~= 2 do Wait(0) end
-		if UpdateOnscreenKeyboard() ~= 2 then
-			local RadiusResult = GetOnscreenKeyboardResult()
-			radius = RadiusResult
-			Wait(200)
-		end
-		AddTextEntry('Explosion', 'Explosion?(true or false)')
-		DisplayOnscreenKeyboard(1, "Explosion", "", ExampleText, "", "", "", MaxStringLength or 5)
-		while UpdateOnscreenKeyboard() ~= 1 and UpdateOnscreenKeyboard() ~= 2 do Wait(0) end
-		if UpdateOnscreenKeyboard() ~= 2 then
-			local ExplosionResult = GetOnscreenKeyboardResult()
-			explosion = ExplosionResult
-			Wait(200)
-		end
-		return numfires,radius,explosion
-	else
-		Wait(200) return ExampleText
 	end
 end
 
