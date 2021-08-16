@@ -69,5 +69,6 @@ Locale.en = {
 	CoordsError = "Error getting coordinates",
 	CoordsSaved = "Saved Current Coordinates",
 	CoordsCleared = "Cleared Saved Coordinates",
-	ScaleError = "Input must be a number"
+	ScaleError = "Input must be a number",
+	SceneError = "Error Creating Scene"
 }

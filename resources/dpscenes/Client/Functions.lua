@@ -156,7 +156,7 @@ function RayCastGamePlayCamera(distance)
 		y = Cam.y + Dir.y * distance, 
 		z = Cam.z + Dir.z * distance 
 	}
-	local a, b, c, d, e = GetShapeTestResult(StartShapeTestRay(Cam.x, Cam.y, Cam.z, Des.x, Des.y, Des.z, -1, -1, 1))
+	local a, b, c, d, e = GetShapeTestResult(StartShapeTestRay(Cam.x, Cam.y, Cam.z, Des.x, Des.y, Des.z, -1, -1, 4))
 	return b, c, e, Des
 end
 
