@@ -57,7 +57,7 @@
           <AmmoInfo ref="AMMO_SNIPER" />
           <AimingInfo ref="RIFLE_HI_BASE_STRAFE" />
           <ClipSize value="10" />
-          <AccuracySpread value="4.000000" />
+          <AccuracySpread value="1.000000" />
           <AccurateModeAccuracyModifier value="0.500000" />
           <RunAndGunAccuracyModifier value="2.000000" />
           <RunAndGunAccuracyMinOverride value="0.500000" />
