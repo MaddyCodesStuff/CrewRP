@@ -43,7 +43,7 @@ Config.Zones        = {
     ls4    = {
         Pos      = { x = 1175.04, y = 2640.216, z = 37.32177},
         Inner    = { x = 1175.04, y = 2640.216, z = 37.32177, h = 180.0 },
-        Inner    = { x = 1175.04, y = 2640.216, z = 37.32177, h = 180.0 },
+        Outer    = { x = 1175.04, y = 2640.216, z = 37.32177, h = 180.0 },
         Size     = { x = 3.0, y = 3.0, z = 0.2 },
         Color    = { r = 204, g = 204, b = 0 },
         Marker   = 1,
@@ -78,7 +78,7 @@ Config.Zones        = {
         locked   = false,
         ShowBlip = false,
     },
-    ls7    = {
+    hayesrockford1    = {
         Pos      = { x = -1423.63, y = -450.18, z = 35.91 },
         Inner    = { x = -1423.63, y = -450.18, z = 35.91, h = 211.03 },
         Outer    = { x = -1423.63, y = -450.18, z = 35.91, h = 211.03 },
@@ -130,18 +130,6 @@ Config.Zones        = {
         Pos      = { x = -30.11, y = -1060.42, z = 27.71 },
         Inner    = { x = -32.56, y = -1067.14, z = 27.70, h = 159.99 },
         Outer    = { x = -30.66, y = -1059.70, z = 27.71, h = 339.00 },
-        Size     = { x = 3.0, y = 3.0, z = 0.2 },
-        Color    = { r = 204, g = 204, b = 0 },
-        Marker   = 1,
-        Name     = "Los Santos Customs",
-        Hint     = _U('press_custom'),
-        locked   = false,
-        ShowBlip = false,
-    },
-    hayesrockford    = {
-        Pos      = { x = -1423.29, y = -436.73, z = 35.15 },
-        Inner    = { x = -1417.21, y = -446.30, z = 35.22, h = 211.39 },
-        Outer    = { x = -1423.29, y = -436.73, z = 35.15, h = 33.07 },
         Size     = { x = 3.0, y = 3.0, z = 0.2 },
         Color    = { r = 204, g = 204, b = 0 },
         Marker   = 1,
