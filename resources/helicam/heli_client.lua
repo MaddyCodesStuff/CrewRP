@@ -35,6 +35,8 @@ local helicam = false
 local vehicle_display = 1 -- 0 is default full vehicle info display with speed/model/plate, 1 is model/plate, 2 turns off display
 local pdmav_hash = GetHashKey("pd-mav")
 local hwybuz_hash = GetHashKey("hwy-buz")
+local emrgdodo_hash = GetHashKey("EMERG-DODO")
+local civmav_hash = GetHashKey("maverick")
 local fov = (fov_max+fov_min)*0.5
 local vision_state = 0 -- 0 is normal, 1 is nightmode, 2 is thermal vision (Disabled)
 
@@ -199,7 +201,7 @@ end)
 function IsPlayerInPolmav()
 	local lPed = GetPlayerPed(-1)
 	local vehicle = GetVehiclePedIsIn(lPed)
-	return IsVehicleModel(vehicle, pdmav_hash) or IsVehicleModel(vehicle, hwybuz_hash)
+	return IsVehicleModel(vehicle, pdmav_hash) or IsVehicleModel(vehicle, hwybuz_hash) or IsVehicleModel(vehicle, emrgdodo_hash) or IsVehicleModel(vehicle, civmav_hash)
 end
 
 function IsHeliHighEnough(heli)
