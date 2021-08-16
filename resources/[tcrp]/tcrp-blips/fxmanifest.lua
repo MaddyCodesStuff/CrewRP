@@ -10,7 +10,10 @@ dependency {
     'mysql-async'
 }
 
-client_script 'client.lua'
+client_scripts {
+    'client.lua',
+    'emergencyradio.lua'
+}
 
 server_script {
     '@mysql-async/lib/MySQL.lua',
