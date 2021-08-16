@@ -44,6 +44,7 @@ PARKS.Config = {
     --["Info.image"] = "SAPD Radio",
 }
 
+-- Coordiantes and Formatting for Emergency Only Blips
 EMERGENCYDOCKS = {}
 EMERGENCYDOCKS.Config = {
     ["text"]    = "[Emergency Dock]",

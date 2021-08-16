@@ -386,7 +386,7 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Restaurant",
         ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Uri Jackson",
-        ["Info.text2Left"] = "Phone", ["Info.text2Right"] = "272-0483",
+        ["Info.text2Left"] = "Phone", ["Info.text2Right"] = "382-3085",
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Burger Shot",
     },
