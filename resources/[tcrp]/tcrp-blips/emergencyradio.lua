@@ -45,7 +45,6 @@ end)
 
 RegisterNetEvent("tcrp-blips:radiooff")
 AddEventHandler("tcrp-blips:radiooff", function(job)
-    print(job)
     for i = 1, #EMERGENCYDOCKS.Blips, 1 do
         RemoveBlip(dockcache[i])
         
@@ -54,7 +53,6 @@ AddEventHandler("tcrp-blips:radiooff", function(job)
     if job == 'police' then
         for i = 1, #LOCALPD.Blips, 1 do
             RemoveBlip(pdcache[i])
-            print('triggere')
         end
         pdcache = {}
     end
