@@ -16,7 +16,6 @@ local streetName               = nil
 
 IsDead                         = false
 ESX                            = nil
-IsPassedOut					   = false
 
 Citizen.CreateThread(function()
 	while ESX == nil do
@@ -52,7 +51,6 @@ end)
 
 AddEventHandler('playerSpawned', function()
 	IsDead = false
-	IsPassedOut = false
 	local ped = GetPlayerPed(-1)
 	if GetPedMaxHealth(ped) ~= 200 and not IsEntityDead(ped) then
 		SetPedMaxHealth(ped, 200)
@@ -78,10 +76,7 @@ end)
 
 RegisterNetEvent("esx_ambulancejob:getDeadStatus")
 AddEventHandler("esx_ambulancejob:getDeadStatus", function(cb)
-      
-  local IsCurrentlyDead = IsDead
   TriggerEvent(cb, IsDead)
-
 end)
 
 -- Create blips
@@ -129,6 +124,7 @@ Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(1)
 		if IsDead then
+			local playerPed = PlayerPedId()
 			DisableAllControlActions(0)
 			EnableControlAction(0, 47, true)
 			EnableControlAction(0, 245, true)
@@ -141,32 +137,46 @@ Citizen.CreateThread(function()
 			EnableControlAction(0, 288, true)
 			EnableControlAction(0, 322, true)
 			EnableControlAction(0, 289, true)
-			ped = GetPlayerPed(-1)
-			DisablePlayerFiring(ped, true)
+			DisablePlayerFiring(playerPed, true)
 			-- Make player visible to all when dead
-			
-			SetEntityHealth(ped, 101)
+
+			SetEntityHealth(playerPed, 101)
 			IsDead = true
-			if not IsPassedOut then 
-				TriggerEvent('emote:do', 'passout4')
-			end
-		
 		else
 			Citizen.Wait(500)
 		end
 	end
 end)
 
+-- Ensure player is passed out
+Citizen.CreateThread(function()
+	while true do
+		if IsDead then
+			TriggerEvent('emote:do', 'passout4')
+		end
+
+		Wait(60000)
+	end
+end)
+
 function OnPlayerDeath()
+	local playerPed = PlayerPedId()
+
 	if not IsDead then
 		IsDead = true
 		TriggerServerEvent('esx_ambulancejob:setDeathStatus', true)
-		
+
 		StartDeathTimer()
 		StartDistressSignal()
 	end
-	ClearPedTasksImmediately(PlayerPedId())
-	
+
+	while IsPedFalling(playerPed) or IsPedRagdoll(playerPed) or IsPedRunningRagdollTask(playerPed) do
+		ResetPedRagdollTimer(playerPed)
+		Wait(50)
+	end
+
+	ClearPedTasksImmediately(playerPed)
+
 	TriggerEvent('emote:do', 'passout4')
 end
 
@@ -425,10 +435,9 @@ AddEventHandler('esx_ambulancejob:revive', function()
 
 	Citizen.CreateThread(function()
 		DoScreenFadeOut(800)
-		ResetPedRagdollTimer(ped)
-		ClearPedTasksImmediately(PlayerPedId())
+		ResetPedRagdollTimer(playerPed)
+		ClearPedTasksImmediately(playerPed)
 		TriggerEvent('emote:cancel', true)
-		
 
 		while not IsScreenFadedOut() do
 			Citizen.Wait(50)
@@ -474,7 +483,7 @@ Citizen.CreateThread(function()
 		Citizen.Wait(3000)
 
 		local playerCoords = GetEntityCoords(PlayerPedId())
-		streetName, road   = GetStreetNameAtCoord(playerCoords.x, playerCoords.y, playerCoords.z)
+		streetName, _   = GetStreetNameAtCoord(playerCoords.x, playerCoords.y, playerCoords.z)
 		streetName         = GetStreetNameFromHashKey(streetName)
 	end
 end)
