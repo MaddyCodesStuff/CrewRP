@@ -7,33 +7,29 @@ window.addEventListener('message', (event) =>{
     if (event.data.action == 'showbar') {
         quicktimebar.style.display = "block";
         quicktimeprog.style.display = "block";
-        //startBar();
-    }
-    if (event.data.action == 'hidebar'){
-        quicktimebar.style.display = "none";
-        quicktimeprog.style.display = "none";
-        complete = true;
-        quicktimeprog.style.width  = "0%";
-
+        startBar(event.data.difficulty);
     }
 });
 
 
-function startBar() {
+function startBar(diff) {
     complete = false;
-    var frame = setInterval(drawBar, 100);
+    var prog = 0;
+    var test = 0;
+    var frame = setInterval(drawBar, diff,diff);
     function drawBar(){
-        var prog = 0;
         if(!complete){
             prog++;
+            test = test + diff;
+            console.log(test);
             quicktimeprog.style.width  = prog + "%";
-            if (prog === 100){
-                complete = true
+            if (prog == 100){
+                clearInterval(frame)
+                quicktimeprog.style.width = '0%';
+                complete = true;
+                quicktimebar.style.display = "none";
+                quicktimeprog.style.display = "none";
             }
-    
-        }else{
-    
-
     
         }
     }

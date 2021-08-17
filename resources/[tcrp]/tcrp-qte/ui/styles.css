@@ -22,7 +22,7 @@
     display: none;
     position: relative;
     width: 1%;
-    background-color: greenyellow;
+    background-color: darkgreen;
     height: 30px;
     opacity: 80%;
   }
@@ -35,7 +35,7 @@
     position: absolute;
     width: 150px;
     height: 30px;
-    background-color: grey;
+    background-color: black;
     border-color: black;
     border-style: solid;
     border-width: thin;
