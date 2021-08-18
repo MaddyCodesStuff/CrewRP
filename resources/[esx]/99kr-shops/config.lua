@@ -3,7 +3,7 @@ Config = {
     -- Theft stuff
     CopsRequired       = 1,
     CopBlipTime        = 120000, -- in sec
-    CopBlipInterval    = 5000, -- in ms
+    CopBlipInterval    = 5, -- in sec
     MaxItemsStolen     = 10,
 
     DefaultSprite      = 52,
