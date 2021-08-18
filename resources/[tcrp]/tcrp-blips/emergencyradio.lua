@@ -47,7 +47,6 @@ RegisterNetEvent("tcrp-blips:radiooff")
 AddEventHandler("tcrp-blips:radiooff", function(job)
     for i = 1, #EMERGENCYDOCKS.Blips, 1 do
         RemoveBlip(dockcache[i])
-        
     end
     dockcache = {}
     if job == 'police' then
