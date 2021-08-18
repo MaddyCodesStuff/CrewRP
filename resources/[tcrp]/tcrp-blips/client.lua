@@ -37,9 +37,7 @@ for i = 1, #Blips.Main do
             if blip["outlineonly"] ~= nil then
                 SetRadiusBlipEdge(blip, blip["outlineonly"])
             end
-            if blip["fadeopacity"] and blip["fadetime"] ~= nil  then
-                SetBlipFade(blip, blip["fadeopacity"], blip["fadetime"])
-            end
+
             if blip["color2red"] and blip["color2green"] and blip["color2blue"] ~= nil then
                 SetBlipSecondaryColour(blip, blip["color2red"], blip["color2green"], blip["color2blue"])
             end
@@ -461,10 +459,12 @@ AddEventHandler("tcrp-blips:addblip", function(blipconfig, entity)
     SetBlipPriority(blip, blipconfig["layer"] or Config.DefaultLayer)
     SetBlipScale(blip, blipconfig["scale"] or Config.DefaultScale)
     SetBlipColour(blip, blipconfig["color"] or Config.DefaultColor)
-    SetBlipRotation(blip, blipconfig["rotation"] or Config.DefaultRotation)
     SetBlipHiddenOnLegend(blip, blipconfig["hidden"] or Config.DefaultHidden)
     if blipconfig["duration"] ~= nil then
         DeleteBlip(blip,blipconfig["duration"])
+    end
+    if blipconfig["rotation"] ~= nil then
+        SetBlipRotation(blip, blipconfig["rotation"])
     end
     if blipconfig["checkmark"] ~= nil then
         ShowTickOnBlip(blip, blipconfig["checkmark"])
@@ -480,9 +480,6 @@ AddEventHandler("tcrp-blips:addblip", function(blipconfig, entity)
     end
     if blipconfig["outlineonly"] ~= nil then
         SetRadiusBlipEdge(blip, blipconfig["outlineonly"])
-    end
-    if blipconfig["fadeopacity"] and blipconfig["fadetime"] ~= nil  then
-        SetBlipFade(blip, blipconfig["fadeopacity"], blipconfig["fadetime"])
     end
     if blipconfig["color2red"] and blipconfig["color2green"] and blipconfig["color2blue"] ~= nil then
         SetBlipSecondaryColour(blip, blipconfig["color2red"], blipconfig["color2green"], blipconfig["color2blue"])
@@ -555,6 +552,11 @@ AddEventHandler("tcrp-blips:addblip", function(blipconfig, entity)
     else 
         bliptext = "New Blip"
     end
+    if blipconfig["flash"] ~= nil and blipconfig["flashinterval"] ~= nil then
+        print("flash")
+        SetBlipFlashes(blip, blipconfig["flash"])
+        SetBlipFlashInterval(blip, blipconfig["flashinterval"])
+    end
     AddTextEntry("blips", bliptext)
     BeginTextCommandSetBlipName("blips")
     EndTextCommandSetBlipName(blip)
@@ -623,9 +625,6 @@ AddEventHandler("tcrp-blips:updateblip", function(blipsource, table)
         end
         if blipconfig["outlineonly"] ~= nil then
             SetRadiusBlipEdge(blip, blipconfig["outlineonly"])
-        end
-        if blipconfig["fadeopacity"] and blipconfig["fadetime"] ~= nil  then
-            SetBlipFade(blip, blipconfig["fadeopacity"], blipconfig["fadetime"])
         end
         if blipconfig["color2red"] and blipconfig["color2green"] and blipconfig["color2blue"] ~= nil then
             SetBlipSecondaryColour(blip, blipconfig["color2red"], blipconfig["color2green"], blipconfig["color2blue"])
