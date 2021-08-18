@@ -952,11 +952,8 @@ Config = {
         },
         [53] = { --Limey's Juice & Smoothies
             ["shelfs"]   = {
-                { ["x"] = -1245.71, ["y"] = -281.55, ["z"] = 37.48, ["value"] = "limeys" },
-                { ["x"] = -1244.18, ["y"] = -280.75, ["z"] = 37.48, ["value"] = "checkout" },
-                { ["x"] = -1247.56, ["y"] = -274.67, ["z"] = 37.48, ["value"] = "coffee" },
-                { ["x"] = -1249.19, ["y"] = -278.29, ["z"] = 37.48, ["value"] = "slushies" },
-                { ["x"] = -1246.57, ["y"] = -276.79, ["z"] = 37.48, ["value"] = "juice" },
+                { ["x"] = -1248.69, ["y"] = -273.12, ["z"] = 37.48, ["value"] = "checkout" },
+                { ["x"] = -1247.56, ["y"] = -274.67, ["z"] = 37.48, ["value"] = "limeysdrinks" },
             },
             ["blip"]     = {
                 ["sprite"] = 628,
@@ -1009,6 +1006,7 @@ Config = {
         ["juice"]       = "Juice",
         ["limeys"]      = "Order Food",
         ["lockpicks"]   = "Lockpicks",
+        ["limeysdrinks"] = "Quinn's Drinks",
     },
 
     Items              = {
@@ -1242,13 +1240,15 @@ Config = {
             { label = "Sludgie Blue Slushy", item = "slushy", price = 3 },
             { label = "Sludgie Green Slushy", item = "slushy2", price = 3 },
         },
-        ["limeys"]       = {
+        ["limeysdrinks"]       = {
             { label = "Grape Juice", item = "jus_raisin", price = 5 },
             { label = "Juice", item = "juice", price = 7 },
             { label = "Sludgie Blue Slushy", item = "slushy", price = 3 },
             { label = "Sludgie Green Slushy", item = "slushy2", price = 3 },
             { label = "Regular Coffee", item = "coffee", price = 1 },
             { label = "Decaf Coffee", item = "decafcoffee", price = 1 },
+            { label = "Sweet Tea", item = "sweet_tea", price = 5 },
+            { label = "Iced Tea", item = "iced_tea", price = 5 },
         },
         ["lockpicks"]       = {
             { label = "Lockpick", item = "lockpick", price = 500 },
