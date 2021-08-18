@@ -1,7 +1,7 @@
 Config                    = {}
 Config.DrawDistance       = 100.0
-Config.CopsRequired       = 3
-Config.BlipUpdateTime     = 10000 --In milliseconds. I used it on 3000. If you want instant update, 50 is more than enough. Even 100 is good. I hope it doesn't kill FPS and the server.
+Config.CopsRequired       = 1
+Config.BlipUpdateTime     = 10 --In seconds.
 Config.CooldownMinutes    = 30
 Config.CarDamageReduction = .10 -- How much damage reduction cost should you lose for turning in a damaged vehicle?
 Config.Locale             = 'en'
