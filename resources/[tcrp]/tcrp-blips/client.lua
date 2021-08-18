@@ -1,5 +1,4 @@
 toggle = true
---MAKE SURE YOU TURN THIS OFF BEFORE MERGING KAIA
 Citizen.CreateThread(function()
     for i = 1, #Blips.Main do
         local blip = Blips.Main[i]
@@ -450,10 +449,11 @@ end)
 
 RegisterNetEvent("tcrp-blips:addblip")
 AddEventHandler("tcrp-blips:addblip", function(blipconfig, entity)
+    local blip = nil
     if entity ~= nil then
-        local blip = AddBlipForEntity(entity)
+        blip = AddBlipForEntity(entity)
     else
-        local blip = AddBlipForCoord(blip["x"], blip["y"], blip["z"] or Config.DefaultZ)
+        blip = AddBlipForCoord(blipconfig["x"], blipconfig["y"], blipconfig["z"] or Config.DefaultZ)
     end
     SetBlipSprite(blip, blipconfig["sprite"] or Config.DefaultSprite)
     SetBlipDisplay(blip, blipconfig["display"] or Config.DefaultDisplay)
@@ -463,6 +463,9 @@ AddEventHandler("tcrp-blips:addblip", function(blipconfig, entity)
     SetBlipColour(blip, blipconfig["color"] or Config.DefaultColor)
     SetBlipRotation(blip, blipconfig["rotation"] or Config.DefaultRotation)
     SetBlipHiddenOnLegend(blip, blipconfig["hidden"] or Config.DefaultHidden)
+    if blipconfig["duration"] ~= nil then
+        DeleteBlip(blip,blipconfig["duration"])
+    end
     if blipconfig["checkmark"] ~= nil then
         ShowTickOnBlip(blip, blipconfig["checkmark"])
     end
@@ -543,8 +546,8 @@ AddEventHandler("tcrp-blips:addblip", function(blipconfig, entity)
         exports['blip_info']:AddBlipInfoIcon(blip, blipconfig["Info.icon3Left"], blipconfig["Info.icon3Right"], blipconfig["Info.icon3ID"], blipconfig["Info.icon3Color"], blipconfig["Info.icon3Checkmark"])
     end
     SetBlipAsShortRange(blip, true)
-    if blip["text"] ~= nil then 
-        bliptext = blip["text"]
+    if blipconfig["text"] ~= nil then 
+        bliptext = blipconfig["text"]
     else 
         bliptext = "New Blip"
     end
@@ -559,9 +562,9 @@ AddEventHandler("tcrp-blips:removeblip", function(blip)
     RemoveBlip(blip)
 end)
 
-
 RegisterNetEvent("tcrp-blips:updateblip")
 AddEventHandler("tcrp-blips:updateblip", function(blipsource, table)
+    local blip = nil
     local entityblip = GetBlipFromEntity(blipsource)
     local blipconfig = table
     if entityblip ~= nil or 0 then 
@@ -681,3 +684,10 @@ AddEventHandler("tcrp-blips:updateblip", function(blipsource, table)
         SetBlipAsShortRange(blip, true)
     end
 end)
+
+function DeleteBlip(blip, duration)
+    Citizen.CreateThread(function()
+        Citizen.Wait(duration * 1000)
+        RemoveBlip(blip)
+    end)
+end
