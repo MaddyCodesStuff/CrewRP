@@ -112,13 +112,9 @@ function IsDriver()
 end
 
 function ChopVehicle()
-    print("1. Attempting to chop car")
     if GetGameTimer() - lastTested > Config.CooldownMinutes * 60000 then
-        print("Chop is off cooldown")
-        print("Checking for enough cops")
         ESX.TriggerServerCallback('Lenzh_chopshop:anycops', function(anycops)
             if anycops >= Config.CopsRequired then
-                print("Enough cops are on")
                 local ped     = PlayerPedId()
                 local vehicle = GetVehiclePedIsIn(ped, false)
                 if Config.CallCops then
@@ -131,25 +127,21 @@ function ChopVehicle()
                 end
                 ChoppingInProgress = true
                 lastTested         = GetGameTimer()
-                print("CHOPPING THE CAR!")
                 TriggerEvent('mythic_notify:client:SendAlert',
                              { type = 'inform', text = 'Chopping in progress. Please remain in the vehicle until chopping is complete.', length = 10000 })
                 VehiclePartsRemoval()
                 if not HasAlreadyEnteredMarker then
                     HasAlreadyEnteredMarker = true
                     ChoppingInProgress      = false
-                    print("ERROR: You left the zone!")
                     TriggerEvent('mythic_notify:client:SendAlert',
                                  { type = 'error', text = 'You Left The Zone. No Rewards For You!', length = 10000 })
                 end
             else
-                print("ERROR: Not enough cops")
                 TriggerEvent('mythic_notify:client:SendAlert',
                              { type = 'error', text = _U('not_enough_cops'), length = 10000 })
             end
         end)
     else
-        print("3. Chopping is on cooldown")
         local timerNewChop = Config.CooldownMinutes * 60000 - (GetGameTimer() - lastTested)
         local minsLeft     = math.floor(timerNewChop / 60000)
         if minsLeft > 1 then
@@ -174,8 +166,6 @@ function VehiclePartsRemoval()
     SetVehicleNumberPlateText(vehicle, "stolen")
     SetVehicleEngineOn(vehicle, false, false, true)
     SetVehicleUndriveable(vehicle, false)
-    print("Attemping to remove parts")
-    print("Chopping status: (true/false)" .. tostring(ChoppingInProgress))
     if ChoppingInProgress == true then
         exports['progressBars']:startUI(Config.DoorOpenFrontLeftTime, "Opening Front Left Door")
         Citizen.Wait(Config.DoorOpenFrontLeftTime)
@@ -423,11 +413,12 @@ GetPlayerName()
 
 RegisterNetEvent('outlawChopNotify')
 AddEventHandler('outlawChopNotify', function(coords)
+    local blip = {["x"] = coords.x, ["y"] = coords.y, ["z"] = coords.z, ["longrange"] = false, ["text"] = "[PD] Suspicious Activity", ["sprite"] = 161, ["color"] = 5, ["scale"] = 1.5, ["duration"] = 120}
     if chopLocation == nil then
         chopLocation = "Unknown"
     end
     TriggerEvent('mythic_notify:client:SendCopAlert',
                  { title = 'Suspicious Activity', text = 'Suspicious activity reported in this area ' .. chopLocation })
-    TriggerEvent('esx_blips:setBlipOnCoord', coords, 300, 5, true, 1.5)
+    TriggerEvent("tcrp-blips:addblip", blip)
     PlaySoundFrontend(-1, "Event_Start_Text", "GTAO_FM_Events_Soundset", 0)
 end)
