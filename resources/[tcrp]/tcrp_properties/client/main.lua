@@ -114,7 +114,7 @@ Citizen.CreateThread(function()
             for i = 1, #properties, 1 do
                 property = properties[i]
                 local zDiff = property.inside.z - coords.z
-                local zCheck = 2 --This may not be high enough
+                local zCheck = 5 --This may not be high enough
 
                 -- Radius to make sure a player is inside of a property (in case they were TPd in, or TPd out)
                 if in_property ~= i and #(coords - vector3(property.inside.x, property.inside.y,
