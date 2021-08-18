@@ -413,7 +413,7 @@ GetPlayerName()
 
 RegisterNetEvent('outlawChopNotify')
 AddEventHandler('outlawChopNotify', function(coords)
-    local blip = {["x"] = coords.x, ["y"] = coords.y, ["z"] = coords.z, ["longrange"] = false, ["text"] = "[PD] Suspicious Activity", ["sprite"] = 161, ["color"] = 5, ["scale"] = 1.5, ["duration"] = 120}
+    local blip = {["x"] = coords.x, ["y"] = coords.y, ["z"] = coords.z, ["longrange"] = true, ["text"] = "[PD] Suspicious Activity", ["sprite"] = 161, ["color"] = 5, ["scale"] = 1.5, ["duration"] = 120}
     if chopLocation == nil then
         chopLocation = "Unknown"
     end
