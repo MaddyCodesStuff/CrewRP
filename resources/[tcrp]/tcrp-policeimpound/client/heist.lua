@@ -35,7 +35,7 @@ end)
 RegisterNetEvent('tcrp-policeimpound:startHack')
 AddEventHandler('tcrp-policeimpound:startHack', function()
     TriggerEvent('mhacking:show')
-    TriggerEvent('mhacking:start', 4, 60, function(success, _)
+    TriggerEvent('mhacking:start', 3, 18, function(success, _) -- this is where you change how hard the hack is 
         TriggerServerEvent('tcrp-policeimpound:hacked', success)
         TriggerEvent('mhacking:hide')
     end)
