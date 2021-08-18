@@ -1,6 +1,6 @@
 Config                    = {}
 Config.DrawDistance       = 100.0
-Config.CopsRequired       = 1
+Config.CopsRequired       = 3
 Config.BlipUpdateTime     = 10 --In seconds.
 Config.CooldownMinutes    = 30
 Config.CarDamageReduction = .10 -- How much damage reduction cost should you lose for turning in a damaged vehicle?
