@@ -553,7 +553,6 @@ AddEventHandler("tcrp-blips:addblip", function(blipconfig, entity)
         bliptext = "New Blip"
     end
     if blipconfig["flash"] ~= nil and blipconfig["flashinterval"] ~= nil then
-        print("flash")
         SetBlipFlashes(blip, blipconfig["flash"])
         SetBlipFlashInterval(blip, blipconfig["flashinterval"])
     end

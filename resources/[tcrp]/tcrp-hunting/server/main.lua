@@ -29,9 +29,11 @@ AddEventHandler('tcrp-hunting:reward', function(playerCoords)
     for i = 1, #xPlayers, 1 do
         local xPlayer = ESX.GetPlayerFromId(xPlayers[i])
         if xPlayer and xPlayer.job and xPlayer.job.name == 'police' or xPlayer.job.name == 'parkranger' then
+            local blip = {["x"] = playerCoords.x, ["y"] = playerCoords.y, ["z"] = playerCoords.z, ["longrange"] = true, ["text"] = "Hunting", ["sprite"] = 141, ["color"] = 1, ["scale"] = 1.2, ["duration"] = 60}
             TriggerClientEvent('mythic_notify:client:SendCopAlert', xPlayers[i],
                                { text = 'Local Game Warden: Hunting Reported Near This Location'})
-            TriggerClientEvent('esx_blips:setBlipOnCoord', xPlayers[i], playerCoords, 60, 1, true, 2.0, 141)
+            TriggerClientEvent("tcrp-blips:addblip", xPlayers[i], blip)
+            --TriggerClientEvent('esx_blips:setBlipOnCoord', xPlayers[i], playerCoords, 60, 1, true, 2.0, 141)
 
         end
     end       
