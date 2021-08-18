@@ -376,7 +376,7 @@ end)
 -- Put the hackers' blips on the radar for the cops
 RegisterServerEvent('paleto_yacht_heist:setcopblips')
 AddEventHandler('paleto_yacht_heist:setcopblips', function(coords)
-    local blip = {["x"] = coords.x, ["y"] = coords.y, ["z"] = coords.z, ["longrange"] = true, ["text"] = "[PD] Impound Robbery", ["sprite"] = 161, ["color"] = 10, ["scale"] = 1.0, ["duration"] = Config.CopBlipInterval}
+    local blip = {["x"] = coords.x, ["y"] = coords.y, ["z"] = coords.z, ["longrange"] = true, ["text"] = "[PD] Yacht Heist", ["sprite"] = 161, ["color"] = 10, ["scale"] = 1.0, ["duration"] = Config.CopBlipInterval}
     local _source   = source
     local xPlayer  = ESX.GetPlayerFromId(_source)
     local xPlayers = ESX.GetPlayers()
