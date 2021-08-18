@@ -33,8 +33,6 @@ AddEventHandler('tcrp-hunting:reward', function(playerCoords)
             TriggerClientEvent('mythic_notify:client:SendCopAlert', xPlayers[i],
                                { text = 'Local Game Warden: Hunting Reported Near This Location'})
             TriggerClientEvent("tcrp-blips:addblip", xPlayers[i], blip)
-            --TriggerClientEvent('esx_blips:setBlipOnCoord', xPlayers[i], playerCoords, 60, 1, true, 2.0, 141)
-
         end
     end       
 end)
