@@ -109,7 +109,7 @@ AddEventHandler('esx_advanced_holdup:robberyInProgress', function(mainZone)
 
 			for i = 1, #xPlayers, 1 do
 				local xPlayer = ESX.GetPlayerFromId(xPlayers[i])
-				local blip = {["x"] = Config.Zones[mainZone].Pos.x, ["y"] = Config.Zones[mainZone].Pos.y, ["z"] = Config.Zones[mainZone].Pos.z, ["text"] = "[PD] " .. mainZone .. " Robbery", ["sprite"] = 161, ["color"] = 1, ["scale"] = 2.0, ["duration"] = Config.Zones[mainZone].TimeToRob}
+				local blip = {["x"] = Config.Zones[mainZone].Pos.x, ["y"] = Config.Zones[mainZone].Pos.y, ["z"] = Config.Zones[mainZone].Pos.z, ["range"] = false, ["text"] = "[PD] " .. mainZone .. " Robbery", ["sprite"] = 161, ["color"] = 1, ["scale"] = 2.0, ["duration"] = Config.Zones[mainZone].TimeToRob}
 				if xPlayer.job.name == 'police' or xPlayer.job.name == 'journalist' then
 					TriggerClientEvent('esx_advanced_holdup:robPoliceNotification', xPlayer.source, mainZone)
 					TriggerClientEvent("tcrp-blips:addblip", xPlayers[i], blip)

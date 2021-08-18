@@ -80,7 +80,7 @@ AddEventHandler('99kr-shops:setcopblips', function(coords)
     local source   = source
     local xPlayer  = ESX.GetPlayerFromId(source)
     local xPlayers = ESX.GetPlayers()
-    local blip = {["x"] = coords.x, ["y"] = coords.y, ["z"] = coords.z, ["text"] = "[PD] Shoplifting", ["sprite"] = 161, ["color"] = 10, ["scale"] = 1.0, ["duration"] = Config.CopBlipInterval}
+    local blip = {["x"] = coords.x, ["y"] = coords.y, ["z"] = coords.z, ["text"] = "[PD] Shoplifting", ["longrange"] = true, ["sprite"] = 161, ["color"] = 10, ["scale"] = 1.0, ["duration"] = Config.CopBlipInterval}
 
     for i = 1, #xPlayers, 1 do
         local xPlayer = ESX.GetPlayerFromId(xPlayers[i])

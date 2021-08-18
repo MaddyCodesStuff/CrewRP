@@ -545,7 +545,11 @@ AddEventHandler("tcrp-blips:addblip", function(blipconfig, entity)
     if blipconfig["Info.icon3Left"] and blipconfig["Info.icon3Right"] and blipconfig["Info.icon3ID"] and blipconfig["Info.icon3Color"] and blip ["Info.icon3Checkmark"] ~= nil then
         exports['blip_info']:AddBlipInfoIcon(blip, blipconfig["Info.icon3Left"], blipconfig["Info.icon3Right"], blipconfig["Info.icon3ID"], blipconfig["Info.icon3Color"], blipconfig["Info.icon3Checkmark"])
     end
-    SetBlipAsShortRange(blip, true)
+    if not blipconfig["longrange"] then
+        SetBlipAsShortRange(blip, true)
+    else
+        SetBlipAsShortRange(blip, false)
+    end
     if blipconfig["text"] ~= nil then 
         bliptext = blipconfig["text"]
     else 
@@ -681,7 +685,7 @@ AddEventHandler("tcrp-blips:updateblip", function(blipsource, table)
         if blipconfig["Info.icon3Left"] and blipconfig["Info.icon3Right"] and blipconfig["Info.icon3ID"] and blipconfig["Info.icon3Color"] and blip ["Info.icon3Checkmark"] ~= nil then
             exports['blip_info']:AddBlipInfoIcon(blip, blipconfig["Info.icon3Left"], blipconfig["Info.icon3Right"], blipconfig["Info.icon3ID"], blipconfig["Info.icon3Color"], blipconfig["Info.icon3Checkmark"])
         end
-        SetBlipAsShortRange(blip, true)
+        SetBlipAsShortRange(blip, blipconfig["range"] or true)
     end
 end)
 

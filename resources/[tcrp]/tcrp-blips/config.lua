@@ -316,6 +316,20 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Ammunation Default",
     },
+    [108]  = {
+        ["name"]    = "Palomino Ammunation",
+        ["x"] = 2568.68, ["y"] = 301.27,
+        ["category"]= "Ammu-Nation",
+        ["text"]    = "Ammu-Nation",
+        ["sprite"]  = 110,
+        ["color"]   = 22,
+        ["layer"]   = 15,
+        ["Info.toggle"] = true,
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Gun Store",
+        ["Info.nameLeft"] = "Gun Range",["Info.nameRight"] = "No",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Ammunation Default",
+    },
 
     --Restaurants--
     [18]  = {
