@@ -228,7 +228,7 @@ AddEventHandler('esx_outlawalert:gunshotInProgress', function(targetCoords, from
             message = message .. ' from vehicle'
             sprite  = 610
         end
-        local blip = {["x"] = targetCoords.x, ["y"] = targetCoords.y, ["z"] = targetCoords.z, ["text"] = message, ["sprite"] = sprite, ["color"] = 29, ["scale"] = 1.2, ["layer"] = 35, ["flash"] = true, ["flashinterval"] = 1000, ["duration"] = 30}
+        local blip = {["x"] = targetCoords.x, ["y"] = targetCoords.y, ["z"] = targetCoords.z, ["text"] = message, ["longrange"] = true, ["sprite"] = sprite, ["color"] = 29, ["scale"] = 1.2, ["layer"] = 35, ["flash"] = true, ["flashinterval"] = 1000, ["duration"] = 30}
         TriggerEvent("tcrp-blips:addblip", blip)
     end
 end)
@@ -236,7 +236,7 @@ end)
 RegisterNetEvent('esx_outlawalert:explosionInProgress')
 AddEventHandler('esx_outlawalert:explosionInProgress', function(targetCoords)
     if isPlayerWhitelisted and Config.GunshotAlert then
-        local blip = {["x"] = targetCoords.x, ["y"] = targetCoords.y, ["z"] = targetCoords.z, ["text"] = "[PD] Explosion", ["sprite"] = 486, ["color"] = 29, ["scale"] = 1.4, ["layer"] = 35, ["flash"] = true, ["flashinterval"] = 1000, ["duration"] = 30}
+        local blip = {["x"] = targetCoords.x, ["y"] = targetCoords.y, ["z"] = targetCoords.z, ["text"] = "[PD] Explosion", ["longrange"] = true, ["sprite"] = 486, ["color"] = 29, ["scale"] = 1.4, ["layer"] = 35, ["flash"] = true, ["flashinterval"] = 1000, ["duration"] = 30}
         TriggerEvent("tcrp-blips:addblip", blip)
     end
 end)
