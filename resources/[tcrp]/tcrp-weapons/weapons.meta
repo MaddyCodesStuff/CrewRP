@@ -4074,17 +4074,17 @@
             <GroundDisturbFxNameWater />
             <GroundDisturbFxNameFoliage />
           </Fx>
-          <InitialRumbleDuration value="150" />
-          <InitialRumbleIntensity value="0.300000" />
-          <InitialRumbleIntensityTrigger value="0.850000" />
-          <RumbleDuration value="80" />
-          <RumbleIntensity value="0.200000" />
-          <RumbleIntensityTrigger value="0.800000" />
-          <RumbleDamageIntensity value="1.000000" />
-          <InitialRumbleDurationFps value="120" />
-          <InitialRumbleIntensityFps value="0.600000" />
-          <RumbleDurationFps value="80" />
-          <RumbleIntensityFps value="0.600000" />
+          <InitialRumbleDuration value="0" />
+          <InitialRumbleIntensity value="0.000000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.000000" />
@@ -4128,12 +4128,12 @@
           <RecoilShakeHashFirstPerson>FPS_PISTOL_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash />
           <MinTimeBetweenRecoilShakes value="150" />
-          <RecoilShakeAmplitude value="1.000000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
-          <IkRecoilDisplacement value="0.01" />
-          <IkRecoilDisplacementScope value="0.005" />
-          <IkRecoilDisplacementScaleBackward value="1.0" />
-          <IkRecoilDisplacementScaleVertical value="0.4" />
+          <IkRecoilDisplacement value="0.00" />
+          <IkRecoilDisplacementScope value="0.00" />
+          <IkRecoilDisplacementScaleBackward value="0.0" />
+          <IkRecoilDisplacementScaleVertical value="0.0" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.200000" y="0.100000" z="0.600000" />
           <AimProbeLengthMin value="0.300000" />
@@ -4367,17 +4367,17 @@
             <GroundDisturbFxNameWater />
             <GroundDisturbFxNameFoliage />
           </Fx>
-          <InitialRumbleDuration value="160" />
-          <InitialRumbleIntensity value="0.400000" />
-          <InitialRumbleIntensityTrigger value="0.900000" />
-          <RumbleDuration value="90" />
-          <RumbleIntensity value="0.400000" />
-          <RumbleIntensityTrigger value="0.850000" />
-          <RumbleDamageIntensity value="1.000000" />
-          <InitialRumbleDurationFps value="160" />
-          <InitialRumbleIntensityFps value="0.400000" />
-          <RumbleDurationFps value="100" />
-          <RumbleIntensityFps value="0.500000" />
+          <InitialRumbleDuration value="0" />
+          <InitialRumbleIntensity value="0.000000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.000000" />
@@ -4421,12 +4421,12 @@
           <RecoilShakeHashFirstPerson>FPS_PISTOL_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash />
           <MinTimeBetweenRecoilShakes value="150" />
-          <RecoilShakeAmplitude value="1.000000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
           <IkRecoilDisplacement value="0.005" />
-          <IkRecoilDisplacementScope value="0.005" />
-          <IkRecoilDisplacementScaleBackward value="1.0" />
-          <IkRecoilDisplacementScaleVertical value="0.4" />
+          <IkRecoilDisplacementScope value="0.00" />
+          <IkRecoilDisplacementScaleBackward value="0.0" />
+          <IkRecoilDisplacementScaleVertical value="0.0" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.225000" y="0.100000" z="0.600000" />
           <AimProbeLengthMin value="0.375000" />
@@ -4660,17 +4660,17 @@
             <GroundDisturbFxNameWater />
             <GroundDisturbFxNameFoliage />
           </Fx>
-          <InitialRumbleDuration value="125" />
-          <InitialRumbleIntensity value="0.400000" />
-          <InitialRumbleIntensityTrigger value="0.900000" />
-          <RumbleDuration value="100" />
-          <RumbleIntensity value="0.120000" />
-          <RumbleIntensityTrigger value="0.700000" />
-          <RumbleDamageIntensity value="1.000000" />
-          <InitialRumbleDurationFps value="125" />
-          <InitialRumbleIntensityFps value="1.000000" />
-          <RumbleDurationFps value="100" />
-          <RumbleIntensityFps value="0.820000" />
+          <InitialRumbleDuration value="0" />
+          <InitialRumbleIntensity value="0.000000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.000000" />
@@ -4697,9 +4697,9 @@
           <FirstPersonRNGRotationOffset x="0.000000" y="0.000000" z="0.000000" />
           <FirstPersonLTOffset x="0.000000" y="0.000000" z="0.000000" />
           <FirstPersonLTRotationOffset x="0.000000" y="0.000000" z="0.000000" />
-          <FirstPersonScopeOffset x="0.00000" y="0.0000" z="0.0070" />
+          <FirstPersonScopeOffset x="0.00000" y="0.0000" z="0.0030" />
           <FirstPersonScopeAttachmentOffset x="0.00000" y="0.0000" z="0.0000" />
-          <FirstPersonScopeRotationOffset x="-0.30000" y="0.0000" z="0.0000" />
+          <FirstPersonScopeRotationOffset x="0.0000" y="0.0000" z="0.0000" />
           <FirstPersonScopeAttachmentRotationOffset x="0.00000" y="0.0000" z="0.0000" />
           <FirstPersonAsThirdPersonIdleOffset x="0.075" y="0.000000" z="0.000000" />
           <FirstPersonAsThirdPersonRNGOffset x="0.00" y="0.00" z="0.020" />
@@ -4714,12 +4714,12 @@
           <RecoilShakeHashFirstPerson>FPS_SMG_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash />
           <MinTimeBetweenRecoilShakes value="80" />
-          <RecoilShakeAmplitude value="0.500000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
           <IkRecoilDisplacement value="0.0" />
           <IkRecoilDisplacementScope value="0.0" />
-          <IkRecoilDisplacementScaleBackward value="1.0" />
-          <IkRecoilDisplacementScaleVertical value="0.4" />
+          <IkRecoilDisplacementScaleBackward value="0.0" />
+          <IkRecoilDisplacementScaleVertical value="0.0" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.215000" y="0.100000" z="0.600000" />
           <AimProbeLengthMin value="0.425000" />
@@ -4953,17 +4953,17 @@
             <GroundDisturbFxNameWater />
             <GroundDisturbFxNameFoliage />
           </Fx>
-          <InitialRumbleDuration value="145" />
-          <InitialRumbleIntensity value="0.500000" />
-          <InitialRumbleIntensityTrigger value="0.950000" />
-          <RumbleDuration value="125" />
-          <RumbleIntensity value="0.500000" />
-          <RumbleIntensityTrigger value="0.950000" />
-          <RumbleDamageIntensity value="1.000000" />
-          <InitialRumbleDurationFps value="180" />
-          <InitialRumbleIntensityFps value="1.000000" />
-          <RumbleDurationFps value="150" />
-          <RumbleIntensityFps value="1.000000" />
+          <InitialRumbleDuration value="0" />
+          <InitialRumbleIntensity value="0.000000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.000000" />
@@ -4990,7 +4990,7 @@
           <FirstPersonRNGRotationOffset x="0.000000" y="0.000000" z="0.000000" />
           <FirstPersonLTOffset x="0.000000" y="0.000000" z="0.000000" />
           <FirstPersonLTRotationOffset x="0.000000" y="0.000000" z="0.000000" />
-          <FirstPersonScopeOffset x="0.00100" y="0.0000" z="-0.008000" />
+          <FirstPersonScopeOffset x="0.00100" y="0.0000" z="-0.006000" />
           <FirstPersonScopeAttachmentOffset x="0.00000" y="0.00000" z="0.00000" />
           <FirstPersonScopeRotationOffset x="0.50000" y="0.0000" z="0.0000" />
           <FirstPersonScopeAttachmentRotationOffset x="0.00000" y="0.0000" z="0.0000" />
@@ -5007,12 +5007,12 @@
           <RecoilShakeHashFirstPerson>FPS_PISTOL_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash />
           <MinTimeBetweenRecoilShakes value="150" />
-          <RecoilShakeAmplitude value="1.500000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
-          <IkRecoilDisplacement value="0.01" />
-          <IkRecoilDisplacementScope value="0.009" />
-          <IkRecoilDisplacementScaleBackward value="1.0" />
-          <IkRecoilDisplacementScaleVertical value="0.4" />
+          <IkRecoilDisplacement value="0.00" />
+          <IkRecoilDisplacementScope value="0.00" />
+          <IkRecoilDisplacementScaleBackward value="0.0" />
+          <IkRecoilDisplacementScaleVertical value="0.0" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.215000" y="0.100000" z="0.600000" />
           <AimProbeLengthMin value="0.425000" />
@@ -5246,17 +5246,17 @@
             <GroundDisturbFxNameWater />
             <GroundDisturbFxNameFoliage />
           </Fx>
-          <InitialRumbleDuration value="86" />
-          <InitialRumbleIntensity value="0.366000" />
-          <InitialRumbleIntensityTrigger value="0.950000" />
-          <RumbleDuration value="96" />
-          <RumbleIntensity value="0.100000" />
-          <RumbleIntensityTrigger value="0.800000" />
-          <RumbleDamageIntensity value="1.000000" />
-	  <InitialRumbleDurationFps value="106" />
-          <InitialRumbleIntensityFps value="0.400000" />
-          <RumbleDurationFps value="95" />
-          <RumbleIntensityFps value="0.600000" />
+          <InitialRumbleDuration value="0" />
+          <InitialRumbleIntensity value="0.000000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="2.500000" />
@@ -5284,9 +5284,9 @@
           <FirstPersonRNGRotationOffset x="0.000000" y="0.000000" z="2.000000" />
           <FirstPersonLTOffset x="0.000000" y="0.000000" z="0.000000" />
           <FirstPersonLTRotationOffset x="0.000000" y="0.000000" z="0.000000" />
-          <FirstPersonScopeOffset x="0.00000" y="-0.0400" z="0.00000" />
-          <FirstPersonScopeAttachmentOffset x="0.0010" y="-0.02000" z="-0.0160" />
-          <FirstPersonScopeRotationOffset x="0.0000" y="0.0000" z="0.2000" />
+          <FirstPersonScopeOffset x="0.00000" y="-0.1000" z="0.009000" />
+          <FirstPersonScopeAttachmentOffset x="0.0010" y="-0.02000" z="0.0000" />
+          <FirstPersonScopeRotationOffset x="-0.200" y="0.0000" z="0.2000" />
           <FirstPersonScopeAttachmentRotationOffset x="0.00000" y="0.00000" z="0.2000" />
           <FirstPersonAsThirdPersonIdleOffset x="0.075" y="0.00000" z="0.02500000" />
           <FirstPersonAsThirdPersonRNGOffset x="0.000" y="0.000000" z="-0.15" />
@@ -5301,12 +5301,12 @@
           <RecoilShakeHashFirstPerson>FPS_SMG_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash>DEFAULT_THIRD_PERSON_ACCURACY_OFFSET_SHAKE</AccuracyOffsetShakeHash>
           <MinTimeBetweenRecoilShakes value="0" />
-          <RecoilShakeAmplitude value="0.333000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
           <IkRecoilDisplacement value="0.0" />
-          <IkRecoilDisplacementScope value="0.001" />
-          <IkRecoilDisplacementScaleBackward value="1.0" />
-          <IkRecoilDisplacementScaleVertical value="0.4" />
+          <IkRecoilDisplacementScope value="0.00" />
+          <IkRecoilDisplacementScaleBackward value="0.0" />
+          <IkRecoilDisplacementScaleVertical value="0.0" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.260000" y="0.125000" z="0.300000" />
           <AimProbeLengthMin value="0.300000" />
@@ -5549,17 +5549,17 @@
             <GroundDisturbFxNameWater />
             <GroundDisturbFxNameFoliage />
           </Fx>
-          <InitialRumbleDuration value="120" />
-          <InitialRumbleIntensity value="0.150000" />
-          <InitialRumbleIntensityTrigger value="0.900000" />
-          <RumbleDuration value="95" />
-          <RumbleIntensity value="0.120000" />
-          <RumbleIntensityTrigger value="0.700000" />
-          <RumbleDamageIntensity value="1.000000" />
-	  <InitialRumbleDurationFps value="120" />
-          <InitialRumbleIntensityFps value="0.750000" />
-          <RumbleDurationFps value="80" />
-          <RumbleIntensityFps value="0.380000" />
+          <InitialRumbleDuration value="0" />
+          <InitialRumbleIntensity value="0.000000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="2.500000" />
@@ -5587,9 +5587,9 @@
           <FirstPersonRNGRotationOffset x="2.500000" y="0.000000" z="2.500000" />
           <FirstPersonLTOffset x="0.000000" y="0.000000" z="0.000000" />
           <FirstPersonLTRotationOffset x="0.000000" y="0.000000" z="2.000000" />
-          <FirstPersonScopeOffset x="0.00000" y="0.0000" z="-0.014" />
+          <FirstPersonScopeOffset x="0.00000" y="0.0000" z="-0.012" />
           <FirstPersonScopeAttachmentOffset x="0.00000" y="0.15000" z="-0.02800" />
-          <FirstPersonScopeRotationOffset x="-0.60000" y="0.0000" z="0.0000" />
+          <FirstPersonScopeRotationOffset x="-1.0000" y="0.0000" z="0.0000" />
           <FirstPersonScopeAttachmentRotationOffset x="0.00000" y="0.0000" z="0.0000" />
           <FirstPersonAsThirdPersonIdleOffset x="-0.100000" y="0.050000" z="-0.05" />
           <FirstPersonAsThirdPersonRNGOffset x="-0.025000" y="0.000000" z="-0.075000" />
@@ -5604,12 +5604,12 @@
           <RecoilShakeHashFirstPerson>FPS_SMG_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash>DEFAULT_THIRD_PERSON_ACCURACY_OFFSET_SHAKE</AccuracyOffsetShakeHash>
           <MinTimeBetweenRecoilShakes value="0" />
-          <RecoilShakeAmplitude value="0.333000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
           <IkRecoilDisplacement value="0.0" />
           <IkRecoilDisplacementScope value="0.0" />
-          <IkRecoilDisplacementScaleBackward value="1.0" />
-          <IkRecoilDisplacementScaleVertical value="0.4" />
+          <IkRecoilDisplacementScaleBackward value="0.0" />
+          <IkRecoilDisplacementScaleVertical value="0.0" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.210000" y="0.200000" z="0.600000" />
           <AimProbeLengthMin value="0.400000" />
@@ -5852,17 +5852,17 @@
             <GroundDisturbFxNameWater />
             <GroundDisturbFxNameFoliage />
           </Fx>
-          <InitialRumbleDuration value="120" />
-          <InitialRumbleIntensity value="0.150000" />
-          <InitialRumbleIntensityTrigger value="0.900000" />
-          <RumbleDuration value="80" />
-          <RumbleIntensity value="0.480000" />
-          <RumbleIntensityTrigger value="0.650000" />
-          <RumbleDamageIntensity value="1.000000" />
-	  <InitialRumbleDurationFps value="100" />
-          <InitialRumbleIntensityFps value="0.900000" />
-          <RumbleDurationFps value="95" />
-          <RumbleIntensityFps value="0.900000" />
+          <InitialRumbleDuration value="0" />
+          <InitialRumbleIntensity value="0.000000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" /> 
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="2.500000" />
@@ -5890,9 +5890,9 @@
           <FirstPersonRNGRotationOffset x="2.000000" y="0.000000" z="2.000000" />
           <FirstPersonLTOffset x="0.000000" y="0.000000" z="0.000000" />
           <FirstPersonLTRotationOffset x="3.000000" y="0.000000" z="0.000000" />
-          <FirstPersonScopeOffset x="0.00200" y="0.0800" z="-0.0110" />
-          <FirstPersonScopeAttachmentOffset x="0.00100" y="0.09000" z="-0.03200" />
-          <FirstPersonScopeRotationOffset x="-0.40000" y="0.0000" z="0.0000" />
+          <FirstPersonScopeOffset x="0.00200" y="0.0800" z="-0.010" />
+          <FirstPersonScopeAttachmentOffset x="0.00100" y="0.09000" z="0.00000" />
+          <FirstPersonScopeRotationOffset x="-1.0000" y="0.0000" z="0.0000" />
           <FirstPersonScopeAttachmentRotationOffset x="0.00000" y="0.0000" z="0.0000" />
           <FirstPersonAsThirdPersonIdleOffset x="-0.07500000" y="0.000000" z="-0.05" />
           <FirstPersonAsThirdPersonRNGOffset x="-0.025000" y="0.000000" z="-0.075000" />
@@ -5907,12 +5907,12 @@
           <RecoilShakeHashFirstPerson>FPS_SMG_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash>DEFAULT_THIRD_PERSON_ACCURACY_OFFSET_SHAKE</AccuracyOffsetShakeHash>
           <MinTimeBetweenRecoilShakes value="0" />
-          <RecoilShakeAmplitude value="0.333000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
           <IkRecoilDisplacement value="0.0" />
           <IkRecoilDisplacementScope value="0.0" />
-          <IkRecoilDisplacementScaleBackward value="1.0" />
-          <IkRecoilDisplacementScaleVertical value="0.4" />
+          <IkRecoilDisplacementScaleBackward value="0.0" />
+          <IkRecoilDisplacementScaleVertical value="0.0" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.170000" y="0.300000" z="0.400000" />
           <AimProbeLengthMin value="0.300000" />
@@ -6155,17 +6155,17 @@
             <GroundDisturbFxNameWater />
             <GroundDisturbFxNameFoliage />
           </Fx>
-          <InitialRumbleDuration value="120" />
-          <InitialRumbleIntensity value="0.650000" />
-          <InitialRumbleIntensityTrigger value="0.950000" />
-          <RumbleDuration value="80" />
-          <RumbleIntensity value="0.600000" />
-          <RumbleIntensityTrigger value="0.850000" />
-          <RumbleDamageIntensity value="1.000000" />
-          <InitialRumbleDurationFps value="110" />
-          <InitialRumbleIntensityFps value="0.750000" />
-          <RumbleDurationFps value="80" />
-          <RumbleIntensityFps value="0.850000" />
+          <InitialRumbleDuration value="0" />
+          <InitialRumbleIntensity value="0.000000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.700000" />
@@ -6210,12 +6210,12 @@
           <RecoilShakeHashFirstPerson>FPS_ASSAULT_RIFLE_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash>DEFAULT_THIRD_PERSON_ACCURACY_OFFSET_SHAKE</AccuracyOffsetShakeHash>
           <MinTimeBetweenRecoilShakes value="100" />
-          <RecoilShakeAmplitude value="0.333000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
           <IkRecoilDisplacement value="0.0" />
           <IkRecoilDisplacementScope value="0.0" />
-          <IkRecoilDisplacementScaleBackward value="1.0" />
-          <IkRecoilDisplacementScaleVertical value="0.4" />
+          <IkRecoilDisplacementScaleBackward value="0.0" />
+          <IkRecoilDisplacementScaleVertical value="0.0" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.200000" y="0.300000" z="0.600000" />
           <AimProbeLengthMin value="0.520000" />
@@ -6467,17 +6467,17 @@
             <GroundDisturbFxNameWater />
             <GroundDisturbFxNameFoliage />
           </Fx>
-          <InitialRumbleDuration value="90" />
-          <InitialRumbleIntensity value="0.700000" />
-          <InitialRumbleIntensityTrigger value="0.950000" />
-          <RumbleDuration value="90" />
-          <RumbleIntensity value="0.100000" />
-          <RumbleIntensityTrigger value="0.800000" />
-          <RumbleDamageIntensity value="1.000000" />
-	  <InitialRumbleDurationFps value="100" />
-          <InitialRumbleIntensityFps value="1.000000" />
-          <RumbleDurationFps value="95" />
-          <RumbleIntensityFps value="0.800000" />
+          <InitialRumbleDuration value="0" />
+          <InitialRumbleIntensity value="0.000000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.700000" />
@@ -6522,12 +6522,12 @@
           <RecoilShakeHashFirstPerson>FPS_ASSAULT_RIFLE_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash>DEFAULT_THIRD_PERSON_ACCURACY_OFFSET_SHAKE</AccuracyOffsetShakeHash>
           <MinTimeBetweenRecoilShakes value="100" />
-          <RecoilShakeAmplitude value="0.333000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
           <IkRecoilDisplacement value="0.0" />
           <IkRecoilDisplacementScope value="0.0" />
-          <IkRecoilDisplacementScaleBackward value="1.0" />
-          <IkRecoilDisplacementScaleVertical value="0.4" />
+          <IkRecoilDisplacementScaleBackward value="0.0" />
+          <IkRecoilDisplacementScaleVertical value="0.0" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.250000" y="0.200000" z="0.600000" />
           <AimProbeLengthMin value="0.430000" />
@@ -6783,17 +6783,17 @@
             <GroundDisturbFxNameWater />
             <GroundDisturbFxNameFoliage />
           </Fx>
-          <InitialRumbleDuration value="150" />
-          <InitialRumbleIntensity value="0.400000" />
-          <InitialRumbleIntensityTrigger value="0.900000" />
-          <RumbleDuration value="90" />
-          <RumbleIntensity value="0.100000" />
-          <RumbleIntensityTrigger value="0.700000" />
-          <RumbleDamageIntensity value="1.000000" />
-	  <InitialRumbleDurationFps value="150" />
-          <InitialRumbleIntensityFps value="0.700000" />
-          <RumbleDurationFps value="95" />
-          <RumbleIntensityFps value="0.700000" />
+          <InitialRumbleDuration value="0" />
+          <InitialRumbleIntensity value="0.000000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.700000" />
@@ -6838,12 +6838,12 @@
           <RecoilShakeHashFirstPerson>FPS_ASSAULT_RIFLE_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash>DEFAULT_THIRD_PERSON_ACCURACY_OFFSET_SHAKE</AccuracyOffsetShakeHash>
           <MinTimeBetweenRecoilShakes value="100" />
-          <RecoilShakeAmplitude value="0.333000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
           <IkRecoilDisplacement value="0.0" />
           <IkRecoilDisplacementScope value="0.0" />
-          <IkRecoilDisplacementScaleBackward value="1.0" />
-          <IkRecoilDisplacementScaleVertical value="0.4" />
+          <IkRecoilDisplacementScaleBackward value="0.0" />
+          <IkRecoilDisplacementScaleVertical value="0.0" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.150000" y="0.250000" z="0.475000" />
           <AimProbeLengthMin value="0.355000" />
@@ -7086,17 +7086,17 @@
             <GroundDisturbFxNameWater />
             <GroundDisturbFxNameFoliage />
           </Fx>
-          <InitialRumbleDuration value="150" />
-          <InitialRumbleIntensity value="0.400000" />
-          <InitialRumbleIntensityTrigger value="0.950000" />
-          <RumbleDuration value="120" />
-          <RumbleIntensity value="0.250000" />
-          <RumbleIntensityTrigger value="0.850000" />
-          <RumbleDamageIntensity value="1.000000" />
-	  <InitialRumbleDurationFps value="200" />
-          <InitialRumbleIntensityFps value="1.000000" />
-          <RumbleDurationFps value="200" />
-          <RumbleIntensityFps value="0.900000" />
+          <InitialRumbleDuration value="0" />
+          <InitialRumbleIntensity value="0.000000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.700000" />
@@ -7141,12 +7141,12 @@
           <RecoilShakeHashFirstPerson>FPS_MG_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash>DEFAULT_THIRD_PERSON_ACCURACY_OFFSET_SHAKE</AccuracyOffsetShakeHash>
           <MinTimeBetweenRecoilShakes value="0" />
-          <RecoilShakeAmplitude value="1.000000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
           <IkRecoilDisplacement value="0.0" />
           <IkRecoilDisplacementScope value="0.0" />
-          <IkRecoilDisplacementScaleBackward value="1.0" />
-          <IkRecoilDisplacementScaleVertical value="0.4" />
+          <IkRecoilDisplacementScaleBackward value="0.0" />
+          <IkRecoilDisplacementScaleVertical value="0.0" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.285000" y="0.175000" z="0.275000" />
           <AimProbeLengthMin value="0.525000" />
@@ -7371,17 +7371,17 @@
             <GroundDisturbFxNameWater />
             <GroundDisturbFxNameFoliage />
           </Fx>
-          <InitialRumbleDuration value="155" />
-          <InitialRumbleIntensity value="0.400000" />
-          <InitialRumbleIntensityTrigger value="0.950000" />
-          <RumbleDuration value="100" />
-          <RumbleIntensity value="0.250000" />
-          <RumbleIntensityTrigger value="0.850000" />
-          <RumbleDamageIntensity value="1.000000" />
-          <InitialRumbleDurationFps value="150" />
-          <InitialRumbleIntensityFps value="0.600000" />
-          <RumbleDurationFps value="150" />
-          <RumbleIntensityFps value="0.500000" />
+          <InitialRumbleDuration value="0" />
+          <InitialRumbleIntensity value="0.000000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.700000" />
@@ -7409,9 +7409,9 @@
           <FirstPersonRNGRotationOffset x="0.000000" y="0.000000" z="0.000000" />
           <FirstPersonLTOffset x="0.000000" y="0.000000" z="0.000000" />
           <FirstPersonLTRotationOffset x="0.000000" y="0.000000" z="0.000000" />
-          <FirstPersonScopeOffset x="0.00275" y="-0.0750" z="-0.0260" />
+          <FirstPersonScopeOffset x="0.00275" y="-0.0750" z="-0.0290" />
           <FirstPersonScopeAttachmentOffset x="0.00300" y="-0.0900" z="-0.0490" />
-          <FirstPersonScopeRotationOffset x="-0.60000" y="0.0000" z="0.0000" />
+          <FirstPersonScopeRotationOffset x="-0.500" y="0.0000" z="0.0000" />
           <FirstPersonScopeAttachmentRotationOffset x="-0.60000" y="0.0000" z="0.0000" />
           <FirstPersonAsThirdPersonIdleOffset x="-0.050000" y="0.000000" z="-0.050000" />
           <FirstPersonAsThirdPersonRNGOffset x="0.000000" y="0.000000" z="-0.075000" />
@@ -7426,12 +7426,12 @@
           <RecoilShakeHashFirstPerson>FPS_MG_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash>DEFAULT_THIRD_PERSON_ACCURACY_OFFSET_SHAKE</AccuracyOffsetShakeHash>
           <MinTimeBetweenRecoilShakes value="80" />
-          <RecoilShakeAmplitude value="0.800000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
           <IkRecoilDisplacement value="0.0" />
           <IkRecoilDisplacementScope value="0.000" />
-          <IkRecoilDisplacementScaleBackward value="1.0" />
-          <IkRecoilDisplacementScaleVertical value="0.4" />
+          <IkRecoilDisplacementScaleBackward value="0.0" />
+          <IkRecoilDisplacementScaleVertical value="0.0" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.275000" y="0.175000" z="0.275000" />
           <AimProbeLengthMin value="0.435000" />
@@ -7650,17 +7650,17 @@
             <GroundDisturbFxNameWater />
             <GroundDisturbFxNameFoliage />
           </Fx>
-          <InitialRumbleDuration value="200" />
-          <InitialRumbleIntensity value="1.000000" />
-          <InitialRumbleIntensityTrigger value="0.950000" />
-          <RumbleDuration value="200" />
-          <RumbleIntensity value="1.000000" />
-          <RumbleIntensityTrigger value="0.950000" />
-          <RumbleDamageIntensity value="1.000000" />
-	  <InitialRumbleDurationFps value="250" />
-          <InitialRumbleIntensityFps value="1.000000" />
-          <RumbleDurationFps value="250" />
-          <RumbleIntensityFps value="0.900000" />
+          <InitialRumbleDuration value="0" />
+          <InitialRumbleIntensity value="0.000000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.000000" />
@@ -7687,9 +7687,9 @@
           <FirstPersonRNGRotationOffset x="2.000000" y="0.000000" z="2.000000" />
           <FirstPersonLTOffset x="0.000000" y="0.000000" z="0.000000" />
           <FirstPersonLTRotationOffset x="1.000000" y="0.000000" z="0.000000" />
-          <FirstPersonScopeOffset x="0.00000" y="0.1000" z="0.0180" />
+          <FirstPersonScopeOffset x="0.00000" y="0.1000" z="0.016" />
           <FirstPersonScopeAttachmentOffset x="0.00000" y="0.0000" z="0.0150" />
-          <FirstPersonScopeRotationOffset x="0.00000" y="0.0000" z="0.0000" />
+          <FirstPersonScopeRotationOffset x="-2.5000" y="0.0000" z="0.0000" />
           <FirstPersonScopeAttachmentRotationOffset x="0.00000" y="0.0000" z="0.0000" />
           <FirstPersonAsThirdPersonIdleOffset x="-0.050000" y="0.000000" z="-0.050000" />
           <FirstPersonAsThirdPersonRNGOffset x="0.000000" y="0.000000" z="-0.075000" />
@@ -7704,12 +7704,12 @@
           <RecoilShakeHashFirstPerson>FPS_SHOTGUN_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash />
           <MinTimeBetweenRecoilShakes value="150" />
-          <RecoilShakeAmplitude value="2.000000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
           <IkRecoilDisplacement value="0.0" />
           <IkRecoilDisplacementScope value="0.0" />
-          <IkRecoilDisplacementScaleBackward value="1.0" />
-          <IkRecoilDisplacementScaleVertical value="0.4" />
+          <IkRecoilDisplacementScaleBackward value="0.0" />
+          <IkRecoilDisplacementScaleVertical value="0.0" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.225000" y="0.250500" z="0.500000" />
           <AimProbeLengthMin value="0.445000" />
@@ -7926,15 +7926,15 @@
           </Fx>
           <InitialRumbleDuration value="0" />
           <InitialRumbleIntensity value="0.000000" />
-          <InitialRumbleIntensityTrigger value="0.950000" />
-          <RumbleDuration value="200" />
-          <RumbleIntensity value="1.000000" />
-          <RumbleIntensityTrigger value="0.950000" />
-          <RumbleDamageIntensity value="1.000000" />
-	  <InitialRumbleDurationFps value="250" />
-          <InitialRumbleIntensityFps value="1.000000" />
-          <RumbleDurationFps value="250" />
-          <RumbleIntensityFps value="0.900000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.000000" />
@@ -7961,7 +7961,7 @@
           <FirstPersonRNGRotationOffset x="0.000000" y="0.000000" z="2.000000" />
           <FirstPersonLTOffset x="0.000000" y="0.000000" z="0.000000" />
           <FirstPersonLTRotationOffset x="0.000000" y="0.000000" z="0.000000" />
-          <FirstPersonScopeOffset x="0.00000" y="0.1500" z="0.0170" />
+          <FirstPersonScopeOffset x="0.00000" y="0.000" z="0.0170" />
           <FirstPersonScopeAttachmentOffset x="0.00000" y="0.0000" z="0.0150" />
           <FirstPersonScopeRotationOffset x="-0.50000" y="0.0000" z="0.0000" />
           <FirstPersonScopeAttachmentRotationOffset x="0.00000" y="0.0000" z="0.0000" />
@@ -7978,12 +7978,12 @@
           <RecoilShakeHashFirstPerson>FPS_SHOTGUN_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash />
           <MinTimeBetweenRecoilShakes value="150" />
-          <RecoilShakeAmplitude value="2.250000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
           <IkRecoilDisplacement value="0.0" />
           <IkRecoilDisplacementScope value="0.0" />
-          <IkRecoilDisplacementScaleBackward value="1.0" />
-          <IkRecoilDisplacementScaleVertical value="0.4" />
+          <IkRecoilDisplacementScaleBackward value="0.0" />
+          <IkRecoilDisplacementScaleVertical value="0.0" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.235000" y="0.125000" z="0.500000" />
           <AimProbeLengthMin value="0.365000" />
@@ -8180,17 +8180,17 @@
             <GroundDisturbFxNameWater />
             <GroundDisturbFxNameFoliage />
           </Fx>
-          <InitialRumbleDuration value="120" />
-          <InitialRumbleIntensity value="0.750000" />
-          <InitialRumbleIntensityTrigger value="0.950000" />
-          <RumbleDuration value="100" />
-          <RumbleIntensity value="0.750000" />
-          <RumbleIntensityTrigger value="0.950000" />
-          <RumbleDamageIntensity value="1.000000" />
-	  <InitialRumbleDurationFps value="120" />
-          <InitialRumbleIntensityFps value="0.750000" />
-          <RumbleDurationFps value="100" />
-          <RumbleIntensityFps value="0.750000" />
+          <InitialRumbleDuration value="0" />
+          <InitialRumbleIntensity value="0.000000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.000000" />
@@ -8234,12 +8234,12 @@
           <RecoilShakeHashFirstPerson>FPS_SHOTGUN_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash />
           <MinTimeBetweenRecoilShakes value="0" />
-          <RecoilShakeAmplitude value="0.666000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
           <IkRecoilDisplacement value="0.0" />
           <IkRecoilDisplacementScope value="0.0" />
-          <IkRecoilDisplacementScaleBackward value="1.0" />
-          <IkRecoilDisplacementScaleVertical value="0.4" />
+          <IkRecoilDisplacementScaleBackward value="0.0" />
+          <IkRecoilDisplacementScaleVertical value="0.0" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.265000" y="0.175000" z="0.550000" />
           <AimProbeLengthMin value="0.400000" />
@@ -8467,17 +8467,17 @@
             <GroundDisturbFxNameWater />
             <GroundDisturbFxNameFoliage />
           </Fx>
-          <InitialRumbleDuration value="200" />
-          <InitialRumbleIntensity value="1.000000" />
-          <InitialRumbleIntensityTrigger value="0.950000" />
-          <RumbleDuration value="200" />
-          <RumbleIntensity value="1.000000" />
-          <RumbleIntensityTrigger value="0.900000" />
-          <RumbleDamageIntensity value="1.000000" />
-	  <InitialRumbleDurationFps value="200" />
-          <InitialRumbleIntensityFps value="0.900000" />
-          <RumbleDurationFps value="200" />
-          <RumbleIntensityFps value="0.900000" />
+          <InitialRumbleDuration value="0" />
+          <InitialRumbleIntensity value="0.000000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.000000" />
@@ -8519,12 +8519,12 @@
           <RecoilShakeHashFirstPerson>FPS_SHOTGUN_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash />
           <MinTimeBetweenRecoilShakes value="150" />
-          <RecoilShakeAmplitude value="1.750000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
           <IkRecoilDisplacement value="0.0" />
           <IkRecoilDisplacementScope value="0.0" />
-          <IkRecoilDisplacementScaleBackward value="1.0" />
-          <IkRecoilDisplacementScaleVertical value="0.4" />
+          <IkRecoilDisplacementScaleBackward value="0.0" />
+          <IkRecoilDisplacementScaleVertical value="0.0" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.145000" y="0.275000" z="0.450000" />
           <AimProbeLengthMin value="0.310000" />
@@ -8728,17 +8728,17 @@
             <GroundDisturbFxNameWater />
             <GroundDisturbFxNameFoliage />
           </Fx>
-          <InitialRumbleDuration value="100" />
-          <InitialRumbleIntensity value="0.800000" />
-          <InitialRumbleIntensityTrigger value="0.300000" />
-          <RumbleDuration value="100" />
-          <RumbleIntensity value="0.800000" />
-          <RumbleIntensityTrigger value="0.300000" />
-          <RumbleDamageIntensity value="1.000000" />
-	  <InitialRumbleDurationFps value="150" />
-          <InitialRumbleIntensityFps value="1.000000" />
-          <RumbleDurationFps value="95" />
-          <RumbleIntensityFps value="1.000000" />
+          <InitialRumbleDuration value="0" />
+          <InitialRumbleIntensity value="0.000000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.000000" />
@@ -8782,12 +8782,12 @@
           <RecoilShakeHashFirstPerson>FPS_PISTOL_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash />
           <MinTimeBetweenRecoilShakes value="150" />
-          <RecoilShakeAmplitude value="0.333000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
           <IkRecoilDisplacement value="0.0" />
-          <IkRecoilDisplacementScope value="0.004" />
-          <IkRecoilDisplacementScaleBackward value="1.0" />
-          <IkRecoilDisplacementScaleVertical value="0.4" />
+          <IkRecoilDisplacementScope value="0.00" />
+          <IkRecoilDisplacementScaleBackward value="0.0" />
+          <IkRecoilDisplacementScaleVertical value="0.0" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.200000" y="0.100000" z="0.600000" />
           <AimProbeLengthMin value="0.380000" />
@@ -8962,17 +8962,17 @@
             <GroundDisturbFxNameWater />
             <GroundDisturbFxNameFoliage />
           </Fx>
-          <InitialRumbleDuration value="150" />
-          <InitialRumbleIntensity value="0.800000" />
-          <InitialRumbleIntensityTrigger value="0.850000" />
-          <RumbleDuration value="150" />
-          <RumbleIntensity value="0.800000" />
-          <RumbleIntensityTrigger value="0.850000" />
-          <RumbleDamageIntensity value="1.000000" />
-	  <InitialRumbleDurationFps value="220" />
-          <InitialRumbleIntensityFps value="1.000000" />
-          <RumbleDurationFps value="220" />
-          <RumbleIntensityFps value="1.000000" />
+          <InitialRumbleDuration value="0" />
+          <InitialRumbleIntensity value="0.000000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.000000" />
@@ -9011,12 +9011,12 @@
           <RecoilShakeHashFirstPerson>DEFAULT_FIRST_PERSON_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash />
           <MinTimeBetweenRecoilShakes value="150" />
-          <RecoilShakeAmplitude value="0.280000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
           <IkRecoilDisplacement value="0.0" />
           <IkRecoilDisplacementScope value="0.0" />
-          <IkRecoilDisplacementScaleBackward value="1.0" />
-          <IkRecoilDisplacementScaleVertical value="0.4" />
+          <IkRecoilDisplacementScaleBackward value="0.0" />
+          <IkRecoilDisplacementScaleVertical value="0.0" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.125000" y="0.225000" z="0.600000" />
           <AimProbeLengthMin value="0.590000" />
@@ -9223,17 +9223,17 @@
             <GroundDisturbFxNameWater />
             <GroundDisturbFxNameFoliage />
           </Fx>
-          <InitialRumbleDuration value="200" />
-          <InitialRumbleIntensity value="0.800000" />
-          <InitialRumbleIntensityTrigger value="0.950000" />
-          <RumbleDuration value="200" />
-          <RumbleIntensity value="0.800000" />
-          <RumbleIntensityTrigger value="0.950000" />
-          <RumbleDamageIntensity value="1.000000" />
-          <InitialRumbleDurationFps value="200" />
-          <InitialRumbleIntensityFps value="1.000000" />
-          <RumbleDurationFps value="200" />
-          <RumbleIntensityFps value="1.000000" />
+          <InitialRumbleDuration value="0" />
+          <InitialRumbleIntensity value="0.000000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.390000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.000000" />
@@ -9272,12 +9272,12 @@
           <RecoilShakeHashFirstPerson>DEFAULT_FIRST_PERSON_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash />
           <MinTimeBetweenRecoilShakes value="150" />
-          <RecoilShakeAmplitude value="0.280000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
           <IkRecoilDisplacement value="0.0" />
           <IkRecoilDisplacementScope value="0.0" />
-          <IkRecoilDisplacementScaleBackward value="1.0" />
-          <IkRecoilDisplacementScaleVertical value="0.4" />
+          <IkRecoilDisplacementScaleBackward value="0.0" />
+          <IkRecoilDisplacementScaleVertical value="0.0" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.100000" y="0.225000" z="0.600000" />
           <AimProbeLengthMin value="0.575000" />
@@ -9477,11 +9477,15 @@
           </Fx>
           <InitialRumbleDuration value="0" />
           <InitialRumbleIntensity value="0.000000" />
-          <InitialRumbleIntensityTrigger value="0.950000" />
-          <RumbleDuration value="120" />
-          <RumbleIntensity value="0.300000" />
-          <RumbleIntensityTrigger value="0.950000" />
-          <RumbleDamageIntensity value="1.000000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.000000" />
@@ -9516,12 +9520,12 @@
           <RecoilShakeHashFirstPerson>DEFAULT_FIRST_PERSON_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash />
           <MinTimeBetweenRecoilShakes value="150" />
-          <RecoilShakeAmplitude value="0.280000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
           <IkRecoilDisplacement value="0.0" />
           <IkRecoilDisplacementScope value="0.0" />
-          <IkRecoilDisplacementScaleBackward value="1.0" />
-          <IkRecoilDisplacementScaleVertical value="0.4" />
+          <IkRecoilDisplacementScaleBackward value="0.0" />
+          <IkRecoilDisplacementScaleVertical value="0.0" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.125000" y="0.225000" z="0.500000" />
           <AimProbeLengthMin value="0.575000" />
@@ -9675,15 +9679,15 @@
           </Fx>
           <InitialRumbleDuration value="0" />
           <InitialRumbleIntensity value="0.000000" />
-          <InitialRumbleIntensityTrigger value="0.800000" />
-          <RumbleDuration value="100" />
-          <RumbleIntensity value="0.800000" />
-          <RumbleIntensityTrigger value="0.800000" />
-          <RumbleDamageIntensity value="1.000000" />
-	  <InitialRumbleDurationFps value="150" />
-          <InitialRumbleIntensityFps value="1.000000" />
-          <RumbleDurationFps value="150" />
-          <RumbleIntensityFps value="0.900000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.000000" />
@@ -9728,12 +9732,12 @@
           <RecoilShakeHashFirstPerson>FPS_GRENADE_LAUNCHER_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash />
           <MinTimeBetweenRecoilShakes value="150" />
-          <RecoilShakeAmplitude value="0.500000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
           <IkRecoilDisplacement value="0.0" />
           <IkRecoilDisplacementScope value="0.0" />
-          <IkRecoilDisplacementScaleBackward value="1.0" />
-          <IkRecoilDisplacementScaleVertical value="0.4" />
+          <IkRecoilDisplacementScaleBackward value="0.0" />
+          <IkRecoilDisplacementScaleVertical value="0.0" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.200000" y="0.115000" z="0.400000" />
           <AimProbeLengthMin value="0.350000" />
@@ -9936,15 +9940,15 @@
           </Fx>
           <InitialRumbleDuration value="0" />
           <InitialRumbleIntensity value="0.000000" />
-          <InitialRumbleIntensityTrigger value="0.800000" />
-          <RumbleDuration value="100" />
-          <RumbleIntensity value="0.800000" />
-          <RumbleIntensityTrigger value="0.800000" />
-          <RumbleDamageIntensity value="1.000000" />
-	  <InitialRumbleDurationFps value="150" />
-          <InitialRumbleIntensityFps value="1.000000" />
-          <RumbleDurationFps value="150" />
-          <RumbleIntensityFps value="0.900000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.000000" />
@@ -9989,12 +9993,12 @@
           <RecoilShakeHashFirstPerson>FPS_GRENADE_LAUNCHER_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash />
           <MinTimeBetweenRecoilShakes value="150" />
-          <RecoilShakeAmplitude value="0.500000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
           <IkRecoilDisplacement value="0.0" />
           <IkRecoilDisplacementScope value="0.0" />
-          <IkRecoilDisplacementScaleBackward value="1.0" />
-          <IkRecoilDisplacementScaleVertical value="0.4" />
+          <IkRecoilDisplacementScaleBackward value="0.0" />
+          <IkRecoilDisplacementScaleVertical value="0.0" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.200000" y="0.115000" z="0.400000" />
           <AimProbeLengthMin value="0.350000" />
@@ -10197,15 +10201,15 @@
           </Fx>
           <InitialRumbleDuration value="0" />
           <InitialRumbleIntensity value="0.000000" />
-          <InitialRumbleIntensityTrigger value="0.950000" />
-          <RumbleDuration value="300" />
-          <RumbleIntensity value="0.400000" />
-          <RumbleIntensityTrigger value="0.950000" />
-          <RumbleDamageIntensity value="1.000000" />
-	  <InitialRumbleDurationFps value="250" />
-          <InitialRumbleIntensityFps value="1.000000" />
-          <RumbleDurationFps value="95" />
-          <RumbleIntensityFps value="1.000000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.000000" />
@@ -10252,12 +10256,12 @@
           <RecoilShakeHashFirstPerson>FPS_RPG_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash />
           <MinTimeBetweenRecoilShakes value="150" />
-          <RecoilShakeAmplitude value="1.000000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
           <IkRecoilDisplacement value="0.0" />
           <IkRecoilDisplacementScope value="0.0" />
-          <IkRecoilDisplacementScaleBackward value="1.0" />
-          <IkRecoilDisplacementScaleVertical value="0.4" />
+          <IkRecoilDisplacementScaleBackward value="0.0" />
+          <IkRecoilDisplacementScaleVertical value="0.0" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.200000" y="0.175000" z="0.700000" />
           <AimProbeLengthMin value="0.550000" />
@@ -10433,11 +10437,15 @@
           </Fx>
           <InitialRumbleDuration value="0" />
           <InitialRumbleIntensity value="0.000000" />
-          <InitialRumbleIntensityTrigger value="0.950000" />
-          <RumbleDuration value="200" />
-          <RumbleIntensity value="0.400000" />
-          <RumbleIntensityTrigger value="0.950000" />
-          <RumbleDamageIntensity value="1.000000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.000000" />
@@ -10472,12 +10480,12 @@
           <RecoilShakeHashFirstPerson>FPS_RPG_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash />
           <MinTimeBetweenRecoilShakes value="150" />
-          <RecoilShakeAmplitude value="1.000000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
           <IkRecoilDisplacement value="0.0" />
           <IkRecoilDisplacementScope value="0.0" />
-          <IkRecoilDisplacementScaleBackward value="1.0" />
-          <IkRecoilDisplacementScaleVertical value="0.4" />
+          <IkRecoilDisplacementScaleBackward value="0.0" />
+          <IkRecoilDisplacementScaleVertical value="0.0" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.200000" y="0.175000" z="0.700000" />
           <AimProbeLengthMin value="0.550000" />
@@ -10642,10 +10650,14 @@
           <InitialRumbleDuration value="0" />
           <InitialRumbleIntensity value="0.000000" />
           <InitialRumbleIntensityTrigger value="0.000000" />
-          <RumbleDuration value="200" />
-          <RumbleIntensity value="0.400000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
           <RumbleIntensityTrigger value="0.000000" />
-          <RumbleDamageIntensity value="1.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.000000" />
@@ -10680,12 +10692,12 @@
           <RecoilShakeHashFirstPerson>FPS_RPG_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash />
           <MinTimeBetweenRecoilShakes value="150" />
-          <RecoilShakeAmplitude value="1.000000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
           <IkRecoilDisplacement value="0.0" />
           <IkRecoilDisplacementScope value="0.0" />
-          <IkRecoilDisplacementScaleBackward value="1.0" />
-          <IkRecoilDisplacementScaleVertical value="0.4" />
+          <IkRecoilDisplacementScaleBackward value="0.0" />
+          <IkRecoilDisplacementScaleVertical value="0.0" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.200000" y="0.175000" z="0.700000" />
           <AimProbeLengthMin value="0.550000" />
@@ -10849,11 +10861,15 @@
           </Fx>
           <InitialRumbleDuration value="0" />
           <InitialRumbleIntensity value="0.000000" />
-          <InitialRumbleIntensityTrigger value="0.950000" />
-          <RumbleDuration value="200" />
-          <RumbleIntensity value="0.400000" />
-          <RumbleIntensityTrigger value="0.950000" />
-          <RumbleDamageIntensity value="1.000000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.000000" />
@@ -10888,12 +10904,12 @@
           <RecoilShakeHashFirstPerson>FPS_RPG_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash />
           <MinTimeBetweenRecoilShakes value="150" />
-          <RecoilShakeAmplitude value="1.000000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
           <IkRecoilDisplacement value="0.0" />
           <IkRecoilDisplacementScope value="0.0" />
-          <IkRecoilDisplacementScaleBackward value="1.0" />
-          <IkRecoilDisplacementScaleVertical value="0.4" />
+          <IkRecoilDisplacementScaleBackward value="0.0" />
+          <IkRecoilDisplacementScaleVertical value="0.0" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.200000" y="0.175000" z="0.700000" />
           <AimProbeLengthMin value="0.550000" />
@@ -11089,17 +11105,17 @@
             <GroundDisturbFxNameWater>weap_hvy_turbulance_water</GroundDisturbFxNameWater>
             <GroundDisturbFxNameFoliage>weap_hvy_turbulance_foliage</GroundDisturbFxNameFoliage>
           </Fx>
-          <InitialRumbleDuration value="90" />
-          <InitialRumbleIntensity value="0.500000" />
-          <InitialRumbleIntensityTrigger value="0.800000" />
-          <RumbleDuration value="90" />
-          <RumbleIntensity value="0.100000" />
-          <RumbleIntensityTrigger value="0.500000" />
-          <RumbleDamageIntensity value="1.000000" />
-	  <InitialRumbleDurationFps value="150" />
-          <InitialRumbleIntensityFps value="1.000000" />
-          <RumbleDurationFps value="100" />
-          <RumbleIntensityFps value="1.000000" />
+          <InitialRumbleDuration value="0" />
+          <InitialRumbleIntensity value="0.000000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.700000" />
@@ -11143,12 +11159,12 @@
           <RecoilShakeHashFirstPerson>FPS_MINIGUN_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash>DEFAULT_THIRD_PERSON_ACCURACY_OFFSET_SHAKE</AccuracyOffsetShakeHash>
           <MinTimeBetweenRecoilShakes value="100" />
-          <RecoilShakeAmplitude value="0.666000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
           <IkRecoilDisplacement value="0.0" />
           <IkRecoilDisplacementScope value="0.0" />
-          <IkRecoilDisplacementScaleBackward value="1.0" />
-          <IkRecoilDisplacementScaleVertical value="0.4" />
+          <IkRecoilDisplacementScaleBackward value="0.0" />
+          <IkRecoilDisplacementScaleVertical value="0.0" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.325000" y="0.150000" z="0.000000" />
           <AimProbeLengthMin value="0.325000" />
@@ -11325,14 +11341,14 @@
           <InitialRumbleDuration value="0" />
           <InitialRumbleIntensity value="0.000000" />
           <InitialRumbleIntensityTrigger value="0.000000" />
-          <RumbleDuration value="50" />
-          <RumbleIntensity value="0.100000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
           <RumbleIntensityTrigger value="0.000000" />
-          <RumbleDamageIntensity value="1.000000" />
-	  <InitialRumbleDurationFps value="150" />
-          <InitialRumbleIntensityFps value="1.000000" />
-          <RumbleDurationFps value="95" />
-          <RumbleIntensityFps value="1.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.000000" />
@@ -11540,10 +11556,14 @@
           <InitialRumbleDuration value="0" />
           <InitialRumbleIntensity value="0.000000" />
           <InitialRumbleIntensityTrigger value="0.000000" />
-          <RumbleDuration value="50" />
-          <RumbleIntensity value="0.100000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
           <RumbleIntensityTrigger value="0.000000" />
-          <RumbleDamageIntensity value="1.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.000000" />
@@ -11751,10 +11771,14 @@
           <InitialRumbleDuration value="0" />
           <InitialRumbleIntensity value="0.000000" />
           <InitialRumbleIntensityTrigger value="0.000000" />
-          <RumbleDuration value="50" />
-          <RumbleIntensity value="0.100000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
           <RumbleIntensityTrigger value="0.000000" />
-          <RumbleDamageIntensity value="1.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.000000" />
@@ -11962,10 +11986,14 @@
           <InitialRumbleDuration value="0" />
           <InitialRumbleIntensity value="0.000000" />
           <InitialRumbleIntensityTrigger value="0.000000" />
-          <RumbleDuration value="50" />
-          <RumbleIntensity value="0.100000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
           <RumbleIntensityTrigger value="0.000000" />
-          <RumbleDamageIntensity value="1.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.000000" />
@@ -12173,14 +12201,14 @@
           <InitialRumbleDuration value="0" />
           <InitialRumbleIntensity value="0.000000" />
           <InitialRumbleIntensityTrigger value="0.000000" />
-          <RumbleDuration value="50" />
-          <RumbleIntensity value="0.100000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
           <RumbleIntensityTrigger value="0.000000" />
-          <RumbleDamageIntensity value="1.000000" />
-	  <InitialRumbleDurationFps value="150" />
-          <InitialRumbleIntensityFps value="1.000000" />
-          <RumbleDurationFps value="95" />
-          <RumbleIntensityFps value="1.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.000000" />
@@ -12390,11 +12418,15 @@
           </Fx>
           <InitialRumbleDuration value="0" />
           <InitialRumbleIntensity value="0.000000" />
-          <InitialRumbleIntensityTrigger value="0.300000" />
-          <RumbleDuration value="110" />
-          <RumbleIntensity value="0.020000" />
-          <RumbleIntensityTrigger value="0.100000" />
-          <RumbleDamageIntensity value="1.000000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.000000" />
@@ -12583,7 +12615,11 @@
           <RumbleDuration value="0" />
           <RumbleIntensity value="0.000000" />
           <RumbleIntensityTrigger value="0.000000" />
-          <RumbleDamageIntensity value="1.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.000000" />
@@ -12776,10 +12812,14 @@
           <InitialRumbleDuration value="0" />
           <InitialRumbleIntensity value="0.000000" />
           <InitialRumbleIntensityTrigger value="0.000000" />
-          <RumbleDuration value="110" />
-          <RumbleIntensity value="0.020000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
           <RumbleIntensityTrigger value="0.000000" />
-          <RumbleDamageIntensity value="1.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.000000" />
@@ -12985,7 +13025,11 @@
           <RumbleDuration value="0" />
           <RumbleIntensity value="0.000000" />
           <RumbleIntensityTrigger value="0.000000" />
-          <RumbleDamageIntensity value="1.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.000000" />

@@ -2,8 +2,8 @@ recoils = {
     [453432689]    = {["kick"] = 0.6, ["shake"] = 0.03,["scope"] = false,}, -- PISTOL
     [-1075685676]  = {["kick"] = 0.6, ["shake"] = 0.03,["scope"] = false,}, -- PISTOL MK2
     [1593441988]   = {["kick"] = 0.4, ["shake"] = 0.03,["scope"] = false,}, -- COMBAT PISTOL
-    [584646201]    = {["kick"] = 0.6, ["shake"] = 0.03,["scope"] = false,}, -- AP PISTOL
-    [-1716589765]  = {["kick"] = 1.0, ["shake"] = 0.10,["scope"] = false,}, -- PISTOL.50
+    [584646201]    = {["kick"] = 0.4, ["shake"] = 0.03,["scope"] = false,}, -- AP PISTOL
+    [-1716589765]  = {["kick"] = 1.0, ["shake"] = 0.15,["scope"] = false,}, -- PISTOL.50
     [324215364]    = {["kick"] = 0.4, ["shake"] = 0.03,["scope"] = false,}, -- MICRO SMG
     [736523883]    = {["kick"] = 0.4, ["shake"] = 0.02,["scope"] = false,}, -- SMG
     [2024373456]   = {["kick"] = 0.2, ["shake"] = 0.02,["scope"] = false,}, -- SMG MK2
@@ -16,11 +16,11 @@ recoils = {
     [-1660422300]  = {["kick"] = 0.1, ["shake"] = 0.03,["scope"] = false,}, -- MG
     [2144741730]   = {["kick"] = 0.1, ["shake"] = 0.03,["scope"] = false,}, -- COMBAT MG
     [3686625920]   = {["kick"] = 0.1, ["shake"] = 0.03,["scope"] = false,}, -- COMBAT MG MK2
-    [487013001]    = {["kick"] = 0.8, ["shake"] = 0.25,["scope"] = false,}, -- PUMP SHOTGUN
+    [487013001]    = {["kick"] = 5.0, ["shake"] = 0.25,["scope"] = false,}, -- PUMP SHOTGUN
     [1432025498]   = {["kick"] = 0.8, ["shake"] = 0.25,["scope"] = false,}, -- PUMP SHOTGUN MK2
-    [2017895192]   = {["kick"] = 1.2, ["shake"] = 0.25,["scope"] = false,}, -- SAWNOFF SHOTGUN
-    [-494615257]   = {["kick"] = 0.8, ["shake"] = 0.20,["scope"] = false,}, -- ASSAULT SHOTGUN
-    [-1654528753]  = {["kick"] = 0.4, ["shake"] = 0.15,["scope"] = false,}, -- BULLPUP SHOTGUN
+    [2017895192]   = {["kick"] = 7.0, ["shake"] = 0.25,["scope"] = false,}, -- SAWNOFF SHOTGUN
+    [-494615257]   = {["kick"] = 2.0, ["shake"] = 0.20,["scope"] = false,}, -- ASSAULT SHOTGUN
+    [-1654528753]  = {["kick"] = 4.0, ["shake"] = 0.15,["scope"] = false,}, -- BULLPUP SHOTGUN
     [911657153]    = {["kick"] = 0.0, ["shake"] = 0.00,["scope"] = false,}, -- STUN GUN
     [100416529]    = {["kick"] = 1.0, ["shake"] = 0.25,["scope"] = true ,},-- SNIPER RIFLE
     [205991906]    = {["kick"] = 1.2, ["shake"] = 0.50,["scope"] = true ,},-- HEAVY SNIPER
@@ -42,7 +42,7 @@ recoils = {
     [-2066285827]  = {["kick"] = 0.15,["shake"] = 0.01,["scope"] = false,}, -- BULLPUP RIFLE MK2
     [137902532]    = {["kick"] = 0.8, ["shake"] = 0.04,["scope"] = false,}, -- VINTAGE PISTOL
     [-1746263880]  = {["kick"] = 0.8, ["shake"] = 0.05,["scope"] = false,}, -- DOUBLE ACTION REVOLVER
-    [-1466123874]  = {["kick"] = 1.4, ["shake"] = 0.25,["scope"] = false,}, -- MUSKET
+    [-1466123874]  = {["kick"] = 0.5, ["shake"] = 0.25,["scope"] = false,}, -- MUSKET
     [984333226]    = {["kick"] = 0.4, ["shake"] = 0.08,["scope"] = false,}, -- HEAVY SHOTGUN
     [-952879014]   = {["kick"] = 0.1, ["shake"] = 0.01,["scope"] = true ,},-- MARKSMAN RIFLE
     [1785463520]   = {["kick"] = 0.1, ["shake"] = 0.01,["scope"] = true ,},-- MARKSMAN RIFLE MK2
@@ -51,8 +51,8 @@ recoils = {
     [171789620]    = {["kick"] = 0.4, ["shake"] = 0.02,["scope"] = false,}, -- COMBAT PDW
     [-598887786]   = {["kick"] = 1.8, ["shake"] = 0.25,["scope"] = false,}, -- MARKSMAN PISTOL
     [1834241177]   = {["kick"] = 0.8, ["shake"] = 0.02,["scope"] = false,}, -- RAILGUN
-    [3675956304]   = {["kick"] = 0.6, ["shake"] = 0.03,["scope"] = false,}, -- MACHINE PISTOL
-    [-1045183535]  = {["kick"] = 1.0, ["shake"] = 0.15,["scope"] = false,}, -- REVOLVER
+    [-619010992]   = {["kick"] = 0.6, ["shake"] = 0.03,["scope"] = false,}, -- MACHINE PISTOL
+    [-1045183535]  = {["kick"] = 1.0, ["shake"] = 0.10,["scope"] = false,}, -- REVOLVER
     [-879347409]   = {["kick"] = 1.2, ["shake"] = 0.20,["scope"] = false,}, -- REVOLVER MK2
     [4019527611]   = {["kick"] = 1.2, ["shake"] = 0.25,["scope"] = false,}, -- DOUBLE BARREL SHOTGUN
     [1649403952]   = {["kick"] = 0.6, ["shake"] = 0.02,["scope"] = false,}, -- COMPACT RIFLE

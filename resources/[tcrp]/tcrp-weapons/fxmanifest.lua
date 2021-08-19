@@ -18,7 +18,7 @@ files {
     '*'
 }
 
-data_file 'WEAPONCOMPONENTSINFO_FILE' 'weaponcomponents.meta'
+--[[data_file 'WEAPONCOMPONENTSINFO_FILE' 'weaponcomponents.meta'
 data_file 'WEAPONCOMPONENTSINFO_FILE' 'apartmentcomponents.meta'
 data_file 'WEAPONCOMPONENTSINFO_FILE' 'beachcomponents.meta'
 data_file 'WEAPONCOMPONENTSINFO_FILE' 'bikercomponents.meta'
@@ -37,7 +37,7 @@ data_file 'WEAPONCOMPONENTSINFO_FILE' 'valentinecomponents.meta'
 data_file 'WEAPONCOMPONENTSINFO_FILE' 'weapon_rifle_components.meta'
 data_file 'WEAPON_METADATA_FILE' 'weapon_rifle_archetypes.meta'
 data_file 'WEAPON_ANIMATIONS_FILE' 'weapon_rifle_animations.meta'
-data_file 'WEAPONINFO_FILE' 'weapon_rifle.meta'
+data_file 'WEAPONINFO_FILE' 'weapon_rifle.meta']]--
 data_file 'WEAPONINFO_FILE_PATCH' 'weapons.meta'
 data_file 'WEAPONINFO_FILE_PATCH' 'weapon_navyrevolver.meta'
 data_file 'WEAPONINFO_FILE_PATCH' 'weaponautoshotgun.meta'
