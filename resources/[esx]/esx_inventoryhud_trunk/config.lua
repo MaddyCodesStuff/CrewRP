@@ -152,6 +152,9 @@ Config.localWeight    = {
     water         = 750,
     wool          = 500,
     meat          = 2000,
+    stingray      = 10000,
+    sharktiger    = 25000,
+    turtle        = 5000,
     leather       = 1000,
     clothe        = 1000
 }
