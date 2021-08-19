@@ -15,4 +15,6 @@ Config.RentalPrice = 500
 
 Config.RentalVehicle = {
 		"kart",
+		"vetok",
+		"vetog",
 }
