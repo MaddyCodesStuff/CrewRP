@@ -1148,10 +1148,10 @@ function setUniform(value, plyPed)
 
                 if skin.torso_1 ~= skina.torso_1 then
                     TriggerEvent('skinchanger:loadClothes', skina,
-                                 { ['torso_1'] = skin.torso_1, ['torso_2'] = skin.torso_2, ['tshirt_1'] = skin.tshirt_1, ['tshirt_2'] = skin.tshirt_2, ['arms'] = skin.arms })
+                                 { ['torso_1'] = skin.torso_1, ['torso_2'] = skin.torso_2, ['tshirt_1'] = skin.tshirt_1, ['tshirt_2'] = skin.tshirt_2, ['arms'] = skin.arms, ['decals_1'] = skin.decals_1 })
                 else
                     TriggerEvent('skinchanger:loadClothes', skina,
-                                 { ['torso_1'] = 15, ['torso_2'] = 0, ['tshirt_1'] = 15, ['tshirt_2'] = 0, ['arms'] = 15 })
+                                 { ['torso_1'] = 15, ['torso_2'] = 0, ['tshirt_1'] = 15, ['tshirt_2'] = 0, ['arms'] = 15, ['decals_1'] = 0 })
                 end
             elseif value == 'pants' then
                 if skin.pants_1 ~= skina.pants_1 then
