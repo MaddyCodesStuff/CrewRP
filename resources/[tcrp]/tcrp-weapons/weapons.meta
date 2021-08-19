@@ -454,6 +454,10 @@
         <Entry>SLOT_MOLOTOV</Entry>
       </Item>
       <Item>
+        <OrderNumber value="295" />
+        <Entry>SLOT_FIREEXTINGUISHER</Entry>
+      </Item>
+      <Item>
         <OrderNumber value="300" />
         <Entry>SLOT_SMOKEGRENADE</Entry>
       </Item>
@@ -879,12 +883,12 @@
           <Model />
           <Audio />
           <Slot />
-          <AmmoMax value="2000" />
-          <AmmoMax50 value="2000" />
-          <AmmoMax100 value="2000" />
-          <AmmoMaxMP value="2000" />
-          <AmmoMax50MP value="2000" />
-          <AmmoMax100MP value="2000" />
+          <AmmoMax value="50000" />
+          <AmmoMax50 value="50000" />
+          <AmmoMax100 value="50000" />
+          <AmmoMaxMP value="50000" />
+          <AmmoMax50MP value="50000" />
+          <AmmoMax100MP value="50000" />
           <AmmoFlags />
         </Item>
         <Item type="CAmmoInfo">
@@ -12326,7 +12330,7 @@
           <Group>GROUP_FIREEXTINGUISHER</Group>
           <AmmoInfo ref="AMMO_FIREEXTINGUISHER" />
           <AimingInfo ref="FIRE_EXT_STRAFE" />
-          <ClipSize value="2000" />
+          <ClipSize value="50000" />
           <AccuracySpread value="1.000000" />
           <AccurateModeAccuracyModifier value="0.500000" />
           <RunAndGunAccuracyModifier value="2.000000" />
