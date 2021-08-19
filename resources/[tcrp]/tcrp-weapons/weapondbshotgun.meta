@@ -300,7 +300,7 @@
           </AttachPoints>
           <GunFeedBone />
           <TargetSequenceGroup />
-          <WeaponFlags>CarriedInHand ApplyBulletForce Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire TreatAsOneHandedInCover UsableOnFoot UsableInCover NoLeftHandIKWhenBlocked AllowCloseQuarterKills HasLowCoverReloads HasLowCoverSwaps UseFPSAimIK UseFPSSecondaryMotion ForceFullFireAnimation BlockFirstPersonStateTransitionWhileFiring</WeaponFlags>
+          <WeaponFlags>CarriedInHand ApplyBulletForce Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire TreatAsOneHandedInCover UsableOnFoot UsableInCover NoLeftHandIKWhenBlocked HasLowCoverReloads HasLowCoverSwaps UseFPSAimIK UseFPSSecondaryMotion ForceFullFireAnimation BlockFirstPersonStateTransitionWhileFiring</WeaponFlags>
           <TintSpecValues ref="TINT_DEFAULT" />
           <FiringPatternAliases ref="FIRING_PATTERN_PUMPSHOTGUN" />
           <ReloadUpperBodyFixupExpressionData ref="default" />
