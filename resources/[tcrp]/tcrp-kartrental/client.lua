@@ -96,7 +96,7 @@ function OpenVehicleMenu(xyz, h)
 
 	for k, v in ipairs(Config.RentalVehicle) do
 		table.insert(elements, {
-			label = ('%s - $%s'):format(GetLabelText(GetDisplayNameFromVehicleModel(v)), ESX.Math.GroupDigits(Config.RentalPrice)),
+			label = ('%s - $%s'):format(GetLabelText(GetMakeNameFromVehicleModel(v)), ESX.Math.GroupDigits(Config.RentalPrice)),
 			value = v
 		})
 	end

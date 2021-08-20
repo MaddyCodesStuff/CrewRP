@@ -8,7 +8,7 @@
       <txdName>kart</txdName>
       <handlingId>KART</handlingId>
       <gameName>KART</gameName>
-      <vehicleMakeName>NAGASAKI</vehicleMakeName>
+      <vehicleMakeName>DINKA</vehicleMakeName>
       <expressionDictName>null</expressionDictName>
       <expressionName>null</expressionName>
       <animConvRoofDictName>null</animConvRoofDictName>
@@ -114,7 +114,7 @@
       <txdName>vetok</txdName>
       <handlingId>KART</handlingId>
       <gameName>VETOK</gameName>
-      <vehicleMakeName>DINKA</vehicleMakeName>
+      <vehicleMakeName>KRIEGER</vehicleMakeName>
       <expressionDictName>null</expressionDictName>
       <expressionName>null</expressionName>
       <animConvRoofDictName>null</animConvRoofDictName>
@@ -216,7 +216,7 @@
       <txdName>vetog</txdName>
       <handlingId>KART</handlingId>
       <gameName>VETOG</gameName>
-      <vehicleMakeName>DINKA</vehicleMakeName>
+      <vehicleMakeName>GAUNTLET</vehicleMakeName>
       <expressionDictName>null</expressionDictName>
       <expressionName>null</expressionName>
       <animConvRoofDictName>null</animConvRoofDictName>
