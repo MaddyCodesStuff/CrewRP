@@ -49,42 +49,36 @@ Citizen.CreateThread(function()
     end
 end)
 
-Citizen.CreateThread(function()
-    while true do
-        Citizen.Wait(0)
-        TriggerEvent('skinchanger:getSkin', function(skin)
-            if skin.sex == 0 then
-                hasHolster = false
-                for i = 1, #Config.maleShirtHolster, 1 do
-                    if Config.maleShirtHolster[i] == tonumber(skin.tshirt_1) then
-                        hasHolster = true
-                    end
+function GetHolster()
+    TriggerEvent('skinchanger:getSkin', function(skin)
+        if skin.sex == 0 then
+            for i = 1, #Config.maleShirtHolster, 1 do
+                if Config.maleShirtHolster[i] == tonumber(skin.tshirt_1) then
+                    hasHolster = true
                 end
-                for i = 1, #Config.maleChainHolster, 1 do
-                    if Config.maleChainHolster[i] == tonumber(skin.chain_1) then
-                        hasHolster = true
-                    end
-                end
-            elseif skin.sex == 1 then 
-                hasHolster = false
-                for i = 1, #Config.femaleShirtHolster, 1 do
-                    if Config.femaleShirtHolster[i] == tonumber(skin.tshirt_1) then
-                        hasHolster = true
-                    end
-                end
-                for i = 1, #Config.femaleChainHolster, 1 do
-                    if Config.femaleChainHolster[i] == tonumber(skin.chain_1) then
-                        hasHolster = true
-                    end
-                end
-            else
-                hasHolster = false
             end
-        end)
-        Citizen.Wait(10000)
-    end
-end)
-
+            for i = 1, #Config.maleChainHolster, 1 do
+                if Config.maleChainHolster[i] == tonumber(skin.chain_1) then
+                    hasHolster = true
+                end
+            end
+        elseif skin.sex == 1 then 
+            hasHolster = false
+            for i = 1, #Config.femaleShirtHolster, 1 do
+                if Config.femaleShirtHolster[i] == tonumber(skin.tshirt_1) then
+                    hasHolster = true
+                end
+            end
+            for i = 1, #Config.femaleChainHolster, 1 do
+                if Config.femaleChainHolster[i] == tonumber(skin.chain_1) then
+                    hasHolster = true
+                end
+            end
+        else
+            hasHolster = false
+        end
+    end)
+end
 -- Handle drawing weapons
 Citizen.CreateThread(function()
     while true do
@@ -94,6 +88,7 @@ Citizen.CreateThread(function()
             local isSwitchingWeapon = true
             local weapon_to = GetSelectedPedWeapon(ped)
             local postwait = 0
+            GetHolster()
             -- Handle weapon switching per-frame stuff
             Citizen.CreateThread(function()
                 while isSwitchingWeapon do
@@ -135,7 +130,7 @@ Citizen.CreateThread(function()
                 end
 
                 -- Grab weapon
-                if isBeltWeapon(weapon) and weapon_to ~= GetHashKey('WEAPON_UNARMED') then
+                if isBeltWeapon(weapon_to) and weapon_to ~= GetHashKey('WEAPON_UNARMED') then
                     ClearPedTasks(ped)
                     if hasHolster == true then
                         TriggerEvent('emote:do', 'reaching')
