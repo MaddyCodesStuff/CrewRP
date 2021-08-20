@@ -359,6 +359,8 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Restaurant",
         ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Matthew Clark",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Pop's",
     },
     [20]  = {
         ["name"]    = "Rex's Diner",
@@ -387,6 +389,8 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Restaurant",
         ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Giorno Giovanna",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Pearls",
     },
     [22]  = {
         ["name"]    = "Burgershot",
@@ -400,7 +404,7 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Restaurant",
         ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Uri Jackson",
-        ["Info.text2Left"] = "Phone", ["Info.text2Right"] = "272-0483",
+        ["Info.text2Left"] = "Phone", ["Info.text2Right"] = "382-3085",
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Burger Shot",
     },
@@ -465,6 +469,8 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Restaurant",
         ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "None",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Coffee Shop",
     },
     --Mechanics--
     [26]  = {
@@ -894,10 +900,13 @@ Blips.Main        = {
         ["layer"]   = 25,
         ["scale"]   = 1.0,
         ["Info.toggle"] = true,
-        ["Info.title"] = "~q~Vanilla Unicorn",
-        ["Info.textLeft"] = "~q~Category", ["Info.textRight"] = "~q~Nightclub",
-        ["Info.nameLeft"] = "~q~Owner",["Info.nameRight"] = "~q~Armin Mikovic",
-        ["Info.text2Left"] = "~q~Phone",["Info.text2Right"] = "~q~851-1041",
+        ["Info.title"] = "~q~The Vanilla Unicorn",
+        ["Info.textLeft"] = "~q~Category:", ["Info.textRight"] = "~q~Strip Club",
+        ["Info.nameLeft"] = "~q~Owner:",["Info.nameRight"] = "~q~Lola Rosita Navarro",
+        ["Info.text2Left"] = "~q~Manager:",["Info.text2Right"] = "~q~ Red Acted",
+        ["Info.name2Left"] = "                              ~q~Phone",["Info.name2Right"] = "",
+        ["Info.text3Left"] = "~q~Lola:",["Info.text3Right"] = "~q~731-9558",
+        ["Info.name3Left"] = "~q~Red:",["Info.name3Right"] = "~q~153-1737",
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Vanilla Unicorn",
     },
@@ -944,6 +953,8 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Nightclub",
         ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Arthur Peregrine",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Split Sides",
     },
     --Other Blips--
     [54]  = {
@@ -1838,4 +1849,15 @@ HARDWARE.Config = {
 HARDWARE.Blips = {
     {["x"] =  155.85, ["y"] =  6648.63},
     {["x"] =  2742.72, ["y"] =  3482.30},
+}
+PETS = {}
+PETS.Config = {
+    ["text"]    = "Pet Shop",
+    ["color"]   = 0,
+    ["sprite"]  = 463,
+    ["layer"]   = 15,
+    ["scale"]   = 1.0,
+}
+PETS.Blips = {
+    {["x"] =  562.19, ["y"] =  2741.30},
 }

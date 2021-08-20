@@ -449,20 +449,6 @@ Citizen.CreateThread(function()
 	end
 end)
 
--- Create Blips
-Citizen.CreateThread(function()
-	local blip = AddBlipForCoord(Config.Zones.PetShop.Pos.x, Config.Zones.PetShop.Pos.y, Config.Zones.PetShop.Pos.z)
-
-	SetBlipSprite (blip, Config.Zones.PetShop.Sprite)
-	SetBlipDisplay(blip, Config.Zones.PetShop.Display)
-	SetBlipScale  (blip, Config.Zones.PetShop.Scale)
-	SetBlipAsShortRange(blip, true)
-
-	BeginTextCommandSetBlipName("STRING")
-	AddTextComponentString(_U('pet_shop'))
-	EndTextCommandSetBlipName(blip)
-end)
-
 Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(0)

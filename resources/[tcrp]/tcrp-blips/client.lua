@@ -327,6 +327,22 @@ for i = 1, #HARDWARE.Blips, 1 do
     BeginTextCommandSetBlipName("HARDWARE")
     EndTextCommandSetBlipName(blip)
 end
+for i = 1, #PETS.Blips, 1 do
+    local blip = AddBlipForCoord(PETS.Blips[i].x, PETS.Blips[i].y, PETS.Blips[i].z or Config.DefaultZ)
+    SetBlipSprite(blip, PETS.Config["sprite"] or Config.DefaultSprite)
+    SetBlipDisplay(blip, PETS.Config["display"] or Config.DefaultDisplay)
+    SetBlipAlpha(blip, PETS.Config["opacity"] or Config.DefaultOpacity) 
+    SetBlipCategory(blip, PETS.Config["type"] or Config.DefaultType)
+    SetBlipPriority(blip, PETS.Config["layer"] or Config.DefaultLayer)
+    SetBlipScale(blip, PETS.Config["scale"] or Config.DefaultScale)
+    SetBlipColour(blip, PETS.Config["color"] or Config.DefaultColor)
+    SetBlipHiddenOnLegend(blip, PETS.Config["hidden"] or Config.DefaultHidden)
+    SetBlipAsShortRange(blip, true)
+    local bliptext = PETS.Config["text"]
+    AddTextEntry("PETS", bliptext)
+    BeginTextCommandSetBlipName("PETS")
+    EndTextCommandSetBlipName(blip)
+end
 
 RegisterNetEvent("tcrp-blips:emergency")
 AddEventHandler("tcrp-blips:emergency", function(table)
