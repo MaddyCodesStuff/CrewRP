@@ -82,7 +82,7 @@ for k,v in pairs(Blips.Main) do
             if blip["Info.name4Left"] and blip["Info.name4Right"] ~= nil then
                 exports['blip_info']:AddBlipInfoName(blip["id"], blip["Info.name4Left"], blip["Info.name4Right"])
             end
-            if blip["Info.text5Left"] and blip["Info.text3Right"] ~= nil then
+            if blip["Info.text5Left"] and blip["Info.text5Right"] ~= nil then
                 exports['blip_info']:AddBlipInfoText(blip["id"], blip["Info.text5Left"], blip["Info.text5Right"])
             end
             if blip["Info.name5Left"] and blip["Info.name5Right"] ~= nil then
@@ -329,7 +329,7 @@ AddEventHandler("tcrp-blips:addblip", function(blipconfig, entity)
     if blipconfig["Info.name4Left"] and blipconfig["Info.name4Right"] ~= nil then
         exports['blip_info']:AddBlipInfoName(blip, blipconfig["Info.name4Left"], blipconfig["Info.name4Right"])
     end
-    if blipconfig["Info.text5Left"] and blipconfig["Info.text3Right"] ~= nil then
+    if blipconfig["Info.text5Left"] and blipconfig["Info.text5Right"] ~= nil then
         exports['blip_info']:AddBlipInfoText(blip, blipconfig["Info.text5Left"], blipconfig["Info.text5Right"])
     end
     if blipconfig["Info.name5Left"] and blipconfig["Info.name5Right"] ~= nil then
@@ -470,7 +470,7 @@ AddEventHandler("tcrp-blips:updateblip", function(blipsource, table)
         if blipconfig["Info.name4Left"] and blipconfig["Info.name4Right"] ~= nil then
             exports['blip_info']:AddBlipInfoName(blip, blipconfig["Info.name4Left"], blipconfig["Info.name4Right"])
         end
-        if blipconfig["Info.text5Left"] and blipconfig["Info.text3Right"] ~= nil then
+        if blipconfig["Info.text5Left"] and blipconfig["Info.text5Right"] ~= nil then
             exports['blip_info']:AddBlipInfoText(blip, blipconfig["Info.text5Left"], blipconfig["Info.text5Right"])
         end
         if blipconfig["Info.name5Left"] and blipconfig["Info.name5Right"] ~= nil then
