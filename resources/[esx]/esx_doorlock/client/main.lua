@@ -421,3 +421,8 @@ AddEventHandler('nui_doorlock:newDoorSetup', function(args)
 	end
 end)
 RegisterKeyMapping('+doorlock', 'Interact with a door lock', 'keyboard', 'e')
+
+RegisterNetEvent("esx_doorlock:updatedoors")
+AddEventHandler("esx_doorlock:updatedoors", function()
+	updateDoors()
+end)

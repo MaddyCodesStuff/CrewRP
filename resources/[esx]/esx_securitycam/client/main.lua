@@ -539,6 +539,7 @@ Citizen.CreateThread(function()
 
             -- CLOSE CAMERAS
             if IsControlJustPressed(0, Keys["BACKSPACE"]) then
+                TriggerEvent("esx_doorlock:updatedoors")
                 CloseSecurityCamera()
                 SendNUIMessage({
                                    type = "disablecam",
