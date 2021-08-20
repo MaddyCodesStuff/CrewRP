@@ -93,6 +93,7 @@ Citizen.CreateThread(function()
         if IsPedSwappingWeapon(ped) and not IsPedInAnyVehicle(ped, false) and GetPedParachuteState(ped) < 1 and not IsPedInParachuteFreeFall(ped) then
             local isSwitchingWeapon = true
             local weapon_to = GetSelectedPedWeapon(ped)
+            local postwait = 0
             -- Handle weapon switching per-frame stuff
             Citizen.CreateThread(function()
                 while isSwitchingWeapon do
@@ -108,56 +109,58 @@ Citizen.CreateThread(function()
             end)
 
             SetCurrentPedWeapon(ped, weapon, true)
-
-            -- Put weapon away
-            if isBeltWeapon(weapon) and weapon_to ~= GetHashKey('WEAPON_UNARMED') then
-                ClearPedTasks(ped)
-                if hasHolster == true then
-                    TriggerEvent('emote:do', 'reaching')
-                    Citizen.Wait(500)
-                else
-                    TriggerEvent('emote:do', 'reaching3')
-                    Citizen.Wait(1400)
-                end
-            elseif weapon_to ~= GetHashKey('WEAPON_UNARMED') and GetWeapontypeGroup(weapon_to) == -72855052 then 
-                ClearPedTasks(ped)
-                TriggerEvent('emote:do', 'reaching3')
-                Citizen.Wait(1400)
-            elseif weapon ~= GetHashKey('WEAPON_UNARMED') then
-                ClearPedTasks(ped)
-                TriggerEvent('emote:do', 'reaching3')
-                Citizen.Wait(1400)
-            end
-            TriggerEvent('emote:cancel')
-            postwait = 0
-            SetCurrentPedWeapon(ped, GetHashKey('WEAPON_UNARMED'), true)
-
-            -- Grab weapon
-            if isBeltWeapon(weapon) and weapon_to ~= GetHashKey('WEAPON_UNARMED') then
-                ClearPedTasks(ped)
-                if hasHolster == true then
-                    TriggerEvent('emote:do', 'reaching')
-                        Citizen.CreateThread(function()
+            if weapon ~= weapon_to then
+                -- Put weapon away
+                if weapon ~= GetHashKey('WEAPON_UNARMED') and weapon_to == GetHashKey('WEAPON_UNARMED')  then  
+                    if isBeltWeapon(weapon) then
+                        ClearPedTasks(ped)
+                        if hasHolster == true then
+                            TriggerEvent('emote:do', 'reaching')
                             Citizen.Wait(500)
-                            SetCurrentPedWeapon(ped, weapon_to, true)
-                        end)
-                    postwait = 500
-                    Citizen.Wait(700)
-                else
+                        else
+                            TriggerEvent('emote:do', 'reaching3')
+                            Citizen.Wait(1400)
+                        end
+                    elseif weapon_to ~= GetHashKey('WEAPON_UNARMED') and GetWeapontypeGroup(weapon_to) == -72855052 then 
+                        ClearPedTasks(ped)
+                        TriggerEvent('emote:do', 'reaching3')
+                        Citizen.Wait(1400)
+                    else
+                        ClearPedTasks(ped)
+                        TriggerEvent('emote:do', 'reaching3')
+                        Citizen.Wait(1400)
+                    end
+                TriggerEvent('emote:cancel')
+                SetCurrentPedWeapon(ped, GetHashKey('WEAPON_UNARMED'), true)
+                end
+
+                -- Grab weapon
+                if isBeltWeapon(weapon) and weapon_to ~= GetHashKey('WEAPON_UNARMED') then
+                    ClearPedTasks(ped)
+                    if hasHolster == true then
+                        TriggerEvent('emote:do', 'reaching')
+                            Citizen.CreateThread(function()
+                                Citizen.Wait(500)
+                                SetCurrentPedWeapon(ped, weapon_to, true)
+                            end)
+                        postwait = 500
+                        Citizen.Wait(700)
+                    else
+                        TriggerEvent('emote:do', 'reaching2')
+                        postwait = 800
+                        Citizen.Wait(1400)
+                    end
+                elseif weapon_to ~= GetHashKey('WEAPON_UNARMED') and GetWeapontypeGroup(weapon_to) == -72855052 then 
+                    ClearPedTasks(ped)
                     TriggerEvent('emote:do', 'reaching2')
-                    postwait = 800
+                    postwait = 150
+                    Citizen.Wait(1400)
+                elseif weapon_to ~= GetHashKey('WEAPON_UNARMED') then
+                    ClearPedTasks(ped)
+                    TriggerEvent('emote:do', 'reaching2')
+                    postwait = 1400
                     Citizen.Wait(1400)
                 end
-            elseif weapon_to ~= GetHashKey('WEAPON_UNARMED') and GetWeapontypeGroup(weapon_to) == -72855052 then 
-                ClearPedTasks(ped)
-                TriggerEvent('emote:do', 'reaching2')
-                postwait = 150
-                Citizen.Wait(1400)
-            elseif weapon_to ~= GetHashKey('WEAPON_UNARMED') then
-                ClearPedTasks(ped)
-                TriggerEvent('emote:do', 'reaching2')
-                postwait = 1400
-                Citizen.Wait(1400)
             end
             SetCurrentPedWeapon(ped, weapon_to, true)
             TriggerEvent('emote:cancel')
