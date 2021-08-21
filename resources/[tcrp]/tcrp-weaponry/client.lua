@@ -17,28 +17,36 @@ function Recoil()
         if recoils[wep] ~= nil then
             local shake = recoils[wep]["shake"]
             local recoil = recoils[wep]["kick"]
+            local scale = 1.0
+            local random = math.random(50, 100) / 100
+            local random2 = math.random(-50, 50) / 100
             if recoil ~= 0 or nil then
-                if IsPedDoingDriveby(ped) then
-                    recoil = recoil * 14
-                elseif GetFollowPedCamViewMode() == 4 then
-                    recoil = recoil / 2.1
-                elseif IsPlayerFreeAiming(player) then
-                    recoil = recoil * 0.5
+                local h = (GetGameplayCamRelativeHeading())                               
+                if GetFollowPedCamViewMode() == 4 then
+                    scale = 0.5
+                elseif IsPlayerFreeAiming(player) and not IsPedDoingDriveby(ped) then
+                    scale = 0.5
                 end
-                p = GetGameplayCamRelativePitch()
-                h = GetGameplayCamRelativeHeading()
-                local halfrecoil = recoil * 0.5
-                local precoil = GetRandomFloatInRange(halfrecoil, recoil) 
-                local hrecoil = GetRandomFloatInRange(-halfrecoil, halfrecoil)
-                SetGameplayCamRelativePitch(p + precoil, 0.2)
-                SetGameplayCamRelativeHeading(h + hrecoil)
+                local hrecoil = random2 * scale 
+                recoil = recoil * random * scale
+                local p = GetGameplayCamRelativePitch()
+                if IsPedDoingDriveby(ped) then
+                    p = p + 2.08
+                    SetGameplayCamRelativePitch(p + recoil, 1.0)
+                    SetGameplayCamRelativeHeading(h + hrecoil)
+                elseif GetFollowPedCamViewMode() == 4 then
+                    SetGameplayCamRelativePitch(p + recoil, 1.0)
+                    SetGameplayCamRelativeHeading(hrecoil)
+                else
+                    SetGameplayCamRelativePitch(p + recoil, 1.0)
+                    SetGameplayCamRelativeHeading(hrecoil)
+                end  
             end
             if shake ~= 0 then
-                local recoilshake = GetRandomFloatInRange(shake * 0.75 , shake)
-                if IsPlayerFreeAiming(player) then
-                    recoilshake = recoilshake * 0.5
+                if IsPlayerFreeAiming(player) or GetFollowPedCamViewMode() == 4 then
+                    shake = shake * 0.5
                 end
-                ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', recoilshake)
+                ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', shake)
             end
         end
     end
@@ -55,7 +63,7 @@ function ManageReticle(weapon)
             HideHudComponentThisFrame(14)
         end
     else
-        -- print(weapon) --prints if weapon hash is not in table
+        --print(weapon) --prints if weapon hash is not in table
         HideHudComponentThisFrame(14)
     end
 end
