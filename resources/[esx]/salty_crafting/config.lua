@@ -63,10 +63,20 @@ Config.Recipes    = {
         { item = "plastic", quantity = 5, remove = true },
         { item = "fabric", quantity = 20, remove = true }
     },
+    ["metal"] = {
+        { item = "copper", quantity = 2, remove = true },
+        { item = "iron", quantity = 1, remove = true }
+    },
 	["bodyarmor_1"] = {
         { item = "clothe", quantity = 2, remove = true },
         { item = "fabric", quantity = 8, remove = true },
 		{ item = "metal", quantity = 8, remove = true }
+    },
+    ["bodyarmor_2"] = {
+        { item = "clothe", quantity = 1, remove = true },
+        { item = "fabric", quantity = 2, remove = true },
+		{ item = "metal", quantity = 9, remove = true },
+		{ item = "bodyarmor_1", quantity = 1, remove = true },
     },
 	["bodyarmor_3"] = {
         { item = "clothe", quantity = 1, remove = true },
@@ -81,10 +91,8 @@ Config.Recipes    = {
 		{ item = "metal", quantity = 50, remove = true }
     },
 	["repairkit_basic"] = {
-        { item = "stockrim", quantity = 2, remove = true },
-        { item = "highrim", quantity = 2, remove = true },
-		{ item = "plastic", quantity = 4, remove = true },
-		{ item = "airbag", quantity = 1, remove = true }
+		{ item = "plastic", quantity = 10, remove = true },
+		{ item = "airbag", quantity = 1, remove = true },
     },
 	["diamond"] = {
 		{ item = "jewels", quantity = 1, remove = true }
