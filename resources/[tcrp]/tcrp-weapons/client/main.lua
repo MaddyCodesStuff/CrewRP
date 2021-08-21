@@ -1,7 +1,7 @@
 local base_damage = Config.DefaultDamageModifier
 local modifier = 1.0
 local weapon = nil
-local isPolice = false
+local hasHolster = false
 
 -- Default damage modifier
 function getDefaultDamageModifier()
@@ -49,11 +49,37 @@ Citizen.CreateThread(function()
     end
 end)
 
--- Check if player is PD
 Citizen.CreateThread(function()
     while true do
-        TriggerEvent('esx_policejob:IsPlayerPolice', function(rank)
-            isPolice = (rank > 0)
+        Citizen.Wait(0)
+        TriggerEvent('skinchanger:getSkin', function(skin)
+            if skin.sex == 0 then
+                hasHolster = false
+                for i = 1, #Config.maleShirtHolster, 1 do
+                    if Config.maleShirtHolster[i] == tonumber(skin.tshirt_1) then
+                        hasHolster = true
+                    end
+                end
+                for i = 1, #Config.maleChainHolster, 1 do
+                    if Config.maleChainHolster[i] == tonumber(skin.chain_1) then
+                        hasHolster = true
+                    end
+                end
+            elseif skin.sex == 1 then 
+                hasHolster = false
+                for i = 1, #Config.femaleShirtHolster, 1 do
+                    if Config.femaleShirtHolster[i] == tonumber(skin.tshirt_1) then
+                        hasHolster = true
+                    end
+                end
+                for i = 1, #Config.femaleChainHolster, 1 do
+                    if Config.femaleChainHolster[i] == tonumber(skin.chain_1) then
+                        hasHolster = true
+                    end
+                end
+            else
+                hasHolster = false
+            end
         end)
         Wait(10000)
     end
@@ -88,7 +114,7 @@ Citizen.CreateThread(function()
             -- Put weapon away
             if isBeltWeapon(weapon) then
                 ClearPedTasks(ped)
-                if isPolice then
+                if hasHolster == true then
                     TriggerEvent('emote:do', 'reaching')
                     Wait(1000)
                     TriggerEvent('emote:cancel')
@@ -103,7 +129,7 @@ Citizen.CreateThread(function()
             -- Grab weapon
             if isBeltWeapon(weapon_to) then
                 ClearPedTasks(ped)
-                if isPolice then
+                if hasHolster == true then
                     postWait = 0
                     TriggerEvent('emote:do', 'reaching')
                     Wait(1000)

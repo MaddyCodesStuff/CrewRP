@@ -1,10 +1,24 @@
+ESX = nil
+TriggerEvent('esx:getSharedObject', function(obj)
+    ESX = obj
+end)
 -----------------------------------------------------------------------------------------------------
 -- Shared Emotes Syncing  ---------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------
 
 RegisterServerEvent("ServerEmoteRequest")
-AddEventHandler("ServerEmoteRequest", function(target, emotename, etype)
-    TriggerClientEvent("ClientEmoteRequestReceive", target, emotename, etype)
+AddEventHandler("ServerEmoteRequest", function(target, emotename, etype, sender)
+    local source = source
+    local xplayer = ESX.GetPlayerFromId(source)
+    local playername = xplayer
+    if xplayer then
+        local result = MySQL.Sync.fetchAll("SELECT * FROM users WHERE identifier = @identifier",{
+        ['@identifier'] = xplayer.identifier
+      })
+        local firstname = result[1].firstname
+        local lastname = result[1].lastname
+        TriggerClientEvent("ClientEmoteRequestReceive", target, emotename, etype, firstname, lastname)
+      end
 end)
 
 RegisterServerEvent("ServerValidEmote")

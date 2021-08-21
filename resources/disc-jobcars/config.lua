@@ -10,6 +10,7 @@ Config.Markers = {
         corrections = { r = 157, b = 157, g = 157 },
         parkranger = { r = 73, b = 84, g = 115 },
         cityclerk = { r = 64, g = 52, b = 235 },
+        humane = { r = 64, g = 52, b = 235 },
     },
     types = {
         car = {
@@ -147,6 +148,13 @@ Config.ClerkCars = {
     all = {
         { name = 'Records Transport', model = 'drd-records', price = 0 },
         { name = 'Patrol', model = 'drd-patrol', price = 0 },
+    }
+}
+
+Config.HumaneCars = {
+    all = {
+        { name = 'Mule', model = 'mule2', price = 0 },
+        { name = 'Van', model = 'burrito3', price = 0 },
     }
 }
 
@@ -699,5 +707,15 @@ Config.Shops      = {
         shopCoords = vector3(-516.53, -293.51, 36.0),
         type       = "car",
         cars       = Config.ClerkCars
+    },
+    --Humane Job
+    {
+        name       = 'Humane Vehicles',
+        job        = 'humane',
+        coords     = vector3(3638.80, 3770.78, 28.76),
+        heading    = 110.09,
+        shopCoords = vector3(3638.80, 3770.78, 28.76),
+        type       = "car",
+        cars       = Config.HumaneCars
     },
 }

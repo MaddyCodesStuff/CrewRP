@@ -130,6 +130,8 @@ Config.Interactables = {
     "p_ilev_p_easychair_s",
     "v_ilev_p_easychair",
     "xm_lab_easychair_01",
+    "vw_prop_casino_chair_01a",
+    "prop_chair_07",
     "p_yacht_chair_01_s"
 
 }

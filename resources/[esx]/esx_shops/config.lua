@@ -101,6 +101,12 @@ AMMUNATION_GADGET_ITEMS = {
         label_real       = 'Flares',
         item             = 'weapon_flare',
         price            = 500,
+    },
+    {
+        label            = 'Baseball',
+        label_real       = 'Baseball',
+        item             = 'weapon_ball',
+        price            = 5,
         limit            = 1,
     },
 }
@@ -395,9 +401,8 @@ Config.Zones            = {
                 limit      = 10,
             },
         },
+        Blip      = 0,
         Color     = { r = 255, g = 0, b = 0 },
-        BlipColor = 1,
-        Blip      = 94,
         Pos       = {
             { x = -928.25, y = -2937.32, z = 12.95 },
         }
@@ -744,6 +749,24 @@ Config.Zones            = {
         Blip      = 0,
         Pos       = {
             { x = -3168.58, y = 1086.99, z = 19.84 },
+        }
+    },
+    Ammunation11_Armor   = {
+        Items     = AMMUNATION_ARMOR_ITEMS,
+        Color     = { r = 0, g = 128, b = 255 },
+        BlipColor = 0,
+        Blip      = 0,
+        Pos       = {
+            { x = -1309.94, y = -390.72, z = 35.7 },
+        }
+    },
+    Ammunation11_Gadgets = {
+        Items     = AMMUNATION_GADGET_ITEMS,
+        Color     = { r = 0, g = 128, b = 255 },
+        BlipColor = 1,
+        Blip      = 0,
+        Pos       = {
+            { x = -1309.09, y = -393.51, z = 35.7 },
         }
     },
 }

@@ -1,4 +1,3 @@
-
 --===============================================================================
 --=== Edited By skiddle pumpkin#0001 4 MERCURY RP================================
 --===================== Direitos Reservados ao Mercury RP =======================
@@ -70,17 +69,20 @@ function isServicesJob(job)
     return false
 end
 
+
+
 RegisterNUICallback('joinRadio', function(data, cb)
     local channel = tonumber(data.channel)
-
     if channel ~= radioChannel then
         radioChannel = channel
         if channel <= Config.RestrictedChannels and PlayerData.job and isServicesJob(PlayerData.job.name) then -- Restricted radio
-            exports["mumble-voip"]:SetRadioChannel(channel)
+            exports["pma-voice"]:SetRadioChannel(channel)
+            TriggerEvent("tcrp-displayGeneral",  'Joined to radio' .. data.channel .. '.00 MHz </b>')
             TriggerServerEvent('esx-radios:enableBlip', PlayerData.job.name)
-            TriggerEvent("notification",  Config.messages['joined_to_radio'] .. data.channel .. '.00 MHz </b>', 1)
+            TriggerEvent('tcrp-blips:radioon', PlayerData.job.name)
+
         elseif channel > Config.RestrictedChannels then -- Civ radio
-            exports["mumble-voip"]:SetRadioChannel(channel)
+            exports["pma-voice"]:SetRadioChannel(channel)
             TriggerEvent("notification",  Config.messages['joined_to_radio'] .. data.channel .. '.00 MHz </b>', 1)
         else -- Handle invalid channels for user
             exports['mythic_notify']:SendAlert('error', Config.messages['restricted_channel_error'])
@@ -97,10 +99,11 @@ RegisterNUICallback('leaveRadio', function(data, cb)
 
     if PlayerData.job and isServicesJob(PlayerData.job.name) then
         TriggerServerEvent('esx-radios:disableBlip', job)
+        TriggerEvent('tcrp-blips:radiooff')
     end
 
     TriggerEvent("notification",  Config.messages['you_leave'], 3)
-    exports["mumble-voip"]:SetRadioChannel(0)
+    exports["pma-voice"]:SetRadioChannel(0)
     radioChannel = 0
 
    cb('ok')
@@ -120,7 +123,7 @@ end)
 
 RegisterNetEvent('ls-radio:onRadioDrop')
 AddEventHandler('ls-radio:onRadioDrop', function()
-    exports["mumble-voip"]:SetRadioChannel(0)
+    exports["pma-voice"]:SetRadioChannel(0)
     radioChannel = 0
 end)
 
