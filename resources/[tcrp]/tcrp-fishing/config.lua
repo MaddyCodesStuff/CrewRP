@@ -9,23 +9,26 @@ Config = {}
 	--=====Locations where players can sell stuff========--
 	--------------------------------------------------------
 
-	Config.Sell = {
+	Config.SellLegal = {
 		{
 			pos = vec3(-2175.14, 4288.03, 48.12), 
 			type = "legal",
-			sellText = "Fish Market",
+			sellText1 = "Fish Market",
 			blip = 317,
 			colour = 69,
-			onMap = true
+			onMap = true,
 		},
-	{
-			pos = vec3(-1641.00, -1017.37, 5.28), 
+	}
+
+	Config.SellIllegal = {
+		{
+			pos = vec3(-106.39, -2230.01, 7.31), 
 			type = "illegal", 
-			sellText = "Fish Black Market",
+			sellText2 = "Fish Black Market",
 			blip = 68,
 			colour = 49,
-			onMap = false
-		}
+			onMap = false,
+		},
 	}
 
 	--------------------------------------------------------
