@@ -174,153 +174,191 @@ DP.Shared      = {
     ["slapped2"]      = { "melee@unarmed@streamed_variations", "victim_takedown_front_backslap", "Slapped 2", "slap2" },
 }
 
-DP.Dances      = {
-    ["dancef"]          = { "anim@amb@nightclub@dancers@solomun_entourage@", "mi_dance_facedj_17_v1_female^1", "Dance F", AnimationOptions = {
+DP.Dances = {
+    ["dancef"] = {"anim@amb@nightclub@dancers@solomun_entourage@", "mi_dance_facedj_17_v1_female^1", "Dance F", AnimationOptions =
+    {
         EmoteLoop = true,
-    } },
-    ["dancef2"]         = { "anim@amb@nightclub@mini@dance@dance_solo@female@var_a@", "high_center", "Dance F2", AnimationOptions = {
+    }},
+    ["dancef2"] = {"anim@amb@nightclub@mini@dance@dance_solo@female@var_a@", "high_center", "Dance F2", AnimationOptions =
+    {
         EmoteLoop = true,
-    } },
-    ["dancef3"]         = { "anim@amb@nightclub@mini@dance@dance_solo@female@var_a@", "high_center_up", "Dance F3", AnimationOptions = {
+    }},
+    ["dancef3"] = {"anim@amb@nightclub@mini@dance@dance_solo@female@var_a@", "high_center_up", "Dance F3", AnimationOptions =
+    {
         EmoteLoop = true,
-    } },
-    ["dancef4"]         = { "anim@amb@nightclub@dancers@crowddance_facedj@hi_intensity", "hi_dance_facedj_09_v2_female^1", "Dance F4", AnimationOptions = {
+    }},
+    ["dancef4"] = {"anim@amb@nightclub@dancers@crowddance_facedj@hi_intensity", "hi_dance_facedj_09_v2_female^1", "Dance F4", AnimationOptions =
+    {
         EmoteLoop = true,
-    } },
-    ["dancef5"]         = { "anim@amb@nightclub@dancers@crowddance_facedj@hi_intensity", "hi_dance_facedj_09_v2_female^3", "Dance F5", AnimationOptions = {
+    }},
+    ["dancef5"] = {"anim@amb@nightclub@dancers@crowddance_facedj@hi_intensity", "hi_dance_facedj_09_v2_female^3", "Dance F5", AnimationOptions =
+    {
         EmoteLoop = true,
-    } },
-    ["dancef6"]         = { "anim@amb@nightclub@mini@dance@dance_solo@female@var_a@", "high_center_up", "Dance F6", AnimationOptions = {
+    }},
+    ["dancef6"] = {"anim@amb@nightclub@mini@dance@dance_solo@female@var_a@", "high_center_up", "Dance F6", AnimationOptions =
+    {
         EmoteLoop = true,
-    } },
-    ["danceslow2"]      = { "anim@amb@nightclub@mini@dance@dance_solo@female@var_a@", "low_center", "Dance Slow 2", AnimationOptions = {
+    }},
+    ["danceslow2"] = {"anim@amb@nightclub@mini@dance@dance_solo@female@var_a@", "low_center", "Dance Slow 2", AnimationOptions =
+    {
         EmoteLoop = true,
-    } },
-    ["danceslow3"]      = { "anim@amb@nightclub@mini@dance@dance_solo@female@var_a@", "low_center_down", "Dance Slow 3", AnimationOptions = {
+    }},
+    ["danceslow3"] = {"anim@amb@nightclub@mini@dance@dance_solo@female@var_a@", "low_center_down", "Dance Slow 3", AnimationOptions =
+    {
         EmoteLoop = true,
-    } },
-    ["danceslow4"]      = { "anim@amb@nightclub@mini@dance@dance_solo@female@var_b@", "low_center", "Dance Slow 4", AnimationOptions = {
+    }},
+    ["danceslow4"] = {"anim@amb@nightclub@mini@dance@dance_solo@female@var_b@", "low_center", "Dance Slow 4", AnimationOptions =
+    {
         EmoteLoop = true,
-    } },
-    ["dance"]           = { "anim@amb@nightclub@dancers@podium_dancers@", "hi_dance_facedj_17_v2_male^5", "Dance", AnimationOptions = {
+    }},
+    ["dance"] = {"anim@amb@nightclub@dancers@podium_dancers@", "hi_dance_facedj_17_v2_male^5", "Dance", AnimationOptions =
+    {
         EmoteLoop = true,
-    } },
-    ["dance2"]          = { "anim@amb@nightclub@mini@dance@dance_solo@male@var_b@", "high_center_down", "Dance 2", AnimationOptions = {
+    }},
+    ["dance2"] = {"anim@amb@nightclub@mini@dance@dance_solo@male@var_b@", "high_center_down", "Dance 2", AnimationOptions =
+    {
         EmoteLoop = true,
-    } },
-    ["dance3"]          = { "anim@amb@nightclub@mini@dance@dance_solo@male@var_a@", "high_center", "Dance 3", AnimationOptions = {
+    }},
+    ["dance3"] = {"anim@amb@nightclub@mini@dance@dance_solo@male@var_a@", "high_center", "Dance 3", AnimationOptions =
+    {
         EmoteLoop = true,
-    } },
-    ["dance4"]          = { "anim@amb@nightclub@mini@dance@dance_solo@male@var_b@", "high_center_up", "Dance 4", AnimationOptions = {
+    }},
+    ["dance4"] = {"anim@amb@nightclub@mini@dance@dance_solo@male@var_b@", "high_center_up", "Dance 4", AnimationOptions =
+    {
         EmoteLoop = true,
-    } },
-    ["danceupper"]      = { "anim@amb@nightclub@mini@dance@dance_solo@female@var_b@", "high_center", "Dance Upper", AnimationOptions = {
-        EmoteLoop   = true,
+    }},
+    ["danceupper"] = {"anim@amb@nightclub@mini@dance@dance_solo@female@var_b@", "high_center", "Dance Upper", AnimationOptions =
+    {
+        EmoteLoop = true,
         EmoteMoving = true,
-    } },
-    ["danceupper2"]     = { "anim@amb@nightclub@mini@dance@dance_solo@female@var_b@", "high_center_up", "Dance Upper 2", AnimationOptions = {
-        EmoteLoop   = true,
+    }},
+    ["danceupper2"] = {"anim@amb@nightclub@mini@dance@dance_solo@female@var_b@", "high_center_up", "Dance Upper 2", AnimationOptions =
+    {
+        EmoteLoop = true,
         EmoteMoving = true,
-    } },
-    ["danceshy"]        = { "anim@amb@nightclub@mini@dance@dance_solo@male@var_a@", "low_center", "Dance Shy", AnimationOptions = {
+    }},
+    ["danceshy"] = {"anim@amb@nightclub@mini@dance@dance_solo@male@var_a@", "low_center", "Dance Shy", AnimationOptions =
+    {
         EmoteLoop = true,
-    } },
-    ["danceshy2"]       = { "anim@amb@nightclub@mini@dance@dance_solo@female@var_b@", "low_center_down", "Dance Shy 2", AnimationOptions = {
+    }},
+    ["danceshy2"] = {"anim@amb@nightclub@mini@dance@dance_solo@female@var_b@", "low_center_down", "Dance Shy 2", AnimationOptions =
+    {
         EmoteLoop = true,
-    } },
-    ["danceslow"]       = { "anim@amb@nightclub@mini@dance@dance_solo@male@var_b@", "low_center", "Dance Slow", AnimationOptions = {
+    }},
+    ["danceslow"] = {"anim@amb@nightclub@mini@dance@dance_solo@male@var_b@", "low_center", "Dance Slow", AnimationOptions =
+    {
         EmoteLoop = true,
-    } },
-    ["dancesilly9"]     = { "rcmnigel1bnmt_1b", "dance_loop_tyler", "Dance Silly 9", AnimationOptions = {
+    }},
+    ["dancesilly9"] = {"rcmnigel1bnmt_1b", "dance_loop_tyler", "Dance Silly 9", AnimationOptions =
+    {
         EmoteLoop = true,
-    } },
-    ["dance6"]          = { "misschinese2_crystalmazemcs1_cs", "dance_loop_tao", "Dance 6", AnimationOptions = {
+    }},
+    ["dance6"] = {"misschinese2_crystalmazemcs1_cs", "dance_loop_tao", "Dance 6", AnimationOptions =
+    {
         EmoteLoop = true,
-    } },
-    ["dance7"]          = { "misschinese2_crystalmazemcs1_ig", "dance_loop_tao", "Dance 7", AnimationOptions = {
+    }},
+    ["dance7"] = {"misschinese2_crystalmazemcs1_ig", "dance_loop_tao", "Dance 7", AnimationOptions =
+    {
         EmoteLoop = true,
-    } },
-    ["dance8"]          = { "missfbi3_sniping", "dance_m_default", "Dance 8", AnimationOptions = {
+    }},
+    ["dance8"] = {"missfbi3_sniping", "dance_m_default", "Dance 8", AnimationOptions =
+    {
         EmoteLoop = true,
-    } },
-    ["dancesilly"]      = { "special_ped@mountain_dancer@monologue_3@monologue_3a", "mnt_dnc_buttwag", "Dance Silly", AnimationOptions = {
+    }},
+    ["dancesilly"] = {"special_ped@mountain_dancer@monologue_3@monologue_3a", "mnt_dnc_buttwag", "Dance Silly", AnimationOptions =
+    {
         EmoteLoop = true,
-    } },
-    ["dancesilly2"]     = { "move_clown@p_m_zero_idles@", "fidget_short_dance", "Dance Silly 2", AnimationOptions = {
+    }},
+    ["dancesilly2"] = {"move_clown@p_m_zero_idles@", "fidget_short_dance", "Dance Silly 2", AnimationOptions =
+    {
         EmoteLoop = true,
-    } },
-    ["dancesilly3"]     = { "move_clown@p_m_two_idles@", "fidget_short_dance", "Dance Silly 3", AnimationOptions = {
+    }},
+    ["dancesilly3"] = {"move_clown@p_m_two_idles@", "fidget_short_dance", "Dance Silly 3", AnimationOptions =
+    {
         EmoteLoop = true,
-    } },
-    ["dancesilly4"]     = { "anim@amb@nightclub@lazlow@hi_podium@", "danceidle_hi_11_buttwiggle_b_laz", "Dance Silly 4", AnimationOptions = {
+    }},
+    ["dancesilly4"] = {"anim@amb@nightclub@lazlow@hi_podium@", "danceidle_hi_11_buttwiggle_b_laz", "Dance Silly 4", AnimationOptions =
+    {
         EmoteLoop = true,
-    } },
-    ["dancesilly5"]     = { "timetable@tracy@ig_5@idle_a", "idle_a", "Dance Silly 5", AnimationOptions = {
+    }},
+    ["dancesilly5"] = {"timetable@tracy@ig_5@idle_a", "idle_a", "Dance Silly 5", AnimationOptions =
+    {
         EmoteLoop = true,
-    } },
-    ["dancesilly6"]     = { "timetable@tracy@ig_8@idle_b", "idle_d", "Dance Silly 6", AnimationOptions = {
+    }},
+    ["dancesilly6"] = {"timetable@tracy@ig_8@idle_b", "idle_d", "Dance Silly 6", AnimationOptions =
+    {
         EmoteLoop = true,
-    } },
-    ["dance9"]          = { "anim@amb@nightclub@mini@dance@dance_solo@female@var_a@", "med_center_up", "Dance 9", AnimationOptions = {
+    }},
+    ["dance9"] = {"anim@amb@nightclub@mini@dance@dance_solo@female@var_a@", "med_center_up", "Dance 9", AnimationOptions =
+    {
         EmoteLoop = true,
-    } },
-    ["dancesilly8"]     = { "anim@mp_player_intcelebrationfemale@the_woogie", "the_woogie", "Dance Silly 8", AnimationOptions = {
+    }},
+    ["dancesilly8"] = {"anim@mp_player_intcelebrationfemale@the_woogie", "the_woogie", "Dance Silly 8", AnimationOptions =
+    {
         EmoteLoop = true
-    } },
-    ["dancesilly7"]     = { "anim@amb@casino@mini@dance@dance_solo@female@var_b@", "high_center", "Dance Silly 7", AnimationOptions = {
+    }},
+    ["dancesilly7"] = {"anim@amb@casino@mini@dance@dance_solo@female@var_b@", "high_center", "Dance Silly 7", AnimationOptions =
+    {
         EmoteLoop = true
-    } },
-    ["dance5"]          = { "anim@amb@casino@mini@dance@dance_solo@female@var_a@", "med_center", "Dance 5", AnimationOptions = {
+    }},
+    ["dance5"] = {"anim@amb@casino@mini@dance@dance_solo@female@var_a@", "med_center", "Dance 5", AnimationOptions =
+    {
         EmoteLoop = true
-    } },
-    ["danceglowstick"]  = { "anim@amb@nightclub@lazlow@hi_railing@", "ambclub_13_mi_hi_sexualgriding_laz", "Dance Glowsticks", AnimationOptions = {
-        Prop                = 'ba_prop_battle_glowstick_01',
-        PropBone            = 28422,
-        PropPlacement       = { 0.0700, 0.1400, 0.0, -80.0, 20.0 },
-        SecondProp          = 'ba_prop_battle_glowstick_01',
-        SecondPropBone      = 60309,
-        SecondPropPlacement = { 0.0700, 0.0900, 0.0, -120.0, -20.0 },
-        EmoteLoop           = true,
-        EmoteMoving         = true,
-    } },
-    ["danceglowstick2"] = { "anim@amb@nightclub@lazlow@hi_railing@", "ambclub_12_mi_hi_bootyshake_laz", "Dance Glowsticks 2", AnimationOptions = {
-        Prop                = 'ba_prop_battle_glowstick_01',
-        PropBone            = 28422,
-        PropPlacement       = { 0.0700, 0.1400, 0.0, -80.0, 20.0 },
-        SecondProp          = 'ba_prop_battle_glowstick_01',
-        SecondPropBone      = 60309,
-        SecondPropPlacement = { 0.0700, 0.0900, 0.0, -120.0, -20.0 },
-        EmoteLoop           = true,
-    } },
-    ["danceglowstick3"] = { "anim@amb@nightclub@lazlow@hi_railing@", "ambclub_09_mi_hi_bellydancer_laz", "Dance Glowsticks 3", AnimationOptions = {
-        Prop                = 'ba_prop_battle_glowstick_01',
-        PropBone            = 28422,
-        PropPlacement       = { 0.0700, 0.1400, 0.0, -80.0, 20.0 },
-        SecondProp          = 'ba_prop_battle_glowstick_01',
-        SecondPropBone      = 60309,
-        SecondPropPlacement = { 0.0700, 0.0900, 0.0, -120.0, -20.0 },
-        EmoteLoop           = true,
-    } },
-    ["dancehorse"]      = { "anim@amb@nightclub@lazlow@hi_dancefloor@", "dancecrowd_li_15_handup_laz", "Dance Horse", AnimationOptions = {
-        Prop          = "ba_prop_battle_hobby_horse",
-        PropBone      = 28422,
-        PropPlacement = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
-        EmoteLoop     = true,
-        EmoteMoving   = true,
-    } },
-    ["dancehorse2"]     = { "anim@amb@nightclub@lazlow@hi_dancefloor@", "crowddance_hi_11_handup_laz", "Dance Horse 2", AnimationOptions = {
-        Prop          = "ba_prop_battle_hobby_horse",
-        PropBone      = 28422,
-        PropPlacement = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
-        EmoteLoop     = true,
-    } },
-    ["dancehorse3"]     = { "anim@amb@nightclub@lazlow@hi_dancefloor@", "dancecrowd_li_11_hu_shimmy_laz", "Dance Horse 3", AnimationOptions = {
-        Prop          = "ba_prop_battle_hobby_horse",
-        PropBone      = 28422,
-        PropPlacement = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
-        EmoteLoop     = true,
-    } },
-    ["dancepole"]          = { "mini@strip_club@pole_dance@pole_dance1", "pd_dance_01", "Pole Dance", AnimationOptions = {
+    }},
+    ["danceglowstick"] = {"anim@amb@nightclub@lazlow@hi_railing@", "ambclub_13_mi_hi_sexualgriding_laz", "Dance Glowsticks", AnimationOptions =
+    {
+        Prop = 'ba_prop_battle_glowstick_01',
+        PropBone = 28422,
+        PropPlacement = {0.0700,0.1400,0.0,-80.0,20.0},
+        SecondProp = 'ba_prop_battle_glowstick_01',
+        SecondPropBone = 60309,
+        SecondPropPlacement = {0.0700,0.0900,0.0,-120.0,-20.0},
+        EmoteLoop = true,
+        EmoteMoving = true,
+    }},
+    ["danceglowstick2"] = {"anim@amb@nightclub@lazlow@hi_railing@", "ambclub_12_mi_hi_bootyshake_laz", "Dance Glowsticks 2", AnimationOptions =
+    {
+        Prop = 'ba_prop_battle_glowstick_01',
+        PropBone = 28422,
+        PropPlacement = {0.0700,0.1400,0.0,-80.0,20.0},
+        SecondProp = 'ba_prop_battle_glowstick_01',
+        SecondPropBone = 60309,
+        SecondPropPlacement = {0.0700,0.0900,0.0,-120.0,-20.0},
+        EmoteLoop = true,
+    }},
+    ["danceglowstick3"] = {"anim@amb@nightclub@lazlow@hi_railing@", "ambclub_09_mi_hi_bellydancer_laz", "Dance Glowsticks 3", AnimationOptions =
+    {
+        Prop = 'ba_prop_battle_glowstick_01',
+        PropBone = 28422,
+        PropPlacement = {0.0700,0.1400,0.0,-80.0,20.0},
+        SecondProp = 'ba_prop_battle_glowstick_01',
+        SecondPropBone = 60309,
+        SecondPropPlacement = {0.0700,0.0900,0.0,-120.0,-20.0},
+        EmoteLoop = true,
+    }},
+    ["dancehorse"] = {"anim@amb@nightclub@lazlow@hi_dancefloor@", "dancecrowd_li_15_handup_laz", "Dance Horse", AnimationOptions =
+    {
+        Prop = "ba_prop_battle_hobby_horse",
+        PropBone = 28422,
+        PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        EmoteLoop = true,
+        EmoteMoving = true,
+    }},
+    ["dancehorse2"] = {"anim@amb@nightclub@lazlow@hi_dancefloor@", "crowddance_hi_11_handup_laz", "Dance Horse 2", AnimationOptions =
+    {
+        Prop = "ba_prop_battle_hobby_horse",
+        PropBone = 28422,
+        PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        EmoteLoop = true,
+    }},
+    ["dancehorse3"] = {"anim@amb@nightclub@lazlow@hi_dancefloor@", "dancecrowd_li_11_hu_shimmy_laz", "Dance Horse 3", AnimationOptions =
+    {
+        Prop = "ba_prop_battle_hobby_horse",
+        PropBone = 28422,
+        PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        EmoteLoop = true,
+    }},
+        ["dancepole"]          = { "mini@strip_club@pole_dance@pole_dance1", "pd_dance_01", "Pole Dance", AnimationOptions = {
         EmoteLoop = true,
     } },
     ["dancepole2"]          = { "mini@strip_club@pole_dance@pole_dance2", "pd_dance_02", "Pole Dance 2", AnimationOptions = {
@@ -334,8 +372,8 @@ DP.Dances      = {
     ["dancepole5"]          = { "mini@strip_club@pole_dance@stage_2_pole_b", "stage_2_pole_b", "Pole Dance 5", AnimationOptions = {
     } },
     ["dancepole6"]          = { "mini@strip_club@pole_dance@stage_2_pole_c", "stage_2_pole_c", "Pole Dance 6", AnimationOptions = {
-    } },
-}
+    } }
+ }
 
 DP.Emotes      = {
     ["drink"]         = { "mp_player_inteat@pnq", "loop", "Drink", AnimationOptions = {
@@ -1505,6 +1543,20 @@ DP.PropEmotes  = {
         EmoteLoop     = true,
         EmoteMoving   = true,
     } },
+    ["jackhammer"]     = { "amb@lo_res_idles@", "world_human_const_drill_lo_res_base", "Jackhammer", AnimationOptions = {
+        Prop          = "prop_tool_jackham",
+        PropBone      = 18905,
+        PropPlacement = { 0.12, 0.22, -0.0, 5.0, -120.0, 110.0 },
+        EmoteLoop     = true,
+        EmoteMoving   = true,
+    } },
+    ["jackhammer2"]     = { "amb@world_human_const_drill@male@drill@base", "base", "Jackhammer2", AnimationOptions = {
+        Prop          = "prop_tool_jackham",
+        PropBone      = 18905,
+        PropPlacement = { 0.12, 0.22, -0.0, 5.0, -120.0, 110.0 },
+        EmoteLoop     = true,
+        EmoteMoving   = true,
+    } },
     ["smoke2"]          = { "amb@world_human_aa_smoke@male@idle_a", "idle_c", "Smoke 2", AnimationOptions = {
         Prop          = 'prop_cs_ciggy_01',
         PropBone      = 28422,
@@ -1521,6 +1573,13 @@ DP.PropEmotes  = {
     } },
     ["smoke4"]          = { "amb@world_human_smoking@female@idle_a", "idle_b", "Smoke 4", AnimationOptions = {
         Prop          = 'prop_cs_ciggy_01',
+        PropBone      = 28422,
+        PropPlacement = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
+        EmoteLoop     = true,
+        EmoteMoving   = true,
+    } },
+    ["smokeweed2"]    = { "amb@world_human_aa_smoke@male@idle_a", "idle_c", "Smoke Weed 2", AnimationOptions = {
+        Prop          = 'p_amb_joint_01',
         PropBone      = 28422,
         PropPlacement = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
         EmoteLoop     = true,
