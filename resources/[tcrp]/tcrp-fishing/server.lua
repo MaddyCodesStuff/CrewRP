@@ -120,9 +120,10 @@ AddEventHandler('fishing:catch', function(bait, playerCoords)
 		for i = 1, #xPlayers, 1 do
 			local xPlayer = ESX.GetPlayerFromId(xPlayers[i])
 			if xPlayer and xPlayer.job and xPlayer.job.name == 'police' or xPlayer.job.name == 'parkranger' then
+				local blip = {["x"] = playerCoords.x, ["y"] = playerCoords.y, ["z"] = playerCoords.z, ["longrange"] = true, ["text"] = "[PD] Suspicious Activity", ["sprite"] = 404, ["color"] = 1, ["scale"] = 1.5, ["duration"] = 120}
 				TriggerClientEvent('mythic_notify:client:SendCopAlert', xPlayers[i],
 								{ text = 'Suspicious Activity Reported in the Area'})
-				TriggerClientEvent('esx_blips:setBlipOnCoord', xPlayers[i], playerCoords, 60, 1, true, 1.5, 404)			
+				TriggerClientEvent("tcrp-blips:addblip", xPlayers[i], blip)
 			end
 		end	
 	end

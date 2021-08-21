@@ -3,24 +3,26 @@ local pdcache = {}
 
 RegisterNetEvent("tcrp-blips:radioon")
 AddEventHandler("tcrp-blips:radioon", function(job)
-    for i = 1, #EMERGENCYDOCKS.Blips, 1 do
-        local blip = AddBlipForCoord(EMERGENCYDOCKS.Blips[i].x, EMERGENCYDOCKS.Blips[i].y, EMERGENCYDOCKS.Blips[i].z or Config.DefaultZ)
-        dockcache[i] = blip
-        SetBlipSprite(blip, EMERGENCYDOCKS.Config["sprite"] or Config.DefaultSprite)
-        SetBlipDisplay(blip, EMERGENCYDOCKS.Config["display"] or Config.DefaultDisplay)
-        SetBlipAlpha(blip, EMERGENCYDOCKS.Config["opacity"] or Config.DefaultOpacity) 
-        SetBlipCategory(blip, EMERGENCYDOCKS.Config["type"] or Config.DefaultType)
-        SetBlipPriority(blip, EMERGENCYDOCKS.Config["layer"] or Config.DefaultLayer)
-        SetBlipScale(blip, EMERGENCYDOCKS.Config["scale"] or Config.DefaultScale)
-        SetBlipColour(blip, EMERGENCYDOCKS.Config["color"] or Config.DefaultColor)
-        SetBlipHiddenOnLegend(blip, EMERGENCYDOCKS.Config["hidden"] or Config.DefaultHidden)
-        SetBlipAsShortRange(blip, true)
-        local bliptext = EMERGENCYDOCKS.Config["text"]
-        AddTextEntry("EMERGENCYDOCKS", bliptext)
-        BeginTextCommandSetBlipName("EMERGENCYDOCKS")
-        EndTextCommandSetBlipName(blip)
+    if dockcache[1] == nil then
+        for i = 1, #EMERGENCYDOCKS.Blips, 1 do
+            local blip = AddBlipForCoord(EMERGENCYDOCKS.Blips[i].x, EMERGENCYDOCKS.Blips[i].y, EMERGENCYDOCKS.Blips[i].z or Config.DefaultZ)
+            dockcache[i] = blip
+            SetBlipSprite(blip, EMERGENCYDOCKS.Config["sprite"] or Config.DefaultSprite)
+            SetBlipDisplay(blip, EMERGENCYDOCKS.Config["display"] or Config.DefaultDisplay)
+            SetBlipAlpha(blip, EMERGENCYDOCKS.Config["opacity"] or Config.DefaultOpacity) 
+            SetBlipCategory(blip, EMERGENCYDOCKS.Config["type"] or Config.DefaultType)
+            SetBlipPriority(blip, EMERGENCYDOCKS.Config["layer"] or Config.DefaultLayer)
+            SetBlipScale(blip, EMERGENCYDOCKS.Config["scale"] or Config.DefaultScale)
+            SetBlipColour(blip, EMERGENCYDOCKS.Config["color"] or Config.DefaultColor)
+            SetBlipHiddenOnLegend(blip, EMERGENCYDOCKS.Config["hidden"] or Config.DefaultHidden)
+            SetBlipAsShortRange(blip, true)
+            local bliptext = EMERGENCYDOCKS.Config["text"]
+            AddTextEntry("EMERGENCYDOCKS", bliptext)
+            BeginTextCommandSetBlipName("EMERGENCYDOCKS")
+            EndTextCommandSetBlipName(blip)
+        end
     end
-    if job == 'police' then
+    if job == 'police' and pdcache[1] == nil then
         for i = 1, #LOCALPD.Blips, 1 do
             local blip = AddBlipForCoord(LOCALPD.Blips[i].x, LOCALPD.Blips[i].y, LOCALPD.Blips[i].z or Config.DefaultZ)
             pdcache[i] = blip
@@ -42,11 +44,15 @@ AddEventHandler("tcrp-blips:radioon", function(job)
 end)
 
 RegisterNetEvent("tcrp-blips:radiooff")
-AddEventHandler("tcrp-blips:radiooff", function()
+AddEventHandler("tcrp-blips:radiooff", function(job)
     for i = 1, #EMERGENCYDOCKS.Blips, 1 do
         RemoveBlip(dockcache[i])
     end
-    for i = 1, #LOCALPD.Blips, 1 do
-        RemoveBlip(pdcache[i])
+    dockcache = {}
+    if job == 'police' then
+        for i = 1, #LOCALPD.Blips, 1 do
+            RemoveBlip(pdcache[i])
+        end
+        pdcache = {}
     end
 end)

@@ -1,17 +1,20 @@
 toggle = true
---MAKE SURE YOU TURN THIS OFF BEFORE MERGING KAIA
+-- Loads any texture dictionaries needed for any blips --
 Citizen.CreateThread(function()
-    for i = 1, #Blips.Main do
-        local blip = Blips.Main[i]
-        RequestStreamedTextureDict(blip["Info.dictionary"], 1)
-        while not HasStreamedTextureDictLoaded(blip["Info.dictionary"])  do
-            Citizen.Wait(1)
+    for k,v in pairs(Blips.Main) do
+        if Blips.Main[k] ~= nil then
+            local blip = Blips.Main[k]
+            RequestStreamedTextureDict(blip["Info.dictionary"], 1)
+            while not HasStreamedTextureDictLoaded(blip["Info.dictionary"])  do
+                Citizen.Wait(1)
+            end
         end
     end
 end)
 
-for i = 1, #Blips.Main do
-    local blip = Blips.Main[i]
+-- Handles the Main Group of Blips --
+for k,v in pairs(Blips.Main) do
+    local blip = Blips.Main[k]
     if blip and blip["sprite"]~= -1 then
         if not DoesBlipExist(blip["id"]) then
             blip["id"] = AddBlipForCoord(blip["x"], blip["y"], blip["z"] or Config.DefaultZ)
@@ -38,9 +41,7 @@ for i = 1, #Blips.Main do
             if blip["outlineonly"] ~= nil then
                 SetRadiusBlipEdge(blip, blip["outlineonly"])
             end
-            if blip["fadeopacity"] and blip["fadetime"] ~= nil  then
-                SetBlipFade(blip, blip["fadeopacity"], blip["fadetime"])
-            end
+
             if blip["color2red"] and blip["color2green"] and blip["color2blue"] ~= nil then
                 SetBlipSecondaryColour(blip, blip["color2red"], blip["color2green"], blip["color2blue"])
             end
@@ -81,7 +82,7 @@ for i = 1, #Blips.Main do
             if blip["Info.name4Left"] and blip["Info.name4Right"] ~= nil then
                 exports['blip_info']:AddBlipInfoName(blip["id"], blip["Info.name4Left"], blip["Info.name4Right"])
             end
-            if blip["Info.text5Left"] and blip["Info.text3Right"] ~= nil then
+            if blip["Info.text5Left"] and blip["Info.text5Right"] ~= nil then
                 exports['blip_info']:AddBlipInfoText(blip["id"], blip["Info.text5Left"], blip["Info.text5Right"])
             end
             if blip["Info.name5Left"] and blip["Info.name5Right"] ~= nil then
@@ -117,218 +118,25 @@ for i = 1, #Blips.Main do
         end
     end
 end
-for i = 1, #ATM.Blips, 1 do
-    local blip = AddBlipForCoord(ATM.Blips[i].x, ATM.Blips[i].y, ATM.Blips[i].z or Config.DefaultZ)
-    SetBlipSprite(blip, ATM.Config["sprite"] or Config.DefaultSprite)
-    SetBlipDisplay(blip, ATM.Config["display"] or Config.DefaultDisplay)
-    SetBlipAlpha(blip, ATM.Config["opacity"] or Config.DefaultOpacity) 
-    SetBlipCategory(blip, ATM.Config["type"] or Config.DefaultType)
-    SetBlipPriority(blip, ATM.Config["layer"] or Config.DefaultLayer)
-    SetBlipScale(blip, ATM.Config["scale"] or Config.DefaultScale)
-    SetBlipColour(blip, ATM.Config["color"] or Config.DefaultColor)
-    SetBlipHiddenOnLegend(blip, ATM.Config["hidden"] or Config.DefaultHidden)
-    SetBlipAsShortRange(blip, true)
-    local bliptext = ATM.Config["text"]
-    AddTextEntry("ATM", bliptext)
-    BeginTextCommandSetBlipName("ATM")
-    EndTextCommandSetBlipName(blip)
-end
-for i = 1, #GAS.Blips, 1 do
-    local blip = AddBlipForCoord(GAS.Blips[i].x, GAS.Blips[i].y, GAS.Blips[i].z)
-    SetBlipSprite(blip, GAS.Config["sprite"] or Config.DefaultSprite)
-    SetBlipDisplay(blip, GAS.Config["display"] or Config.DefaultDisplay)
-    SetBlipAlpha(blip, GAS.Config["opacity"] or Config.DefaultOpacity)
-    SetBlipCategory(blip, GAS.Config["type"] or Config.DefaultType)
-    SetBlipPriority(blip, GAS.Config["layer"] or Config.DefaultLayer)
-    SetBlipScale(blip, GAS.Config["scale"] or Config.DefaultScale)
-    SetBlipColour(blip, GAS.Config["color"] or Config.DefaultColor)
-    SetBlipHiddenOnLegend(blip, GAS.Config["hidden"] or Config.DefaultHidden)
-    SetBlipAsShortRange(blip, true)
-    local bliptext = GAS.Config["text"]
-    AddTextEntry("GAS", bliptext)
-    BeginTextCommandSetBlipName("GAS")
-    EndTextCommandSetBlipName(blip)
-end
-for i = 1, #STORE.Blips, 1 do
-    local blip = AddBlipForCoord(STORE.Blips[i].x, STORE.Blips[i].y, STORE.Blips[i].z)
-    SetBlipSprite(blip, STORE.Config["sprite"] or Config.DefaultSprite)
-    SetBlipDisplay(blip, STORE.Config["display"] or Config.DefaultDisplay)
-    SetBlipAlpha(blip, STORE.Config["opacity"] or Config.DefaultOpacity)
-    SetBlipCategory(blip, STORE.Config["type"] or Config.DefaultType)
-    SetBlipPriority(blip, STORE.Config["layer"] or Config.DefaultLayer)
-    SetBlipScale(blip, STORE.Config["scale"] or Config.DefaultScale)
-    SetBlipColour(blip, STORE.Config["color"] or Config.DefaultColor)
-    SetBlipAsShortRange(blip, true)
-    local bliptext = STORE.Config["text"]
-    AddTextEntry("STORE", bliptext)
-    BeginTextCommandSetBlipName("STORE")
-    EndTextCommandSetBlipName(blip)
-end
-for i = 1, #PARKING.Blips, 1 do
-    local blip = AddBlipForCoord(PARKING.Blips[i].x, PARKING.Blips[i].y, PARKING.Blips[i].z)
-    SetBlipSprite(blip, PARKING.Config["sprite"] or Config.DefaultSprite)
-    SetBlipDisplay(blip, PARKING.Config["display"] or Config.DefaultDisplay)
-    SetBlipAlpha(blip, PARKING.Config["opacity"] or Config.DefaultOpacity)
-    SetBlipCategory(blip, PARKING.Config["type"] or Config.DefaultType)
-    SetBlipPriority(blip, PARKING.Config["layer"] or Config.DefaultLayer)
-    SetBlipScale(blip, PARKING.Config["scale"] or Config.DefaultScale)
-    SetBlipColour(blip, PARKING.Config["color"] or Config.DefaultColor)
-    SetBlipAsShortRange(blip, true)
-    local bliptext = PARKING.Config["text"]
-    AddTextEntry("PARKING", bliptext)
-    BeginTextCommandSetBlipName("PARKING")
-    EndTextCommandSetBlipName(blip)
-end
-for i = 1, #PHARMACY.Blips, 1 do
-    local blip = AddBlipForCoord(PHARMACY.Blips[i].x, PHARMACY.Blips[i].y, PHARMACY.Blips[i].z)
-    SetBlipSprite(blip, PHARMACY.Config["sprite"] or Config.DefaultSprite)
-    SetBlipDisplay(blip, PHARMACY.Config["display"] or Config.DefaultDisplay)
-    SetBlipAlpha(blip, PHARMACY.Config["opacity"] or Config.DefaultOpacity)
-    SetBlipCategory(blip, PHARMACY.Config["type"] or Config.DefaultType)
-    SetBlipPriority(blip, PHARMACY.Config["layer"] or Config.DefaultLayer)
-    SetBlipScale(blip, PHARMACY.Config["scale"] or Config.DefaultScale)
-    SetBlipColour(blip, PHARMACY.Config["color"] or Config.DefaultColor)
-    SetBlipAsShortRange(blip, true)
-    local bliptext = PHARMACY.Config["text"]
-    AddTextEntry("PHARMACY", bliptext)
-    BeginTextCommandSetBlipName("PHARMACY")
-    EndTextCommandSetBlipName(blip)
-end
-for i = 1, #CARWASH.Blips, 1 do
-    local blip = AddBlipForCoord(CARWASH.Blips[i].x, CARWASH.Blips[i].y, CARWASH.Blips[i].z)
-    SetBlipSprite(blip, CARWASH.Config["sprite"] or Config.DefaultSprite)
-    SetBlipDisplay(blip, CARWASH.Config["display"] or Config.DefaultDisplay)
-    SetBlipAlpha(blip, CARWASH.Config["opacity"] or Config.DefaultOpacity)
-    SetBlipCategory(blip, CARWASH.Config["type"] or Config.DefaultType)
-    SetBlipPriority(blip, CARWASH.Config["layer"] or Config.DefaultLayer)
-    SetBlipScale(blip, CARWASH.Config["scale"] or Config.DefaultScale)
-    SetBlipColour(blip, CARWASH.Config["color"] or Config.DefaultColor)
-    SetBlipAsShortRange(blip, true)
-    local bliptext = CARWASH.Config["text"]
-    AddTextEntry("CARWASH", bliptext)
-    BeginTextCommandSetBlipName("CARWASH")
-    EndTextCommandSetBlipName(blip)
-end
-for i = 1, #TATTOO.Blips, 1 do
-    local blip = AddBlipForCoord(TATTOO.Blips[i].x, TATTOO.Blips[i].y, TATTOO.Blips[i].z)
-    SetBlipSprite(blip, TATTOO.Config["sprite"] or Config.DefaultSprite)
-    SetBlipDisplay(blip, TATTOO.Config["display"] or Config.DefaultDisplay)
-    SetBlipAlpha(blip, TATTOO.Config["opacity"] or Config.DefaultOpacity)
-    SetBlipCategory(blip, TATTOO.Config["type"] or Config.DefaultType)
-    SetBlipPriority(blip, TATTOO.Config["layer"] or Config.DefaultLayer)
-    SetBlipScale(blip, TATTOO.Config["scale"] or Config.DefaultScale)
-    SetBlipColour(blip, TATTOO.Config["color"] or Config.DefaultColor)
-    SetBlipAsShortRange(blip, true)
-    local bliptext = TATTOO.Config["text"]
-    AddTextEntry("TATTOO", bliptext)
-    BeginTextCommandSetBlipName("TATTOO")
-    EndTextCommandSetBlipName(blip)
-end
-for i = 1, #CLOTHING.Blips, 1 do
-    local blip = AddBlipForCoord(CLOTHING.Blips[i].x, CLOTHING.Blips[i].y, CLOTHING.Blips[i].z)
-    SetBlipSprite(blip, CLOTHING.Config["sprite"] or Config.DefaultSprite)
-    SetBlipDisplay(blip, CLOTHING.Config["display"] or Config.DefaultDisplay)
-    SetBlipAlpha(blip, CLOTHING.Config["opacity"] or Config.DefaultOpacity)
-    SetBlipCategory(blip, CLOTHING.Config["type"] or Config.DefaultType)
-    SetBlipPriority(blip, CLOTHING.Config["layer"] or Config.DefaultLayer)
-    SetBlipScale(blip, CLOTHING.Config["scale"] or Config.DefaultScale)
-    SetBlipColour(blip, CLOTHING.Config["color"] or Config.DefaultColor)
-    SetBlipAsShortRange(blip, true)
-    local bliptext = CLOTHING.Config["text"]
-    AddTextEntry("CLOTHING", bliptext)
-    BeginTextCommandSetBlipName("CLOTHING")
-    EndTextCommandSetBlipName(blip)
-end
-for i = 1, #HAIR.Blips, 1 do
-    local blip = AddBlipForCoord(HAIR.Blips[i].x, HAIR.Blips[i].y, HAIR.Blips[i].z)
-    SetBlipSprite(blip, HAIR.Config["sprite"] or Config.DefaultSprite)
-    SetBlipDisplay(blip, HAIR.Config["display"] or Config.DefaultDisplay)
-    SetBlipAlpha(blip, HAIR.Config["opacity"] or Config.DefaultOpacity)
-    SetBlipCategory(blip, HAIR.Config["type"] or Config.DefaultType)
-    SetBlipPriority(blip, HAIR.Config["layer"] or Config.DefaultLayer)
-    SetBlipScale(blip, HAIR.Config["scale"] or Config.DefaultScale)
-    SetBlipColour(blip, HAIR.Config["color"] or Config.DefaultColor)
-    SetBlipAsShortRange(blip, true)
-    local bliptext = HAIR.Config["text"]
-    AddTextEntry("HAIR", bliptext)
-    BeginTextCommandSetBlipName("HAIR")
-    EndTextCommandSetBlipName(blip)
-end
-for i = 1, #IMPOUND.Blips, 1 do
-    local blip = AddBlipForCoord(IMPOUND.Blips[i].x, IMPOUND.Blips[i].y, IMPOUND.Blips[i].z)
-    SetBlipSprite(blip, IMPOUND.Config["sprite"] or Config.DefaultSprite)
-    SetBlipDisplay(blip, IMPOUND.Config["display"] or Config.DefaultDisplay)
-    SetBlipAlpha(blip, IMPOUND.Config["opacity"] or Config.DefaultOpacity)
-    SetBlipCategory(blip, IMPOUND.Config["type"] or Config.DefaultType)
-    SetBlipPriority(blip, IMPOUND.Config["layer"] or Config.DefaultLayer)
-    SetBlipScale(blip, IMPOUND.Config["scale"] or Config.DefaultScale)
-    SetBlipColour(blip, IMPOUND.Config["color"] or Config.DefaultColor)
-    SetBlipAsShortRange(blip, true)
-    local bliptext = IMPOUND.Config["text"]
-    AddTextEntry("IMPOUND", bliptext)
-    BeginTextCommandSetBlipName("IMPOUND")
-    EndTextCommandSetBlipName(blip)
-end
-for i = 1, #MASKS.Blips, 1 do
-    local blip = AddBlipForCoord(MASKS.Blips[i].x, MASKS.Blips[i].y, MASKS.Blips[i].z)
-    SetBlipSprite(blip, MASKS.Config["sprite"] or Config.DefaultSprite)
-    SetBlipDisplay(blip, MASKS.Config["display"] or Config.DefaultDisplay)
-    SetBlipAlpha(blip, MASKS.Config["opacity"] or Config.DefaultOpacity)
-    SetBlipCategory(blip, MASKS.Config["type"] or Config.DefaultType)
-    SetBlipPriority(blip, MASKS.Config["layer"] or Config.DefaultLayer)
-    SetBlipScale(blip, MASKS.Config["scale"] or Config.DefaultScale)
-    SetBlipColour(blip, MASKS.Config["color"] or Config.DefaultColor)
-    SetBlipAsShortRange(blip, true)
-    local bliptext = MASKS.Config["text"]
-    AddTextEntry("MASKS", bliptext)
-    BeginTextCommandSetBlipName("MASKS")
-    EndTextCommandSetBlipName(blip)
-end
-for i = 1, #TRASH.Blips, 1 do
-    local blip = AddBlipForCoord(TRASH.Blips[i].x, TRASH.Blips[i].y, TRASH.Blips[i].z)
-    SetBlipSprite(blip, TRASH.Config["sprite"] or Config.DefaultSprite)
-    SetBlipDisplay(blip, TRASH.Config["display"] or Config.DefaultDisplay)
-    SetBlipAlpha(blip, TRASH.Config["opacity"] or Config.DefaultOpacity)
-    SetBlipCategory(blip, TRASH.Config["type"] or Config.DefaultType)
-    SetBlipPriority(blip, TRASH.Config["layer"] or Config.DefaultLayer)
-    SetBlipScale(blip, TRASH.Config["scale"] or Config.DefaultScale)
-    SetBlipColour(blip, TRASH.Config["color"] or Config.DefaultColor)
-    SetBlipAsShortRange(blip, true)
-    local bliptext = TRASH.Config["text"]
-    AddTextEntry("TRASH", bliptext)
-    BeginTextCommandSetBlipName("TRASH")
-    EndTextCommandSetBlipName(blip)
-end
-for i = 1, #HANGAR.Blips, 1 do
-    local blip = AddBlipForCoord(HANGAR.Blips[i].x, HANGAR.Blips[i].y, HANGAR.Blips[i].z)
-    SetBlipSprite(blip, HANGAR.Config["sprite"] or Config.DefaultSprite)
-    SetBlipDisplay(blip, HANGAR.Config["display"] or Config.DefaultDisplay)
-    SetBlipAlpha(blip, HANGAR.Config["opacity"] or Config.DefaultOpacity)
-    SetBlipCategory(blip, HANGAR.Config["type"] or Config.DefaultType)
-    SetBlipPriority(blip, HANGAR.Config["layer"] or Config.DefaultLayer)
-    SetBlipScale(blip, HANGAR.Config["scale"] or Config.DefaultScale)
-    SetBlipColour(blip, HANGAR.Config["color"] or Config.DefaultColor)
-    SetBlipAsShortRange(blip, true)
-    local bliptext = HANGAR.Config["text"]
-    AddTextEntry("HANGAR", bliptext)
-    BeginTextCommandSetBlipName("HANGAR")
-    EndTextCommandSetBlipName(blip)
-end
-for i = 1, #HARDWARE.Blips, 1 do
-    local blip = AddBlipForCoord(HARDWARE.Blips[i].x, HARDWARE.Blips[i].y, HARDWARE.Blips[i].z or Config.DefaultZ)
-    SetBlipSprite(blip, HARDWARE.Config["sprite"] or Config.DefaultSprite)
-    SetBlipDisplay(blip, HARDWARE.Config["display"] or Config.DefaultDisplay)
-    SetBlipAlpha(blip, HARDWARE.Config["opacity"] or Config.DefaultOpacity) 
-    SetBlipCategory(blip, HARDWARE.Config["type"] or Config.DefaultType)
-    SetBlipPriority(blip, HARDWARE.Config["layer"] or Config.DefaultLayer)
-    SetBlipScale(blip, HARDWARE.Config["scale"] or Config.DefaultScale)
-    SetBlipColour(blip, HARDWARE.Config["color"] or Config.DefaultColor)
-    SetBlipHiddenOnLegend(blip, HARDWARE.Config["hidden"] or Config.DefaultHidden)
-    SetBlipAsShortRange(blip, true)
-    local bliptext = HARDWARE.Config["text"]
-    AddTextEntry("HARDWARE", bliptext)
-    BeginTextCommandSetBlipName("HARDWARE")
-    EndTextCommandSetBlipName(blip)
+
+-- Handles Creating the Bulk Blips --
+for k,v in pairs(Bulkblips) do
+    for i = 1, #v.Blips, 1 do
+        local blip = AddBlipForCoord(v.Blips[i].x, v.Blips[i].y, v.Blips[i].z or Config.DefaultZ)
+        SetBlipSprite(blip, v.Config["sprite"] or Config.DefaultSprite)
+        SetBlipDisplay(blip, v.Config["display"] or Config.DefaultDisplay)
+        SetBlipAlpha(blip, v.Config["opacity"] or Config.DefaultOpacity) 
+        SetBlipCategory(blip, v.Config["type"] or Config.DefaultType)
+        SetBlipPriority(blip, v.Config["layer"] or Config.DefaultLayer)
+        SetBlipScale(blip, v.Config["scale"] or Config.DefaultScale)
+        SetBlipColour(blip, v.Config["color"] or Config.DefaultColor)
+        SetBlipHiddenOnLegend(blip, v.Config["hidden"] or Config.DefaultHidden)
+        SetBlipAsShortRange(blip, true)
+        local bliptable = v.Config["text"]
+        AddTextEntry(bliptable, v.Config["text"])
+        BeginTextCommandSetBlipName(bliptable)
+        EndTextCommandSetBlipName(blip)
+    end
 end
 
 RegisterNetEvent("tcrp-blips:emergency")
@@ -450,10 +258,11 @@ end)
 
 RegisterNetEvent("tcrp-blips:addblip")
 AddEventHandler("tcrp-blips:addblip", function(blipconfig, entity)
+    local blip = nil
     if entity ~= nil then
-        local blip = AddBlipForEntity(entity)
+        blip = AddBlipForEntity(entity)
     else
-        local blip = AddBlipForCoord(blip["x"], blip["y"], blip["z"] or Config.DefaultZ)
+        blip = AddBlipForCoord(blipconfig["x"], blipconfig["y"], blipconfig["z"] or Config.DefaultZ)
     end
     SetBlipSprite(blip, blipconfig["sprite"] or Config.DefaultSprite)
     SetBlipDisplay(blip, blipconfig["display"] or Config.DefaultDisplay)
@@ -461,8 +270,13 @@ AddEventHandler("tcrp-blips:addblip", function(blipconfig, entity)
     SetBlipPriority(blip, blipconfig["layer"] or Config.DefaultLayer)
     SetBlipScale(blip, blipconfig["scale"] or Config.DefaultScale)
     SetBlipColour(blip, blipconfig["color"] or Config.DefaultColor)
-    SetBlipRotation(blip, blipconfig["rotation"] or Config.DefaultRotation)
     SetBlipHiddenOnLegend(blip, blipconfig["hidden"] or Config.DefaultHidden)
+    if blipconfig["duration"] ~= nil then
+        DeleteBlip(blip,blipconfig["duration"])
+    end
+    if blipconfig["rotation"] ~= nil then
+        SetBlipRotation(blip, blipconfig["rotation"])
+    end
     if blipconfig["checkmark"] ~= nil then
         ShowTickOnBlip(blip, blipconfig["checkmark"])
     end
@@ -477,9 +291,6 @@ AddEventHandler("tcrp-blips:addblip", function(blipconfig, entity)
     end
     if blipconfig["outlineonly"] ~= nil then
         SetRadiusBlipEdge(blip, blipconfig["outlineonly"])
-    end
-    if blipconfig["fadeopacity"] and blipconfig["fadetime"] ~= nil  then
-        SetBlipFade(blip, blipconfig["fadeopacity"], blipconfig["fadetime"])
     end
     if blipconfig["color2red"] and blipconfig["color2green"] and blipconfig["color2blue"] ~= nil then
         SetBlipSecondaryColour(blip, blipconfig["color2red"], blipconfig["color2green"], blipconfig["color2blue"])
@@ -518,7 +329,7 @@ AddEventHandler("tcrp-blips:addblip", function(blipconfig, entity)
     if blipconfig["Info.name4Left"] and blipconfig["Info.name4Right"] ~= nil then
         exports['blip_info']:AddBlipInfoName(blip, blipconfig["Info.name4Left"], blipconfig["Info.name4Right"])
     end
-    if blipconfig["Info.text5Left"] and blipconfig["Info.text3Right"] ~= nil then
+    if blipconfig["Info.text5Left"] and blipconfig["Info.text5Right"] ~= nil then
         exports['blip_info']:AddBlipInfoText(blip, blipconfig["Info.text5Left"], blipconfig["Info.text5Right"])
     end
     if blipconfig["Info.name5Left"] and blipconfig["Info.name5Right"] ~= nil then
@@ -542,11 +353,19 @@ AddEventHandler("tcrp-blips:addblip", function(blipconfig, entity)
     if blipconfig["Info.icon3Left"] and blipconfig["Info.icon3Right"] and blipconfig["Info.icon3ID"] and blipconfig["Info.icon3Color"] and blip ["Info.icon3Checkmark"] ~= nil then
         exports['blip_info']:AddBlipInfoIcon(blip, blipconfig["Info.icon3Left"], blipconfig["Info.icon3Right"], blipconfig["Info.icon3ID"], blipconfig["Info.icon3Color"], blipconfig["Info.icon3Checkmark"])
     end
-    SetBlipAsShortRange(blip, true)
-    if blip["text"] ~= nil then 
-        bliptext = blip["text"]
+    if not blipconfig["longrange"] then
+        SetBlipAsShortRange(blip, true)
+    else
+        SetBlipAsShortRange(blip, false)
+    end
+    if blipconfig["text"] ~= nil then 
+        bliptext = blipconfig["text"]
     else 
         bliptext = "New Blip"
+    end
+    if blipconfig["flash"] ~= nil and blipconfig["flashinterval"] ~= nil then
+        SetBlipFlashes(blip, blipconfig["flash"])
+        SetBlipFlashInterval(blip, blipconfig["flashinterval"])
     end
     AddTextEntry("blips", bliptext)
     BeginTextCommandSetBlipName("blips")
@@ -559,9 +378,9 @@ AddEventHandler("tcrp-blips:removeblip", function(blip)
     RemoveBlip(blip)
 end)
 
-
 RegisterNetEvent("tcrp-blips:updateblip")
 AddEventHandler("tcrp-blips:updateblip", function(blipsource, table)
+    local blip = nil
     local entityblip = GetBlipFromEntity(blipsource)
     local blipconfig = table
     if entityblip ~= nil or 0 then 
@@ -617,9 +436,6 @@ AddEventHandler("tcrp-blips:updateblip", function(blipsource, table)
         if blipconfig["outlineonly"] ~= nil then
             SetRadiusBlipEdge(blip, blipconfig["outlineonly"])
         end
-        if blipconfig["fadeopacity"] and blipconfig["fadetime"] ~= nil  then
-            SetBlipFade(blip, blipconfig["fadeopacity"], blipconfig["fadetime"])
-        end
         if blipconfig["color2red"] and blipconfig["color2green"] and blipconfig["color2blue"] ~= nil then
             SetBlipSecondaryColour(blip, blipconfig["color2red"], blipconfig["color2green"], blipconfig["color2blue"])
         end
@@ -654,7 +470,7 @@ AddEventHandler("tcrp-blips:updateblip", function(blipsource, table)
         if blipconfig["Info.name4Left"] and blipconfig["Info.name4Right"] ~= nil then
             exports['blip_info']:AddBlipInfoName(blip, blipconfig["Info.name4Left"], blipconfig["Info.name4Right"])
         end
-        if blipconfig["Info.text5Left"] and blipconfig["Info.text3Right"] ~= nil then
+        if blipconfig["Info.text5Left"] and blipconfig["Info.text5Right"] ~= nil then
             exports['blip_info']:AddBlipInfoText(blip, blipconfig["Info.text5Left"], blipconfig["Info.text5Right"])
         end
         if blipconfig["Info.name5Left"] and blipconfig["Info.name5Right"] ~= nil then
@@ -678,6 +494,13 @@ AddEventHandler("tcrp-blips:updateblip", function(blipsource, table)
         if blipconfig["Info.icon3Left"] and blipconfig["Info.icon3Right"] and blipconfig["Info.icon3ID"] and blipconfig["Info.icon3Color"] and blip ["Info.icon3Checkmark"] ~= nil then
             exports['blip_info']:AddBlipInfoIcon(blip, blipconfig["Info.icon3Left"], blipconfig["Info.icon3Right"], blipconfig["Info.icon3ID"], blipconfig["Info.icon3Color"], blipconfig["Info.icon3Checkmark"])
         end
-        SetBlipAsShortRange(blip, true)
+        SetBlipAsShortRange(blip, blipconfig["range"] or true)
     end
 end)
+
+function DeleteBlip(blip, duration)
+    Citizen.CreateThread(function()
+        Citizen.Wait(duration * 1000)
+        RemoveBlip(blip)
+    end)
+end

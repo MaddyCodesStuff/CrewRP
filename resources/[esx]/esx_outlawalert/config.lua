@@ -27,10 +27,10 @@ Config.BlipMeleeTime      = 7
 Config.BlipMeleeRadius    = 50.0
 
 -- EMS In seconds
-Config.BlipEMSTime        = 120
+Config.BlipEMSTime        = 300
 
 -- Fire In seconds
-Config.BlipFireTime       = 120
+Config.BlipFireTime       = 300
 
 -- In seconds
 Config.BlipJackingTime    = 10

@@ -83,7 +83,6 @@ function opendoors(success, timeremaining)
     else
         hackholdingup = false
         TriggerEvent('mythic_notify:client:SendErrorAlert', { text = _U('hack_failed') })
-        print('Failure')
         TriggerEvent('mhacking:hide')
         secondsRemaining = 0
         incircle         = false
@@ -92,7 +91,8 @@ end
 
 RegisterNetEvent('esx_holdupbank:setblip')
 AddEventHandler('esx_holdupbank:setblip', function(position)
-    TriggerEvent('esx_blips:setBlipOnCoord', position, 600, 3, true, 1.0)
+    local blip = {["x"] = position.x, ["y"] = position.y, ["z"] = position.z, ["text"] = "[PD] Bank Robbery", ["sprite"] = 161, ["color"] = 3, ["scale"] = 1.0, ["duration"] = 310}
+    TriggerEvent("tcrp-blips:addblip", blip)
 end)
 
 RegisterNetEvent('esx_holdupbank:toofarlocal')

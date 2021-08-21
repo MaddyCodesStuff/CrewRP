@@ -120,9 +120,10 @@ end)
 RegisterNetEvent('tcrp-policeimpound:alertPolice')
 AddEventHandler('tcrp-policeimpound:alertPolice', function(message)
     if isPolice then
+        local blip = {["x"] = Config.ImpoundLot.doorway.outside.x, ["y"] = Config.ImpoundLot.doorway.outside.y, ["z"] = Config.ImpoundLot.doorway.outside.z, ["longrange"] = true, ["text"] = "[PD] Impound Robbery", ["sprite"] = 161, ["color"] = 1, ["scale"] = 2.0, ["duration"] = 300}
         PlaySoundFrontend(-1, "Event_Start_Text", "GTAO_FM_Events_Soundset", 0)
         TriggerEvent('mythic_notify:client:SendCopAlert', { text = message })
-        TriggerEvent('esx_blips:setBlipOnCoord', Config.ImpoundLot.doorway.outside, 300)
+        TriggerEvent("tcrp-blips:addblip", blip)
     end
 end)
 

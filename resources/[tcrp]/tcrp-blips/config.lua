@@ -172,8 +172,9 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Fleeca Default",
     },
+    
     --AMMUNATIONS--
-    [9]  = {
+    [60]  = {
         ["name"]    = "Rockford Hills Ammunation",
         ["x"] = -1307.79, ["y"] = -393.0,
         ["category"]= "Ammu-Nation",
@@ -188,7 +189,7 @@ Blips.Main        = {
         ["Info.image"] = "Ammunation Default",
         
     },
-    [10]  = {
+    [61]  = {
         ["name"]    = "Vinewood Ammunation",
         ["x"] = 250.27, ["y"] = -48.55,
         ["category"]= "Ammu-Nation",
@@ -202,7 +203,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Ammunation Default",
     },
-    [11]  = {
+    [62]  = {
         ["name"]    = "Little Seoul Ammunation",
         ["x"] = -662.92, ["y"] = -937.63,
         ["category"]= "Ammu-Nation",
@@ -216,7 +217,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Ammunation Default",
     },
-    [12]  = {
+    [63]  = {
         ["name"]    = "Strawberry Ammunation",
         ["x"] = 20.66, ["y"] = -1109.07,
         ["category"]= "Ammu-Nation",
@@ -231,7 +232,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Ammunation Default",
     },
-    [13]  = {
+    [64]  = {
         ["name"]    = "Cypress Flats Ammunation",
         ["x"] = 810.87, ["y"] = -2155.01,
         ["category"]= "Ammu-Nation",
@@ -246,7 +247,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Ammunation Default",
     },
-    [14]  = {
+    [65]  = {
         ["name"]    = "Chumash Ammunation",
         ["x"] = -3170.08, ["y"] = 1086.30,
         ["category"]= "Ammu-Nation",
@@ -260,7 +261,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Ammunation Default",
     },
-    [15]  = {
+    [66]  = {
         ["name"]    = "Route 68 Ammunation",
         ["x"] = -1116.73, ["y"] = 2696.38,
         ["category"]= "Ammu-Nation",
@@ -274,7 +275,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Ammunation Default",
     },
-    [16]  = {
+    [67]  = {
         ["name"]    = "Sandy Shores Ammunation",
         ["x"] = 1694.76, ["y"] = 3757.77,
         ["category"]= "Ammu-Nation",
@@ -288,7 +289,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Ammunation Default",
     },
-    [17]  = {
+    [68]  = {
         ["name"]    = "Paleto Bay Ammunation",
         ["x"] = -329.28, ["y"] = 6081.65,
         ["category"]= "Ammu-Nation",
@@ -302,7 +303,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Ammunation Default",
     },
-    [105]  = {
+    [69]  = {
         ["name"]    = "Vespucci Ammunation",
         ["x"] = 842.99, ["y"] = -1031.78,
         ["category"]= "Ammu-Nation",
@@ -316,9 +317,23 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Ammunation Default",
     },
+    [70]  = {
+        ["name"]    = "Palomino Ammunation",
+        ["x"] = 2568.68, ["y"] = 301.27,
+        ["category"]= "Ammu-Nation",
+        ["text"]    = "Ammu-Nation",
+        ["sprite"]  = 110,
+        ["color"]   = 22,
+        ["layer"]   = 15,
+        ["Info.toggle"] = true,
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Gun Store",
+        ["Info.nameLeft"] = "Gun Range",["Info.nameRight"] = "No",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Ammunation Default",
+    },
 
     --Restaurants--
-    [18]  = {
+    [120]  = {
         ["name"]    = "Hookies",
         ["x"] = -2185.72, ["y"] = 4285.61,
         ["category"]= "Restaurant",
@@ -333,7 +348,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Hookies",
     },
-    [19]  = {
+    [121]  = {
         ["name"]    = "Pop's Diner",
         ["x"] =  1589.66, ["y"] = 6456.26,
         ["category"]= "Restaurant",
@@ -345,8 +360,10 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Restaurant",
         ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Matthew Clark",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Pop's",
     },
-    [20]  = {
+    [122]  = {
         ["name"]    = "Rex's Diner",
         ["x"] =  2557.18, ["y"] = 2592.03,
         ["category"]= "Restaurant",
@@ -361,7 +378,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Rex's Diner",
     },
-    [21]  = {
+    [123]  = {
         ["name"]    = "Pearls",
         ["x"] =  -1829.85, ["y"] = -1190.71,
         ["category"]= "Restaurant",
@@ -373,8 +390,10 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Restaurant",
         ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Giorno Giovanna",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Pearls",
     },
-    [22]  = {
+    [124]  = {
         ["name"]    = "Burgershot",
         ["x"] =  -1193.28, ["y"] = -890.88,
         ["category"]= "Restaurant",
@@ -386,11 +405,11 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Restaurant",
         ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Uri Jackson",
-        ["Info.text2Left"] = "Phone", ["Info.text2Right"] = "272-0483",
+        ["Info.text2Left"] = "Phone", ["Info.text2Right"] = "382-3085",
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Burger Shot",
     },
-    [23]  = {
+    [125]  = {
         ["name"]    = "Limey's",
         ["x"] =  -1242.11, ["y"] = -283.91,
         ["category"]= "Restaurant",
@@ -407,7 +426,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Quinns",
     },
-    [24]  = {
+    [126]  = {
         ["name"]    = "Cherry Popper",
         ["x"] =  -464.57, ["y"] = -29.01,
         ["category"]= "Restaurant",
@@ -422,7 +441,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Cherry Poper",
     },
-    [25]  = {
+    [127]  = {
         ["name"]    = "Taco Farmer",
         ["x"] =  10.64, ["y"] = -1602.00,
         ["category"]= "Restaurant",
@@ -439,7 +458,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Taco Farmer",
     },
-    [102]  = {
+    [128]  = {
         ["name"]    = "Coffee Shop",
         ["x"] =  -625.12, ["y"] =  238.07,
         ["category"]= "Restaurant",
@@ -451,9 +470,12 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Restaurant",
         ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "None",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Coffee Shop",
     },
+    
     --Mechanics--
-    [26]  = {
+    [180]  = {
         ["name"]    = "Mechanic",
         ["x"] =  -337.38, ["y"] = -136.92,
         ["category"]= "Mechanic Shop",
@@ -467,7 +489,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Mechanic Default",
     },
-    [27]  = {
+    [181]  = {
         ["name"]    = "Mechanic",
         ["x"] =  -1155.53, ["y"] = -2007.18,
         ["category"]= "Mechanic Shop",
@@ -481,7 +503,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Mechanic Default",
     },
-    [28]  = {
+    [182]  = {
         ["name"]    = "Mechanic",
         ["x"] =  731.81, ["y"] = -1088.82,
         ["category"]= "Mechanic Shop",
@@ -497,7 +519,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "General Griff",
     },
-    [29]  = {
+    [183]  = {
         ["name"]    = "Mechanic",
         ["x"] =  1175.04, ["y"] = 2640.21,
         ["category"]= "Mechanic Shop",
@@ -513,7 +535,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Reaper Repairs",
     },
-    [30]  = {
+    [184]  = {
         ["name"]    = "Mechanic",
         ["x"] =  110.23, ["y"] = 6627.9,
         ["category"]= "Mechanic Shop",
@@ -529,7 +551,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "D&DAuto",
     },
-    [31]  = {
+    [185]  = {
         ["name"]    = "Mechanic",
         ["x"] =  -1550.1, ["y"] = -3181.79,
         ["category"]= "Mechanic Shop",
@@ -543,7 +565,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Mechanic Default",
     },
-    [32]  = {
+    [186]  = {
         ["name"]    = "Mechanic",
         ["x"] =  -1423.63, ["y"] = -450.18,
         ["category"]= "Mechanic Shop",
@@ -559,7 +581,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Hayes",
     },
-    [33]  = {
+    [187]  = {
         ["name"]    = "Mechanic",
         ["x"] =  978.28, ["y"] = -123.31,
         ["category"]= "Mechanic Shop",
@@ -573,7 +595,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Mechanic Default",
     },
-    [34]  = {
+    [188]  = {
         ["name"]    = "Mechanic",
         ["x"] =  -30.11, ["y"] = -1060.42,
         ["category"]= "Mechanic Shop",
@@ -587,7 +609,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Mechanic Default",
     },
-    [35]  = {
+    [189]  = {
         ["name"]    = "Mechanic",
         ["x"] =  488.16, ["y"] =  -1313.68,
         ["category"]= "Mechanic Shop",
@@ -601,7 +623,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Mechanic Default",
     },
-    [36]  = {
+    [190]  = {
         ["name"]    = "Mechanic",
         ["x"] =  1776.84, ["y"] =  3335.06,
         ["category"]= "Mechanic Shop",
@@ -615,7 +637,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Mechanic Default",
     },
-    [37]  = {
+    [191]  = {
         ["name"]    = "Mechanic",
         ["x"] =  -221.13, ["y"] =  -1329.29,
         ["category"]= "Mechanic Shop",
@@ -628,7 +650,7 @@ Blips.Main        = {
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Mechanic Shop",
         ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Aaliyah Sanchez/Ricky Romero",
     },
-    [99]  = {
+    [192]  = {
         ["name"]    = "Mechanic",
         ["x"] =  533.46, ["y"] = -179.82,
         ["category"]= "Mechanic Shop",
@@ -644,8 +666,18 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Auto Exotic",
     },
+    [193]  = {
+        ["name"]    = "Local Mechanic",
+        ["x"] =  1147.86, ["y"] = -776.3,
+        ["category"]= "Repair",
+        ["text"]    = "Local Mechanic",
+        ["sprite"]  =  544,
+        ["color"]   = 0,
+        ["layer"]   = 25,
+    },
+
     --Other Stores--
-    [39]  = {
+    [250]  = {
         ["name"]    = "Cindy's Flower Shop",
         ["x"] =  -1183.29, ["y"] =  -1193.05,
         ["category"]= "Other Stores",
@@ -660,7 +692,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Cindy's Flowers",
     },
-    [40]  = {
+    [251]  = {
         ["name"]    = "Bowling Alley",
         ["x"] =  -153.38, ["y"] =  -246.94,
         ["category"]= "Other Stores",
@@ -675,8 +707,9 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Bowling Alley",
     },
+    
     --Hobbies--
-    [41]  = {
+    [300]  = {
         ["name"]    = "Sell Essense",
         ["x"] =  148.09, ["y"] =  -2391.45,
         ["category"]= "Fuel Hobby",
@@ -686,7 +719,7 @@ Blips.Main        = {
         ["layer"]   = 20,
         ["scale"]   = 1.0,
     },
-    [42]  = {
+    [301]  = {
         ["name"]    = "Gather Oil",
         ["x"] =  1649.91, ["y"] =  -1858.33,
         ["category"]= "Fuel Hobby",
@@ -696,7 +729,7 @@ Blips.Main        = {
         ["layer"]   = 20,
         ["scale"]   = 1.0,
     },
-    [43]  = {
+    [302]  = {
         ["name"]    = "Refine Oil",
         ["x"] =  305.25, ["y"] =  -2734.30,
         ["category"]= "Fuel Hobby",
@@ -706,7 +739,7 @@ Blips.Main        = {
         ["layer"]   = 20,
         ["scale"]   = 1.0,
     },
-    [44]  = {
+    [303]  = {
         ["name"]    = "Garbage Facility",
         ["x"] =  -321.70, ["y"] =  -1545.84,
         ["category"]= "Garbage Hobby",
@@ -716,7 +749,7 @@ Blips.Main        = {
         ["layer"]   = 20,
         ["scale"]   = 1.0,
     },
-    [45]  = {
+    [304]  = {
         ["name"]    = "Delivery Hub",
         ["x"] =  -314.00, ["y"] =  -1035.11,
         ["category"]= "Delivery Hobby",
@@ -726,7 +759,7 @@ Blips.Main        = {
         ["layer"]   = 20,
         ["scale"]   = 1.0,
     },
-    [46]  = {
+    [305]  = {
         ["name"]    = "Grape Harvesting",
         ["x"] =  -1925.12, ["y"] =  1918.79,
         ["category"]= "Wine Hobby",
@@ -736,7 +769,7 @@ Blips.Main        = {
         ["layer"]   = 25,
         ["scale"]   = 1.0,
     },
-    [47]  = {
+    [306]  = {
         ["name"]    = "Wine Fermenting",
         ["x"] =  -1881.20, ["y"] =  2063.09,
         ["category"]= "Wine Hobby",
@@ -746,7 +779,7 @@ Blips.Main        = {
         ["layer"]   = 25,
         ["scale"]   = 1.0,
     },
-    [48]  = {
+    [307]  = {
         ["name"]    = "Smeltery",
         ["x"] =  1077.96, ["y"] = -1965.83,
         ["category"]= "Mining Hobby",
@@ -756,7 +789,7 @@ Blips.Main        = {
         ["layer"]   = 25,
         ["scale"]   = 1.0,
     },
-    [49]  = {
+    [308]  = {
         ["name"]    = "Mineshaft",
         ["x"] =  -596.41, ["y"] =  2088.56,
         ["category"]= "Mining Hobby",
@@ -766,7 +799,7 @@ Blips.Main        = {
         ["layer"]   = 25,
         ["scale"]   = 1.0,
     },
-    [94]  = {
+    [309]  = {
         ["name"]    = "Gather Pearls",
         ["x"] =  -2481.85, ["y"] =  -735.3,
         ["category"]= "Pearls Hobby",
@@ -776,7 +809,7 @@ Blips.Main        = {
         ["layer"]   = 25,
         ["scale"]   = 1.0,
     },
-    [95]  = {
+    [310]  = {
         ["name"]    = "Refine Fabric",
         ["x"] =  715.5, ["y"] =  -965.99,
         ["category"]= "Tailor Hobby",
@@ -786,7 +819,7 @@ Blips.Main        = {
         ["layer"]   = 25,
         ["scale"]   = 1.0,
     },
-    [96]  = {
+    [311]  = {
         ["name"]    = "Sell Clothes",
         ["x"] =  455.0, ["y"] =  -801.65,
         ["category"]= "Tailor Hobby",
@@ -796,7 +829,7 @@ Blips.Main        = {
         ["layer"]   = 25,
         ["scale"]   = 1.0,
     },
-    [97]  = {
+    [312]  = {
         ["name"]    = "Harvest Wool",
         ["x"] =  2055.69, ["y"] =  4927.9,
         ["category"]= "Tailor Hobby",
@@ -806,8 +839,18 @@ Blips.Main        = {
         ["layer"]   = 25,
         ["scale"]   = 1.0,
     },
+    [313]  = {
+        ["name"]    = "Fish Market",
+        ["x"] =  -2175.22, ["y"] = 4287.98,
+        ["category"]= "Fish Market",
+        ["text"]    = "Fish Market",
+        ["sprite"]  = 317,
+        ["color"]   = 2,
+        ["layer"]   = 15,
+    },
+    
     --BARS--
-    [46]  = {
+    [370]  = {
         ["name"]    = "Tequi-la-la",
         ["x"] =  -562.16, ["y"] =  285.59,
         ["category"]= "Bars",
@@ -822,7 +865,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Tequilala",
     },
-    [47]  = {
+    [371]  = {
         ["name"]    = "Yellow Jack",
         ["x"] =  1982.67, ["y"] =  3053.31,
         ["category"]= "Bars",
@@ -838,7 +881,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "YelllowJack Inn",
     },
-    [104]  = {
+    [372]  = {
         ["name"]    = "McLeod's",
         ["x"] =  841.62, ["y"] =  -113.43,
         ["category"]= "Bars",
@@ -853,7 +896,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "O'Conners",
     },
-    [100]  = {
+    [373]  = {
         ["name"]    = "Bayview Lodge",
         ["x"] =  -691.88, ["y"] =  5800.17,
         ["category"]= "Bars",
@@ -869,8 +912,9 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Bayview Lodge",
     },
+    
     --NightClubs--
-    [52]  = {
+    [430]  = {
         ["name"]    = "Vanilla Unicorn",
         ["x"] = 129.34, ["y"] =  -1283.96,
         ["category"]= "Nightclub",
@@ -880,14 +924,17 @@ Blips.Main        = {
         ["layer"]   = 25,
         ["scale"]   = 1.0,
         ["Info.toggle"] = true,
-        ["Info.title"] = "~q~Vanilla Unicorn",
-        ["Info.textLeft"] = "~q~Category", ["Info.textRight"] = "~q~Nightclub",
-        ["Info.nameLeft"] = "~q~Owner",["Info.nameRight"] = "~q~Armin Mikovic",
-        ["Info.text2Left"] = "~q~Phone",["Info.text2Right"] = "~q~851-1041",
+        ["Info.title"] = "~q~The Vanilla Unicorn",
+        ["Info.textLeft"] = "~q~Category:", ["Info.textRight"] = "~q~Strip Club",
+        ["Info.nameLeft"] = "~q~Owner:",["Info.nameRight"] = "~q~Lola Rosita Navarro",
+        ["Info.text2Left"] = "~q~Manager:",["Info.text2Right"] = "~q~ Red Acted",
+        ["Info.name2Left"] = "                              ~q~Phone",["Info.name2Right"] = "",
+        ["Info.text3Left"] = "~q~Lola:",["Info.text3Right"] = "~q~731-9558",
+        ["Info.name3Left"] = "~q~Red:",["Info.name3Right"] = "~q~153-1737",
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Vanilla Unicorn",
     },
-    [53]  = {
+    [431]  = {
         ["name"]    = "Galaxy",
         ["x"] =  -133.77, ["y"] =  -1273.27,
         ["category"]= "Nightclub",
@@ -902,7 +949,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Galaxy",
     },
-    [101]  = {
+    [432]  = {
         ["name"]    = "Bahama Mama's",
         ["x"] =  -1391.64, ["y"] =  -604.81,
         ["category"]= "Nightclub",
@@ -918,7 +965,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Bahama Mamas",
     },
-    [103]  = {
+    [433]  = {
         ["name"]    = "Split Sides",
         ["x"] =  -438.57, ["y"] =  269.79,
         ["category"]= "Nightclub",
@@ -930,9 +977,12 @@ Blips.Main        = {
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Nightclub",
         ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Arthur Peregrine",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Split Sides",
     },
-    --Other Blips--
-    [54]  = {
+    
+    --Police Stations--
+    [490]  = {
         ["name"]    = "Mission Row Police Department",
         ["x"] =  438.86, ["y"] =  -981.97,
         ["category"]= "Police Station",
@@ -947,7 +997,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "MRPD",
     },
-    [55]  = {
+    [491]  = {
         ["name"]    = "Blaine County Sheriff Office",
         ["x"] =  1857.35, ["y"] =  3687.86,
         ["category"]= "Police Station",
@@ -962,7 +1012,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "BCSO",
     },
-    [56]  = {
+    [492]  = {
         ["name"]    = "San Andreas Highway Patrol",
         ["x"] =  -445.83, ["y"] =  6014.01,
         ["category"]= "Police Station",
@@ -977,7 +1027,9 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "SAHP",
     },
-    [57]  = {
+
+    -- Medical Centers --
+    [550]  = {
         ["name"]    = "Pillbox Medical Center",
         ["x"] =  304.43, ["y"] =  -586.52,
         ["category"]= "Hospital",
@@ -992,7 +1044,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Pillbox Medical",
     },
-    [58]  = {
+    [551]  = {
         ["name"]    = "Sandy Shores Medical Center",
         ["x"] =  1830.92, ["y"] =  3672.65,
         ["category"]= "Hospital",
@@ -1007,7 +1059,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Sandy Medical",
     },
-    [59]  = {
+    [552]  = {
         ["name"]    = "Paleto Bay Medical Center",
         ["x"] =  -253.39, ["y"] =  6322.70,
         ["category"]= "Hospital",
@@ -1022,7 +1074,81 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Paleto Medical",
     },
-    [60]  = {
+
+    -- Fire Stations --
+    [610]  = {
+        ["name"]    = "Capital Fire Station",
+        ["x"] =  1200.35, ["y"] = -1475.49,
+        ["category"]= "Fire Department",
+        ["text"]    = "Fire Department",
+        ["sprite"]  = 648,
+        ["color"]   = 64,
+        ["layer"]   = 30,
+        ["scale"]   = 1.2,
+        ["Info.toggle"] = true,
+        ["Info.nameLeft"] = "Fire Chief",["Info.nameRight"] = "Jimmy Wales",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Capital Fire",
+    },
+    [611]  = {
+        ["name"]    = "Davis Fire Station",
+        ["x"] =  205.21, ["y"] = -1651.26,
+        ["category"]= "Fire Department",
+        ["text"]    = "Fire Department",
+        ["sprite"]  = 648,
+        ["color"]   = 64,
+        ["layer"]   = 30,
+        ["scale"]   = 1.2,
+        ["Info.toggle"] = true,
+        ["Info.nameLeft"] = "Fire Chief",["Info.nameRight"] = "Jimmy Wales",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Davis Fire",
+    },
+    [612]  = {
+        ["name"]    = "Rockford Fire Station",
+        ["x"] =  -641.83, ["y"] = -120.38,
+        ["category"]= "Fire Department",
+        ["text"]    = "Fire Department",
+        ["sprite"]  = 648,
+        ["color"]   = 64,
+        ["layer"]   = 30,
+        ["scale"]   = 1.2,
+        ["Info.toggle"] = true,
+        ["Info.nameLeft"] = "Fire Chief",["Info.nameRight"] = "Jimmy Wales",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Rockford Fire",
+    },
+    [613]  = {
+        ["name"]    = "Sandy Shores Fire Station",
+        ["x"] =  1692.37, ["y"] = 3589.01,
+        ["category"]= "Fire Department",
+        ["text"]    = "Fire Department",
+        ["sprite"]  = 648,
+        ["color"]   = 64,
+        ["layer"]   = 30,
+        ["scale"]   = 1.2,
+        ["Info.toggle"] = true,
+        ["Info.nameLeft"] = "Fire Chief",["Info.nameRight"] = "Jimmy Wales",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Sandy Fire",
+    },
+    [614]  = {
+        ["name"]    = "Paleto Fire Station",
+        ["x"] =  -370.34, ["y"] = 6109.85,
+        ["category"]= "Fire Department",
+        ["text"]    = "Fire Department",
+        ["sprite"]  = 648,
+        ["color"]   = 64,
+        ["layer"]   = 30,
+        ["scale"]   = 1.2,
+        ["Info.toggle"] = true,
+        ["Info.nameLeft"] = "Fire Chief",["Info.nameRight"] = "Jimmy Wales",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Paleto Fire",
+    },
+    
+    -- Other Services --
+    [670]  = {
         ["name"]    = "Bolingbroke Penitentiary",
         ["x"] =  1833.48, ["y"] = 2604.07,
         ["category"]= "Prison",
@@ -1037,7 +1163,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Bolingbroke Penitentiary",
     },
-    [61]  = {
+    [671]  = {
         ["name"]    = "San Andreas Parks Deparment",
         ["x"] =  385.87, ["y"] = 796.18,
         ["category"]= "Park Rangers",
@@ -1051,154 +1177,9 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Parks Station",
     },
-    [62]  = {
-        ["name"]    = "Capital Fire Station",
-        ["x"] =  1200.35, ["y"] = -1475.49,
-        ["category"]= "Fire Department",
-        ["text"]    = "Fire Department",
-        ["sprite"]  = 648,
-        ["color"]   = 64,
-        ["layer"]   = 30,
-        ["scale"]   = 1.2,
-        ["Info.toggle"] = true,
-        ["Info.nameLeft"] = "Fire Chief",["Info.nameRight"] = "Jimmy Wales",
-        ["Info.dictionary"] = "blip_images",
-        ["Info.image"] = "Capital Fire",
-    },
-    [63]  = {
-        ["name"]    = "Davis Fire Station",
-        ["x"] =  205.21, ["y"] = -1651.26,
-        ["category"]= "Fire Department",
-        ["text"]    = "Fire Department",
-        ["sprite"]  = 648,
-        ["color"]   = 64,
-        ["layer"]   = 30,
-        ["scale"]   = 1.2,
-        ["Info.toggle"] = true,
-        ["Info.nameLeft"] = "Fire Chief",["Info.nameRight"] = "Jimmy Wales",
-        ["Info.dictionary"] = "blip_images",
-        ["Info.image"] = "Davis Fire",
-    },
-    [64]  = {
-        ["name"]    = "Rockford Fire Station",
-        ["x"] =  -641.83, ["y"] = -120.38,
-        ["category"]= "Fire Department",
-        ["text"]    = "Fire Department",
-        ["sprite"]  = 648,
-        ["color"]   = 64,
-        ["layer"]   = 30,
-        ["scale"]   = 1.2,
-        ["Info.toggle"] = true,
-        ["Info.nameLeft"] = "Fire Chief",["Info.nameRight"] = "Jimmy Wales",
-        ["Info.dictionary"] = "blip_images",
-        ["Info.image"] = "Rockford Fire",
-    },
-    [65]  = {
-        ["name"]    = "Sandy Shores Fire Station",
-        ["x"] =  1692.37, ["y"] = 3589.01,
-        ["category"]= "Fire Department",
-        ["text"]    = "Fire Department",
-        ["sprite"]  = 648,
-        ["color"]   = 64,
-        ["layer"]   = 30,
-        ["scale"]   = 1.2,
-        ["Info.toggle"] = true,
-        ["Info.nameLeft"] = "Fire Chief",["Info.nameRight"] = "Jimmy Wales",
-        ["Info.dictionary"] = "blip_images",
-        ["Info.image"] = "Sandy Fire",
-    },
-    [66]  = {
-        ["name"]    = "Paleto Fire Station",
-        ["x"] =  -370.34, ["y"] = 6109.85,
-        ["category"]= "Fire Department",
-        ["text"]    = "Fire Department",
-        ["sprite"]  = 648,
-        ["color"]   = 64,
-        ["layer"]   = 30,
-        ["scale"]   = 1.2,
-        ["Info.toggle"] = true,
-        ["Info.nameLeft"] = "Fire Chief",["Info.nameRight"] = "Jimmy Wales",
-        ["Info.dictionary"] = "blip_images",
-        ["Info.image"] = "Paleto Fire",
-    },
-    [67]  = {
-        ["name"]    = "Metro Bus Terminal",
-        ["x"] =  267.56, ["y"] = -1216.37,
-        ["category"]= "Bus Terminal",
-        ["text"]    = "Bus Terminal",
-        ["sprite"]  = 513,
-        ["color"]   = 0,
-        ["layer"]   = 15,
-    },
-    [68]  = {
-        ["name"]    = "Airport Bus Terminal",
-        ["x"] =  -900.87, ["y"] = -2332.99,
-        ["category"]= "Bus Terminal",
-        ["text"]    = "Bus Terminal",
-        ["sprite"]  = 513,
-        ["color"]   = 0,
-        ["layer"]   = 15,
-    },
-    [69]  = {
-        ["name"]    = "Scenic Bus Terminal",
-        ["x"] =  453.82, ["y"] = -584.38,
-        ["category"]= "Bus Terminal",
-        ["text"]    = "Bus Terminal",
-        ["sprite"]  = 513,
-        ["color"]   = 0,
-        ["layer"]   = 15,
-    },
-    [70]  = {
-        ["name"]    = "Law Offices",
-        ["x"] =  -66.71, ["y"] = -802.26,
-        ["category"]= "Offices",
-        ["text"]    = "Law Offices",
-        ["sprite"]  = 525,
-        ["color"]   = 0,
-        ["layer"]   = 30,
-        ["scale"]   = 1.0,
-    },
-    [71]  = {
-        ["name"]    = "Real Estate Office",
-        ["x"] =  -246.93, ["y"] = -911.83,
-        ["category"]= "Offices",
-        ["text"]    = "Real Estate Office",
-        ["sprite"]  = 475,
-        ["color"]   = 75,
-        ["layer"]   = 30,
-        ["scale"]   = 1.0,
-    },
-    [72]  = {
-        ["name"]    = "Job Center",
-        ["x"] =  -234.67, ["y"] = -920.98,
-        ["category"]= "Government",
-        ["text"]    = "Job Center",
-        ["sprite"]  = 408,
-        ["color"]   = 82,
-        ["layer"]   = 30,
-        ["scale"]   = 1.0,
-    },
-    [73]  = {
-        ["name"]    = "Job Center",
-        ["x"] =  -249.28, ["y"] = 6160.17,
-        ["category"]= "Government",
-        ["text"]    = "Job Center",
-        ["sprite"]  = 408,
-        ["color"]   = 82,
-        ["layer"]   = 30,
-        ["scale"]   = 1.0,
-    },
-    [74]  = {
-        ["name"]    = "Driving School",
-        ["x"] =  229.33, ["y"] = 372.68,
-        ["category"]= "Government",
-        ["text"]    = "Driving School",
-        ["sprite"]  = 545,
-        ["color"]   = 0,
-        ["layer"]   = 30,
-        ["scale"]   = 1.0,
-    },
-    [77]  = {
+    
+    -- Dealerships --
+    [730]  = {
         ["name"]    = "Premium Deluxe Motorsport",
         ["x"] =  -33.78, ["y"] = -1101.92,
         ["category"]= "Car Dealership",
@@ -1215,7 +1196,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "PDM",
     },
-    [78]  = {
+    [731]  = {
         ["name"]    = "Larry's Automotive",
         ["x"] =  1231.97, ["y"] = 2732.92,
         ["category"]= "Car Dealership",
@@ -1232,7 +1213,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Larrys",
     },
-    [79]  = {
+    [732]  = {
         ["name"]    = "Helmuts European Autos",
         ["x"] =  -242.8, ["y"] = 6220.0,
         ["category"]= "Car Dealership",
@@ -1248,7 +1229,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Helmuts",
     },
-    [80]  = {
+    [733]  = {
         ["name"]    = "Aircraft Dealership",
         ["x"] =  -940.11, ["y"] = -2963.25,
         ["category"]= "Aircraft Dealership",
@@ -1258,7 +1239,7 @@ Blips.Main        = {
         ["layer"]   = 30,
         ["scale"]   = 1.0,
     },
-    [81]  = {
+    [734]  = {
         ["name"]    = "Watercraft Dealership",
         ["x"] =  -714.49, ["y"] = -1297.57,
         ["category"]= "Watercraft Dealership",
@@ -1268,27 +1249,9 @@ Blips.Main        = {
         ["layer"]   = 30,
         ["scale"]   = 1.0,
     },
-    [82]  = {
-        ["name"]    = "Vangelico's",
-        ["x"] =  -629.99, ["y"] = -236.44,
-        ["category"]= "Jewelry Store",
-        ["text"]    = "Jewelry Store",
-        ["sprite"]  = 617,
-        ["color"]   = 0,
-        ["layer"]   = 25,
-        ["scale"]   = 1.0,
-    },
-    [83]  = {
-        ["name"]    = "Go-Kart Track",
-        ["x"] =  -154.11, ["y"] = -2149.91,
-        ["category"]= "Entertainment",
-        ["text"]    = "Go-Kart Track",
-        ["sprite"]  = 127,
-        ["color"]   = 0,
-        ["layer"]   = 25,
-        ["scale"]   = 1.0,
-    },
-    [84]  = {
+
+    -- Docks --
+    [790]  = {
         ["name"]    = "Vespucci Docks",
         ["x"] =  -795.17, ["y"] = -1502.12,
         ["category"]= "Docks",
@@ -1305,7 +1268,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Dock Default",
     },
-    [85]  = {
+    [791]  = {
         ["name"]    = "Chumash Docks",
         ["x"] =  -3418.52, ["y"] = 967.60,
         ["category"]= "Docks",
@@ -1321,7 +1284,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Dock Default",
     },
-    [86]  = {
+    [792]  = {
         ["name"]    = "Paleto Bay Docks",
         ["x"] =  -273.19, ["y"] = 6633.05,
         ["category"]= "Docks",
@@ -1337,7 +1300,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Dock Default",
     },
-    [98]  = {
+    [793]  = {
         ["name"]    = "Catfish View Docks",
         ["x"] =  3825.52, ["y"] = 4463.99,
         ["category"]= "Docks",
@@ -1353,7 +1316,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Dock Default",
     },
-    [87]  = {
+    [794]  = {
         ["name"]    = "Alamo Sea Docks",
         ["x"] =  1302.24, ["y"] = 4233.14,
         ["category"]= "Docks",
@@ -1369,7 +1332,106 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Dock Default",
     },
-    [88]  = {
+
+    -- Uncatagorized  --
+    [850]  = {
+        ["name"]    = "Metro Bus Terminal",
+        ["x"] =  267.56, ["y"] = -1216.37,
+        ["category"]= "Bus Terminal",
+        ["text"]    = "Bus Terminal",
+        ["sprite"]  = 513,
+        ["color"]   = 0,
+        ["layer"]   = 15,
+    },
+    [851]  = {
+        ["name"]    = "Airport Bus Terminal",
+        ["x"] =  -900.87, ["y"] = -2332.99,
+        ["category"]= "Bus Terminal",
+        ["text"]    = "Bus Terminal",
+        ["sprite"]  = 513,
+        ["color"]   = 0,
+        ["layer"]   = 15,
+    },
+    [852]  = {
+        ["name"]    = "Scenic Bus Terminal",
+        ["x"] =  453.82, ["y"] = -584.38,
+        ["category"]= "Bus Terminal",
+        ["text"]    = "Bus Terminal",
+        ["sprite"]  = 513,
+        ["color"]   = 0,
+        ["layer"]   = 15,
+    },
+    [853]  = {
+        ["name"]    = "Law Offices",
+        ["x"] =  -66.71, ["y"] = -802.26,
+        ["category"]= "Offices",
+        ["text"]    = "Law Offices",
+        ["sprite"]  = 525,
+        ["color"]   = 0,
+        ["layer"]   = 30,
+        ["scale"]   = 1.0,
+    },
+    [854]  = {
+        ["name"]    = "Real Estate Office",
+        ["x"] =  -246.93, ["y"] = -911.83,
+        ["category"]= "Offices",
+        ["text"]    = "Real Estate Office",
+        ["sprite"]  = 475,
+        ["color"]   = 75,
+        ["layer"]   = 30,
+        ["scale"]   = 1.0,
+    },
+    [855]  = {
+        ["name"]    = "Job Center",
+        ["x"] =  -234.67, ["y"] = -920.98,
+        ["category"]= "Government",
+        ["text"]    = "Job Center",
+        ["sprite"]  = 408,
+        ["color"]   = 82,
+        ["layer"]   = 30,
+        ["scale"]   = 1.0,
+    },
+    [856]  = {
+        ["name"]    = "Job Center",
+        ["x"] =  -249.28, ["y"] = 6160.17,
+        ["category"]= "Government",
+        ["text"]    = "Job Center",
+        ["sprite"]  = 408,
+        ["color"]   = 82,
+        ["layer"]   = 30,
+        ["scale"]   = 1.0,
+    },
+    [857]  = {
+        ["name"]    = "Driving School",
+        ["x"] =  229.33, ["y"] = 372.68,
+        ["category"]= "Government",
+        ["text"]    = "Driving School",
+        ["sprite"]  = 545,
+        ["color"]   = 0,
+        ["layer"]   = 30,
+        ["scale"]   = 1.0,
+    },
+    [858]  = {
+        ["name"]    = "Vangelico's",
+        ["x"] =  -629.99, ["y"] = -236.44,
+        ["category"]= "Jewelry Store",
+        ["text"]    = "Jewelry Store",
+        ["sprite"]  = 617,
+        ["color"]   = 0,
+        ["layer"]   = 25,
+        ["scale"]   = 1.0,
+    },
+    [859]  = {
+        ["name"]    = "Go-Kart Track",
+        ["x"] =  -154.11, ["y"] = -2149.91,
+        ["category"]= "Entertainment",
+        ["text"]    = "Go-Kart Track",
+        ["sprite"]  = 127,
+        ["color"]   = 0,
+        ["layer"]   = 25,
+        ["scale"]   = 1.0,
+    },
+    [860]  = {
         ["name"]    = "Journalism",
         ["x"] =  -1084.92, ["y"] = -252.97,
         ["category"]= "Journalism",
@@ -1379,16 +1441,7 @@ Blips.Main        = {
         ["layer"]   = 30,
         ["scale"]   = 1.0,
     },
-    [89]  = {
-        ["name"]    = "Fish Market",
-        ["x"] =  -2175.22, ["y"] = 4287.98,
-        ["category"]= "Fish Market",
-        ["text"]    = "Fish Market",
-        ["sprite"]  = 317,
-        ["color"]   = 2,
-        ["layer"]   = 15,
-    },
-    [90]  = {
+    [861]  = {
         ["name"]    = "Plastic Surgery",
         ["x"] =  1824.94, ["y"] = 3682.66,
         ["category"]= "Plastic Surgery",
@@ -1397,16 +1450,7 @@ Blips.Main        = {
         ["color"]   = 0,
         ["layer"]   = 25,
     },
-    [91]  = {
-        ["name"]    = "Repair",
-        ["x"] =  1147.86, ["y"] = -776.3,
-        ["category"]= "Repair",
-        ["text"]    = "Repair",
-        ["sprite"]  =  544,
-        ["color"]   = 0,
-        ["layer"]   = 25,
-    },
-    [92]  = {
+    [862]  = {
         ["name"]    = "Taxi Center",
         ["x"] =  915.12, ["y"] = -162.13,
         ["category"]= "Taxi Center",
@@ -1415,7 +1459,7 @@ Blips.Main        = {
         ["color"]   = 5,
         ["layer"]   = 30,
     },
-    [93]  = {
+    [863]  = {
         ["name"]    = "City Hall",
         ["x"] =  -536.27, ["y"] = -218.59,
         ["category"]= "Government",
@@ -1432,7 +1476,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "City Hall",
     },
-    [106]  = {
+    [864]  = {
         ["name"]    = "Courthouse",
         ["x"] =  231.77, ["y"] = -422.27,
         ["category"]= "Government",
@@ -1446,7 +1490,7 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Court House",
     },
-    [107]  = {
+    [865]  = {
         ["name"]    = "Diamond Casino",
         ["x"] =  942.28, ["y"] = 35.7,
         ["category"]= "Casino",
@@ -1463,365 +1507,416 @@ Blips.Main        = {
     }
 }
 
-ATM = {}
-ATM.Config = {
-    ["text"]    = "ATM",
-    ["sprite"]  = 272,
-    ["display"] = 4,
-    ["color"]   = 2, 
-    ["scale"]   = 0.55,
-    ["layer"]   = 1,
-    ["opacity"] = 200,
-    ["hidden"] = true,
-}
-ATM.Blips= {
-    {['x'] = -0386.733, ['y']  =  6045.95},
-    {['x'] = -0110.753, ['y']  =  6467.70},
-    {['x'] =  0155.430, ['y']  =  6641.99},
-    {['x'] =  0174.672, ['y']  =  6637.21},
-    {['x'] =  1703.138, ['y']  =  6426.78},
-    {['x'] =  1735.114, ['y']  =  6411.03},
-    {['x'] =  1702.842, ['y']  =  4933.59},
-    {['x'] =  1967.333, ['y']  =  3744.29},
-    {['x'] =  1174.532, ['y']  =  2705.27},
-    {['x'] =  2564.399, ['y']  =  2585.10},
-    {['x'] =  2558.683, ['y']  =  0349.60},
-    {['x'] =  2558.051, ['y']  =  0389.48},
-    {['x'] =  1077.692, ['y']  = -0775.79},
-    {['x'] =  1139.018, ['y']  = -0469.88},
-    {['x'] =  1168.975, ['y']  = -0457.24},
-    {['x'] =  1153.884, ['y']  = -0326.54},
-    {['x'] =  0236.463, ['y']  =  0217.47},
-    {['x'] =  0265.004, ['y']  =  0212.17},
-    {['x'] = -0164.568, ['y']  =  0233.50},
-    {['x'] = -1827.040, ['y']  =  0785.51},
-    {['x'] = -1409.390, ['y']  = -0099.26},
-    {['x'] = -1215.640, ['y']  = -0332.23},
-    {['x'] = -2072.410, ['y']  = -0316.95},
-    {['x'] = -2975.720, ['y']  =  0379.77},
-    {['x'] = -2962.600, ['y']  =  0482.19},
-    {['x'] = -3144.130, ['y']  =  1127.41},
-    {['x'] = -1305.400, ['y']  = -0706.24},
-    {['x'] = -0717.614, ['y']  = -0915.88},
-    {['x'] = -0526.566, ['y']  = -1222.90},
-    {['x'] =  0149.455, ['y']  = -1038.95},
-    {['x'] = -0846.304, ['y']  = -0340.40},
-    {['x'] = -1216.270, ['y']  = -0331.46},
-    {['x'] = -0056.193, ['y']  = -1752.53},
-    {['x'] = -0273.001, ['y']  = -2025.60},
-    {['x'] =  0314.187, ['y']  = -0278.62},
-    {['x'] = -0351.534, ['y']  = -0049.52},
-    {['x'] = -1570.197, ['y']  = -0546.65},
-    {['x'] =  0033.232, ['y']  = -1347.84},
-    {['x'] =  0127.010, ['y']  = -1296.48},
-    {['x'] =  0289.012, ['y']  = -1256.54},
-    {['x'] =  1686.753, ['y']  =  4815.80},
-    {['x'] = -0302.408, ['y']  = -0829.94},
-    {['x'] =  0005.134, ['y']  = -0919.94},
-    {['x'] = -0284.037, ['y']  =  6224.38},
-    {['x'] = -0135.165, ['y']  =  6365.73},
-    {['x'] = -0094.969, ['y']  =  6455.30},
-    {['x'] =  1821.917, ['y']  =  3683.48},
-    {['x'] =  0540.042, ['y']  =  2671.00},
-    {['x'] =  0381.282, ['y']  =  0323.25},
-    {['x'] =  0285.202, ['y']  =  0143.56},
-    {['x'] =  0157.769, ['y']  =  0233.54},
-    {['x'] = -1205.350, ['y']  = -0325.57},
-    {['x'] = -2955.700, ['y']  =  0488.72},
-    {['x'] = -3044.220, ['y']  =  0595.24},
-    {['x'] = -3241.100, ['y']  =  0996.68},
-    {['x'] = -3241.110, ['y']  =  1009.15},
-    {['x'] = -0538.225, ['y']  = -0854.42},
-    {['x'] = -0711.156, ['y']  = -0818.95},
-    {['x'] = -0256.831, ['y']  = -0719.64},
-    {['x'] = -0203.548, ['y']  = -0861.58},
-    {['x'] =  0112.410, ['y']  = -0776.16},
-    {['x'] =  0112.929, ['y']  = -0818.71},
-    {['x'] =  0119.900, ['y']  = -0883.82},
-    {['x'] = -0261.692, ['y']  = -2012.64},
-    {['x'] = -0254.112, ['y']  = -0692.48},
-    {['x'] = -1415.909, ['y']  = -0211.82},
-    {['x'] = -1430.122, ['y']  = -0211.01},
-    {['x'] =  0287.645, ['y']  = -1282.64},
-    {['x'] =  0295.839, ['y']  = -0895.64},
-    {['x'] = -1315.730, ['y']  = -0834.89},
-    {['x'] =  0146.070, ['y']  = -1035.10},
-    {['x'] =  0147.660, ['y']  = -1035.71},
-    {['x'] = -0616.150, ['y']  =  0242.64},
-    {['x'] =  0527.260, ['y']  = -160.720},
-    {['x'] =  0948.130, ['y']  =  053.070},
-    {['x'] =  0949.030, ['y']  =  048.092},
-    {['x'] =  -867.190, ['y']  = -0186.99},
-    {['x'] =  -549.590, ['y']  = -204.360},
-    {['x'] =  -682.010, ['y']  =  5838.55},
-    {['x'] =  -1091.48, ['y']  =  2708.56},
-    {['x'] =  -613.250, ['y']  = -704.740},
-    {['x'] =  -038.240, ['y']  = -1116.73},
-    {['x'] =  0472.400, ['y']  = -1001.58},
-}
+local ATM = {}
+local GAS = {}
+local STORE = {}
+local PARKING = {}
+local PHARMACY = {}
+local DIGITAL = {}
+local HAIR = {}
+local CARWASH = {}
+local TATTOO = {}
+local CLOTHING = {}
+local IMPOUND = {}
+local MASKS = {}
+local TRASH = {}
+local HANGAR = {}
+local HARDWARE = {}
+local PETS = {}
+Bulkblips = {
+    ATM = {
+        Config = {
+            ["text"]    = "ATM",
+            ["sprite"]  = 272,
+            ["display"] = 4,
+            ["color"]   = 2,
+            ["scale"]   = 0.55,
+            ["layer"]   = 1,
+            ["opacity"] = 200,
+            ["hidden"] = true,
+        },
+        Blips= {
+            {['x'] = -0386.733, ['y']  =  6045.95},
+            {['x'] = -0110.753, ['y']  =  6467.70},
+            {['x'] =  0155.430, ['y']  =  6641.99},
+            {['x'] =  0174.672, ['y']  =  6637.21},
+            {['x'] =  1703.138, ['y']  =  6426.78},
+            {['x'] =  1735.114, ['y']  =  6411.03},
+            {['x'] =  1702.842, ['y']  =  4933.59},
+            {['x'] =  1967.333, ['y']  =  3744.29},
+            {['x'] =  1174.532, ['y']  =  2705.27},
+            {['x'] =  2564.399, ['y']  =  2585.10},
+            {['x'] =  2558.683, ['y']  =  0349.60},
+            {['x'] =  2558.051, ['y']  =  0389.48},
+            {['x'] =  1077.692, ['y']  = -0775.79},
+            {['x'] =  1139.018, ['y']  = -0469.88},
+            {['x'] =  1168.975, ['y']  = -0457.24},
+            {['x'] =  1153.884, ['y']  = -0326.54},
+            {['x'] =  0236.463, ['y']  =  0217.47},
+            {['x'] =  0265.004, ['y']  =  0212.17},
+            {['x'] = -0164.568, ['y']  =  0233.50},
+            {['x'] = -1827.040, ['y']  =  0785.51},
+            {['x'] = -1409.390, ['y']  = -0099.26},
+            {['x'] = -1215.640, ['y']  = -0332.23},
+            {['x'] = -2072.410, ['y']  = -0316.95},
+            {['x'] = -2975.720, ['y']  =  0379.77},
+            {['x'] = -2962.600, ['y']  =  0482.19},
+            {['x'] = -3144.130, ['y']  =  1127.41},
+            {['x'] = -1305.400, ['y']  = -0706.24},
+            {['x'] = -0717.614, ['y']  = -0915.88},
+            {['x'] = -0526.566, ['y']  = -1222.90},
+            {['x'] =  0149.455, ['y']  = -1038.95},
+            {['x'] = -0846.304, ['y']  = -0340.40},
+            {['x'] = -1216.270, ['y']  = -0331.46},
+            {['x'] = -0056.193, ['y']  = -1752.53},
+            {['x'] = -0273.001, ['y']  = -2025.60},
+            {['x'] =  0314.187, ['y']  = -0278.62},
+            {['x'] = -0351.534, ['y']  = -0049.52},
+            {['x'] = -1570.197, ['y']  = -0546.65},
+            {['x'] =  0033.232, ['y']  = -1347.84},
+            {['x'] =  0127.010, ['y']  = -1296.48},
+            {['x'] =  0289.012, ['y']  = -1256.54},
+            {['x'] =  1686.753, ['y']  =  4815.80},
+            {['x'] = -0302.408, ['y']  = -0829.94},
+            {['x'] =  0005.134, ['y']  = -0919.94},
+            {['x'] = -0284.037, ['y']  =  6224.38},
+            {['x'] = -0135.165, ['y']  =  6365.73},
+            {['x'] = -0094.969, ['y']  =  6455.30},
+            {['x'] =  1821.917, ['y']  =  3683.48},
+            {['x'] =  0540.042, ['y']  =  2671.00},
+            {['x'] =  0381.282, ['y']  =  0323.25},
+            {['x'] =  0285.202, ['y']  =  0143.56},
+            {['x'] =  0157.769, ['y']  =  0233.54},
+            {['x'] = -1205.350, ['y']  = -0325.57},
+            {['x'] = -2955.700, ['y']  =  0488.72},
+            {['x'] = -3044.220, ['y']  =  0595.24},
+            {['x'] = -3241.100, ['y']  =  0996.68},
+            {['x'] = -3241.110, ['y']  =  1009.15},
+            {['x'] = -0538.225, ['y']  = -0854.42},
+            {['x'] = -0711.156, ['y']  = -0818.95},
+            {['x'] = -0256.831, ['y']  = -0719.64},
+            {['x'] = -0203.548, ['y']  = -0861.58},
+            {['x'] =  0112.410, ['y']  = -0776.16},
+            {['x'] =  0112.929, ['y']  = -0818.71},
+            {['x'] =  0119.900, ['y']  = -0883.82},
+            {['x'] = -0261.692, ['y']  = -2012.64},
+            {['x'] = -0254.112, ['y']  = -0692.48},
+            {['x'] = -1415.909, ['y']  = -0211.82},
+            {['x'] = -1430.122, ['y']  = -0211.01},
+            {['x'] =  0287.645, ['y']  = -1282.64},
+            {['x'] =  0295.839, ['y']  = -0895.64},
+            {['x'] = -1315.730, ['y']  = -0834.89},
+            {['x'] =  0146.070, ['y']  = -1035.10},
+            {['x'] =  0147.660, ['y']  = -1035.71},
+            {['x'] = -0616.150, ['y']  =  0242.64},
+            {['x'] =  0527.260, ['y']  = -160.720},
+            {['x'] =  0948.130, ['y']  =  053.070},
+            {['x'] =  0949.030, ['y']  =  048.092},
+            {['x'] =  -867.190, ['y']  = -0186.99},
+            {['x'] =  -549.590, ['y']  = -204.360},
+            {['x'] =  -682.010, ['y']  =  5838.55},
+            {['x'] =  -1091.48, ['y']  =  2708.56},
+            {['x'] =  -613.250, ['y']  = -704.740},
+            {['x'] =  -038.240, ['y']  = -1116.73},
+            {['x'] =  0472.400, ['y']  = -1001.58},
+        },
+    },
+    
+    GAS = {
+        Config = {
+            ["text"]    = "Gas Station",
+            ["sprite"]  = 415,
+            ["layer"]   = 1,
+            ["opacity"] = 200,
+        },
+        Blips = {
+            {['x'] =  0049.418, ['y']  =  2778.79}, 
+            {['x'] =  0263.894, ['y']  =  2606.46},
+            {['x'] =  1039.958, ['y']  =  2671.13},
+            {['x'] =  1207.260, ['y']  =  2660.18},
+            {['x'] =  2539.685, ['y']  =  2594.19},
+            {['x'] =  2679.858, ['y']  =  3263.95},
+            {['x'] =  2005.055, ['y']  =  3773.89},
+            {['x'] =  1687.156, ['y']  =  4929.39},
+            {['x'] =  1701.314, ['y']  =  6416.03},
+            {['x'] =  0179.857, ['y']  =  6602.84},
+            {['x'] = -0094.461, ['y']  =  6419.59},
+            {['x'] = -2554.996, ['y']  =  2334.40},
+            {['x'] = -1800.375, ['y']  =  0803.66},
+            {['x'] = -1437.622, ['y']  = -0276.75},
+            {['x'] = -2096.243, ['y']  = -0320.28},
+            {['x'] = -0724.619, ['y']  = -0935.16}, 
+            {['x'] = -0526.019, ['y']  = -1211.00},
+            {['x'] = -0070.214, ['y']  = -1761.79},
+            {['x'] =  0265.648, ['y']  = -1261.31},
+            {['x'] =  0819.653, ['y']  = -1028.84},
+            {['x'] =  1208.951, ['y']  = -1402.57},
+            {['x'] =  1181.381, ['y']  = -0330.85},
+            {['x'] =  0620.843, ['y']  =  0269.10},
+            {['x'] =  2581.321, ['y']  =  0362.04},
+            {['x'] =  0176.631, ['y']  = -1562.03},
+            {['x'] =  0176.631, ['y']  = -1562.03},
+            {['x'] = -0319.292, ['y']  = -1471.71},
+            {['x'] =  1784.324, ['y']  =  3330.55},
+        },
+    },
+    
+    STORE = {
+        Config= {
+            ["text"]    = "Store",
+            ["color"]   = 11,
+            ["sprite"]  = 59,
+            ["layer"]   = 10,
+        },
+        Blips = {
+            {["x"] =   0029.41,  ["y"] = -1345.01},
+            {["x"] =  -0048.34,  ["y"] = -1752.72},
+            {["x"] =  -1220.78,  ["y"] = -0909.19},
+            {["x"] =  -1485.59,  ["y"] = -0376.70},
+            {["x"] =  -0711.01,  ["y"] = -0911.25},
+            {["x"] =   1132.94,  ["y"] = -0983.19},
+            {["x"] =   0378.80,  ["y"] =  0329.64},
+            {["x"] =   1157.88,  ["y"] = -0319.42},
+            {["x"] =   2552.75,  ["y"] =  0386.28}, 
+            {["x"] =  -3042.26,  ["y"] =  0588.50},
+            {["x"] =  -3246.45,  ["y"] =  1005.64},
+            {["x"] =  -2964.96,  ["y"] =  0391.33},
+            {["x"] =  -1827.64,  ["y"] =  0793.31},
+            {["x"] =   0544.43,  ["y"] =  2666.07},
+            {["x"] =   1167.02,  ["y"] =  2711.82},
+            {["x"] =   2676.55,  ["y"] =  3286.27},
+            {["x"] =   1962.33,  ["y"] =  3746.67},
+            {["x"] =   1391.23,  ["y"] =  3609.29},
+            {["x"] =   1705.22,  ["y"] =  4925.39},
+            {["x"] =   1734.64,  ["y"] =  6417.04},
+            {["x"] =  -0162.50,  ["y"] =  6321.38},
+            {["x"] =  -0675.99,  ["y"] =  5837.02},
+            {["x"] =   165.580,  ["y"] =  6639.37},
+        },
+    },
+    
+    PARKING = {
+        Config = {
+            ["text"]    = "Public Parking",
+            ["color"]   = 39,
+            ["sprite"]  = 357,
+            ["layer"]   = 1,
+        },
+        Blips = {
+            {['x'] =   0452.01,  ['y']  =  -1075.57}, 
+            {['x'] =   0430.82,  ['y']  =  -0631.92}, 
+            {['x'] =   0278.07,  ['y']  =  -0345.85}, 
+            {['x'] =   1737.59,  ['y']  =   3710.20}, 
+            {['x'] =   0105.36,  ['y']  =   6613.58}, 
+            {['x'] =   1865.96,  ['y']  =   2706.25}, 
+            {['x'] =   1212.32,  ['y']  =   0339.94}, 
+            {['x'] =  -1199.43,  ['y']  =  -1483.47}, 
+            {['x'] =  -3143.80,  ['y']  =   1051.23}, 
+            {['x'] =   0049.93,  ['y']  =  -1734.65}, 
+            {['x'] =  -0570.39,  ['y']  =   0313.67}, 
+            {['x'] =   0287.66,  ['y']  =   0962.80}, 
+            {['x'] =   1691.01,  ['y']  =   4785.00}, 
+            {['x'] =  -0769.22,  ['y']  =   5593.27}, 
+            {['x'] =  -0341.04,  ['y']  =   6240.33},
+            {['x'] =   1171.86,  ['y']  =  -1524.01}, 
+            {['x'] =  -1890.18,  ['y']  =   2044.35}, 
+        },
+    },
+    
+    PHARMACY = {
+        Config = {
+            ["text"]    = "Pharmacy",
+            ["color"]   = 1,
+            ["sprite"]  = 403,
+            ["layer"]   = 15,
+        },
+        Blips = {
+            {['x'] =   0095.83,  ['y']  =  -0229.50}, 
+            {['x'] =   0302.73,  ['y']  =  -0732.75}, 
+            {['x'] =   0320.31,  ['y']  =  -1075.70}, 
+            {['x'] =  -0175.17,  ['y']  =   6383.40},     
+        },
+    },
+    
+    DIGITAL = {
+            Config = {
+            ["text"]    = "Digital Den",
+            ["color"]   = 35,
+            ["sprite"]  = 71,
+            ["layer"]   = 15,
+        },
+        Blips = {
+            ["x"]      = -633.22, ["y"] = -281.99,
+            ["x"]      = -658.82, ["y"] = -858.82,
+            ["x"]      = 1131.92, ["y"] = -474.17,
+        },
+    },
+    
+    HAIR = {
+        Config = {
+            ["text"]    = "Hair Stylist",
+            ["color"]   = 35,
+            ["sprite"]  = 71,
+            ["layer"]   = 20,
+        },
+        Blips = {
+            {['x'] = -814.308,  ['y'] = -183.823},
+            {['x'] =  136.826,  ['y'] = -1708.373},
+            {['x'] = -1282.604, ['y'] = -1116.757},
+            {['x'] =  1931.513, ['y'] = 3729.671},
+            {['x'] =  1212.840, ['y'] = -472.921},
+            {['x'] = -32.885,   ['y'] = -152.319},
+            {['x'] = -278.077,  ['y'] = 6228.463},
+        },
+    },
 
-GAS = {}
-GAS.Config = {
-    ["text"]    = "Gas Station",
-    ["sprite"]  = 415,
-    ["layer"]   = 1,
-    ["opacity"] = 200,
-}
-GAS.Blips = {
-    {['x'] =  0049.418, ['y']  =  2778.79}, 
-    {['x'] =  0263.894, ['y']  =  2606.46},
-    {['x'] =  1039.958, ['y']  =  2671.13},
-    {['x'] =  1207.260, ['y']  =  2660.18},
-    {['x'] =  2539.685, ['y']  =  2594.19},
-    {['x'] =  2679.858, ['y']  =  3263.95},
-    {['x'] =  2005.055, ['y']  =  3773.89},
-    {['x'] =  1687.156, ['y']  =  4929.39},
-    {['x'] =  1701.314, ['y']  =  6416.03},
-    {['x'] =  0179.857, ['y']  =  6602.84},
-    {['x'] = -0094.461, ['y']  =  6419.59},
-    {['x'] = -2554.996, ['y']  =  2334.40},
-    {['x'] = -1800.375, ['y']  =  0803.66},
-    {['x'] = -1437.622, ['y']  = -0276.75},
-    {['x'] = -2096.243, ['y']  = -0320.28},
-    {['x'] = -0724.619, ['y']  = -0935.16}, 
-    {['x'] = -0526.019, ['y']  = -1211.00},
-    {['x'] = -0070.214, ['y']  = -1761.79},
-    {['x'] =  0265.648, ['y']  = -1261.31},
-    {['x'] =  0819.653, ['y']  = -1028.84},
-    {['x'] =  1208.951, ['y']  = -1402.57},
-    {['x'] =  1181.381, ['y']  = -0330.85},
-    {['x'] =  0620.843, ['y']  =  0269.10},
-    {['x'] =  2581.321, ['y']  =  0362.04},
-    {['x'] =  0176.631, ['y']  = -1562.03},
-    {['x'] =  0176.631, ['y']  = -1562.03},
-    {['x'] = -0319.292, ['y']  = -1471.71},
-    {['x'] =  1784.324, ['y']  =  3330.55},
-}
+    CARWASH = {
+        Config = {
+            ["text"]    = "Car Wash",
+            ["sprite"]  = 100,
+            ["layer"]   = 1,
+        },
+        Blips = {
+            {['x'] =   0026.59,  ['y']  =  -1392.03},
+            {['x'] =   0167.10,  ['y']  =  -1719.47},
+            {['x'] =  -0074.57,  ['y']  =   6427.87},
+            {['x'] =  -0699.63,  ['y']  =  -0932.70},
+            {['x'] =  -1485.05,  ['y']  =  -3223.50},
+            {['x'] =   1182.53,  ['y']  =   2638.34},
+            {['x'] =   1200.87,  ['y']  =  -1454.26},
+            {['x'] =   0327.19,  ['y']  =  -0541.04},
+            {['x'] =   0994.02,  ['y']  =  -0112.73},
+            {['x'] =   0735.58,  ['y']  =  -1071.46},
+            {['x'] =  -0029.18,  ['y']  =  -1042.33},
+            {['x'] =  -0198.64,  ['y']  =  -1324.34},
+            {['x'] =  -1167.22,  ['y']  =  -2013.31},
+            {['x'] =  -0326.91,  ['y']  =  -0144.82},
+            {['x'] =   1695.15,  ['y']  =   4916.51},
+            {['x'] =   0103.80,  ['y']  =   6622.60},
+        },
+    },
 
-STORE = {}
-STORE.Config= {
-    ["text"]    = "Store",
-    ["color"]   = 11,
-    ["sprite"]  = 59,
-    ["layer"]   = 10,
-}
-STORE.Blips = {
-    {["x"] =   0029.41,  ["y"] = -1345.01},
-    {["x"] =  -0048.34,  ["y"] = -1752.72},
-    {["x"] =  -1220.78,  ["y"] = -0909.19},
-    {["x"] =  -1485.59,  ["y"] = -0376.70},
-    {["x"] =  -0711.01,  ["y"] = -0911.25},
-    {["x"] =   1132.94,  ["y"] = -0983.19},
-    {["x"] =   0378.80,  ["y"] =  0329.64},
-    {["x"] =   1157.88,  ["y"] = -0319.42},
-    {["x"] =   2552.75,  ["y"] =  0386.28}, 
-    {["x"] =  -3042.26,  ["y"] =  0588.50},
-    {["x"] =  -3246.45,  ["y"] =  1005.64},
-    {["x"] =  -2964.96,  ["y"] =  0391.33},
-    {["x"] =  -1827.64,  ["y"] =  0793.31},
-    {["x"] =   0544.43,  ["y"] =  2666.07},
-    {["x"] =   1167.02,  ["y"] =  2711.82},
-    {["x"] =   2676.55,  ["y"] =  3286.27},
-    {["x"] =   1962.33,  ["y"] =  3746.67},
-    {["x"] =   1391.23,  ["y"] =  3609.29},
-    {["x"] =   1705.22,  ["y"] =  4925.39},
-    {["x"] =   1734.64,  ["y"] =  6417.04},
-    {["x"] =  -0162.50,  ["y"] =  6321.38},
-    {["x"] =  -0675.99,  ["y"] =  5837.02},
-    {["x"] =   165.580,  ["y"] =  6639.37},
-}       
+    TATTOO = {
+        Config = {
+            ["text"]    = "Tattoo Parlor",
+            ["color"]   = 1,
+            ["sprite"]  = 75,
+            ["layer"]   = 20,
+        },
+        Blips = {
+            {['x'] =   1322.64,  ['y']  =  -1651.97},
+            {['x'] =  -1153.67,  ['y']  =  -1425.68},
+            {['x'] =   0322.13,  ['y']  =   0180.46},
+            {['x'] =  -3170.07,  ['y']  =   1075.05},
+            {['x'] =   1864.63,  ['y']  =   3747.74},
+            {['x'] =  -0293.71,  ['y']  =   6200.04},
+        },
+    },
 
-PARKING = {}
-PARKING.Config = {
-    ["text"]    = "Public Parking",
-    ["color"]   = 39,
-    ["sprite"]  = 357,
-    ["layer"]   = 1,
-}
-PARKING.Blips = {
-    {['x'] =   0452.01,  ['y']  =  -1075.57}, 
-    {['x'] =   0430.82,  ['y']  =  -0631.92}, 
-    {['x'] =   0278.07,  ['y']  =  -0345.85}, 
-    {['x'] =   1737.59,  ['y']  =   3710.20}, 
-    {['x'] =   0105.36,  ['y']  =   6613.58}, 
-    {['x'] =   1865.96,  ['y']  =   2706.25}, 
-    {['x'] =   1212.32,  ['y']  =   0339.94}, 
-    {['x'] =  -1199.43,  ['y']  =  -1483.47}, 
-    {['x'] =  -3143.80,  ['y']  =   1051.23}, 
-    {['x'] =   0049.93,  ['y']  =  -1734.65}, 
-    {['x'] =  -0570.39,  ['y']  =   0313.67}, 
-    {['x'] =   0287.66,  ['y']  =   0962.80}, 
-    {['x'] =   1691.01,  ['y']  =   4785.00}, 
-    {['x'] =  -0769.22,  ['y']  =   5593.27}, 
-    {['x'] =  -0341.04,  ['y']  =   6240.33},
-    {['x'] =   1171.86,  ['y']  =  -1524.01}, 
-    {['x'] =  -1890.18,  ['y']  =   2044.35}, 
-} 
+    CLOTHING ={
+        Config = {
+            ["text"]    = "Clothing Store",
+            ["color"]   = 10,
+            ["sprite"]  = 73,
+            ["layer"]   = 20,
+        },
+        Blips = {
+            {['x'] =   0072.25,  ['y']  =  -1399.102},
+            {['x'] =  -0703.77,  ['y']  =  -0152.258},
+            {['x'] =  -0167.86,  ['y']  =  -0298.969},
+            {['x'] =   0428.69,  ['y']  =  -0800.106},
+            {['x'] =  -0829.41,  ['y']  =  -1073.710},
+            {['x'] =  -1447.79,  ['y']  =  -0242.461},
+            {['x'] =   0011.63,  ['y']  =   6514.224},
+            {['x'] =   0123.64,  ['y']  =  -0219.440},
+            {['x'] =   1696.29,  ['y']  =   4829.312},
+            {['x'] =   0618.09,  ['y']  =   2759.629},
+            {['x'] =   1190.55,  ['y']  =   2713.441},
+            {['x'] =  -1193.42,  ['y']  =  -0772.262},
+            {['x'] =  -3172.49,  ['y']  =   1048.133},
+            {['x'] =  -1108.44,  ['y']  =   2708.923},
+        },
+    },
 
-PHARMACY = {}
-PHARMACY.Config = {
-    ["text"]    = "Pharmacy",
-    ["color"]   = 1,
-    ["sprite"]  = 403,
-    ["layer"]   = 15,
-}
-PHARMACY.Blips = {
-    {['x'] =   0095.83,  ['y']  =  -0229.50}, 
-    {['x'] =   0302.73,  ['y']  =  -0732.75}, 
-    {['x'] =   0320.31,  ['y']  =  -1075.70}, 
-    {['x'] =  -0175.17,  ['y']  =   6383.40},     
-} 
-DIGITAL = {}
-DIGITAL.Config = {
-    ["text"]    = "Digital Den",
-    ["color"]   = 35,
-    ["sprite"]  = 71,
-    ["layer"]   = 15,
-}
-DIGITAL.Blips = {
-    ["x"]      = -633.22, ["y"] = -281.99,
-    ["x"]      = -658.82, ["y"] = -858.82,
-    ["x"]      = 1131.92, ["y"] = -474.17,
-}
 
-HAIR = {}
-HAIR.Config = {
-    ["text"]    = "Hair Stylist",
-    ["color"]   = 35,
-    ["sprite"]  = 71,
-    ["layer"]   = 20,
-}
-HAIR.Blips = {
-    {['x'] = -814.308,  ['y'] = -183.823},
-	{['x'] =  136.826,  ['y'] = -1708.373},
-	{['x'] = -1282.604, ['y'] = -1116.757},
-	{['x'] =  1931.513, ['y'] = 3729.671},
-	{['x'] =  1212.840, ['y'] = -472.921},
-	{['x'] = -32.885,   ['y'] = -152.319},
-	{['x'] = -278.077,  ['y'] = 6228.463},
-}
+    IMPOUND = {
+        Config = {
+            ["text"]    = "Impound Lot",
+            ["color"]   = 76,
+            ["sprite"]  = 68,
+            ["layer"]   = 15,
+        },
+        Blips = {
+            {["x"] =  0402.49, ["y"] =  -1634.40},
+            {["x"] =  0553.15, ["y"] =  -0060.81},
+            {["x"] = -0231.22, ["y"] =   6197.63},
+        },
+    },
 
-CARWASH = {}
-CARWASH.Config = {
-    ["text"]    = "Car Wash",
-    ["sprite"]  = 100,
-    ["layer"]   = 1,
-}
-CARWASH.Blips = {
-    {['x'] =   0026.59,  ['y']  =  -1392.03},
-    {['x'] =   0167.10,  ['y']  =  -1719.47},
-    {['x'] =  -0074.57,  ['y']  =   6427.87},
-    {['x'] =  -0699.63,  ['y']  =  -0932.70},
-    {['x'] =  -1485.05,  ['y']  =  -3223.50},
-    {['x'] =   1182.53,  ['y']  =   2638.34},
-    {['x'] =   1200.87,  ['y']  =  -1454.26},
-    {['x'] =   0327.19,  ['y']  =  -0541.04},
-    {['x'] =   0994.02,  ['y']  =  -0112.73},
-    {['x'] =   0735.58,  ['y']  =  -1071.46},
-    {['x'] =  -0029.18,  ['y']  =  -1042.33},
-    {['x'] =  -0198.64,  ['y']  =  -1324.34},
-    {['x'] =  -1167.22,  ['y']  =  -2013.31},
-    {['x'] =  -0326.91,  ['y']  =  -0144.82},
-    {['x'] =   1695.15,  ['y']  =   4916.51},
-    {['x'] =   0103.80,  ['y']  =   6622.60},
-}    
-TATTOO = {}
-TATTOO.Config = {
-    ["text"]    = "Tattoo Parlor",
-    ["color"]   = 1,
-    ["sprite"]  = 75,
-    ["layer"]   = 20,
-}
-TATTOO.Blips = {
-    {['x'] =   1322.64,  ['y']  =  -1651.97},
-    {['x'] =  -1153.67,  ['y']  =  -1425.68},
-    {['x'] =   0322.13,  ['y']  =   0180.46},
-    {['x'] =  -3170.07,  ['y']  =   1075.05},
-    {['x'] =   1864.63,  ['y']  =   3747.74},
-    {['x'] =  -0293.71,  ['y']  =   6200.04},
-}
+    MASKS = {
+        Config = {
+            ["text"]    = "Mask Store",
+            ["color"]   = 48,
+            ["sprite"]  = 362,
+            ["layer"]   = 20,
+        },
+        Blips = {
+            {["x"] =  -1338.06, ["y"] =  -1278.13},
+            {["x"] =  242.71, ["y"] =  -262.97},
+        },
+    },
 
-CLOTHING = {}
-CLOTHING.Config = {
-    ["text"]    = "Clothing Store",
-    ["color"]   = 10,
-    ["sprite"]  = 73,
-    ["layer"]   = 20,
-}
-CLOTHING.Blips = {
-    {['x'] =   0072.25,  ['y']  =  -1399.102},
-    {['x'] =  -0703.77,  ['y']  =  -0152.258},
-    {['x'] =  -0167.86,  ['y']  =  -0298.969},
-    {['x'] =   0428.69,  ['y']  =  -0800.106},
-    {['x'] =  -0829.41,  ['y']  =  -1073.710},
-    {['x'] =  -1447.79,  ['y']  =  -0242.461},
-    {['x'] =   0011.63,  ['y']  =   6514.224},
-    {['x'] =   0123.64,  ['y']  =  -0219.440},
-    {['x'] =   1696.29,  ['y']  =   4829.312},
-    {['x'] =   0618.09,  ['y']  =   2759.629},
-    {['x'] =   1190.55,  ['y']  =   2713.441},
-    {['x'] =  -1193.42,  ['y']  =  -0772.262},
-    {['x'] =  -3172.49,  ['y']  =   1048.133},
-    {['x'] =  -1108.44,  ['y']  =   2708.923},
-} 
+    TRASH = {
+        Config = {
+            ["text"]    = "Public Trash",
+            ["color"]   = 0,
+            ["sprite"]  = 467,
+            ["layer"]   = 5,
+        },
+        Blips = {
+            {["x"] =  -1637.4, ["y"] =  -1057.01},
+            {["x"] =  1175.11, ["y"] =  2730.2},
+            {["x"] =  1682.7, ["y"] =  4915.01},
+        },
+    },
 
-IMPOUND = {}
-IMPOUND.Config = {
-    ["text"]    = "Impound Lot",
-    ["color"]   = 76,
-    ["sprite"]  = 68,
-    ["layer"]   = 15,
-}
-IMPOUND.Blips = {
-    {["x"] =  0402.49, ["y"] =  -1634.40},
-    {["x"] =  0553.15, ["y"] =  -0060.81},
-    {["x"] = -0231.22, ["y"] =   6197.63},
-}
+    HANGAR = {
+        Config = {
+            ["text"]    = "Public Hangar",
+            ["color"]   = 33,
+            ["sprite"]  = 359,
+            ["layer"]   = 5,
+        },
+        Blips = {
+            {["x"] =  -1617.03, ["y"] =  -3145.69},
+            {["x"] =  1723.82, ["y"] =  3288.19},
+            {["x"] =  2152.81, ["y"] =  4796.93},
+        },
+    },
 
-MASKS = {}
-MASKS.Config = {
-    ["text"]    = "Mask Store",
-    ["color"]   = 48,
-    ["sprite"]  = 362,
-    ["layer"]   = 20,
-}
-MASKS.Blips = {
-    {["x"] =  -1338.06, ["y"] =  -1278.13},
-    {["x"] =  242.71, ["y"] =  -262.97},
-}
+    HARDWARE = {
+        Config = {
+            ["text"]    = "Hardware Store",
+            ["color"]   = 51,
+            ["sprite"]  = 566,
+            ["layer"]   = 15,
+        },
+        Blips = {
+            {["x"] =  155.85, ["y"] =  6648.63},
+            {["x"] =  2742.72, ["y"] =  3482.30},
+        },
+    },
 
-TRASH = {}
-TRASH.Config = {
-    ["text"]    = "Public Trash",
-    ["color"]   = 0,
-    ["sprite"]  = 467,
-    ["layer"]   = 5,
-}
-TRASH.Blips = {
-    {["x"] =  -1637.4, ["y"] =  -1057.01},
-    {["x"] =  1175.11, ["y"] =  2730.2},
-    {["x"] =  1682.7, ["y"] =  4915.01},
-}
-HANGAR = {}
-HANGAR.Config = {
-    ["text"]    = "Public Hangar",
-    ["color"]   = 33,
-    ["sprite"]  = 359,
-    ["layer"]   = 5,
-}
-HANGAR.Blips = {
-    {["x"] =  -1617.03, ["y"] =  -3145.69},
-    {["x"] =  1723.82, ["y"] =  3288.19},
-    {["x"] =  2152.81, ["y"] =  4796.93},
-}
-HARDWARE = {}
-HARDWARE.Config = {
-    ["text"]    = "Hardware Store",
-    ["color"]   = 51,
-    ["sprite"]  = 566,
-    ["layer"]   = 15,
-}
-HARDWARE.Blips = {
-    {["x"] =  155.85, ["y"] =  6648.63},
-    {["x"] =  2742.72, ["y"] =  3482.30},
+    PETS = {
+        Config = {
+            ["text"]    = "Pet Shop",
+            ["color"]   = 0,
+            ["sprite"]  = 463,
+            ["layer"]   = 15,
+            ["scale"]   = 1.0,
+        },
+        Blips = {
+            {["x"] =  562.19, ["y"] =  2741.30},
+        },
+    },
 }

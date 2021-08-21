@@ -99,7 +99,7 @@ RegisterNUICallback('leaveRadio', function(data, cb)
 
     if PlayerData.job and isServicesJob(PlayerData.job.name) then
         TriggerServerEvent('esx-radios:disableBlip', job)
-        TriggerEvent('tcrp-blips:radiooff')
+        TriggerEvent('tcrp-blips:radiooff', PlayerData.job.name)
     end
 
     TriggerEvent("notification",  Config.messages['you_leave'], 3)
