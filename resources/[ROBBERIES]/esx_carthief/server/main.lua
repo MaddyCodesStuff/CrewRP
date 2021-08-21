@@ -76,8 +76,8 @@ AddEventHandler('esx_carthief:alertcops', function(coords)
 	for i = 1, #xPlayers, 1 do
 		local xPlayer = ESX.GetPlayerFromId(xPlayers[i])
 		if xPlayer.job.name == 'police' or xPlayer.job.name == 'journalist' then
-			TriggerClientEvent('esx_blips:setBlipOnCoord', xPlayers[i], coords, (Config.BlipUpdateTime / 1000), 8, true,
-							   1.0)
+			local blip = {["x"] = coords.x, ["y"] = coords.y, ["z"] = coords.z, ["text"] = "[PD] Car Boost", ["sprite"] = 161, ["color"] = 8, ["scale"] = 1.0, ["duration"] = Config.BlipUpdateTime}
+			TriggerClientEvent("tcrp-blips:addblip", xPlayers[i], blip)
 		end
 	end
 end)

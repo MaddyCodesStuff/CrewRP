@@ -83,7 +83,6 @@ function opendoors(success, timeremaining)
     else
         hackholdingup = false
         TriggerEvent('mythic_notify:client:SendErrorAlert', { text = _U('hack_failed') })
-        print('Failure')
         TriggerEvent('mhacking:hide')
         secondsRemaining = 0
         incircle         = false
@@ -92,7 +91,8 @@ end
 
 RegisterNetEvent('esx_holdupbank:setblip')
 AddEventHandler('esx_holdupbank:setblip', function(position)
-    TriggerEvent('esx_blips:setBlipOnCoord', position, 600, 3, true, 1.0)
+    local blip = {["x"] = position.x, ["y"] = position.y, ["z"] = position.z, ["text"] = "[PD] Bank Robbery", ["sprite"] = 161, ["color"] = 3, ["scale"] = 1.0, ["duration"] = 310}
+    TriggerEvent("tcrp-blips:addblip", blip)
 end)
 
 RegisterNetEvent('esx_holdupbank:toofarlocal')
@@ -233,9 +233,10 @@ Citizen.CreateThread(function()
         local ve   = v.blipposition
 
         local blip = AddBlipForCoord(ve.x, ve.y, ve.z)
-        SetBlipSprite(blip, 255)--156
-        SetBlipScale(blip, 0.8)
-        SetBlipColour(blip, 75)
+        SetBlipSprite(blip, 500)--156
+        SetBlipScale(blip, 1.0)
+        SetBlipDisplay(blip, 0)
+        SetBlipColour(blip, 69)
         SetBlipAsShortRange(blip, true)
         BeginTextCommandSetBlipName("STRING")
         AddTextComponentString(_U('bank_robbery'))

@@ -206,7 +206,7 @@ end)
 -- Send location
 Citizen.CreateThread(function()
 	while true do
-		Citizen.Wait(Config.BlipUpdateTime)
+		Citizen.Wait(Config.BlipUpdateTime * 1000)
 		if isTaken == 1 and IsPedInAnyVehicle(GetPlayerPed(-1)) then
 			local coords = GetEntityCoords(GetPlayerPed(-1))
 			TriggerServerEvent('esx_carthief:alertcops', coords)

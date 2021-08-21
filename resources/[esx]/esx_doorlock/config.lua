@@ -25,7 +25,7 @@ Config.DoorList = {
 		objHash = -1406685646,
 		objHeading = 0.0,
 		objCoords = vector3(440.5201, -977.6011, 30.82319),
-		authorizedJobs = { 'police', 'fireman', 'offpolice' },
+		authorizedJobs = { 'police', 'fireman', 'offpolice', 'ambulance' },
 		locked = true,
 		maxDistance = 1.5,
 		fixText = true,
@@ -37,7 +37,7 @@ Config.DoorList = {
 		objHash = -96679321,
 		objHeading = 180.0,
 		objCoords = vector3(440.5201, -986.2335, 30.82319),
-		authorizedJobs = { 'police', 'fireman', 'offpolice' },
+		authorizedJobs = { 'police', 'fireman', 'offpolice', 'ambulance' },
 		locked = true,
 		maxDistance = 1.5,
 		fixText = true,
@@ -45,7 +45,7 @@ Config.DoorList = {
 
 	-- MRPD Atlee Entrance
 	{
-		authorizedJobs = { 'police', 'fireman', 'offpolice' },
+		authorizedJobs = { 'police', 'fireman', 'offpolice', 'ambulance' },
 		locked = true,
 		maxDistance = 2.5,
 		doors = {
@@ -58,7 +58,7 @@ Config.DoorList = {
 
 	-- MRPD Vespucci Entrance
 	{
-		authorizedJobs = { 'police', 'fireman', 'offpolice' },
+		authorizedJobs = { 'police', 'fireman', 'offpolice', 'ambulance' },
 		locked = true,
 		maxDistance = 2.5,
 		doors = {
@@ -171,7 +171,7 @@ Config.DoorList = {
 		objHash = 1830360419,
 		objHeading = 270.0,
 		objCoords = vector3(464.1591, -974.6656, 26.3707),
-		authorizedJobs = { 'police', 'fireman', 'offpolice' },
+		authorizedJobs = { 'police', 'fireman', 'offpolice', 'ambulance' },
 		locked = true,
 		maxDistance = 1.5,
 	},
@@ -182,7 +182,7 @@ Config.DoorList = {
 		objHash = 1830360419,
 		objHeading = 90.0,
 		objCoords = vector3(464.1566, -997.5093, 26.3707),
-		authorizedJobs = { 'police', 'fireman', 'offpolice' },
+		authorizedJobs = { 'police', 'fireman', 'offpolice', 'ambulance' },
 		locked = true,
 		maxDistance = 1.5,
 		fixText = true,
@@ -221,7 +221,7 @@ Config.DoorList = {
 		objHash = 2130672747,
 		objHeading = 0.0,
 		objCoords = vector3(431.4119, -1000.772, 26.69661),
-		authorizedJobs = { 'police', 'fireman', 'offpolice' },
+		authorizedJobs = { 'police', 'fireman', 'offpolice', 'ambulance' },
 		locked = true,
 		maxDistance = 6.0,
 		slides = true,
@@ -233,7 +233,7 @@ Config.DoorList = {
 		objHash = 2130672747,
 		objHeading = 0.0,
 		objCoords = vector3(452.3005, -1000.772, 26.69661),
-		authorizedJobs = { 'police', 'fireman', 'offpolice' },
+		authorizedJobs = { 'police', 'fireman', 'offpolice', 'ambulance' },
 		locked = true,
 		maxDistance = 6.0,
 		slides = true,
@@ -464,7 +464,7 @@ Config.DoorList = {
 		objHash = -2023754432,
 		objHeading = 121.0,
 		objCoords = vector3(1849.3790, 3692.3230, 30.39818),
-		authorizedJobs = { 'police', 'fireman', 'offpolice' },
+		authorizedJobs = { 'police', 'fireman' },
 		locked = true,
 		maxDistance = 1.5,
 	},
@@ -573,7 +573,7 @@ Config.DoorList = {
 
 	--Hallway
 	{
-		authorizedJobs = { 'police', 'fireman' },
+		authorizedJobs = { 'police', 'fireman', 'ambulance' },
 		locked = true,
 		maxDistance = 2.5,
 		doors = {
@@ -907,7 +907,7 @@ Config.DoorList = {
 		objHash = 746855201,
 		objHeading = 250.0,
 		objCoords = vector3(261.99899291992, 221.50576782227, 106.68346405029),
-		authorizedJobs = { 'police', 'fireman', },
+		authorizedJobs = { 'police', 'fireman' },
 		locked = true,
 		maxDistance = 2.5,
 	},
@@ -963,9 +963,9 @@ Config.DoorList = {
 		},
 	},
 
-	--Back Parking Door
+	--Morgue Door
 	{
-		authorizedJobs = { 'ambulance', 'fireman', 'offambulance' },
+		authorizedJobs = { 'ambulance', 'fireman', 'offambulance', 'police' },
 		locked = true,
 		maxDistance = 2.5,
 		doors = {
@@ -998,7 +998,7 @@ Config.DoorList = {
 	
 	--Infirmary
 	{
-		authorizedJobs = { 'ambulance', 'fireman' },
+		authorizedJobs = { 'ambulance', 'fireman', 'police' },
 		locked = true,
 		maxDistance = 2.5,
 		doors = {
@@ -1040,9 +1040,9 @@ Config.DoorList = {
 		fixText = true
 	},
 
-	--Morgue Left
+	--Back Parking Door
 	{
-		authorizedJobs = { 'ambulance', 'fireman', 'offambulance' },
+		authorizedJobs = { 'ambulance', 'fireman' },
 		locked = true,
 		maxDistance = 2.5,
 		doors = {

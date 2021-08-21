@@ -20,8 +20,6 @@ Config.BeltWeapons = {
     GetHashKey('WEAPON_PISTOL_MK2'),
     GetHashKey('WEAPON_SNSPISTOL'),
     GetHashKey('WEAPON_SNSPISTOL_MK2'),
-    GetHashKey('WEAPON_MACHINEPISTOL'),
-    GetHashKey('WEAPON_MINISMG'),
     GetHashKey('WEAPON_COMBATPISTOL'),
     GetHashKey('WEAPON_APPISTOL'),
     GetHashKey('WEAPON_HEAVYPISTOL'),
@@ -33,5 +31,36 @@ Config.BeltWeapons = {
     GetHashKey('WEAPON_MARKSMANPISTOL'),
     GetHashKey('WEAPON_CERAMICPISTOL'),
     GetHashKey('WEAPON_NAVYREVOLVER'),
-    GetHashKey('WEAPON_MICROSMG'),
+}
+
+--Male T-Shirt Holsters
+Config.maleShirtHolster = {
+    122,
+    130,
+    174,
+}
+
+Config.maleChainHolster = {
+    136,
+    140,
+    141,
+    155,
+    157,
+    159,
+}
+
+--Female Tshirt Hoslters
+Config.femaleShirtHolster = { 
+    152,
+    160,
+    212,
+}
+
+Config.femaleChainHolster = { 
+    105,
+    109,
+    110,
+    116,
+    118,
+    120,
 }

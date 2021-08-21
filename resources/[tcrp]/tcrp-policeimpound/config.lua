@@ -115,6 +115,7 @@ Config.LocalVehicles = {
     'asea',
     'landstalker2',
     'rrocket',
+
 }
 
 -- Mythic actions config

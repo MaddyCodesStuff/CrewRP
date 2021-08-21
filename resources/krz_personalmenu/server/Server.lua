@@ -1,10 +1,24 @@
+ESX = nil
+TriggerEvent('esx:getSharedObject', function(obj)
+    ESX = obj
+end)
 -----------------------------------------------------------------------------------------------------
 -- Shared Emotes Syncing  ---------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------
 
 RegisterServerEvent("ServerEmoteRequest")
-AddEventHandler("ServerEmoteRequest", function(target, emotename, etype)
-    TriggerClientEvent("ClientEmoteRequestReceive", target, emotename, etype)
+AddEventHandler("ServerEmoteRequest", function(target, emotename, etype, sender)
+    local source = source
+    local xplayer = ESX.GetPlayerFromId(source)
+    local playername = xplayer
+    if xplayer then
+        local result = MySQL.Sync.fetchAll("SELECT * FROM users WHERE identifier = @identifier",{
+        ['@identifier'] = xplayer.identifier
+      })
+        local firstname = result[1].firstname
+        local lastname = result[1].lastname
+        TriggerClientEvent("ClientEmoteRequestReceive", target, emotename, etype, firstname, lastname)
+      end
 end)
 
 RegisterServerEvent("ServerValidEmote")
@@ -24,13 +38,13 @@ if Config.SqlKeybinding then
         AddEventHandler('dp:ServerKeybindExist', function()
             local src   = source
             local srcid = GetPlayerIdentifier(source)
-            --MySQL.Async.fetchAll('SELECT * FROM dpkeybinds WHERE `id`=@id;', {id = srcid}, function(dpkeybinds)
-            --	if dpkeybinds[1] then
-            --		TriggerClientEvent("dp:ClientKeybindExist", src, true)
-            --	else
-            --		TriggerClientEvent("dp:ClientKeybindExist", src, false)
-            --	end
-            --end)
+            MySQL.Async.fetchAll('SELECT * FROM dpkeybinds WHERE `id`=@id;', {id = srcid}, function(dpkeybinds)
+            	if dpkeybinds[1] then
+            		TriggerClientEvent("dp:ClientKeybindExist", src, true)
+            	else
+            		TriggerClientEvent("dp:ClientKeybindExist", src, false)
+            	end
+            end)
         end)
 
         --  This is my first time doing SQL stuff, and after i finished everything i realized i didnt have to store the keybinds in the database at all.
