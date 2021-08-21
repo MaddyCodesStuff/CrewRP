@@ -33,7 +33,7 @@ RegisterServerEvent('esx_ambulancejob:heal')
 AddEventHandler('esx_ambulancejob:heal', function(target, type)
 	local xPlayer = ESX.GetPlayerFromId(source)
 
-	if xPlayer.job.name == 'ambulance' or xPlayer.job.name == 'fireman' then
+	if xPlayer.job.name == 'ambulance' or xPlayer.job.name == 'fireman' or xPlayer.job.name == 'humane' then
 		TriggerClientEvent('esx_ambulancejob:heal', target, type)
 	else
 		print(('esx_ambulancejob: %s attempted to heal!'):format(xPlayer.identifier))
@@ -44,7 +44,7 @@ RegisterServerEvent('esx_ambulancejob:putInVehicle')
 AddEventHandler('esx_ambulancejob:putInVehicle', function(target)
 	local xPlayer = ESX.GetPlayerFromId(source)
 
-	if xPlayer.job.name == 'ambulance' or xPlayer.job.name == 'fireman' then
+	if xPlayer.job.name == 'ambulance' or xPlayer.job.name == 'fireman' or xPlayer.job.name == 'humane' then
 		TriggerClientEvent('esx_ambulancejob:putInVehicle', target)
 	else
 		print(('esx_ambulancejob: %s attempted to put in vehicle!'):format(xPlayer.identifier))
@@ -243,7 +243,7 @@ AddEventHandler('esx_ambulancejob:giveItem', function(itemName)
 		TriggerClientEvent('esx:showNotification', source, 'You Do Not Have a Key for The Drug Locker')
 		print(('esx_ambulancejob: %s attempted to spawn in an item!'):format(xPlayer.identifier))
 		return
-	elseif (itemName ~= 'bodyarmor_3' and itemName ~= 'tylenol' and itemName ~= 'scuba' and itemName ~= 'medikit' and itemName ~= 'bandage' and itemName ~= 'gauze' and itemName ~= 'firstaid' and itemName ~= 'morphine' and itemName ~= 'vicodin' and itemName ~= 'hydrocodone' and itemName ~= 'medkit') then
+	elseif (itemName ~= 'bodyarmor_3' and itemName ~= 'tylenol' and itemName ~= 'scuba' and itemName ~= 'medikit' and itemName ~= 'bandage' and itemName ~= 'gauze' and itemName ~= 'firstaid' and itemName ~= 'morphine' and itemName ~= 'vicodin' and itemName ~= 'hydrocodone' and itemName ~= 'medkit' and itemName ~= 'wheelchair') then
 		print(('esx_ambulancejob: %s attempted to spawn in an item!'):format(xPlayer.identifier))
 		return
 	end

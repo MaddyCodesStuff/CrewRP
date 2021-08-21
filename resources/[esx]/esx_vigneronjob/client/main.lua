@@ -542,7 +542,7 @@ function blips()
                                      Config.Zones.VigneronActions.Pos.z)
         SetBlipSprite(blip, 85)
         SetBlipDisplay(blip, 4)
-        SetBlipScale(blip, 1.5)
+        SetBlipScale(blip, 1.0)
         SetBlipColour(blip, 19)
         SetBlipAsShortRange(blip, true)
 
@@ -560,7 +560,7 @@ function blips()
 
                 SetBlipSprite(blip2, 85)
                 SetBlipDisplay(blip2, 4)
-                SetBlipScale(blip2, 1.5)
+                SetBlipScale(blip2, 1.0)
                 SetBlipColour(blip2, 19)
                 SetBlipAsShortRange(blip2, true)
 

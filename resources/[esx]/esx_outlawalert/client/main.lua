@@ -66,30 +66,8 @@ end)
 RegisterNetEvent('esx_outlawalert:firstStartBlip')
 AddEventHandler('esx_outlawalert:fireStartBlip', function(targetCoords, alert)
     if isPlayerFDWhitelisted then
-        local alpha    = 250
-        -- local gunshotBlip = AddBlipForRadius(targetCoords.x, targetCoords.y, targetCoords.z, Config.BlipGunRadius)
-        local fireBlip = AddBlipForCoord(targetCoords.x, targetCoords.y, targetCoords.z)
-        SetBlipSprite(fireBlip, 436)
-        SetBlipColour(fireBlip, 47)
-        SetBlipScale(fireBlip, 1.0)
-        SetBlipDisplay(fireBlip, 4)
-        SetBlipAsShortRange(fireBlip, true)
-        SetBlipAlpha(fireBlip, alpha)
-        PulseBlip(fireBlip)
-        BeginTextCommandSetBlipName("STRING")
-        AddTextComponentString(alert)
-        EndTextCommandSetBlipName(fireBlip)
-
-        while alpha ~= 0 do
-            Citizen.Wait(Config.BlipFireTime * 4)
-            alpha = alpha - 1
-            SetBlipAlpha(fireBlip, alpha)
-
-            if alpha == 0 then
-                RemoveBlip(fireBlip)
-                return
-            end
-        end
+        local blip = {["x"] = targetCoords.x, ["y"] = targetCoords.y, ["z"] = targetCoords.z, ["text"] = alert, ["sprite"] = 436, ["color"] = 47, ["scale"] = 1.0, ["layer"] = 35, ["duration"] = Config.BlipFireTime}
+        TriggerEvent("tcrp-blips:addblip", blip)
     end
 end)
 
@@ -250,43 +228,24 @@ AddEventHandler('esx_outlawalert:gunshotInProgress', function(targetCoords, from
             message = message .. ' from vehicle'
             sprite  = 610
         end
-        TriggerEvent('esx_blips:setBlipOnCoord', targetCoords, 30, 29, false, 1.0, sprite, message, true)
+        local blip = {["x"] = targetCoords.x, ["y"] = targetCoords.y, ["z"] = targetCoords.z, ["text"] = message, ["longrange"] = true, ["sprite"] = sprite, ["color"] = 29, ["scale"] = 1.2, ["layer"] = 35, ["flash"] = true, ["flashinterval"] = 1000, ["duration"] = 30}
+        TriggerEvent("tcrp-blips:addblip", blip)
     end
 end)
 
 RegisterNetEvent('esx_outlawalert:explosionInProgress')
 AddEventHandler('esx_outlawalert:explosionInProgress', function(targetCoords)
     if isPlayerWhitelisted and Config.GunshotAlert then
-        TriggerEvent('esx_blips:setBlipOnCoord', targetCoords, 30, 29, false, 1.0, 486, '[PD] Explosion', true)
+        local blip = {["x"] = targetCoords.x, ["y"] = targetCoords.y, ["z"] = targetCoords.z, ["text"] = "[PD] Explosion", ["longrange"] = true, ["sprite"] = 486, ["color"] = 29, ["scale"] = 1.4, ["layer"] = 35, ["flash"] = true, ["flashinterval"] = 1000, ["duration"] = 30}
+        TriggerEvent("tcrp-blips:addblip", blip)
     end
 end)
 
 RegisterNetEvent('esx_outlawalert:citizenDistress')
 AddEventHandler('esx_outlawalert:citizenDistress', function(targetCoords)
     if isPlayerEMSWhitelisted then
-        local alpha           = 250
-        -- local gunshotBlip = AddBlipForRadius(targetCoords.x, targetCoords.y, targetCoords.z, Config.BlipGunRadius)
-        local emsdistressBlip = AddBlipForCoord(targetCoords.x, targetCoords.y, targetCoords.z)
-        SetBlipSprite(emsdistressBlip, 153)
-        SetBlipHighDetail(emsdistressBlip, true)
-        SetBlipColour(emsdistressBlip, 1)
-        SetBlipRouteColour(emsdistressBlip, 38)
-        SetBlipAlpha(emsdistressBlip, alpha)
-        SetBlipAsShortRange(emsdistressBlip, true)
-        BeginTextCommandSetBlipName("STRING")
-        AddTextComponentString('*[CID] Citizen In Distress')
-        EndTextCommandSetBlipName(emsdistressBlip)
-
-        while alpha ~= 0 do
-            Citizen.Wait(Config.BlipEMSTime * 4)
-            alpha = alpha - 1
-            SetBlipAlpha(emsdistressBlip, alpha)
-
-            if alpha == 0 then
-                RemoveBlip(emsdistressBlip)
-                return
-            end
-        end
+        local blip = {["x"] = targetCoords.x, ["y"] = targetCoords.y, ["z"] = targetCoords.z, ["text"] = "[CID] Citizen In Distress", ["sprite"] = 153, ["color"] = 1, ["scale"] = 1.2, ["layer"] = 35, ["duration"] = Config.BlipEMSTime}
+        TriggerEvent("tcrp-blips:addblip", blip)
     end
 end)
 

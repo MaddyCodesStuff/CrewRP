@@ -57,7 +57,7 @@
           <AmmoInfo ref="AMMO_SMG" />
           <AimingInfo ref="RIFLE_LO_BASE_STRAFE" />
           <ClipSize value="30" />
-          <AccuracySpread value="3.500000" />
+          <AccuracySpread value="1.000000" />
           <AccurateModeAccuracyModifier value="0.500000" />
           <RunAndGunAccuracyModifier value="2.000000" />
           <RunAndGunAccuracyMinOverride value="-1.000000" />
@@ -183,17 +183,17 @@
             <GroundDisturbFxNameWater />
             <GroundDisturbFxNameFoliage />
           </Fx>
-          <InitialRumbleDuration value="120" />
-          <InitialRumbleIntensity value="0.200000" />
-          <InitialRumbleIntensityTrigger value="0.900000" />
-          <RumbleDuration value="95" />
-          <RumbleIntensity value="0.150000" />
-          <RumbleIntensityTrigger value="0.700000" />
-          <RumbleDamageIntensity value="1.000000" />
-          <InitialRumbleDurationFps value="120" />
-          <InitialRumbleIntensityFps value="0.800000" />
-          <RumbleDurationFps value="80" />
-          <RumbleIntensityFps value="0.450000" />
+          <InitialRumbleDuration value="0" />
+          <InitialRumbleIntensity value="0.000000" />
+          <InitialRumbleIntensityTrigger value="0.000000" />
+          <RumbleDuration value="0" />
+          <RumbleIntensity value="0.000000" />
+          <RumbleIntensityTrigger value="0.000000" />
+          <RumbleDamageIntensity value="0.000000" />
+          <InitialRumbleDurationFps value="0" />
+          <InitialRumbleIntensityFps value="0.000000" />
+          <RumbleDurationFps value="0" />
+          <RumbleIntensityFps value="0.000000" />
           <NetworkPlayerDamageModifier value="1.000000" />
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="2.500000" />
@@ -260,12 +260,12 @@
           <RecoilShakeHashFirstPerson>FPS_SMG_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
           <AccuracyOffsetShakeHash>DEFAULT_THIRD_PERSON_ACCURACY_OFFSET_SHAKE</AccuracyOffsetShakeHash>
           <MinTimeBetweenRecoilShakes value="0" />
-          <RecoilShakeAmplitude value="0.333000" />
+          <RecoilShakeAmplitude value="0.000000" />
           <ExplosionShakeAmplitude value="-1.000000" />
           <IkRecoilDisplacement value="0.000000" />
           <IkRecoilDisplacementScope value="0.000000" />
-          <IkRecoilDisplacementScaleBackward value="1.000000" />
-          <IkRecoilDisplacementScaleVertical value="0.400000" />
+          <IkRecoilDisplacementScaleBackward value="0.000000" />
+          <IkRecoilDisplacementScaleVertical value="0.000000" />
           <ReticuleHudPosition x="0.000000" y="0.000000" />
           <ReticuleHudPositionOffsetForPOVTurret x="0.000000" y="0.000000" />
           <AimOffsetMin x="0.210000" y="0.200000" z="0.600000" />

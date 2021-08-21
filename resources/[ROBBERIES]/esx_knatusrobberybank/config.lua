@@ -71,6 +71,19 @@ Banks            = {
         yaw                  = 150,
         NumberOfCopsRequired = 4,
     },
+    ["fleeca6"]       = {
+        blipposition         = { ['x'] = -341.23, y = -48.99, z = 49.04 },
+        position             = { ['x'] = -353.62, ['y'] = -57.85, ['z'] = 49.01 }, --2957.6674804688
+        hackposition         = { ['x'] = -353.55, ['y'] = -54.14, ['z'] = 49.04 },
+        reward               = { min = 15000, max = 20000 },
+        nameofbank           = "Fleeca Bank (Hawick Ave., Eastborne)",
+        lastrobbed           = 0,
+        doortype             = 'v_ilev_gb_vauldr',
+        timetotorch          = 90000, -- In milliseconds
+        timetohack           = 10000, -- In milliseconds
+        yaw                  = 150,
+        NumberOfCopsRequired = 4,
+    },
     ["blainecounty"]  = {
         blipposition         = { ['x'] = -113.32, y = 6469.75, z = 31.45 },
         hackposition         = { x = -105.32, y = 6471.56, z = 31.63 },

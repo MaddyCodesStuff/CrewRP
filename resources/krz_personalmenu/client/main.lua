@@ -1009,9 +1009,10 @@ function AddMenuEmoteMenu(menu)
             a, b, rename = table.unpack(DP.Dances[pushedDances[item['Text']['_Text']]])
             TriggerServerEvent("ServerEmoteRequest", GetPlayerServerId(target), pushedDances[item['Text']['_Text']],
                                'Dances')
-            SimpleNotify(_U('sentrequestto') .. GetPlayerName(target))
+            TriggerServerEvent("ServerEmoteRequest", GetPlayerServerId(target), pushedShared[item['Text']['_Text']])                   
+            TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', text = 'Request sent to ' ..  GetPlayerName(target) , length = 10000 })
         else
-            SimpleNotify(_U('nobodyclose'))
+            TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', text = 'No players are close.', length = 10000 })
         end
     end
 
@@ -1020,9 +1021,9 @@ function AddMenuEmoteMenu(menu)
         if (distance ~= -1 and distance < 3) then
             a, b, rename = table.unpack(DP.Shared[pushedShared[item['Text']['_Text']]])
             TriggerServerEvent("ServerEmoteRequest", GetPlayerServerId(target), pushedShared[item['Text']['_Text']])
-            SimpleNotify(_U('sentrequestto') .. GetPlayerName(target))
+            TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', text = 'Request sent to ' .. GetPlayerName(target) , length = 10000 })
         else
-            SimpleNotify(_U('nobodyclose'))
+            TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', text = 'No players are close.', length = 10000 })
         end
     end
 

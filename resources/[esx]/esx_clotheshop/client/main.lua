@@ -118,6 +118,8 @@ function OpenShopMenu()
                      'tshirt_2',
                      'torso_1',
                      'torso_2',
+                     'bproof_1',
+                     'bproof_2',
                      'decals_1',
                      'decals_2',
                      'arms',
@@ -161,10 +163,11 @@ Citizen.CreateThread(function()
         local blip = AddBlipForCoord(Config.Shops[i].x, Config.Shops[i].y, Config.Shops[i].z)
 
         SetBlipSprite(blip, 73)
-        SetBlipDisplay(blip, 4)
-        SetBlipScale(blip, 1.0)
-        SetBlipColour(blip, 47)
+        SetBlipDisplay(blip, 0)
+        SetBlipScale(blip, 0.8)
+        SetBlipColour(blip, 10)
         SetBlipAsShortRange(blip, true)
+        SetBlipPriority(blip, 9)
 
         BeginTextCommandSetBlipName("STRING")
         AddTextComponentString(_U('clothes'))
