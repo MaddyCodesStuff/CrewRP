@@ -936,7 +936,7 @@ Blips.Main        = {
     },
     [431]  = {
         ["name"]    = "Galaxy",
-        ["x"] =  -133.77, ["y"] =  -1273.27,
+        ["x"] =  -121.10, ["y"] =  -1258.59,
         ["category"]= "Nightclub",
         ["text"]    = "Nightclub",
         ["sprite"]  = 136,

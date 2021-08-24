@@ -277,6 +277,9 @@ AddEventHandler("tcrp-blips:addblip", function(blipconfig, entity)
     if blipconfig["rotation"] ~= nil then
         SetBlipRotation(blip, blipconfig["rotation"])
     end
+    if blipconfig["height"] ~= nil then
+        ShowHeightOnBlip(blip, blipconfig["height"])
+    end
     if blipconfig["checkmark"] ~= nil then
         ShowTickOnBlip(blip, blipconfig["checkmark"])
     end
