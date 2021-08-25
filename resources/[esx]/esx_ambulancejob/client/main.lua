@@ -483,7 +483,7 @@ Citizen.CreateThread(function()
 		Citizen.Wait(3000)
 
 		local playerCoords = GetEntityCoords(PlayerPedId())
-		streetName, _   = GetStreetNameAtCoord(playerCoords.x, playerCoords.y, playerCoords.z)
+		streetName, road   = GetStreetNameAtCoord(playerCoords.x, playerCoords.y, playerCoords.z)
 		streetName         = GetStreetNameFromHashKey(streetName)
 	end
 end)
