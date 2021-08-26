@@ -411,7 +411,7 @@ Citizen.CreateThread(function()
 end)
 
 -- Debug Thread to get Hashes of Interiors
-Citizen.CreateThread(function()
+--[[Citizen.CreateThread(function()
     while true do
         Wait(0)
         local interiorhash = GetInteriorFromEntity(PlayerPedId())
@@ -425,4 +425,4 @@ Citizen.CreateThread(function()
         AddTextComponentString("Interior Hash: " .. interiorhash)
         DrawText(0.5, 0.91)
     end
-end)
+end)]]
