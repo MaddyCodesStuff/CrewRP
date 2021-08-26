@@ -95,7 +95,19 @@ for k,v in pairs(Blips.Main) do
                 exports['blip_info']:AddBlipInfoHeader(blip["id"], blip["Info.header2Left"], blip["Info.header2Right"])
             end
             if blip["Info.header3Left"] and blip["Info.header3Right"] ~= nil then
-                exports['blip_info']:AddBlipInfoHeader(blip["id"], blip["Info.header2Left"], blip["Info.header2Right"])
+                exports['blip_info']:AddBlipInfoHeader(blip["id"], blip["Info.header3Left"], blip["Info.header3Right"])
+            end
+            if blip["Info.header4Left"] and blip["Info.header4Right"] ~= nil then
+                exports['blip_info']:AddBlipInfoHeader(blip["id"], blip["Info.header4Left"], blip["Info.header4Right"])
+            end
+            if blip["Info.header5Left"] and blip["Info.header5Right"] ~= nil then
+                exports['blip_info']:AddBlipInfoHeader(blip["id"], blip["Info.header5Left"], blip["Info.header5Right"])
+            end
+            if blip["Info.header6Left"] and blip["Info.header6Right"] ~= nil then
+                exports['blip_info']:AddBlipInfoHeader(blip["id"], blip["Info.header6Left"], blip["Info.header6Right"])
+            end
+            if blip["Info.header7Left"] and blip["Info.header7Right"] ~= nil then
+                exports['blip_info']:AddBlipInfoHeader(blip["id"], blip["Info.header7Left"], blip["Info.header7Right"])
             end
             if blip["Info.iconLeft"] and blip["Info.iconRight"] and blip["Info.iconID"] and blip["Info.iconColor"] and blip ["Info.iconCheckmark"] ~= nil then
                 exports['blip_info']:AddBlipInfoIcon(blip["id"], blip["Info.iconLeft"], blip["Info.iconRight"], blip["Info.iconID"], blip["Info.iconColor"], blip["Info.iconCheckmark"])
@@ -347,6 +359,18 @@ AddEventHandler("tcrp-blips:addblip", function(blipconfig, entity)
     if blipconfig["Info.header3Left"] and blipconfig["Info.header3Right"] ~= nil then
         exports['blip_info']:AddBlipInfoHeader(blip, blipconfig["Info.header2Left"], blipconfig["Info.header2Right"])
     end
+    if blipconfig["Info.header4Left"] and blipconfig["Info.header4Right"] ~= nil then
+        exports['blip_info']:AddBlipInfoHeader(blip, blipconfig["Info.header4Left"], blipconfig["Info.header4Right"])
+    end
+    if blipconfig["Info.header5Left"] and blipconfig["Info.header5Right"] ~= nil then
+        exports['blip_info']:AddBlipInfoHeader(blip, blipconfig["Info.header5Left"], blipconfig["Info.header5Right"])
+    end
+    if blipconfig["Info.header6Left"] and blipconfig["Info.header6Right"] ~= nil then
+        exports['blip_info']:AddBlipInfoHeader(blip, blipconfig["Info.header6Left"], blipconfig["Info.header6Right"])
+    end
+    if blipconfig["Info.header7Left"] and blipconfig["Info.header7Right"] ~= nil then
+        exports['blip_info']:AddBlipInfoHeader(blip, blipconfig["Info.header7Left"], blipconfig["Info.header7Right"])
+    end
     if blipconfig["Info.iconLeft"] and blipconfig["Info.iconRight"] and blipconfig["Info.iconID"] and blipconfig["Info.iconColor"] and blip ["Info.iconCheckmark"] ~= nil then
         exports['blip_info']:AddBlipInfoIcon(blip, blipconfig["Info.iconLeft"], blipconfig["Info.iconRight"], blipconfig["Info.iconID"], blipconfig["Info.iconColor"], blipconfig["Info.iconCheckmark"])
     end
@@ -486,7 +510,19 @@ AddEventHandler("tcrp-blips:updateblip", function(blipsource, table)
             exports['blip_info']:AddBlipInfoHeader(blip, blipconfig["Info.header2Left"], blipconfig["Info.header2Right"])
         end
         if blipconfig["Info.header3Left"] and blipconfig["Info.header3Right"] ~= nil then
-            exports['blip_info']:AddBlipInfoHeader(blip, blipconfig["Info.header2Left"], blipconfig["Info.header2Right"])
+            exports['blip_info']:AddBlipInfoHeader(blip, blipconfig["Info.header3Left"], blipconfig["Info.header3Right"])
+        end
+        if blipconfig["Info.header4Left"] and blipconfig["Info.header4Right"] ~= nil then
+            exports['blip_info']:AddBlipInfoHeader(blip, blipconfig["Info.header4Left"], blipconfig["Info.header4Right"])
+        end
+        if blipconfig["Info.header5Left"] and blipconfig["Info.header5Right"] ~= nil then
+            exports['blip_info']:AddBlipInfoHeader(blip, blipconfig["Info.header5Left"], blipconfig["Info.header5Right"])
+        end
+        if blipconfig["Info.header6Left"] and blipconfig["Info.header6Right"] ~= nil then
+            exports['blip_info']:AddBlipInfoHeader(blip, blipconfig["Info.header6Left"], blipconfig["Info.header6Right"])
+        end
+        if blipconfig["Info.header7Left"] and blipconfig["Info.header7Right"] ~= nil then
+            exports['blip_info']:AddBlipInfoHeader(blip, blipconfig["Info.header7Left"], blipconfig["Info.header7Right"])
         end
         if blipconfig["Info.iconLeft"] and blipconfig["Info.iconRight"] and blipconfig["Info.iconID"] and blipconfig["Info.iconColor"] and blip ["Info.iconCheckmark"] ~= nil then
             exports['blip_info']:AddBlipInfoIcon(blip, blipconfig["Info.iconLeft"], blipconfig["Info.iconRight"], blipconfig["Info.iconID"], blipconfig["Info.iconColor"], blipconfig["Info.iconCheckmark"])
