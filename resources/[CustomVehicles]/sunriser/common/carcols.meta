@@ -2213,21 +2213,6 @@
           <allowBonnetSlide value="true" />
         </Item>
 		<Item>
-          <modelName>sun1_liv43</modelName>
-          <modShopLabel>SUN1_LIV43</modShopLabel>
-          <linkedModels />
-          <turnOffBones />
-          <type>VMT_LIVERY_MOD</type>
-          <bone>chassis</bone>
-          <collisionBone>chassis</collisionBone>
-          <cameraPos>VMCP_DEFAULT</cameraPos>
-          <audioApply value="1.000000" />
-          <weight value="20" />
-          <turnOffExtra value="false" />
-          <disableBonnetCamera value="false" />
-          <allowBonnetSlide value="true" />
-        </Item>
-		<Item>
           <modelName>sun1_liv44</modelName>
           <modShopLabel>SUN1_LIV44</modShopLabel>
           <linkedModels />
