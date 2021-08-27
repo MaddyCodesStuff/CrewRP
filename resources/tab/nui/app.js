@@ -47,7 +47,7 @@ $(document).ready(function () {
         } // lua requested show / hide
         else if (item.police_check) {
             police = item.check;
-            if (police == "police") {
+            if (police == true) {
                 $('#unpaidfines').show();
             } else {
                 $('#unpaidfines').hide();
