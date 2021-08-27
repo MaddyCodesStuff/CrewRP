@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVehicleMetadataMgr>
+  <AnimRateSets />
+  <ClipSetMaps>
+    <Item type="CClipSetMap">
+      <Name>INSIDE_CLIPSET_MAP_AVISA_FRONT_LEFT</Name>
+      <Maps>
+        <Item>
+          <ClipSetId>clipset@anim@veh@submersible@avisa@ds@base</ClipSetId>
+          <VarClipSetId>InsideVarClipSet</VarClipSetId>
+          <ConditionFlags />
+          <InformationFlags />
+        </Item>
+      </Maps>
+    </Item>
+    <Item type="CClipSetMap">
+      <Name>INSIDE_CLIPSET_MAP_AVISA_FRONT_RIGHT</Name>
+      <Maps>
+        <Item>
+          <ClipSetId>clipset@anim@veh@submersible@avisa@ps@base</ClipSetId>
+          <VarClipSetId>InsideVarClipSet</VarClipSetId>
+          <ConditionFlags />
+          <InformationFlags />
+        </Item>
+      </Maps>
+    </Item>
+    <Item type="CClipSetMap">
+      <Name>INSIDE_CLIPSET_MAP_AVISA_REAR_LEFT</Name>
+      <Maps>
+        <Item>
+          <ClipSetId>clipset@anim@veh@submersible@avisa@rds@base</ClipSetId>
+          <VarClipSetId>InsideVarClipSet</VarClipSetId>
+          <ConditionFlags />
+          <InformationFlags />
+        </Item>
+      </Maps>
+    </Item>
+    <Item type="CClipSetMap">
+      <Name>INSIDE_CLIPSET_MAP_AVISA_REAR_RIGHT</Name>
+      <Maps>
+        <Item>
+          <ClipSetId>clipset@anim@veh@submersible@avisa@rps@base</ClipSetId>
+          <VarClipSetId>InsideVarClipSet</VarClipSetId>
+          <ConditionFlags />
+          <InformationFlags />
+        </Item>
+      </Maps>
+    </Item>
+    <Item type="CClipSetMap">
+      <Name>ENTRY_CLIPSET_MAP_AVISA_FRONT_LEFT</Name>
+      <Maps>
+        <Item>
+          <ClipSetId>clipset@anim@veh@submersible@avisa@ds@enter_exit</ClipSetId>
+          <VarClipSetId>EntryVarClipSet</VarClipSetId>
+          <ConditionFlags />
+          <InformationFlags />
+        </Item>
+      </Maps>
+    </Item>
+    <Item type="CClipSetMap">
+      <Name>EXIT_CLIPSET_MAP_AVISA_FRONT_LEFT</Name>
+      <Maps>
+        <Item>
+          <ClipSetId>clipset@anim@veh@submersible@avisa@ds@enter_exit</ClipSetId>
+          <VarClipSetId>ExitVarClipSet</VarClipSetId>
+          <ConditionFlags />
+          <InformationFlags />
+        </Item>
+      </Maps>
+    </Item>
+    <Item type="CClipSetMap">
+      <Name>ENTRY_CLIPSET_MAP_AVISA_FRONT_RIGHT</Name>
+      <Maps>
+        <Item>
+          <ClipSetId>clipset@anim@veh@submersible@avisa@ps@enter_exit</ClipSetId>
+          <VarClipSetId>EntryVarClipSet</VarClipSetId>
+          <ConditionFlags />
+          <InformationFlags />
+        </Item>
+      </Maps>
+    </Item>
+    <Item type="CClipSetMap">
+      <Name>EXIT_CLIPSET_MAP_AVISA_FRONT_RIGHT</Name>
+      <Maps>
+        <Item>
+          <ClipSetId>clipset@anim@veh@submersible@avisa@ps@enter_exit</ClipSetId>
+          <VarClipSetId>ExitVarClipSet</VarClipSetId>
+          <ConditionFlags />
+          <InformationFlags />
+        </Item>
+      </Maps>
+    </Item>
+    <Item type="CClipSetMap">
+      <Name>ENTRY_CLIPSET_MAP_AVISA_REAR_LEFT</Name>
+      <Maps>
+        <Item>
+          <ClipSetId>clipset@anim@veh@submersible@avisa@rds@enter_exit</ClipSetId>
+          <VarClipSetId>EntryVarClipSet</VarClipSetId>
+          <ConditionFlags />
+          <InformationFlags />
+        </Item>
+      </Maps>
+    </Item>
+    <Item type="CClipSetMap">
+      <Name>EXIT_CLIPSET_MAP_AVISA_REAR_LEFT</Name>
+      <Maps>
+        <Item>
+          <ClipSetId>clipset@anim@veh@submersible@avisa@rds@enter_exit</ClipSetId>
+          <VarClipSetId>ExitVarClipSet</VarClipSetId>
+          <ConditionFlags />
+          <InformationFlags />
+        </Item>
+      </Maps>
+    </Item>
+    <Item type="CClipSetMap">
+      <Name>ENTRY_CLIPSET_MAP_AVISA_REAR_RIGHT</Name>
+      <Maps>
+        <Item>
+          <ClipSetId>clipset@anim@veh@submersible@avisa@rps@enter_exit</ClipSetId>
+          <VarClipSetId>EntryVarClipSet</VarClipSetId>
+          <ConditionFlags />
+          <InformationFlags />
+        </Item>
+      </Maps>
+    </Item>
+    <Item type="CClipSetMap">
+      <Name>EXIT_CLIPSET_MAP_AVISA_REAR_RIGHT</Name>
+      <Maps>
+        <Item>
+          <ClipSetId>clipset@anim@veh@submersible@avisa@rps@enter_exit</ClipSetId>
+          <VarClipSetId>ExitVarClipSet</VarClipSetId>
+          <ConditionFlags />
+          <InformationFlags />
+        </Item>
+      </Maps>
+    </Item>
+  </ClipSetMaps>
+  <VehicleCoverBoundOffsetInfos />
+  <BicycleInfos />
+  <POVTuningInfos />
+  <EntryAnimVariations />
+  <VehicleExtraPointsInfos />
+  <DrivebyWeaponGroups />
+  <VehicleDriveByAnimInfos />
+  <VehicleDriveByInfos />
+  <VehicleSeatInfos>
+    <Item type="CVehicleSeatInfo">
+      <Name>SEAT_AVISA_FRONT_LEFT</Name>
+      <SeatBoneName>seat_dside_f</SeatBoneName>
+      <ShuffleLink>SEAT_AVISA_FRONT_RIGHT</ShuffleLink>
+      <RearSeatLink>SEAT_AVISA_REAR_LEFT</RearSeatLink>
+      <DefaultCarTask>TASK_DRIVE_WANDER</DefaultCarTask>
+      <SeatFlags>IsFrontSeat</SeatFlags>
+      <HairScale value="0.000000" />
+      <ShuffleLink2 />
+    </Item>
+    <Item type="CVehicleSeatInfo">
+      <Name>SEAT_AVISA_FRONT_RIGHT</Name>
+      <SeatBoneName>seat_pside_f</SeatBoneName>
+      <ShuffleLink>SEAT_AVISA_FRONT_LEFT</ShuffleLink>
+      <RearSeatLink>SEAT_AVISA_REAR_RIGHT</RearSeatLink>
+      <DefaultCarTask>TASK_DRIVE_WANDER</DefaultCarTask>
+      <SeatFlags>IsFrontSeat</SeatFlags>
+      <HairScale value="0.000000" />
+      <ShuffleLink2 />
+    </Item>
+    <Item type="CVehicleSeatInfo">
+      <Name>SEAT_AVISA_REAR_LEFT</Name>
+      <SeatBoneName>seat_dside_r</SeatBoneName>
+      <ShuffleLink>SEAT_AVISA_REAR_RIGHT</ShuffleLink>
+      <RearSeatLink />
+      <DefaultCarTask>TASK_DRIVE_WANDER</DefaultCarTask>
+      <SeatFlags />
+      <HairScale value="0.000000" />
+      <ShuffleLink2 />
+    </Item>
+    <Item type="CVehicleSeatInfo">
+      <Name>SEAT_AVISA_REAR_RIGHT</Name>
+      <SeatBoneName>seat_pside_r</SeatBoneName>
+      <ShuffleLink>SEAT_AVISA_REAR_LEFT</ShuffleLink>
+      <RearSeatLink />
+      <DefaultCarTask>TASK_DRIVE_WANDER</DefaultCarTask>
+      <SeatFlags />
+      <HairScale value="0.000000" />
+      <ShuffleLink2 />
+    </Item>
+  </VehicleSeatInfos>
+  <VehicleSeatAnimInfos>
+    <Item type="CVehicleSeatAnimInfo">
+      <Name>SEAT_ANIM_AVISA_FRONT_LEFT</Name>
+      <DriveByInfo ref="NULL" />
+      <InsideClipSetMap ref="INSIDE_CLIPSET_MAP_AVISA_FRONT_LEFT" />
+      <PanicClipSet />
+      <AgitatedClipSet />
+      <DuckedClipSet />
+      <FemaleClipSet />
+      <LowriderLeanClipSet />
+      <AltLowriderLeanClipSet />
+      <LowLODIdleAnim>STD_CAR_FRONT_DS_IDLE</LowLODIdleAnim>
+      <SeatAmbientContext />
+      <InVehicleMoveNetwork>VEHICLE_DEFAULT</InVehicleMoveNetwork>
+      <SeatAnimFlags>UseStandardInVehicleAnims PreventShuffleJack</SeatAnimFlags>
+      <SteeringSmoothing value="0.040000" />
+      <ExitToAimInfoName />
+      <MaleGestureClipSetId />
+      <FemaleGestureClipSetId />
+      <FPSMinSteeringRateOverride value="-1.000000" />
+      <FPSMaxSteeringRateOverride value="-1.000000" />
+      <SeatCollisionBoundsOffset x="0.000000" y="0.000000" z="0.000000" />
+    </Item>
+    <Item type="CVehicleSeatAnimInfo">
+      <Name>SEAT_ANIM_AVISA_FRONT_RIGHT</Name>
+      <DriveByInfo ref="NULL" />
+      <InsideClipSetMap ref="INSIDE_CLIPSET_MAP_AVISA_FRONT_RIGHT" />
+      <PanicClipSet />
+      <AgitatedClipSet />
+      <DuckedClipSet />
+      <FemaleClipSet />
+      <LowriderLeanClipSet />
+      <AltLowriderLeanClipSet />
+      <LowLODIdleAnim>STD_CAR_FRONT_PS_IDLE</LowLODIdleAnim>
+      <SeatAmbientContext />
+      <InVehicleMoveNetwork>VEHICLE_DEFAULT</InVehicleMoveNetwork>
+      <SeatAnimFlags>UseStandardInVehicleAnims PreventShuffleJack</SeatAnimFlags>
+      <SteeringSmoothing value="0.040000" />
+      <ExitToAimInfoName />
+      <MaleGestureClipSetId />
+      <FemaleGestureClipSetId />
+      <FPSMinSteeringRateOverride value="-1.000000" />
+      <FPSMaxSteeringRateOverride value="-1.000000" />
+      <SeatCollisionBoundsOffset x="0.000000" y="0.000000" z="0.000000" />
+    </Item>
+    <Item type="CVehicleSeatAnimInfo">
+      <Name>SEAT_ANIM_AVISA_REAR_LEFT</Name>
+      <DriveByInfo ref="NULL" />
+      <InsideClipSetMap ref="INSIDE_CLIPSET_MAP_AVISA_REAR_LEFT" />
+      <PanicClipSet />
+      <AgitatedClipSet />
+      <DuckedClipSet />
+      <FemaleClipSet />
+      <LowriderLeanClipSet />
+      <AltLowriderLeanClipSet />
+      <LowLODIdleAnim>STD_CAR_FRONT_DS_IDLE</LowLODIdleAnim>
+      <SeatAmbientContext />
+      <InVehicleMoveNetwork>VEHICLE_DEFAULT</InVehicleMoveNetwork>
+      <SeatAnimFlags>UseStandardInVehicleAnims PreventShuffleJack</SeatAnimFlags>
+      <SteeringSmoothing value="0.040000" />
+      <ExitToAimInfoName />
+      <MaleGestureClipSetId />
+      <FemaleGestureClipSetId />
+      <FPSMinSteeringRateOverride value="-1.000000" />
+      <FPSMaxSteeringRateOverride value="-1.000000" />
+      <SeatCollisionBoundsOffset x="0.000000" y="0.000000" z="0.000000" />
+    </Item>
+    <Item type="CVehicleSeatAnimInfo">
+      <Name>SEAT_ANIM_AVISA_REAR_RIGHT</Name>
+      <DriveByInfo ref="NULL" />
+      <InsideClipSetMap ref="INSIDE_CLIPSET_MAP_AVISA_REAR_RIGHT" />
+      <PanicClipSet />
+      <AgitatedClipSet />
+      <DuckedClipSet />
+      <FemaleClipSet />
+      <LowriderLeanClipSet />
+      <AltLowriderLeanClipSet />
+      <LowLODIdleAnim>STD_CAR_FRONT_PS_IDLE</LowLODIdleAnim>
+      <SeatAmbientContext />
+      <InVehicleMoveNetwork>VEHICLE_DEFAULT</InVehicleMoveNetwork>
+      <SeatAnimFlags>UseStandardInVehicleAnims PreventShuffleJack</SeatAnimFlags>
+      <SteeringSmoothing value="0.040000" />
+      <ExitToAimInfoName />
+      <MaleGestureClipSetId />
+      <FemaleGestureClipSetId />
+      <FPSMinSteeringRateOverride value="-1.000000" />
+      <FPSMaxSteeringRateOverride value="-1.000000" />
+      <SeatCollisionBoundsOffset x="0.000000" y="0.000000" z="0.000000" />
+    </Item>
+  </VehicleSeatAnimInfos>
+  <VehicleEntryPointInfos>
+    <Item type="CVehicleEntryPointInfo">
+      <Name>ENTRY_POINT_BOAT_AVISA_FRONT_LEFT</Name>
+      <DoorBoneName>door_dside_f</DoorBoneName>
+      <SecondDoorBoneName />
+      <DoorHandleBoneName>handle_dside_f</DoorHandleBoneName>
+      <WindowId>INVALID</WindowId>
+      <VehicleSide>SIDE_LEFT</VehicleSide>
+      <AccessableSeats>
+        <Item ref="SEAT_AVISA_FRONT_LEFT" />
+      </AccessableSeats>
+      <VehicleExtraPointsInfo ref="NULL" />
+      <Flags />
+      <BlockJackReactionSides />
+      <BreakoutTestPoint>POINT_TYPE_MAX</BreakoutTestPoint>
+    </Item>
+    <Item type="CVehicleEntryPointInfo">
+      <Name>ENTRY_POINT_BOAT_AVISA_FRONT_RIGHT</Name>
+      <DoorBoneName>door_Pside_f</DoorBoneName>
+      <SecondDoorBoneName />
+      <DoorHandleBoneName>handle_pside_f</DoorHandleBoneName>
+      <WindowId>INVALID</WindowId>
+      <VehicleSide>SIDE_RIGHT</VehicleSide>
+      <AccessableSeats>
+        <Item ref="SEAT_AVISA_FRONT_RIGHT" />
+      </AccessableSeats>
+      <VehicleExtraPointsInfo ref="NULL" />
+      <Flags />
+      <BlockJackReactionSides />
+      <BreakoutTestPoint>POINT_TYPE_MAX</BreakoutTestPoint>
+    </Item>
+    <Item type="CVehicleEntryPointInfo">
+      <Name>ENTRY_POINT_BOAT_AVISA_REAR_LEFT</Name>
+      <DoorBoneName>door_dside_r</DoorBoneName>
+      <SecondDoorBoneName />
+      <DoorHandleBoneName>handle_dside_r</DoorHandleBoneName>
+      <WindowId>INVALID</WindowId>
+      <VehicleSide>SIDE_LEFT</VehicleSide>
+      <AccessableSeats>
+        <Item ref="SEAT_AVISA_REAR_LEFT" />
+      </AccessableSeats>
+      <VehicleExtraPointsInfo ref="NULL" />
+      <Flags />
+      <BlockJackReactionSides />
+      <BreakoutTestPoint>POINT_TYPE_MAX</BreakoutTestPoint>
+    </Item>
+    <Item type="CVehicleEntryPointInfo">
+      <Name>ENTRY_POINT_BOAT_AVISA_REAR_RIGHT</Name>
+      <DoorBoneName>door_pside_r</DoorBoneName>
+      <SecondDoorBoneName />
+      <DoorHandleBoneName>handle_pside_r</DoorHandleBoneName>
+      <WindowId>INVALID</WindowId>
+      <VehicleSide>SIDE_RIGHT</VehicleSide>
+      <AccessableSeats>
+        <Item ref="SEAT_AVISA_REAR_RIGHT" />
+      </AccessableSeats>
+      <VehicleExtraPointsInfo ref="NULL" />
+      <Flags />
+      <BlockJackReactionSides />
+      <BreakoutTestPoint>POINT_TYPE_MAX</BreakoutTestPoint>
+    </Item>
+  </VehicleEntryPointInfos>
+  <VehicleEntryPointAnimInfos>
+    <Item type="CVehicleEntryPointAnimInfo">
+      <Name>ENTRY_POINT_ANIM_BOAT_AVISA_FRONT_LEFT</Name>
+      <CommonClipSetMap ref="COMMON_CLIPSET_MAP_BOAT_SPEED_FRONT_LEFT" />
+      <EntryClipSetMap ref="ENTRY_CLIPSET_MAP_AVISA_FRONT_LEFT" />
+      <ExitClipSetMap ref="EXIT_CLIPSET_MAP_AVISA_FRONT_LEFT" />
+      <AlternateTryLockedDoorClipId />
+      <AlternateForcedEntryClipId />
+      <AlternateJackFromOutSideClipId />
+      <AlternateBeJackedFromOutSideClipId />
+      <AlternateEntryPointClipSetId />
+      <EnterVehicleMoveNetwork>ENTER_VEHICLE_STD</EnterVehicleMoveNetwork>
+      <EntryTranslation x="-1.430000" y="0.031000" z="0.000000" />
+      <OpenDoorTranslation x="0.000000" y="0.000000" />
+      <OpenDoorHeadingChange value="0.000000" />
+      <EntryHeadingChange value="-1.570000" />
+      <ExtraZForMPPlaneWarp value="-2.000000" />
+      <EntryPointFlags>JackIncludesGetIn DontCloseDoorOutside JackVariationsIncludeGetIn</EntryPointFlags>
+      <EntryAnimVariations ref="NULL" />
+      <NMJumpFromVehicleTuningSet />
+    </Item>
+    <Item type="CVehicleEntryPointAnimInfo">
+      <Name>ENTRY_POINT_ANIM_BOAT_AVISA_FRONT_RIGHT</Name>
+      <CommonClipSetMap ref="COMMON_CLIPSET_MAP_BOAT_SPEED_FRONT_RIGHT" />
+      <EntryClipSetMap ref="ENTRY_CLIPSET_MAP_AVISA_FRONT_RIGHT" />
+      <ExitClipSetMap ref="EXIT_CLIPSET_MAP_AVISA_FRONT_RIGHT" />
+      <AlternateTryLockedDoorClipId />
+      <AlternateForcedEntryClipId />
+      <AlternateJackFromOutSideClipId />
+      <AlternateBeJackedFromOutSideClipId />
+      <AlternateEntryPointClipSetId />
+      <EnterVehicleMoveNetwork>ENTER_VEHICLE_STD</EnterVehicleMoveNetwork>
+      <EntryTranslation x="1.430000" y="0.035000" z="0.000000" />
+      <OpenDoorTranslation x="0.000000" y="0.000000" />
+      <OpenDoorHeadingChange value="0.000000" />
+      <EntryHeadingChange value="1.570000" />
+      <ExtraZForMPPlaneWarp value="-2.000000" />
+      <EntryPointFlags>JackIncludesGetIn DontCloseDoorOutside JackVariationsIncludeGetIn</EntryPointFlags>
+      <EntryAnimVariations ref="NULL" />
+      <NMJumpFromVehicleTuningSet />
+    </Item>
+    <Item type="CVehicleEntryPointAnimInfo">
+      <Name>ENTRY_POINT_ANIM_BOAT_AVISA_REAR_LEFT</Name>
+      <CommonClipSetMap ref="COMMON_CLIPSET_MAP_BOAT_SPEED_REAR" />
+      <EntryClipSetMap ref="ENTRY_CLIPSET_MAP_AVISA_REAR_LEFT" />
+      <ExitClipSetMap ref="EXIT_CLIPSET_MAP_AVISA_REAR_LEFT" />
+      <AlternateTryLockedDoorClipId />
+      <AlternateForcedEntryClipId />
+      <AlternateJackFromOutSideClipId />
+      <AlternateBeJackedFromOutSideClipId />
+      <AlternateEntryPointClipSetId />
+      <EnterVehicleMoveNetwork>ENTER_VEHICLE_STD</EnterVehicleMoveNetwork>
+      <EntryTranslation x="-1.430000" y="0.140000" z="0.000000" />
+      <OpenDoorTranslation x="0.000000" y="0.000000" />
+      <OpenDoorHeadingChange value="0.000000" />
+      <EntryHeadingChange value="-1.570000" />
+      <ExtraZForMPPlaneWarp value="-2.000000" />
+      <EntryPointFlags>JackIncludesGetIn DontCloseDoorOutside JackVariationsIncludeGetIn</EntryPointFlags>
+      <EntryAnimVariations ref="NULL" />
+      <NMJumpFromVehicleTuningSet />
+    </Item>
+    <Item type="CVehicleEntryPointAnimInfo">
+      <Name>ENTRY_POINT_ANIM_BOAT_AVISA_REAR_RIGHT</Name>
+      <CommonClipSetMap ref="COMMON_CLIPSET_MAP_BOAT_SPEED_REAR" />
+      <EntryClipSetMap ref="ENTRY_CLIPSET_MAP_AVISA_REAR_RIGHT" />
+      <ExitClipSetMap ref="EXIT_CLIPSET_MAP_AVISA_REAR_RIGHT" />
+      <AlternateTryLockedDoorClipId />
+      <AlternateForcedEntryClipId />
+      <AlternateJackFromOutSideClipId />
+      <AlternateBeJackedFromOutSideClipId />
+      <AlternateEntryPointClipSetId />
+      <EnterVehicleMoveNetwork>ENTER_VEHICLE_STD</EnterVehicleMoveNetwork>
+      <EntryTranslation x="1.430000" y="0.140000" z="0.000000" />
+      <OpenDoorTranslation x="0.000000" y="0.000000" />
+      <OpenDoorHeadingChange value="0.000000" />
+      <EntryHeadingChange value="1.570000" />
+      <ExtraZForMPPlaneWarp value="-2.000000" />
+      <EntryPointFlags>JackIncludesGetIn DontCloseDoorOutside JackVariationsIncludeGetIn</EntryPointFlags>
+      <EntryAnimVariations ref="NULL" />
+      <NMJumpFromVehicleTuningSet />
+    </Item>
+  </VehicleEntryPointAnimInfos>
+  <VehicleExplosionInfos />
+  <VehicleLayoutInfos>
+    <Item type="CVehicleLayoutInfo">
+      <Name>LAYOUT_BOAT_AVISA</Name>
+      <Seats>
+        <Item>
+          <SeatInfo ref="SEAT_AVISA_FRONT_LEFT" />
+          <SeatAnimInfo ref="SEAT_ANIM_AVISA_FRONT_LEFT" />
+        </Item>
+        <Item>
+          <SeatInfo ref="SEAT_AVISA_FRONT_RIGHT" />
+          <SeatAnimInfo ref="SEAT_ANIM_AVISA_FRONT_RIGHT" />
+        </Item>
+        <Item>
+          <SeatInfo ref="SEAT_AVISA_REAR_LEFT" />
+          <SeatAnimInfo ref="SEAT_ANIM_AVISA_REAR_LEFT" />
+        </Item>
+        <Item>
+          <SeatInfo ref="SEAT_AVISA_REAR_RIGHT" />
+          <SeatAnimInfo ref="SEAT_ANIM_AVISA_REAR_RIGHT" />
+        </Item>
+      </Seats>
+      <EntryPoints>
+        <Item>
+          <EntryPointInfo ref="ENTRY_POINT_BOAT_AVISA_FRONT_LEFT" />
+          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_BOAT_AVISA_FRONT_LEFT" />
+        </Item>
+        <Item>
+          <EntryPointInfo ref="ENTRY_POINT_BOAT_AVISA_FRONT_RIGHT" />
+          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_BOAT_AVISA_FRONT_RIGHT" />
+        </Item>
+        <Item>
+          <EntryPointInfo ref="ENTRY_POINT_BOAT_AVISA_REAR_LEFT" />
+          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_BOAT_AVISA_REAR_LEFT" />
+        </Item>
+        <Item>
+          <EntryPointInfo ref="ENTRY_POINT_BOAT_AVISA_REAR_RIGHT" />
+          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_BOAT_AVISA_REAR_RIGHT" />
+        </Item>
+      </EntryPoints>
+      <LayoutFlags>StreamAnims MustCloseDoor</LayoutFlags>
+      <BicycleInfo ref="NULL" />
+      <AnimRateSet ref="BOAT_ANIM_RATE_SET" />
+      <HandsUpClipSetId>busted_vehicle_std</HandsUpClipSetId>
+      <SteeringWheelOffset x="0.000000" y="0.350000" z="0.320000" />
+      <MaxXAcceleration value="25.000000" />
+      <BodyLeanXApproachSpeed value="15.000000" />
+      <BodyLeanXSmallDelta value="0.100000" />
+      <LookBackApproachSpeedScale value="1.000000" />
+      <FirstPersonAdditiveIdleClipSets />
+      <FirstPersonRoadRageClipSets />
+      <CellphoneClipsets>
+        <CellphoneClipsetDS>ANIM_GROUP_CELLPHONE_IN_CAR_DS</CellphoneClipsetDS>
+        <CellphoneClipsetPS>ANIM_GROUP_CELLPHONE_IN_CAR_PS</CellphoneClipsetPS>
+        <CellphoneClipsetDS_FPS>ANIM_GROUP_CELLPHONE_IN_CAR_DS_FPS</CellphoneClipsetDS_FPS>
+        <CellphoneClipsetPS_FPS>ANIM_GROUP_CELLPHONE_IN_CAR_DS_FPS</CellphoneClipsetPS_FPS>
+      </CellphoneClipsets>
+    </Item>
+  </VehicleLayoutInfos>
+  <VehicleScenarioLayoutInfos />
+  <SeatOverrideAnimInfos />
+  <InVehicleOverrideInfos />
+  <FirstPersonDriveByLookAroundData />
+</CVehicleMetadataMgr>
