@@ -121,16 +121,8 @@ if Config.SqlKeybinding then
     -----------------------------------------------------------------------------------------------------
     ------ Functions and stuff --------------------------------------------------------------------------
     -----------------------------------------------------------------------------------------------------
-Citizen.CreateThread(function()
-    while true do
-        Wait(10000)
-        print(keyb1,emob1,keyb2,emob2,keyb3,emob3,keyb4,emob4,keyb5,emob5,keyb6,emob6)
-    end
-end)
-    
 RegisterNetEvent("krz:resetemotes")
 AddEventHandler("krz:resetemotes", function(args)
-    print(args)
     if args == nil then
         keyb1       = "num4"
         emob1       = ""
