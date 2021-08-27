@@ -2210,7 +2210,7 @@ end)
 
 function IsPolice()
 	if PlayerData ~= nil and PlayerData.job ~= nil and PlayerData.job.name == 'police' then
-		return PlayerData.job.grade
+		return PlayerData.job.name
 	end
 
 	return 0
