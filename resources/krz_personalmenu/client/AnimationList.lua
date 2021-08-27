@@ -1401,7 +1401,7 @@ DP.Emotes      = {
         PtfxInfo      = _U('pee'),
         PtfxWait      = 3000,
     } },
-
+    
     -----------------------------------------------------------------------------------------------------------
     ------ These are Scenarios, some of these dont work on women and some other issues, but still good to have.
     -----------------------------------------------------------------------------------------------------------
@@ -1486,10 +1486,10 @@ DP.Emotes      = {
 }
 
 DP.PropEmotes  = {
-    ["umbrella"]        = { "amb@world_human_drinking@coffee@male@base", "base", "Umbrella", AnimationOptions = {
+    ["umbrella"]        = { "rcmnigel1d", "base_club_shoulder", "Umbrella", AnimationOptions = {
         Prop          = "p_amb_brolly_01",
-        PropBone      = 57005,
-        PropPlacement = { 0.15, 0.005, 0.0, 87.0, -20.0, 180.0 },
+        PropBone      = 28422,
+        PropPlacement = {0.0700, 0.0100, 0.1100, 2.3402393, -150.9605721, 57.3374916},
         --
         EmoteLoop     = true,
         EmoteMoving   = true,
@@ -2018,13 +2018,27 @@ DP.PropEmotes  = {
         EmoteLoop     = true,
         EmoteMoving   = true,
     } },
-    ["spraypaint"]    = { "anim@heists@humane_labs@finale@keycards", "ped_a_enter_loop", "Spraypaint", AnimationOptions = {
-        Prop          = "prop_cs_spray_can",
-        PropBone      = 18905,
-        PropPlacement = { 0.08, 0.0, 0.04, -100.0, 0.0, -20.0 },
-        EmoteLoop     = false,
-        EmoteMoving   = true,
-    } },
+    ["spray"] = {"switch@franklin@lamar_tagging_wall", "lamar_tagging_exit_loop_lamar", "Spray ", AnimationOptions =
+    {
+      Prop = 'prop_cs_spray_can',
+      PropBone = 28422,
+      PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+      EmoteLoop = true,
+      EmoteMoving = false,
+      PtfxAsset = "scr_playerlamgraff",
+      PtfxName = "scr_lamgraff_paint_spray",
+      PtfxPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+      PtfxInfo = ('Press G to spray paint'),
+      PtfxWait = 5000,
+    }},
+    ["spray2"] = {"switch@franklin@lamar_tagging_wall", "lamar_tagging_wall_loop_lamar", "Spray 2", AnimationOptions =
+    {
+      Prop = 'prop_cs_spray_can',
+      PropBone = 28422,
+      PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 130.0},
+      EmoteLoop = true,
+      EmoteMoving = true,
+    }},
     ["spraybottle"]    = { "anim@heists@humane_labs@finale@keycards", "ped_a_enter_loop", "Spray Bottle", AnimationOptions = {
         Prop          = "v_ret_ta_spray",
         PropBone      = 18905,
@@ -2052,5 +2066,19 @@ DP.PropEmotes  = {
         PropPlacement = { -0.05, 0.0, -0.2, 5.0, 0.0, 180.0 },
         EmoteLoop     = true,
         EmoteMoving   = false,
+    } },
+    ["bag"]        = { "missheistdocksprep1hold_cellphone", "static", "Bag", AnimationOptions = {
+        Prop          = "v_ind_rc_workbag",
+        PropBone      = 57005,
+        PropPlacement = { 0.39, 0.0, 0.0, 0.0, 266.0, 60.0 },
+        EmoteLoop     = false,
+        EmoteMoving   = true,
+    } },
+    ["rose2"]        = { "missheistdocksprep1hold_cellphone", "static", "Rose 2", AnimationOptions = {
+        Prop          = "prop_single_rose",
+        PropBone      = 12844,
+        PropPlacement = { -0.01, 0.09, -0.1, 0.0, 180.0, 60.0 },
+        EmoteLoop     = false,
+        EmoteMoving   = true,
     } },
 }
