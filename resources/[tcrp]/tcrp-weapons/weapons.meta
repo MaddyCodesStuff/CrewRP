@@ -8884,7 +8884,7 @@
           <MinHeadShotDistancePlayer value="1000.000000" />
           <MaxHeadShotDistancePlayer value="300.000000" />
           <HeadShotDamageModifierPlayer value="1.000000" />
-          <Damage value="100.000000" />
+          <Damage value="200.000000" />
           <DamageTime value="0.000000" />
           <DamageTimeInVehicle value="0.000000" />
           <DamageTimeInVehicleHeadShot value="0.000000" />
@@ -9341,7 +9341,7 @@
           </AttachPoints>
           <GunFeedBone />
           <TargetSequenceGroup />
-          <WeaponFlags>CarriedInHand FirstPersonScope Gun CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover HasLowCoverReloads HasLowCoverSwaps IgnoreHelmets DriveByMPOnly UseFPSAimIK DisableFPSAimForScope UseFPSSecondaryMotion</WeaponFlags>
+          <WeaponFlags>CarriedInHand FirstPersonScope ArmourPenetrating Gun CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover HasLowCoverReloads HasLowCoverSwaps IgnoreHelmets DriveByMPOnly UseFPSAimIK DisableFPSAimForScope UseFPSSecondaryMotion</WeaponFlags>
           <TintSpecValues ref="TINT_DEFAULT" />
           <FiringPatternAliases ref="NULL" />
           <ReloadUpperBodyFixupExpressionData ref="default" />
