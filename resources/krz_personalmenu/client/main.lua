@@ -1080,16 +1080,6 @@ function AddMenuFaceMenu(menu)
     end
 end
 
-function AddMenuFindATM(menu)
-    findATM = NativeUI.CreateItem('Find ATM', 'Finds the nearest ATM and marks it on the map')
-    menu:AddItem(findATM)
-    menu.OnItemSelect = function(sender, item)
-        if item == findATM then
-            TriggerEvent('tcrp-atm-finder:findATM')
-        end
-    end
-end
-
 function AddMenuRadioMenu(menu)
     radioMenu  = _menuPool:AddSubMenu(menu, 'CB Radio')
     radioItems = {}
@@ -2308,9 +2298,6 @@ function GeneratePersonalMenu(playerGroup)
     if Config.ExpressionsEnabled then
         AddMenuFaceMenu(mainMenu)
     end
-
-    AddMenuFindATM(mainMenu)
-
 
     if IsPedSittingInAnyVehicle(plyPed) then
         if (GetPedInVehicleSeat(GetVehiclePedIsIn(plyPed, false), -1) == plyPed) then
