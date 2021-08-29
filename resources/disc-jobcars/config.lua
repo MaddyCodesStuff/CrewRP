@@ -30,7 +30,7 @@ Config.Markers = {
 
 Config.PDCars = {
     all = {
-        { name = 'LSPD Buffalo', model = 'pd-buffalo', price = 0 },
+        { name = 'LSPD Buffalo', model = 'hwy-buffalo', price = 0 },
         { name = 'LSPD Caddy', model = 'pd-caddy', price = 0 },
         { name = 'LSPD Caracara', model = 'emerg-cara', price = 0 },
         { name = 'LSPD Scorcher', model = 'pdscorcher', price = 0 },
