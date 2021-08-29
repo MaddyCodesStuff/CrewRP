@@ -2210,10 +2210,9 @@ end)
 
 function IsPolice()
 	if PlayerData ~= nil and PlayerData.job ~= nil and PlayerData.job.name == 'police' then
-		return PlayerData.job.grade
+		return true
 	end
-
-	return 0
+	return false
 end
 
 -- handcuff timer, unrestrain the player after an certain amount of time
