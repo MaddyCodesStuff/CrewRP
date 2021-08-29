@@ -10,6 +10,7 @@ local randomdelivery    = 1
 local isTaken           = 0
 local isDelivered       = 0
 local car               = 0
+local StopTimer		= 0
 local deliveryblip
 
 Citizen.CreateThread(function()
@@ -59,7 +60,7 @@ function SpawnCar()
 			if isActive == 0 then
 				ESX.TriggerServerCallback('esx_carthief:anycops', function(anycops)
 					if anycops >= Config.CopsRequired then
-
+			
 						--Get a random delivery point
 						randomdelivery = math.random(1, #alldeliveries)
 
@@ -84,7 +85,7 @@ function SpawnCar()
 							Citizen.Wait(1)
 						end
 						car = CreateVehicle(vehiclehash, Config.VehicleSpawnPoint.Pos.x, Config.VehicleSpawnPoint.Pos.y,
-											Config.VehicleSpawnPoint.Pos.z, 0.0, true, false)
+											Config.VehicleSpawnPoint.Pos.z, Config.VehicleSpawnPoint.Pos.h,  0.0, true, false)
 						SetEntityAsMissionEntity(car, true, true)
 
 						--Teleport player in car
@@ -156,6 +157,7 @@ function FinishDelivery()
 
 		--For delivery blip
 		isDelivered = 1
+		StopTimer = 0
 
 		--Remove Last Cop Blips
 		TriggerServerEvent('esx_carthief:stopalertcops')
@@ -181,6 +183,7 @@ function AbortDelivery()
 
 	--For delivery blip
 	isDelivered = 1
+	StopTimer = 0
 
 	--Remove Last Cop Blips
 	TriggerServerEvent('esx_carthief:stopalertcops')
@@ -204,10 +207,13 @@ Citizen.CreateThread(function()
 end)
 
 -- Send location
-Citizen.CreateThread(function()
+Citizen.CreateThread(function() 
+	Citizen.Wait(10000) --delay before tracker kicks in 
 	while true do
 		Citizen.Wait(Config.BlipUpdateTime * 1000)
-		if isTaken == 1 and IsPedInAnyVehicle(GetPlayerPed(-1)) then
+		if isTaken == 1 and IsPedInAnyVehicle(GetPlayerPed(-1)) and StopTimer <= Config.TrackerTimer then
+			StopTimer = StopTimer + 1
+			print(StopTimer)
 			local coords = GetEntityCoords(GetPlayerPed(-1))
 			TriggerServerEvent('esx_carthief:alertcops', coords)
 		end
