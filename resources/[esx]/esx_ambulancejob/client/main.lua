@@ -209,10 +209,9 @@ end
 function SendDistressSignal()
 	local playerPed = PlayerPedId()
 	local coords    = GetEntityCoords(playerPed)
-
+	local interiorhash = (GetInteriorFromEntity(playerPed))
 	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', text = _U('distress_sent'), length = 10000 })
-	local message = 'A citizen is in need of emergency services!'
-	TriggerServerEvent('esx_outlawalert:citizenDistress', coords, streetName)
+	TriggerServerEvent('esx_outlawalert:citizenDistress', coords, streetName, interiorhash)
 end
 
 function DrawGenericTextThisFrame()

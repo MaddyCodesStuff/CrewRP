@@ -837,7 +837,7 @@
       <sirenSettings value="1" />
     </Item>
 	<Item>
-      <modelName>hwy-buffalo</modelName>
+      <modelName>pd-buffalo</modelName>
       <colors>
         <Item>
           <indices content="char_array">
@@ -848,16 +848,7 @@
             0
             0
           </indices>
-	        <liveries>
-            <Item value="true"/>
-						<Item value="true"/>
-						<Item value="true"/>
-						<Item value="true"/>
-						<Item value="true"/>
-						<Item value="true"/>
-						<Item value="true"/>
-						<Item value="true"/>
-          </liveries>
+	      <liveries />
         </Item>
       </colors>
       <kits>
@@ -873,7 +864,7 @@
         </Probabilities>
       </plateProbabilities>
       <lightSettings value="1"/>
-      <sirenSettings value="7003"/>
+      <sirenSettings value="207"/>
     </Item>
 	  <Item>
       <modelName>lsmd-utility</modelName>

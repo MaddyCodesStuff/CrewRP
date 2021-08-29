@@ -1,0 +1,1800 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fwClipSetManager>
+  <clipSets>
+
+  	<!-- Vehicles -->
+
+	<!-- Avisa -->
+	<Item type="fwClipSet" key="clipset@anim@veh@submersible@avisa@ds@base">
+      <fallbackId />
+      <clipDictionaryName>anim@veh@submersible@avisa@ds@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@submersible@avisa@ps@base">
+      <fallbackId />
+      <clipDictionaryName>anim@veh@submersible@avisa@ps@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@submersible@avisa@rds@base">
+      <fallbackId />
+      <clipDictionaryName>anim@veh@submersible@avisa@rds@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@submersible@avisa@rps@base">
+      <fallbackId />
+      <clipDictionaryName>anim@veh@submersible@avisa@rps@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@submersible@avisa@ds@enter_exit">
+      <fallbackId>clipset@veh@std@ds@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@submersible@avisa@ds@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@submersible@avisa@ps@enter_exit">
+      <fallbackId>clipset@veh@std@ps@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@submersible@avisa@ps@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@submersible@avisa@rds@enter_exit">
+      <fallbackId>clipset@veh@std@rds@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@submersible@avisa@rds@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@submersible@avisa@rps@enter_exit">
+      <fallbackId>clipset@veh@std@rds@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@submersible@avisa@rps@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+
+    <!-- Dinghy5 -->
+    <Item type="fwClipSet" key="clipset@anim@veh@boat@dinghy5@front_turret@enter_exit_left">
+      <fallbackId>anim@veh@std@technical@aqua@rds@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@boat@dinghy5@front_turret@enter_exit_left</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@boat@dinghy5@front_turret@enter_exit_right">
+      <fallbackId>anim@veh@std@technical@aqua@rps@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@boat@dinghy5@front_turret@enter_exit_right</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	
+    <!-- Longfin -->
+	<Item type="fwClipSet" key="clipset@anim@veh@boat@longfin@ds@enter_exit">
+      <fallbackId>clipset@veh@boat@speed@ds@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@boat@longfin@ds@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@boat@longfin@ps@enter_exit">
+      <fallbackId>clipset@veh@boat@speed@ps@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@boat@longfin@ps@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@boat@longfin@ds@base">
+      <fallbackId>clipset@veh@boat@speed@ds@base</fallbackId>
+      <clipDictionaryName>anim@veh@boat@longfin@ds@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@boat@longfin@ps@base">
+      <fallbackId>clipset@veh@boat@speed@ps@base</fallbackId>
+      <clipDictionaryName>anim@veh@boat@longfin@ps@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@boat@longfin@rds@enter_exit_fallback">
+      <fallbackId />
+      <clipDictionaryName>anim@veh@boat@longfin@ds@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@boat@longfin@rds@enter_exit">
+      <fallbackId>clipset@anim@veh@boat@longfin@rds@enter_exit_fallback</fallbackId>
+      <clipDictionaryName>veh@boat@marquis@ps@enter_exit</clipDictionaryName>
+      <clipItems>
+        <Item type="fwClipItem" key="get_out" />
+      </clipItems>
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@boat@longfin@rps@enter_exit_fallback">
+      <fallbackId />
+      <clipDictionaryName>anim@veh@boat@longfin@ps@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item> 
+	<Item type="fwClipSet" key="clipset@anim@veh@boat@longfin@rps@enter_exit">
+      <fallbackId>clipset@anim@veh@boat@longfin@rps@enter_exit_fallback</fallbackId>
+      <clipDictionaryName>veh@boat@marquis@ps@enter_exit</clipDictionaryName>
+      <clipItems>
+        <Item type="fwClipItem" key="get_out" /> 
+      </clipItems>
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@boat@longfin@rds@base">
+      <fallbackId>clipset@veh@boat@passenger@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@boat@longfin@rds@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@boat@longfin@rps@base">
+      <fallbackId>clipset@veh@boat@passenger@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@boat@longfin@rps@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@veh@boat@longfin@ps@idle_panic">
+      <fallbackId>clipset@anim@veh@boat@longfin@ps@base</fallbackId>
+      <clipDictionaryName>clipset@veh@boat@speed@ps@idle_panic</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@veh@boat@longfin@rds@idle_panic">
+      <fallbackId>clipset@anim@veh@boat@longfin@rds@base</fallbackId>
+      <clipDictionaryName>clipset@veh@boat@passenger@idle_panic</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	 <Item type="fwClipSet" key="clipset@veh@boat@longfin@rps@idle_panic">
+      <fallbackId>clipset@anim@veh@boat@longfin@rps@base</fallbackId>
+      <clipDictionaryName>clipset@veh@boat@passenger@idle_panic</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	
+    <!-- Patrolboat -->
+    <Item type="fwClipSet" key="clipset@anim@veh@boat@patrolboat@ds@base">
+      <fallbackId>clipset@veh@boat@predator@ds@base</fallbackId>
+      <clipDictionaryName>anim@veh@boat@patrolboat@ds@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@boat@patrolboat@ps@base">
+      <fallbackId>clipset@veh@boat@predator@ps@base</fallbackId>
+      <clipDictionaryName>anim@veh@boat@patrolboat@ps@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@boat@patrolboat@front_turret@base">
+      <fallbackId>clipset@veh@armordillo@turret@base</fallbackId>
+      <clipDictionaryName>anim@veh@boat@patrolboat@front_turret@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@boat@patrolboat@ds@enter_exit">
+      <fallbackId>clipset@veh@boat@predator@ds@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@boat@patrolboat@ds@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@boat@patrolboat@ps@enter_exit">
+      <fallbackId>clipset@veh@boat@predator@ps@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@boat@patrolboat@ps@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@boat@patrolboat@front_turret@enter_exit_left">
+      <fallbackId>clipset@veh@boat@predator@ds@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@boat@patrolboat@front_turret@enter_exit_left</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@boat@patrolboat@front_turret@enter_exit_right">
+      <fallbackId>clipset@veh@boat@predator@ps@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@boat@patrolboat@front_turret@enter_exit_right</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@boat@patrolboat@rear_turret@enter_exit_left">
+      <fallbackId>clipset@veh@boat@predator@ds@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@boat@patrolboat@rear_turret@enter_exit_left</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@boat@patrolboat@rear_turret@enter_exit_right">
+      <fallbackId>clipset@veh@boat@predator@ps@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@boat@patrolboat@rear_turret@enter_exit_right</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@boat@patrolboat@rear_turret@enter_exit_ds">
+      <fallbackId>clipset@anim@veh@boat@patrolboat@rear_turret@enter_exit_left</fallbackId>
+      <clipDictionaryName>anim@veh@boat@patrolboat@rear_turret@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@boat@patrolboat@rear_turret@enter_exit_ps">
+      <fallbackId>clipset@anim@veh@boat@patrolboat@rear_turret@enter_exit_right</fallbackId>
+      <clipDictionaryName>anim@veh@boat@patrolboat@rear_turret@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+
+	<!-- Seasparrow2 -->	
+	<Item type="fwClipSet" key="clipset@anim@veh@helicopter@seasparrow2@ds@enter_exit">
+      <fallbackId>clipset@veh@helicopter@ds@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@helicopter@seasparrow2@ds@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@helicopter@seasparrow2@ps@enter_exit">
+      <fallbackId>clipset@veh@helicopter@ps@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@helicopter@seasparrow2@ps@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+
+    <!-- Squaddie -->
+    <Item type="fwClipSet" key="clipset@anim@veh@truck@squaddie@rds@enter_exit">
+      <fallbackId>clipset@veh@van@rds_rear@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@truck@squaddie@rds@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@truck@squaddie@rps@enter_exit">
+      <fallbackId>clipset@veh@van@rps_rear@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@truck@squaddie@rps@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@truck@squaddie@rps@base">
+      <fallbackId>clipset@veh@van@rps_rear@base</fallbackId>
+      <clipDictionaryName>anim@veh@truck@squaddie@rps@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+
+	<!-- Slamtruck -->
+    <Item type="fwClipSet" key="clipset@anim@veh@truck@slamtruck@ds@enter_exit">
+      <fallbackId>anim@veh@van@btype2@ds@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@truck@slamtruck@ds@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@truck@slamtruck@ps@enter_exit">
+      <fallbackId>anim@veh@van@btype2@ps@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@truck@slamtruck@ps@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+
+	<!-- Winky -->
+    <Item type="fwClipSet" key="clipset@anim@veh@jeep@winky@ds@enter_exit">
+      <fallbackId>clipset@veh@van@ds@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@jeep@winky@ds@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@jeep@winky@ps@enter_exit">
+      <fallbackId>clipset@veh@van@ps@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@jeep@winky@ps@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@jeep@winky@rds@enter_exit">
+      <fallbackId>clipset@veh@van@rds_rear@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@jeep@winky@rds@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@jeep@winky@rps@enter_exit">
+      <fallbackId>clipset@veh@van@rps_rear@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@jeep@winky@rps@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@jeep@winky@rds@base">
+      <fallbackId>clipset@veh@van@rds_rear@base</fallbackId>
+      <clipDictionaryName>anim@veh@jeep@winky@rds@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@drivebyjeep@winky@ds">
+      <fallbackId>clipset@veh@drivebytight_van@ds</fallbackId>
+      <clipDictionaryName>anim@veh@drivebyjeep@winky@ds</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@drivebyjeep@winky@ps">
+      <fallbackId/>
+      <clipDictionaryName>anim@veh@drivebyjeep@winky@ps</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@drivebyjeep@winky@rds">
+      <fallbackId>clipset@veh@drivebytruck_rds</fallbackId>
+      <clipDictionaryName>anim@veh@drivebyjeep@winky@rds</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@veh@jeep@winky@rds_rear@idle_panic">
+      <fallbackId>clipset@anim@veh@jeep@winky@rds@base</fallbackId>
+      <clipDictionaryName>veh@van@rds_rear@idle_panic</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@drivebyjeep@winky@rds_0h">
+      <fallbackId>drive_by@van_ps_unarmed</fallbackId>
+      <clipDictionaryName>anim@veh@drivebyjeep@winky@rds_0h</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@drivebyjeep@winky@rds_throw">
+      <fallbackId>drive_by@jeep_bodhi_ps_grenades</fallbackId>
+      <clipDictionaryName>anim@veh@drivebyjeep@winky@rds_throw</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+
+	<!-- Verus -->
+    <Item type="fwClipSet" key="clipset@anim@veh@bike@quad@verus@front@ds@enter_exit">
+      <fallbackId>clipset@veh@bike@quad@front@ds</fallbackId>
+      <clipDictionaryName>anim@veh@bike@quad@verus@front@ds@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@bike@quad@verus@front@ps@enter_exit">
+      <fallbackId>clipset@veh@bike@quad@front@ps</fallbackId>
+      <clipDictionaryName>anim@veh@bike@quad@verus@front@ps@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@bike@quad@verus@rear@base">
+      <fallbackId>clipset@veh@bike@police@rear@base</fallbackId>
+      <clipDictionaryName>anim@veh@bike@quad@verus@rear@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@bike@quad@verus@rear@enter_exit">
+      <fallbackId/>
+      <clipDictionaryName>anim@veh@bike@quad@verus@rear@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@drivebybike@quad@verus@rear@ds_0h">
+      <fallbackId>clipset@veh@drivebybike@police@rear@unarmed</fallbackId>
+      <clipDictionaryName>anim@veh@drivebybike@quad@verus@rear@ds_0h</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@drivebybike@quad@verus@rear@ds">
+      <fallbackId>clipset@veh@drivebybike@police@rear@1h</fallbackId>
+      <clipDictionaryName>anim@veh@drivebybike@quad@verus@rear@ds</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@drivebybike@quad@verus@rear@ds_throw">
+      <fallbackId>clipset@veh@drivebybike@police@rear@grenade</fallbackId>
+      <clipDictionaryName>anim@veh@drivebybike@quad@verus@rear@ds_throw</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+
+<!-- Vetir -->
+	<Item type="fwClipSet" key="clipset@anim@veh@truck@vetir@ds@enter_exit">
+      <fallbackId>clipset@veh@truck@ds@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@truck@vetir@ds@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@truck@vetir@ps@enter_exit">
+      <fallbackId>clipset@veh@truck@ps@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@truck@vetir@ps@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@drivebytruck@vetir@front@@ds">
+      <fallbackId>drive_by@truck_ds</fallbackId>
+      <clipDictionaryName>anim@veh@drivebytruck@vetir@front@@ds</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@drivebytruck@vetir@front@@ps">
+      <fallbackId>drive_by@truck_ps</fallbackId>
+      <clipDictionaryName>anim@veh@drivebytruck@vetir@front@@ps</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@drivebytruck@vetir@front@@ds_grenade">
+      <fallbackId>drive_by@truck_ds_grenades</fallbackId>
+      <clipDictionaryName>anim@veh@drivebytruck@vetir@front@@ds_grenade</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@drivebytruck@vetir@front@@ps_grenade">
+      <fallbackId>drive_by@truck_ps_grenades</fallbackId>
+      <clipDictionaryName>anim@veh@drivebytruck@vetir@front@@ps_grenade</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+
+	<!-- Alkonost -->
+	<Item type="fwClipSet" key="clipset@anim@veh@plane@alkonost@common@enter_exit">
+      <fallbackId>clipset@veh@common@car@ds</fallbackId>
+      <clipDictionaryName>anim@veh@plane@alkonost@common@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@plane@alkonost@front@ds@enter_exit">
+      <fallbackId>clipset@anim@veh@plane@alkonost@common@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@plane@alkonost@front@ds@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@plane@alkonost@front@ps@enter_exit">
+      <fallbackId>clipset@anim@veh@plane@alkonost@common@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@plane@alkonost@front@ps@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+
+	<!-- GoKart -->
+    <Item type="fwClipSet" key="clipset@anim@veh@gokart@generic@base">
+      <fallbackId />
+      <clipDictionaryName>anim@veh@gokart@generic@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@gokart@generic@idle_duck">
+      <fallbackId>clipset@anim@veh@gokart@generic@base</fallbackId>
+      <clipDictionaryName>anim@veh@gokart@generic@idle_duck</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@gokart@generic@ds@enter_exit">
+      <fallbackId />
+      <clipDictionaryName>anim@veh@gokart@generic@ds@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@gokart@generic@ps@enter_exit">
+      <fallbackId />
+      <clipDictionaryName>anim@veh@gokart@generic@ps@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@drivebygokart@generic@ds">
+      <fallbackId />
+      <clipDictionaryName>anim@veh@drivebygokart@generic@ds</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@drivebygokart@generic@ds_unarmed">
+      <fallbackId />
+      <clipDictionaryName>anim@veh@drivebygokart@generic@ds_unarmed</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@drivebygokart@generic@ds_throw">
+      <fallbackId />
+      <clipDictionaryName>anim@veh@drivebygokart@generic@ds_throw</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@gokart@generic@music@base">
+      <fallbackId />
+      <clipDictionaryName>anim@veh@gokart@generic@music@base</clipDictionaryName>
+      <clipItems>
+        <Item type="fwClipItemWithProps" key="base">
+          <flags>APF_ISLOOPED APF_ISBLENDAUTOREMOVE</flags>
+          <priority>AP_LOW</priority>
+          <boneMask />
+        </Item>
+      </clipItems>
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@gokart@generic@music@idle_a">
+      <fallbackId />
+      <clipDictionaryName>anim@veh@gokart@generic@music@idle_a</clipDictionaryName>
+      <clipItems>
+        <Item type="fwClipItemWithProps" key="idle_a">
+          <flags>APF_ISBLENDAUTOREMOVE</flags>
+          <priority>AP_MEDIUM</priority>
+          <boneMask />
+        </Item>
+        <Item type="fwClipItemWithProps" key="idle_b">
+          <flags>APF_ISBLENDAUTOREMOVE</flags>
+          <priority>AP_MEDIUM</priority>
+          <boneMask />
+        </Item>
+        <Item type="fwClipItemWithProps" key="idle_c">
+          <flags>APF_ISBLENDAUTOREMOVE</flags>
+          <priority>AP_MEDIUM</priority>
+          <boneMask />
+        </Item>
+        <Item type="fwClipItemWithProps" key="idle_d">
+          <flags>APF_ISBLENDAUTOREMOVE</flags>
+          <priority>AP_MEDIUM</priority>
+          <boneMask />
+        </Item>
+        <Item type="fwClipItemWithProps" key="idle_e">
+          <flags>APF_ISBLENDAUTOREMOVE</flags>
+          <priority>AP_MEDIUM</priority>
+          <boneMask />
+        </Item>
+      </clipItems>
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@gokart@generic@idles@base">
+      <fallbackId />
+      <clipDictionaryName>anim@veh@gokart@generic@idles@base</clipDictionaryName>
+      <clipItems>
+        <Item type="fwClipItemWithProps" key="base">
+          <flags>APF_ISLOOPED APF_ISBLENDAUTOREMOVE</flags>
+          <priority>AP_LOW</priority>
+          <boneMask />
+        </Item>
+      </clipItems>
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@gokart@generic@idles@idle_a">
+      <fallbackId />
+      <clipDictionaryName>anim@veh@gokart@generic@idles@idle_a</clipDictionaryName>
+      <clipItems>
+        <Item type="fwClipItemWithProps" key="idle_a">
+          <flags>APF_ISBLENDAUTOREMOVE</flags>
+          <priority>AP_MEDIUM</priority>
+          <boneMask />
+        </Item>
+        <Item type="fwClipItemWithProps" key="idle_b">
+          <flags>APF_ISBLENDAUTOREMOVE</flags>
+          <priority>AP_MEDIUM</priority>
+          <boneMask />
+        </Item>
+        <Item type="fwClipItemWithProps" key="idle_c">
+          <flags>APF_ISBLENDAUTOREMOVE</flags>
+          <priority>AP_MEDIUM</priority>
+          <boneMask />
+        </Item>
+      </clipItems>
+      <moveNetworkFlags />
+    </Item>
+	
+	<!-- Manchez2 -->
+    <Item type="fwClipSet" key="clipset@anim@veh@bike@manchez2@idles@base">
+      <fallbackId>AMB@CODE_HUMAN_ON_BIKE_IDLES_DIRT_DRIVER@BASE</fallbackId>
+      <clipDictionaryName>anim@veh@bike@manchez2@idles@base</clipDictionaryName>
+      <clipItems>
+        <Item type="fwClipItemWithProps" key="base">
+          <flags>APF_ISLOOPED APF_ISBLENDAUTOREMOVE</flags>
+          <priority>AP_LOW</priority>
+          <boneMask />
+        </Item>
+      </clipItems>
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@bike@manchez2@idles@idle_a">
+      <fallbackId>AMB@CODE_HUMAN_ON_BIKE_IDLES_DIRT_DRIVER@IDLE_A</fallbackId>
+      <clipDictionaryName>anim@veh@bike@manchez2@idles@idle_a</clipDictionaryName>
+      <clipItems>
+        <Item type="fwClipItemWithProps" key="idle_a">
+          <flags>APF_ISBLENDAUTOREMOVE</flags>
+          <priority>AP_MEDIUM</priority>
+          <boneMask />
+        </Item>
+        <Item type="fwClipItemWithProps" key="idle_b">
+          <flags>APF_ISBLENDAUTOREMOVE</flags>
+          <priority>AP_MEDIUM</priority>
+          <boneMask />
+        </Item>
+        <Item type="fwClipItemWithProps" key="idle_c">
+          <flags>APF_ISBLENDAUTOREMOVE</flags>
+          <priority>AP_MEDIUM</priority>
+          <boneMask />
+        </Item>
+        <Item type="fwClipItemWithProps" key="idle_d">
+          <flags>APF_ISBLENDAUTOREMOVE</flags>
+          <priority>AP_MEDIUM</priority>
+          <boneMask />
+        </Item>
+      </clipItems>
+      <moveNetworkFlags />
+    </Item>
+
+	<!-- Toreador -->
+	<Item type="fwClipSet" key="clipset@anim@veh@car@toreador@ds@base">
+      <fallbackId>clipset@veh@low@ds@base</fallbackId>
+      <clipDictionaryName>anim@veh@car@toreador@ds@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@car@toreador@ps@base">
+      <fallbackId>clipset@veh@low@ps@base</fallbackId>
+      <clipDictionaryName>anim@veh@car@toreador@ps@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@car@toreador@rds@base">
+      <fallbackId>clipset@veh@low@ps@base</fallbackId>
+      <clipDictionaryName>anim@veh@car@toreador@rds@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@car@toreador@rps@base">
+      <fallbackId>clipset@veh@low@ps@base</fallbackId>
+      <clipDictionaryName>anim@veh@car@toreador@rps@base</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@car@toreador@ds@duck">
+      <fallbackId>clipset@veh@low@ds@idle_duck</fallbackId>
+      <clipDictionaryName>anim@veh@car@toreador@ds@duck</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+
+    <Item type="fwClipSet" key="clipset@anim@veh@car@toreador@ds@enter_exit">
+      <fallbackId>clipset@veh@low@prototipo@front_ds@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@car@toreador@ds@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@car@toreador@ps@enter_exit">
+      <fallbackId>clipset@veh@low@prototipo@front_ps@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@car@toreador@ps@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@car@toreador@rds@enter_exit">
+      <fallbackId>clipset@veh@low@prototipo@front_ds@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@car@toreador@rds@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@veh@car@toreador@rps@enter_exit">
+      <fallbackId>clipset@veh@low@prototipo@front_ps@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@car@toreador@rps@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+
+	<Item type="fwClipSet" key="clipset@veh@low@toreador@ds@idle_panic">
+      <fallbackId>clipset@anim@veh@car@toreador@ds@base</fallbackId>
+      <clipDictionaryName>veh@low@front_ds@idle_panic</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@veh@low@toreador@ps@idle_panic">
+      <fallbackId>clipset@anim@veh@car@toreador@ps@base</fallbackId>
+      <clipDictionaryName>veh@low@front_ps@idle_panic</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@veh@low@toreador@rds@idle_panic">
+      <fallbackId>clipset@anim@veh@car@toreador@rds@base</fallbackId>
+      <clipDictionaryName>veh@low@front_ds@idle_panic</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@veh@low@toreador@rps@idle_panic">
+      <fallbackId>clipset@anim@veh@car@toreador@rps@base</fallbackId>
+      <clipDictionaryName>veh@low@front_ds@idle_panic</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+
+	<!-- Weevil -->
+	<Item type="fwClipSet" key="clipset@anim@veh@car@weevil@ds@enter_exit">
+      <fallbackId>clipset@veh@std@ds@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@car@weevil@ds@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@car@weevil@ps@enter_exit">
+      <fallbackId>clipset@veh@std@ps@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@car@weevil@ps@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@veh@drivebycar@weevil@ps">
+      <fallbackId>drive_by@std_ps</fallbackId>
+      <clipDictionaryName>anim@veh@drivebycar@weevil@ps</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+
+  <!-- Weapons -->
+
+  <!-- Combat Shotgun -->
+    <Item type="fwClipSet" key="clipset@anim@weapons@rifle@lo@combat_shotgun">
+      <fallbackId>clipset@anim@weapons@rifle@lo@combat_shotgun_static</fallbackId>
+      <clipDictionaryName>anim@weapons@rifle@lo@combat_shotgun@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags>
+        <Item>HasFireAnim</Item>
+        <Item>UseAdditives</Item>
+      </moveNetworkFlags>
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@weapons@rifle@lo@combat_shotgun_static">
+      <fallbackId>weapons@rifle@lo@pump</fallbackId>
+      <clipDictionaryName>weapons@rifle@lo@pump_str</clipDictionaryName>
+      <clipItems>
+        <Item type="fwClipItem" key="AIM_HIGH_STATIC" />
+        <Item type="fwClipItem" key="AIM_MED_STATIC" />
+        <Item type="fwClipItem" key="AIM_LOW_STATIC" />
+      </clipItems>
+      <moveNetworkFlags>
+        <Item>HasFireAnim</Item>
+        <Item>UseAdditives</Item>
+      </moveNetworkFlags>
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@cover@weapons@reloads@rifle@lo@combat_shotgun">
+      <fallbackId>Cover_Wpn_ShotgunLo</fallbackId>
+      <clipDictionaryName>anim@cover@weapons@reloads@rifle@lo@combat_shotgun@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@weapons@rifle@lo@combat_shotgun@stealth">
+      <fallbackId>clipset@anim@weapons@rifle@lo@combat_shotgun</fallbackId>
+      <clipDictionaryName>anim@weapons@rifle@lo@combat_shotgun_stealth@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags>
+        <Item>HasFireAnim</Item>
+        <Item>UseAdditives</Item>
+      </moveNetworkFlags>
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@weapons@first_person@aim_rng@generic@rifle@combat_shotgun@str">
+      <fallbackId>weapons@first_person@aim_rng@generic@shotgun@pump_shotgun_str</fallbackId>
+      <clipDictionaryName>anim@weapons@first_person@aim_rng@generic@rifle@combat_shotgun@str</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags>
+        <Item>UseAdditives</Item>
+      </moveNetworkFlags>
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@cover@weapons@reloads@rifle@lo@combat_shotgun@first_person">
+      <fallbackId>clipset@anim@cover@weapons@reloads@rifle@lo@combat_shotgun</fallbackId>
+      <clipDictionaryName>cover@first_person@weapon@2h</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@weapons@first_person@aim_rng@generic@rifle@combat_shotgun@fire">
+      <fallbackId>clipset@anim@weapons@first_person@aim_rng@generic@rifle@combat_shotgun</fallbackId>
+      <clipDictionaryName>anim@weapons@rifle@lo@combat_shotgun@</clipDictionaryName>
+      <clipItems>
+        <Item type="fwClipItem" key="W_FIRE" />
+      </clipItems>
+      <moveNetworkFlags>
+        <Item>HasLeftAimGrip</Item>
+        <Item>HasFireAnim</Item>
+      </moveNetworkFlags>
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@weapons@first_person@aim_rng@generic@rifle@combat_shotgun">
+      <fallbackId>weapons@first_person@aim_rng@generic@shotgun@shared@core</fallbackId>
+      <clipDictionaryName>anim@weapons@first_person@aim_rng@generic@rifle@combat_shotgun@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags>
+        <Item>HasLeftAimGrip</Item>
+        <Item>HasFireAnim</Item>
+        <Item>UseAdditives</Item>
+      </moveNetworkFlags>
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@weapons@first_person@aim_lt@generic@rifle@combat_shotgun@fire">
+      <fallbackId>clipset@anim@weapons@first_person@aim_lt@generic@rifle@combat_shotgun</fallbackId>
+      <clipDictionaryName>anim@weapons@rifle@lo@combat_shotgun@</clipDictionaryName>
+      <clipItems>
+        <Item type="fwClipItem" key="W_FIRE" />
+      </clipItems>
+      <moveNetworkFlags>
+        <Item>HasLeftAimGrip</Item>
+        <Item>HasFireAnim</Item>
+      </moveNetworkFlags>
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@weapons@first_person@aim_lt@generic@rifle@combat_shotgun">
+      <fallbackId>weapons@first_person@aim_lt@generic@shotgun@shared@core</fallbackId>
+      <clipDictionaryName>anim@weapons@first_person@aim_lt@generic@rifle@combat_shotgun</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags>
+        <Item>HasLeftAimGrip</Item>
+        <Item>HasFireAnim</Item>
+        <Item>UseAdditives</Item>
+      </moveNetworkFlags>
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@weapons@first_person@aim_scope@generic@rifle@combat_shotgun@fire">
+      <fallbackId>clipset@anim@weapons@first_person@aim_scope@generic@rifle@combat_shotgun</fallbackId>
+      <clipDictionaryName>anim@weapons@rifle@lo@combat_shotgun@</clipDictionaryName>
+      <clipItems>
+        <Item type="fwClipItem" key="W_FIRE" />
+      </clipItems>
+      <moveNetworkFlags>
+        <Item>HasLeftAimGrip</Item>
+        <Item>HasFireAnim</Item>
+      </moveNetworkFlags>
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@weapons@first_person@aim_scope@generic@rifle@combat_shotgun">
+      <fallbackId>weapons@first_person@aim_scope@generic@shotgun@shared@core</fallbackId>
+      <clipDictionaryName>anim@weapons@first_person@aim_scope@generic@rifle@combat_shotgun</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags>
+        <Item>HasLeftAimGrip</Item>
+        <Item>HasFireAnim</Item>
+        <Item>UseAdditives</Item>
+      </moveNetworkFlags>
+    </Item>
+    
+    <!-- Gadget Pistol -->
+    <Item type="fwClipSet" key="clipset@anim@weapons@pistol@gadget_pistol">
+      <fallbackId>anim@weapons@pistol@singleshot</fallbackId>
+      <clipDictionaryName>anim@weapons@pistol@gadget_pistol@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags>
+        <Item>HasFireAnim</Item>
+        <Item>UseAdditives</Item>
+      </moveNetworkFlags>
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@weapons@pistol@gadget_pistol_stealth">
+      <fallbackId>anim@weapons@pistol@singleshot@stealth</fallbackId>
+      <clipDictionaryName>anim@weapons@pistol@gadget_pistol@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags>
+        <Item>HasFireAnim</Item>
+        <Item>UseAdditives</Item>
+      </moveNetworkFlags>
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@weapons@pistol@gadget_pistol_str">
+      <fallbackId>anim@weapons@pistol@singleshot_str</fallbackId>
+      <clipDictionaryName>anim@weapons@pistol@gadget_pistol@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags>
+        <Item>UseAdditives</Item>
+      </moveNetworkFlags>
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@cover@weapons@reloads@pistol@gadget_pistol@">
+      <fallbackId>anim@cover@weapon@reloads@pistol@singleshot</fallbackId>
+      <clipDictionaryName>anim@cover@weapons@reloads@pistol@gadget_pistol@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@weapons@first_person@aim_lt@generic@pistol@gadget_pistol@w_fire">
+      <fallbackId>weapons@first_person@aim_lt@generic@pistol@pistol_50@</fallbackId>
+      <clipDictionaryName>anim@weapons@pistol@gadget_pistol@</clipDictionaryName>
+      <clipItems>
+        <Item type="fwClipItem" key="W_FIRE" />
+      </clipItems>
+      <moveNetworkFlags>
+        <Item>HasFireAnim</Item>
+      </moveNetworkFlags>
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@weapons@first_person@aim_rng@generic@pistol@gadget_pistol@str">
+      <fallbackId>anim@weapons@first_person@aim_rng@generic@pistol@singleshot@str</fallbackId>
+      <clipDictionaryName>anim@weapons@first_person@aim_rng@generic@pistol@gadget_pistol@str</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags>
+        <Item>UseAdditives</Item>
+      </moveNetworkFlags>
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@cover@weapons@reloads@pistol@gadget_pistol@first_person">
+      <fallbackId>clipset@anim@cover@weapons@reloads@pistol@gadget_pistol@</fallbackId>
+      <clipDictionaryName>cover@first_person@weapon@1h</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@weapons@first_person@aim_rng@generic@pistol@gadget_pistol@w_fire">
+      <fallbackId>weapons@first_person@aim_rng@generic@pistol@pistol_50@</fallbackId>
+      <clipDictionaryName>anim@weapons@pistol@gadget_pistol@</clipDictionaryName>
+      <clipItems>
+        <Item type="fwClipItem" key="W_FIRE" />
+      </clipItems>
+      <moveNetworkFlags>
+        <Item>HasFireAnim</Item>
+      </moveNetworkFlags>
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@weapons@first_person@aim_scope@generic@pistol@gadget_pistol@w_fire">
+      <fallbackId>weapons@first_person@aim_scope@generic@pistol@pistol_50@</fallbackId>
+      <clipDictionaryName>anim@weapons@pistol@gadget_pistol@</clipDictionaryName>
+      <clipItems>
+        <Item type="fwClipItem" key="W_FIRE" />
+      </clipItems>
+      <moveNetworkFlags>
+        <Item>HasFireAnim</Item>
+      </moveNetworkFlags>
+    </Item>
+
+	<!-- Military Rifle - Third Person -->
+    <Item type="fwClipSet" key="clipset@anim@weapons@submg@military_rifle">
+      <fallbackId>weapons@submg@advanced_rifle</fallbackId>
+      <clipDictionaryName>anim@weapons@submg@military_rifle@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags>
+        <Item>HasFireAnim</Item>
+        <Item>UseAdditives</Item>
+        <Item>HasSettle</Item>
+        <Item>HasIntro</Item>
+      </moveNetworkFlags>
+    </Item> 
+    <Item type="fwClipSet" key="clipset@anim@weapons@submg@military_rifle_str">
+      <fallbackId>weapons@submg@advanced_rifle_str</fallbackId>
+      <clipDictionaryName>anim@weapons@submg@military_rifle_str@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags>
+        <Item>UseAdditives</Item>
+      </moveNetworkFlags>
+    </Item>	
+    <Item type="fwClipSet" key="clipset@anim@weapons@submg@military_rifle_stealth">
+      <fallbackId>clipset@anim@weapons@submg@military_rifle_stealth_fallback</fallbackId>
+      <clipDictionaryName>weapons@submg@advanced_rifle_stealth</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags>
+        <Item>HasFireAnim</Item>
+        <Item>HasSettle</Item>
+        <Item>UseAdditives</Item>
+        <Item>HasIntro</Item>
+      </moveNetworkFlags>
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@weapons@submg@military_rifle_stealth_fallback">
+      <fallbackId>weapons@submg@advanced_rifle@stealth_fallback1</fallbackId>
+      <clipDictionaryName>anim@weapons@submg@military_rifle@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+
+	<!-- Military Rifle - First Person -->
+    <Item type="fwClipSet" key="clipset@anim@weapons@first_person@aim_rng@generic@assault_rifle@military_rifle@w_fire">
+      <fallbackId>weapons@first_person@aim_rng@generic@assault_rifle@advanced_rifle@</fallbackId>
+      <clipDictionaryName>anim@weapons@submg@military_rifle@</clipDictionaryName>
+      <clipItems>
+        <Item type="fwClipItem" key="w_fire" />
+      </clipItems>
+      <moveNetworkFlags>
+        <Item>HasFireAnim</Item>
+        <Item>HasIntro</Item>
+        <Item>UseAdditives</Item>
+        <Item>HasIntro</Item>
+        <Item>HasBreatheHighAdditives</Item>
+        <Item>HasSettle</Item>
+        <Item>HasLeftAimGrip</Item>
+      </moveNetworkFlags>
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@weapons@first_person@aim_lt@generic@assault_rifle@military_rifle@w_fire">
+      <fallbackId>weapons@first_person@aim_lt@generic@assault_rifle@advanced_rifle@</fallbackId>
+      <clipDictionaryName>anim@weapons@submg@military_rifle@</clipDictionaryName>
+      <clipItems>
+        <Item type="fwClipItem" key="w_fire" />
+      </clipItems>
+      <moveNetworkFlags>
+        <Item>HasFireAnim</Item>
+        <Item>HasIntro</Item>
+        <Item>UseAdditives</Item>
+        <Item>HasIntro</Item>
+        <Item>HasBreatheHighAdditives</Item>
+        <Item>HasSettle</Item>
+        <Item>HasLeftAimGrip</Item>
+      </moveNetworkFlags>
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@weapons@first_person@aim_scope@generic@assault_rifle@military_rifle@w_fire">
+      <fallbackId>weapons@first_person@aim_scope@generic@assault_rifle@advanced_rifle@</fallbackId>
+      <clipDictionaryName>anim@weapons@submg@military_rifle@</clipDictionaryName>
+      <clipItems>
+        <Item type="fwClipItem" key="w_fire" />
+      </clipItems>
+      <moveNetworkFlags>
+        <Item>HasFireAnim</Item>
+        <Item>HasIntro</Item>
+        <Item>UseAdditives</Item>
+        <Item>HasIntro</Item>
+        <Item>HasBreatheHighAdditives</Item>
+        <Item>HasSettle</Item>
+        <Item>HasLeftAimGrip</Item>
+      </moveNetworkFlags>
+    </Item>
+
+  <!-- NIGHTCLUB DANCING -->
+    <Item type="fwClipSet" key="NIGHTCLUB@DANCE_MINIGAME@DANCE_SOLO@JUMPER">
+      <fallbackId>NIGHTCLUB@DANCE_MINIGAME@DANCE_SOLO@MALE@VAR_A</fallbackId>
+      <clipDictionaryName>ANIM@AMB@NIGHTCLUB@MINI@DANCE@DANCE_SOLO@JUMPER@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="NIGHTCLUB@DANCE_MINIGAME@DANCE_SOLO@SHUFFLE">
+      <fallbackId>NIGHTCLUB@DANCE_MINIGAME@DANCE_SOLO@MALE@VAR_A</fallbackId>
+      <clipDictionaryName>ANIM@AMB@NIGHTCLUB@MINI@DANCE@DANCE_SOLO@SHUFFLE@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="NIGHTCLUB@DANCE_MINIGAME@DANCE_SOLO@TECHNO_KARATE">
+      <fallbackId>NIGHTCLUB@DANCE_MINIGAME@DANCE_SOLO@MALE@VAR_A</fallbackId>
+      <clipDictionaryName>ANIM@AMB@NIGHTCLUB@MINI@DANCE@DANCE_SOLO@TECHNO_KARATE@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="NIGHTCLUB@DANCE_MINIGAME@DANCE_SOLO@TECHNO_MONKEY">
+      <fallbackId>NIGHTCLUB@DANCE_MINIGAME@DANCE_SOLO@MALE@VAR_A</fallbackId>
+      <clipDictionaryName>ANIM@AMB@NIGHTCLUB@MINI@DANCE@DANCE_SOLO@TECHNO_MONKEY@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="NIGHTCLUB@DANCE_MINIGAME@DANCE_SOLO@BEACH_BOXING">
+      <fallbackId>NIGHTCLUB@DANCE_MINIGAME@DANCE_SOLO@MALE@VAR_A</fallbackId>
+      <clipDictionaryName>ANIM@AMB@NIGHTCLUB@MINI@DANCE@DANCE_SOLO@BEACH_BOXING@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="NIGHTCLUB@DANCE_MINIGAME@DANCE_SOLO@SAND_TRIP">
+      <fallbackId>NIGHTCLUB@DANCE_MINIGAME@DANCE_SOLO@MALE@VAR_A</fallbackId>
+      <clipDictionaryName>ANIM@AMB@NIGHTCLUB@MINI@DANCE@DANCE_SOLO@SAND_TRIP@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<!-- NIGHTCLUB DANCE MINI GAME UPPERBODY -->
+	<Item type="fwClipSet" key="NIGHTCLUB@DANCE_MINIGAME@UPPERBODY@CROWD_INVITATION">
+      <fallbackId/>
+      <clipDictionaryName>ANIM@MP_PLAYER_INTUPPERCROWD_INVITATION</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="NIGHTCLUB@DANCE_MINIGAME@UPPERBODY@DRIVER">
+      <fallbackId/>
+      <clipDictionaryName>ANIM@MP_PLAYER_INTUPPERDRIVER</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="NIGHTCLUB@DANCE_MINIGAME@UPPERBODY@RUNNER">
+      <fallbackId/>
+      <clipDictionaryName>ANIM@MP_PLAYER_INTUPPERRUNNER</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="NIGHTCLUB@DANCE_MINIGAME@UPPERBODY@SHOOTING">
+      <fallbackId/>
+      <clipDictionaryName>ANIM@MP_PLAYER_INTUPPERSHOOTING</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="NIGHTCLUB@DANCE_MINIGAME@UPPERBODY@SUCK_IT">
+      <fallbackId/>
+      <clipDictionaryName>ANIM@MP_PLAYER_INTUPPERSUCK_IT</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="NIGHTCLUB@DANCE_MINIGAME@UPPERBODY@TAKE_SELFIE">
+      <fallbackId/>
+      <clipDictionaryName>ANIM@MP_PLAYER_INTUPPERTAKE_SELFIE</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<!-- NIGHTCLUB PAIRED DANCING -->
+	<Item type="fwClipSet" key="NIGHTCLUB@DANCE_MINIGAME@DANCE_PAIRED@DANCE_A">
+      <fallbackId/>
+      <clipDictionaryName>ANIM@AMB@NIGHTCLUB@MINI@DANCE@DANCE_PAIRED@DANCE_A@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="NIGHTCLUB@DANCE_MINIGAME@DANCE_PAIRED@DANCE_B">
+      <fallbackId/>
+      <clipDictionaryName>ANIM@AMB@NIGHTCLUB@MINI@DANCE@DANCE_PAIRED@DANCE_B@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="NIGHTCLUB@DANCE_MINIGAME@DANCE_PAIRED@DANCE_D">
+      <fallbackId/>
+      <clipDictionaryName>ANIM@AMB@NIGHTCLUB@MINI@DANCE@DANCE_PAIRED@DANCE_D@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="NIGHTCLUB@DANCE_MINIGAME@DANCE_PAIRED@DANCE_E">
+      <fallbackId/>
+      <clipDictionaryName>ANIM@AMB@NIGHTCLUB@MINI@DANCE@DANCE_PAIRED@DANCE_E@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="NIGHTCLUB@DANCE_MINIGAME@DANCE_PAIRED@DANCE_F">
+      <fallbackId/>
+      <clipDictionaryName>ANIM@AMB@NIGHTCLUB@MINI@DANCE@DANCE_PAIRED@DANCE_F@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="NIGHTCLUB@DANCE_MINIGAME@DANCE_PAIRED@DANCE_H">
+      <fallbackId/>
+      <clipDictionaryName>ANIM@AMB@NIGHTCLUB@MINI@DANCE@DANCE_PAIRED@DANCE_H@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="NIGHTCLUB@DANCE_MINIGAME@DANCE_PAIRED@DANCE_J">
+      <fallbackId/>
+      <clipDictionaryName>ANIM@AMB@NIGHTCLUB@MINI@DANCE@DANCE_PAIRED@DANCE_J@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="NIGHTCLUB@DANCE_MINIGAME@DANCE_PAIRED@DANCE_K">
+      <fallbackId/>
+      <clipDictionaryName>ANIM@AMB@NIGHTCLUB@MINI@DANCE@DANCE_PAIRED@DANCE_K@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="NIGHTCLUB@DANCE_MINIGAME@DANCE_PAIRED@DANCE_L">
+      <fallbackId/>
+      <clipDictionaryName>ANIM@AMB@NIGHTCLUB@MINI@DANCE@DANCE_PAIRED@DANCE_L@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="NIGHTCLUB@DANCE_MINIGAME@DANCE_PAIRED@DANCE_M">
+      <fallbackId/>
+      <clipDictionaryName>ANIM@AMB@NIGHTCLUB@MINI@DANCE@DANCE_PAIRED@DANCE_M@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+
+    <!-- DANCING LOCO -->
+	<Item type="fwClipSet" key="MOVE_M@DANCING">
+      <fallbackId>move_m@multiplayer</fallbackId>
+      <clipDictionaryName>ANIM@MOVE_M@GROOVING@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags>
+        <Item>BlockGenericFallback</Item>
+      </moveNetworkFlags>
+    </Item>
+	<Item type="fwClipSet" key="MOVE_M@DANCING@SLOW">
+      <fallbackId>move_m@dancing</fallbackId>
+      <clipDictionaryName>ANIM@MOVE_M@DANCING@SLOW@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags>
+        <Item>BlockGenericFallback</Item>
+      </moveNetworkFlags>
+    </Item>
+	<Item type="fwClipSet" key="MOVE_M@DANCING@VERY_SLOW">
+      <fallbackId>MOVE_M@DANCING@SLOW</fallbackId>
+      <clipDictionaryName>ANIM@MOVE_M@DANCING@VERY_SLOW@</clipDictionaryName>
+      <clipItems />
+       <moveNetworkFlags>
+        <Item>BlockGenericFallback</Item>
+      </moveNetworkFlags>
+    </Item>
+	
+	<Item type="fwClipSet" key="MOVE_F@DANCING">
+      <fallbackId>move_f@multiplayer</fallbackId>
+      <clipDictionaryName>ANIM@MOVE_F@GROOVING@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags>
+        <Item>BlockGenericFallback</Item>
+      </moveNetworkFlags>
+    </Item>
+	<Item type="fwClipSet" key="MOVE_F@DANCING@SLOW">
+      <fallbackId>move_f@dancing</fallbackId>
+      <clipDictionaryName>ANIM@MOVE_F@DANCING@SLOW@</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags>
+        <Item>BlockGenericFallback</Item>
+      </moveNetworkFlags>
+    </Item>
+	<Item type="fwClipSet" key="MOVE_F@DANCING@VERY_SLOW">
+      <fallbackId>move_f@dancing@slow</fallbackId>
+      <clipDictionaryName>ANIM@MOVE_F@DANCING@VERY_SLOW@</clipDictionaryName>
+      <clipItems />
+	  <moveNetworkFlags>
+        <Item>BlockGenericFallback</Item>
+      </moveNetworkFlags>
+    </Item>
+  </clipSets>
+
+  <clipDictionaryMetadatas>
+    <Item key="anim@veh@submersible@avisa@ds@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+    <Item key="anim@veh@submersible@avisa@ps@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+    <Item key="anim@veh@submersible@avisa@rds@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+    <Item key="anim@veh@submersible@avisa@rps@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+    <Item key="anim@veh@submersible@avisa@ds@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@submersible@avisa@ps@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@submersible@avisa@rds@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@submersible@avisa@rps@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@boat@dinghy5@front_turret@enter_exit_left">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+    <Item key="anim@veh@boat@dinghy5@front_turret@enter_exit_right">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+	<Item key="anim@veh@boat@longfin@ds@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+	<Item key="anim@veh@boat@longfin@ps@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+	<Item key="anim@veh@boat@longfin@ds@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+	<Item key="anim@veh@boat@longfin@ps@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+	<Item key="anim@veh@boat@longfin@rds@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+	<Item key="anim@veh@boat@longfin@rps@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+	<Item key="anim@veh@boat@longfin@rds@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+	<Item key="anim@veh@boat@longfin@rps@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+	<Item key="anim@veh@boat@patrolboat@ds@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+    <Item key="anim@veh@boat@patrolboat@ps@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+	<Item key="anim@veh@boat@patrolboat@front_turret@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>  
+    <Item key="anim@veh@boat@patrolboat@ds@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+    <Item key="anim@veh@boat@patrolboat@ps@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+    <Item key="anim@veh@boat@patrolboat@front_turret@enter_exit_left">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+    <Item key="anim@veh@boat@patrolboat@front_turret@enter_exit_right">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+    <Item key="anim@veh@boat@patrolboat@rear_turret@enter_exit_left">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+    <Item key="anim@veh@boat@patrolboat@rear_turret@enter_exit_right">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+    <Item key="anim@veh@boat@patrolboat@rear_turret@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+    <Item key="anim@veh@helicopter@seasparrow2@ds@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@helicopter@seasparrow2@ps@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="anim@veh@truck@squaddie@rds@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@truck@squaddie@rps@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="anim@veh@truck@squaddie@rps@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="anim@veh@truck@slamtruck@ds@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="anim@veh@truck@slamtruck@ps@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="anim@veh@jeep@winky@ds@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@jeep@winky@ps@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@jeep@winky@rds@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@jeep@winky@rps@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@jeep@winky@rds@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@drivebyjeep@winky@ds">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@drivebyjeep@winky@ps">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@drivebyjeep@winky@rds">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@drivebyjeep@winky@rds_0h">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@drivebyjeep@winky@rds_throw">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="anim@veh@bike@quad@verus@front@ds@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@bike@quad@verus@front@ps@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@bike@quad@verus@rear@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@bike@quad@verus@rear@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@drivebybike@quad@verus@rear@ds_0h">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@drivebybike@quad@verus@rear@ds">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@drivebybike@quad@verus@rear@ds_throw">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@plane@alkonost@common@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@plane@alkonost@front@ds@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@plane@alkonost@front@ps@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@truck@vetir@ds@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@truck@vetir@ps@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@drivebytruck@vetir@front@@ds">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@drivebytruck@vetir@front@@ps">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@drivebytruck@vetir@front@@ds_grenade">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@drivebytruck@vetir@front@@ps_grenade">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@gokart@generic@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@gokart@generic@idle_duck">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@gokart@generic@ds@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@gokart@generic@ps@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@drivebygokart@generic@ds">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@drivebygokart@generic@ds_unarmed">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@drivebygokart@generic@ds_throw">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@gokart@generic@music@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@gokart@generic@music@idle_a">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@bike@manchez2@idles@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_ScenariosStreamed</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@bike@manchez2@idles@idle_a">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_ScenariosStreamed</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@car@toreador@ds@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+	<Item key="anim@veh@car@toreador@ds@duck">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+    <Item key="anim@veh@car@toreador@ps@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+    <Item key="anim@veh@car@toreador@rds@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+    <Item key="anim@veh@car@toreador@rps@base">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Low</streamingPriority>
+    </Item>
+    <Item key="anim@veh@car@toreador@ds@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@car@toreador@ps@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@car@toreador@rds@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@car@toreador@rps@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@car@weevil@ds@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@car@weevil@ps@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@veh@drivebycar@weevil@ps">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@weapons@pistol@gadget_pistol@">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Weapons</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@cover@weapons@reloads@pistol@gadget_pistol@">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Weapons</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@weapons@first_person@aim_rng@generic@pistol@gadget_pistol@str">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Weapons</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@weapons@rifle@lo@combat_shotgun@">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Weapons</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@cover@weapons@reloads@rifle@lo@combat_shotgun@">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Cover</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@weapons@rifle@lo@combat_shotgun_stealth@">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Cover</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@weapons@first_person@aim_rng@generic@rifle@combat_shotgun@str">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Cover</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@weapons@first_person@aim_rng@generic@rifle@combat_shotgun@">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Cover</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@weapons@first_person@aim_lt@generic@rifle@combat_shotgun">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Cover</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@weapons@first_person@aim_scope@generic@rifle@combat_shotgun">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Cover</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@weapons@submg@military_rifle@">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Weapons</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+    <Item key="anim@weapons@submg@military_rifle_str@">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Weapons</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="NIGHTCLUB@DANCE_MINIGAME@DANCE_PAIRED@DANCE_A">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="NIGHTCLUB@DANCE_MINIGAME@DANCE_PAIRED@DANCE_B">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="NIGHTCLUB@DANCE_MINIGAME@DANCE_PAIRED@DANCE_D">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="NIGHTCLUB@DANCE_MINIGAME@DANCE_PAIRED@DANCE_E">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="NIGHTCLUB@DANCE_MINIGAME@DANCE_PAIRED@DANCE_F">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="NIGHTCLUB@DANCE_MINIGAME@DANCE_PAIRED@DANCE_H">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="NIGHTCLUB@DANCE_MINIGAME@DANCE_PAIRED@DANCE_J">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="NIGHTCLUB@DANCE_MINIGAME@DANCE_PAIRED@DANCE_K">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="NIGHTCLUB@DANCE_MINIGAME@DANCE_PAIRED@DANCE_L">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="NIGHTCLUB@DANCE_MINIGAME@DANCE_PAIRED@DANCE_M">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="NIGHTCLUB@DANCE_MINIGAME@DANCE_SOLO@JUMPER">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="NIGHTCLUB@DANCE_MINIGAME@DANCE_SOLO@SHUFFLE">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="NIGHTCLUB@DANCE_MINIGAME@DANCE_SOLO@TECHNO_KARATE">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="NIGHTCLUB@DANCE_MINIGAME@DANCE_SOLO@TECHNO_MONKEY">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="NIGHTCLUB@DANCE_MINIGAME@DANCE_SOLO@BEACH_BOXING">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="NIGHTCLUB@DANCE_MINIGAME@DANCE_SOLO@SAND_TRIP">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="NIGHTCLUB@DANCE_MINIGAME@UPPERBODY@CROWD_INVITATION">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="NIGHTCLUB@DANCE_MINIGAME@UPPERBODY@DRIVER">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="NIGHTCLUB@DANCE_MINIGAME@UPPERBODY@RUNNER">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="NIGHTCLUB@DANCE_MINIGAME@UPPERBODY@SHOOTING">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="NIGHTCLUB@DANCE_MINIGAME@UPPERBODY@SUCK_IT">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="NIGHTCLUB@DANCE_MINIGAME@UPPERBODY@TAKE_SELFIE">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="MOVE_M@DANCING">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="MOVE_M@DANCING@SLOW">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="MOVE_M@DANCING@VERY_SLOW">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="MOVE_F@DANCING">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="MOVE_F@DANCING@SLOW">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="MOVE_F@DANCING@VERY_SLOW">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_PlayerMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+  </clipDictionaryMetadatas>
+</fwClipSetManager>

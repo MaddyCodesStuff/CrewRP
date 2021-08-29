@@ -135,6 +135,46 @@ AddEventHandler('nfw_wep:bodyarmor_3', function()
     end)
 end)
 
+RegisterNetEvent('nfw_wep:pdbodyarmor')
+AddEventHandler('nfw_wep:pdbodyarmor', function()
+    local inventory = ESX.GetPlayerData().inventory
+    local ped = GetPlayerPed(-1)
+    local armor = GetPedArmour(ped)
+    local item = 'pdbodyarmor'
+
+    if(armor >= 100) or (armor+25 > 100) then
+        exports['mythic_notify']:DoHudText('inform', 'Your armor is already maxed!')
+        TriggerServerEvent('returnItem', item)
+        return
+    end
+
+    TriggerEvent('mythic_progbar:client:progress', {
+        name = 'pdbodyarmor',
+        duration = 15000,
+        label = 'Applying Heavy Body Armor...',
+        useWhileDead = false,
+        canCancel = false,
+        controlDisables = {
+            disableMovement = true,
+            disableCarMovement = true,
+            disableMouse = false,
+            disableCombat = true,
+        },
+        animation = {
+            animDict = "rcmfanatic3",
+            anim = "kneel_idle_a",
+        },
+        prop = {
+            model = "prop_bodyarmour_02",
+        }
+    }, function(status)
+        if not status then
+            AddArmourToPed(ped, 100)
+            exports['mythic_notify']:DoHudText('inform', 'You have put on PD Body Armor.')
+        end
+    end)
+end)
+
 function table.includes(table, element)
     for _, value in pairs(table) do
         if value == element then
