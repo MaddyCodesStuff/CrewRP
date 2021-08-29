@@ -61,6 +61,7 @@ Citizen.CreateThread(function()
         TriggerEvent('chat:addSuggestion', '/emotebind', 'Bind an emote',
                      { { name = "key", help = "num4, num5, num6, num7. num8, num9. Numpad 4-9!" }, { name = "emotename", help = "dance, camera, sit or any valid emote." } })
         TriggerEvent('chat:addSuggestion', '/emotebinds', 'Check your currently bound emotes.')
+        TriggerEvent('chat:addSuggestion', '/clearemote', 'Leave blank to clear all emotes, Or clear speciffic ones with emote1 - emote6. Numpad 4-9')
     end
     TriggerEvent('chat:addSuggestion', '/emotemenu', 'Open emotes menu (K by default).')
     TriggerEvent('chat:addSuggestion', '/emotes', 'List available emotes.')
