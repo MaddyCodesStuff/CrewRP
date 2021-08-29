@@ -1446,8 +1446,6 @@
         </Item>
       </sirens>
     </Item>
-  </Sirens>
-</CVehicleModelInfoVarGlobal>
   <Item>
       <id value="4001"/>
       <name>Unmarked</name>
