@@ -22,29 +22,29 @@ local correct = 0
 local veh = nil
 local bait = "none"
 
-for _, v in ipairs(Config.Sell) do
+for _, v in ipairs(Config.SellLegal) do
 	if v.onMap then
 		local blip = AddBlipForCoord(v.pos)
 		SetBlipSprite (blip, v.blip)
-		SetBlipDisplay(blip, 4)
-		SetBlipScale  (blip, 0.8)
+		SetBlipDisplay(blip, 0)
+		SetBlipScale  (blip, 1.0)
 		SetBlipColour (blip, v.colour)
 		SetBlipAsShortRange(blip, true)
 		BeginTextCommandSetBlipName("STRING")
-		AddTextComponentString(v.sellText)
+		AddTextComponentString(v.sellText1)
 		EndTextCommandSetBlipName(blip)
 	end
 end
 			
 for _, info in pairs(Config.MarkerZones) do
 	info.blip = AddBlipForCoord(info.Marker)
-	SetBlipSprite(info.blip, 455)
-	SetBlipDisplay(info.blip, 4)
+	SetBlipSprite(info.blip, 17)
+	SetBlipDisplay(info.blip, 0)
 	SetBlipScale(info.blip, 0.8)
 	SetBlipColour(info.blip, 74)
 	SetBlipAsShortRange(info.blip, true)
 	BeginTextCommandSetBlipName("STRING")
-	AddTextComponentString("Boat rental")
+	AddTextComponentString("Boat Rental")
 	EndTextCommandSetBlipName(info.blip)
 end
 	
@@ -88,16 +88,45 @@ Citizen.CreateThread(function()
 			end
 		end
 
-		-- Sell markers
-		for k, v in ipairs(Config.Sell) do
+		-- Legal Sell markers
+		for k, v in ipairs(Config.SellLegal) do
 			local dist = #(pedCoords - v.pos)
-			if dist < 50.0 then
+			if dist < 20 then
 				DrawMarker(25, v.pos, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 3.0, 3.0, 1.0, 0, 255, 0, 100, false, true, 2, false, false, false, false)
 				if dist < 3.0 then
 					DisplayHelpText('Press ~INPUT_CONTEXT~ to Sell Fish')
 					if IsControlJustReleased(0, Keys['E']) then
 						TriggerServerEvent('fishing:startSelling', v.type)
 					end
+				end
+			end
+		end
+
+		-- Illegal Sell markers
+		for k, v in ipairs(Config.SellIllegal) do
+			local dist = #(pedCoords - v.pos)
+				if dist < 3.0 then
+					DisplayHelpText('Press ~INPUT_CONTEXT~ to Sell Fish')
+					if IsControlJustReleased(0, Keys['E']) then
+						exports['mythic_progbar']:Progress({
+							name            = "knocking_action",
+							duration        = 20000,
+							label           = "Striking a Deal",
+							useWhileDead    = false,
+							canCancel       = false,
+							controlDisables = {
+								disableMovement    = true,
+								disableCarMovement = true,
+								disableMouse       = false,
+								disableCombat      = true,
+							},
+							animation       = {
+								animDict = 'timetable@jimmy@doorknock@',
+								anim = 'knockdoor_idle',
+							}
+						}, function(status)
+						TriggerServerEvent('fishing:startSelling', v.type)
+					end)
 				end
 			end
 		end

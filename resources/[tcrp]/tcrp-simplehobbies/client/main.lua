@@ -11,20 +11,23 @@ Citizen.CreateThread(function()
 end)
 
 local Keys = {
-	["1"] = 185, ["2"] = 158, ["3"] = 160, ["4"] = 164, ["5"] = 165, ["6"] = 159, ["7"] = 161, ["8"] = 162, ["9"] = 163, ["E"] = 38, ["X"] = 73
+	["1"] = 185, ["2"] = 158, ["3"] = 160, ["4"] = 164, ["5"] = 165, ["6"] = 159, ["7"] = 161, ["8"] = 162, ["9"] = 163, ["E"] = 38, ["X"] = 73, ["F"] = 23
 }
 
 local spawnedNodes = 0
 local tailoringNodes = {}
 local gatheredNodes   = 0
 local isGathering     = false
+local pSpawnedNodes = 0
+local pearlNodes = {}
+local pGatheredNodes   = 0
 
 
 for _, v in ipairs(Config.Processing) do
 	if v.onMap then
 		local blip = AddBlipForCoord(v.pos)
 		SetBlipSprite (blip, v.blip)
-		SetBlipDisplay(blip, 4)
+		SetBlipDisplay(blip, 0)
 		SetBlipScale  (blip, 0.8)
 		SetBlipColour (blip, v.colour)
 		SetBlipAsShortRange(blip, true)
@@ -39,6 +42,25 @@ AddEventHandler('onResourceStop', function(resource)
         for k, v in pairs(tailoringNodes) do
             ESX.Game.DeleteObject(v)
         end
+        for k, v in pairs(pearlNodes) do
+            ESX.Game.DeleteObject(v)
+        end
+    end
+end)
+
+Citizen.CreateThread(function()
+    while true do
+        Citizen.Wait(0)
+
+        for k, v in pairs(pearlNodes) do
+            local coords = GetEntityCoords(v)
+            local player = PlayerPedId()
+            local playerCoords = GetEntityCoords(player)
+            if GetDistanceBetweenCoords(coords, playerCoords) < 20 then
+                DrawMarker(0, coords.x, coords.y, coords.z + 1, 0.0, 0.0, 0.0, 0, 0.0, 0.0, .1, .1, .1, 3, 127, 252, 50,
+                            false, true, 2, false, false, false, false)
+            end
+        end
     end
 end)
 
@@ -52,8 +74,8 @@ Citizen.CreateThread(function()
 			local dist = #(pedCoords - v.pos)
 			if dist < 50.0 then
                 local playerInCar = IsPedSittingInAnyVehicle(ped)
-				DrawMarker(25, v.pos, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 3.0, 3.0, 1.0, 0, 255, 0, 100, false, true, 2, false, false, false, false)
-				if dist < 3.0 then
+				DrawMarker(25, v.pos, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 1.0, 1.0, 1.0, 0, 255, 0, 100, false, true, 2, false, false, false, false)
+				if dist < 2.0 then
 					ESX.ShowHelpNotification('Press ~INPUT_CONTEXT~ to '.. v.type)
 					if IsControlJustReleased(0, Keys['E']) and v.type == 'Gather Oil' and playerInCar == false then
                         exports['mythic_progbar']:Progress({
@@ -180,6 +202,27 @@ Citizen.CreateThread(function()
                         }, function(status)
                             TriggerServerEvent('tailor:sell')
                         end)
+                    elseif IsControlJustReleased(0, Keys['E']) and v.type == 'Sell Pearls' and playerInCar == false then
+                        exports['mythic_progbar']:Progress({
+                            name            = "sell_pearls",
+                            duration        = 30000,
+                            label           = "Selling Pearls",
+                            useWhileDead    = false,
+                            canCancel       = false,
+                            controlDisables = {
+                                disableMovement    = false,
+                                disableCarMovement = true,
+                                disableMouse       = false,
+                                disableCombat      = true,
+                            },
+                            animation       = {
+                                animDict = "misscarsteal4@vendor",
+                                anim     = "idle_b_vendor",
+                                flags    = 49,
+                            },
+                        }, function(status)
+                            TriggerServerEvent('pearl:sell')
+                        end)
 					end
 				end
 			end
@@ -187,6 +230,7 @@ Citizen.CreateThread(function()
     end
 end)
 
+--Wool Gathering
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
@@ -244,6 +288,57 @@ Citizen.CreateThread(function()
     end
 end)
 
+--Pearl Gathering
+Citizen.CreateThread(function()
+    while true do
+        Citizen.Wait(0)
+        local playerPed = PlayerPedId()
+        local coords    = GetEntityCoords(playerPed)
+        local nearbyObject, nearbyID
+
+        for i = 1, #pearlNodes, 1 do
+            if GetDistanceBetweenCoords(coords, GetEntityCoords(pearlNodes[i]), true) < 2 then
+                nearbyObject, nearbyID = pearlNodes[i], i
+            end
+        end
+
+        if nearbyObject then
+
+            if not isGathering then
+                ESX.ShowHelpNotification("Press F to gather Pearl.")
+            end
+
+            if IsControlJustReleased(0, Keys['F']) and not isGathering then
+                isGathering = true                     
+                exports['mythic_progbar']:Progress({
+                                                        name            = "pearl_action",
+                                                        duration        = 10000,
+                                                        label           = "Opening Oyster",
+                                                        useWhileDead    = false,
+                                                        canCancel       = false,
+                                                        controlDisables = {
+                                                            disableMovement    = true,
+                                                            disableCarMovement = true,
+                                                            disableMouse       = false,
+                                                            disableCombat      = true,
+                                                        },
+                                                    }, function(status)
+                    if not status then
+                        pGatheredNodes = pGatheredNodes + 1
+                        ESX.Game.DeleteObject(nearbyObject)
+                        table.remove(pearlNodes, nearbyID)
+                        pSpawnedNodes = pSpawnedNodes - 1
+                        TriggerServerEvent('pearl:gather')                                  
+                    end
+                end)
+                isGathering = false                
+            end
+        else
+            Citizen.Wait(500)
+        end
+    end
+end)
+
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
@@ -252,12 +347,16 @@ Citizen.CreateThread(function()
         if GetDistanceBetweenCoords(coords, Config.Node.coords, true) < 100 then
             spawnNodes()
             Citizen.Wait(500)
+        elseif GetDistanceBetweenCoords(coords, Config.PearlNode.coords, true) < 100 then
+            spawnPearlNodes()
+            Citizen.Wait(500)
         else
             Citizen.Wait(500)
         end
     end
 end)
 
+--Spawn Tailoring Nodes
 function spawnNodes()
     local prop
     while spawnedNodes < Config.MaxNodesSpawned do
@@ -277,6 +376,27 @@ function spawnNodes()
     end
 end
 
+--Spawn Pearl nodes
+function spawnPearlNodes()
+    local prop
+    while pSpawnedNodes < Config.MaxNodesSpawned do
+        Citizen.Wait(0)
+        local nodeCoords = generatePearlNodeCoords()
+
+        prop = Config.PearlNodeModel
+
+        ESX.Game.SpawnLocalObject(prop, nodeCoords, function(obj)
+            PlaceObjectOnGroundProperly(obj)
+            FreezeEntityPosition(obj, true)
+
+            table.insert(pearlNodes, obj)
+
+            pSpawnedNodes = pSpawnedNodes + 1
+        end)
+    end
+end
+
+--Generate Tailoring Node Coords
 function generateNodeCoords()
     while true do
         Citizen.Wait(0)
@@ -303,6 +423,33 @@ function generateNodeCoords()
     end
 end
 
+--Generate Pearl Node Coords
+function generatePearlNodeCoords()
+    while true do
+        Citizen.Wait(0)
+
+        local nodeCoordX, nodeCoordY
+
+        math.randomseed(GetGameTimer())
+        local modX = math.random(-20, 20)
+
+        Citizen.Wait(100)
+
+        math.randomseed(GetGameTimer())
+        local modY   = math.random(-30, 30)
+
+        nodeCoordX   = Config.PearlNode.coords.x + modX
+        nodeCoordY   = Config.PearlNode.coords.y + modY
+
+        local coordZ = getCoordZ(nodeCoordX, nodeCoordY)
+        local pcoord  = vector3(nodeCoordX, nodeCoordY, coordZ)
+
+        if validatePearlCoord(pcoord) then
+            return pcoord
+        end
+    end
+end
+
 function getCoordZ(x, y)
     local groundCheckHeights = { 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0 }
 
@@ -317,6 +464,7 @@ function getCoordZ(x, y)
     return 43.0
 end
 
+--Validate Tailoring Coords
 function validateCoord(nodeCoord)
     if spawnedNodes > 0 then
         local validate = true
@@ -328,6 +476,27 @@ function validateCoord(nodeCoord)
         end
 
         if GetDistanceBetweenCoords(nodeCoord, Config.Node.coords, false) > 50 then
+            validate = false
+        end
+
+        return validate
+    else
+        return true
+    end
+end
+
+--Validate Pearl Coords
+function validatePearlCoord(nodeCoord)
+    if spawnedNodes > 0 then
+        local validate = true
+
+        for k, v in pairs(pearlNodes) do
+            if GetDistanceBetweenCoords(nodeCoord, GetEntityCoords(v), true) < 5 then
+                validate = false
+            end
+        end
+
+        if GetDistanceBetweenCoords(nodeCoord, Config.PearlNode.coords, false) > 50 then
             validate = false
         end
 

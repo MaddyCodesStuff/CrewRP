@@ -1009,9 +1009,10 @@ function AddMenuEmoteMenu(menu)
             a, b, rename = table.unpack(DP.Dances[pushedDances[item['Text']['_Text']]])
             TriggerServerEvent("ServerEmoteRequest", GetPlayerServerId(target), pushedDances[item['Text']['_Text']],
                                'Dances')
-            SimpleNotify(_U('sentrequestto') .. GetPlayerName(target))
+            TriggerServerEvent("ServerEmoteRequest", GetPlayerServerId(target), pushedShared[item['Text']['_Text']])                   
+            TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', text = 'Request sent to ' ..  GetPlayerName(target) , length = 10000 })
         else
-            SimpleNotify(_U('nobodyclose'))
+            TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', text = 'No players are close.', length = 10000 })
         end
     end
 
@@ -1020,9 +1021,9 @@ function AddMenuEmoteMenu(menu)
         if (distance ~= -1 and distance < 3) then
             a, b, rename = table.unpack(DP.Shared[pushedShared[item['Text']['_Text']]])
             TriggerServerEvent("ServerEmoteRequest", GetPlayerServerId(target), pushedShared[item['Text']['_Text']])
-            SimpleNotify(_U('sentrequestto') .. GetPlayerName(target))
+            TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', text = 'Request sent to ' .. GetPlayerName(target) , length = 10000 })
         else
-            SimpleNotify(_U('nobodyclose'))
+            TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', text = 'No players are close.', length = 10000 })
         end
     end
 
@@ -1075,16 +1076,6 @@ function AddMenuFaceMenu(menu)
             ClearFacialIdleAnimOverride(PlayerPedId())
         else
             EmoteMenuStart(item['Text']['_Text'], 'expression')
-        end
-    end
-end
-
-function AddMenuFindATM(menu)
-    findATM = NativeUI.CreateItem('Find ATM', 'Finds the nearest ATM and marks it on the map')
-    menu:AddItem(findATM)
-    menu.OnItemSelect = function(sender, item)
-        if item == findATM then
-            TriggerEvent('tcrp-atm-finder:findATM')
         end
     end
 end
@@ -1147,10 +1138,10 @@ function setUniform(value, plyPed)
 
                 if skin.torso_1 ~= skina.torso_1 then
                     TriggerEvent('skinchanger:loadClothes', skina,
-                                 { ['torso_1'] = skin.torso_1, ['torso_2'] = skin.torso_2, ['tshirt_1'] = skin.tshirt_1, ['tshirt_2'] = skin.tshirt_2, ['arms'] = skin.arms })
+                                 { ['torso_1'] = skin.torso_1, ['torso_2'] = skin.torso_2, ['tshirt_1'] = skin.tshirt_1, ['tshirt_2'] = skin.tshirt_2, ['arms'] = skin.arms, ['decals_1'] = skin.decals_1 })
                 else
                     TriggerEvent('skinchanger:loadClothes', skina,
-                                 { ['torso_1'] = 15, ['torso_2'] = 0, ['tshirt_1'] = 15, ['tshirt_2'] = 0, ['arms'] = 15 })
+                                 { ['torso_1'] = 15, ['torso_2'] = 0, ['tshirt_1'] = 15, ['tshirt_2'] = 0, ['arms'] = 15, ['decals_1'] = 0 })
                 end
             elseif value == 'pants' then
                 if skin.pants_1 ~= skina.pants_1 then
@@ -2307,9 +2298,6 @@ function GeneratePersonalMenu(playerGroup)
     if Config.ExpressionsEnabled then
         AddMenuFaceMenu(mainMenu)
     end
-
-    AddMenuFindATM(mainMenu)
-
 
     if IsPedSittingInAnyVehicle(plyPed) then
         if (GetPedInVehicleSeat(GetVehiclePedIsIn(plyPed, false), -1) == plyPed) then

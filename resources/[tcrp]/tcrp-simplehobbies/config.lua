@@ -4,6 +4,8 @@ Config.fuelPrice = 50
 
 Config.clothesPrice = 50
 
+Config.pearlPrice = 75
+
 Config.Processing = {
     {
         pos = vec3(1649.91, -1858.33, 108.05), 
@@ -61,6 +63,23 @@ Config.Processing = {
         colour = 36,
         onMap = true
     },
+    {
+        pos = vec3(-2488.29, -735.61, -100.00), 
+        type = 'Gather Pearls',
+        Text = "Hobby - Gather Pearls",
+        blip = 267,
+        colour = 46,
+        onMap = true
+    },
+    {
+        pos = vec3(-622.65, -230.05, 37.07), 
+        type = 'Sell Pearls',
+        Text = "Hobby - Sell Pearls",
+        blip = 73,
+        colour = 36,
+        onMap = false
+    },
+    
 }
 
 Config.MaxNodesSpawned  = 25 -- Maximum number of nodes that spawn at a time
@@ -69,4 +88,10 @@ Config.NodeModel        = 'prop_creosote_b_01'
 
 Config.Node             = {
     coords = vector3(2055.79, 4927.90, 40.96)
+}
+
+Config.PearlNodeModel        = 'prop_poolball_cue'
+
+Config.PearlNode             = {
+    coords = vector3(-2488.29, -735.61, -45.40)
 }

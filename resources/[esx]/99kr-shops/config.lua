@@ -3,13 +3,15 @@ Config = {
     -- Theft stuff
     CopsRequired       = 1,
     CopBlipTime        = 120000, -- in sec
-    CopBlipInterval    = 5000, -- in ms
+    CopBlipInterval    = 5, -- in sec
     MaxItemsStolen     = 10,
 
     DefaultSprite      = 52,
-    DefaultSpriteColor = 25,
+    DefaultSpriteColor = 11,
+    DefaultScale       = 1.0,
     DefaultSpriteName  = "Shop",
     DefaultRobDist     = 20.0,
+    DefaultLayer       = 9,
 
     -- Store config
     Locations          = {
@@ -27,6 +29,7 @@ Config = {
                 { ["x"] = 30.95, ["y"] = -1347.12, ["z"] = 29.5, ["value"] = "donuts" },
             }
         , ["blip"]       = {
+                ["scale"] = 0.8,
                 ["x"] = 29.41, ["y"] = -1345.01, ["z"] = 29.5
             },
             ["cashier"]  = {
@@ -48,6 +51,7 @@ Config = {
                 { ["x"] = -52.7, ["y"] = -1753.39, ["z"] = 29.42, ["value"] = "chemicals" },
             },
             ["blip"]     = {
+                ["scale"] = 0.8,
                 ["x"] = -48.34, ["y"] = -1752.72, ["z"] = 29.42
             },
             ["rob_dist"] = 14.0,
@@ -63,6 +67,7 @@ Config = {
                 { ["x"] = -1222.61, ["y"] = -903.37, ["z"] = 12.33, ["value"] = "booze" },
             },
             ["blip"]     = {
+                ["scale"] = 0.8,
                 ["x"] = -1220.78, ["y"] = -909.19, ["z"] = 12.33
             },
             ["cashier"]  = {
@@ -82,6 +87,7 @@ Config = {
                 { ["x"] = -1490.8, ["y"] = -379.48, ["z"] = 40.16, ["value"] = "booze" },
             },
             ["blip"]     = {
+                ["scale"] = 0.8,
                 ["x"] = -1485.59, ["y"] = -376.7, ["z"] = 40.16
             },
             ["cashier"]  = {
@@ -104,6 +110,7 @@ Config = {
                 { ["x"] = -707.79, ["y"] = -915.68, ["z"] = 19.22, ["value"] = "snacks" },
             },
             ["blip"]     = {
+                ["scale"] = 0.8,
                 ["x"] = -711.01, ["y"] = -911.25, ["z"] = 19.22
             },
             ["rob_dist"] = 14.0,
@@ -119,6 +126,7 @@ Config = {
                 { ["x"] = 1138.69, ["y"] = -984.07, ["z"] = 46.42, ["value"] = "booze" },
             },
             ["blip"]     = {
+                ["scale"] = 0.8,
                 ["x"] = 1132.94, ["y"] = -983.19, ["z"] = 46.42
             },
             ["rob_dist"] = 15.0,
@@ -136,10 +144,11 @@ Config = {
                 { ["x"] = 378.88, ["y"] = 325.06, ["z"] = 103.57, ["value"] = "donuts" },
             },
             ["blip"]     = {
+                ["scale"] = 0.8,
                 ["x"] = 378.8, ["y"] = 329.64, ["z"] = 103.57
             },
             ["cashier"]  = {
-                ["x"] = 372.54, ["y"] = 326.38, ["z"] = 102.59, ["h"] = 257.27
+                ["x"] = 372.54, ["y"] = 326.38, ["z"] = 102.59, ["h"] = 257.27,
             },
             ["rob_dist"] = 13.0,
         }, -- Done
@@ -157,6 +166,7 @@ Config = {
                 { ["x"] = 1159.82, ["y"] = -323.55, ["z"] = 69.21, ["value"] = "donuts" },
             },
             ["blip"]     = {
+                ["scale"] = 0.8,
                 ["x"] = 1157.88, ["y"] = -319.42, ["z"] = 69.21
             },
             ["rob_dist"] = 14.0,
@@ -177,10 +187,11 @@ Config = {
 
             },
             ["blip"]     = {
+                ["scale"] = 0.8,
                 ["x"] = 2552.75, ["y"] = 386.28, ["z"] = 108.62
             },
             ["cashier"]  = {
-                ["x"] = 2557.27, ["y"] = 380.81, ["z"] = 107.64, ["h"] = 0.0
+                ["x"] = 2557.27, ["y"] = 380.81, ["z"] = 107.64, ["h"] = 0.0,
             },
             ["rob_dist"] = 13.0,
         }, -- Done
@@ -195,10 +206,11 @@ Config = {
                 { ["x"] = -3041.03, ["y"] = 585.11, ["z"] = 7.91, ["value"] = "diverse" },
             },
             ["blip"]     = {
+                ["scale"] = 0.8,
                 ["x"] = -3042.26, ["y"] = 588.5, ["z"] = 7.91
             },
             ["cashier"]  = {
-                ["x"] = -3038.96, ["y"] = 584.53, ["z"] = 6.93, ["h"] = 0.0
+                ["x"] = -3038.96, ["y"] = 584.53, ["z"] = 6.93, ["h"] = 0.0,
             },
             ["rob_dist"] = 13.0,
         }, -- Done
@@ -216,10 +228,11 @@ Config = {
                 { ["x"] = -3241.91, ["y"] = 1006.63, ["z"] = 12.83, ["value"] = "donuts" },
             },
             ["blip"]     = {
+                ["scale"] = 0.8,
                 ["x"] = -3246.45, ["y"] = 1005.64, ["z"] = 12.83
             },
             ["cashier"]  = {
-                ["x"] = -3242.24, ["y"] = 1000.0, ["z"] = 11.85, ["h"] = 353.5
+                ["x"] = -3242.24, ["y"] = 1000.0, ["z"] = 11.85, ["h"] = 353.5,
             },
             ["rob_dist"] = 13.0,
         }, -- Done
@@ -234,6 +247,7 @@ Config = {
                 { ["x"] = -2970.39, ["y"] = 393.39, ["z"] = 15.04, ["value"] = "booze" },
             },
             ["blip"]     = {
+                ["scale"] = 0.8,
                 ["x"] = -2964.96, ["y"] = 391.33, ["z"] = 15.04
             },
             ["cashier"]  = {
@@ -255,6 +269,7 @@ Config = {
                 { ["x"] = -1823.72, ["y"] = 790.66, ["z"] = 138.18, ["value"] = "donuts" },
             },
             ["blip"]     = {
+                ["scale"] = 0.8,
                 ["x"] = -1827.64, ["y"] = 793.31, ["z"] = 138.22
             },
             ["rob_dist"] = 14.0,
@@ -273,10 +288,11 @@ Config = {
                 { ["x"] = 542.55, ["y"] = 2670.19, ["z"] = 42.16, ["value"] = "donuts" },
             },
             ["blip"]     = {
+                ["scale"] = 0.8,
                 ["x"] = 544.43, ["y"] = 2666.07, ["z"] = 42.16
             },
             ["cashier"]  = {
-                ["x"] = 549.04, ["y"] = 2671.36, ["z"] = 41.18, ["h"] = 98.25
+                ["x"] = 549.04, ["y"] = 2671.36, ["z"] = 41.18, ["h"] = 98.25,
             },
             ["rob_dist"] = 13.0,
         }, -- Done
@@ -291,6 +307,7 @@ Config = {
                 { ["x"] = 1163.81, ["y"] = 2706.46, ["z"] = 38.16, ["value"] = "booze" },
             },
             ["blip"]     = {
+                ["scale"] = 0.8,
                 ["x"] = 1167.02, ["y"] = 2711.82, ["z"] = 38.16
             },
             ["cashier"]  = {
@@ -313,10 +330,11 @@ Config = {
                 { ["x"] = 2681.12, ["y"] = 3285.4, ["z"] = 55.24, ["value"] = "donuts" },
             },
             ["blip"]     = {
+                ["scale"] = 0.8,
                 ["x"] = 2676.55, ["y"] = 3286.27, ["z"] = 55.24
             },
             ["cashier"]  = {
-                ["x"] = 2678.1, ["y"] = 3279.4, ["z"] = 54.26, ["h"] = 331.07
+                ["x"] = 2678.1, ["y"] = 3279.4, ["z"] = 54.26, ["h"] = 331.07,
             },
             ["rob_dist"] = 13.0,
         }, -- Done
@@ -334,9 +352,12 @@ Config = {
                 { ["x"] = 1965.76, ["y"] = 3743.45, ["z"] = 32.34, ["value"] = "donuts" },
             },
             ["blip"]     = {
-                ["x"] = 1962.33, ["y"] = 3746.67, ["z"] = 32.34
+                ["x"] = 1962.33, ["y"] = 3746.67, ["z"] = 32.34,
+                ["scale"] = 0.8,
+                ["layer"] = 8,
             },
             ["cashier"]  = {
+                ["scale"] = 0.8,
                 ["x"] = 1960.13, ["y"] = 3739.94, ["z"] = 31.36, ["h"] = 297.89
             },
             ["rob_dist"] = 13.0,
@@ -352,6 +373,7 @@ Config = {
                 { ["x"] = 1389.56, ["y"] = 3602.59, ["z"] = 35.0, ["value"] = "booze" },
             },
             ["blip"]     = {
+                ["scale"] = 0.8,
                 ["x"] = 1391.23, ["y"] = 3609.29, ["z"] = 34.98
             },
             ["cashier"]  = {
@@ -374,6 +396,7 @@ Config = {
                 { ["x"] = 1700.9, ["y"] = 4926.93, ["z"] = 42.06, ["value"] = "donuts" },
             },
             ["blip"]     = {
+                ["scale"] = 0.8,
                 ["x"] = 1705.22, ["y"] = 4925.39, ["z"] = 42.06
             },
             ["rob_dist"] = 14.0,
@@ -392,6 +415,7 @@ Config = {
                 { ["x"] = 1733.91, ["y"] = 6412.57, ["z"] = 35.04, ["value"] = "donuts" },
             },
             ["blip"]     = {
+                ["scale"] = 0.8,
                 ["x"] = 1734.64, ["y"] = 6417.04, ["z"] = 35.04
             },
             ["cashier"]  = {
@@ -413,12 +437,12 @@ Config = {
                 { ["x"] = 2736.33, ["y"] = 3471.31, ["z"] = 55.67, ["value"] = "chemicals" },
                 { ["x"] = 2735.58, ["y"] = 3464.57, ["z"] = 55.67, ["value"] = "donuts" },
                 { ["x"] = 2748.72, ["y"] = 3480.79, ["z"] = 55.67, ["value"] = "snacks" },
-                { ["x"] = 2734.15, ["y"] = 3491.78, ["z"] = 55.67, ["value"] = "drugs" },
             },
             ["blip"]     = {
                 ["x"]      = 2739.43, ["y"] = 3480.25, ["z"] = 55.67,
                 ["text"]   = "Hardware Store",
-                ["sprite"] = 619,
+                ["scale"] = 0.8,
+                ["sprite"] = 566,
                 ["color"]  = 47,
             },
             ["rob_dist"] = 30.0,
@@ -433,6 +457,7 @@ Config = {
                 { ["x"] = -156.71, ["y"] = 6323.08, ["z"] = 31.6, ["value"] = "booze" },
             },
             ["blip"]     = {
+                ["scale"] = 0.8,
                 ["x"] = -162.50, ["y"] = 6321.38, ["z"] = 31.6
             },
             ["cashier"]  = {
@@ -452,10 +477,10 @@ Config = {
                 { ["x"] = -1195.29, ["y"] = -893.62, ["z"] = 14.0, ["value"] = "checkout" },
             },
             ["blip"]     = {
-                ["sprite"] = 106,
-                ["color"]  = 2,
+                ["sprite"] = 628,
+                ["color"]  = 73,
                 ["x"]      = -1191.43, ["y"] = -890.27, ["z"] = 14.0,
-                ["text"]   = "Burgershot",
+                ["text"]   = "Restaurant",
             },
             ["cashier"]  = {
                 ["x"]    = -1194.01, ["y"] = -895.56, ["z"] = 13.0, ["h"] = 308.71,
@@ -471,10 +496,10 @@ Config = {
                 { ["x"] = -620.85, ["y"] = 230.15, ["z"] = 81.89, ["value"] = "cafebean" },
             },
             ["blip"]     = {
-                ["sprite"] = 89,
-                ["color"]  = 31,
+                ["sprite"] = 628,
+                ["color"]  = 66,
                 ["x"]      = -627.64, ["y"] = 235.25, ["z"] = 81.88,
-                ["text"]   = "Coffee Shop",
+                ["text"]   = "Restaurant",
             },
             ["rob_dist"] = 15.0,
         }, -- Done
@@ -487,6 +512,7 @@ Config = {
             },
             ["blip"]     = {
                 ["sprite"] = 521,
+                ["scale"] = 0.8,
                 ["color"]  = 7,
                 ["x"]      = -633.22, ["y"] = -281.99, ["z"] = 35.58,
                 ["text"]   = "Digital Den",
@@ -504,6 +530,7 @@ Config = {
             ["blip"]     = {
                 ["sprite"] = 521,
                 ["color"]  = 7,
+                ["scale"] = 0.8,
                 ["x"]      = -658.82, ["y"] = -858.82, ["z"] = 24.49,
                 ["text"]   = "Digital Den",
             },
@@ -523,6 +550,7 @@ Config = {
             ["blip"]     = {
                 ["sprite"] = 521,
                 ["color"]  = 7,
+                ["scale"] = 0.8,
                 ["x"]      = 1131.92, ["y"] = -474.17, ["z"] = 66.72,
                 ["text"]   = "Digital Den",
             },
@@ -582,26 +610,26 @@ Config = {
                 { ["x"] = 9.17, ["y"] = -1605.15, ["z"] = 29.38, ["value"] = "checkout" }
             },
             ["blip"]     = {
-                ["sprite"] = 79,
-                ["color"]  = 64,
+                ["sprite"] = 628,
+                ["color"]  = 73,
                 ["x"]      = 11.54, ["y"] = -1606.48, ["z"] = 29.4,
-                ["text"]   = "Tacos",
+                ["text"]   = "Restaurant",
             },
             ["rob_dist"] = 15.0,
         },
-        [32] = { -- Burgershot @ Bowling Alley
+       [32] = { -- Burgershot @ Bowling Alley
             ["shelfs"]   = {
                 { ["x"] = -162.57, ["y"] = -241.77, ["z"] = 44.45, ["value"] = "burgershot" },
                 { ["x"] = -159.57, ["y"] = -241.32, ["z"] = 44.45, ["value"] = "checkout" },
             },
             ["blip"]     = {
-                ["sprite"] = 106,
-                ["color"]  = 2,
+                ["sprite"] = -1,
+                ["color"]  = 17,
                 ["x"]      = -162.57, ["y"] = -241.77, ["z"] = 43.45,
-                ["text"]   = "Burgershot",
+                ["text"]   = "Bowling Alley",
             },
             ["rob_dist"] = 20.0,
-        }, -- Done
+        }, --]]
         [33] = { -- Lodge Store
             ["shelfs"]   = {
                 { ["x"] = -676.79, ["y"] = 5834.67, ["z"] = 17.33, ["value"] = "checkout" },
@@ -612,7 +640,9 @@ Config = {
                 { ["x"] = -678.12, ["y"] = 5838.57, ["z"] = 17.33, ["value"] = "readymeal" },
             },
             ["blip"]     = {
-                ["x"] = -675.64, ["y"] = 5837.62, ["z"] = 17.33
+                ["scale"] = 0.8,
+                ["layer"] = 8,
+                ["x"] = -675.64, ["y"] = 5837.62, ["z"] = 17.33,
             },
             ["rob_dist"] = 15.0,
         }, -- Done
@@ -628,7 +658,9 @@ Config = {
                 { ["x"] = 161.75, ["y"] = 6638.94, ["z"] = 31.71, ["value"] = "fruits" },
             },
             ["blip"]     = {
-                ["x"] = 167.55, ["y"] = 6641.21, ["z"] = 31.71
+                ["scale"] = 0.8,
+                ["layer"] = 8,
+                ["x"] = 167.55, ["y"] = 6641.21, ["z"] = 31.71,
             },
             ["cashier"]  = {
                 ["x"]    = 160.47, ["y"] = 6641.73, ["z"] = 30.71, ["h"] = 224.34,
@@ -645,10 +677,10 @@ Config = {
                 { ["x"] = -2187.30, ["y"] = 4269.16, ["z"] = 49.18, ["value"] = "snacks" },
             },
             ["blip"]     = {
-                ["sprite"] = 80,
-                ["color"]  = 2,
+                ["sprite"] = 628,
+                ["color"]  = 73,
                 ["x"]      = -2185.58, ["y"] = 4286.43, ["z"] = 49.18,
-                ["text"]   = "Hookies",
+                ["text"]   = "Restaurant",
             },
             ["rob_dist"] = 22.0,
         }, -- Done
@@ -660,10 +692,10 @@ Config = {
                 { ["x"] = 1585.53, ["y"] = 6459.05, ["z"] = 26.01, ["value"] = "snacks" },
             },
             ["blip"]     = {
-                ["sprite"] = 267,
-                ["color"]  = 2,
+                ["sprite"] = 628,
+                ["color"]  = 73,
                 ["x"]      = 1590.43, ["y"] = 6458.01, ["z"] = 26.01,
-                ["text"]   = "Pop's Diner",
+                ["text"]   = "Restaurant",
             },
             ["rob_dist"] = 16.0,
         }, -- Done
@@ -674,10 +706,10 @@ Config = {
             },
 
             ["blip"]     = {
-                ["sprite"] = 80,
-                ["color"]  = 61,
+                ["sprite"] = 628,
+                ["color"]  = 73,
                 ["x"]      = 218.02, ["y"] = -871.48, ["z"] = 30.49,
-                ["text"]   = "Hotdogs",
+                ["text"]   = "Restaurant",
             },
             ["rob_dist"] = 13.0,
         }, -- Done
@@ -694,10 +726,10 @@ Config = {
             },
 
             ["blip"]     = {
-                ["sprite"] = 267,
-                ["color"]  = 29,
+                ["sprite"] = 628,
+                ["color"]  = 73,
                 ["x"]      = -1839.93, ["y"] = -1188.04, ["z"] = 13.30,
-                ["text"]   = "Pearls",
+                ["text"]   = "Restaurant",
             },
             ["rob_dist"] = 30.0,
         }, -- Done
@@ -715,7 +747,7 @@ Config = {
                 ["sprite"] = 93,
                 ["color"]  = 47,
                 ["x"]      = -688.19, ["y"] = 5796.17, ["z"] = 17.33,
-                ["text"]   = "Bayview Lodge",
+                ["text"]   = "Bar",
             },
             ["rob_dist"] = 23.0,
         }, -- Done
@@ -726,10 +758,10 @@ Config = {
             },
 
             ["blip"]     = {
-                ["sprite"] = 89,
+                ["sprite"] = -1,
                 ["color"]  = 31,
                 ["x"]      = 238.88, ["y"] = -560.48, ["z"] = 43.28,
-                ["text"]   = "Coffee Cart",
+                ["text"]   = "Coffee",
             },
             ["rob_dist"] = 10.0,
         }, -- Done
@@ -745,10 +777,10 @@ Config = {
             },
 
             ["blip"]     = {
-                ["sprite"] = 89,
-                ["color"]  = 84,
+                ["sprite"] = 628,
+                ["color"]  = 66,
                 ["x"]      = -465.24, ["y"] = -28.57, ["z"] = 45.76,
-                ["text"]   = "Icecream",
+                ["text"]   = "Restaurant",
             },
             ["rob_dist"] = 20.0,
         }, -- Done
@@ -759,8 +791,8 @@ Config = {
             },
 
             ["blip"]     = {
-                ["sprite"] = 89,
-                ["color"]  = 84,
+                ["sprite"] = -1,
+                ["color"]  = 53,
                 ["x"]      = 352.65, ["y"] = -583.48, ["z"] = 28.79,
                 ["text"]   = "Icecream",
             },
@@ -776,7 +808,7 @@ Config = {
             },
 
             ["blip"]     = {
-                ["sprite"] = 0,
+                ["sprite"] = -1,
                 ["color"]  = 0,
                 ["x"]      = 1777.12, ["y"] = 2587.89, ["z"] = 45.71,
                 ["text"]   = "Prison",
@@ -790,8 +822,8 @@ Config = {
             },
 
             ["blip"]     = {
-                ["sprite"] = 89,
-                ["color"]  = 84,
+                ["sprite"] = -1,
+                ["color"]  = 53,
                 ["x"]      = -265.04, ["y"] = 6320.53, ["z"] = 32.42,
                 ["text"]   = "Icecream",
             },
@@ -817,10 +849,11 @@ Config = {
                 { ["x"] = -1183.39, ["y"] = -1195.02, ["z"] = 7.79, ["value"] = "flowers" },
             },
             ["blip"]     = {
-                ["sprite"] = 88,
+                ["sprite"] = 431,
                 ["color"]  = 7,
+                ["scale"]  = 1.2,
                 ["x"]      = -1183.39, ["y"] = -1195.02, ["z"] = 6.29,
-                ["text"]   = "Cindy's Flowers",
+                ["text"]   = "Flower Shop",
             },
             ["rob_dist"] = 13.0,
         }, --Done
@@ -831,8 +864,9 @@ Config = {
                 --{ ["x"] = 158.23, ["y"] = 6655.77, ["z"] = 31.67, ["value"] = "lockpicks" },
             },
             ["blip"]     = {
-                ["sprite"] = 619,
+                ["sprite"] = 566,
                 ["color"]  = 47,
+                ["scale"] = 0.8,
                 ["x"]      = 157.41, ["y"] = 6650.10, ["z"] = 31.67,
                 ["text"]   = "Hardware Store",
             },
@@ -850,7 +884,7 @@ Config = {
                 ["sprite"] = 93,
                 ["color"]  = 47,
                 ["x"]      = 838.11, ["y"] = -112.96, ["z"] = 79.77,
-                ["text"]   = "O'Connors",
+                ["text"]   = "Bar",
             },
             ["rob_dist"] = 30.0,
         },
@@ -870,7 +904,7 @@ Config = {
         },
         [50] = { --Grapeseed Juice Stand
             ["shelfs"]   = {
-                { ["x"] = 2742.21, ["y"] = 4413.25, ["z"] = 48.62, ["value"] = "juicestand" },
+                { ["x"] = 2742.21, ["y"] = 4413.25, ["z"] = 48.62, ["value"] = "juice" },
                 { ["x"] = 2740.95, ["y"] = 4412.92, ["z"] = 48.62, ["value"] = "checkout" },
             },
             ["blip"]     = {
@@ -883,7 +917,7 @@ Config = {
         },
         [51] = { --Great Chaparral Juice Stand
             ["shelfs"]   = {
-                { ["x"] = -440.69, ["y"] = 1595.90, ["z"] = 358.47, ["value"] = "juicestand" },
+                { ["x"] = -440.69, ["y"] = 1595.90, ["z"] = 358.47, ["value"] = "juice" },
                 { ["x"] = -441.63, ["y"] = 1594.86, ["z"] = 358.47, ["value"] = "checkout" },
             },
             ["blip"]     = {
@@ -894,6 +928,40 @@ Config = {
             },
             ["rob_dist"] = 10.0,
         },
+        [52] = { --Rex's Diner
+            ["shelfs"]   = {
+                { ["x"] = 2547.30, ["y"] = 2594.40, ["z"] = 38.11, ["value"] = "checkout" },
+                { ["x"] = 2552.10, ["y"] = 2596.60, ["z"] = 38.11, ["value"] = "drinks2" },
+                { ["x"] = 2548.91, ["y"] = 2595.56, ["z"] = 38.11, ["value"] = "pubfood" },
+                { ["x"] = 2551.15, ["y"] = 2593.28, ["z"] = 38.11, ["value"] = "booze" },
+                { ["x"] = 2550.60, ["y"] = 2596.11, ["z"] = 38.11, ["value"] = "booze" },
+                { ["x"] = 2551.05, ["y"] = 2586.05, ["z"] = 38.11, ["value"] = "tacos" },
+                { ["x"] = 2551.96, ["y"] = 2586.39, ["z"] = 38.11, ["value"] = "burgers" },
+                { ["x"] = 2553.50, ["y"] = 2586.95, ["z"] = 38.11, ["value"] = "hotdogs" },
+                { ["x"] = 2555.00, ["y"] = 2589.04, ["z"] = 38.11, ["value"] = "meals" },
+                { ["x"] = 2553.36, ["y"] = 2589.61, ["z"] = 38.11, ["value"] = "pizza" },
+            },
+            ["blip"]     = {
+                ["sprite"] = 628,
+                ["color"]  = 73,
+                ["x"]      = 2550.51, ["y"] = 2596.12, ["z"] = 38.11,
+                ["text"]   = "Rex's Diner",
+            },
+            ["rob_dist"] = 17.5,
+        },
+        [53] = { --Limey's Juice & Smoothies
+            ["shelfs"]   = {
+                { ["x"] = -1248.69, ["y"] = -273.12, ["z"] = 37.48, ["value"] = "checkout" },
+                { ["x"] = -1247.56, ["y"] = -274.67, ["z"] = 37.48, ["value"] = "limeysdrinks" },
+            },
+            ["blip"]     = {
+                ["sprite"] = 628,
+                ["color"]  = 73,
+                ["x"]      = -1242.74, ["y"] = -278.82, ["z"] = 37.58,
+                ["text"]   = "Limey's",
+            },
+                ["rob_dist"] = 16.5,
+            },
     },
 
     --[[
@@ -910,6 +978,7 @@ Config = {
         ["checkout"]    = "Cash Register",
         ["booze"]       = "Booze",
         ["drinks"]      = "Drinks",
+        ["drinks2"]     = "Drinks",
         ["snacks"]      = "Snacks",
         ["readymeal"]   = "Ready meal",
         ["diverse"]     = "Diverse Stuff",
@@ -921,16 +990,22 @@ Config = {
         ["icecream"]    = "Ice Cream",
         ["burgershot"]  = "Order Meals",
         ["burgershot2"] = "Order Food",
+        ["meals"]       = "Cook Meals",
+        ["burgers"]     = "Cook Burgers",
         ["cafebean"]    = "Coffee",
         ["tacos"]       = "Cook Tacos",
+        ["pizza"]       = "Cook Pizza",
         ["hotdogs"]     = "Hotdogs",
         ["pharmacy"]    = "Pharmacy",
         ["prison"]      = "Prison Cafeteria",
         ["drugs"]       = "Drugs",
         ["flowers"]     = "Flower Shop",
         ["pubfood"]     = "Pub Food",
-        ["juicestand"]  = "Order Juice",
-        ["lockpicks"]  = "Lockpicks",
+        ["slushies"]    = "Slushies",
+        ["juice"]       = "Juice",
+        ["limeys"]      = "Order Food",
+        ["lockpicks"]   = "Lockpicks",
+        ["limeysdrinks"] = "Quinn's Drinks",
     },
 
     Items              = {
@@ -955,6 +1030,14 @@ Config = {
             { label = "Sludgie Blue Slushy", item = "slushy", price = 3 },
             { label = "Sludgie Green Slushy", item = "slushy2", price = 3 },
             { label = "Milk", item = "milk", price = 3 },
+        },
+        ["drinks2"]      = {
+            { label = "E-Cola", item = "cocacola", price = 5 },
+            { label = "Orange-O-Tang Soda", item = "fanta", price = 5 },
+            { label = "Sprunk", item = "sprite", price = 5 },
+            { label = "Sprunk Light", item = "sprite2", price = 5 },
+            { label = "Water", item = "water", price = 5 },
+            { label = "Drink", item = "drink", price = 3 },
         },
         ["icecream"]    = {
             { label = "Vanilla Ice Cream Cone", item = "icecream", price = 2 },
@@ -1019,6 +1102,7 @@ Config = {
             { label = "Toothpaste", item = "toothpaste", price = 3 },
             { label = "Notepad", item = "notepad", price = 100 },
             { label = "Empty Bottle", item = "empty_bottle", price = 10 },
+            { label = "Pet Food", item = "croquettes", price = 150 },
         },
         ["chemicals"]   = {
             { label = "Bleach", item = "bleach", price = 5 },
@@ -1062,6 +1146,30 @@ Config = {
             { label = "Water", item = "water", price = 5 },
             { label = "Drink", item = "drink", price = 3 },
         },
+        ["burgers"] = {
+            { label = "The Bleeder Burger", item = "bleederburger", price = 6 },
+            { label = "Money Shot Burger", item = "moneyshotburger", price = 6 },
+            { label = "Torpedo Sandwich", item = "torpedoburger", price = 6 },
+            { label = "Meat Free Burger", item = "meatfreeburger", price = 7 },
+            { label = "Crappy Burger", item = "crappyburger", price = 8 },
+            { label = "The Heartstopper Burger", item = "heartstopperburger", price = 10 },
+            { label = "Sandwich", item = "bread", price = 5 },
+            { label = "Bacon Roll", item = "burger", price = 7 },
+        },
+        ["meals"] = {
+            { label = "The Bleeder Burger Meal", item = "bleedermeal", price = 10 },
+            { label = "Money Shot Burger Meal", item = "moneyshotmeal", price = 10 },
+            { label = "Torpedo Meal", item = "torpedomeal", price = 10 },
+            { label = "Meat Free Meal", item = "meatfreemeal", price = 11 },
+            { label = "Crappy Meal", item = "crappymeal", price = 12 },
+            { label = "Heartstopper Meal", item = "heartstoppermeal", price = 15 },
+            { label = "Hotdog And Fries", item = "hotdogmeal2", price = 8 },
+            { label = "Hotdog with the Works Meal", item = "hotdogmeal1", price = 10 },
+            { label = "Veggie Dog Meal", item = "veggiedogmeal", price = 10 },
+        },
+        ["pizza"] = {
+            { label = "Pizza", item = "pizza", price = 15 },
+        },
         ["cafebean"]    = {
             { label = "Regular Coffee", item = "coffee", price = 1 },
             { label = "Decaf Coffee", item = "decafcoffee", price = 1 },
@@ -1093,10 +1201,17 @@ Config = {
             { label = "VeggieDog", item = "hotdog4", price = 5 },
             { label = "Cheese Dog", item = "hotdog2", price = 6 },
             { label = "Hotdog with Onion", item = "hotdog5", price = 6 },
-            { label = "Chilli Dog", item = "hotdog3", price = 7 },
+            { label = "Chili Dog", item = "hotdog3", price = 7 },
             { label = "Hotdog And Fries", item = "hotdogmeal2", price = 8 },
             { label = "Hotdog with the Works Meal", item = "hotdogmeal1", price = 10 },
             { label = "Veggie Dog Meal", item = "veggiedogmeal", price = 10 },
+        },
+        ["hotdogs2"]     = {
+            { label = "Plain Hotdog", item = "hotdog1", price = 5 },
+            { label = "VeggieDog", item = "hotdog4", price = 5 },
+            { label = "Cheese Dog", item = "hotdog2", price = 6 },
+            { label = "Hotdog with Onion", item = "hotdog5", price = 6 },
+            { label = "Chili Dog", item = "hotdog3", price = 7 },
         },
         ["drugs"]       = {
             { label = "Baking Sheet", item = "baking_sheet", price = 20 },
@@ -1116,9 +1231,23 @@ Config = {
             { label = "Meat Free Burger", item = "meatfreeburger", price = 7 },
             { label = "Pizza", item = "pizza", price = 15 },
         },
-        ["juicestand"]       = {
+        ["juice"]       = {
             { label = "Grape Juice", item = "jus_raisin", price = 5 },
             { label = "Juice", item = "juice", price = 7 },
+        },
+        ["slushies"]       = {
+            { label = "Sludgie Blue Slushy", item = "slushy", price = 3 },
+            { label = "Sludgie Green Slushy", item = "slushy2", price = 3 },
+        },
+        ["limeysdrinks"]       = {
+            { label = "Grape Juice", item = "jus_raisin", price = 5 },
+            { label = "Juice", item = "juice", price = 7 },
+            { label = "Sludgie Blue Slushy", item = "slushy", price = 3 },
+            { label = "Sludgie Green Slushy", item = "slushy2", price = 3 },
+            { label = "Regular Coffee", item = "coffee", price = 1 },
+            { label = "Decaf Coffee", item = "decafcoffee", price = 1 },
+            { label = "Sweet Tea", item = "sweet_tea", price = 5 },
+            { label = "Iced Tea", item = "iced_tea", price = 5 },
         },
         ["lockpicks"]       = {
             { label = "Lockpick", item = "lockpick", price = 500 },

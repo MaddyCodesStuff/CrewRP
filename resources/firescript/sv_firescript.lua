@@ -16,6 +16,21 @@ AddEventHandler("FireScript:FirePutOut", function(x, y, z)
     end
 end)
 
+RegisterCommand('stopfirepos', function(source, args, rawCommand)
+    if checkPerms(source) then
+        --Args are:X, Y, Z)
+        TriggerClientEvent('FireScript:StopFireAtPosition', -1, tonumber(args[1]), tonumber(args[2]), tonumber(args[3]))
+    end
+end, false)
+
+
+RegisterCommand('startfirepos', function(source, args, rawCommand)
+    if checkPerms(source) then
+        --Args are:X, Y, Z, Flames, Range, Explosion)
+        TriggerClientEvent('FireScript:StartFireAtPosition', -1, tonumber(args[1]), tonumber(args[2]), tonumber(args[3]), tonumber(args[4]), tonumber(args[5]), args[6] == "true")
+    end
+end, false)
+
 RegisterCommand('startfire', function(source, args, rawCommand)
     if checkPerms(source) then
         TriggerClientEvent('FireScript:StartFireAtPlayer', -1, source, tonumber(args[1]), tonumber(args[2]),

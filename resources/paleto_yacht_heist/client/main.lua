@@ -387,7 +387,7 @@ Citizen.CreateThread(function()
             beingTracked = 0
         end
 --]]
-        Citizen.Wait(Config.CopBlipInterval)
+        Citizen.Wait(Config.CopBlipInterval * 1000)
     end
 end)
 

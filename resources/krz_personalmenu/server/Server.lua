@@ -1,10 +1,24 @@
+ESX = nil
+TriggerEvent('esx:getSharedObject', function(obj)
+    ESX = obj
+end)
 -----------------------------------------------------------------------------------------------------
 -- Shared Emotes Syncing  ---------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------
 
 RegisterServerEvent("ServerEmoteRequest")
-AddEventHandler("ServerEmoteRequest", function(target, emotename, etype)
-    TriggerClientEvent("ClientEmoteRequestReceive", target, emotename, etype)
+AddEventHandler("ServerEmoteRequest", function(target, emotename, etype, sender)
+    local source = source
+    local xplayer = ESX.GetPlayerFromId(source)
+    local playername = xplayer
+    if xplayer then
+        local result = MySQL.Sync.fetchAll("SELECT * FROM users WHERE identifier = @identifier",{
+        ['@identifier'] = xplayer.identifier
+      })
+        local firstname = result[1].firstname
+        local lastname = result[1].lastname
+        TriggerClientEvent("ClientEmoteRequestReceive", target, emotename, etype, firstname, lastname)
+      end
 end)
 
 RegisterServerEvent("ServerValidEmote")
@@ -24,17 +38,41 @@ if Config.SqlKeybinding then
         AddEventHandler('dp:ServerKeybindExist', function()
             local src   = source
             local srcid = GetPlayerIdentifier(source)
-            --MySQL.Async.fetchAll('SELECT * FROM dpkeybinds WHERE `id`=@id;', {id = srcid}, function(dpkeybinds)
-            --	if dpkeybinds[1] then
-            --		TriggerClientEvent("dp:ClientKeybindExist", src, true)
-            --	else
-            --		TriggerClientEvent("dp:ClientKeybindExist", src, false)
-            --	end
-            --end)
+            MySQL.Async.fetchAll('SELECT * FROM dpkeybinds WHERE `id`=@id;', {id = srcid}, function(dpkeybinds)
+            	if dpkeybinds[1] then
+            		TriggerClientEvent("dp:ClientKeybindExist", src, true)
+            	else
+            		TriggerClientEvent("dp:ClientKeybindExist", src, false)
+            	end
+            end)
         end)
 
         --  This is my first time doing SQL stuff, and after i finished everything i realized i didnt have to store the keybinds in the database at all.
         --  But remaking it now is a little pointless since it does it job just fine!
+
+        RegisterCommand('clearemote', function(source, args, message)
+            local identifier = GetPlayerIdentifiers(source)[1]
+        
+            if (args[1] ~= nil) then
+                if (args[1] == 'emote1') or (args[1] == 'emote2') or (args[1] == 'emote3') or (args[1] == 'emote4') or (args[1] == 'emote5') or (args[1] == 'emote6') then
+                    local emote = args[1]
+        
+                    MySQL.Async.execute('UPDATE dpkeybinds SET ' .. emote .. ' = @emote WHERE id = @identifier', {
+                        ['@emote']      = '',
+                        ['@identifier'] = identifier
+                    })
+                    TriggerClientEvent("krz:resetemotes", source, args[1])
+                else
+                    print('Invalid emote slot (' .. args[1] .. ') to delete.') -- Change to whatever notifications you use.
+                end
+            else
+                MySQL.Async.execute('DELETE FROM dpkeybinds WHERE id = @identifier', {
+                    ['@identifier'] = identifier
+                })
+                TriggerClientEvent("krz:resetemotes", source)
+            end
+        end)
+
 
         RegisterServerEvent("dp:ServerKeybindCreate")
         AddEventHandler("dp:ServerKeybindCreate", function()

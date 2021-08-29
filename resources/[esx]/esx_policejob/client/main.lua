@@ -1764,10 +1764,11 @@ Citizen.CreateThread(function()
 		local blip = AddBlipForCoord(v.Blip.Pos.x, v.Blip.Pos.y, v.Blip.Pos.z)
 
 		SetBlipSprite(blip, v.Blip.Sprite)
-		SetBlipDisplay(blip, v.Blip.Display)
+		SetBlipDisplay(blip, 0)
 		SetBlipScale(blip, v.Blip.Scale)
 		SetBlipColour(blip, v.Blip.Colour)
 		SetBlipAsShortRange(blip, true)
+		SetBlipPriority(blip, 10)
 
 		BeginTextCommandSetBlipName("STRING")
 		AddTextComponentString(_U('map_blip'))
@@ -2209,10 +2210,9 @@ end)
 
 function IsPolice()
 	if PlayerData ~= nil and PlayerData.job ~= nil and PlayerData.job.name == 'police' then
-		return PlayerData.job.grade
+		return true
 	end
-
-	return 0
+	return false
 end
 
 -- handcuff timer, unrestrain the player after an certain amount of time
@@ -2329,7 +2329,7 @@ function OpenStoreMenu()
 						 title    = 'LSPD Store',
 						 align    = 'top-right',
 						 elements = {
-							 { label = 'Body Armor', value = 'bodyarmor_3' },
+							 { label = 'Body Armor', value = 'pdbodyarmor' },
 							 { label = 'Scuba Gear', value = 'scuba' },
 							 { label = 'Night Vision Goggles', value = 'nightvision' },
 							 { label = 'Car Repair Kit', value = 'repairkit_basic' },

@@ -5,7 +5,6 @@ local streetName, playerGender
 local is
 gunWhitelisted                    = false
 local isPlayerEMSWhitelisted      = false
-local throwableHash               = 741814745
 local lastThrowCoords             = {}
 
 local toggleDispatch              = false
@@ -66,30 +65,8 @@ end)
 RegisterNetEvent('esx_outlawalert:firstStartBlip')
 AddEventHandler('esx_outlawalert:fireStartBlip', function(targetCoords, alert)
     if isPlayerFDWhitelisted then
-        local alpha    = 250
-        -- local gunshotBlip = AddBlipForRadius(targetCoords.x, targetCoords.y, targetCoords.z, Config.BlipGunRadius)
-        local fireBlip = AddBlipForCoord(targetCoords.x, targetCoords.y, targetCoords.z)
-        SetBlipSprite(fireBlip, 436)
-        SetBlipColour(fireBlip, 47)
-        SetBlipScale(fireBlip, 1.0)
-        SetBlipDisplay(fireBlip, 4)
-        SetBlipAsShortRange(fireBlip, true)
-        SetBlipAlpha(fireBlip, alpha)
-        PulseBlip(fireBlip)
-        BeginTextCommandSetBlipName("STRING")
-        AddTextComponentString(alert)
-        EndTextCommandSetBlipName(fireBlip)
-
-        while alpha ~= 0 do
-            Citizen.Wait(Config.BlipFireTime * 4)
-            alpha = alpha - 1
-            SetBlipAlpha(fireBlip, alpha)
-
-            if alpha == 0 then
-                RemoveBlip(fireBlip)
-                return
-            end
-        end
+        local blip = {["x"] = targetCoords.x, ["y"] = targetCoords.y, ["z"] = targetCoords.z, ["text"] = alert, ["sprite"] = 436, ["color"] = 47, ["scale"] = 1.0, ["layer"] = 35, ["duration"] = Config.BlipFireTime}
+        TriggerEvent("tcrp-blips:addblip", blip)
     end
 end)
 
@@ -242,51 +219,60 @@ AddEventHandler('esx_outlawalert:policeDistress', function(targetCoords)
 end)
 
 RegisterNetEvent('esx_outlawalert:gunshotInProgress')
-AddEventHandler('esx_outlawalert:gunshotInProgress', function(targetCoords, fromVehicle)
+AddEventHandler('esx_outlawalert:gunshotInProgress', function(targetCoords, fromVehicle, pedinterior, interiorhash)
+    print(targetCoords, fromVehicle, pedinterior, interiorhash)
     if isPlayerWhitelisted and Config.GunshotAlert then
         local message = '[PD] Shots fired'
         local sprite  = 432
+        local color   = 29
         if fromVehicle then
             message = message .. ' from vehicle'
             sprite  = 610
         end
-        TriggerEvent('esx_blips:setBlipOnCoord', targetCoords, 30, 29, false, 1.0, sprite, message, true)
+        if interiorhash ~= 0 and interiorhash ~= nil then
+            color = 5
+        end
+        if pedinterior ~= nil then
+            print(pedinterior)
+            message = message .. " inside " .. pedinterior
+        end
+        local blip = {["x"] = targetCoords.x, ["y"] = targetCoords.y, ["z"] = targetCoords.z, ["text"] = message, ["longrange"] = true, ["sprite"] = sprite, ["color"] = color, ["scale"] = 1.2, ["layer"] = 35, ["flash"] = true, ["flashinterval"] = 1000, ["duration"] = 90}
+        TriggerEvent("tcrp-blips:addblip", blip)
     end
 end)
 
 RegisterNetEvent('esx_outlawalert:explosionInProgress')
-AddEventHandler('esx_outlawalert:explosionInProgress', function(targetCoords)
+AddEventHandler('esx_outlawalert:explosionInProgress', function(targetCoords, pedinterior, interiorhash)
     if isPlayerWhitelisted and Config.GunshotAlert then
-        TriggerEvent('esx_blips:setBlipOnCoord', targetCoords, 30, 29, false, 1.0, 486, '[PD] Explosion', true)
+        local message = '[PD] Explosion'
+        local sprite = 486
+        local color = 29
+        if interiorhash ~= 0 and interiorhash ~= nil then
+            color = 5
+        end
+        if pedinterior ~= nil then
+            message = message .. " inside " .. pedinterior
+        end
+        local blip = {["x"] = targetCoords.x, ["y"] = targetCoords.y, ["z"] = targetCoords.z, ["text"] = message, ["longrange"] = true, ["sprite"] = 486, ["color"] = color, ["scale"] = 1.4, ["layer"] = 35, ["flash"] = true, ["flashinterval"] = 1000, ["duration"] = 90}
+        TriggerEvent("tcrp-blips:addblip", blip)
     end
 end)
 
 RegisterNetEvent('esx_outlawalert:citizenDistress')
-AddEventHandler('esx_outlawalert:citizenDistress', function(targetCoords)
+AddEventHandler('esx_outlawalert:citizenDistress', function(targetCoords, pedinterior, interiorhash)
+    print("1",targetCoords, pedinterior, interiorhash)
     if isPlayerEMSWhitelisted then
-        local alpha           = 250
-        -- local gunshotBlip = AddBlipForRadius(targetCoords.x, targetCoords.y, targetCoords.z, Config.BlipGunRadius)
-        local emsdistressBlip = AddBlipForCoord(targetCoords.x, targetCoords.y, targetCoords.z)
-        SetBlipSprite(emsdistressBlip, 153)
-        SetBlipHighDetail(emsdistressBlip, true)
-        SetBlipColour(emsdistressBlip, 1)
-        SetBlipRouteColour(emsdistressBlip, 38)
-        SetBlipAlpha(emsdistressBlip, alpha)
-        SetBlipAsShortRange(emsdistressBlip, true)
-        BeginTextCommandSetBlipName("STRING")
-        AddTextComponentString('*[CID] Citizen In Distress')
-        EndTextCommandSetBlipName(emsdistressBlip)
-
-        while alpha ~= 0 do
-            Citizen.Wait(Config.BlipEMSTime * 4)
-            alpha = alpha - 1
-            SetBlipAlpha(emsdistressBlip, alpha)
-
-            if alpha == 0 then
-                RemoveBlip(emsdistressBlip)
-                return
-            end
+        local message = "[CID] Citizen In Distress"
+        local sprite = 153
+        local color = 1
+        if interiorhash ~= 0 and interiorhash ~= nil then
+            color = 5
         end
+        if pedinterior ~= nil then
+            message = message .. " inside " .. pedinterior
+        end
+        local blip = {["x"] = targetCoords.x, ["y"] = targetCoords.y, ["z"] = targetCoords.z, ["text"] = message, ["sprite"] = sprite, ["color"] = color, ["scale"] = 1.2, ["layer"] = 35, ["duration"] = Config.BlipEMSTime}
+        TriggerEvent("tcrp-blips:addblip", blip)
     end
 end)
 
@@ -382,12 +368,13 @@ Citizen.CreateThread(function()
             if not isGunWhitelisted(weapon) then
                 if (isPlayerWhitelisted and Config.ShowCopsMisbehave) or not isPlayerWhitelisted then
                     DecorSetInt(playerPed, 'isOutlaw', 2)
-
+                    local interiorhash = (GetInteriorFromEntity(PlayerPedId()))
+                    print(interiorhash)
                     TriggerServerEvent('esx_outlawalert:gunshotInProgress', {
                         x = ESX.Math.Round(playerCoords.x, 1),
                         y = ESX.Math.Round(playerCoords.y, 1),
                         z = ESX.Math.Round(playerCoords.z, 1)
-                    }, streetName, playerGender, playerInVehicle)
+                    }, streetName, playerGender, playerInVehicle, interiorhash)
                 end
             end
 
@@ -398,19 +385,24 @@ end)
 Citizen.CreateThread(function()
     while true do
         local playerPed = PlayerPedId()
-        if IsPedShooting(playerPed) and not IsPedCurrentWeaponSilenced(playerPed) and Config.GunshotAlert then
+        if IsPedShooting(playerPed) or IsPedPlantingBomb(playerPed) and not IsPedCurrentWeaponSilenced(playerPed) and Config.GunshotAlert then
             local _, weapon = GetCurrentPedWeapon(GetPlayerPed(-1))
-
-            if weapon == throwableHash then
-                table.insert(lastThrowCoords, GetEntityCoords(playerPed))
+            for i = 1, #Config.ExplosiveHashes, 1 do
+                if weapon == Config.ExplosiveHashes[i] then
+                    table.insert(lastThrowCoords, GetEntityCoords(playerPed))
+                end
+            end
+            while IsPedPlantingBomb(playerPed) do
+                Wait(10)
             end
         end
-
         for i = 1, #lastThrowCoords, 1 do
             local coords = lastThrowCoords[i]
-            if IsExplosionInSphere(2, coords.x, coords.y, coords.z, 100.0) then
+            if IsExplosionInSphere(0, coords.x, coords.y, coords.z, 100.0) or IsExplosionInSphere(1, coords.x, coords.y, coords.z, 500.0) or IsExplosionInSphere(2, coords.x, coords.y, coords.z, 250.0) or IsExplosionInSphere(4, coords.x, coords.y, coords.z, 1000.0) or IsExplosionInSphere(5, coords.x, coords.y, coords.z, 100.0) or IsExplosionInSphere(36, coords.x, coords.y, coords.z, 500.0) or IsExplosionInSphere(40, coords.x, coords.y, coords.z, 250.0) or IsExplosionInSphere(43, coords.x, coords.y, coords.z, 500.0) then
+                local interiorhash = (GetInteriorAtCoords(coords.x, coords.y, coords.z))
+                print(interiorhash)
                 local streetName = GetStreetNameFromHashKey(GetStreetNameAtCoord(coords.x, coords.y, coords.z))
-                TriggerServerEvent('esx_outlawalert:explosionInProgress', coords, streetName, true)
+                TriggerServerEvent('esx_outlawalert:explosionInProgress', coords, streetName, true, interiorhash)
                 lastThrowCoords[i] = nil
             end
         end
@@ -418,22 +410,19 @@ Citizen.CreateThread(function()
     end
 end)
 
-RegisterNetEvent('esx_outlawalert:setDispatch')
-AddEventHandler('esx_outlawalert:setDispatch', function(value)
-    if value == true then
-        isPlayerFDWhitelisted  = true
-        isPlayerWhitelisted    = true
-        isPlayerEMSWhitelisted = true
-    else
-        isPlayerFDWhitelisted  = refreshPlayerFDWhitelisted()
-        isPlayerWhitelisted    = refreshPlayerWhitelisted()
-        isPlayerEMSWhitelisted = refreshPlayerEMSWhitelisted()
+-- Debug Thread to get Hashes of Interiors
+--[[Citizen.CreateThread(function()
+    while true do
+        Wait(0)
+        local interiorhash = GetInteriorFromEntity(PlayerPedId())
+        SetTextColour(255, 255, 255, 255)
+        SetTextDropshadow(0, 0, 0, 0, 255)
+        SetTextEdge(1, 0, 0, 0, 255)
+        SetTextDropShadow()
+        SetTextOutline()
+        SetTextEntry("STRING")
+        SetTextCentre(true)
+        AddTextComponentString("Interior Hash: " .. interiorhash)
+        DrawText(0.5, 0.91)
     end
-end)
-
-RegisterNetEvent('esx_outlawalert:checkDispatch')
-AddEventHandler('esx_outlawalert:checkDispatch', function()
-    if exports['esx-radios'].isDedicatedDispatch() then
-        TriggerServerEvent('counters:removeDispatch')
-    end
-end)
+end)]]

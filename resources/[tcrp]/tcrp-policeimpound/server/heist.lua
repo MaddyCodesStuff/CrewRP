@@ -26,10 +26,13 @@ end
 RegisterNetEvent('tcrp-policeimpound:breakIn')
 AddEventHandler('tcrp-policeimpound:breakIn', function()
     local _source = source
-    if copsRequired() then
+    local xPlayer = ESX.GetPlayerFromId(source) -- ESX
+    local item = xPlayer.getInventoryItem('lockpick')
+    if item.count > 0 and copsRequired() then
+        xPlayer.removeInventoryItem('lockpick', 1)
         TriggerClientEvent('tcrp-policeimpound:breakIn', _source)
-    else
-        TriggerClientEvent('tcrp:displayGeneral', _source, "Not enough police.")
+       else
+       TriggerClientEvent('tcrp:displayGeneral', _source, "Not enough police or not the right tool.")
     end
 end)
 

@@ -91,10 +91,11 @@ Citizen.CreateThread(function()
 			local blip = AddBlipForCoord(v.Blip.Pos.x, v.Blip.Pos.y, v.Blip.Pos.z)
 
 			SetBlipSprite(blip, v.Blip.Sprite)
-			SetBlipDisplay(blip, v.Blip.Display)
+			SetBlipDisplay(blip, 0)
 			SetBlipScale(blip, v.Blip.Scale)
 			SetBlipColour(blip, v.Blip.Colour)
 			SetBlipAsShortRange(blip, true)
+			SetBlipPriority(blip, 10)
 
 			BeginTextCommandSetBlipName('STRING')
 			-- AddTextComponentSubstringPlayerName(_U('hospital'))
@@ -116,7 +117,7 @@ function createBlip(id)
 		ShowHeadingIndicatorOnBlip(blip, true) -- Player Blip indicator
 		SetBlipRotation(blip, math.ceil(GetEntityHeading(ped))) -- update rotation
 		SetBlipNameToPlayerName(blip, id) -- update blip name
-		SetBlipScale(blip, 0.85) -- set scale
+		SetBlipScale(blip, 1.0) -- set scale
 		SetBlipAsShortRange(blip, true)
 
 		table.insert(blipsAmbulance, blip) -- add blip to array so we can remove it later
@@ -129,18 +130,21 @@ Citizen.CreateThread(function()
 		Citizen.Wait(1)
 		if IsDead then
 			DisableAllControlActions(0)
-			EnableControlAction(0, Keys['G'], true)
-			EnableControlAction(0, Keys['T'], true)
-			EnableControlAction(0, Keys['E'], true)
+			EnableControlAction(0, 47, true)
+			EnableControlAction(0, 245, true)
+			EnableControlAction(0, 54, true)
+			EnableControlAction(0, 23, true)
 			EnableControlAction(0, 0, true)
 			EnableControlAction(0, 1, true)
 			EnableControlAction(0, 2, true)
 			EnableControlAction(0, 249, true)
 			EnableControlAction(0, 288, true)
+			EnableControlAction(0, 322, true)
 			EnableControlAction(0, 289, true)
-			DisablePlayerFiring(playerPed, true)
 			ped = GetPlayerPed(-1)
+			DisablePlayerFiring(ped, true)
 			-- Make player visible to all when dead
+			
 			SetEntityHealth(ped, 101)
 			IsDead = true
 			if not IsPassedOut then 
@@ -205,10 +209,9 @@ end
 function SendDistressSignal()
 	local playerPed = PlayerPedId()
 	local coords    = GetEntityCoords(playerPed)
-
+	local interiorhash = (GetInteriorFromEntity(playerPed))
 	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', text = _U('distress_sent'), length = 10000 })
-	local message = 'A citizen is in need of emergency services!'
-	TriggerServerEvent('esx_outlawalert:citizenDistress', coords, streetName)
+	TriggerServerEvent('esx_outlawalert:citizenDistress', coords, streetName, interiorhash)
 end
 
 function DrawGenericTextThisFrame()

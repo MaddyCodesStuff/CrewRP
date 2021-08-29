@@ -121,6 +121,42 @@ if Config.SqlKeybinding then
     -----------------------------------------------------------------------------------------------------
     ------ Functions and stuff --------------------------------------------------------------------------
     -----------------------------------------------------------------------------------------------------
+RegisterNetEvent("krz:resetemotes")
+AddEventHandler("krz:resetemotes", function(args)
+    if args == nil then
+        keyb1       = "num4"
+        emob1       = ""
+        keyb2       = "num5"
+        emob2       = ""
+        keyb3       = "num6"
+        emob3       = ""
+        keyb4       = "num7"
+        emob4       = ""
+        keyb5       = "num8"
+        emob5       = ""
+        keyb6       = "num9"
+        emob6       = ""
+    elseif args == "emote1" then
+        keyb1       = "num4"
+        emob1       = ""
+    elseif args == "emote2" then
+        keyb2       = "num5"
+        emob2       = ""
+    elseif args == "emote3" then
+        keyb3       = "num6"
+        emob3       = ""
+    elseif args == "emote4" then
+        keyb4       = "num7"
+        emob4       = ""
+    elseif args == "emote5" then
+        keyb5       = "num8"
+        emob5       = ""
+    elseif args == "emote6" then
+        keyb6       = "num9"
+        emob6       = ""
+    else
+    end
+end)
 
     function EmoteBindsStart()
         EmoteChatMessage(_U('currentlyboundemotes') .. "\n"
@@ -153,5 +189,4 @@ if Config.SqlKeybinding then
             print("invalid")
         end
     end
-
 end

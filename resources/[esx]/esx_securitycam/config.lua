@@ -154,6 +154,8 @@ Config.Locations     = {
             { label = "Route 68 2", x = 1180.73, y = 2709.58, z = 39.1, r = { x = -20.0, y = 0.0, z = 90.0 }, canRotate = true },
             { label = "Hawick Ave 1", x = 317.61, y = -280.55, z = 55.2, r = { x = -20.0, y = 0.0, z = 45.0 }, canRotate = true },
             { label = "Hawick Ave 2", x = 307.93, y = -278.67, z = 55.2, r = { x = -20.0, y = 0.0, z = 180.0 }, canRotate = true },
+            { label = "Hawick Ave 3", x = -347.82, y = -51.06, z = 50.50, r = { x = -20.0, y = 0.0, z = 29.08 }, canRotate = true },
+            { label = "Hawick Ave 4", x = -357.02, y = -50.07, z = 50.20, r = { x = -20.0, y = 0.0, z = 180.0 }, canRotate = true },
             { label = "Vespucci Blvd 1", x = 153.15, y = -1042.1, z = 30.4, r = { x = -20.0, y = 0.0, z = 45.0 }, canRotate = true },
             { label = "Vespucci Blvd 2", x = 143.64, y = -1041.23, z = 30.4, r = { x = -20.0, y = 0.0, z = 180.0 }, canRotate = true },
         },

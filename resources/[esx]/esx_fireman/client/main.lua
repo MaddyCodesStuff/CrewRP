@@ -248,10 +248,11 @@ Citizen.CreateThread(function()
 		local blip = AddBlipForCoord(v.Blip.Pos.x, v.Blip.Pos.y, v.Blip.Pos.z)
 
 		SetBlipSprite(blip, v.Blip.Sprite)
-		SetBlipDisplay(blip, v.Blip.Display)
+		SetBlipDisplay(blip, 0)
 		SetBlipScale(blip, v.Blip.Scale)
 		SetBlipColour(blip, v.Blip.Colour)
 		SetBlipAsShortRange(blip, true)
+		SetBlipPriority(blip, 10)
 
 		BeginTextCommandSetBlipName("STRING")
 		AddTextComponentString("Fire Station")
@@ -738,7 +739,6 @@ Citizen.CreateThread(function()
 		if PlayerData.job and PlayerData.job.name ~= nil and PlayerData.job.name == 'fireman' then
 			local coords  = GetEntityCoords(PlayerPedId())
 			local vehicle = ESX.Game.GetClosestVehicle()
-
 			if vehicle ~= nil and checkVehicleCanAccessInventory(GetDisplayNameFromVehicleModel(GetEntityModel(vehicle))) and not IsPedInAnyVehicle(PlayerPedId()) then
 				local vehicleCoords = GetEntityCoords(vehicle)
 
@@ -832,9 +832,6 @@ function openFireTruckMenu()
 			elseif data.current.value == 'add_gear' then
 				setUniform('turnout_wear', playerPed)
 				SetPedArmour(playerPed, 100)
-			elseif data.current.value == 'add_suspenders' then
-				setUniform('sus_wear', playerPed)
-				SetPedArmour(playerPed, 0)
 			elseif data.current.value == 'medic_bag' then
 				setUniform('medic_bag', playerPed)
 			elseif data.current.value == 'medic_bag_off' then
@@ -850,7 +847,7 @@ function openFireTruckMenu()
 		end)
 end
 
--- Function to see if the vehicle you are trying to use can access inventory
+-- Function to see if the vehicle you are trying to use can access inventory.
 function checkVehicleCanAccessInventory(vehicle)
 	for i = 1, #Config.VehicleInventory, 1 do
 		if string.upper(Config.VehicleInventory[i]) == string.upper(vehicle) then

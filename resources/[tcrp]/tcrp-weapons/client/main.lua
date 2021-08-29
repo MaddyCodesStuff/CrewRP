@@ -21,7 +21,7 @@ end
 -- Set Weapon damage
 Citizen.CreateThread(function()
     while true do
-        Wait(1)
+        Citizen.Wait(1)
         local totalModifier = base_damage * modifier
         if weapon and totalModifier ~= 1.0 then
             SetWeaponDamageModifierThisFrame(weapon, totalModifier)
@@ -37,7 +37,7 @@ Citizen.CreateThread(function()
         local type_modifier = Config.AdditionalModifiers.groups[weapon_type] and Config.AdditionalModifiers.groups[weapon_type] or 1.0
         local weapon_modifier = Config.AdditionalModifiers.weapons[weapon] and Config.AdditionalModifiers.weapons[weapon] or 1.0
         modifier = type_modifier * weapon_modifier
-        Wait(500)
+        Citizen.Wait(500)
     end
 end)
 
@@ -45,55 +45,53 @@ end)
 Citizen.CreateThread(function()
     while true do
         SetPedMinGroundTimeForStungun(GetPlayerPed(-1), Config.StunTime)
-        Wait(5000)
+        Citizen.Wait(5000)
     end
 end)
 
-Citizen.CreateThread(function()
-    while true do
-        Citizen.Wait(0)
-        TriggerEvent('skinchanger:getSkin', function(skin)
-            if skin.sex == 0 then
-                hasHolster = false
-                for i = 1, #Config.maleShirtHolster, 1 do
-                    if Config.maleShirtHolster[i] == tonumber(skin.tshirt_1) then
-                        hasHolster = true
-                    end
+function GetHolster()
+    TriggerEvent('skinchanger:getSkin', function(skin)
+        if skin.sex == 0 then
+            for i = 1, #Config.maleShirtHolster, 1 do
+                if Config.maleShirtHolster[i] == tonumber(skin.tshirt_1) then
+                    hasHolster = true
                 end
-                for i = 1, #Config.maleChainHolster, 1 do
-                    if Config.maleChainHolster[i] == tonumber(skin.chain_1) then
-                        hasHolster = true
-                    end
-                end
-            elseif skin.sex == 1 then 
-                hasHolster = false
-                for i = 1, #Config.femaleShirtHolster, 1 do
-                    if Config.femaleShirtHolster[i] == tonumber(skin.tshirt_1) then
-                        hasHolster = true
-                    end
-                end
-                for i = 1, #Config.femaleChainHolster, 1 do
-                    if Config.femaleChainHolster[i] == tonumber(skin.chain_1) then
-                        hasHolster = true
-                    end
-                end
-            else
-                hasHolster = false
             end
-        end)
-        Wait(10000)
-    end
-end)
-
+            for i = 1, #Config.maleChainHolster, 1 do
+                if Config.maleChainHolster[i] == tonumber(skin.chain_1) then
+                    hasHolster = true
+                end
+            end
+        elseif skin.sex == 1 then 
+            hasHolster = false
+            for i = 1, #Config.femaleShirtHolster, 1 do
+                if Config.femaleShirtHolster[i] == tonumber(skin.tshirt_1) then
+                    hasHolster = true
+                end
+            end
+            for i = 1, #Config.femaleChainHolster, 1 do
+                if Config.femaleChainHolster[i] == tonumber(skin.chain_1) then
+                    hasHolster = true
+                end
+            end
+        else
+            hasHolster = false
+        end
+    end)
+end
 -- Handle drawing weapons
 Citizen.CreateThread(function()
     while true do
         local ped = PlayerPedId()
         -- Catch weapon swap event
-        if GetIsTaskActive(ped, 56) and not IsPedInAnyVehicle(ped, false) and GetPedParachuteState(ped) < 1 and not IsPedInParachuteFreeFall(ped) then
+        if IsPedSwappingWeapon(ped) and not IsPedInAnyVehicle(ped, false) and GetPedParachuteState(ped) < 1 and not IsPedInParachuteFreeFall(ped) then
+            
             local isSwitchingWeapon = true
+            local weapon_to = GetSelectedPedWeapon(ped)
+            local postwait = 0
+            GetHolster()
             -- Handle weapon switching per-frame stuff
-            Citizen.CreateThread(function ()
+            Citizen.CreateThread(function()
                 while isSwitchingWeapon do
                     SetPedCanSwitchWeapon(ped, false)
                     DisableControlAction(0, 73, true) -- X
@@ -101,58 +99,76 @@ Citizen.CreateThread(function()
                     DisablePlayerFiring(ped, true)
                     HideHudComponentThisFrame(19)
                     HideHudComponentThisFrame(20)
-                    Wait(0)
+                    Citizen.Wait(0)
                 end
-
                 SetPedCanSwitchWeapon(ped, true)
             end)
-
-            local weapon_to = GetSelectedPedWeapon(ped)
-            local postWait = 1000
             SetCurrentPedWeapon(ped, weapon, true)
 
-            -- Put weapon away
-            if isBeltWeapon(weapon) then
-                ClearPedTasks(ped)
-                if hasHolster == true then
-                    TriggerEvent('emote:do', 'reaching')
-                    Wait(1000)
+        
+            if weapon ~= weapon_to then
+                if weapon == GetHashKey('WEAPON_SWITCHBLADE') then
+                    Citizen.Wait(800)
+                    ClearPedTasks(ped)
+                end
+                -- Put weapon away
+                if weapon ~= GetHashKey('WEAPON_UNARMED') and weapon_to == GetHashKey('WEAPON_UNARMED')  then  
+                    
+
+                    if isBeltWeapon(weapon) then
+                        if weapon == GetHashKey('WEAPON_DOUBLEACTION') then
+                            Citizen.Wait(700)
+                        end
+                        ClearPedTasks(ped)
+                        if hasHolster == true then
+                            TriggerEvent('emote:do', 'reaching')
+                            Citizen.Wait(500)
+                        else
+                            TriggerEvent('emote:do', 'reaching3')
+                            Citizen.Wait(1400)
+                        end
+                    else
+                        ClearPedTasks(ped)
+                        TriggerEvent('emote:do', 'reaching3')
+                        Citizen.Wait(1400)
+                    end
                     TriggerEvent('emote:cancel')
-                else
-                    TriggerEvent('emote:do', 'reaching3')
-                    Wait(1500)
+                    SetCurrentPedWeapon(ped, GetHashKey('WEAPON_UNARMED'), true)
                 end
-            end
 
-            SetCurrentPedWeapon(ped, GetHashKey('WEAPON_UNARMED'), true)
-
-            -- Grab weapon
-            if isBeltWeapon(weapon_to) then
-                ClearPedTasks(ped)
-                if hasHolster == true then
-                    postWait = 0
-                    TriggerEvent('emote:do', 'reaching')
-                    Wait(1000)
-                else
-                    postWait = 1500
+                -- Grab weapon
+                if isBeltWeapon(weapon_to) and weapon_to ~= GetHashKey('WEAPON_UNARMED') then
+                    ClearPedTasks(ped)
+                    if hasHolster == true then
+                        TriggerEvent('emote:do', 'reaching')
+                            Citizen.CreateThread(function()
+                                Citizen.Wait(500)
+                                SetCurrentPedWeapon(ped, weapon_to, true)
+                            end)
+                        postwait = 500
+                        Citizen.Wait(700)
+                    else
+                        TriggerEvent('emote:do', 'reaching2')
+                        postwait = 800
+                        Citizen.Wait(1400)
+                    end
+                elseif weapon_to ~= GetHashKey('WEAPON_UNARMED') and weapon_to ~= GetHashKey('WEAPON_SWITCHBLADE') then
+                    ClearPedTasks(ped)
                     TriggerEvent('emote:do', 'reaching2')
-                    Wait(1500)
+                    postwait = 1400
+                    Citizen.Wait(1400)
+                else
+                    postwait = 1000
                 end
             end
-
             SetCurrentPedWeapon(ped, weapon_to, true)
-            Wait(postWait)
             TriggerEvent('emote:cancel')
+            Citizen.Wait(postwait)  
             isSwitchingWeapon = false
         end
-        Wait(0)
+        Citizen.Wait(0)
     end
-end)
-
---Defines Weapon-Wheel Name for Weapon
-Citizen.CreateThread(function()
-    AddTextEntry('WT_HUNT_RIFLE', 'Hunting Rifle')
-end)
+end)                            
 
 -- Reset Weapon damage on death
 AddEventHandler('esx:onPlayerDeath', function(reason)

@@ -35,41 +35,87 @@ Config.ActionLabels = {
 }
 
 -- Heist
-Config.GlobalCooldown = 60 -- Heist cooldown time in minutes globally
+Config.GlobalCooldown = 40 -- Heist cooldown time in minutes globally
 Config.DoorUnlockTimer = 10 -- Time in minutes to leave door unlocked after breaking in (resets hack as well)
-Config.CopsRequired = 5 -- Heist cop requirement
+Config.CopsRequired = 6 -- Heist cop requirement
 Config.LockPickTime = 30 -- Time to pick lock in seconds
-Config.RegistrationTime = 30 -- Time to hack vehicle registration in seconds
-Config.KeySearchTime = 5 -- Time to search for keys in seconds (per location)
+Config.RegistrationTime = 60 -- Time to hack vehicle registration in seconds
+Config.KeySearchTime = 15 -- Time to search for keys in seconds (per location)
 Config.KeyLocations = { -- Possible locations where car keys can be located
     vector3(963.02, -2994.24, -39.65),
     vector3(962.65, -3016.55, -39.65),
     vector3(995.19, -2988.45, -39.65),
     vector3(966.08, -2993.07, -39.65),
     vector3(968.62, -3002.25, -39.65),
+    vector3(981.201, -3018.82, -39.65),
+    vector3(953.08, -2992.03, -39.65),
+    vector3(960.58, -3006.69, -39.65),
+    vector3(961.01, -3010.62, -39.65),
+    vector3(980.85, -2989.46, -39.65),
 }
 Config.LocalVehicles = {
-    'panto',
-    'zentorno',
-    'dominator',
-    'vigero',
-    'coquette',
-    'roosevelt',
-    'sultan',
-    'emperor',
-    'stanier',
-    'schafter',
-    'infernus',
-    'feltzer',
+    'surfer',
+    'camper',
+    'romero',
+    'patriot',
+    'rumpo3',
+    'sandking',
     'rebel',
-    'rancher',
-    'mule',
-    'dubsta',
-    'brawler',
+    'stratum',
+    'picador',
+    'kalahari',
+    'baller3',
+    'club',
+    'glendale',
+    'warrener',
+    'dubsta2',
+    'bifta',
+    'futo',
     'oracle',
-    'exemplar',
+    'sultan',
     'prairie',
+    'washington',
+    'bodhi',
+    'schafter',
+    'schafter3',
+    'buffalo',
+    'felon',
+    'tulip',
+    'vamos',
+    'z190',
+    'zion',
+    'zion2',
+    'zion3',
+    'ruiner',
+    'monroe',
+    'sentinel',
+    'sentinel2',
+    'tailgater',
+    'retinue2',
+    'novak',
+    'rebla',
+    'coquette2',
+    'dominator3',
+    'elegy',
     'jester',
+    'bestiagts',
+    'alpha',
+    'surano',
+    'sugoi',
+    'rallytruck',
+    'ninef2',
+    'bmx',
+    'gburrito',
+    'slamvan2',
+    'bulldozer',
+    'vodoo2',
+    'tornado',
+    'jester3',
+    'chino',
+    'asea',
+    'landstalker2',
+    'rrocket',
+
 }
 
 -- Mythic actions config

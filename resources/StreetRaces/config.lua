@@ -5,15 +5,19 @@ config_cl = {
     joinDuration = 30000,               -- Duration in ms to allow players to join the race
     freezeDuration = 5000,              -- Duration in ms to freeze players and countdown start (set to 0 to disable)
     checkpointProximity = 25.0,         -- Proximity to trigger checkpoint in meters
-    checkpointRadius = 0.0,            -- Radius of 3D checkpoints in meters (set to 0 to disable cylinder checkpoints)
-    checkpointHeight = 0.0,            -- Height of 3D checkpoints in meters
-    checkpointBlipColor = 5,            -- Color of checkpoint map blips and navigation (see SetBlipColour native reference)
+    checkpointRadius = 0,             -- Radius of 3D checkpoints in meters (set to 0 to disable cylinder checkpoints)
+    checkpointHeight = 0,             -- Height of 3D checkpoints in meters
+    checkpointBlipColor = 68,           -- Color of checkpoint map blips and navigation (see SetBlipColour native reference)
+    checkpointRed = 102,
+    checkpointGreen = 178,
+    checkpointBlue = 255,
+    checkpointAlpha = 127,
     hudEnabled = true,                  -- Enable racing HUD with time and checkpoints
     hudPosition = vec(0.015, 0.675)     -- Screen position to draw racing HUD
 }
 
 -- SERVER CONFIGURATION
 config_sv = {
-    finishTimeout = 180000,             -- Timeout in ms for removing a race after winner finishes
+    finishTimeout = 600000,             -- Timeout in ms for removing a race after winner finishes
     notifyOfWinner = true               -- Notify all players of the winner (false will only notify the winner)
 }
