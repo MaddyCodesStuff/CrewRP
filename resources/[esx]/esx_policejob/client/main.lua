@@ -2330,7 +2330,7 @@ function OpenStoreMenu()
 						 title    = 'LSPD Store',
 						 align    = 'top-right',
 						 elements = {
-							 { label = 'Body Armor', value = 'bodyarmor_3' },
+							 { label = 'Body Armor', value = 'pdbodyarmor' },
 							 { label = 'Scuba Gear', value = 'scuba' },
 							 { label = 'Night Vision Goggles', value = 'nightvision' },
 							 { label = 'Car Repair Kit', value = 'repairkit_basic' },

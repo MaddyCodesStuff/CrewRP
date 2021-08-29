@@ -23,6 +23,13 @@ ESX.RegisterUsableItem('bodyarmor_3', function(source)
     TriggerClientEvent('nfw_wep:bodyarmor_3', source)
 end)
 
+ESX.RegisterUsableItem('pdbodyarmor', function(source)
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('pdbodyarmor', 1)
+    TriggerClientEvent('nfw_wep:pdbodyarmor', source)
+end)
+
 RegisterNetEvent('returnItem')
 AddEventHandler('returnItem', function(item)
     local xPlayer = ESX.GetPlayerFromId(source)
