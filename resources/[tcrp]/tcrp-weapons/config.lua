@@ -26,11 +26,13 @@ Config.BeltWeapons = {
     GetHashKey('WEAPON_STUNGUN'),
     GetHashKey('WEAPON_PISTOL50'),
     GetHashKey('WEAPON_VINTAGEPISTOL'),
+    GetHashKey('WEAPON_DOUBLEACTION'),
     GetHashKey('WEAPON_REVOLVER'),
     GetHashKey('WEAPON_REVOLVER_MK2'),
-    GetHashKey('WEAPON_MARKSMANPISTOL'),
     GetHashKey('WEAPON_CERAMICPISTOL'),
     GetHashKey('WEAPON_NAVYREVOLVER'),
+    GetHashKey('WEAPON_FLASHLIGHT'),
+    GetHashKey('WEAPON_NIGHTSTICK'),
 }
 
 --Male T-Shirt Holsters
