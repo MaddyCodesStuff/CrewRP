@@ -341,12 +341,11 @@ AddEventHandler('tcrp_dirtydumpsters:getItem', function(id, type, item, count)
                 if v.name == item then
                     local sourceItem = xPlayer.getInventoryItem(item)
                     local currentcount = sourceItem.count
-                    if currentcount + count <= sourceItem.limit then
+                    if currentcount + count <= sourceItem.limit or sourceItem.limit == -1 then
                         if count <= v.count then
                             v.count = v.count - count
                             xPlayer.addInventoryItem(item, count)
                             found = true
-
                             if v.count == 0 then
                                 table.remove(inv, k)
                             end
