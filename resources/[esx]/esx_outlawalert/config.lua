@@ -278,7 +278,7 @@ Config.InteriorLocations = {
     ["the Innocence Blvd Car wash"] = {
         149249,
     },
-    ["a Marathon Ave Garrage"] = {
+    ["a Marathon Ave Garage"] = {
         148737,
     },
     ["a South Boulevard Del Perro Garage"] = {
