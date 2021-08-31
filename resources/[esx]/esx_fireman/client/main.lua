@@ -659,12 +659,12 @@ function OpenCloakroomMenu()
 				TriggerEvent('skinchanger:loadSkin', skin)
 			end)
 			SetPedArmour(playerPed, 0)
-			TriggerServerEvent('esx_fireman:removeWeapon', 'WEAPON_FIREEXTINGUISHER', 1000)
+			TriggerServerEvent('esx_fireman:removeWeapon', 'WEAPON_FIREEXTINGUISHER', 50000)
 			TriggerServerEvent('esx_fireman:removeWeapon', 'WEAPON_POOLCUE', 1)
 		elseif data.current.value == 'emt_wear' then
 			setUniform(data.current.value, playerPed)
 			SetPedArmour(playerPed, 0)
-			TriggerServerEvent('esx_fireman:removeWeapon', 'WEAPON_FIREEXTINGUISHER', 1000)
+			TriggerServerEvent('esx_fireman:removeWeapon', 'WEAPON_FIREEXTINGUISHER', 50000)
 			TriggerServerEvent('esx_fireman:removeWeapon', 'WEAPON_POOLCUE', 1)
 		elseif data.current.value == 'diving_suit' then
 			setUniform(data.current.value, playerPed)
@@ -672,7 +672,7 @@ function OpenCloakroomMenu()
 			TriggerServerEvent('esx_fireman:giveItem', 'scuba', 1)
 		else
 			setUniform(data.current.value, playerPed)
-			TriggerServerEvent('esx_fireman:giveWeapon', 'WEAPON_FIREEXTINGUISHER', 1000)
+			TriggerServerEvent('esx_fireman:giveWeapon', 'WEAPON_FIREEXTINGUISHER', 50000)
 			TriggerServerEvent('esx_fireman:giveWeapon', 'WEAPON_POOLCUE', 1)
 		end
 	end, function(data, menu)
@@ -721,7 +721,7 @@ function OpenArmoryMenu(station)
 						 elements = elements
 					 }, function(data, menu)
 			local weapon = data.current.value
-			TriggerServerEvent('esx_fireman:giveWeapon', weapon, 1000)
+			TriggerServerEvent('esx_fireman:giveWeapon', weapon, 50000)
 		end, function(data, menu)
 			menu.close()
 
@@ -823,7 +823,7 @@ function openFireTruckMenu()
 						if data2.current.value == 'medikit' then
 							TriggerServerEvent('esx_fireman:giveItem', 'medikit', 1)
 						elseif data2.current.value == 'extinguisher' then
-							TriggerServerEvent('esx_fireman:giveWeapon', 'WEAPON_FIREEXTINGUISHER', 1000)
+							TriggerServerEvent('esx_fireman:giveWeapon', 'WEAPON_FIREEXTINGUISHER', 50000)
 							TriggerServerEvent('esx_fireman:giveWeapon', 'WEAPON_POOLCUE', 1)
 						end
 					end, function(data2, menu2)
@@ -839,7 +839,7 @@ function openFireTruckMenu()
 			elseif data.current.value == 'remove_gear' then
 				setUniform('turnin_wear', playerPed)
 				SetPedArmour(playerPed, 0)
-				TriggerServerEvent('esx_fireman:removeWeapon', 'WEAPON_FIREEXTINGUISHER', 1000)
+				TriggerServerEvent('esx_fireman:removeWeapon', 'WEAPON_FIREEXTINGUISHER', 50000)
 				TriggerServerEvent('esx_fireman:removeWeapon', 'WEAPON_POOLCUE', 1)
 			end
 		end, function(data, menu)
