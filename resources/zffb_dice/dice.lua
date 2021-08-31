@@ -22,7 +22,7 @@ RegisterCommand('roll', function(source, args, rawCommand)
     TaskPlayAnim(GetPlayerPed(-1), "anim@mp_player_intcelebrationmale@wank", "wank", 8.0, 1.0, -1, 49, 0, 0, 0, 0)
     Citizen.Wait(1500)
     ClearPedTasks(GetPlayerPed(-1))
-    TriggerServerEvent('3dme:shareDisplay', 'Rolled a d' .. die .. ' ' .. rolls .. ' time(s): ' .. number)
+    TriggerEvent('3dme:show3dme', PlayerId(), 'Rolled a d' .. die .. ' ' .. rolls .. ' time(s): ' .. number)
 end)
 
 function loadAnimDict(dict)
