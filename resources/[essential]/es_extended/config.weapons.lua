@@ -680,7 +680,11 @@ Config.Weapons = {
 		label      = _U('weapon_doubleaction'),
 		components = {}
 	},
-
+	{
+		name       = 'WEAPON_GRENADELAUNCHER_SMOKE',
+		label      = _U('weapon_grenadelauncher_smoke'),
+		components = {}
+	},
 	{
 		name       = 'WEAPON_AIRSOFTRIFLE',
 		label      = _U('weapon_airsoftrifle'),
@@ -748,13 +752,30 @@ Config.Weapons = {
 	},
 	{
 		name       = 'WEAPON_SLEDGEHAMMER',
-		label      = _U('weapon_shovel'),
+		label      = _U('weapon_sledgehammer'),
 		components = {}
 	},
 	{
 		name       = 'WEAPON_FIRE_AXE',
 		label      = _U('weapon_fire_axe'),
 		components = {}
+	},
+	{
+		name       = 'WEAPON_BOLTSNIPER',
+		label      = _U('weapon_boltsniper'),
+		components = {
+			{ name = 'clip_default', label = _U('component_clip_default'), hash = GetHashKey('COMPONENT_BOLTSNIPER_CLIP_01') },
+			{ name = 'scope', label = _U('component_scope'), hash = GetHashKey('COMPONENT_AT_BOLTSNIPER_SCOPE') },
+		}
+	},
+	{ 
+		name       = 'WEAPON_RIFLE2',
+		label      = _U('weapon_rifle2'),
+		components = {
+			{ name = 'clip_default', label = _U('component_clip_default'), hash = GetHashKey('COMPONENT_RIFLE2_CLIP_01') },
+			{ name = 'suppressor', label = _U('component_suppressor'), hash = GetHashKey('COMPONENT_AT_RIFLE2_SUPP') },
+			{ name = 'flashlight', label = _U('component_flashlight'), hash = GetHashKey('COMPONENT_AT_AR_FLSH') },
+		}
 	},
 	{
 		name       = 'WEAPON_TOILETBRUSH',

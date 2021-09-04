@@ -5,7 +5,7 @@
 		<Item>
 			<WeaponSlots>
 				<Item>
-					<OrderNumber value="423"/>
+					<OrderNumber value="435"/>
 					<Entry>SLOT_WEAPON_CLEAVER</Entry>
 				</Item>
 			</WeaponSlots>
@@ -57,11 +57,37 @@
 					<NetworkHitLimbsDamageModifier value="0.800000"/>
 					<LightlyArmouredDamageModifier value="0.750000"/>
 					<Force value="0.000000"/>
-					<ForceHitPed value="100.000000"/>
+					<ForceHitPed value="115.000000"/>
 					<ForceHitVehicle value="0.000000"/>
 					<ForceHitFlyingHeli value="0.000000"/>
-					<OverrideForces/>
-					<ForceMaxStrengthMult value="1.200000"/>
+					<OverrideForces>
+						<Item>
+							<BoneTag>BONETAG_HEAD</BoneTag>
+							<ForceFront value="75.000000"/>
+							<ForceBack value="85.000000"/>
+						</Item>
+						<Item>
+							<BoneTag>BONETAG_NECK</BoneTag>
+							<ForceFront value="60.000000"/>
+							<ForceBack value="60.000000"/>
+						</Item>
+						<Item>
+							<BoneTag>BONETAG_R_CLAVICLE</BoneTag>
+							<ForceFront value="90.000000"/>
+							<ForceBack value="100.000000"/>
+						</Item>
+						<Item>
+							<BoneTag>BONETAG_L_CLAVICLE</BoneTag>
+							<ForceFront value="90.000000"/>
+							<ForceBack value="100.000000"/>
+						</Item>
+						<Item>
+							<BoneTag>BONETAG_SPINE3</BoneTag>
+							<ForceFront value="75.000000"/>
+							<ForceBack value="90.000000"/>
+						</Item>
+					</OverrideForces>
+					<ForceMaxStrengthMult value="1.300000"/>
 					<ForceFalloffRangeStart value="0.000000"/>
 					<ForceFalloffRangeEnd value="50.000000"/>
 					<ForceFalloffMin value="1.000000"/>
@@ -88,7 +114,7 @@
 					<BulletBendingFarRadius value="0.000000"/>
 					<BulletBendingZoomedRadius value="0.000000"/>
 					<Fx>
-						<EffectGroup>WEAPON_EFFECT_GROUP_MELEE_SHARP</EffectGroup>
+						<EffectGroup>WEAPON_EFFECT_GROUP_MELEE_METAL</EffectGroup>
 						<FlashFx/>
 						<FlashFxAlt/>
 						<MuzzleSmokeFx/>
@@ -180,18 +206,18 @@
 					<ReticuleScale value="1.000000"/>
 					<ReticuleStyleHash/>
 					<FirstPersonReticuleStyleHash/>
-					<PickupHash>PICKUP_WEAPON_KNIFE</PickupHash>
+					<PickupHash>PICKUP_WEAPON_CROWBAR</PickupHash>
 					<MPPickupHash/>
 					<HumanNameHash>WEAPON_CLEAVER</HumanNameHash>
 					<MovementModeConditionalIdle/>
-					<StatName>KNIFE</StatName>
+					<StatName>CROWBAR</StatName>
 					<KnockdownCount value="-1"/>
 					<KillshotImpulseScale value="1.000000"/>
 					<NmShotTuningSet>Normal</NmShotTuningSet>
 					<AttachPoints/>
 					<GunFeedBone/>
 					<TargetSequenceGroup/>
-					<WeaponFlags>AllowMeleeBlock CarriedInHand ArmourPenetrating CanLockonOnFoot CanLockonInVehicle MeleeBlade UsableOnFoot UsableUnderwater UsableClimbing UsableInCover DoesRevivableDamage AllowCloseQuarterKills HasLowCoverSwaps NoWheelStats DangerousLookingMeleeWeapon QuitTransitionToIdleIntroOnWeaponChange DisableLeftHandIkWhenOnFoot UseFPSAimIK UseFPSSecondaryMotion UseFPSSecondaryMotion</WeaponFlags>
+					<WeaponFlags>AllowMeleeBlock CarriedInHand ArmourPenetrating CanLockonOnFoot CanLockonInVehicle MeleeClub UsableOnFoot UsableClimbing UsableInCover DoesRevivableDamage AllowCloseQuarterKills HasLowCoverSwaps NoWheelStats QuitTransitionToIdleIntroOnWeaponChange DisableLeftHandIkWhenOnFoot UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
 					<TintSpecValues ref="TINT_DEFAULT"/>
 					<FiringPatternAliases ref="NULL"/>
 					<ReloadUpperBodyFixupExpressionData ref="default"/>
@@ -206,17 +232,11 @@
 					<StealthFiringLeanAdditiveWeight value="0.000000"/>
 					<ExpandPedCapsuleRadius value="0.000000"/>
 					<AudioCollisionHash/>
-					<HudDamage value="15"/>
-					<HudSpeed value="20"/>
+					<HudDamage value="10"/>
+					<HudSpeed value="15"/>
 					<HudCapacity value="0"/>
 					<HudAccuracy value="0"/>
 					<HudRange value="0"/>
-					<CamoDiffuseTexIdxs>
-						<Item key="w_me_knife_01">
-							<Item key="0" value="1"/>
-							<Item key="1" value="2"/>
-						</Item>
-					</CamoDiffuseTexIdxs>
 				</Item>
 			</Infos>
 		</Item>

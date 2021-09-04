@@ -5,8 +5,8 @@
 		<Item>
 			<WeaponSlots>
 				<Item>
-					<OrderNumber value="414"/>
-					<Entry>SLOT_WEAPON_AIRSOFTRIFLE</Entry>
+					<OrderNumber value="427"/>
+					<Entry>SLOT_WEAPON_RIFLE2</Entry>
 				</Item>
 			</WeaponSlots>
 		</Item>
@@ -15,10 +15,10 @@
 		<Item>
 			<Infos>
 				<Item type="CWeaponInfo">
-					<Name>WEAPON_AIRSOFTRIFLE</Name>
-					<Model>w_ar_airsoftrifle</Model>
-					<Audio>AUDIO_ITEM_COMBAT_PDW</Audio>
-					<Slot>SLOT_WEAPON_AIRSOFTRIFLE</Slot>
+					<Name>WEAPON_RIFLE2</Name>
+					<Model>w_ar_rifle2</Model>
+					<Audio>AUDIO_ITEM_CARBINERIFLE</Audio>
+					<Slot>SLOT_WEAPON_RIFLE2</Slot>
 					<DamageType>BULLET</DamageType>
 					<Explosion>
 						<Default>DONTCARE</Default>
@@ -31,15 +31,15 @@
 					<FireType>INSTANT_HIT</FireType>
 					<WheelSlot>WHEEL_RIFLE</WheelSlot>
 					<Group>GROUP_RIFLE</Group>
-					<AmmoInfo ref="AMMO_BB"/>
+					<AmmoInfo ref="AMMO_RIFLE"/>
 					<AimingInfo ref="RIFLE_LO_BASE_STRAFE"/>
-					<ClipSize value="30"/>
-					<AccuracySpread value="3.000000"/>
+					<ClipSize value="20"/>
+					<AccuracySpread value="1.500000"/>
 					<AccurateModeAccuracyModifier value="0.500000"/>
 					<RunAndGunAccuracyModifier value="2.000000"/>
 					<RunAndGunAccuracyMaxModifier value="1.000000"/>
-					<RecoilAccuracyMax value="0.500000"/>
-					<RecoilErrorTime value="3.000000"/>
+					<RecoilAccuracyMax value="1.000000"/>
+					<RecoilErrorTime value="1.000000"/>
 					<RecoilRecoveryRate value="1.000000"/>
 					<RecoilAccuracyToAllowHeadShotAI value="1000.000000"/>
 					<MinHeadShotDistanceAI value="1000.000000"/>
@@ -49,17 +49,17 @@
 					<MinHeadShotDistancePlayer value="5.000000"/>
 					<MaxHeadShotDistancePlayer value="40.000000"/>
 					<HeadShotDamageModifierPlayer value="1.000000"/>
-					<Damage value="0.500000"/>
+					<Damage value="28.000000"/>
 					<DamageTime value="0.000000"/>
 					<DamageTimeInVehicle value="0.000000"/>
 					<DamageTimeInVehicleHeadShot value="0.000000"/>
 					<HitLimbsDamageModifier value="0.500000"/>
-					<NetworkHitLimbsDamageModifier value="0.800000"/>
+					<NetworkHitLimbsDamageModifier value="0.500000"/>
 					<LightlyArmouredDamageModifier value="0.750000"/>
-					<Force value="0.000000"/>
-					<ForceHitPed value="0.000000"/>
-					<ForceHitVehicle value="0.000000"/>
-					<ForceHitFlyingHeli value="0.000000"/>
+					<Force value="75.000000"/>
+					<ForceHitPed value="75.000000"/>
+					<ForceHitVehicle value="75.000000"/>
+					<ForceHitFlyingHeli value="75.000000"/>
 					<OverrideForces>
 						<Item>
 							<BoneTag>BONETAG_HEAD</BoneTag>
@@ -93,9 +93,9 @@
 						</Item>
 					</OverrideForces>
 					<ForceMaxStrengthMult value="1.000000"/>
-					<ForceFalloffRangeStart value="0.000000"/>
-					<ForceFalloffRangeEnd value="50.000000"/>
-					<ForceFalloffMin value="1.000000"/>
+					<ForceFalloffRangeStart value="150.000000"/>
+					<ForceFalloffRangeEnd value="800.000000"/>
+					<ForceFalloffMin value="4.000000"/>
 					<ProjectileForce value="0.000000"/>
 					<FragImpulse value="600.000000"/>
 					<Penetration value="0.100000"/>
@@ -109,7 +109,7 @@
 					<VehicleReloadTime value="1.000000"/>
 					<AnimReloadRate value="1.000000"/>
 					<BulletsPerAnimLoop value="1"/>
-					<TimeBetweenShots value="0.135000"/>
+					<TimeBetweenShots value="0.10000"/>
 					<TimeLeftBetweenShotsWhereShouldFireIsCached value="-1.000000"/>
 					<SpinUpTime value="0.000000"/>
 					<SpinTime value="0.000000"/>
@@ -123,26 +123,26 @@
 					<FirstPersonBulletBendingZoomedRadius value="0.375000"/>
 					<Fx>
 						<EffectGroup>WEAPON_EFFECT_GROUP_RIFLE_ASSAULT</EffectGroup>
-						<FlashFx></FlashFx>
-						<FlashFxAlt></FlashFxAlt>
-						<FlashFxFP></FlashFxFP>
+						<FlashFx>muz_assault_rifle</FlashFx>
+						<FlashFxAlt>muz_alternate_star</FlashFxAlt>
+						<FlashFxFP>muz_assault_rifle_fp</FlashFxFP>
 						<FlashFxAltFP/>
-						<MuzzleSmokeFx></MuzzleSmokeFx>
-						<MuzzleSmokeFxFP></MuzzleSmokeFxFP>
+						<MuzzleSmokeFx>muz_smoking_barrel</MuzzleSmokeFx>
+						<MuzzleSmokeFxFP>muz_smoking_barrel_fp</MuzzleSmokeFxFP>
 						<MuzzleSmokeFxMinLevel value="0.300000"/>
 						<MuzzleSmokeFxIncPerShot value="0.100000"/>
 						<MuzzleSmokeFxDecPerSec value="0.250000"/>
-						<ShellFx></ShellFx>
-						<ShellFxFP></ShellFxFP>
+						<ShellFx>eject_auto</ShellFx>
+						<ShellFxFP>eject_auto_fp</ShellFxFP>
 						<TracerFx>bullet_tracer</TracerFx>
-						<PedDamageHash></PedDamageHash>
-						<TracerFxChanceSP value="1.000000"/>
-						<TracerFxChanceMP value="1.000000"/>
-						<FlashFxChanceSP value="0.000000"/>
-						<FlashFxChanceMP value="0.000000"/>
+						<PedDamageHash>BulletLarge</PedDamageHash>
+						<TracerFxChanceSP value="0.150000"/>
+						<TracerFxChanceMP value="0.750000"/>
+						<FlashFxChanceSP value="1.000000"/>
+						<FlashFxChanceMP value="1.000000"/>
 						<FlashFxAltChance value="0.200000"/>
-						<FlashFxScale value="0.000000"/>
-						<FlashFxLightEnabled value="false"/>
+						<FlashFxScale value="1.000000"/>
+						<FlashFxLightEnabled value="true"/>
 						<FlashFxLightCastsShadows value="false"/>
 						<FlashFxLightOffsetDist value="0.000000"/>
 						<FlashFxLightRGBAMin x="255.000000" y="93.000000" z="25.000000"/>
@@ -173,13 +173,13 @@
 					<NetworkPedDamageModifier value="1.000000"/>
 					<NetworkHeadShotPlayerDamageModifier value="1.000000"/>
 					<LockOnRange value="65.000000"/>
-					<WeaponRange value="200.000000"/>
+					<WeaponRange value="800.000000"/>
 					<BulletDirectionOffsetInDegrees value="0.000000"/>
 					<AiSoundRange value="-1.000000"/>
 					<AiPotentialBlastEventRange value="-1.000000"/>
-					<DamageFallOffRangeMin value="47.500000"/>
-					<DamageFallOffRangeMax value="120.000000"/>
-					<DamageFallOffModifier value="0.300000"/>
+					<DamageFallOffRangeMin value="150.000000"/>
+					<DamageFallOffRangeMax value="800.000000"/>
+					<DamageFallOffModifier value="0.400000"/>
 					<VehicleWeaponHash/>
 					<DefaultCameraHash>DEFAULT_THIRD_PERSON_PED_AIM_CAMERA</DefaultCameraHash>
 					<CoverCameraHash>DEFAULT_THIRD_PERSON_PED_AIM_IN_COVER_CAMERA</CoverCameraHash>
@@ -196,7 +196,7 @@
 					<FirstPersonRNGRotationOffset x="0.000000" y="0.000000" z="0.000000"/>
 					<FirstPersonLTOffset x="0.000000" y="0.000000" z="0.000000"/>
 					<FirstPersonLTRotationOffset x="0.000000" y="0.000000" z="0.000000"/>
-					<FirstPersonScopeOffset x="0.00000" y="-0.0200" z="-0.0230"/>
+					<FirstPersonScopeOffset x="0.00000" y="0.0000" z="-0.0230"/>
 					<FirstPersonScopeAttachmentOffset x="0.00000" y="0.0000" z="-0.0280"/>
 					<FirstPersonScopeRotationOffset x="-0.70000" y="0.0000" z="0.0000"/>
 					<FirstPersonScopeAttachmentRotationOffset x="0.00000" y="0.0000" z="0.0000"/>
@@ -242,19 +242,19 @@
 					<FirstPersonReticuleStyleHash/>
 					<PickupHash>PICKUP_WEAPON_CARBINERIFLE</PickupHash>
 					<MPPickupHash>PICKUP_AMMO_BULLET_MP</MPPickupHash>
-					<HumanNameHash>WEAPON_AIRSOFTRIFLE</HumanNameHash>
+					<HumanNameHash>WEAPON_RIFLE2</HumanNameHash>
 					<MovementModeConditionalIdle>MMI_2Handed</MovementModeConditionalIdle>
 					<StatName>CRBNRIFLE</StatName>
 					<KnockdownCount value="-1"/>
 					<KillshotImpulseScale value="1.000000"/>
-					<NmShotTuningSet>Automatic</NmShotTuningSet>
+					<NmShotTuningSet>Normal</NmShotTuningSet>
 					<AttachPoints>
 						<Item>
-							<AttachBone>WAPClip</AttachBone>
+							<AttachBone>WAPFlshLasr</AttachBone>
 							<Components>
 								<Item>
-									<Default value="true"/>
-									<Name>COMPONENT_AIRSOFTRIFLE_CLIP_01</Name>
+									<Default value="false"/>
+									<Name>COMPONENT_AT_AR_FLSH</Name>
 								</Item>
 							</Components>
 						</Item>
@@ -262,12 +262,17 @@
 							<AttachBone>WAPClip</AttachBone>
 							<Components>
 								<Item>
-									<Name>COMPONENT_CARBINERIFLE_CLIP_01</Name>
 									<Default value="true"/>
+									<Name>COMPONENT_RIFLE2_CLIP_01</Name>
 								</Item>
+							</Components>
+						</Item>
+						<Item>
+							<AttachBone>WAPSupp</AttachBone>
+							<Components>
 								<Item>
-									<Name>COMPONENT_CARBINERIFLE_CLIP_02</Name>
 									<Default value="false"/>
+									<Name>COMPONENT_AR_RIFLE2_SUPP</Name>
 								</Item>
 							</Components>
 						</Item>
@@ -314,7 +319,7 @@
 					</AttachPoints>
 					<GunFeedBone/>
 					<TargetSequenceGroup/>
-					<WeaponFlags>CarriedInHand Automatic Silenced Gun NonViolent SuppressGunshotEvent NonLethal CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover AllowEarlyExitFromFireAnimAfterBulletFired NoLeftHandIKWhenBlocked HasLowCoverReloads HasLowCoverSwaps LongWeapon UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
+					<WeaponFlags>CarriedInHand Gun CanLockonOnFoot CanLockonInVehicle AllowEarlyExitFromFireAnimAfterBulletFired OnlyFireOneShotPerTriggerPress CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover NoLeftHandIKWhenBlocked AllowCloseQuarterKills HasLowCoverReloads HasLowCoverSwaps LongWeapon UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
 					<TintSpecValues ref="TINT_DEFAULT"/>
 					<FiringPatternAliases ref="FIRING_PATTERN_RIFLE"/>
 					<ReloadUpperBodyFixupExpressionData ref="default"/>

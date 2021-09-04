@@ -7,7 +7,7 @@
 			<UnholsterClips>
 				<Item>
 					<Weapons>
-						<Item>WEAPON_SLEDGEHAMMER</Item>
+						<Item>WEAPON_KATANA</Item>
 					</Weapons>
 					<Clip>unarmed_holster_2h_melee</Clip>
 				</Item>
@@ -18,7 +18,7 @@
 			<UnholsterClips>
 				<Item>
 					<Weapons>
-						<Item>WEAPON_SLEDGEHAMMER</Item>
+						<Item>WEAPON_KATANA</Item>
 					</Weapons>
 					<Clip>2h_melee_holster_2h_melee</Clip>
 				</Item>
@@ -29,7 +29,7 @@
 			<UnholsterClips>
 				<Item>
 					<Weapons>
-						<Item>WEAPON_SLEDGEHAMMER</Item>
+						<Item>WEAPON_KATANA</Item>
 					</Weapons>
 					<Clip>1h_holster_2h_melee</Clip>
 				</Item>
@@ -40,7 +40,7 @@
 			<UnholsterClips>
 				<Item>
 					<Weapons>
-						<Item>WEAPON_SLEDGEHAMMER</Item>
+						<Item>WEAPON_KATANA</Item>
 					</Weapons>
 					<Clip>2h_holster_2h_melee</Clip>
 				</Item>
@@ -51,7 +51,7 @@
 			<UnholsterClips>
 				<Item>
 					<Weapons>
-						<Item>WEAPON_SLEDGEHAMMER</Item>
+						<Item>WEAPON_KATANA</Item>
 						<Item>WEAPON_GOLFCLUB</Item>
 					</Weapons>
 					<Clip>mini_holster_2h_melee</Clip>
@@ -63,7 +63,7 @@
 			<UnholsterClips>
 				<Item>
 					<Weapons>
-						<Item>WEAPON_SLEDGEHAMMER</Item>
+						<Item>WEAPON_KATANA</Item>
 					</Weapons>
 					<Clip>unarmed_holster_unarmed</Clip>
 				</Item>
@@ -74,7 +74,7 @@
 			<UnholsterClips>
 				<Item>
 					<Weapons>
-						<Item>WEAPON_SLEDGEHAMMER</Item>
+						<Item>WEAPON_KATANA</Item>
 					</Weapons>
 					<Clip>unarmed_holster_unarmed</Clip>
 				</Item>
@@ -85,7 +85,7 @@
 			<UnholsterClips>
 				<Item>
 					<Weapons>
-						<Item>WEAPON_SLEDGEHAMMER</Item>
+						<Item>WEAPON_KATANA</Item>
 					</Weapons>
 					<Clip>1h_holster_unarmed</Clip>
 				</Item>
@@ -96,7 +96,7 @@
 			<UnholsterClips>
 				<Item>
 					<Weapons>
-						<Item>WEAPON_SLEDGEHAMMER</Item>
+						<Item>WEAPON_KATANA</Item>
 					</Weapons>
 					<Clip>2h_holster_unarmed</Clip>
 				</Item>
@@ -110,7 +110,7 @@
 				<Item>
 					<Item>
 						<Weapons>
-							<Item>WEAPON_SLEDGEHAMMER</Item>
+							<Item>WEAPON_KATANA</Item>
 						</Weapons>
 						<ClipSets>
 							<Item>
@@ -134,7 +134,7 @@
 				<Item>
 					<Item>
 						<Weapons>
-							<Item>WEAPON_SLEDGEHAMMER</Item>
+							<Item>WEAPON_KATANA</Item>
 						</Weapons>
 						<ClipSets>
 							<Item>
@@ -165,7 +165,7 @@
 				<Item>
 					<Item>
 						<Weapons>
-							<Item>WEAPON_SLEDGEHAMMER</Item>
+							<Item>WEAPON_KATANA</Item>
 						</Weapons>
 						<ClipSets>
 							<Item>
@@ -189,7 +189,7 @@
 				<Item>
 					<Item>
 						<Weapons>
-							<Item>WEAPON_SLEDGEHAMMER</Item>
+							<Item>WEAPON_KATANA</Item>
 						</Weapons>
 						<ClipSets>
 							<Item>
@@ -220,7 +220,7 @@
 				<Item>
 					<Item>
 						<Weapons>
-							<Item>WEAPON_SLEDGEHAMMER</Item>
+							<Item>WEAPON_KATANA</Item>
 						</Weapons>
 						<ClipSets>
 							<Item>
@@ -244,7 +244,7 @@
 				<Item>
 					<Item>
 						<Weapons>
-							<Item>WEAPON_SLEDGEHAMMER</Item>
+							<Item>WEAPON_KATANA</Item>
 						</Weapons>
 						<ClipSets>
 							<Item>
@@ -275,7 +275,7 @@
 				<Item>
 					<Item>
 						<Weapons>
-							<Item>WEAPON_SLEDGEHAMMER</Item>
+							<Item>WEAPON_KATANA</Item>
 						</Weapons>
 						<ClipSets>
 							<Item>
@@ -299,7 +299,7 @@
 				<Item>
 					<Item>
 						<Weapons>
-							<Item>WEAPON_SLEDGEHAMMER</Item>
+							<Item>WEAPON_KATANA</Item>
 						</Weapons>
 						<ClipSets>
 							<Item>
@@ -330,7 +330,7 @@
 				<Item>
 					<Item>
 						<Weapons>
-							<Item>WEAPON_SLEDGEHAMMER</Item>
+							<Item>WEAPON_KATANA</Item>
 						</Weapons>
 						<ClipSets>
 							<Item>
@@ -354,7 +354,7 @@
 				<Item>
 					<Item>
 						<Weapons>
-							<Item>WEAPON_SLEDGEHAMMER</Item>
+							<Item>WEAPON_KATANA</Item>
 						</Weapons>
 						<ClipSets>
 							<Item>

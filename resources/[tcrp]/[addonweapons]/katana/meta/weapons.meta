@@ -5,8 +5,8 @@
 		<Item>
 			<WeaponSlots>
 				<Item>
-					<OrderNumber value="437"/>
-					<Entry>SLOT_WEAPON_SLEDGEHAMMER</Entry>
+					<OrderNumber value="436"/>
+					<Entry>SLOT_WEAPON_KATANA</Entry>
 				</Item>
 			</WeaponSlots>
 		</Item>
@@ -15,10 +15,10 @@
 		<Item>
 			<Infos>
 				<Item type="CWeaponInfo">
-					<Name>WEAPON_SLEDGEHAMMER</Name>
-					<Model>w_me_sledgehammer</Model>
+					<Name>WEAPON_KATANA</Name>
+					<Model>w_me_katana</Model>
 					<Audio/>
-					<Slot>SLOT_WEAPON_SLEDGEHAMMER</Slot>
+					<Slot>SLOT_WEAPON_KATANA</Slot>
 					<DamageType>MELEE</DamageType>
 					<Explosion>
 						<Default>DONTCARE</Default>
@@ -203,7 +203,7 @@
 					<FirstPersonReticuleStyleHash/>
 					<PickupHash>PICKUP_WEAPON_BAT</PickupHash>
 					<MPPickupHash/>
-					<HumanNameHash>WEAPON_SLEDGEHAMMER</HumanNameHash>
+					<HumanNameHash>WEAPON_KATANA</HumanNameHash>
 					<MovementModeConditionalIdle/>
 					<StatName>BAT</StatName>
 					<KnockdownCount value="-1"/>
