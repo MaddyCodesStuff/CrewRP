@@ -213,7 +213,6 @@ Citizen.CreateThread(function()
 		Citizen.Wait(Config.BlipUpdateTime * 1000)
 		if isTaken == 1 and IsPedInAnyVehicle(GetPlayerPed(-1)) and StopTimer <= Config.TrackerTimer then
 			StopTimer = StopTimer + 1
-			print(StopTimer)
 			local coords = GetEntityCoords(GetPlayerPed(-1))
 			TriggerServerEvent('esx_carthief:alertcops', coords)
 		end
