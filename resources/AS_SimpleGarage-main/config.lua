@@ -571,7 +571,7 @@ Config.Garages = {
                 ["position"] = vector3(-805.79, -1496.66, 1.60)
             },
             ["vehicle"] = {
-                ["position"] = vector3(-814.15, -1487.77, 0.79), 
+                ["position"] = vector3(-814.15, -1487.77, 1.79), 
                 ["heading"] = 100.12
             }
         },
@@ -609,7 +609,7 @@ Config.Garages = {
                 ["position"] = vector3(-275.53, 6638.14, 7.47)
             },
             ["vehicle"] = {
-                ["position"] = vector3(-292.24, 6648.27, 0.72), 
+                ["position"] = vector3(-292.24, 6648.27, 2.72), 
                 ["heading"] = 136.00
             }
         },
