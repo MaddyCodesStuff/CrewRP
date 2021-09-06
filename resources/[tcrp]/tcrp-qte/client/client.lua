@@ -1,16 +1,17 @@
-active = false
-local qteKeys = {44,32,38,45}
 RegisterCommand('qte', function()
         SendNUIMessage({
 
             action = 'showbar',
-            difficulty = 15
+            difficulty = 15,
+            min = 50,
+            max = 65
 
         })
         SetNuiFocus(true,false)
 end)
 
 RegisterNUICallback('finish', function(data, cb)
+    print(data)
     SetNuiFocus(false,false)
     cb('ok')
 
