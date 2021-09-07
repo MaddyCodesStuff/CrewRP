@@ -686,6 +686,11 @@ Config.Weapons = {
 		components = {}
 	},
 	{
+		name       = 'WEAPON_FLAMETHROWER',
+		label      = _U('weapon_flamethrower'),
+		components = {}
+	},
+	{
 		name       = 'WEAPON_AIRSOFTRIFLE',
 		label      = _U('weapon_airsoftrifle'),
 		components = {}
@@ -736,6 +741,11 @@ Config.Weapons = {
 		components = {}
 	},
 	{
+		name       = 'WEAPON_KATANA',
+		label      = _U('weapon_katana'),
+		components = {}
+	},
+	{
 		name       = 'WEAPON_SCREWDRIVER',
 		label      = _U('weapon_screwdriver'),
 		components = {}
@@ -748,6 +758,11 @@ Config.Weapons = {
 	{
 		name       = 'WEAPON_SHOVEL',
 		label      = _U('weapon_shovel'),
+		components = {}
+	},
+	{
+		name       = 'WEAPON_HOCKEYSTICK',
+		label      = _U('weapon_hockeystick'),
 		components = {}
 	},
 	{
