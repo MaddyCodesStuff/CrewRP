@@ -39,10 +39,10 @@
           <Model />
           <Audio />
           <Slot />
-          <AmmoMax value="250" />
+          <AmmoMax value="1000" />
           <AmmoMax50 value="1000" />
           <AmmoMax100 value="9999" />
-          <AmmoMaxMP value="250" />
+          <AmmoMaxMP value="1000" />
           <AmmoMax50MP value="1000" />
           <AmmoMax100MP value="9999" />
           <AmmoFlags />
@@ -190,7 +190,7 @@
           <NetworkPedDamageModifier value="1.000000" />
           <NetworkHeadShotPlayerDamageModifier value="1.500000" />
           <LockOnRange value="0.000000" />
-          <WeaponRange value="100.000000" />
+          <WeaponRange value="200.000000" />
           <BulletDirectionOffsetInDegrees value="0.000000" />
           <BulletDirectionPitchOffset value="0.000000" />
           <BulletDirectionPitchHomingOffset value="0.000000" />
