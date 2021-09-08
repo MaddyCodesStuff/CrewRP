@@ -1405,7 +1405,7 @@ DP.Emotes      = {
         EmoteMoving = false,
         EmoteLoop   = true,
     } },
-    ["bigdogbark"]       = { "creatures@retriever@amb@world_dog_barking@base", "base", "LARGE DOG PEDS ONLY BARKING", AnimationOptions = {
+    ["bigdogbark"]       = { "creatures@rottweiler@amb@world_dog_barking@idle_a", "idle_a", "LARGE DOG PEDS ONLY BARKING", AnimationOptions = {
         EmoteMoving = false,
         EmoteLoop   = true,
     } },
