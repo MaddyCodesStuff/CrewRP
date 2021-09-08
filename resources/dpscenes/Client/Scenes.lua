@@ -271,7 +271,7 @@ RegisterCommand("scenemove", function()
 		end
 	end
 	if Move.Id ~= 0 then
-		StartMoveScene(Scenes[Move.Id], Move.Id)
+		TriggerServerEvent("Scene:AttemptMove", Move.Id)
 	else
 		Chat(Lang("CouldntFindMove"))
 	end
@@ -329,6 +329,7 @@ RegisterCommand("scenecoords", function()
 end)
 
 function StartMoveScene(scene, id)
+	print(scene, id)
 	MovingScene = {
 		Scene = scene,
 		Id = id,
