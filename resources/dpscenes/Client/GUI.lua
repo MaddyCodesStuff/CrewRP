@@ -257,6 +257,8 @@ Menus = {
 				local Cs = Scene.Function.Current
 				if Scene.Function.Current == "GPS" or Scene.Function.Current == "Teleporter" then
 					Cs = Cs.." ("..Scene.Function.String..")"
+				elseif Scene.Function.Current == "Fire" then
+					Cs = 'Fire'
 				elseif Scene.Function.Variable ~= "" then
 					Cs = Cs.." ("..Scene.Function.Variable..")"
 				end
