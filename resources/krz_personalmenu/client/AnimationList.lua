@@ -1401,6 +1401,26 @@ DP.Emotes      = {
         PtfxInfo      = _U('pee'),
         PtfxWait      = 3000,
     } },
+    ["bigdogsit"]       = { "creatures@retriever@amb@world_dog_sitting@base", "base", "LARGE DOG PEDS ONLY SIT", AnimationOptions = {
+        EmoteMoving = false,
+        EmoteLoop   = true,
+    } },
+    ["bigdogbark"]       = { "creatures@retriever@amb@world_dog_barking@base", "base", "LARGE DOG PEDS ONLY BARKING", AnimationOptions = {
+        EmoteMoving = false,
+        EmoteLoop   = true,
+    } },
+    ["smalldogsit"]       = { "creatures@pug@amb@world_dog_sitting@base", "base", "SMALL DOG PEDS ONLY SIT", AnimationOptions = {
+        EmoteMoving = false,
+        EmoteLoop   = true,
+    } },
+    ["smalldogbark"]       = { "creatures@pug@amb@world_dog_barking@base", "base", "SMALL DOG PEDS ONLY BARKING", AnimationOptions = {
+        EmoteMoving = false,
+        EmoteLoop   = true,
+    } },
+    ["catsleep"]       = { "creatures@cat@amb@world_cat_sleeping_ground@base", "base", "CAT PEDS ONLY SLEEP", AnimationOptions = {
+        EmoteMoving = false,
+        EmoteLoop   = true,
+    } },
     
     -----------------------------------------------------------------------------------------------------------
     ------ These are Scenarios, some of these dont work on women and some other issues, but still good to have.
