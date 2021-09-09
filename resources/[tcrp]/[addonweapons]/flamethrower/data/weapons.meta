@@ -39,12 +39,12 @@
           <Model />
           <Audio />
           <Slot />
-          <AmmoMax value="1000" />
-          <AmmoMax50 value="1000" />
-          <AmmoMax100 value="9999" />
-          <AmmoMaxMP value="1000" />
-          <AmmoMax50MP value="1000" />
-          <AmmoMax100MP value="9999" />
+          <AmmoMax value="15000" />
+          <AmmoMax50 value="15000" />
+          <AmmoMax100 value="15000" />
+          <AmmoMaxMP value="15000" />
+          <AmmoMax50MP value="15000" />
+          <AmmoMax100MP value="15000" />
           <AmmoFlags />
           <Explosion>
             <Default>MOLOTOV</Default>
