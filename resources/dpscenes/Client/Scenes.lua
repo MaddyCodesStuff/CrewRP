@@ -329,7 +329,6 @@ RegisterCommand("scenecoords", function()
 end)
 
 function StartMoveScene(scene, id)
-	print(scene, id)
 	MovingScene = {
 		Scene = scene,
 		Id = id,
