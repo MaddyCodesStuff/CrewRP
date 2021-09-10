@@ -44,7 +44,18 @@ function TogglePlayerManagement()
 		end
 	end
 end
-
+RegisterNetEvent('kaia:vehiclenum')
+AddEventHandler('kaia:vehiclenum', function(vehicles)
+	updatedvehs = {}
+	for k,v in pairs(vehicles) do
+		local displaytext = GetDisplayNameFromVehicleModel(k)
+    	local name = GetLabelText(displaytext)
+   		if (name == "NULL") then
+        	name = displaytext
+    	end
+	end
+    TriggerServerEvent('kaia:vehiclename', updatedvehs)
+end)
 Citizen.CreateThread(function()
 	while ESX == nil do
 		TriggerEvent('esx:getSharedObject', function(obj)
