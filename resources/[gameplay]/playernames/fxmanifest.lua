@@ -1,4 +1,7 @@
 -- add scripts
+fx_version 'cerulean'
+games { 'rdr3', 'gta5' }
+
 client_script 'playernames_api.lua'
 server_script 'playernames_api.lua'
 
@@ -22,6 +25,3 @@ server_exports(exportList)
 files {
     'template/template.lua'
 }
-
--- support the latest resource manifest
-resource_manifest_version '05cfa83c-a124-4cfa-a768-c24a5811d8f9'
