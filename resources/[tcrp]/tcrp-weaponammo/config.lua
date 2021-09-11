@@ -18,7 +18,7 @@ Config = {
         },
         ammo_bb  = {
             weapon_type = 970310034,
-            qty         = 100
+            qty         = 50
         },
         ammo_shotgun = {
             weapon_type = 860033945,

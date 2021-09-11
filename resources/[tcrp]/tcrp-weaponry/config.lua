@@ -6,6 +6,7 @@ recoils = {
     [-1716589765]  = {["kick"] = 1.0, ["shake"] = 0.15,["scope"] = false,}, -- PISTOL.50
     [324215364]    = {["kick"] = 0.4, ["shake"] = 0.03,["scope"] = false,}, -- MICRO SMG
     [736523883]    = {["kick"] = 0.4, ["shake"] = 0.02,["scope"] = false,}, -- SMG
+    [569418327]    = {["kick"] = 0.1, ["shake"] = 0.02,["scope"] = false,}, -- Vintage SMG
     [2024373456]   = {["kick"] = 0.2, ["shake"] = 0.02,["scope"] = false,}, -- SMG MK2
     [-270015777]   = {["kick"] = 0.4, ["shake"] = 0.03,["scope"] = false,}, -- ASSAULT SMG
     [-1074790547]  = {["kick"] = 0.3, ["shake"] = 0.03,["scope"] = false,}, -- ASSAULT RIFLE
