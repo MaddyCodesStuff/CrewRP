@@ -16,6 +16,11 @@ AddEventHandler("FireScript:FirePutOut", function(x, y, z)
     end
 end)
 
+RegisterServerEvent("SceneStartFire")
+AddEventHandler("SceneStartFire", function(fire)
+    TriggerClientEvent('FireScript:StartFireAtPlayer', -1, source, fire.num, fire.rad, fire.explode == "true")
+end)
+
 RegisterCommand('stopfirepos', function(source, args, rawCommand)
     if checkPerms(source) then
         --Args are:X, Y, Z)

@@ -226,6 +226,48 @@ Config = {
 				end
 			end
 		},
+		{
+			Name = "Fire",
+			Admin = true,
+			Function = function(c)
+				local sid = GetPlayerServerId(PlayerId())
+				TriggerServerEvent('SceneStartFire', c)
+			end,
+			Alter = function()
+				local Arg = ""
+				if Scene.Function then
+					Arg = Scene.Function.Variable
+					if Scene.Function.Current ~= "Fire" then
+						Arg = ""
+					end
+				end
+				local fire = nil
+				local numfires = nil
+				local radius = nil
+				local explosion = nil
+				local fnum, fradius, explosion = TextInput("Start a Fire!.", Arg, 50, false, true)
+				numfires = tonumber(fnum)
+				radius = tonumber(fradius)
+				if numfires ~= nil and radius ~= nil and explosion ~= nil then
+					if numfires == 0 or numfires >= 10 and numfires <= 30 then
+						if radius == 0 or radius >= 10 and radius <= 30 then
+							fire = {num = numfires, rad = radius, explode = explosion}
+						end
+					end
+				end
+				if fire ~= nil then
+					Scene.Function = {
+						Current = "Fire",
+						Prefix = false,
+						Description = "Start a Fire",
+						Variable = fire,
+						String = 'Fire test',
+					}
+				else
+					Chat('Invalid Entry')
+				end
+			end
+		},
 	},
 	Colours = {
 		{Name = "Black", Colour = { 0, 0, 0}},

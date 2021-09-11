@@ -144,6 +144,21 @@ function DrawScene(i,p)
 						Chat(Lang("CantRightNow"))
 					end
 				end
+			elseif i.Function.Current == "Fire"  then
+				SetTextComponentFormat("TWOSTRINGS")
+				AddTextComponentString(Lang("Interact"))
+				AddTextComponentString("\n~b~"..i.Function.Description)
+				EndTextCommandDisplayHelp(0,0,0,-1)
+				if IsControlJustReleased(0, GetKey("E")) then
+					for k,v in pairs(Scenes) do
+						if v.Location == i.Location then
+							TriggerServerEvent("Scene:AttemptDelete", k, false, true)
+						end
+					end
+					if not HandleSceneInteract(i) then
+						Chat(Lang("CantRightNow"))
+					end
+				end
 			elseif i.Function.Current ~= "None"  then
 				SetTextComponentFormat("TWOSTRINGS")
 				AddTextComponentString(Lang("Interact"))
@@ -256,7 +271,7 @@ RegisterCommand("scenemove", function()
 		end
 	end
 	if Move.Id ~= 0 then
-		StartMoveScene(Scenes[Move.Id], Move.Id)
+		TriggerServerEvent("Scene:AttemptMove", Move.Id)
 	else
 		Chat(Lang("CouldntFindMove"))
 	end
