@@ -33,24 +33,6 @@ end)
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
-        DisableControlAction(1, Config.crouch.clavier, true)
-
-        if IsDisabledControlJustReleased(1, Config.crouch.clavier) and IsUsingKeyboard(2) then
-            if (DoesEntityExist(plyPed)) and (not IsEntityDead(plyPed)) and (IsPedOnFoot(plyPed)) then
-                crouched = not crouched
-                if crouched then
-                    RequestAnimSet('move_ped_crouched')
-
-                    while not HasAnimSetLoaded('move_ped_crouched') do
-                        Citizen.Wait(10)
-                    end
-
-                    SetPedMovementClipset(plyPed, 'move_ped_crouched', 0.25)
-                else
-                    ResetPedMovementClipset(plyPed, 0)
-                end
-            end
-        end
 
         if IsControlJustPressed(1, Config.handsUP.clavier) and IsUsingKeyboard(2) then
             if (DoesEntityExist(plyPed)) and not (IsEntityDead(plyPed)) and (IsPedOnFoot(plyPed)) then
