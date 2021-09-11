@@ -415,7 +415,7 @@
           </AttachPoints>
           <GunFeedBone />
           <TargetSequenceGroup />
-          <WeaponFlags>CarriedInHand ApplyBulletForce Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover NoLeftHandIKWhenBlocked AllowCloseQuarterKills NeedsGunCockingInCover HasLowCoverReloads HasLowCoverSwaps ProcessGripAnim TorsoIKForWeaponBlock LongWeapon UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
+          <WeaponFlags>CarriedInHand ApplyBulletForce Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover NoLeftHandIKWhenBlocked NeedsGunCockingInCover HasLowCoverReloads HasLowCoverSwaps ProcessGripAnim TorsoIKForWeaponBlock LongWeapon UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
           <TintSpecValues ref="TINT_GUNRUNNING" />
           <FiringPatternAliases ref="FIRING_PATTERN_PUMPSHOTGUN" />
           <ReloadUpperBodyFixupExpressionData ref="default" />
