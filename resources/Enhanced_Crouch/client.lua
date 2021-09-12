@@ -98,3 +98,9 @@ RegisterCommand('crouch', function()
 end, false)
 
 RegisterKeyMapping('crouch', 'Crouch', 'keyboard', 'C') -- now its better player can change to any bottom they want
+
+IsCrouched = function()
+    return Crouched
+end
+
+exports("IsCrouched", IsCrouched)
