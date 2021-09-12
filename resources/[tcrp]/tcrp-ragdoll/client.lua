@@ -13,11 +13,6 @@ RegisterCommand('ragdoll', function()
     --print(IsPedGettingIntoAVehicle(GetPlayerPed(-1)))
     if not IsPedInAnyVehicle(GetPlayerPed(-1), false) then
         ragdoll = not ragdoll
-        Citizen.CreateThread(function()
-            while ragdoll do
-                SetPedToRagdoll(GetPlayerPed(-1), 1000, 1000, 0, 0, 0, 0)
-            end
-        end)
         if not ragdoll then
             shownHelp = false
         end
@@ -31,6 +26,15 @@ RegisterCommand('ragdoll', function()
         --  ESX.ShowHelpNotification("Press ~INPUT_VEH_PREV_RADIO~ to stand up")
         --shownHelp = true
     --end
+end)
+
+Citizen.CreateThread(function()
+    while true do
+        Citizen.Wait(0)
+        if ragdoll then
+            SetPedToRagdoll(GetPlayerPed(-1), 1000, 1000, 0, 0, 0, 0)
+        end
+    end
 end)
 
 RegisterNetEvent('ragdoll:toggle')
