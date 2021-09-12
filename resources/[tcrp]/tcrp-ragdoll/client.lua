@@ -9,35 +9,28 @@ Citizen.CreateThread(function()
     end
 end)
 
-Citizen.CreateThread(function()
-    while true do
-        Citizen.Wait(0)
-        --print(IsPedGettingIntoAVehicle(GetPlayerPed(-1)))
-        if IsControlJustPressed(2, 303) and not IsPedInAnyVehicle(GetPlayerPed(-1), false) then
-            ragdoll = not ragdoll
-            if not ragdoll then
-                shownHelp = false
+RegisterCommand('ragdoll', function()
+    --print(IsPedGettingIntoAVehicle(GetPlayerPed(-1)))
+    if not IsPedInAnyVehicle(GetPlayerPed(-1), false) then
+        ragdoll = not ragdoll
+        Citizen.CreateThread(function()
+            while ragdoll do
+                SetPedToRagdoll(GetPlayerPed(-1), 1000, 1000, 0, 0, 0, 0)
             end
-        end
-        -- Don't ragdoll if player is dead
-        --if IsPlayerDead(PlayerId()) and ragdoll == true then
-          --  ragdoll = false
-            --shownHelp = false
-        --end
-        --if ragdoll == true and not shownHelp then
-          --  ESX.ShowHelpNotification("Press ~INPUT_VEH_PREV_RADIO~ to stand up")
-            --shownHelp = true
-        --end
-    end
-end)
-
-Citizen.CreateThread(function()
-    while true do
-        Citizen.Wait(0)
-        if ragdoll then
-            SetPedToRagdoll(GetPlayerPed(-1), 1000, 1000, 0, 0, 0, 0)
+        end)
+        if not ragdoll then
+            shownHelp = false
         end
     end
+    -- Don't ragdoll if player is dead
+    --if IsPlayerDead(PlayerId()) and ragdoll == true then
+        --  ragdoll = false
+        --shownHelp = false
+    --end
+    --if ragdoll == true and not shownHelp then
+        --  ESX.ShowHelpNotification("Press ~INPUT_VEH_PREV_RADIO~ to stand up")
+        --shownHelp = true
+    --end
 end)
 
 RegisterNetEvent('ragdoll:toggle')
@@ -55,3 +48,5 @@ AddEventHandler('ragdoll:set', function(value)
         shownHelp = false
     end
 end)
+
+RegisterKeyMapping('ragdoll','Ragdoll', 'keyboard', 'U')
