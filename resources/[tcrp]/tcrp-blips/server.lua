@@ -37,3 +37,12 @@ AddEventHandler("tcrp-blips:emergencytoggle", function(toggle)
         TriggerClientEvent("tcrp-blips:emergency", onRadio[k]["source"], onRadio)
     end
 end)
+
+RegisterNetEvent("tcrp-blips:businesssign")
+AddEventHandler("tcrp-blips:businesssign", function(toggle, id)
+    if toggle then
+        TriggerClientEvent("tcrp-blips:updateblip", -1, id, {["Info.statusLeft"] = "Status", ["Info.statusRight"] = "~g~Open", ["opacity"] = 255})
+    else
+        TriggerClientEvent("tcrp-blips:updateblip", -1, id, {["Info.statusLeft"] = "Status", ["Info.statusRight"] = "~r~Closed", ["opacity"] = 100})
+    end
+end)

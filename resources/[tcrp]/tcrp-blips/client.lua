@@ -407,133 +407,127 @@ end)
 
 RegisterNetEvent("tcrp-blips:updateblip")
 AddEventHandler("tcrp-blips:updateblip", function(blipsource, table)
-    local blip = nil
-    local entityblip = GetBlipFromEntity(blipsource)
-    local blipconfig = table
-    if entityblip ~= nil or 0 then 
-        local blip = entityblip
-    elseif blipsource ~= nil or 0 then 
-        local blip = blipsource
-    else
-        local blip = nil
-    end
+    local blip = Blips.Main[blipsource]["id"]
     if blip ~= nil then
-        if blipconfig["sprite"] ~= nil then
-            SetBlipSprite(blip, blipconfig["sprite"])
+        if table["sprite"] ~= nil then
+            SetBlipSprite(blip, table["sprite"])
         end
-        if blipconfig["display"] ~= nil then
-            SetBlipDisplay(blip, blipconfig["display"])
+        if table["display"] ~= nil then
+            SetBlipDisplay(blip, table["display"])
         end
-        if blipconfig["opacity"] ~= nil then
-            SetBlipAlpha(blip, blipconfig["opacity"])
+        if table["opacity"] ~= nil then
+            SetBlipAlpha(blip, table["opacity"])
         end
-        if blipconfig["type"] ~= nil then
-        SetBlipCategory(blip, blipconfig["type"])
+        if table["type"] ~= nil then
+        SetBlipCategory(blip, table["type"])
         end
-        if blipconfig["layer"] ~= nil then
-        SetBlipPriority(blip, blipconfig["layer"])
+        if table["layer"] ~= nil then
+        SetBlipPriority(blip, table["layer"])
         end
-        if blipconfig["scale"] ~= nil then
-        SetBlipScale(blip, blipconfig["scale"])
+        if table["scale"] ~= nil then
+        SetBlipScale(blip, table["scale"])
         end
-        if blipconfig["color"] ~= nil then
-        SetBlipColour(blip, blipconfig["color"])
+        if table["color"] ~= nil then
+        SetBlipColour(blip, table["color"])
         end
-        if blipconfig["hidden"] ~= nil then
-        SetBlipHiddenOnLegend(blip, blipconfig["hidden"])
+        if table["hidden"] ~= nil then
+        SetBlipHiddenOnLegend(blip, table["hidden"])
         end
-        if blipconfig["rotation"] ~= nil then
-            SetBlipRotation(blip, blipconfig["rotation"])
+        if table["rotation"] ~= nil then
+            SetBlipRotation(blip, table["rotation"])
         end
-        if blipconfig["scaleX"] or blipconfig["scaleY"] ~= nil then
-            SetBlipScaleTransformation(blip, blipconfig["scaleX"] or 1.0,blipconfig["scaleY"] or 1.0)
+        if table["scaleX"] or table["scaleY"] ~= nil then
+            SetBlipScaleTransformation(blip, table["scaleX"] or 1.0,table["scaleY"] or 1.0)
         end
-        if blipconfig["checkmark"] ~= nil then
-            ShowTickOnBlip(blip, blipconfig["checkmark"])
+        if table["checkmark"] ~= nil then
+            ShowTickOnBlip(blip, table["checkmark"])
         end
-        if blipconfig["blueoutline"] ~= nil then
-            ShowOutlineIndicatorOnBlip(blip, blipconfig["blueoutline"])
+        if table["blueoutline"] ~= nil then
+            ShowOutlineIndicatorOnBlip(blip, table["blueoutline"])
         end
-        if blipconfig["shrink"] ~= nil then
-            SetBlipShrink(blip, blipconfig["shrink"])
+        if table["shrink"] ~= nil then
+            SetBlipShrink(blip, table["shrink"])
         end
-        if blipconfig["number"] ~= nil then
-            ShowNumberOnBlip(blip, blipconfig["number"])
+        if table["number"] ~= nil then
+            ShowNumberOnBlip(blip, table["number"])
         end
-        if blipconfig["outlineonly"] ~= nil then
-            SetRadiusBlipEdge(blip, blipconfig["outlineonly"])
+        if table["outlineonly"] ~= nil then
+            SetRadiusBlipEdge(blip, table["outlineonly"])
         end
-        if blipconfig["color2red"] and blipconfig["color2green"] and blipconfig["color2blue"] ~= nil then
-            SetBlipSecondaryColour(blip, blipconfig["color2red"], blipconfig["color2green"], blipconfig["color2blue"])
+        if table["color2red"] and table["color2green"] and table["color2blue"] ~= nil then
+            SetBlipSecondaryColour(blip, table["color2red"], table["color2green"], table["color2blue"])
         end
-        if blipconfig["cone"] ~= nil then
-            SetBlipShowCone(blip, blipconfig["cone"])
+        if table["cone"] ~= nil then
+            SetBlipShowCone(blip, table["cone"])
         end
-        if blipconfig["Info.toggle"] == true then
-            exports['blip_info']:SetBlipInfoTitle(blip, blipconfig["Info.title"] or blipconfig["name"], false)
-            exports['blip_info']:SetBlipInfoImage(blip, blipconfig["Info.dictionary"] or Config.DefaultDictionary, blipconfig["Info.image"] or Config.DefaultImage)
+        if table["Info.toggle"] == true then
+            exports['blip_info']:SetBlipInfoTitle(blip, table["Info.title"] or table["name"], false)
+            exports['blip_info']:SetBlipInfoImage(blip, table["Info.dictionary"] or Config.DefaultDictionary, table["Info.image"] or Config.DefaultImage)
         end
-        if blipconfig["Info.textLeft"] and blipconfig["Info.textRight"] ~= nil then
-            exports['blip_info']:AddBlipInfoText(blip, blipconfig["Info.textLeft"], blipconfig["Info.textRight"])
+        if table["Info.textLeft"] and table["Info.textRight"] ~= nil then
+            exports['blip_info']:AddBlipInfoText(blip, table["Info.textLeft"], table["Info.textRight"])
         end
-        if blipconfig["Info.nameLeft"] and blipconfig["Info.nameRight"] ~= nil then
-            exports['blip_info']:AddBlipInfoName(blip, blipconfig["Info.nameLeft"], blipconfig["Info.nameRight"])
+        if table["Info.nameLeft"] and table["Info.nameRight"] ~= nil then
+            exports['blip_info']:AddBlipInfoName(blip, table["Info.nameLeft"], table["Info.nameRight"])
         end
-        if blipconfig["Info.text2Left"] and blipconfig["Info.text2Right"] ~= nil then
-            exports['blip_info']:AddBlipInfoText(blip, blipconfig["Info.text2Left"], blipconfig["Info.text2Right"])
+        if table["Info.text2Left"] and table["Info.text2Right"] ~= nil then
+            exports['blip_info']:AddBlipInfoText(blip, table["Info.text2Left"], table["Info.text2Right"])
         end
-        if blipconfig["Info.name2Left"] and blipconfig["Info.name2Right"] ~= nil then
-            exports['blip_info']:AddBlipInfoName(blip, blipconfig["Info.name2Left"], blipconfig["Info.name2Right"])
+        if table["Info.name2Left"] and table["Info.name2Right"] ~= nil then
+            exports['blip_info']:AddBlipInfoName(blip, table["Info.name2Left"], table["Info.name2Right"])
         end
-        if blipconfig["Info.text3Left"] and blipconfig["Info.text3Right"] ~= nil then
-            exports['blip_info']:AddBlipInfoText(blip, blipconfig["Info.text3Left"], blipconfig["Info.text3Right"])
+        if table["Info.text3Left"] and table["Info.text3Right"] ~= nil then
+            exports['blip_info']:AddBlipInfoText(blip, table["Info.text3Left"], table["Info.text3Right"])
         end
-        if blipconfig["Info.name3Left"] and blipconfig["Info.name3Right"] ~= nil then
-            exports['blip_info']:AddBlipInfoName(blip, blipconfig["Info.name3Left"], blipconfig["Info.name3Right"])
+        if table["Info.name3Left"] and table["Info.name3Right"] ~= nil then
+            exports['blip_info']:AddBlipInfoName(blip, table["Info.name3Left"], table["Info.name3Right"])
         end
-        if blipconfig["Info.text4Left"] and blipconfig["Info.text4Right"] ~= nil then
-            exports['blip_info']:AddBlipInfoText(blip, blipconfig["Info.text4Left"], blipconfig["Info.text4Right"])
+        if table["Info.text4Left"] and table["Info.text4Right"] ~= nil then
+            exports['blip_info']:AddBlipInfoText(blip, table["Info.text4Left"], table["Info.text4Right"])
         end
-        if blipconfig["Info.name4Left"] and blipconfig["Info.name4Right"] ~= nil then
-            exports['blip_info']:AddBlipInfoName(blip, blipconfig["Info.name4Left"], blipconfig["Info.name4Right"])
+        if table["Info.name4Left"] and table["Info.name4Right"] ~= nil then
+            exports['blip_info']:AddBlipInfoName(blip, table["Info.name4Left"], table["Info.name4Right"])
         end
-        if blipconfig["Info.text5Left"] and blipconfig["Info.text5Right"] ~= nil then
-            exports['blip_info']:AddBlipInfoText(blip, blipconfig["Info.text5Left"], blipconfig["Info.text5Right"])
+        if table["Info.text5Left"] and table["Info.text5Right"] ~= nil then
+            exports['blip_info']:AddBlipInfoText(blip, table["Info.text5Left"], table["Info.text5Right"])
         end
-        if blipconfig["Info.name5Left"] and blipconfig["Info.name5Right"] ~= nil then
-            exports['blip_info']:AddBlipInfoName(blip, blipconfig["Info.name5Left"], blipconfig["Info.name5Right"])
+        if table["Info.name5Left"] and table["Info.name5Right"] ~= nil then
+            exports['blip_info']:AddBlipInfoName(blip, table["Info.name5Left"], table["Info.name5Right"])
         end
-        if blipconfig["Info.headerLeft"] and blipconfig["Info.headerRight"] ~= nil then
-            exports['blip_info']:AddBlipInfoHeader(blip, blipconfig["Info.headerLeft"], blipconfig["Info.headerRight"])
+        if table["Info.headerLeft"] and table["Info.headerRight"] ~= nil then
+            exports['blip_info']:AddBlipInfoHeader(blip, table["Info.headerLeft"], table["Info.headerRight"])
         end
-        if blipconfig["Info.header2Left"] and blipconfig["Info.header2Right"] ~= nil then
-            exports['blip_info']:AddBlipInfoHeader(blip, blipconfig["Info.header2Left"], blipconfig["Info.header2Right"])
+        if table["Info.header2Left"] and table["Info.header2Right"] ~= nil then
+            exports['blip_info']:AddBlipInfoHeader(blip, table["Info.header2Left"], table["Info.header2Right"])
         end
-        if blipconfig["Info.header3Left"] and blipconfig["Info.header3Right"] ~= nil then
-            exports['blip_info']:AddBlipInfoHeader(blip, blipconfig["Info.header3Left"], blipconfig["Info.header3Right"])
+        if table["Info.header3Left"] and table["Info.header3Right"] ~= nil then
+            exports['blip_info']:AddBlipInfoHeader(blip, table["Info.header3Left"], table["Info.header3Right"])
         end
-        if blipconfig["Info.header4Left"] and blipconfig["Info.header4Right"] ~= nil then
-            exports['blip_info']:AddBlipInfoHeader(blip, blipconfig["Info.header4Left"], blipconfig["Info.header4Right"])
+        if table["Info.header4Left"] and table["Info.header4Right"] ~= nil then
+            exports['blip_info']:AddBlipInfoHeader(blip, table["Info.header4Left"], table["Info.header4Right"])
         end
-        if blipconfig["Info.header5Left"] and blipconfig["Info.header5Right"] ~= nil then
-            exports['blip_info']:AddBlipInfoHeader(blip, blipconfig["Info.header5Left"], blipconfig["Info.header5Right"])
+        if table["Info.header5Left"] and table["Info.header5Right"] ~= nil then
+            exports['blip_info']:AddBlipInfoHeader(blip, table["Info.header5Left"], table["Info.header5Right"])
         end
-        if blipconfig["Info.header6Left"] and blipconfig["Info.header6Right"] ~= nil then
-            exports['blip_info']:AddBlipInfoHeader(blip, blipconfig["Info.header6Left"], blipconfig["Info.header6Right"])
+        if table["Info.header6Left"] and table["Info.header6Right"] ~= nil then
+            exports['blip_info']:AddBlipInfoHeader(blip, table["Info.header6Left"], table["Info.header6Right"])
         end
-        if blipconfig["Info.header7Left"] and blipconfig["Info.header7Right"] ~= nil then
-            exports['blip_info']:AddBlipInfoHeader(blip, blipconfig["Info.header7Left"], blipconfig["Info.header7Right"])
+        if table["Info.header7Left"] and table["Info.header7Right"] ~= nil then
+            exports['blip_info']:AddBlipInfoHeader(blip, table["Info.header7Left"], table["Info.header7Right"])
         end
-        if blipconfig["Info.iconLeft"] and blipconfig["Info.iconRight"] and blipconfig["Info.iconID"] and blipconfig["Info.iconColor"] and blip ["Info.iconCheckmark"] ~= nil then
-            exports['blip_info']:AddBlipInfoIcon(blip, blipconfig["Info.iconLeft"], blipconfig["Info.iconRight"], blipconfig["Info.iconID"], blipconfig["Info.iconColor"], blipconfig["Info.iconCheckmark"])
+        if table["Info.iconLeft"] and table["Info.iconRight"] and table["Info.iconID"] and table["Info.iconColor"] and blip ["Info.iconCheckmark"] ~= nil then
+            exports['blip_info']:AddBlipInfoIcon(blip, table["Info.iconLeft"], table["Info.iconRight"], table["Info.iconID"], table["Info.iconColor"], table["Info.iconCheckmark"])
         end
-        if blipconfig["Info.icon2Left"] and blipconfig["Info.icon2Right"] and blipconfig["Info.icon2ID"] and blipconfig["Info.icon2Color"] and blip ["Info.icon2Checkmark"] ~= nil then
-            exports['blip_info']:AddBlipInfoIcon(blip, blipconfig["Info.icon2Left"], blipconfig["Info.icon2Right"], blipconfig["Info.icon2ID"], blipconfig["Info.icon2Color"], blipconfig["Info.icon2Checkmark"])
+        if table["Info.icon2Left"] and table["Info.icon2Right"] and table["Info.icon2ID"] and table["Info.icon2Color"] and blip ["Info.icon2Checkmark"] ~= nil then
+            exports['blip_info']:AddBlipInfoIcon(blip, table["Info.icon2Left"], table["Info.icon2Right"], table["Info.icon2ID"], table["Info.icon2Color"], table["Info.icon2Checkmark"])
         end
-        if blipconfig["Info.icon3Left"] and blipconfig["Info.icon3Right"] and blipconfig["Info.icon3ID"] and blipconfig["Info.icon3Color"] and blip ["Info.icon3Checkmark"] ~= nil then
-            exports['blip_info']:AddBlipInfoIcon(blip, blipconfig["Info.icon3Left"], blipconfig["Info.icon3Right"], blipconfig["Info.icon3ID"], blipconfig["Info.icon3Color"], blipconfig["Info.icon3Checkmark"])
+        if table["Info.icon3Left"] and table["Info.icon3Right"] and table["Info.icon3ID"] and table["Info.icon3Color"] and blip ["Info.icon3Checkmark"] ~= nil then
+            exports['blip_info']:AddBlipInfoIcon(blip, table["Info.icon3Left"], table["Info.icon3Right"], table["Info.icon3ID"], table["Info.icon3Color"], table["Info.icon3Checkmark"])
         end
-        SetBlipAsShortRange(blip, blipconfig["range"] or true)
+        if table["Info.statusLeft"] and table["Info.statusRight"] ~= nil then
+            exports['blip_info']:AddBlipInfoText(blip, table["Info.statusLeft"], table["Info.statusRight"])
+        end
+        SetBlipAsShortRange(blip, table["range"] or true)
     end
 end)
 
