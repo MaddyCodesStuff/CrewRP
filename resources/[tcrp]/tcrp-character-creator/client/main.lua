@@ -241,6 +241,7 @@ AddEventHandler('esx:playerLoaded', function(playerData)
             else
                 TriggerEvent('skinchanger:loadSkin', {sex = 0})
             end
+            TriggerServerEvent('tcrp-eyecolor:setEyecolor')
         end)
     end)
 end)
