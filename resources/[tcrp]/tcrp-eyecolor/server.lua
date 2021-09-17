@@ -1,34 +1,42 @@
 RegisterServerEvent('updateEyecolor')
-AddEventHandler('updateEyecolor', function(eyecolor)
+AddEventHandler('updateEyecolor', function(eyecolor, player)
     _source = source
-
-    MySQL.Async.execute('UPDATE USERS SET eyecolor = @newcolor WHERE identifier = @identifier',
+    id = GetPlayerIdentifier(_source, 0)
+    MySQL.Async.fetchAll('UPDATE USERS SET eyecolor = @newcolor WHERE identifier = @identifier',
     {
 
         ['@newcolor'] = eyecolor,
-        identifier = GetPlayerIdentifier(_source, 1)
+        ['@identifier'] = id
 
     })
-    TriggerEvent('tcrp-eyecolor:setEyecolor', source)
+    TriggerEvent('tcrp-eyecolor:setEyecolor', player, _source)
 
 
 end)
 RegisterServerEvent('tcrp-eyecolor:setEyecolor')
-AddEventHandler('tcrp-eyecolor:setEyecolor', function()
-
-    _source = source
-    ped = GetPlayerPed(_source)
-    SetPedEyeColor(ped, getEyeColor(_source))
+AddEventHandler('tcrp-eyecolor:setEyecolor', function(player, id)
+    _id =  id
+    print(getEyeColor(_id))
+    TriggerClientEvent('tcrp-eyecolor:UpdatePed', id, args)
 
 end)
 
 function getEyeColor(playerId)
+    pid = playerId
+    id = GetPlayerIdentifier(pid, 0)
+    MySQL.Async.fetchAll("SELECT * FROM USERS WHERE identifier = @identifier",{
+
+            ['@identifier'] =  id 
+        }, function(results)
+            if #results > 0 then
+                return results[1].name
+            else
+                
+            end
+
+
+        end)
+        
+        
     
-    MySQL.Async.execute('SELECT eyecolor FROM USERS WHERE `identifier` = @identifier',
-    {
-
-        ['@newcolor'] = eyecolor,
-        identifier = GetPlayerIdentifier(_source, 1)
-
-    })
 end
