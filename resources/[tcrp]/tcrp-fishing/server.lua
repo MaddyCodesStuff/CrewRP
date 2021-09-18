@@ -129,18 +129,6 @@ AddEventHandler('fishing:catch', function(bait, playerCoords)
 	end
 end)
 
-RegisterServerEvent("fishing:RentBoat")
-AddEventHandler("fishing:RentBoat", function(price, model, xyz, h)
-    local _source = source	
-	local xPlayer = ESX.GetPlayerFromId(_source)
-	if xPlayer.getMoney() >= price then
-		xPlayer.removeMoney(price)
-		TriggerClientEvent('fishing:RentBoat', _source, model, xyz, h)
-	else
-		TriggerClientEvent('esx:showNotification', source, 'You do not have enough money.')
-	end
-end)
-
 RegisterServerEvent('fishing:startSelling')
 AddEventHandler('fishing:startSelling', function(item)
 	local _source = source
