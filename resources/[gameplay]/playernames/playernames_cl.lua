@@ -32,11 +32,22 @@ local function makeSettings()
 end
 
 local templateStr
+Citizen.CreateThread(function()
 
+    while true do
+        Wait(0)
+        if IsControlPressed(0, 170) then
+                        -- run this function every frame
+            updatePlayerNames()
+        else
+            for _, v in pairs(mpGamerTags) do
+                RemoveMpGamerTag(v.tag)
+            end
+        end
+    end
+
+end)
 function updatePlayerNames()
-    -- re-run this function the next frame
-    SetTimeout(0, updatePlayerNames)
-
     -- return if no template string is set
     if not templateStr then
         return
@@ -48,7 +59,7 @@ function updatePlayerNames()
     -- for each valid player index
     for i = 0, 255 do
         -- if the player exists
-        if NetworkIsPlayerActive(i) and i ~= PlayerId() then
+        if NetworkIsPlayerActive(i) then
             -- get their ped
             local ped       = GetPlayerPed(i)
             local pedCoords = GetEntityCoords(ped)
@@ -187,5 +198,3 @@ SetTimeout(0, function()
     TriggerServerEvent('playernames:init')
 end)
 
--- run this function every frame
-SetTimeout(0, updatePlayerNames)

@@ -43,15 +43,17 @@ AddEventHandler("Scene:New", function(New)
 end)
 
 RegisterNetEvent("Scene:AttemptDelete")
-AddEventHandler("Scene:AttemptDelete", function(Id, Move)
+AddEventHandler("Scene:AttemptDelete", function(Id, Move, Fire)
 	local Src = source
 	local Me = GetLicense(Src, Config.IdentifierType)
 	local SceneToDelete = Scenes.Current[Id]
 	local Override = AdminCheck(Src, Me)
 	if not Move then
-		if Me == SceneToDelete.Owner or SceneToDelete.AnyDelete == 1 or Override then
+		if Me == SceneToDelete.Owner or SceneToDelete.AnyDelete == 1 or Override or Fire then
 			DB.RemoveScene(Id)
-			Chat(Src, Lang("RemovedScene"))
+			if not Fire then
+				Chat(Src, Lang("RemovedScene"))
+			end
 		else
 			Chat(Src, Lang("NoPerms"))
 		end
@@ -82,6 +84,19 @@ AddEventHandler("Scene:AttemptCopy", function(Id)
 	if Me == SceneToCopy.Owner or Override then
 		TriggerClientEvent("Scene:RecieveCopy", Src, SceneToCopy, Override)
 	else
-		Chat(Src, Lang("OnlyCopyOwn"))
+		Chat(Src, Lang("OnlyOwn"))
+	end
+end)
+
+RegisterNetEvent("Scene:AttemptMove")
+AddEventHandler("Scene:AttemptMove", function(Id)
+	local Src = source
+	local Me = GetLicense(Src, Config.IdentifierType)
+	local SceneToMove = Scenes.Current[Id]
+	local Override = AdminCheck(Src, Me)
+	if Me == SceneToMove.Owner or Override then
+		TriggerClientEvent("Scene:RecieveMove", Src, SceneToMove, Id, Override)
+	else
+		Chat(Src, Lang("OnlyOwn"))
 	end
 end)
