@@ -100,7 +100,7 @@ Config.BikeRentals = {
 }
 
 Config.MarkerZones = { 
-    {--Helmut's Rentals 
+    --[[{--Helmut's Rentals 
         Type = "car3",
         Menu = vec3(-216.24, 6211.77, 30.50),
         Spawn = vec3(-216.24, 6211.77, 30.49),
@@ -123,7 +123,7 @@ Config.MarkerZones = {
         Menu = vec3(-17.4, -1108.86, 25.68),
         Spawn = vec3(-17.4, -1108.86, 25.67),
         SpawnHeading = 166.35,
-    },
+    },--]]
     {--LSIA Plane Rentals 
         Type = "plane",
         Menu = vec3(-1061.39, -3493.22, 13.15),
