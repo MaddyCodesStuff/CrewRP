@@ -1,48 +1,92 @@
-RegisterCommand('runplate', function(source, args)
-    local plate1 = args[1]
-    local plate2 = args[2]
-    local plate = plate1 .. " " .. plate2
-    TriggerServerEvent('getRegisterFromPlate', plate)
+ESX                           = nil
+local PlayerData              = {}
+Citizen.CreateThread(function()
+	while ESX == nil do
+		TriggerEvent('esx:getSharedObject', function(obj)
+			ESX = obj
+		end)
+		Citizen.Wait(0)
+	end
 
+	while ESX.GetPlayerData().job == nil do
+		Citizen.Wait(10)
+	end
+
+	PlayerData = ESX.GetPlayerData()
+end)
+
+
+
+RegisterCommand('runplate', function(source, args)
+    PlayerData = ESX.GetPlayerData()
+    if PlayerData.job.name == 'police' then
+      local plate1 = args[1]
+      local plate2 = args[2]
+      local plate = plate1 .. " " .. plate2
+      TriggerServerEvent('getRegisterFromPlate', plate)
+    else
+      TriggerEvent('tcrp:displayGeneral', "Access Denied! Your location has been reported to police for a hacking attempt! ")
+    end   
 end)
 
 RegisterNetEvent('tcrp_vehiclereg:notify')
 AddEventHandler('tcrp_vehiclereg:notify', function(args)
- 
-    local firstname = args.first
-    local lastname = args.last
-    local vehplate = args.vehplate
-    local model
-    local vehicleLabel
-    vehicle = json.decode(args.veh)
-    if(vehicle ~= null) then
-        for k, v in pairs(vehicle) do
-            if k == 'model' then
-                model = v
-            end
-        end
-    end
-    local displaytext = GetDisplayNameFromVehicleModel(model)
-    local name = GetLabelText(displaytext)
-    if (name == "NULL") then
-        vehicleLabel = displaytext
+    if args.veh ~= nil then
+      local isLocal = args.isLocal
+      local firstname = args.first
+      local lastname = args.last
+      local vehplate = args.vehplate
+      local model
+      local vehicleLabel
+      vehicle = json.decode(args.veh)
+      if(vehicle ~= nil) then
+          for k, v in pairs(vehicle) do
+              if k == 'model' then
+                  model = v
+              end
+          end
+      end
+      local displaytext = GetDisplayNameFromVehicleModel(model)
+      local name = GetLabelText(displaytext)
+      if (name == "NULL") then
+          vehicleLabel = displaytext
+      else
+          vehicleLabel = name
+      end
+
+      Wait(100)
+
+      TriggerEvent('tcrp:displayGeneral', vehicleLabel .. " with the plate " .. vehplate .. " is owned by " .. firstname .. " " .. lastname )
     else
-        vehicleLabel = name
+      gender = math.random(2)
+      if gender == 1 then
+        length = tablelength(Config.MaleFirst)
+        firstname = Config.MaleFirst[math.random(length)]
+        firstname = string.upper(string.sub(firstname, 1, 1)) .. string.sub(firstname, 2)
+
+      else
+        length = tablelength(Config.FemaleFirst)
+        firstname = Config.FemaleFirst[math.random(length)]
+        firstname = string.upper(string.sub(firstname, 1, 1)) .. string.sub(firstname, 2)
+      end
+      length = tablelength(Config.LastNames)
+      lastname = Config.LastNames[math.random(length)]
+      lastname = string.upper(string.sub(lastname, 1, 1)) .. string.sub(lastname, 2)
+      TriggerEvent('tcrp:displayGeneral', 'Vehicle with the plate ' .. args.vehplate .. ' is owned by ' .. firstname .. ' ' .. lastname)
+      
     end
-        
-    Wait(100)
-
-    TriggerEvent('tcrp:displayGeneral', vehicleLabel .. " with the plate " .. vehplate .. " is owned by " .. firstname .. " " .. lastname )
-
-
 
 
 end)
 
 
+function tablelength(T)
+  local count = 0
+  for _ in pairs(T) do count = count + 1 end
+  return count
+end
 
 local json = {}
-
 
 
 
