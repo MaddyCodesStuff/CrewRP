@@ -1370,13 +1370,6 @@ DP.Emotes      = {
         EmoteLoop   = true,
         EmoteMoving = true,
     } },
-    ["bird"]          = { "random@peyote@bird", "wakeup", "Bird" },
-    ["chicken"]       = { "random@peyote@chicken", "wakeup", "Chicken", AnimationOptions = {
-        EmoteLoop   = true,
-        EmoteMoving = true,
-    } },
-    ["bark"]          = { "random@peyote@dog", "wakeup", "Bark" },
-    ["rabbit"]        = { "random@peyote@rabbit", "wakeup", "Rabbit" },
     ["spiderman"]     = { "missexile3", "ex03_train_roof_idle", "Spider-Man", AnimationOptions = {
         EmoteLoop = true,
     } },
@@ -1409,6 +1402,30 @@ DP.Emotes      = {
         EmoteMoving = false,
         EmoteLoop   = true,
     } },
+    ["bigdogbeg"] = {"creatures@rottweiler@tricks@", "beg_loop", "LARGE DOG PEDS ONLY BEG", AnimationOptions =
+    {
+       EmoteLoop = true
+    }},
+    ["bigdogitch"] = {"creatures@rottweiler@amb@world_dog_sitting@idle_a", "idle_a", "LARGE DOG PEDS ONLY ITCH", AnimationOptions =
+    {
+       EmoteDuration = 2000
+    }},
+    ["bigdogsleep"] = {"creatures@rottweiler@amb@sleep_in_kennel@", "sleep_in_kennel", "LARGE DOG PEDS ONLY SLEEP", AnimationOptions =
+    {
+       EmoteLoop = true
+    }},
+    ["smalldogitch"] = {"creatures@pug@amb@world_dog_sitting@idle_a", "idle_a", "SMALL DOG PEDS ONLY ITCH", AnimationOptions =
+    {
+       EmoteDuration = 2000
+    }},
+    ["smalldogdown"] = {"creatures@pug@amb@world_dog_sitting@idle_a", "idle_c", "SMALL DOG PEDS ONLY LAY DOWN", AnimationOptions =
+    {
+       EmoteLoop = true
+    }},
+    ["smalldogshake"] = {"creatures@pug@amb@world_dog_barking@idle_a", "idle_c", "SMALL DOG SHAKE", AnimationOptions =
+    {
+       EmoteLoop = true
+    }},
     ["smalldogsit"]       = { "creatures@pug@amb@world_dog_sitting@base", "base", "SMALL DOG PEDS ONLY SIT", AnimationOptions = {
         EmoteMoving = false,
         EmoteLoop   = true,
@@ -2088,7 +2105,7 @@ DP.PropEmotes  = {
         EmoteMoving   = false,
     } },
     ["bag"]        = { "missheistdocksprep1hold_cellphone", "static", "Bag", AnimationOptions = {
-        Prop          = "v_ind_rc_workbag",
+        Prop          = "xm_prop_x17_bag_01b",
         PropBone      = 57005,
         PropPlacement = { 0.39, 0.0, 0.0, 0.0, 266.0, 60.0 },
         EmoteLoop     = false,
@@ -2101,4 +2118,48 @@ DP.PropEmotes  = {
         EmoteLoop     = false,
         EmoteMoving   = true,
     } },
+    ["tennis"] = {"move_weapon@jerrycan@generic", "idle", "Tennis", AnimationOptions =
+    {
+       Prop = "xm_prop_x17_bag_01b",
+       PropBone = 57005,
+       PropPlacement = {0.27, 0.0, 0.0, 91.0, 0.0, -82.9999951},
+       SecondProp = 'prop_tennis_rack_01',
+       SecondPropBone = 60309,
+       SecondPropPlacement = {0.0800, 0.0300, 0.0, -130.2907295, 3.8782324, 6.588224},
+       EmoteLoop = true,
+       EmoteMoving = true,
+    }},
+    ["weights"] = {"amb@world_human_muscle_free_weights@male@barbell@base", "base", "Weights", AnimationOptions =
+    {
+       Prop = "prop_curl_bar_01",
+       PropBone = 28422,
+       PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+       EmoteLoop = true,
+       EmoteMoving = true,
+    }},
+    ["weights2"] = {"amb@world_human_muscle_free_weights@male@barbell@idle_a", "idle_d", "Weights 2", AnimationOptions =
+    {
+       Prop = "prop_curl_bar_01",
+       PropBone = 28422,
+       PropPlacement = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+       EmoteLoop = true,
+       EmoteMoving = true,
+    }},
+    ["conehead"] = {"move_m@drunk@verydrunk_idles@", "fidget_07", "ConeHead", AnimationOptions =
+    {
+       Prop = "prop_roadcone02b",
+       PropBone = 31086,
+       PropPlacement = {0.0500, 0.0200, -0.000, 30.0000004, 90.0, 0.0},
+       --
+       EmoteLoop = true,
+       EmoteMoving = true,
+    }},
+    ["carrypizza"] = {"anim@heists@box_carry@", "idle", "Carry Pizza Box", AnimationOptions =
+    {
+       Prop = "prop_pizza_box_02",
+       PropBone = 28422,
+       PropPlacement = {0.0100, -0.1000, -0.1590,20.0000007, 0.0, 0.0},
+       EmoteLoop = true,
+       EmoteMoving = true,
+    }},
 }

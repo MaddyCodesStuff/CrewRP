@@ -3,17 +3,25 @@ CrouchedForce = false
 Aimed = false
 LastCam = 0
 Cooldown = false
-
+ped = nil
 CoolDownTime = 500 -- in ms
 
+Citizen.CreateThread(function()
+	while true do
+		Citizen.Wait(1)
+		ped = PlayerPedId()
+		if IsPedUsingActionMode(ped) then
+			SetPedUsingActionMode(ped, false, -1, 'DEFAULT_ACTION')
+		end
+	end
+end)
+
 NormalWalk = function() 
-	local Player = PlayerPedId()
-	SetPedMaxMoveBlendRatio(Player, 1.0)
-	ResetPedMovementClipset(Player, 0.55)
-	ResetPedStrafeClipset(Player)
-	SetPedCanPlayAmbientAnims(Player, true)
-	SetPedCanPlayAmbientBaseAnims(Player, true)
-	ResetPedWeaponMovementClipset(Player)
+	SetPedMaxMoveBlendRatio(ped, 1.0)
+	ResetPedMovementClipset(ped, 0.55)
+	ResetPedStrafeClipset(ped)
+	SetPedCanPlayAmbientAnims(ped, true)
+	SetPedCanPlayAmbientBaseAnims(ped, true)
 	Crouched = false
 end
 
@@ -25,8 +33,7 @@ SetupCrouch = function()
 end
 
 CanCrouch = function()
-	local PlayerPed = PlayerPedId()
-	if IsPedOnFoot(PlayerPed) and not IsPedJumping(PlayerPed) and not IsPedFalling(PlayerPed) and not IsPedDeadOrDying(PlayerPed) then
+	if IsPedOnFoot(ped) and not IsPedInCover(ped, False) and not IsPedJumping(ped) and not IsPedFalling(ped) and not IsPedDeadOrDying(ped) then
 		return true
 	else
 		return false
@@ -34,25 +41,22 @@ CanCrouch = function()
 end
 
 CrouchPlayer = function()
-	local Player = PlayerPedId()
-	SetPedUsingActionMode(Player, false, -1, "DEFAULT_ACTION")
-	SetPedMovementClipset(Player, 'move_ped_crouched', 0.55)
-	SetPedStrafeClipset(Player, 'move_ped_crouched_strafing') -- it force be on third person if not player will freeze but this func make player can shoot with good anim on crouch if someone know how to fix this make request :D
-	SetWeaponAnimationOverride(Player, "Ballistic")
+	SetPedCanPlayAmbientAnims(ped, false)
+	SetPedCanPlayAmbientBaseAnims(ped, false)
+	SetPedMovementClipset(ped, 'move_ped_crouched', 0.55)
+	SetPedStrafeClipset(ped, 'move_ped_crouched_strafing') -- it force be on third person if not player will freeze but this func make player can shoot with good anim on crouch if someone know how to fix this make request :D
 	Crouched = true
 	Aimed = false
 end
 
 SetPlayerAimSpeed = function()
-	local Player = PlayerPedId()
-	SetPedMaxMoveBlendRatio(Player, 0.2)
+	SetPedMaxMoveBlendRatio(ped, 0.2)
 	Aimed = true
 end
 
 IsPlayerFreeAimed = function()
-	local Player = PlayerPedId()
 	local PlayerID = GetPlayerIndex()
-	if IsPlayerFreeAiming(PlayerID) or IsAimCamActive() or IsAimCamThirdPersonActive() then
+	if IsPlayerFreeAiming(ped) or IsAimCamActive() or IsAimCamThirdPersonActive() then
 		return true
 	else
 		return false
@@ -74,11 +78,6 @@ Citizen.CreateThread( function()
 				NormalWalk()
 			end
 			local NowCam = GetFollowPedCamViewMode()
-			if CanDo and Crouched and NowCam == 4 then
-				SetFollowPedCamViewMode(LastCam)
-			elseif CanDo and Crouched and NowCam ~= 4 then
-				LastCam = NowCam
-			end
 		elseif Crouched then
 			NormalWalk()
 		end
