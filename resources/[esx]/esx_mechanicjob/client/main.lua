@@ -988,10 +988,5 @@ Citizen.CreateThread(function()
         CurrentAction = nil
       end
     end
-
-    if IsControlJustReleased(0, Keys['F6']) and PlayerData.job ~= nil and PlayerData.job.name == 'mecano' then
-      OpenMobileMecanoActionsMenu()
-    end
-
   end
 end)
