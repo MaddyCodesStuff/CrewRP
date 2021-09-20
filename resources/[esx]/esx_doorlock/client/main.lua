@@ -420,7 +420,6 @@ AddEventHandler('nui_doorlock:newDoorSetup', function(args)
 		print('Successfully sent door data to the server')
 	end
 end)
-RegisterKeyMapping('+doorlock', 'Interact with a door lock', 'keyboard', 'e')
 
 RegisterNetEvent("esx_doorlock:updatedoors")
 AddEventHandler("esx_doorlock:updatedoors", function()
