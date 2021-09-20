@@ -9,16 +9,6 @@ Config.Elevators    = {
         Pos     = { x = 331.72, y = -595.43, z = 43.28 }, -- Position of the text to show up
         options = {
             {
-                label = "Coronor's Office",
-                name  = "coronor",
-                pos   = { x = 248.67, y = -1369.74, z = 29.65 }, -- Position to take you to
-            },
-            {
-                label = "Morgue",
-                name  = "morgue",
-                pos   = { x = 247.06, y = -1372.07, z = 24.54 }, -- Position to take you to
-            },
-            {
                 label = "Roof",
                 name  = "roof",
                 pos   = { x = 338.88, y = -583.86, z = 74.16 }, -- Position to take you to
@@ -34,16 +24,6 @@ Config.Elevators    = {
         name    = "Pillbox Top Floor",
         Pos     = { x = 329.84, y = -601.07, z = 43.28 }, -- Position of the text to show up
         options = {
-            {
-                label = "Coronor's Office",
-                name  = "coronor",
-                pos   = { x = 248.67, y = -1369.74, z = 29.65 }, -- Position to take you to
-            },
-            {
-                label = "Morgue",
-                name  = "morgue",
-                pos   = { x = 247.06, y = -1372.07, z = 24.54 }, -- Position to take you to
-            },
             {
                 label = "Roof",
                 name  = "roof",
@@ -61,16 +41,6 @@ Config.Elevators    = {
         Pos     = { x = 327.29, y = -603.41, z = 43.28 }, -- Position of the text to show up
         options = {
             {
-                label = "Coronor's Office",
-                name  = "coronor",
-                pos   = { x = 248.67, y = -1369.74, z = 29.65 }, -- Position to take you to
-            },
-            {
-                label = "Morgue",
-                name  = "morgue",
-                pos   = { x = 247.06, y = -1372.07, z = 24.54 }, -- Position to take you to
-            },
-            {
                 label = "Roof",
                 name  = "roof",
                 pos   = { x = 338.88, y = -583.86, z = 74.16 }, -- Position to take you to
@@ -82,38 +52,30 @@ Config.Elevators    = {
             },
         },
     },
-    { -- Coronor
-        name    = "Pillbox Coronor's Office",
-        Pos     = { x = 247.52, y = -1369.1, z = 29.65 }, -- Position of the text to show up
+    { -- Morgue Out->In
+        name    = "City Morgue",
+        Pos     = { x = 240.69, y = -1379.3, z = 33.74 }, -- Position of the text to show up
         options = {
-            {
-                label = "Main Floor",
-                name  = "upperfloor",
-                pos   = { x = 331.72, y = -595.43, z = 43.28 }, -- Position to take you to
-            },
             {
                 label = "Morgue",
                 name  = "morgue",
-                pos   = { x = 247.06, y = -1372.07, z = 24.54 }, -- Position to take you to
+                pos   = { x = 275.75, y = -1361.34, z = 24.34 }, -- Position to take you to
+                heading = 51.55,
             },
         },
     },
-    { -- Morgue
-        name    = "Pillbox Morgue",
-        Pos     = { x = 247.1, y = -1370.37, z = 24.54 }, -- Position of the text to show up
-        options = {
-            {
-                label = "Main Floor",
-                name  = "upperfloor",
-                pos   = { x = 331.72, y = -595.43, z = 43.28 }, -- Position to take you to
-            },
-            {
-                label = "Coronor's Office",
-                name  = "coronor",
-                pos   = { x = 248.67, y = -1369.74, z = 29.65 }, -- Position to take you to
-            },
+    { -- Morgue In->Out
+    name    = "City Morgue",
+    Pos     = { x = 275.75, y = -1361.34, z = 24.34 }, -- Position of the text to show up
+    options = {
+        {
+            label = "Outside",
+            name  = "outside",
+            pos   = { x = 240.69, y = -1379.3, z = 33.74 }, -- Position to take you to
+            heading = 140.71,
         },
     },
+},
     { -- Roof
         name    = "Pillbox Roof",
         Pos     = { x = 340.26, y = -584.37, z = 74.16 }, -- Position of the text to show up

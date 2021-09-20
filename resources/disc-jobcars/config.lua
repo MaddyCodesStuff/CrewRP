@@ -404,6 +404,15 @@ Config.Shops      = {
         cars       = Config.MDCars
     },
     {
+        name       = 'Morgue Cars',
+        job        = 'ambulance',
+        coords     = vector3(251.27, -1341.04, 31.94),
+        heading    = 98.19,
+        shopCoords = vector3(250.18, -1341.04, 31.94),
+        type       = "car",
+        cars       = Config.MDCars
+    },
+    {
         name       = 'Sandy MD Air',
         job        = 'ambulance',
         coords     = vector3(1770.25, 3239.73, 42.13),
