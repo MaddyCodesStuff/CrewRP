@@ -29,7 +29,6 @@ Citizen.CreateThread(function()
                 if IsControlJustPressed(0, Keys['E']) and IsPedOnFoot(ped) then
                     OpenCraftingMenu(v.type)
                     TriggerEvent('emote:do', 'mechanic4')
-                    FreezeEntityPosition(ped, true)
                 end 
             elseif dist < 1.45 then
                 ESX.UI.Menu.CloseAll()
@@ -90,7 +89,6 @@ function OpenCraftingMenu(type)
 	function(data, menu)
 		menu.close()
         TriggerEvent('emote:cancel')
-        FreezeEntityPosition(ped, false)
 		end
 	)
 end
