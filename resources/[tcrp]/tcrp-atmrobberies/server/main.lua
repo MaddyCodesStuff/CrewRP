@@ -28,14 +28,14 @@ RegisterNetEvent('tcrp-ATMRobbery:startHack')
 AddEventHandler('tcrp-ATMRobbery:startHack', function(hackerCoords)
     if checkCooldown() and copsRequired() then
         local xPlayer = ESX.GetPlayerFromId(source)
-        local item = xPlayer.getInventoryItem('raspberry')
+        local item = xPlayer.getInventoryItem('usb')
     
         if item.count and item.count > 0 then
-            xPlayer.removeInventoryItem('raspberry', 1)
+            xPlayer.removeInventoryItem('usb', 1)
             TriggerClientEvent('tcrp-ATMRobbery:startHack', source, hackerCoords)
         else
             TriggerClientEvent('mythic_notify:client:SendErrorAlert', source,
-                                { text = "Need a raspberry pi to hack."})
+                                { text = "Need a USB to hack."})
         end
     else
         TriggerClientEvent('mythic_notify:client:SendErrorAlert', source,
@@ -64,15 +64,15 @@ AddEventHandler('tcrp-ATMRobbery:hacked', function(success, hackerCoords)
     end
 end)
 
-RegisterNetEvent('tcrp-ATMRobbery:checkPI')
-AddEventHandler('tcrp-ATMRobbery:checkPI', function()
+RegisterNetEvent('tcrp-ATMRobbery:checkUSB')
+AddEventHandler('tcrp-ATMRobbery:checkUSB', function()
     local _source = source
     local xPlayer = ESX.GetPlayerFromId(source) 
-    local item = xPlayer.getInventoryItem('raspberry')
+    local item = xPlayer.getInventoryItem('usb')
     if item.count > 0 and checkCooldown() then --Check for Raspberry Pi AND if Heist off Cooldown
-        TriggerClientEvent('tcrp-ATMRobbery:truePI', _source, true)
+        TriggerClientEvent('tcrp-ATMRobbery:trueUSB', _source, true)
     else
-        TriggerClientEvent('tcrp-ATMRobbery:truePI', _source, false)
+        TriggerClientEvent('tcrp-ATMRobbery:trueUSB', _source, false)
     end
 end)
 

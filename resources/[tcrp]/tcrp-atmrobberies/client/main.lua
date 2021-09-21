@@ -16,13 +16,13 @@ local Keys = {
 
 local isNearATM = false
 local isPolice = false 
-local hasPI = false
+local hasUSB = false
 local playerGender
 
 Citizen.CreateThread(function()
     while true do
 		Citizen.Wait(0)
-        if isNearATM and hasPI then
+        if isNearATM and hasUSB then
             local ped = PlayerPedId()
             local hackerCoords = GetEntityCoords(ped)
             local street = GetStreetNameAtCoord(hackerCoords.x, hackerCoords.y, hackerCoords.z)
@@ -66,7 +66,7 @@ Citizen.CreateThread(function()
             for _, hash in ipairs(Config.atmHashes) do
                 if hash == model then
                     isNearATM = obj
-                    TriggerServerEvent('tcrp-ATMRobbery:checkPI')
+                    TriggerServerEvent('tcrp-ATMRobbery:checkUSB')
                     break
                 end
             end
@@ -78,16 +78,16 @@ end)
 RegisterNetEvent('tcrp-ATMRobbery:startHack')
 AddEventHandler('tcrp-ATMRobbery:startHack', function(hackerCoords)
     TriggerEvent('mhacking:show')
-    TriggerEvent('mhacking:start', 4, 18, function(success, _) -- this is where you change how hard the hack is 
+    TriggerEvent('mhacking:start', 6, 25, function(success, _) -- this is where you change how hard the hack is 
         TriggerServerEvent('tcrp-ATMRobbery:hacked', success, hackerCoords)
         TriggerEvent('mhacking:hide')
         TriggerEvent('emote:cancel')
     end)
 end)
 
-RegisterNetEvent('tcrp-ATMRobbery:truePI')
-AddEventHandler('tcrp-ATMRobbery:truePI', function(state)
-    hasPI = state
+RegisterNetEvent('tcrp-ATMRobbery:trueUSB')
+AddEventHandler('tcrp-ATMRobbery:trueUSB', function(state)
+    hasUSB = state
 end)
 
 function rayCast(flag, offset)
