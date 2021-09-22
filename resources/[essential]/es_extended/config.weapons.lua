@@ -685,7 +685,7 @@ Config.Weapons = {
 		name       = 'WEAPON_DOUBLEACTION',
 		label      = _U('weapon_doubleaction'),
 		components = {}
-	}
+	},
 
 	{
 		name       = 'WEAPON_FIRE_AXE',
