@@ -169,6 +169,8 @@ Locales['en'] = {
 	['gadget_parachute']             = 'parachute',
 	['weapon_flare']                 = 'flare gun',
 	['weapon_doubleaction']          = 'double-Action Revolver',
+	['weapon_fire_axe']          	 = 'fire axe',
+
 
 	-- Weapon Components
 	['component_clip_default']       = 'default Grip',

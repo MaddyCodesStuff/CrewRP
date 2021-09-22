@@ -647,7 +647,7 @@ Config.Weapons = {
 
 	{
 		name       = 'WEAPON_POOLCUE',
-		label      = 'Fireaxe',
+		label      = 'Pool Cue',
 		components = {}
 	},
 
@@ -684,6 +684,12 @@ Config.Weapons = {
 	{
 		name       = 'WEAPON_DOUBLEACTION',
 		label      = _U('weapon_doubleaction'),
+		components = {}
+	}
+
+	{
+		name       = 'WEAPON_FIRE_AXE',
+		label      = _U('weapon_fire_axe'),
 		components = {}
 	}
 
