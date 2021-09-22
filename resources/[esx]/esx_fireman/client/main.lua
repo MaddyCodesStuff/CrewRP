@@ -659,21 +659,39 @@ function OpenCloakroomMenu()
 				TriggerEvent('skinchanger:loadSkin', skin)
 			end)
 			SetPedArmour(playerPed, 0)
-			TriggerServerEvent('esx_fireman:removeWeapon', 'WEAPON_FIREEXTINGUISHER', 50000)
-			TriggerServerEvent('esx_fireman:removeWeapon', 'WEAPON_POOLCUE', 1)
+			if not HasPedGotWeapon(playerPed, GetHashKey('WEAPON_FIREEXTINGUISHER'), false) then
+				TriggerServerEvent('esx_fireman:removeWeapon', 'WEAPON_FIREEXTINGUISHER', 50000)
+			end
+			if not HasPedGotWeapon(playerPed, GetHashKey('WEAPON_FIRE_AXE'), false) then
+				TriggerServerEvent('esx_fireman:removeWeapon', 'WEAPON_FIRE_AXE', 1)
+			end
+			if HasPedGotWeapon(playerPed, GetHashKey('WEAPON_HOSE'), false) then
+				TriggerEvent("Client:HoseCommand", true)
+			end
 		elseif data.current.value == 'emt_wear' then
 			setUniform(data.current.value, playerPed)
 			SetPedArmour(playerPed, 0)
-			TriggerServerEvent('esx_fireman:removeWeapon', 'WEAPON_FIREEXTINGUISHER', 50000)
-			TriggerServerEvent('esx_fireman:removeWeapon', 'WEAPON_POOLCUE', 1)
+			if not HasPedGotWeapon(playerPed, GetHashKey('WEAPON_FIREEXTINGUISHER'), false) then
+				TriggerServerEvent('esx_fireman:removeWeapon', 'WEAPON_FIREEXTINGUISHER', 50000)
+			end
+			if not HasPedGotWeapon(playerPed, GetHashKey('WEAPON_FIRE_AXE'), false) then
+				TriggerServerEvent('esx_fireman:removeWeapon', 'WEAPON_FIRE_AXE', 1)
+			end
+			if HasPedGotWeapon(playerPed, GetHashKey('WEAPON_HOSE'), false) then
+				TriggerEvent("Client:HoseCommand", true)
+			end
 		elseif data.current.value == 'diving_suit' then
 			setUniform(data.current.value, playerPed)
 			SetPedArmour(playerPed, 100)
 			TriggerServerEvent('esx_fireman:giveItem', 'scuba', 1)
 		else
 			setUniform(data.current.value, playerPed)
-			TriggerServerEvent('esx_fireman:giveWeapon', 'WEAPON_FIREEXTINGUISHER', 50000)
-			TriggerServerEvent('esx_fireman:giveWeapon', 'WEAPON_POOLCUE', 1)
+			if not HasPedGotWeapon(playerPed, GetHashKey('WEAPON_FIREEXTINGUISHER'), false) then
+				TriggerServerEvent('esx_fireman:removeWeapon', 'WEAPON_FIREEXTINGUISHER', 50000)
+			end
+			if not HasPedGotWeapon(playerPed, GetHashKey('WEAPON_FIRE_AXE'), false) then
+				TriggerServerEvent('esx_fireman:removeWeapon', 'WEAPON_FIRE_AXE', 1)
+			end
 		end
 	end, function(data, menu)
 		menu.close()
@@ -833,7 +851,7 @@ function openFireTruckMenu()
 						elseif data2.current.value == 'extinguisher' then
 							TriggerServerEvent('esx_fireman:giveWeapon', 'WEAPON_FIREEXTINGUISHER', 50000)
 						elseif data2.current.value == 'fire axe' then
-							TriggerServerEvent('esx_fireman:giveWeapon', 'WEAPON_POOLCUE', 1)
+							TriggerServerEvent('esx_fireman:giveWeapon', 'WEAPON_FIRE_AXE', 1)
 						elseif data2.current.value == 'grab hose' then
 							TriggerEvent("Client:HoseCommand", true)
 						end
@@ -851,8 +869,11 @@ function openFireTruckMenu()
 				setUniform('turnin_wear', playerPed)
 				SetPedArmour(playerPed, 0)
 				SetCurrentPedWeapon(playerPed, GetHashKey('WEAPON_UNARMED'), true)
+				if HasPedGotWeapon(playerPed, GetHashKey('WEAPON_HOSE'), false) then
+					TriggerEvent("Client:HoseCommand", true)
+				end
 				TriggerServerEvent('esx_fireman:removeWeapon', 'WEAPON_FIREEXTINGUISHER', 50000)
-				TriggerServerEvent('esx_fireman:removeWeapon', 'WEAPON_POOLCUE', 1)
+				TriggerServerEvent('esx_fireman:removeWeapon', 'WEAPON_FIRE_AXE', 1)
 			end
 		end, function(data, menu)
 			menu.close()
