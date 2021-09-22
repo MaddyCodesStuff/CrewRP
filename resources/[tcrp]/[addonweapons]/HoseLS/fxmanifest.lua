@@ -10,7 +10,6 @@ client_scripts {
 }
 
 server_scripts {
-    'command.lua',
 	'carwash/server.lua',
     'Server.net.dll',
 }
