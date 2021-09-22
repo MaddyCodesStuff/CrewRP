@@ -1,7 +1,9 @@
-RequestAnimDict('random@mugging3')
-while not HasAnimDictLoaded('random@mugging3') do
-    Citizen.Wait(100)
-end
+Citizen.CreateThread(function()
+    RequestAnimDict('random@mugging3')
+    while not HasAnimDictLoaded('random@mugging3') do
+        Citizen.Wait(100)
+    end
+end)
 
 RegisterCommand('handsup', function()
     local ped = PlayerPedId()
