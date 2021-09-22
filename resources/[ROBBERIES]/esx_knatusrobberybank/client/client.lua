@@ -7,6 +7,7 @@ local secondsRemaining = 0
 local dooropen         = false
 local platingbomb      = false
 local platingbombtime  = 20
+local robb1, thisbank1
 globalcoords           = nil
 globalrotation         = nil
 globalDoortype         = nil
@@ -57,12 +58,26 @@ end)
 RegisterNetEvent('esx_holdupbank:currentlyhacking')
 AddEventHandler('esx_holdupbank:currentlyhacking', function(robb, thisbank)
     hackholdingup = true
-    TriggerEvent("mhacking:show")
-    TriggerEvent("mhacking:start", 7, Config.Hacktime, opendoors)
-    savedbank        = thisbank
-    bank             = robb
-    secondsRemaining = math.floor(Banks[bank].timetohack / 1000)
+    robb1 = robb
+    thisbank1 = thisbank
+    TriggerEvent('mhacking:show')
+    TriggerEvent('mhacking:start', 6, Config.Hacktime, hackingstep2) 
 end)
+
+function hackingstep2(success, timeremaining, robb, thisbank)
+    TriggerEvent('mhacking:hide')
+    if success then
+        TriggerEvent("mhacking:show")
+        TriggerEvent("mhacking:start", 3, Config.Hacktime, opendoors)
+        savedbank        = thisbank1
+        bank             = robb1
+        secondsRemaining = math.floor(Banks[bank].timetohack / 1000)
+    else
+        TriggerServerEvent('esx_holdupbank:usePI')
+    end
+    thisbank1 = nil
+    robb1 = nil
+end
 
 RegisterNetEvent('esx_holdupbank:plantingbomb')
 AddEventHandler('esx_holdupbank:plantingbomb', function(robb, thisbank)
@@ -86,6 +101,7 @@ function opendoors(success, timeremaining)
         TriggerEvent('mhacking:hide')
         secondsRemaining = 0
         incircle         = false
+        TriggerServerEvent('esx_holdupbank:usePI')
     end
 end
 
