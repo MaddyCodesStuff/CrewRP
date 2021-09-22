@@ -811,7 +811,15 @@ function openFireTruckMenu()
 					{
 						value = 'extinguisher',
 						label = 'Fire Extinguisher'
-					}
+					},
+					{
+						value = 'fire axe',
+						label = 'Fire Axe'
+					},
+					{
+						value = 'grab hose',
+						label = 'Pull/Stow Fire Hose'
+					},
 				}
 
 				ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'firetruck_item_menu',
@@ -824,7 +832,10 @@ function openFireTruckMenu()
 							TriggerServerEvent('esx_fireman:giveItem', 'medikit', 1)
 						elseif data2.current.value == 'extinguisher' then
 							TriggerServerEvent('esx_fireman:giveWeapon', 'WEAPON_FIREEXTINGUISHER', 50000)
+						elseif data2.current.value == 'fire axe' then
 							TriggerServerEvent('esx_fireman:giveWeapon', 'WEAPON_POOLCUE', 1)
+						elseif data2.current.value == 'grab hose' then
+							TriggerEvent("Client:HoseCommand", true)
 						end
 					end, function(data2, menu2)
 						menu2.close()
@@ -839,6 +850,7 @@ function openFireTruckMenu()
 			elseif data.current.value == 'remove_gear' then
 				setUniform('turnin_wear', playerPed)
 				SetPedArmour(playerPed, 0)
+				SetCurrentPedWeapon(playerPed, GetHashKey('WEAPON_UNARMED'), true)
 				TriggerServerEvent('esx_fireman:removeWeapon', 'WEAPON_FIREEXTINGUISHER', 50000)
 				TriggerServerEvent('esx_fireman:removeWeapon', 'WEAPON_POOLCUE', 1)
 			end

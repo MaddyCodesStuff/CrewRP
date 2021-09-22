@@ -1,5 +1,5 @@
 -- SHOW DIRT LEVEL IN CONSOLE - NOTE: THIS WILL SPAM EVERY 0.2 SECONDS WHILE USING HOSE
-local printDirtLevel = true
+local printDirtLevel = false
 
 local hoseHash = GetHashKey("WEAPON_HOSE")
 local aiming = nil
