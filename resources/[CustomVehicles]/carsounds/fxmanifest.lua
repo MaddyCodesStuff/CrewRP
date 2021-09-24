@@ -15,10 +15,6 @@ files {
   'audioconfig/musv8_sounds.dat54.rel',
   'sfx/dlc_musv8/musv8.awc',
   'sfx/dlc_musv8/musv8_npc.awc',
-  'audioconfig/brabus850_game.dat151.rel',
-  'audioconfig/brabus850_sounds.dat54.rel',
-  'sfx/dlc_brabus850/brabus850.awc',
-  'sfx/dlc_brabus850/brabus850_npc.awc',
   'audioconfig/shonen_game.dat151.rel',
   'audioconfig/shonen_sounds.dat54.rel',
   'sfx/dlc_shonen/shonen.awc',
@@ -89,18 +85,35 @@ files {
   'audioconfig/supergts_game.dat151.rel',
   'sfx/dlc_supergts/supergts.awc',
   'sfx/dlc_supergts/supergts_npc.awc',
-  'sfx/dlc_p60b40/p60b40_npc.awc'
+  'sfx/dlc_p60b40/p60b40_npc.awc',
+  'audioconfig/buffaloh_game.dat151.nametable',
+  'audioconfig/buffaloh_game.dat151.rel',
+  'audioconfig/buffaloh_game.dat151',
+  'audioconfig/buffaloh_sounds.dat54.nametable',
+  'audioconfig/buffaloh_sounds.dat54.rel',
+  'audioconfig/buffaloh_sounds.dat54',
+  'audioconfig/buffaloh.dat54.rel',
+  'sfx/dlc_gresleyh/gresleyh.awc',
+  'sfx/dlc_gresleyh/gresleyh_npc.awc',
+  'audioconfig/e63amg_game.dat151.rel',
+  'audioconfig/mrtasty_game.dat151.nametable',
+  'audioconfig/mrtasty_game.dat151.rel',
+  'audioconfig/mrtasty_game.dat151',
+  'audioconfig/mrtasty_sounds.dat54.nametable',
+  'audioconfig/mrtasty_sounds.dat54.rel',
+  'audioconfig/mrtasty_sounds.dat54',
+  'sfx/dlc_mrtasty/mrtasty.awc',
 }
 
+data_file 'AUDIO_GAMEDATA' 'audioconfig/mrtasty_game.dat'
+data_file 'AUDIO_SOUNDDATA' 'audioconfig/mrtasty_sounds.dat'
+data_file 'AUDIO_WAVEPACK' 'sfx/dlc_mrtasty'
 data_file 'AUDIO_GAMEDATA' 'audioconfig/lambov10_game.dat'
 data_file 'AUDIO_SOUNDDATA' 'audioconfig/lambov10_sounds.dat'
 data_file 'AUDIO_WAVEPACK' 'sfx/dlc_lambov10'
 data_file 'AUDIO_GAMEDATA' 'audioconfig/musv8_game.dat'
 data_file 'AUDIO_SOUNDDATA' 'audioconfig/musv8_sounds.dat'
 data_file 'AUDIO_WAVEPACK' 'sfx/dlc_musv8'
-data_file 'AUDIO_GAMEDATA' 'audioconfig/brabus850_game.dat'
-data_file 'AUDIO_SOUNDDATA' 'audioconfig/brabus850_sounds.dat'
-data_file 'AUDIO_WAVEPACK' 'sfx/dlc_brabus850'
 data_file 'AUDIO_GAMEDATA' 'audioconfig/shonen_game.dat'
 data_file 'AUDIO_SOUNDDATA' 'audioconfig/shonen_sounds.dat'
 data_file 'AUDIO_WAVEPACK' 'sfx/dlc_shonen'
@@ -144,3 +157,6 @@ data_file 'AUDIO_SOUNDDATA' 'audioconfig/p60b40_sounds.dat'
 data_file 'AUDIO_WAVEPACK' 'sfx/dlc_sunrise'
 data_file 'AUDIO_SOUNDDATA' 'audioconfig/sunrise_sounds.dat'
 data_file 'AUDIO_GAMEDATA' 'audioconfig/sunrise_game.dat'
+data_file 'AUDIO_WAVEPACK' 'sfx/dlc_gresleyh'
+data_file 'AUDIO_GAMEDATA' 'audioconfig/buffaloh_game.dat'
+data_file 'AUDIO_SOUNDDATA' 'audioconfig/buffaloh_sounds.dat'
