@@ -93,6 +93,7 @@ RegisterCommand('crouch', function()
 		SetTimeout(CoolDownTime, function()
 			Cooldown = false
 		end)
+		TriggerEvent("tcrp-cane:delete")
 	end
 end, false)
 
