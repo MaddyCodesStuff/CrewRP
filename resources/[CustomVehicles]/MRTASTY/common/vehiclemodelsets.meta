@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CAmbientModelSets>
+  <ModelSets>
+    <Item type="CAmbientModelSet">
+      <Name>icevan</Name>
+      <Models>
+        <Item>
+          <Name>MRTASTY</Name>
+          <Variations type="NULL" />
+          <Probability value="1.000000" />
+        </Item>
+      </Models>
+    </Item>
+  </ModelSets>
+</CAmbientModelSets>
