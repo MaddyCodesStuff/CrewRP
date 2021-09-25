@@ -182,3 +182,11 @@ AddEventHandler('tcrp-weapons:setDamageModifier', function(modifier)
 end)
 
 exports("getDefaultDamageModifier", getDefaultDamageModifier)
+
+-- Melee Damage
+Citizen.CreateThread(function()
+    for k, v in pairs Config.MeleeDamage do
+        SetWeaponDamageModifierThisFrame(GetHashKey(k), v)
+        Citizen.Wait(0)
+    end
+end)
