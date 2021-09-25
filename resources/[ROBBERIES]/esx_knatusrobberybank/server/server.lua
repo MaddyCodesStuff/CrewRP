@@ -170,7 +170,6 @@ AddEventHandler('esx_holdupbank:hack', function(robb)
         if (cops >= Banks[robb].NumberOfCopsRequired) then
 
             if xPlayer.getInventoryItem('raspberry').count >= 1 then
-                xPlayer.removeInventoryItem('raspberry', 1)
                 for i = 1, #xPlayers, 1 do
                     local xPlayer = ESX.GetPlayerFromId(xPlayers[i])
                     if xPlayer.job.name == 'police' then
@@ -299,4 +298,11 @@ end)
 RegisterServerEvent('esx_holdupbank:plantbomb')
 AddEventHandler('esx_holdupbank:plantbomb', function()
     TriggerClientEvent('esx_holdupbank:plantbomb', -1)
+end)
+
+RegisterServerEvent('esx_holdupbank:usePI')
+AddEventHandler('esx_holdupbank:usePI', function()
+    local source   = source
+    local xPlayer  = ESX.GetPlayerFromId(source)
+    xPlayer.removeInventoryItem('raspberry', 1)
 end)
