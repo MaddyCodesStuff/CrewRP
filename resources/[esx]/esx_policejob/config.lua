@@ -11,6 +11,7 @@ Config.LicenseTypes = {
 }
 Config.LicenseGives = {
 	{ label = "Hunting License", value = 'hunting' },
+	{ label = "Weapons License", value = 'weapon' },
 }
 Config.EnablePlayerManagement     = true
 Config.EnableArmoryManagement     = true
