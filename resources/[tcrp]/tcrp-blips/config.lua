@@ -1074,6 +1074,22 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Paleto Medical",
     },
+    [553]  = {
+        ["name"]    = "Coroner's Office",
+        ["x"] =  240.3, ["y"] =  -1379.96,
+        ["category"]= "Morgue",
+        ["text"]    = "Morgue",
+        ["sprite"]  = 310,
+        ["color"]   = 1,
+        ["layer"]   = 30,
+        ["scale"]   = 1.2,
+        ["Info.toggle"] = true,
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Morgue",
+        ["Info.nameLeft"] = "Head Coroner",["Info.nameRight"] = "Bella Lugosi",
+        ["Info.name2Left"] = "Phone Number",["Info.name2Right"] = "469-9744",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Coroners Office",
+    },
 
     -- Fire Stations --
     [610]  = {
