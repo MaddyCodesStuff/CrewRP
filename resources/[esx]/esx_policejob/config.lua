@@ -7,6 +7,10 @@ Config.MarkerColor                = { r = 0, g = 0, b = 255 }
 Config.LicenseTypes = {
     { label = "Weapons License", value = 'weapon' },
     { label = "Aircraft License", value = 'aircraft' },
+	{ label = "Hunting License", value = 'hunting' },
+}
+Config.LicenseGives = {
+	{ label = "Hunting License", value = 'hunting' },
 }
 Config.EnablePlayerManagement     = true
 Config.EnableArmoryManagement     = true

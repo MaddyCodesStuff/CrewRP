@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CVehicleModelInfoVariation>
+  <variationData>
+    <Item>
+      <modelName>mrtasty</modelName>
+      <colors>
+        <Item>
+          <indices content="char_array">
+          112
+          65
+          112
+          2
+          131
+          85
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array">
+          112
+          73
+          112
+          3
+          136
+          87
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array">
+          112
+          77
+          112
+          6
+          90
+          18
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array">
+          112
+          73
+          112
+          73
+          112
+          131
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array">
+          112
+          27
+          112
+          8
+          109
+          46
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array">
+          112
+          137
+          112
+          7
+          135
+          136
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array">
+          112
+          5
+          112
+          8
+          112
+          129
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array">
+          112
+          89
+          112
+          6
+          136
+          110
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array">
+          73
+          73
+          73
+          7
+          136
+          131
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array">
+          70
+          28
+          87
+          6
+          109
+          106
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array">
+          54
+          107
+          54
+          113
+          110
+          106
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array">
+          107
+          51
+          107
+          8
+          110
+          106
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array">
+          136
+          137
+          136
+          7
+          112
+          136
+          </indices>
+        </Item>
+      </colors>
+      <kits />
+      <windowsWithExposedEdges />
+      <plateProbabilities>
+        <Probabilities>
+          <Item>
+            <Name>standard white</Name>
+            <Value value="100" />
+          </Item>
+        </Probabilities>
+      </plateProbabilities>
+      <lightSettings value="0" />
+      <sirenSettings value="0" />
+    </Item>
+  </variationData>
+</CVehicleModelInfoVariation>
