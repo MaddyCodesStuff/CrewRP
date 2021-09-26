@@ -68,7 +68,7 @@ Config.femaleChainHolster = {
 }
 
 Config.MeleeDamage = {
-    --Sharp-- 
+    --Sharp-- (Pierces Armor)
     ["WEAPON_KNIFE"]            = 0.4,              
     ["WEAPON_DAGGER"]           = 0.5,          
     ["WEAPON_SWITCHBLADE"]      = 0.4,              
@@ -77,10 +77,10 @@ Config.MeleeDamage = {
     --Blunt--
     ["WEAPON_NIGHTSTICK"]       = 0.4,           
     ["WEAPON_HAMMER"]           = 0.4,       
-    ["WEAPON_BAT"]              = 0.4,   
-    ["WEAPON_GOLFCLUB"]         = 0.4,       
+    ["WEAPON_BAT"]              = 0.5,   
+    ["WEAPON_GOLFCLUB"]         = 0.5,       
     ["WEAPON_KNUCKLE"]          = 0.4,       
-    ["WEAPON_POOLCUE"]          = 0.4,       
+    ["WEAPON_POOLCUE"]          = 0.5,       
     ["WEAPON_WRENCH"]           = 0.4,
     ["WEAPON_FLASHLIGHT"]       = 0.3,
     --Chop-- 
