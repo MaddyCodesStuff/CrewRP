@@ -676,22 +676,22 @@ Blips.Main        = {
         ["layer"]   = 25,
     },
 
-    --Other Stores--
-    [250]  = {
-        ["name"]    = "Cindy's Flower Shop",
-        ["x"] =  -1183.29, ["y"] =  -1193.05,
-        ["category"]= "Other Stores",
-        ["text"]    = "Flower Shop",
-        ["sprite"]  = 431,
-        ["color"]   = 7,
-        ["scale"]   = 1.0,
-        ["layer"]   = 25,
-        ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Store",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "None",
-        ["Info.dictionary"] = "blip_images",
-        ["Info.image"] = "Cindy's Flowers",
-    },
+    -- --Other Stores--
+    -- [250]  = {
+    --     ["name"]    = "Cindy's Flower Shop",
+    --     ["x"] =  -1183.29, ["y"] =  -1193.05,
+    --     ["category"]= "Other Stores",
+    --     ["text"]    = "Flower Shop",
+    --     ["sprite"]  = 431,
+    --     ["color"]   = 7,
+    --     ["scale"]   = 1.0,
+    --     ["layer"]   = 25,
+    --     ["Info.toggle"] = true,
+    --     ["Info.textLeft"] = "Category", ["Info.textRight"] = "Store",
+    --     ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "None",
+    --     ["Info.dictionary"] = "blip_images",
+    --     ["Info.image"] = "Cindy's Flowers",
+    -- },
     [251]  = {
         ["name"]    = "Bowling Alley",
         ["x"] =  -153.38, ["y"] =  -246.94,
