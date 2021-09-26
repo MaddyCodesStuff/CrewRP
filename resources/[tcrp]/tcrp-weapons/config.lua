@@ -38,14 +38,14 @@ Config.BeltWeapons = {
 --Male T-Shirt Holsters
 Config.maleShirtHolster = {
     122,
-    130,
-    174,
+    140,
+    175,
 }
 
 Config.maleChainHolster = {
-    136,
-    140,
-    141,
+    146,
+    150,
+    151,
     155,
     157,
     159,
@@ -68,24 +68,25 @@ Config.femaleChainHolster = {
 }
 
 Config.MeleeDamage = {
+    ["WEAPON_UNARMED"]          = 0.5,              
     --Sharp-- (Pierces Armor)
-    ["WEAPON_KNIFE"]            = 0.4,              
-    ["WEAPON_DAGGER"]           = 0.5,          
-    ["WEAPON_SWITCHBLADE"]      = 0.4,              
-    ["WEAPON_MACHETE"]          = 0.5,          
-    ["WEAPON_BOTTLE"]           = 0.4,          
+    ["WEAPON_KNIFE"]            = 0.5,              
+    ["WEAPON_DAGGER"]           = 0.6,          
+    ["WEAPON_SWITCHBLADE"]      = 0.5,              
+    ["WEAPON_MACHETE"]          = 0.6,          
+    ["WEAPON_BOTTLE"]           = 0.5,          
     --Blunt--
-    ["WEAPON_NIGHTSTICK"]       = 0.4,           
-    ["WEAPON_HAMMER"]           = 0.4,       
-    ["WEAPON_BAT"]              = 0.5,   
-    ["WEAPON_GOLFCLUB"]         = 0.5,       
-    ["WEAPON_KNUCKLE"]          = 0.4,       
-    ["WEAPON_POOLCUE"]          = 0.5,       
-    ["WEAPON_WRENCH"]           = 0.4,
-    ["WEAPON_FLASHLIGHT"]       = 0.3,
+    ["WEAPON_NIGHTSTICK"]       = 0.5,           
+    ["WEAPON_HAMMER"]           = 0.5,       
+    ["WEAPON_BAT"]              = 0.6,   
+    ["WEAPON_GOLFCLUB"]         = 0.6,       
+    ["WEAPON_KNUCKLE"]          = 0.5,       
+    ["WEAPON_POOLCUE"]          = 0.6,       
+    ["WEAPON_WRENCH"]           = 0.5,
+    ["WEAPON_FLASHLIGHT"]       = 0.4,
     --Chop-- 
-    ["WEAPON_BATTLAXE"]         = 0.5,         
-    ["WEAPON_CROWBAR"]          = 0.4,          
-    ["WEAPON_HATCHET"]          = 0.5,          
-    ["WEAPON_STONE_HATCHET"]    = 0.4,                  
+    ["WEAPON_BATTLAXE"]         = 0.6,         
+    ["WEAPON_CROWBAR"]          = 0.5,          
+    ["WEAPON_HATCHET"]          = 0.6,          
+    ["WEAPON_STONE_HATCHET"]    = 0.5,                  
 }
