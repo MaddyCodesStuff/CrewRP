@@ -4,7 +4,7 @@ var quicktimegoal = document.getElementById('quicktimegoal');
 var active = false;
 var keyHit = '';
 var objKey = '';
-const keyOptions = ['q','w','e','r','t','y'];
+const keyOptions = ['q','w','e','r','t'];
 var minSuccess = 0;
 var maxSuccess = 100;
 var callbackFunc = '';
@@ -37,11 +37,6 @@ function startBar(diff) {
     function drawBar(){ 
         if(active){
             if(keyHit !== ''){
-                console.log(keyHit)
-                console.log(prog)
-                console.log(minSuccess)
-                console.log(maxSuccess)
-                console.log(quicktimeprog.style.width)
                 if(keyHit === objKey && prog <= (maxSuccess + 2) && prog >= (minSuccess - 2)){
                     active = false;
                     clearInterval(frame)
@@ -67,7 +62,7 @@ function startBar(diff) {
                 
                 prog++;
                 quicktimeprog.style.width  = prog + "%";
-                    if (prog == 100){
+                    if (prog == 99){
                         active = false;
                         clearInterval(frame)
                         
@@ -88,8 +83,9 @@ function eventSetup(){
     objKey = keyOptions[Math.floor(Math.random() * keyOptions.length)];
     keyHit = '';
     active = true;
-    quicktimegoal.innerHTML = objKey;
+    quicktimegoal.innerHTML = objKey.toUpperCase();
     quicktimegoal.style.left = minSuccess;
+    quicktimegoal.style.width = 
     quicktimebar.style.display = "block";
     quicktimeprog.style.display = "block";
     quicktimegoal.style.display = "block";

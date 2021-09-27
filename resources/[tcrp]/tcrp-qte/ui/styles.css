@@ -6,7 +6,7 @@
     background-color:#FF5F00;
     height: 30px;
     opacity: 100%;
-    border-radius:2%;
+    border-radius:3%;
   }
 
   #quicktimebar{
@@ -16,11 +16,12 @@
     position: absolute;
     width: 150px;
     height: 30px;
+    opacity: 80%;
     background-color: black;
     border: black;
     border-width: medium;
     padding: .15em;
-    border-radius: 2%;
+    border-radius: 3%;
   }
   #quicktimegoal{
     width: 15%;
@@ -29,8 +30,8 @@
     position: relative;
     height: 30px;
     left:40%;
-    opacity: 100%;
-    color: #FF5F00;
+    opacity: 80%;
+    color: #0e0e52;
     text-align: center;
     font-size: x-large;
     font-weight: bold;

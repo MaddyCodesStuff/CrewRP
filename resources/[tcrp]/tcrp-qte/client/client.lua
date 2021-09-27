@@ -1,10 +1,10 @@
 
 -- Good testing tool
--- RegisterCommand('qte', function()
---     test = math.random(1,5)
---     TriggerEvent('tcrp-qte:startQTE', test, 'tcrp-qte:testFinisher')   
+RegisterCommand('qte', function()
+    test = math.random(1,5)
+    TriggerEvent('tcrp-qte:startQTE', test, 'tcrp-qte:testFinisher')   
 
--- end)
+end)
 
 RegisterNUICallback('finish', function(data, cb)
     SetNuiFocus(false,false)
@@ -19,20 +19,20 @@ RegisterNetEvent('tcrp-qte:startQTE')
 AddEventHandler('tcrp-qte:startQTE', function(difficulty, callback)
     --to start, 5 difficuties
     SetNuiFocus(true,false)
-    if difficulty < 1 then difficulty = 1
-    elseif difficulty > 5 then difficulty = 5
+    if difficulty < Config.MinDifficulty then difficulty = Config.MinDifficulty
+    elseif difficulty > Config.MaxDifficulty then difficulty = Config.MaxDifficulty
     end
 
     if difficulty == 1 then
-        speed = 30    
+        speed = Config.Difficulty.one    
     elseif difficulty == 2 then
-        speed = 25
+        speed = Config.Difficulty.two
     elseif difficulty == 3 then
-        speed = 20
+        speed = Config.Difficulty.three
     elseif difficulty == 4 then
-        speed = 17
+        speed = Config.Difficulty.four
     else
-        speed = 15
+        speed = Config.Difficulty.five
     
     end
 
@@ -43,6 +43,7 @@ AddEventHandler('tcrp-qte:startQTE', function(difficulty, callback)
         difficulty = speed,
         min = start,
         max = start + width,
+        width = width,
         func = callback
 
     })
