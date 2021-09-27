@@ -1,22 +1,3 @@
-/* 
-.quicktimebar{
-    display: none;
-    position: absolute;
-    background-color:lightgrey;
-    
-    color: white;
-    width: 150px;
-}
-.quicktimeprog{
-    display: none;
-    position: relative;
-    background-color: greenyellow;
-    opacity: 80%;
-    color: white;
-    margin: 0em;
-    padding: 0em;
-
-} */
 
 #quicktimeprog {
     display: none;
