@@ -122,6 +122,7 @@ Locales['en'] = {
 	['weapon_bzgas']                 = 'bz gas',
 	['weapon_molotov']               = 'molotov cocktail',
 	['weapon_fireextinguisher']      = 'fire extinguisher',
+	['weapon_hose']      			 = 'hose',
 	['weapon_petrolcan']             = 'jerrycan',
 	['weapon_digiscanner']           = 'digiscanner',
 	['weapon_ball']                  = 'ball',
@@ -168,6 +169,8 @@ Locales['en'] = {
 	['gadget_parachute']             = 'parachute',
 	['weapon_flare']                 = 'flare gun',
 	['weapon_doubleaction']          = 'double-Action Revolver',
+	['weapon_fire_axe']          	 = 'fire axe',
+
 
 	-- Weapon Components
 	['component_clip_default']       = 'default Grip',

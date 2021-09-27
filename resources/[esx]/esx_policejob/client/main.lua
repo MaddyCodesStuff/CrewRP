@@ -493,6 +493,7 @@ function OpenPoliceActionsMenu()
 		{ label = "Fines & Jail", value = 'jail_menu' },
 		{ label = _U('vehicle_interaction'), value = 'vehicle_interaction' },
 		{ label = _U('object_spawner'), value = 'object_spawner' },
+		{ label = "Issue License", value = 'issue_license' },
 		{ label = 'Clock Off', value = 'mobile_clockinoff' },
 	}
 
@@ -687,6 +688,7 @@ function OpenPoliceActionsMenu()
 					{ label = _U('drag'), value = 'drag' },
 					{ label = _U('put_in_vehicle'), value = 'put_in_vehicle' },
 					{ label = _U('out_the_vehicle'), value = 'out_the_vehicle' },
+				--	{ label = "Issue License", value = 'issue_license' },
 					{ label = "Revive player", value = 'revive' },
 					{ label = "Manage Licenses", value = 'license'}
 				}
@@ -715,6 +717,8 @@ function OpenPoliceActionsMenu()
 								TriggerServerEvent('esx_policejob:putInVehicle', GetPlayerServerId(closestPlayer))
 							elseif action == 'out_the_vehicle' then
 								TriggerServerEvent('esx_policejob:OutVehicle', GetPlayerServerId(closestPlayer))
+							--elseif data.current.value == 'issue_license' then
+							--	TriggerEvent('esx_police:showIssueMenu', Config.LicenseTypes)
 							elseif action == 'revive' then
 								IsBusy                 = true
 								local closestPlayerPed = GetPlayerPed(closestPlayer)
@@ -809,6 +813,9 @@ function OpenPoliceActionsMenu()
 						menu2.close()
 					end)
 
+			elseif data.current.value == 'issue_license' then
+				TriggerEvent('esx_license:showIssueMenu', Config.LicenseGives)
+
 			elseif data.current.value == 'object_spawner' then
 				ESX.UI.Menu.Open(
 					'default', GetCurrentResourceName(), 'citizen_interaction',
@@ -822,6 +829,7 @@ function OpenPoliceActionsMenu()
 							{ label = _U('box'), value = 'prop_boxpile_07d' },
 							{ label = _U('cash'), value = 'hei_prop_cash_crate_half_full' },
 							{ label = 'Gazebo', value = 'prop_gazebo_02' },
+							{ label = 'Flamingo', value = 'prop_flamingo' },
 							{ label = 'Search Light', value = 'prop_worklight_03b' }
 						}
 					}, function(data2, menu2)

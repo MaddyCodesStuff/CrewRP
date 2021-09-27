@@ -61,6 +61,7 @@ Config.electronics = {
     {type = "raspberry", label = "Raspberry Pi"},
     {type = "phone", label = "Cell Phone"},
     {type = "tablet", label = "Tablet"},
+    {type = "usb", label = "USB"},
 }
 
 --Recipes
@@ -246,6 +247,10 @@ Config.Recipes = {
     gauze = {
         {item = "fabric", quantity = 1 },
         {item = "bandage", quantity = 1 }
+    },
+    usb = {
+        { item = "electronics", quantity = 2 },
+        { item = "plastic", quantity = 5 }
     },
     --[[weapon_snspistol_mk2 = {
         {item = "", quantity = },

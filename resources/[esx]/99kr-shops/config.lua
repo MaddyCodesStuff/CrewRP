@@ -1113,7 +1113,6 @@ Config = {
             { label = "Birthday Donut", item = "donut2", price = 2 },
         },
         ["electronics"] = {
-            { label = "Raspberry Pie", item = "raspberry", price = 1000 },
             { label = "Long Life Batteries", item = "lithium", price = 6 },
             { label = "Cell Phone", item = "phone", price = 500 },
             { label = "Radio", item = "radio", price = 100 },
