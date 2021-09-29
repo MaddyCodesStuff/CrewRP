@@ -48,10 +48,10 @@
 					</Explosion>
 					<FireType>INSTANT_HIT</FireType>
 					<WheelSlot>WHEEL_PISTOL</WheelSlot>
-					<Group>GROUP_PISTOL</Group>
+					<Group>GROUP_TASER</Group>
 					<AmmoInfo ref="AMMO_TASER"/>
 					<AimingInfo ref="PISTOL_2H_BASE_STRAFE"/>
-					<ClipSize value="-1"/>
+					<ClipSize value="2"/>
 					<AccuracySpread value="5.500000"/>
 					<AccurateModeAccuracyModifier value="0.500000"/>
 					<RunAndGunAccuracyModifier value="2.000000"/>
@@ -125,7 +125,7 @@
 					<ReloadTimeMP value="-1.000000"/>
 					<ReloadTimeSP value="-1.000000"/>
 					<VehicleReloadTime value="1.000000"/>
-					<AnimReloadRate value="1.000000"/>
+					<AnimReloadRate value="0.750000"/>
 					<BulletsPerAnimLoop value="1"/>
 					<TimeBetweenShots value="3.800000"/>
 					<TimeLeftBetweenShotsWhereShouldFireIsCached value="0.250000"/>
@@ -272,7 +272,7 @@
 					<AttachPoints/>
 					<GunFeedBone/>
 					<TargetSequenceGroup>PISTOL</TargetSequenceGroup>
-					<WeaponFlags>CarriedInHand Gun CanLockonOnFoot CanLockonInVehicle OnlyFireOneShotPerTriggerPress CanFreeAim AnimCrouchFire DisablePlayerBlockingInMP UsableOnFoot UsableClimbing UsableInCover HasLowCoverReloads HasLowCoverSwaps QuitTransitionToIdleIntroOnWeaponChange DisableLeftHandIkWhenOnFoot UseFPSAimIK AllowEarlyExitFromFireAnimAfterBulletFired</WeaponFlags>
+					<WeaponFlags>CarriedInHand Gun CanLockonOnFoot CanLockonInVehicle OnlyFireOneShotPerTriggerPress AnimReload CanFreeAim AnimCrouchFire DisablePlayerBlockingInMP UsableOnFoot UsableClimbing UsableInCover HasLowCoverReloads HasLowCoverSwaps QuitTransitionToIdleIntroOnWeaponChange DisableLeftHandIkWhenOnFoot UseFPSAimIK AllowEarlyExitFromFireAnimAfterBulletFired</WeaponFlags>
 					<TintSpecValues ref="TINT_DEFAULT"/>
 					<FiringPatternAliases ref="FIRING_PATTERN_PISTOL"/>
 					<ReloadUpperBodyFixupExpressionData ref="default"/>
