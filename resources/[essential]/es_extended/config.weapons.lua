@@ -538,8 +538,8 @@ Config.Weapons = {
 	},
 
 	{
-		name       = 'WEAPON_STUNGUN',
-		label      = _U('weapon_stungun'),
+		name       = 'WEAPON_TASER2',
+		label      = _U('weapon_taser2'),
 		components = {}
 	},
 
