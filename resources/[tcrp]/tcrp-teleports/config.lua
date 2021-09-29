@@ -2883,6 +2883,510 @@ Config.Elevators    = {
         },
     },
     },
+    { -- Vespucci Blvd. Apt. Rooftop Up
+    name    = "Vespucci Blvd. Apt. Up",
+    Pos     = { x = -831.53, y = -861.94, z = 20.69, h = 7.17 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -827.44, y = -863.71, z = 38.45, h = 1.89, }, -- exit
+            heading = 1.89,
+        },
+    },
+    },
+    { -- Vespucci Blvd. Apt. Rooftop Down
+    name    = "Vespucci Blvd. Apt. Down",
+    Pos     = { x = -827.44, y = -863.71, z = 38.45, h = 1.89, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -831.53, y = -861.94, z = 20.69, h = 7.17 },
+            heading = 7.17,
+        },
+    },
+    },
+    { -- Sunshine Apartments Rooftop Up
+    name    = "Sunshine Apartments Up",
+    Pos     = { x = -728.66, y = -879.81, z = 22.71, h = 92.53 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -722.88, y = -878.63, z = 34.13, h = 88.58, }, -- exit
+            heading = 88.58,
+        },
+    },
+    },
+    { -- Sunshine Apartments Rooftop Down
+    name    = "Sunshine Apartments Down",
+    Pos     = { x = -722.88, y = -878.63, z = 34.13, h = 88.58, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -728.66, y = -879.81, z = 22.71, h = 92.53 },
+            heading = 92.53,
+        },
+    },
+    },
+    { -- Palomino Ave. U-shaped Apartments Rooftop Up
+    name    = "Palomino Ave. U-shaped Apartments Up",
+    Pos     = { x = -604.82, y = -802.47, z = 25.19, h = 91.01 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -595.72, y = -803.47, z = 41.36, h = 359.25, }, -- exit
+            heading = 359.25,
+        },
+    },
+    },
+    { -- Palomino Ave. U-shaped Apartments Rooftop Down
+    name    = "Palomino Ave. U-shaped Apartments Down",
+    Pos     = { x = -595.72, y = -803.47, z = 41.36, h = 359.25, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -604.82, y = -802.47, z = 25.19, h = 91.01 },
+            heading = 91.01,
+        },
+    },
+    },
+    { -- Palomino Ave. U-shaped Apartments Rooftop Up
+    name    = "Palomino Ave. U-shaped Apartments Up",
+    Pos     = { x = -604.12, y = -774.32, z = 25.2, h = 180.27 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -605.04, y = -765.56, z = 41.36, h = 279.07, }, -- exit
+            heading = 279.07,
+        },
+    },
+    },
+    { -- Palomino Ave. U-shaped Apartments Rooftop Down
+    name    = "Palomino Ave. U-shaped Apartments Down",
+    Pos     = { x = -605.04, y = -765.56, z = 41.36, h = 279.07, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -604.12, y = -774.32, z = 25.2, h = 180.27 },
+            heading = 180.27,
+        },
+    },
+    },
+    { -- Corner Suites Apartments Rooftop Up
+    name    = "Corner Suites Apartments Up",
+    Pos     = { x = -517.82, y = -809.07, z = 30.74, h = 267.3 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -534.03, y = -813.31, z = 46.43, h = 184.07, }, -- exit
+            heading = 184.07,
+        },
+    },
+    },
+    { -- Corner Suites Apartments Rooftop Down
+    name    = "Corner Suites Apartments Down",
+    Pos     = { x = -534.03, y = -813.31, z = 46.43, h = 184.07, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -517.82, y = -809.07, z = 30.74, h = 267.3 },
+            heading = 267.3,
+        },
+    },
+    },
+    { -- Corner Suites Apartments Rooftop Up
+    name    = "Corner Suites Apartments Up",
+    Pos     = { x = -567.88, y = -781.28, z = 30.67, h = 0.57 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -570.92, y = -788.73, z = 46.44, h = 90.25, }, -- exit
+            heading = 90.25,
+        },
+    },
+    },
+    { -- Corner Suites Apartments Rooftop Down
+    name    = "Corner Suites Apartments Down",
+    Pos     = { x = -570.92, y = -788.73, z = 46.44, h = 90.25, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -567.88, y = -781.28, z = 30.67, h = 0.57 },
+            heading = 0.57,
+        },
+    },
+    },
+    { -- Weazel News Rooftop Up
+    name    = "Weazel News Up",
+    Pos     = { x = -598.78, y = -929.92, z = 23.86, h = 87.99 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -568.99, y = -927.72, z = 36.83, h = 91.23, }, -- exit
+            heading = 91.23,
+        },
+    },
+    },
+    { -- Weazel News Rooftop Down
+    name    = "Weazel News Down",
+    Pos     = { x = -568.99, y = -927.72, z = 36.83, h = 91.23, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -598.78, y = -929.92, z = 23.86, h = 87.99 },
+            heading = 87.99,
+        },
+    },
+    },
+    { -- Palomino Ave. Apartment Rooftop Up
+    name    = "Palomino Ave. Apartment Up",
+    Pos     = { x = -670.3, y = -1015.79, z = 18.07, h = 209.88 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -672.53, y = -1012.05, z = 30.35, h = 303.47, }, -- exit
+            heading = 303.47,
+        },
+    },
+    },
+    { -- Palomino Ave. Apartment Rooftop Down
+    name    = "Palomino Ave. Apartment Down",
+    Pos     = { x = -672.53, y = -1012.05, z = 30.35, h = 303.47, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -670.3, y = -1015.79, z = 18.07, h = 209.88 },
+            heading = 209.88,
+        },
+    },
+    },
+    { -- Palomino Ave. Apartment Rooftop Up
+    name    = "Palomino Ave. Apartment Up",
+    Pos     = { x = -667.97, y = -1105.8, z = 14.63, h = 62.29 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -661.83, y = -1104.1, z = 58.36, h = 66.65, }, -- exit
+            heading = 66.65,
+        },
+    },
+    },
+    { -- Palomino Ave. Apartment Rooftop Down
+    name    = "Palomino Ave. Apartment Down",
+    Pos     = { x = -661.83, y = -1104.1, z = 58.36, h = 66.65, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -667.97, y = -1105.8, z = 14.63, h = 62.29 },
+            heading = 62.29,
+        },
+    },
+    },
+    { -- Palomino Ave. Apartment Rooftop Up
+    name    = "Palomino Ave. Apartment Up",
+    Pos     = { x = -675.27, y = -1118.01, z = 11.99, h = 335.91 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -673.99, y = -1124.02, z = 48.49, h = 333.06, }, -- exit
+            heading = 333.06,
+        },
+    },
+    },
+    { -- Palomino Ave. Apartment Rooftop Down
+    name    = "Palomino Ave. Apartment Down",
+    Pos     = { x = -673.99, y = -1124.02, z = 48.49, h = 333.06, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -675.27, y = -1118.01, z = 11.99, h = 335.91 },
+            heading = 335.91,
+        },
+    },
+    },
+    { -- Lindsay Circus Apartment Rooftop Up
+    name    = "Lindsay Circus Apartment Up",
+    Pos     = { x = -741.72, y = -981.59, z = 17.06, h = 25.08 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -738.83, y = -990.34, z = 33.4, h = 296.54, }, -- exit
+            heading = 296.54,
+        },
+    },
+    },
+    { -- Lindsay Circus Apartment Rooftop Down
+    name    = "Lindsay Circus Apartment Down",
+    Pos     = { x = -738.83, y = -990.34, z = 33.4, h = 296.54, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -741.72, y = -981.59, z = 17.06, h = 25.08 },
+            heading = 25.08,
+        },
+    },
+    },
+    { -- Little Seoul Strip Mall Rooftop Up
+    name    = "Little Seoul Strip Mall Up",
+    Pos     = { x = -785.62, y = -1044.54, z = 12.98, h = 119.57 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -764.92, y = -1052.58, z = 31.2, h = 119.95, }, -- exit
+            heading = 119.95,
+        },
+    },
+    },
+    { -- Little Seoul Strip Mall Rooftop Down
+    name    = "Little Seoul Strip Mall Down",
+    Pos     = { x = -764.92, y = -1052.58, z = 31.2, h = 119.95, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -785.62, y = -1044.54, z = 12.98, h = 119.57 },
+            heading = 119.57,
+        },
+    },
+    },
+    { -- Palomino Ave. Hotel Thing Rooftop Up
+    name    = "Palomino Ave. Hotel Thing Up",
+    Pos     = { x = -886.04, y = -1233.11, z = 5.66, h = 359.45 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -885.27, y = -1242.67, z = 50.63, h = 349.92, }, -- exit
+            heading = 349.92,
+        },
+    },
+    },
+    { -- Palomino Ave. Hotel Thing Rooftop Down
+    name    = "Palomino Ave. Hotel Thing Down",
+    Pos     = { x = -885.27, y = -1242.67, z = 50.63, h = 349.92, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -886.04, y = -1233.11, z = 5.66, h = 359.45 },
+            heading = 359.45,
+        },
+    },
+    },
+    { -- Palomino Ave. Hotel Thing Rooftop Up
+    name    = "Palomino Ave. Hotel Thing Up",
+    Pos     = { x = -867.43, y = -1275.04, z = 5.15, h = 240.64 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -875.09, y = -1265.02, z = 50.63, h = 248.28, }, -- exit
+            heading = 248.28,
+        },
+    },
+    },
+    { -- Palomino Ave. Hotel Thing Rooftop Down
+    name    = "Palomino Ave. Hotel Thing Down",
+    Pos     = { x = -875.09, y = -1265.02, z = 50.63, h = 248.28, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -867.43, y = -1275.04, z = 5.15, h = 240.64 },
+            heading = 240.64,
+        },
+    },
+    },
+    { -- Palomino Ave. Hotel Thing Rooftop Up
+    name    = "Palomino Ave. Hotel Thing Up",
+    Pos     = { x = -968.72, y = -1329.16, z = 5.66, h = 198.23 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -971.75, y = -1322.69, z = 50.63, h = 184.56, }, -- exit
+            heading = 184.56,
+        },
+    },
+    },
+    { -- Palomino Ave. Hotel Thing Rooftop Down
+    name    = "Palomino Ave. Hotel Thing Down",
+    Pos     = { x = -971.75, y = -1322.69, z = 50.63, h = 184.56, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -968.72, y = -1329.16, z = 5.66, h = 198.23 },
+            heading = 198.23,
+        },
+    },
+    },
+    { -- Palomino Ave. Hotel Thing Rooftop Up
+    name    = "Palomino Ave. Hotel Thing Up",
+    Pos     = { x = -960.64, y = -1287.12, z = 5.33, h = 332.99 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -975.79, y = -1288.47, z = 50.63, h = 12.66, }, -- exit
+            heading = 12.66,
+        },
+    },
+    },
+    { -- Palomino Ave. Hotel Thing Rooftop Down
+    name    = "Palomino Ave. Hotel Thing Down",
+    Pos     = { x = -975.79, y = -1288.47, z = 50.63, h = 184.56, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -960.64, y = -1287.12, z = 5.33, h = 332.99 },
+            heading = 332.99,
+        },
+    },
+    },
+    { -- Fruity Dance Studio Rooftop Up
+    name    = "Fruity Dance Studio Up",
+    Pos     = { x = -1246.65, y = -1182.59, z = 7.66, h = 26.91 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1246.51, y = -1185.2, z = 14.66, h = 6.52, }, -- exit
+            heading = 6.52,
+        },
+    },
+    },
+    { -- Fruity Dance Studio Rooftop Down
+    name    = "Fruity Dance Studio Down",
+    Pos     = { x = -1246.51, y = -1185.2, z = 14.66, h = 6.52, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1246.65, y = -1182.59, z = 7.66, h = 26.91 },
+            heading = 26.91,
+        },
+    },
+    },
+    { -- Venetian Vespucci Rooftop Up
+    name    = "Venetian Vespucci Up",
+    Pos     = { x = -1361.8, y = -1079.73, z = 3.6, h = 116.88 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1357.26, y = -1066.28, z = 11.47, h = 213.97, }, -- exit
+            heading = 213.97,
+        },
+    },
+    },
+    { -- Venetian Vespucci Rooftop Down
+    name    = "Venetian Vespucci Down",
+    Pos     = { x = -1357.26, y = -1066.28, z = 11.47, h = 213.97, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1361.8, y = -1079.73, z = 3.6, h = 116.88 },
+            heading = 116.88,
+        },
+    },
+    },
+    { -- Venetian Vespucci Rooftop Up
+    name    = "Venetian Vespucci Up",
+    Pos     = { x = -1340.89, y = -1075.65, z = 6.94, h = 213.36 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1344.45, y = -1059.07, z = 11.47, h = 205.98, }, -- exit
+            heading = 205.98,
+        },
+    },
+    },
+    { -- Venetian Vespucci Rooftop Down
+    name    = "Venetian Vespucci Down",
+    Pos     = { x = -1344.45, y = -1059.07, z = 11.47, h = 205.98, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1340.89, y = -1075.65, z = 6.94, h = 213.36 },
+            heading = 213.36,
+        },
+    },
+    },
+    { -- Vespucci Hotel Rooftop Up
+    name    = "Vespucci Hotel Up",
+    Pos     = { x = -1385.03, y = -976.23, z = 9.05, h = 306.22 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1399.33, y = -986.17, z = 19.38, h = 124.29, }, -- exit
+            heading = 124.29,
+        },
+    },
+    },
+    { -- Vespucci Hotel Rooftop Down
+    name    = "Vespucci Hotel Down",
+    Pos     = { x = -1399.33, y = -986.17, z = 19.38, h = 124.29, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1385.03, y = -976.23, z = 9.05, h = 306.22 },
+            heading = 306.22,
+        },
+    },
+    },
+    { -- Office Near Burger Shot Rooftop Up
+    name    = "Office Near Burger Shot Up",
+    Pos     = { x = -1233.07, y = -855.99, z = 13.11, h = 214.75 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1246.19, y = -853.76, z = 65.33, h = 216.04, }, -- exit
+            heading = 216.04,
+        },
+    },
+    },
+    { -- Office Near Burger Shot Rooftop Down
+    name    = "Office Near Burger Shot Down",
+    Pos     = { x = -1246.19, y = -853.76, z = 65.33, h = 216.04, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1233.07, y = -855.99, z = 13.11, h = 214.75 },
+            heading = 214.75,
+        },
+    },
+    },
     { -- Casino Into Cashier
     name    = "Casino Door",
     Pos     = { x = 978.47, y = 32.13, z = 74.28 },
