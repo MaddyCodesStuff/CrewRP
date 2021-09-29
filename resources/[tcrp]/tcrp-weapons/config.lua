@@ -38,14 +38,14 @@ Config.BeltWeapons = {
 --Male T-Shirt Holsters
 Config.maleShirtHolster = {
     122,
-    140,
-    175,
+    130,
+    174,
 }
 
 Config.maleChainHolster = {
-    146,
-    150,
-    151,
+    136,
+    140,
+    141,
     155,
     157,
     159,
