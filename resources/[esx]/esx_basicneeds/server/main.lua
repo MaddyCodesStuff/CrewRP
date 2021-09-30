@@ -49,7 +49,6 @@ ESX.RegisterUsableItem('pizza', function(source)
     xPlayer.removeInventoryItem('pizza', 1)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 1000000)
-    TriggerClientEvent('esx_status:remove', source, 'thirst', 250000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_pizza_box_01')
     TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Whole Pizza - The Cardboard is the Best Part!')
 
@@ -136,7 +135,6 @@ ESX.RegisterUsableItem('cheesebows', function(source)
     xPlayer.removeInventoryItem('cheesebows', 1)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 200000)
-    TriggerClientEvent('esx_status:remove', source, 'thirst', 50000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'v_ret_ml_chips4')
     TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Bag of Cheese Chips')
 
@@ -149,7 +147,6 @@ ESX.RegisterUsableItem('chips', function(source)
     xPlayer.removeInventoryItem('chips', 1)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 200000)
-    TriggerClientEvent('esx_status:remove', source, 'thirst', 50000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'v_ret_ml_chips3')
     TriggerClientEvent('mythic_notify:client:SendEatAlert', source, "A Bag of Chips")
 
@@ -162,7 +159,6 @@ ESX.RegisterUsableItem('chips2', function(source)
     xPlayer.removeInventoryItem('chips2', 1)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 200000)
-    TriggerClientEvent('esx_status:remove', source, 'thirst', 50000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'v_ret_ml_chips2')
     TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Bag of Habanero Chips')
 
@@ -175,7 +171,6 @@ ESX.RegisterUsableItem('chips3', function(source)
     xPlayer.removeInventoryItem('chips3', 1)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 200000)
-    TriggerClientEvent('esx_status:remove', source, 'thirst', 50000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'v_ret_ml_chips1p')
     TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Bag of Sticky Rib Chips')
 
@@ -672,7 +667,6 @@ ESX.RegisterUsableItem('largefries', function(source)
     xPlayer.removeInventoryItem('largefries', 1)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 200000)
-    TriggerClientEvent('esx_status:remove', source, 'thirst', 50000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_food_bs_chips')
     TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Large Fry - No Supersize Options Here')
 
