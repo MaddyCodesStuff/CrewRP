@@ -3387,6 +3387,342 @@ Config.Elevators    = {
         },
     },
     },
+    { -- Nutsaki Restaurant Rooftop Up
+    name    = "Nutsaki Restaurant Up",
+    Pos     = { x = -1209.08, y = -824.34, z = 15.45, h = 307.64 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1236.83, y = -828.84, z = 25.13, h = 37.25, }, -- exit
+            heading = 37.25,
+        },
+    },
+    },
+    { -- Nutsaki Restaurant Rooftop Down
+    name    = "Nutsaki Restaurant Down",
+    Pos     = { x = -1236.83, y = -828.84, z = 25.13, h = 37.25, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1209.08, y = -824.34, z = 15.45, h = 307.64 },
+            heading = 307.64,
+        },
+    },
+    },
+    { -- Universal Uniform Rooftop Up
+    name    = "Universal Uniform Up",
+    Pos     = { x = -1176.45, y = -814.14, z = 14.46, h = 171.25 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1178.83, y = -806.57, z = 25.96, h = 126.11, }, -- exit
+            heading = 126.11,
+        },
+    },
+    },
+    { -- Universal Uniform Rooftop Down
+    name    = "Universal Uniform Down",
+    Pos     = { x = -1178.83, y = -806.57, z = 25.96, h = 126.11, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1176.45, y = -814.14, z = 14.46, h = 171.25 },
+            heading = 171.25,
+        },
+    },
+    },
+    { -- Universal Uniform Rooftop Up
+    name    = "Universal Uniform Up",
+    Pos     = { x = -1183.45, y = -800.84, z = 25.64, h = 128.75 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1175.83, y = -796.77, z = 31.04, h = 129.51, }, -- exit
+            heading = 129.51,
+        },
+    },
+    },
+    { -- Universal Uniform Rooftop Down
+    name    = "Universal Uniform Down",
+    Pos     = { x = -1175.73, y = -796.77, z = 31.04, h = 129.51, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1183.45, y = -800.84, z = 25.64, h = 128.75 },
+            heading = 128.75,
+        },
+    },
+    },
+    { -- The Fish Net Rooftop Up
+    name    = "The Fish Net Up",
+    Pos     = { x = -1335.08, y = -661.02, z = 26.51, h = 211.97 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1341.49, y = -656.73, z = 40.57, h = 211.73, }, -- exit
+            heading = 211.73,
+        },
+    },
+    },
+    { -- The Fish Net Rooftop Down
+    name    = "The Fish Net Down",
+    Pos     = { x = -1341.49, y = -656.73, z = 40.57, h = 211.73, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1335.08, y = -661.02, z = 26.51, h = 211.97 },
+            heading = 211.97,
+        },
+    },
+    },
+    { -- Zip Rooftop Up
+    name    = "Zip Up",
+    Pos     = { x = -1373.77, y = -598.1, z = 29.6, h = 304.14 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1380.85, y = -599.66, z = 43.71, h = 125.81, }, -- exit
+            heading = 125.81,
+        },
+    },
+    },
+    { -- Zip Rooftop Down
+    name    = "Zip Down",
+    Pos     = { x = -1380.85, y = -599.66, z = 43.71, h = 125.81, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1373.77, y = -598.1, z = 29.6, h = 304.14 },
+            heading = 304.14,
+        },
+    },
+    },
+    { -- Grain of Truth Rooftop Up
+    name    = "Grain of Truth Up",
+    Pos     = { x = -1370.98, y = -685.27, z = 24.99, h = 215.88 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1390.49, y = -681.92, z = 39.12, h = 215.73, }, -- exit
+            heading = 215.73,
+        },
+    },
+    },
+    { -- Grain of Truth Rooftop Down
+    name    = "Grain of Truth Down",
+    Pos     = { x = -1390.49, y = -681.92, z = 39.12, h = 215.73, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1370.98, y = -685.27, z = 24.99, h = 215.88 },
+            heading = 215.88,
+        },
+    },
+    },
+    { -- Haute Rooftop Up
+    name    = "Haute Up",
+    Pos     = { x = -1389.04, y = -745.95, z = 24.63, h = 128.38 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1376.74, y = -752.29, z = 41.68, h = 127.52, }, -- exit
+            heading = 127.52,
+        },
+    },
+    },
+    { -- Haute Rooftop Down
+    name    = "Haute Down",
+    Pos     = { x = -1376.74, y = -752.29, z = 41.68, h = 127.52, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1389.04, y = -745.95, z = 24.63, h = 128.38 },
+            heading = 128.38,
+        },
+    },
+    },
+    { -- Trapezoid Building Rooftop Up
+    name    = "Trapezoid Building Up",
+    Pos     = { x = -1489.72, y = -602.6, z = 31.29, h = 218.88 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1507.66, y = -602.67, z = 67.52, h = 262.56, }, -- exit
+            heading = 262.56,
+        },
+    },
+    },
+    { -- Trapezoid Building Rooftop Down
+    name    = "Trapezoid Building Down",
+    Pos     = { x = -1507.66, y = -602.67, z = 67.52, h = 262.56, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1489.72, y = -602.6, z = 31.29, h = 218.88 },
+            heading = 218.88,
+        },
+    },
+    },
+    { -- Trapezoid Building Rooftop Up
+    name    = "Trapezoid Building Up",
+    Pos     = { x = -1539.49, y = -607.59, z = 31.29, h = 175.23 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1522.93, y = -603.3, z = 67.52, h = 84.97, }, -- exit
+            heading = 84.97,
+        },
+    },
+    },
+    { -- Trapezoid Building Rooftop Down
+    name    = "Trapezoid Building Down",
+    Pos     = { x = -1522.93, y = -603.3, z = 67.52, h = 84.97, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1539.49, y = -607.59, z = 31.29, h = 175.23 },
+            heading = 175.23,
+        },
+    },
+    },
+    { -- Crastenburg Rooftop Up
+    name    = "Crastenburg Up",
+    Pos     = { x = -1545.28, y = -529.62, z = 36.15, h = 31.26 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1539.55, y = -532.28, z = 72.3, h = 36.33, }, -- exit
+            heading = 36.33,
+        },
+    },
+    },
+    { -- Crastenburg Rooftop Down
+    name    = "Crastenburg Down",
+    Pos     = { x = -1539.55, y = -532.28, z = 72.3, h = 36.33, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1545.28, y = -529.62, z = 36.15, h = 31.26 },
+            heading = 31.26,
+        },
+    },
+    },
+    { -- Del Perro Heights Rooftop Up
+    name    = "Del Perro Heights Up",
+    Pos     = { x = -1447.28, y = -536.96, z = 34.74, h = 220.84 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1451.55, y = -540.96, z = 85.07, h = 129.1, }, -- exit
+            heading = 129.1,
+        },
+    },
+    },
+    { -- Del Perro Heights Rooftop Down
+    name    = "Del Perro Heights Down",
+    Pos     = { x = -1451.55, y = -540.96, z = 85.07, h = 129.1, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1447.28, y = -536.96, z = 34.74, h = 220.84 },
+            heading = 220.84,
+        },
+    },
+    },
+    { -- Elgin House Rockford Rooftop Up
+    name    = "Elgin House Rockford Up",
+    Pos     = { x = -1288.09, y = -430.4, z = 35.16, h = 307.07 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1292.94, y = -428.91, z = 103.47, h = 307.96, }, -- exit
+            heading = 307.96,
+        },
+    },
+    },
+    { -- Elgin House Rockford Rooftop Down
+    name    = "Elgin House Rockford Down",
+    Pos     = { x = -1292.94, y = -428.91, z = 103.47, h = 307.96, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1288.09, y = -430.4, z = 35.16, h = 307.07 },
+            heading = 307.07,
+        },
+    },
+    },
+    { -- Fancy Hotel Rooftop Up
+    name    = "Fancy Hotel Up",
+    Pos     = { x = -1163.9, y = -348.87, z = 36.64, h = 5.47 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1164.98, y = -357.78, z = 57.83, h = 183.73, }, -- exit
+            heading = 183.73,
+        },
+    },
+    },
+    { -- Fancy Hotel Rooftop Down
+    name    = "Fancy Hotel Down",
+    Pos     = { x = -1164.98, y = -357.78, z = 57.83, h = 183.73, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1163.9, y = -348.87, z = 36.64, h = 5.47 },
+            heading = 5.47,
+        },
+    },
+    },
+    { -- Fancy Hotel Rooftop Up
+    name    = "Fancy Hotel Up",
+    Pos     = { x = -1160.48, y = -388.38, z = 36.64, h = 186.22 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1160.15, y = -380.1, z = 57.83, h = 4.55, }, -- exit
+            heading = 4.55,
+        },
+    },
+    },
+    { -- Fancy Hotel Rooftop Down
+    name    = "Fancy Hotel Down",
+    Pos     = { x = -1160.15, y = -380.1, z = 57.83, h = 4.55, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1160.48, y = -388.38, z = 36.64, h = 186.22 },
+            heading = 186.22,
+        },
+    },
+    },
     { -- Casino Into Cashier
     name    = "Casino Door",
     Pos     = { x = 978.47, y = 32.13, z = 74.28 },
