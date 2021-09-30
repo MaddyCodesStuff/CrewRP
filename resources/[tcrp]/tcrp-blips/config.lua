@@ -707,6 +707,22 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Bowling Alley",
     },
+    [252]  = {
+        ["name"]    = "Best Buds",
+        ["x"] =  377.59, ["y"] =  -828.34,
+        ["category"]= "Other Stores",
+        ["text"]    = "Best Buds",
+        ["sprite"]  = 496,
+        ["color"]   = 25,
+        ["scale"]   = 1.0,
+        ["layer"]   = 25,
+        ["Info.toggle"] = true,
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Weed Dispensary",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Mark Carter",
+        ["Info.name2Left"] = "Phone",["Info.name2Right"] = "238-5965",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Best Buds",
+    },
     
     --Hobbies--
     [300]  = {
@@ -1179,20 +1195,6 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Bolingbroke Penitentiary",
     },
-    [671]  = {
-        ["name"]    = "San Andreas Parks Deparment",
-        ["x"] =  385.87, ["y"] = 796.18,
-        ["category"]= "Park Rangers",
-        ["text"]    = "Ranger Station",
-        ["sprite"]  = 496,
-        ["color"]   = 25,
-        ["layer"]   = 30,
-        ["scale"]   = 1.2,
-        ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Ranger Station",
-        ["Info.dictionary"] = "blip_images",
-        ["Info.image"] = "Parks Station",
-    },
     
     -- Dealerships --
     [730]  = {
@@ -1245,8 +1247,8 @@ Blips.Main        = {
         ["scale"]   = 1.0,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Car Dealership",
-        ["Info.headerLeft"] = "Owner", ["Info.headerRight"] = "~g~Luna Rose",
-        ["Info.iconLeft"] = "Phone", ["Info.iconRight"] = "~h~644-5809", ["Info.iconID"] = 5, ["Info.iconColor"] = 1, ["Info.iconCheckmark"] = false,
+        ["Info.nameLeft"] = "Amelia Jacobs", ["Info.nameRight"] = "673-0216",
+        ["Info.name2Left"] = "Mark Carter", ["Info.name2Right"] = "238-5965",
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Helmuts",
     },
@@ -1761,16 +1763,16 @@ Bulkblips = {
     },
     
     DIGITAL = {
-            Config = {
+        Config = {
             ["text"]    = "Digital Den",
-            ["color"]   = 35,
-            ["sprite"]  = 71,
+            ["color"]   = 14,
+            ["sprite"]  = 521,
             ["layer"]   = 15,
         },
         Blips = {
-            ["x"]      = -633.22, ["y"] = -281.99,
-            ["x"]      = -658.82, ["y"] = -858.82,
-            ["x"]      = 1131.92, ["y"] = -474.17,
+            {["x"] = -0633.22,   ["y"]   =   -0281.99},
+            {["x"] = -0658.82,   ["y"]   =   -0858.82},
+            {["x"] =  1131.92,   ["y"]   =   -0474.17}, 
         },
     },
     
