@@ -1,6 +1,7 @@
 local ESX        = nil
 local group      = "user"
 local states     = {}
+local noClipSpeed = 1.00
 states.frozen    = false
 states.frozenPos = nil
 
@@ -41,6 +42,8 @@ RegisterNetEvent('esx:playerLoaded')
 AddEventHandler('esx:playerLoaded', function()
 
     TriggerEvent('es_admin:getPlayerPed')
+    
+    TriggerEvent('chat:addSuggestion', '/noclipspeed', 'Format: 1.00 ex. /noclipspeed 2.00', {})
 end)
 
 AddEventHandler('es_admin:getPlayerPed', function()
@@ -64,6 +67,10 @@ RegisterCommand('ad', function()
     -- 		-- end
     -- 	end
     -- end)
+end)
+
+RegisterCommand("noclipspeed", function(src, args, raw)
+    noClipSpeed = args[1]
 end)
 
 TriggerServerEvent('chat:removeSuggestions', '/ad')
@@ -205,7 +212,7 @@ Citizen.CreateThread(function()
             local ped        = GetPlayerPed(-1)
             local x, y, z    = getPosition()
             local dx, dy, dz = getCamDirection()
-            local speed      = 0.75
+            local speed      = noClipSpeed
 
             -- reset velocity
             SetEntityVelocity(ped, 0.0001, 0.0001, 0.0001)
@@ -229,6 +236,8 @@ Citizen.CreateThread(function()
             SetEntityCoordsNoOffset(ped, x, y, z, true, true, true)
             SetEntityInvincible(ped, true)
             SetEntityVisible(ped, false, false)
+            SetEntityCompletelyDisableCollision(ped, false, false)
+            ClearPedTasksImmediately(ped)
             -- SetEntityCoordsNoOffset(PlayerPedId(), noclip_pos.x, noclip_pos.y, noclip_pos.z, 0, 0, 0)
 
             -- if(IsControlPressed(1, 34))then
@@ -268,6 +277,7 @@ Citizen.CreateThread(function()
             Citizen.Wait(200)
             SetEntityInvincible(ped, false)
             SetEntityVisible(ped, true, false)
+            SetEntityCompletelyDisableCollision(ped, true, true)
         end
     end
 end)
