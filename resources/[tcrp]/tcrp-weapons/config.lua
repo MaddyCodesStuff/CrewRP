@@ -85,7 +85,7 @@ Config.MeleeDamage = {
     ["WEAPON_WRENCH"]           = 0.5,
     ["WEAPON_FLASHLIGHT"]       = 0.4,
     --Chop-- 
-    ["WEAPON_BATTLAXE"]         = 0.6,         
+    ["WEAPON_BATTLEAXE"]        = 0.6,         
     ["WEAPON_CROWBAR"]          = 0.5,          
     ["WEAPON_HATCHET"]          = 0.6,          
     ["WEAPON_STONE_HATCHET"]    = 0.5,                  
