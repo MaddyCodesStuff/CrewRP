@@ -14,7 +14,7 @@ function isBeltWeapon(weapon)
         if gun == weapon then
             return true
         end
-    end
+    end 
     return false
 end
 
