@@ -1,10 +1,13 @@
 -- DEFINITIONS AND CONSTANTS
+addblip = false
+createcheckpoints = false
+currentraceindex = nil
 local RACE_STATE_NONE = 0
 local RACE_STATE_JOINED = 1
 local RACE_STATE_RACING = 2
 local RACE_STATE_RECORDING = 3
-local RACE_CHECKPOINT_TYPE = 45
-local RACE_CHECKPOINT_FINISH_TYPE = 9
+local RACE_CHECKPOINT_TYPE = 17
+local RACE_CHECKPOINT_FINISH_TYPE = 16
 
 -- Races and race status
 local races = {}
@@ -41,6 +44,11 @@ RegisterCommand("race", function(source, args)
         if name ~= nil and #recordedCheckpoints > 0 then
             -- Send event to server to save checkpoints
             TriggerServerEvent('StreetRaces:saveRace_sv', name, recordedCheckpoints)
+        end
+        if raceStatus.state == RACE_STATE_RACING and name ~= nil and currentraceindex ~= nil then
+            local race = races[currentraceindex]
+            local checkpoints = race.checkpoints
+            TriggerServerEvent('StreetRaces:saveRace_sv', name, checkpoints)
         end
     elseif args[1] == "delete" then
         -- Check name was provided and send event to server to delete saved race
@@ -81,6 +89,14 @@ RegisterCommand("race", function(source, args)
             -- Set state to none to cleanup recording blips while waiting to join
             raceStatus.state = RACE_STATE_NONE
         end
+    elseif args[1] == "add" and raceStatus.state == RACE_STATE_RECORDING then
+        addblip = true
+    elseif args[1] == "chekpoints" then
+        if createcheckpoints then
+            createcheckpoints = false
+        else
+            createcheckpoints = true
+        end
     elseif args[1] == "cancel" then
         -- Send cancel event to server
         TriggerServerEvent('StreetRaces:cancelRace_sv')
@@ -117,6 +133,9 @@ AddEventHandler("StreetRaces:loadRace_cl", function(checkpoints)
         SetBlipColour(checkpoint.blip, config_cl.checkpointBlipColor)
         SetBlipAsShortRange(checkpoint.blip, true)
         ShowNumberOnBlip(checkpoint.blip, index)
+        AddTextEntry(checkpoint.blip, "Checkpoint")
+        BeginTextCommandSetBlipName(checkpoint.blip)
+        EndTextCommandSetBlipName(checkpoint.blip)
     end
 
     -- Clear waypoint and add route for first checkpoint blip
@@ -131,6 +150,8 @@ AddEventHandler("StreetRaces:joinedRace_cl", function(index)
     -- Set index and state to joined
     raceStatus.index = index
     raceStatus.state = RACE_STATE_JOINED
+    currentraceindex = raceStatus.index
+
 
     -- Add map blips
     local race = races[index]
@@ -140,6 +161,9 @@ AddEventHandler("StreetRaces:joinedRace_cl", function(index)
         SetBlipColour(checkpoint.blip, config_cl.checkpointBlipColor)
         SetBlipAsShortRange(checkpoint.blip, true)
         ShowNumberOnBlip(checkpoint.blip, index)
+        AddTextEntry(checkpoint.blip, "Checkpoint")
+        BeginTextCommandSetBlipName(checkpoint.blip)
+        EndTextCommandSetBlipName(checkpoint.blip)
     end
 
     -- Clear waypoint and add route for first checkpoint blip
@@ -190,11 +214,14 @@ Citizen.CreateThread(function()
                     -- Increment to first checkpoint
                     raceStatus.checkpoint = 1
                     local checkpoint = race.checkpoints[raceStatus.checkpoint]
+                    local proxy = raceStatus.checkpoint + 1
+                    local nextpoint = race.checkpoints[proxy]
+
 
                     -- Create checkpoint when enabled
-                    if config_cl.checkpointRadius > 0 then
+                    if config_cl.checkpointRadius > 0 and createcheckpoints then
                         local checkpointType = raceStatus.checkpoint < #race.checkpoints and RACE_CHECKPOINT_TYPE or RACE_CHECKPOINT_FINISH_TYPE
-                        checkpoint.checkpoint = CreateCheckpoint(checkpointType, checkpoint.coords.x,  checkpoint.coords.y, checkpoint.coords.z, 0, 0, 0, config_cl.checkpointRadius, 255, 255, 0, 127, 0)
+                        checkpoint.checkpoint = CreateCheckpoint(checkpointType, checkpoint.coords.x,  checkpoint.coords.y, checkpoint.coords.z + 3, nextpoint.coords.x, nextpoint.coords.y, nextpoint.coords.z, config_cl.checkpointRadius, config_cl.checkpointRed, config_cl.checkpointGreen, config_cl.checkpointBlue, config_cl.checkpointAlpha, 0)
                         SetCheckpointCylinderHeight(checkpoint.checkpoint, config_cl.checkpointHeight, config_cl.checkpointHeight, config_cl.checkpointRadius)
                     end
 
@@ -229,12 +256,17 @@ Citizen.CreateThread(function()
 
                             -- Increment checkpoint counter and get next checkpoint
                             raceStatus.checkpoint = raceStatus.checkpoint + 1
+                            local proxy = raceStatus.checkpoint + 1
+                            if proxy > #race.checkpoints then
+                                proxy = raceStatus.checkpoint
+                            end
                             local nextCheckpoint = race.checkpoints[raceStatus.checkpoint]
+                            local nextpoint = race.checkpoints[proxy]
 
                             -- Create checkpoint when enabled
-                            if config_cl.checkpointRadius > 0 then
+                            if config_cl.checkpointRadius > 0 and createcheckpoints then
                                 local checkpointType = raceStatus.checkpoint < #race.checkpoints and RACE_CHECKPOINT_TYPE or RACE_CHECKPOINT_FINISH_TYPE
-                                nextCheckpoint.checkpoint = CreateCheckpoint(checkpointType, nextCheckpoint.coords.x,  nextCheckpoint.coords.y, nextCheckpoint.coords.z, 0, 0, 0, config_cl.checkpointRadius, 255, 255, 0, 127, 0)
+                                nextCheckpoint.checkpoint = CreateCheckpoint(checkpointType, nextCheckpoint.coords.x,  nextCheckpoint.coords.y, nextCheckpoint.coords.z + 3, nextpoint.coords.x, nextpoint.coords.y, nextpoint.coords.z + 50, config_cl.checkpointRadius, config_cl.checkpointRed, config_cl.checkpointGreen, config_cl.checkpointBlue, config_cl.checkpointAlpha, 0)
                                 SetCheckpointCylinderHeight(nextCheckpoint.checkpoint, config_cl.checkpointHeight, config_cl.checkpointHeight, config_cl.checkpointRadius)
                             end
 
@@ -343,10 +375,45 @@ Citizen.CreateThread(function()
                     SetBlipColour(blip, config_cl.checkpointBlipColor)
                     SetBlipAsShortRange(blip, true)
                     ShowNumberOnBlip(blip, #recordedCheckpoints+1)
+                    AddTextEntry(blip, "Checkpoint")
+                    BeginTextCommandSetBlipName(blip)
+                    EndTextCommandSetBlipName(blip)
 
                     -- Add checkpoint to array
                     table.insert(recordedCheckpoints, {blip = blip, coords = coords})
                 end
+            end
+            if addblip then
+                local coords = GetEntityCoords(PlayerPedId())
+                -- Check if coordinates match any existing checkpoints
+                for index, checkpoint in pairs(recordedCheckpoints) do
+                    if GetDistanceBetweenCoords(coords.x, coords.y, coords.z, checkpoint.coords.x, checkpoint.coords.y, checkpoint.coords.z, false) < 5.0 then
+                        -- Matches existing checkpoint, remove blip and checkpoint from table
+                        RemoveBlip(checkpoint.blip)
+                        table.remove(recordedCheckpoints, index)
+                        coords = nil
+
+                        -- Update existing checkpoint blips
+                        for i = index, #recordedCheckpoints do
+                            ShowNumberOnBlip(recordedCheckpoints[i].blip, i)
+                        end
+                        break
+                    end
+                end
+                if (coords ~= nil) then
+                    -- Add numbered checkpoint blip
+                    local blip = AddBlipForCoord(coords.x, coords.y, coords.z)
+                    SetBlipColour(blip, config_cl.checkpointBlipColor)
+                    SetBlipAsShortRange(blip, true)
+                    ShowNumberOnBlip(blip, #recordedCheckpoints+1)
+                    AddTextEntry(blip, "Checkpoint")
+                    BeginTextCommandSetBlipName(blip)
+                    EndTextCommandSetBlipName(blip)
+
+                    -- Add checkpoint to array
+                    table.insert(recordedCheckpoints, {blip = blip, coords = coords})
+                end
+                addblip = false
             end
         else
             -- Not recording, do cleanup
@@ -381,6 +448,7 @@ function cleanupRace()
         local vehicle = GetVehiclePedIsIn(GetPlayerPed(-1), false)
         FreezeEntityPosition(vehicle, false)
     end
+    currentraceindex = nil
 end
 
 -- Helper function to clean up recording blips

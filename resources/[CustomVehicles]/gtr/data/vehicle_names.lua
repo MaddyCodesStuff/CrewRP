@@ -1,0 +1,17 @@
+CreateThread(function()
+	AddTextEntry('GTR', '2017 Nissan GTR')                          -- Begin GTR
+    AddTextEntry('0x31A6DAD4', 'Rocket Bunny Bumper')
+    AddTextEntry('0xC6E70556', 'Liberty Walk Bumper')
+    AddTextEntry('0x23583E37', 'Nismo Bumper')
+    AddTextEntry('0xB6B13B2B', 'Rocket Bunny Bumper')
+    AddTextEntry('0x1B02843C', 'Liberty Walk Bumper')
+    AddTextEntry('0xD1D0698D', 'Nismo Skirt')
+    AddTextEntry('0xC3C1CD70', 'Rocket Bunny Skirt')
+    AddTextEntry('0x756930C0', 'Liberty Walk Skirt')
+    AddTextEntry('0xB480B7DD', 'Nismo Spoiler')
+    AddTextEntry('0xA2321340', 'Rocket Bunny Spoiler')
+    AddTextEntry('0x0F5EED98', 'Liberty Walk Spoiler')
+    AddTextEntry('0xF15C9022', 'Rocket Bunny Arches')
+    AddTextEntry('0xDC75E655', 'Liberty Walk Arches')
+    AddTextEntry('0xAD29C108', 'Nismo Hood')                        -- End GTR
+end)

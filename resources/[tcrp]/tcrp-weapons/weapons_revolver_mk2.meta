@@ -411,7 +411,7 @@
           </AttachPoints>
           <GunFeedBone />
           <TargetSequenceGroup />
-          <WeaponFlags>CarriedInHand Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim AnimReload AnimCrouchFire UsableOnFoot UsableClimbing UsableInCover OnlyFireOneShotPerTriggerPress AllowCloseQuarterKills HasLowCoverReloads HasLowCoverSwaps QuitTransitionToIdleIntroOnWeaponChange DisableLeftHandIkWhenOnFoot TorsoIKForWeaponBlock DisableIdleAnimationFilter UseFPSAimIK UseFPSSecondaryMotion DisableIdleAnimationFilterWhenReloading BlockFirstPersonStateTransitionWhileFiring IdlePhaseBasedOnTrigger IncendiaryGuaranteedChance</WeaponFlags>
+          <WeaponFlags>CarriedInHand Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim AnimReload AnimCrouchFire UsableOnFoot UsableClimbing UsableInCover OnlyFireOneShotPerTriggerPress HasLowCoverReloads HasLowCoverSwaps QuitTransitionToIdleIntroOnWeaponChange DisableLeftHandIkWhenOnFoot TorsoIKForWeaponBlock DisableIdleAnimationFilter UseFPSAimIK UseFPSSecondaryMotion DisableIdleAnimationFilterWhenReloading BlockFirstPersonStateTransitionWhileFiring IdlePhaseBasedOnTrigger IncendiaryGuaranteedChance</WeaponFlags>
           <TintSpecValues ref="TINT_GUNRUNNING" />
           <FiringPatternAliases ref="FIRING_PATTERN_PISTOL" />
           <ReloadUpperBodyFixupExpressionData ref="default" />

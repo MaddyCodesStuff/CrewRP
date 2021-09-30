@@ -836,45 +836,6 @@
       <lightSettings value="1" />
       <sirenSettings value="1" />
     </Item>
-	<Item>
-      <modelName>hwy-buffalo</modelName>
-      <colors>
-        <Item>
-          <indices content="char_array">
-            0
-            0
-            0
-            0
-            0
-            0
-          </indices>
-	        <liveries>
-            <Item value="true"/>
-						<Item value="true"/>
-						<Item value="true"/>
-						<Item value="true"/>
-						<Item value="true"/>
-						<Item value="true"/>
-						<Item value="true"/>
-						<Item value="true"/>
-          </liveries>
-        </Item>
-      </colors>
-      <kits>
-        <Item>0_default_modkit</Item>
-      </kits>
-      <windowsWithExposedEdges/>
-      <plateProbabilities>
-        <Probabilities>
-          <Item>
-            <Name>Police guv plate</Name>
-            <Value value="100"/>
-          </Item>
-        </Probabilities>
-      </plateProbabilities>
-      <lightSettings value="1"/>
-      <sirenSettings value="7003"/>
-    </Item>
 	  <Item>
       <modelName>lsmd-utility</modelName>
       <colors>
@@ -4093,6 +4054,36 @@
       </plateProbabilities>
       <lightSettings value="1" />
       <sirenSettings value="0" />
+    </Item>
+    <Item>
+      <modelName>pd-buffalo</modelName>
+      <colors>
+        <Item>
+          <indices content="char_array">
+            0
+            0
+            0
+            0
+            0
+            0
+          </indices>
+	      <liveries />
+        </Item>
+      </colors>
+      <kits>
+        <Item>0_default_modkit</Item>
+      </kits>
+      <windowsWithExposedEdges/>
+      <plateProbabilities>
+        <Probabilities>
+          <Item>
+            <Name>Police guv plate</Name>
+            <Value value="100"/>
+          </Item>
+        </Probabilities>
+      </plateProbabilities>
+      <lightSettings value="1"/>
+      <sirenSettings value="207"/>
     </Item>
   </variationData>
 </CVehicleModelInfoVariation>

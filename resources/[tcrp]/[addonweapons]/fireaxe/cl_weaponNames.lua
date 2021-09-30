@@ -1,4 +1,4 @@
-AddTextEntry("WEAPON_FIRE_AXE", "Fireaxe")
+AddTextEntry("WEAPON_FIRE_AXE", "Fire Axe")
 
 Citizen.CreateThread(function()
     local weapon = GetHashKey("WEAPON_FIREAXE")

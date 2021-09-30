@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CConditionalAnimManager>
+  <ConditionalAnimsGroup>
+    <Item type="CConditionalAnimsGroup">
+      <Name>ON_BIKE_DIRT_MANCHEZ2</Name>
+      <ConditionalAnims>
+        <Item>
+          <Name>CODE_HUMAN_ON_BIKE_MANCHEZ2_IDLES_DIRT_DRIVER</Name>
+          <PropSet />
+          <Flags />
+          <Probability value="100.000000" />
+          <SpecialConditionProbability value="0.000000" />
+          <SpecialCondition type="NULL" />
+          <NextIdleTime value="2.000000" />
+          <ChanceOfSpawningWithAnything value="0.330000" />
+          <BlendInDelta value="4.000000" />
+          <BlendOutDelta value="-4.000000" />
+          <GestureClipSetId />
+          <VFXData />
+          <VFXCullRange value="25.000000" />
+          <TransitionInfo type="NULL" />
+          <Conditions>
+            <Item type="CScenarioConditionInVehicleSeat">
+              <Result>True</Result>
+              <SeatIndex value="0" />
+            </Item>
+            <Item type="CScenarioConditionCanPlayInCarIdle">
+              <Result>True</Result>
+            </Item>
+            <Item type="CScenarioConditionIsPlayerInMultiplayerGame">
+              <Result>True</Result>
+            </Item>
+          </Conditions>
+          <LowLodBaseAnim />
+          <BaseAnims>
+            <Item type="CConditionalClipSet">
+              <ClipSet>clipset@anim@veh@bike@manchez2@idles@base</ClipSet>
+              <AssociatedSpeech />
+              <Conditions />
+              <ActionFlags />
+            </Item>
+          </BaseAnims>
+          <Enters />
+          <Exits />
+          <Variations>
+            <Item type="CConditionalClipSet">
+              <ClipSet>clipset@anim@veh@bike@manchez2@idles@idle_a</ClipSet>
+              <AssociatedSpeech />
+              <Conditions />
+              <ActionFlags />
+            </Item>
+          </Variations>
+          <Reactions />
+          <PanicBaseAnims />
+          <PanicIntros />
+          <PanicOutros />
+          <PanicVariations />
+          <PanicExits />
+        </Item>
+      </ConditionalAnims>
+    </Item>
+    <Item type="CConditionalAnimsGroup">
+      <Name>IN_KART</Name>
+      <ConditionalAnims>
+        <Item>
+          <Name>IN_KART_IDLES_DRIVER</Name>
+          <PropSet />
+          <Flags />
+          <Probability value="100.000000" />
+          <SpecialConditionProbability value="0.000000" />
+          <SpecialCondition type="NULL" />
+          <NextIdleTime value="2.000000" />
+          <ChanceOfSpawningWithAnything value="0.330000" />
+          <BlendInDelta value="4.000000" />
+          <BlendOutDelta value="-4.000000" />
+          <GestureClipSetId />
+          <VFXData />
+          <VFXCullRange value="25.000000" />
+          <TransitionInfo type="NULL" />
+          <Conditions>
+            <Item type="CScenarioConditionHasNoProp">
+              <Result>True</Result>
+            </Item>
+            <Item type="CScenarioConditionModel">
+              <Result>False</Result>
+              <ModelSet ref="PATROL" />
+            </Item>
+            <Item type="CScenarioConditionInVehicleSeat">
+              <Result>True</Result>
+              <SeatIndex value="0" />
+            </Item>
+            <Item type="CScenarioConditionCanPlayInCarIdle">
+              <Result>True</Result>
+            </Item>
+            <Item type="CScenarioConditionIsHeadbobbingToRadioMusicEnabled">
+              <Result>False</Result>
+            </Item>
+			<Item type="CScenarioConditionUsingLRAltClipset">
+              <Result>False</Result>
+            </Item>				
+          </Conditions>
+          <LowLodBaseAnim />
+          <BaseAnims>
+            <Item type="CConditionalClipSet">
+              <ClipSet>CLIPSET@ANIM@VEH@GOKART@GENERIC@IDLES@BASE</ClipSet>
+              <AssociatedSpeech />
+              <Conditions />
+              <ActionFlags />
+            </Item>
+          </BaseAnims>
+          <Enters />
+          <Exits />
+          <Variations>
+            <Item type="CConditionalClipSet">
+              <ClipSet>CLIPSET@ANIM@VEH@GOKART@GENERIC@IDLES@IDLE_A</ClipSet>
+              <AssociatedSpeech />
+              <Conditions />
+              <ActionFlags />
+            </Item>
+          </Variations>
+          <Reactions />
+          <PanicBaseAnims />
+          <PanicIntros />
+          <PanicOutros />
+          <PanicVariations />
+          <PanicExits />
+        </Item>
+        <Item>
+          <Name>IN_KART_MUSIC_DRIVER</Name>
+          <PropSet />
+          <Flags />
+          <Probability value="100.000000" />
+          <SpecialConditionProbability value="0.000000" />
+          <SpecialCondition type="NULL" />
+          <NextIdleTime value="2.000000" />
+          <ChanceOfSpawningWithAnything value="0.330000" />
+          <BlendInDelta value="4.000000" />
+          <BlendOutDelta value="-4.000000" />
+          <GestureClipSetId />
+          <VFXData />
+          <VFXCullRange value="25.000000" />
+          <TransitionInfo type="NULL" />
+          <Conditions>
+            <Item type="CScenarioConditionIsMale">
+              <Result>True</Result>
+            </Item>
+            <Item type="CScenarioConditionHasNoProp">
+              <Result>True</Result>
+            </Item>
+            <Item type="CScenarioConditionModel">
+              <Result>False</Result>
+              <ModelSet ref="PATROL" />
+            </Item>
+            <Item type="CScenarioConditionIsRadioPlayingMusic">
+              <Result>True</Result>
+            </Item>
+            <Item type="CScenarioConditionInVehicleSeat">
+              <Result>True</Result>
+              <SeatIndex value="0" />
+            </Item>
+            <Item type="CScenarioConditionCanPlayInCarIdle">
+              <Result>True</Result>
+            </Item>
+            <Item type="CScenarioConditionIsPlayer">
+              <Result>False</Result>
+            </Item>
+            <Item type="CScenarioConditionIsPlayerInMultiplayerGame">
+              <Result>False</Result>
+            </Item>
+			<Item type="CScenarioConditionUsingLRAltClipset">
+              <Result>False</Result>
+            </Item>						
+          </Conditions>
+          <LowLodBaseAnim />
+          <BaseAnims>
+            <Item type="CConditionalClipSet">
+              <ClipSet>CLIPSET@ANIM@VEH@GOKART@GENERIC@MUSIC@BASE</ClipSet>
+              <AssociatedSpeech />
+              <Conditions />
+              <ActionFlags />
+            </Item>
+          </BaseAnims>
+          <Enters />
+          <Exits />
+          <Variations>
+            <Item type="CConditionalClipSet">
+              <ClipSet>CLIPSET@ANIM@VEH@GOKART@GENERIC@MUSIC@IDLE_A</ClipSet>
+              <AssociatedSpeech />
+              <Conditions />
+              <ActionFlags />
+            </Item>
+          </Variations>
+          <Reactions />
+          <PanicBaseAnims />
+          <PanicIntros />
+          <PanicOutros />
+          <PanicVariations />
+          <PanicExits />
+        </Item>
+        <Item>
+          <Name>IN_KART_MUSIC_HEADBOB_DRIVER</Name>
+          <PropSet />
+          <Flags />
+          <Probability value="100.000000" />
+          <SpecialConditionProbability value="0.000000" />
+          <SpecialCondition type="NULL" />
+          <NextIdleTime value="2.000000" />
+          <ChanceOfSpawningWithAnything value="0.330000" />
+          <BlendInDelta value="4.000000" />
+          <BlendOutDelta value="-4.000000" />
+          <GestureClipSetId />
+          <VFXData />
+          <VFXCullRange value="25.000000" />
+          <TransitionInfo type="NULL" />
+          <Conditions>
+			<Item type="CScenarioConditionCanPlayInCarIdle">
+              <Result>True</Result>
+            </Item>
+            <Item type="CScenarioConditionIsHeadbobbingToRadioMusicEnabled">
+              <Result>True</Result>
+            </Item>
+            <Item type="CScenarioConditionIsRadioPlayingMusic">
+              <Result>True</Result>
+            </Item>
+            <Item type="CScenarioConditionInVehicleSeat">
+              <Result>True</Result>
+              <SeatIndex value="0" />
+            </Item>
+			<Item type="CScenarioConditionUsingLRAltClipset">
+              <Result>False</Result>
+            </Item>						
+          </Conditions>
+          <LowLodBaseAnim />
+          <BaseAnims>
+            <Item type="CConditionalClipSet">
+              <ClipSet>CLIPSET@ANIM@VEH@GOKART@GENERIC@MUSIC@BASE</ClipSet>
+              <AssociatedSpeech />
+              <Conditions>
+                <Item type="CScenarioConditionHeadbobMusicGenre">
+                  <Result>True</Result>
+                  <RadioGenre>GENRE_GENERIC</RadioGenre>
+                </Item>
+              </Conditions>
+              <ActionFlags />
+            </Item>
+            <Item type="CConditionalClipSet">
+              <ClipSet>CLIPSET@ANIM@VEH@GOKART@GENERIC@MUSIC@BASE</ClipSet>
+              <AssociatedSpeech />
+              <Conditions>
+                <Item type="CScenarioConditionHeadbobMusicGenre">
+                  <Result>True</Result>
+                  <RadioGenre>GENRE_COUNTRY</RadioGenre>
+                </Item>
+              </Conditions>
+              <ActionFlags />
+            </Item>
+            <Item type="CConditionalClipSet">
+              <ClipSet>CLIPSET@ANIM@VEH@GOKART@GENERIC@MUSIC@BASE</ClipSet>
+              <AssociatedSpeech />
+              <Conditions>
+                <Item type="CScenarioConditionHeadbobMusicGenre">
+                  <Result>True</Result>
+                  <RadioGenre>GENRE_HIPHOP</RadioGenre>
+                </Item>
+              </Conditions>
+              <ActionFlags />
+            </Item>
+            <Item type="CConditionalClipSet">
+              <ClipSet>CLIPSET@CLIPSET@ANIM@VEH@GOKART@GENERIC@MUSIC@BASE</ClipSet>
+              <AssociatedSpeech />
+              <Conditions>
+                <Item type="CScenarioConditionHeadbobMusicGenre">
+                  <Result>True</Result>
+                  <RadioGenre>GENRE_MEXICAN</RadioGenre>
+                </Item>
+              </Conditions>
+              <ActionFlags />
+            </Item>
+            <Item type="CConditionalClipSet">
+              <ClipSet>CLIPSET@ANIM@VEH@GOKART@GENERIC@MUSIC@BASE</ClipSet>
+              <AssociatedSpeech />
+              <Conditions>
+                <Item type="CScenarioConditionHeadbobMusicGenre">
+                  <Result>True</Result>
+                  <RadioGenre>GENRE_MOTOWN</RadioGenre>
+                </Item>
+              </Conditions>
+              <ActionFlags />
+            </Item>
+            <Item type="CConditionalClipSet">
+              <ClipSet>CLIPSET@ANIM@VEH@GOKART@GENERIC@MUSIC@BASE</ClipSet>
+              <AssociatedSpeech />
+              <Conditions>
+                <Item type="CScenarioConditionHeadbobMusicGenre">
+                  <Result>True</Result>
+                  <RadioGenre>GENRE_PUNK</RadioGenre>
+                </Item>
+              </Conditions>
+              <ActionFlags />
+            </Item>
+          </BaseAnims>
+          <Enters />
+          <Exits />
+          <Variations>
+            <Item type="CConditionalClipSet">
+              <ClipSet>CLIPSET@ANIM@VEH@GOKART@GENERIC@MUSIC@BASE</ClipSet>
+              <AssociatedSpeech />
+              <Conditions>
+                <Item type="CScenarioConditionHeadbobMusicGenre">
+                  <Result>True</Result>
+                  <RadioGenre>GENRE_GENERIC</RadioGenre>
+                </Item>
+              </Conditions>
+              <ActionFlags />
+            </Item>
+            <Item type="CConditionalClipSet">
+              <ClipSet>CLIPSET@ANIM@VEH@GOKART@GENERIC@MUSIC@IDLE_A</ClipSet>
+              <AssociatedSpeech />
+              <Conditions>
+                <Item type="CScenarioConditionHeadbobMusicGenre">
+                  <Result>True</Result>
+                  <RadioGenre>GENRE_COUNTRY</RadioGenre>
+                </Item>
+              </Conditions>
+              <ActionFlags />
+            </Item>
+            <Item type="CConditionalClipSet">
+              <ClipSet>CLIPSET@ANIM@VEH@GOKART@GENERIC@MUSIC@IDLE_A</ClipSet>
+              <AssociatedSpeech />
+              <Conditions>
+                <Item type="CScenarioConditionHeadbobMusicGenre">
+                  <Result>True</Result>
+                  <RadioGenre>GENRE_HIPHOP</RadioGenre>
+                </Item>
+              </Conditions>
+              <ActionFlags />
+            </Item>
+            <Item type="CConditionalClipSet">
+              <ClipSet>CLIPSET@ANIM@VEH@GOKART@GENERIC@MUSIC@IDLE_A</ClipSet>
+              <AssociatedSpeech />
+              <Conditions>
+                <Item type="CScenarioConditionHeadbobMusicGenre">
+                  <Result>True</Result>
+                  <RadioGenre>GENRE_MEXICAN</RadioGenre>
+                </Item>
+              </Conditions>
+              <ActionFlags />
+            </Item>
+            <Item type="CConditionalClipSet">
+              <ClipSet>CLIPSET@ANIM@VEH@GOKART@GENERIC@MUSIC@IDLE_A</ClipSet>
+              <AssociatedSpeech />
+              <Conditions>
+                <Item type="CScenarioConditionHeadbobMusicGenre">
+                  <Result>True</Result>
+                  <RadioGenre>GENRE_MOTOWN</RadioGenre>
+                </Item>
+              </Conditions>
+              <ActionFlags />
+            </Item>
+            <Item type="CConditionalClipSet">
+              <ClipSet>CLIPSET@ANIM@VEH@GOKART@GENERIC@MUSIC@IDLE_A</ClipSet>
+              <AssociatedSpeech />
+              <Conditions>
+                <Item type="CScenarioConditionHeadbobMusicGenre">
+                  <Result>True</Result>
+                  <RadioGenre>GENRE_PUNK</RadioGenre>
+                </Item>
+              </Conditions>
+              <ActionFlags />
+            </Item>
+          </Variations>
+          <Reactions />
+          <PanicBaseAnims />
+          <PanicIntros />
+          <PanicOutros />
+          <PanicVariations />
+          <PanicExits />
+        </Item>
+      </ConditionalAnims>
+    </Item>
+  </ConditionalAnimsGroup>
+</CConditionalAnimManager>

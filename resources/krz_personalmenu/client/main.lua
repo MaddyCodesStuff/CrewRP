@@ -1051,10 +1051,14 @@ function AddMenuWalkMenu(menu)
         walkItem = NativeUI.CreateItem(a, '')
         walkMenu.SubMenu:AddItem(walkItem)
     end
+    walkCane = NativeUI.CreateItem(_U('walkcane'), '')
+    walkMenu.SubMenu:AddItem(walkCane)
 
     walkMenu.SubMenu.OnItemSelect = function(sender, item)
         if item == walkReset then
             ResetPedMovementClipset(PlayerPedId())
+        elseif item == walkCane then
+            TriggerEvent("tcrp-cane:toggle")
         else
             WalkMenuStart(DP.Walks[item['Text']['_Text']][1])
         end
@@ -1076,16 +1080,6 @@ function AddMenuFaceMenu(menu)
             ClearFacialIdleAnimOverride(PlayerPedId())
         else
             EmoteMenuStart(item['Text']['_Text'], 'expression')
-        end
-    end
-end
-
-function AddMenuFindATM(menu)
-    findATM = NativeUI.CreateItem('Find ATM', 'Finds the nearest ATM and marks it on the map')
-    menu:AddItem(findATM)
-    menu.OnItemSelect = function(sender, item)
-        if item == findATM then
-            TriggerEvent('tcrp-atm-finder:findATM')
         end
     end
 end
@@ -2308,9 +2302,6 @@ function GeneratePersonalMenu(playerGroup)
     if Config.ExpressionsEnabled then
         AddMenuFaceMenu(mainMenu)
     end
-
-    AddMenuFindATM(mainMenu)
-
 
     if IsPedSittingInAnyVehicle(plyPed) then
         if (GetPedInVehicleSeat(GetVehiclePedIsIn(plyPed, false), -1) == plyPed) then

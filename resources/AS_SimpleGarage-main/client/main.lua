@@ -393,7 +393,7 @@ Citizen.CreateThread(function()
 						local dstCheck = #(pedCoords - actionData["position"])
 						
 
-						if dstCheck <= 10.0 then
+						if dstCheck <= Config.DrawDistance then
 							sleepThread = 5
 
 							local draw = CanDraw(action)

@@ -122,6 +122,7 @@ Locales['en'] = {
 	['weapon_bzgas']                 = 'bz gas',
 	['weapon_molotov']               = 'molotov cocktail',
 	['weapon_fireextinguisher']      = 'fire extinguisher',
+	['weapon_hose']      			 = 'hose',
 	['weapon_petrolcan']             = 'jerrycan',
 	['weapon_digiscanner']           = 'digiscanner',
 	['weapon_ball']                  = 'ball',

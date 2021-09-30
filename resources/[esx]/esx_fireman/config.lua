@@ -63,7 +63,7 @@ Config.FireStations          = {
 		},
 		AuthorizedWeapons = {
 			{ name = 'WEAPON_FIREEXTINGUISHER', price = 0 },
-			{ name = 'WEAPON_POOLCUE', price = 0 },
+			{ name = 'WEAPON_FIRE_AXE', price = 0 },
 		},
 	},
 	LSFD_Davis    = {
@@ -85,7 +85,7 @@ Config.FireStations          = {
 		},
 		AuthorizedWeapons = {
 			{ name = 'WEAPON_FIREEXTINGUISHER', price = 0 },
-			{ name = 'WEAPON_POOLCUE', price = 0 },
+			{ name = 'WEAPON_FIRE_AXE', price = 0 },
 		},
 	},
 	LSFD_CityHall = {
@@ -107,7 +107,7 @@ Config.FireStations          = {
 		},
 		AuthorizedWeapons = {
 			{ name = 'WEAPON_FIREEXTINGUISHER', price = 0 },
-			{ name = 'WEAPON_POOLCUE', price = 0 },
+			{ name = 'WEAPON_FIRE_AXE', price = 0 },
 		},
 	},
 	PaletoFD      = {
@@ -129,7 +129,7 @@ Config.FireStations          = {
 		},
 		AuthorizedWeapons = {
 			{ name = 'WEAPON_FIREEXTINGUISHER', price = 0 },
-			{ name = 'WEAPON_POOLCUE', price = 0 },
+			{ name = 'WEAPON_FIRE_AXE', price = 0 },
 		},
 	},
 	SandyFD       = {
@@ -151,7 +151,7 @@ Config.FireStations          = {
 		},
 		AuthorizedWeapons = {
 			{ name = 'WEAPON_FIREEXTINGUISHER', price = 0 },
-			{ name = 'WEAPON_POOLCUE', price = 0 },
+			{ name = 'WEAPON_FIRE_AXE', price = 0 },
 		},
 	}
 }

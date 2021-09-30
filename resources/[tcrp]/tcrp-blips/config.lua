@@ -427,7 +427,7 @@ Blips.Main        = {
         ["Info.image"] = "Quinns",
     },
     [126]  = {
-        ["name"]    = "Cherry Popper",
+        ["name"]    = "~b~Here's The Scoop",
         ["x"] =  -464.57, ["y"] = -29.01,
         ["category"]= "Restaurant",
         ["text"]    = "Restaurant",
@@ -436,10 +436,10 @@ Blips.Main        = {
         ["scale"]   = 1.0,
         ["layer"]   = 25,
         ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Restaurant",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "None",
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Ice-Cream Parlor",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Benny Williams",
         ["Info.dictionary"] = "blip_images",
-        ["Info.image"] = "Cherry Poper",
+        ["Info.image"] = "Heresthescoop",
     },
     [127]  = {
         ["name"]    = "Taco Farmer",
@@ -676,22 +676,22 @@ Blips.Main        = {
         ["layer"]   = 25,
     },
 
-    --Other Stores--
-    [250]  = {
-        ["name"]    = "Cindy's Flower Shop",
-        ["x"] =  -1183.29, ["y"] =  -1193.05,
-        ["category"]= "Other Stores",
-        ["text"]    = "Flower Shop",
-        ["sprite"]  = 431,
-        ["color"]   = 7,
-        ["scale"]   = 1.0,
-        ["layer"]   = 25,
-        ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Store",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "None",
-        ["Info.dictionary"] = "blip_images",
-        ["Info.image"] = "Cindy's Flowers",
-    },
+    -- --Other Stores--
+    -- [250]  = {
+    --     ["name"]    = "Cindy's Flower Shop",
+    --     ["x"] =  -1183.29, ["y"] =  -1193.05,
+    --     ["category"]= "Other Stores",
+    --     ["text"]    = "Flower Shop",
+    --     ["sprite"]  = 431,
+    --     ["color"]   = 7,
+    --     ["scale"]   = 1.0,
+    --     ["layer"]   = 25,
+    --     ["Info.toggle"] = true,
+    --     ["Info.textLeft"] = "Category", ["Info.textRight"] = "Store",
+    --     ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "None",
+    --     ["Info.dictionary"] = "blip_images",
+    --     ["Info.image"] = "Cindy's Flowers",
+    -- },
     [251]  = {
         ["name"]    = "Bowling Alley",
         ["x"] =  -153.38, ["y"] =  -246.94,
@@ -936,7 +936,7 @@ Blips.Main        = {
     },
     [431]  = {
         ["name"]    = "Galaxy",
-        ["x"] =  -133.77, ["y"] =  -1273.27,
+        ["x"] =  -121.10, ["y"] =  -1258.59,
         ["category"]= "Nightclub",
         ["text"]    = "Nightclub",
         ["sprite"]  = 136,
@@ -1074,6 +1074,22 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Paleto Medical",
     },
+    [553]  = {
+        ["name"]    = "Coroner's Office",
+        ["x"] =  240.3, ["y"] =  -1379.96,
+        ["category"]= "Morgue",
+        ["text"]    = "Morgue",
+        ["sprite"]  = 310,
+        ["color"]   = 1,
+        ["layer"]   = 30,
+        ["scale"]   = 1.2,
+        ["Info.toggle"] = true,
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Morgue",
+        ["Info.nameLeft"] = "Head Coroner",["Info.nameRight"] = "Bella Lugosi",
+        ["Info.name2Left"] = "Phone Number",["Info.name2Right"] = "469-9744",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Coroners Office",
+    },
 
     -- Fire Stations --
     [610]  = {
@@ -1207,9 +1223,14 @@ Blips.Main        = {
         ["scale"]   = 1.0,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Car Dealership",
-        ["Info.nameLeft"] = "Boris Petrovich", ["Info.nameRight"] = "962-3958",
-        ["Info.headerLeft"] = "Renee Brooks", ["Info.headerRight"] = "708-7331",
-        ["Info.header2Left"] = "Ashley Tomsley", ["Info.header2Right"] = "458-8630",
+        ["Info.text2Left"] = "~h~Call/text to get a quote on a car today!", ["Info.text2Right"] = "",
+        ["Info.headerLeft"] = "~r~Boris Petrovich", ["Info.headerRight"] = "962-3958",
+        ["Info.header2Left"] = "~q~Barbie", ["Info.header2Right"] = "458-8630",
+        ["Info.header3Left"] = "~o~Carl Klein", ["Info.header3Right"] = "754-8475",
+        ["Info.header4Left"] = "Richard Crentist", ["Info.header4Right"] = "370-5847",
+        ["Info.header5Left"] = "~p~Sam Carter", ["Info.header5Right"] = "954-5229",
+        ["Info.header6Left"] = "~b~Rann Reynolds", ["Info.header6Right"] = "791-8713",
+        ["Info.header7Left"] = "~r~Emery Williams", ["Info.header7Right"] = "237-8438",
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Larrys",
     },
@@ -1523,6 +1544,7 @@ local TRASH = {}
 local HANGAR = {}
 local HARDWARE = {}
 local PETS = {}
+local RENTALS = {}
 Bulkblips = {
     ATM = {
         Config = {
@@ -1793,6 +1815,31 @@ Bulkblips = {
             {['x'] =  -0326.91,  ['y']  =  -0144.82},
             {['x'] =   1695.15,  ['y']  =   4916.51},
             {['x'] =   0103.80,  ['y']  =   6622.60},
+        },
+    },
+
+    RENTALS = {
+        Config = {
+            ["text"]    = "Vehicle Rental",
+            ["sprite"]  = 530,
+            ["layer"]   = 1,
+        },
+        Blips = {
+            {['x'] = -216.24,  ['y']  = 6211.77},
+            {['x'] = 1247.57,  ['y']  = 2716.60},
+            {['x'] = -1028.42,  ['y']  = -2743.67},
+            {['x'] = -17.40,  ['y']  = -1108.86},
+            {['x'] = -1061.39,  ['y']  = -3493.22},
+            {['x'] = 2148.35,  ['y']  = 4794.99},
+            {['x'] = 1727.86,  ['y']  = 3289.52},
+            {['x'] = -3426.70,  ['y']  = 955.66},
+            {['x'] = -800.22,  ['y']  = -1512.83},
+            {['x'] = -281.25,  ['y']  = 6632.10},
+            {['x'] = 3829.39,  ['y']  = 4444.32},
+            {['x'] = 1330.80,  ['y']  = 4226.60},
+            {['x'] = 765.26,  ['y']  = -1224.86},
+            {['x'] = -895.88,  ['y']  = -778.98},
+            {['x'] = -1107.86,  ['y']  = -1693.42},   
         },
     },
 

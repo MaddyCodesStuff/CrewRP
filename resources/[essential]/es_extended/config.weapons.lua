@@ -490,6 +490,12 @@ Config.Weapons = {
 	},
 
 	{
+		name       = 'WEAPON_HOSE',
+		label      = _U('weapon_hose'),
+		components = {}
+	},
+
+	{
 		name       = 'WEAPON_PETROLCAN',
 		label      = _U('weapon_petrolcan'),
 		components = {}
@@ -678,96 +684,6 @@ Config.Weapons = {
 	{
 		name       = 'WEAPON_DOUBLEACTION',
 		label      = _U('weapon_doubleaction'),
-		components = {}
-	},
-	{
-		name       = 'WEAPON_GRENADELAUNCHER_SMOKE',
-		label      = _U('weapon_grenadelauncher_smoke'),
-		components = {}
-	},
-	{
-		name       = 'WEAPON_FLAMETHROWER',
-		label      = _U('weapon_flamethrower'),
-		components = {}
-	},
-	{
-		name       = 'WEAPON_AIRSOFTRIFLE',
-		label      = _U('weapon_airsoftrifle'),
-		components = {}
-	},
-	{
-		name       = 'WEAPON_BAGUETTE',
-		label      = _U('weapon_baguette'),
-		components = {}
-	},
-	{
-		name       = 'WEAPON_BREACH',
-		label      = _U('weapon_breach'),
-		components = {}
-	},
-	{
-		name       = 'WEAPON_BROOM',
-		label      = _U('weapon_broom'),
-		components = {}
-	},
-	{
-		name       = 'WEAPON_CLEAVER',
-		label      = _U('weapon_cleaver'),
-		components = {}
-	},
-	{
-		name       = 'WEAPON_UNICORN',
-		label      = _U('weapon_unicorn'),
-		components = {}
-	},
-	{
-		name       = 'WEAPON_ICICLE',
-		label      = _U('weapon_icicle'),
-		components = {}
-	},
-	{
-		name       = 'WEAPON_KITCHENKNIFE',
-		label      = _U('weapon_kitchenknife'),
-		components = {}
-	},
-	{
-		name       = 'WEAPON_NAILBAT',
-		label      = _U('weapon_nailbat'),
-		components = {}
-	},
-	{
-		name       = 'WEAPON_PIPE',
-		label      = _U('weapon_pipe'),
-		components = {}
-	},
-	{
-		name       = 'WEAPON_KATANA',
-		label      = _U('weapon_katana'),
-		components = {}
-	},
-	{
-		name       = 'WEAPON_SCREWDRIVER',
-		label      = _U('weapon_screwdriver'),
-		components = {}
-	},
-	{
-		name       = 'WEAPON_SHANK',
-		label      = _U('weapon_shank'),
-		components = {}
-	},
-	{
-		name       = 'WEAPON_SHOVEL',
-		label      = _U('weapon_shovel'),
-		components = {}
-	},
-	{
-		name       = 'WEAPON_HOCKEYSTICK',
-		label      = _U('weapon_hockeystick'),
-		components = {}
-	},
-	{
-		name       = 'WEAPON_SLEDGEHAMMER',
-		label      = _U('weapon_sledgehammer'),
 		components = {}
 	},
 	{

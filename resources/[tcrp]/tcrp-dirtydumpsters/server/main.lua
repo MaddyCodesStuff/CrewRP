@@ -320,7 +320,7 @@ end)
 
 RegisterServerEvent('tcrp_dirtydumpsters:getItem')
 AddEventHandler('tcrp_dirtydumpsters:getItem', function(id, type, item, count)
-
+--
     local _source   = source
 
     local inventory = {}
@@ -339,17 +339,22 @@ AddEventHandler('tcrp_dirtydumpsters:getItem', function(id, type, item, count)
 
             for k, v in pairs(inv) do
                 if v.name == item then
-                    if count <= v.count then
-                        v.count = v.count - count
-                        xPlayer.addInventoryItem(item, count)
-                        found = true
-
-                        if v.count == 0 then
-                            table.remove(inv, k)
+                    local sourceItem = xPlayer.getInventoryItem(item)
+                    local currentcount = sourceItem.count
+                    if currentcount + count <= sourceItem.limit or sourceItem.limit == -1 then
+                        if count <= v.count then
+                            v.count = v.count - count
+                            xPlayer.addInventoryItem(item, count)
+                            found = true
+                            if v.count == 0 then
+                                table.remove(inv, k)
+                            end
+                            break
+                        else
+                            TriggerClientEvent('esx:showNotification', _source, "~r~Invalid amount")
                         end
-                        break
                     else
-                        TriggerClientEvent('esx:showNotification', _source, "~r~Invalid amount")
+                        TriggerClientEvent('esx:showNotification', _source, "You can't carry anymore of those")
                     end
                 end
             end

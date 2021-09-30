@@ -262,6 +262,7 @@ Locales['en'] = {
     ['cancelemote']                    = "Cancel Emote",
     ['cancelemoteinfo']                = "~r~X~w~ Cancels the currently playing emote",
     ['walkingstyles']                  = "Walking Styles",
+    ['walkcane']                       = "Cane",
     ['resetdef']                       = "Reset to default",
     ['normalreset']                    = "Normal (Reset)",
     ['moods']                          = "Moods",

@@ -17,4 +17,6 @@ Config.RentalVehicle = {
 		"kart",
 		"vetok",
 		"vetog",
+		"veto",
+		"veto2",
 }

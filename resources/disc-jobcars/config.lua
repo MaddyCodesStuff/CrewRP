@@ -30,7 +30,7 @@ Config.Markers = {
 
 Config.PDCars = {
     all = {
-        { name = 'LSPD Buffalo', model = 'hwy-buffalo', price = 0 },
+        { name = 'LSPD Buffalo', model = 'pd-buffalo', price = 0 },
         { name = 'LSPD Caddy', model = 'pd-caddy', price = 0 },
         { name = 'LSPD Caracara', model = 'emerg-cara', price = 0 },
         { name = 'LSPD Scorcher', model = 'pdscorcher', price = 0 },
@@ -400,6 +400,15 @@ Config.Shops      = {
         coords     = vector3(338.09, -548.45, 28.74),
         heading    = 275.0,
         shopCoords = vector3(338.09, -548.45, 28.74),
+        type       = "car",
+        cars       = Config.MDCars
+    },
+    {
+        name       = 'Morgue Cars',
+        job        = 'ambulance',
+        coords     = vector3(251.27, -1341.04, 31.94),
+        heading    = 98.19,
+        shopCoords = vector3(250.18, -1341.04, 31.94),
         type       = "car",
         cars       = Config.MDCars
     },
