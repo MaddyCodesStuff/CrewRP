@@ -1482,7 +1482,7 @@ ESX.RegisterUsableItem('pettreats', function(source)
 
     xPlayer.removeInventoryItem('pettreats', 1)
 
-    TriggerClientEvent('esx_status:add', source, 'hunger', 500000)
+    TriggerClientEvent('esx_status:add', source, 'hunger', 200000)
     TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a pet treat')
 
 end)
