@@ -84,14 +84,17 @@ Config.Processing = {
 
 Config.MaxNodesSpawned  = 25 -- Maximum number of nodes that spawn at a time
 
-Config.NodeModel        = 'prop_creosote_b_01'
-
-Config.Node             = {
+Config.TailoringNode             = {
+    prop   = 'prop_creosote_b_01',
     coords = vector3(2055.79, 4927.90, 40.96)
 }
 
-Config.PearlNodeModel        = 'prop_poolball_cue'
-
 Config.PearlNode             = {
+    prop   = 'prop_poolball_cue',
     coords = vector3(-2488.29, -735.61, -45.40)
+}
+
+Config.WeedNode             = {
+    prop   = 'prop_weed_01',
+    coords = vector3(1389.27, 6348.5, 32.0),
 }
