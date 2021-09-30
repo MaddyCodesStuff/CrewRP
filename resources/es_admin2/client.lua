@@ -214,9 +214,6 @@ Citizen.CreateThread(function()
             local dx, dy, dz = getCamDirection()
             local speed      = noClipSpeed
 
-            -- reset velocity
-            SetEntityVelocity(ped, 0.0001, 0.0001, 0.0001)
-
             -- forward
             if IsControlPressed(0, 32) then
                 -- MOVE UP
@@ -238,41 +235,6 @@ Citizen.CreateThread(function()
             SetEntityVisible(ped, false, false)
             SetEntityCompletelyDisableCollision(ped, false, false)
             ClearPedTasksImmediately(ped)
-            -- SetEntityCoordsNoOffset(PlayerPedId(), noclip_pos.x, noclip_pos.y, noclip_pos.z, 0, 0, 0)
-
-            -- if(IsControlPressed(1, 34))then
-            -- 	heading = heading + 1.5
-            -- 	if(heading > 360)then
-            -- 		heading = 0
-            -- 	end
-
-            -- 	SetEntityHeading(PlayerPedId(), heading)
-            -- end
-
-            -- if(IsControlPressed(1, 9))then
-            -- 	heading = heading - 1.5
-            -- 	if(heading < 0)then
-            -- 		heading = 360
-            -- 	end
-
-            -- 	SetEntityHeading(PlayerPedId(), heading)
-            -- end
-
-            -- if(IsControlPressed(1, 8))then
-            -- 	noclip_pos = GetOffsetFromEntityInWorldCoords(PlayerPedId(), 0.0, 1.0, 0.0)
-            -- end
-
-            -- if(IsControlPressed(1, 32))then
-            -- 	noclip_pos = GetOffsetFromEntityInWorldCoords(PlayerPedId(), 0.0, -1.0, 0.0)
-            -- end
-
-            -- if(IsControlPressed(1, 27))then
-            -- 	noclip_pos = GetOffsetFromEntityInWorldCoords(PlayerPedId(), 0.0, 0.0, 1.0)
-            -- end
-
-            -- if(IsControlPressed(1, 173))then
-            -- 	noclip_pos = GetOffsetFromEntityInWorldCoords(PlayerPedId(), 0.0, 0.0, -1.0)
-            -- end
         else
             Citizen.Wait(200)
             SetEntityInvincible(ped, false)
