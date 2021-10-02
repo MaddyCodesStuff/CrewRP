@@ -3723,6 +3723,486 @@ Config.Elevators    = {
         },
     },
     },
+    { -- ULSA Annexe Rooftop Up
+    name    = "ULSA Annexe Up",
+    Pos     = { x = -1213.48, y = -406.88, z = 34.14, h = 208.72 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1214.47, y = -400.72, z = 43.83, h = 40,33, }, -- exit
+            heading = 40,33,
+        },
+    },
+    },
+    { -- ULSA Annexe Rooftop Down
+    name    = "ULSA Annexe Down",
+    Pos     = { x = -1214.47, y = -400.72, z = 43.83, h = 40,33, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1213.48, y = -406.88, z = 34.14, h = 208.72 },
+            heading = 208.72,
+        },
+    },
+    },
+    { -- Boulevard Del Perro Rooftop Up
+    name    = "Boulevard Del Perro Up",
+    Pos     = { x = -1197.15, y = -259.38, z = 37.76, h = 219.69 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1205.99, y = -255.19, z = 50.74, h = 240.95, }, -- exit
+            heading = 240.95,
+        },
+    },
+    },
+    { -- Boulevard Del Perro Rooftop Down
+    name    = "Boulevard Del Perro Down",
+    Pos     = { x = -1205.99, y = -255.19, z = 50.74, h = 240.95, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1197.15, y = -259.38, z = 37.76, h = 219.69 },
+            heading = 219.69,
+        },
+    },
+    },
+    { -- Boulevard Del Perro Rooftop Up
+    name    = "Boulevard Del Perro Up",
+    Pos     = { x = -1200.27, y = -156.71, z = 40.09, h = 16.63 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1200.4, y = -180.01, z = 79.77, h = 16.32, }, -- exit
+            heading = 16.32,
+        },
+    },
+    },
+    { -- Boulevard Del Perro Rooftop Down
+    name    = "Boulevard Del Perro Down",
+    Pos     = { x = -1200.4, y = -180.01, z = 79.77, h = 16.32, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1200.27, y = -156.71, z = 40.09, h = 16.63 },
+            heading = 16.63,
+        },
+    },
+    },
+    { -- Boulevard Del Perro Rooftop Up
+    name    = "Boulevard Del Perro Up",
+    Pos     = { x = -1213.46, y = -191.18, z = 39.32, h = 61.68 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1187.15, y = -190.99, z = 79.77, h = 190.74, }, -- exit
+            heading = 190.74,
+        },
+    },
+    },
+    { -- Boulevard Del Perro Rooftop Down
+    name    = "Boulevard Del Perro Down",
+    Pos     = { x = -1187.15, y = -190.99, z = 79.77, h = 190.74, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1213.46, y = -191.18, z = 39.32, h = 61.68 },
+            heading = 61.68,
+        },
+    },
+    },
+    { -- Cougar Ave. Apartment Rooftop Up
+    name    = "Cougar Ave. Apartment Up",
+    Pos     = { x = -1566.29, y = -404.63, z = 42.39, h = 230.22 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1556.42, y = -387.69, z = 59.15, h = 232.58, }, -- exit
+            heading = 232.58,
+        },
+    },
+    },
+    { -- Cougar Ave. Apartment Rooftop Down
+    name    = "Cougar Ave. Apartment Down",
+    Pos     = { x = -1556.42, y = -387.69, z = 59.15, h = 232.58, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1566.29, y = -404.63, z = 42.39, h = 230.22 },
+            heading = 230.22,
+        },
+    },
+    },
+    { -- Cougar Ave. Apartment Rooftop Up
+    name    = "Cougar Ave. Apartment Up",
+    Pos     = { x = -1597.71, y = -422.05, z = 41.41, h = 49.99 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1597.75, y = -439.86, z = 56.21, h = 47.6, }, -- exit
+            heading = 47.6,
+        },
+    },
+    },
+    { -- Cougar Ave. Apartment Rooftop Down
+    name    = "Cougar Ave. Apartment Down",
+    Pos     = { x = -1597.75, y = -439.86, z = 56.21, h = 47.6, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1597.71, y = -422.05, z = 41.41, h = 49.99 },
+            heading = 49.99,
+        },
+    },
+    },
+    { -- Banner Hotel Rooftop Up
+    name    = "Banner Hotel Up",
+    Pos     = { x = -1661.5, y = -533.36, z = 35.5, h = 142.4 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1632.24, y = -498.31, z = 74.56, h = 143.69, }, -- exit
+            heading = 143.69,
+        },
+    },
+    },
+    { -- Banner Hotel Rooftop Down
+    name    = "Banner Hotel Down",
+    Pos     = { x = -1632.24, y = -498.31, z = 74.56, h = 143.69, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1661.5, y = -533.36, z = 35.5, h = 142.4 },
+            heading = 142.4,
+        },
+    },
+    },
+    { -- Playa Vista Rooftop Up
+    name    = "Playa Vista Up",
+    Pos     = { x = -1790.23, y = -368.84, z = 44.66, h = 322.99 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1799.24, y = -379.18, z = 62.21, h = 53.53, }, -- exit
+            heading = 53.53,
+        },
+    },
+    },
+    { -- Playa Vista Rooftop Down
+    name    = "Playa Vista Down",
+    Pos     = { x = -1799.24, y = -379.18, z = 62.21, h = 53.53, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1790.23, y = -368.84, z = 44.66, h = 322.99 },
+            heading = 322.99,
+        },
+    },
+    },
+    { -- Playa Vista Rooftop Up
+    name    = "Playa Vista Up",
+    Pos     = { x = -1821.54, y = -405.07, z = 46.15, h = 145.08 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1815.54, y = -399.08, z = 62.78, h = 142.95, }, -- exit
+            heading = 142.95,
+        },
+    },
+    },
+    { -- Playa Vista Rooftop Down
+    name    = "Playa Vista Down",
+    Pos     = { x = -1815.54, y = -399.08, z = 62.78, h = 142.95, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1821.54, y = -405.07, z = 46.15, h = 145.08 },
+            heading = 145.08,
+        },
+    },
+    },
+    { -- Playa Vista Rooftop Up
+    name    = "Playa Vista Up",
+    Pos     = { x = -1768.08, y = -372.28, z = 45.92, h = 326.61 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1769.58, y = -377.41, z = 57.74, h = 190.19, }, -- exit
+            heading = 190.19,
+        },
+    },
+    },
+    { -- Playa Vista Rooftop Down
+    name    = "Playa Vista Down",
+    Pos     = { x = -1769.58, y = -377.41, z = 57.74, h = 190.19, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1768.08, y = -372.28, z = 45.92, h = 326.61 },
+            heading = 326.61,
+        },
+    },
+    },
+    { -- Playa Vista Hotel Rooftop Up
+    name    = "Playa Vista Hotel Up",
+    Pos     = { x = -1838.51, y = -361.04, z = 56.59, h = 177.08 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1825.28, y = -365.32, z = 93.18, h = 179.68, }, -- exit
+            heading = 179.68,
+        },
+    },
+    },
+    { -- Playa Vista Hotel Rooftop Down
+    name    = "Playa Vista Hotel Down",
+    Pos     = { x = -1825.28, y = -365.32, z = 93.18, h = 179.68, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1838.51, y = -361.04, z = 56.59, h = 177.08 },
+            heading = 177.08,
+        },
+    },
+    },
+    { -- South Shambles St. Office Building Up
+    name    = "South Shambles St. Office Building Up",
+    Pos     = { x = 1037.83, y = -2237.39, z = 31.89, h = 256.99 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = 1028.62, y = -2245.93, z = 51.05, h = 358.93 }, -- exit
+            heading = 358.93,
+        },
+    },
+    },
+    { -- South Shambles St. Office Building Down
+    name    = "South Shambles St. Office Building Down",
+    Pos     = { x = 1028.62, y = -2245.93, z = 51.05, h = 358.93 },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = 1037.83, y = -2237.39, z = 31.89, h = 256.99 },
+            heading = 256.99,
+        },
+    },
+    },
+    { -- Playa Vista Hotel Rooftop Up
+    name    = "Playa Vista Hotel Up",
+    Pos     = { x = -1857.15, y = -348.65, z = 49.34, h = 138.47 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1842.45, y = -353.32, z = 93.18, h = 86.51, }, -- exit
+            heading = 86.51,
+        },
+    },
+    },
+    { -- Playa Vista Hotel Rooftop Down
+    name    = "Playa Vista Hotel Down",
+    Pos     = { x = -1842.45, y = -353.32, z = 93.18, h = 86.51, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1857.15, y = -348.65, z = 49.34, h = 138.47 },
+            heading = 138.47,
+        },
+    },
+    },
+    { -- Playa Vista Hotel Rooftop Up
+    name    = "Playa Vista Hotel Up",
+    Pos     = { x = -1885.1, y = -325.12, z = 56.62, h = 90.52 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1889.71, y = -312.17, z = 93.16, h = 89.51, }, -- exit
+            heading = 89.51,
+        },
+    },
+    },
+    { -- Playa Vista Hotel Rooftop Down
+    name    = "Playa Vista Hotel Down",
+    Pos     = { x = -1889.71, y = -312.17, z = 93.16, h = 89.51, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1885.1, y = -325.12, z = 56.62, h = 90.52 },
+            heading = 90.52,
+        },
+    },
+    },
+    { -- Playa Vista Hotel Rooftop Up
+    name    = "Playa Vista Hotel Up",
+    Pos     = { x = -1859.33, y = -346.72, z = 49.34, h = 140.17 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1877.51, y = -329.18, z = 93.16, h = 179.09, }, -- exit
+            heading = 179.09,
+        },
+    },
+    },
+    { -- Playa Vista Hotel Rooftop Down
+    name    = "Playa Vista Hotel Down",
+    Pos     = { x = -1877.51, y = -329.18, z = 93.16, h = 179.09, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1859.33, y = -346.72, z = 49.34, h = 140.17 },
+            heading = 140.17,
+        },
+    },
+    },
+    { -- The Richman Hotel Rooftop Up
+    name    = "The Richman Hotel Up",
+    Pos     = { x = -1383.6, y = 267.27, z = 60.76, h = 195.81 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1388.28, y = 279.74, z = 89.36, h = 198.8, }, -- exit
+            heading = 198.8,
+        },
+    },
+    },
+    { -- The Richman Hotel Rooftop Down
+    name    = "The Richman Hotel Down",
+    Pos     = { x = -1388.28, y = 279.74, z = 89.36, h = 198.8, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1383.6, y = 267.27, z = 60.76, h = 195.81 },
+            heading = 195.81,
+        },
+    },
+    },
+    { -- L.T. Weld Supply Co Up
+    name    = "L.T. Weld Supply Co Up",
+    Pos     = { x = 1145.27, y = -1402.17, z = 34.8, h = 183.63 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = 1137.2, y = -1387.14, z = 49.64, h = 178.3 }, -- exit
+            heading = 178.3,
+        },
+    },
+    },
+    { -- L.T. Weld Supply Co Down
+    name    = "L.T. Weld Supply Co Down",
+    Pos     = { x = 1137.2, y = -1387.14, z = 49.64, h = 178.3 },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = 1145.27, y = -1402.17, z = 34.8, h = 183.63 },
+            heading = 183.63,
+        },
+    },
+    },
+    { -- Celltowa Rooftop Up
+    name    = "Celltowa Up",
+    Pos     = { x = -1001.53, y = -785.11, z = 15.82, h = 153.81 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1018.26, y = -766.17, z = 76.54, h = 87.91, }, -- exit
+            heading = 87.91,
+        },
+    },
+    },
+    { -- Celltowa Rooftop Down
+    name    = "Celltowa Down",
+    Pos     = { x = -1018.26, y = -766.17, z = 76.54, h = 87.91, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1001.53, y = -785.11, z = 15.82, h = 153.81 },
+            heading = 153.81,
+        },
+    },
+    },
+    { -- Celltowa Rooftop Up
+    name    = "Celltowa Up",
+    Pos     = { x = -1009.51, y = -732.03, z = 21.03, h = 40.41 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = -1000.95, y = -751.99, z = 76.54, h = 272.06, }, -- exit
+            heading = 272.06,
+        },
+    },
+    },
+    { -- Celltowa Rooftop Down
+    name    = "Celltowa Down",
+    Pos     = { x = -1000.95, y = -751.99, z = 76.54, h = 272.06, },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = -1009.51, y = -732.03, z = 21.03, h = 40.41 },
+            heading = 40.41,
+        },
+    },
+    },
+    { -- Ien Cent Office Building Up
+    name    = "Ien Cent Office Building Up",
+    Pos     = { x = 363.51, y = -711.97, z = 29.29, h = 74.48 }, -- enter
+    options = {
+        {
+            label   = "Rooftop",
+            name    = "Rooftop",
+            pos     = { x = 376.66, y = -703.28, z = 85.61, h = 174.25 }, -- exit
+            heading = 174.25,
+        },
+    },
+    },
+    { -- Ien Cent Office Building Down
+    name    = "Ien Cent Office Building Down",
+    Pos     = { x = 376.66, y = -703.28, z = 85.61, h = 174.25 },
+    options = {
+        {
+            label   = "Ground Level",
+            name    = "Ground Level",
+            pos     = { x = 363.51, y = -711.97, z = 29.29, h = 74.48 },
+            heading = 74.48,
+        },
+    },
+    },
     { -- Casino Into Cashier
     name    = "Casino Door",
     Pos     = { x = 978.47, y = 32.13, z = 74.28 },
