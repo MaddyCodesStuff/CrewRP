@@ -62,6 +62,10 @@ function OpenCraftingMenu(type)
         CraftingType = Config.general
     elseif type == "electronics" then
         CraftingType = Config.electronics
+    elseif type == "marijuana" then
+        CraftingType = Config.marijuana
+    elseif type == "drugs" then
+        CraftingType = Config.drugs
     end
 
 	for k, v in ipairs(CraftingType) do
@@ -85,6 +89,7 @@ function OpenCraftingMenu(type)
         local name = data.current.label
 		ESX.UI.Menu.CloseAll()
 		TriggerServerEvent("crafting:CraftItem", name, spawnCode)
+        TriggerEvent('emote:cancel')
     end,
 	function(data, menu)
 		menu.close()
