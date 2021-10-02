@@ -76,6 +76,14 @@ Config.electronics = {
     {type = "usb", label = "USB"},
 }
 
+Config.marijuana = {
+    {type = "joint", label = "Joint"},
+    {type = "rolling_paper", label = "Rolling Paper"},
+    {type = "grinder", label = "Grinder"},
+    {type = "razer", label = "Razer Blade"},
+    {type = "pipe_weed", label = "Bong"},
+}
+
 --Recipes
 --[[ If it doesn't work, probably missing a comma. 
     itemSpawnCode = {
@@ -328,6 +336,13 @@ Config.Recipes = {
         {item = "layeredmetal", quantity = 2 },
         {item = "layeredplastic", quantity = 2 }
     },
+    joint = {
+        {item = "grinder", quantity = 1},
+        {item = "marijuana_eighth", quantity = 1}
+    },
+    rolling_paper = {
+        {item = "wool", quantity = 1},
+    },
 }
 
 --Stations
@@ -439,5 +454,10 @@ Config.Stations = {
         pos = vec3(-623.47, -282.20, 34.59), 
         type = 'electronics',
         Text = "Craft Electronics",
+    },
+    {--Best Buds
+    pos = vec3(382.21, -816.66, 28.31), 
+    type = 'marijuana',
+    Text = "Process Weed",
     },
 }

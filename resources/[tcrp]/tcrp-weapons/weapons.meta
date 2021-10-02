@@ -813,6 +813,19 @@
           <AmmoMax100MP value="9999" />
           <AmmoFlags />
         </Item>
+         <Item type="CAmmoInfo">
+          <Name>AMMO_BB</Name>
+          <Model />
+          <Audio />
+          <Slot />
+          <AmmoMax value="250" />
+          <AmmoMax50 value="1000" />
+          <AmmoMax100 value="9999" />
+          <AmmoMaxMP value="250" />
+          <AmmoMax50MP value="1000" />
+          <AmmoMax100MP value="9999" />
+          <AmmoFlags />
+        </Item>
         <Item type="CAmmoInfo">
           <Name>AMMO_MG</Name>
           <Model />
@@ -2807,7 +2820,7 @@
           <AttachPoints />
           <GunFeedBone />
           <TargetSequenceGroup />
-          <WeaponFlags>AllowMeleeBlock CarriedInHand ArmourPenetrating CanLockonOnFoot CanLockonInVehicle MeleeBlade UsableOnFoot UsableUnderwater UsableClimbing UsableInCover DoesRevivableDamage AllowCloseQuarterKills HasLowCoverSwaps NoWheelStats DangerousLookingMeleeWeapon QuitTransitionToIdleIntroOnWeaponChange DisableLeftHandIkWhenOnFoot UseFPSAimIK UseFPSSecondaryMotion UseFPSSecondaryMotion</WeaponFlags>
+          <WeaponFlags>AllowMeleeBlock CarriedInHand ArmourPenetrating CanLockonOnFoot CanLockonInVehicle MeleeClub UsableOnFoot UsableUnderwater UsableClimbing UsableInCover DoesRevivableDamage AllowCloseQuarterKills HasLowCoverSwaps NoWheelStats DangerousLookingMeleeWeapon QuitTransitionToIdleIntroOnWeaponChange DisableLeftHandIkWhenOnFoot UseFPSAimIK UseFPSSecondaryMotion UseFPSSecondaryMotion</WeaponFlags>
           <TintSpecValues ref="TINT_DEFAULT" />
           <FiringPatternAliases ref="NULL" />
           <ReloadUpperBodyFixupExpressionData ref="default" />

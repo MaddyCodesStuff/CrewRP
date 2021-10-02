@@ -1,6 +1,7 @@
 local ESX        = nil
 local group      = "user"
 local states     = {}
+local noClipSpeed = 1.00
 states.frozen    = false
 states.frozenPos = nil
 
@@ -41,6 +42,8 @@ RegisterNetEvent('esx:playerLoaded')
 AddEventHandler('esx:playerLoaded', function()
 
     TriggerEvent('es_admin:getPlayerPed')
+    
+    TriggerEvent('chat:addSuggestion', '/noclipspeed', 'Format: 1.00 ex. /noclipspeed 2.00', {})
 end)
 
 AddEventHandler('es_admin:getPlayerPed', function()
@@ -64,6 +67,10 @@ RegisterCommand('ad', function()
     -- 		-- end
     -- 	end
     -- end)
+end)
+
+RegisterCommand("noclipspeed", function(src, args, raw)
+    noClipSpeed = args[1]
 end)
 
 TriggerServerEvent('chat:removeSuggestions', '/ad')
@@ -205,10 +212,7 @@ Citizen.CreateThread(function()
             local ped        = GetPlayerPed(-1)
             local x, y, z    = getPosition()
             local dx, dy, dz = getCamDirection()
-            local speed      = 0.75
-
-            -- reset velocity
-            SetEntityVelocity(ped, 0.0001, 0.0001, 0.0001)
+            local speed      = noClipSpeed
 
             -- forward
             if IsControlPressed(0, 32) then
@@ -229,45 +233,13 @@ Citizen.CreateThread(function()
             SetEntityCoordsNoOffset(ped, x, y, z, true, true, true)
             SetEntityInvincible(ped, true)
             SetEntityVisible(ped, false, false)
-            -- SetEntityCoordsNoOffset(PlayerPedId(), noclip_pos.x, noclip_pos.y, noclip_pos.z, 0, 0, 0)
-
-            -- if(IsControlPressed(1, 34))then
-            -- 	heading = heading + 1.5
-            -- 	if(heading > 360)then
-            -- 		heading = 0
-            -- 	end
-
-            -- 	SetEntityHeading(PlayerPedId(), heading)
-            -- end
-
-            -- if(IsControlPressed(1, 9))then
-            -- 	heading = heading - 1.5
-            -- 	if(heading < 0)then
-            -- 		heading = 360
-            -- 	end
-
-            -- 	SetEntityHeading(PlayerPedId(), heading)
-            -- end
-
-            -- if(IsControlPressed(1, 8))then
-            -- 	noclip_pos = GetOffsetFromEntityInWorldCoords(PlayerPedId(), 0.0, 1.0, 0.0)
-            -- end
-
-            -- if(IsControlPressed(1, 32))then
-            -- 	noclip_pos = GetOffsetFromEntityInWorldCoords(PlayerPedId(), 0.0, -1.0, 0.0)
-            -- end
-
-            -- if(IsControlPressed(1, 27))then
-            -- 	noclip_pos = GetOffsetFromEntityInWorldCoords(PlayerPedId(), 0.0, 0.0, 1.0)
-            -- end
-
-            -- if(IsControlPressed(1, 173))then
-            -- 	noclip_pos = GetOffsetFromEntityInWorldCoords(PlayerPedId(), 0.0, 0.0, -1.0)
-            -- end
+            SetEntityCompletelyDisableCollision(ped, false, false)
+            ClearPedTasksImmediately(ped)
         else
             Citizen.Wait(200)
             SetEntityInvincible(ped, false)
             SetEntityVisible(ped, true, false)
+            SetEntityCompletelyDisableCollision(ped, true, true)
         end
     end
 end)
