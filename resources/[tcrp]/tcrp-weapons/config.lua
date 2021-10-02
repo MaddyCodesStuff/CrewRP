@@ -66,3 +66,27 @@ Config.femaleChainHolster = {
     118,
     120,
 }
+
+Config.MeleeDamage = {
+    ["WEAPON_UNARMED"]          = 0.5,              
+    --Sharp-- (Pierces Armor)
+    ["WEAPON_KNIFE"]            = 0.5,              
+    ["WEAPON_DAGGER"]           = 0.6,          
+    ["WEAPON_SWITCHBLADE"]      = 0.5,              
+    ["WEAPON_MACHETE"]          = 0.6,          
+    ["WEAPON_BOTTLE"]           = 0.5,          
+    --Blunt--
+    ["WEAPON_NIGHTSTICK"]       = 0.5,           
+    ["WEAPON_HAMMER"]           = 0.5,       
+    ["WEAPON_BAT"]              = 0.6,   
+    ["WEAPON_GOLFCLUB"]         = 0.6,       
+    ["WEAPON_KNUCKLE"]          = 0.5,       
+    ["WEAPON_POOLCUE"]          = 0.6,       
+    ["WEAPON_WRENCH"]           = 0.5,
+    ["WEAPON_FLASHLIGHT"]       = 0.4,
+    --Chop-- 
+    ["WEAPON_BATTLEAXE"]        = 0.6,         
+    ["WEAPON_CROWBAR"]          = 0.5,          
+    ["WEAPON_HATCHET"]          = 0.6,          
+    ["WEAPON_STONE_HATCHET"]    = 0.5,                  
+}
