@@ -11,3 +11,4 @@ end)
  
 SetFlashLightKeepOnWhileMoving(true)
 SetWeaponsNoAutoswap(true)
+SetPedSuffersCriticalHits(PlayerPedId(), false)

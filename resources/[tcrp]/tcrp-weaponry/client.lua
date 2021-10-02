@@ -66,7 +66,7 @@ function ManageReticle(weapon)
             HideHudComponentThisFrame(14)
         end
     else
-        --print(weapon) --prints if weapon hash is not in table
+        print(weapon) --prints if weapon hash is not in table
         HideHudComponentThisFrame(14)
     end
 end
