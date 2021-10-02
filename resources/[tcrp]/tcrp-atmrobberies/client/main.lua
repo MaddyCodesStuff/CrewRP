@@ -32,13 +32,14 @@ Citizen.CreateThread(function()
             
             if IsControlJustPressed(0, Keys['Z']) and IsPedOnFoot(ped) and not IsEntityDead(ped) then
                 GetGender()
+                TriggerEvent('mythic_notify:client:SendErrorAlert', { text = "Press F to Cancel the Hack"})
                 TriggerServerEvent('tcrp-ATMRobbery:notifyPD', hackerCoords, streetName, playerGender)
                 exports['mythic_progbar']:Progress({
                     name            = "hack_atm",
                     duration        = 60000,
                     label           = "Connecting PI to ATM, Installing Virus",
                     useWhileDead    = false,
-                    canCancel       = false,
+                    canCancel       = true,
                     controlDisables = {
                         disableMovement    = true,
                         disableCarMovement = true,
@@ -50,7 +51,11 @@ Citizen.CreateThread(function()
                         anim     = "cop_b_idle",
                     },
                 }, function(status)
-                    TriggerServerEvent('tcrp-ATMRobbery:startHack', hackerCoords)    
+                    if IsControlJustPressed(0, 23) then
+                        TriggerEvent('mythic_notify:client:SendErrorAlert', { text = "Hacking Cancelled"}) 
+                    else 
+                        TriggerServerEvent('tcrp-ATMRobbery:startHack', hackerCoords)
+                    end
                 end)
             end 
         end              		

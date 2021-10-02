@@ -4,8 +4,8 @@ Config.TruckPlateNumb = 0  -- This starts the custom plate for trucks at 0
 Config.MaxStops	= 5 -- Total number of stops a person is allowed to do before having to return to depot.
 Config.MaxBags = 10 -- Total number of bags a person can get out of a bin
 Config.MinBags = 4 -- Min number of bags that a bin can contain.
-Config.BagPay = 25 -- The amount paid to each person per bag
-Config.StopPay = 400 -- Total pay for the stop before bagpay.
+Config.BagPay = 20 -- The amount paid to each person per bag
+Config.StopPay = 360 -- Total pay for the stop before bagpay.
 Config.JobName = 'garbage'  -- use this to set the jobname that you want to be able to do garbagecrew 
 
 Config.Trucks = {
@@ -59,4 +59,34 @@ Config.Collections = {
   [18] = {type = 'Collection', size = 5.0 , name = 'collection', pos = vector3(274.31,-164.43, 60.35734)},
   [19] = {type = 'Collection', size = 5.0 , name = 'collection', pos = vector3(-364.33,-1864.71, 20.24249)}, 
   [20] = {type = 'Collection', size = 5.0 , name = 'collection', pos = vector3(-1239.42, -1401.13, 3.75217)},
+}
+
+Config.chanceItems = {
+  battery = {min = 1, max = 1, itemNumber = 1},
+  drill = {min = 1, max = 1, itemNumber = 2},
+  screwdriver = {min = 1, max = 4, itemNumber = 4},
+  sandpaper = {min = 5, max = 8, itemNumber = 5},
+  screws = {min = 3, max = 5, itemNumber = 6},
+  nails = {min = 3, max = 5, itemNumber = 7},
+  copperpipe = {min = 3, max = 10, itemNumber = 11},
+  plier = {min = 1, max = 2, itemNumber = 12},
+  saw = {min = 1, max = 2, itemNumber = 13},
+  washers = {min = 1, max = 3, itemNumber = 14},
+  socketwrench = {min = 1, max = 3, itemNumber = 15},
+  layeredmetal = {min = 1, max = 1, itemNumber = 16},
+  layeredplastic = {min = 1, max = 1, itemNumber = 17},
+  beer_1 = {min = 6, max = 12, itemNumber = 18},    
+  razer = {min = 1, max = 1, itemNumber = 20},
+  wood = {min = 5, max = 10, itemNumber = 21},
+  electronics = {min = 5, max = 10, itemNumber = 22},
+  metal = {min = 5, max = 10, itemNumber = 23}, 
+  plastic = {min = 5, max = 10, itemNumber = 24},
+  clothe = {min = 5, max = 10, itemNumber = 25},
+  cigarette2 = {min = 1, max = 3, itemNumber = 26},
+  fishbait = {min = 2, max = 5, itemNumber = 27},
+  newspaper = {min = 1, max = 1, itemNumber = 28},
+  perscription_bottle = {min = 1, max = 1, itemNumber = 29},
+  shoes = {min = 1, max = 1, itemNumber = 30},
+  perscription_bottle = {min = 1, max = 1, itemNumber = 31},
+  slaughtered_chicken = {min = 1, max = 1, itemNumber = 32},
 }

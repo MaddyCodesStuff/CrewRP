@@ -110,7 +110,7 @@ ESX.RegisterUsableItem('beer_1', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'drunk', Config.Items.beer_1.drunk)
     TriggerClientEvent('esx_optionalneeds:onDrink', source, 'prop_amb_beer_bottle')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Bottle of ' .. Config.Items.beer_1.label)
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Bottle of ' .. Config.Items.beer_1.label)
 end)
 
 ESX.RegisterUsableItem('beer_2', function(source)
@@ -121,7 +121,7 @@ ESX.RegisterUsableItem('beer_2', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'drunk', Config.Items.beer_2.drunk)
     TriggerClientEvent('esx_optionalneeds:onDrink', source, 'prop_beer_blr')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Bottle of ' .. Config.Items.beer_2.label)
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Bottle of ' .. Config.Items.beer_2.label)
 end)
 
 ESX.RegisterUsableItem('beer_3', function(source)
@@ -132,7 +132,7 @@ ESX.RegisterUsableItem('beer_3', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'drunk', Config.Items.beer_3.drunk)
     TriggerClientEvent('esx_optionalneeds:onDrink', source, 'prop_beer_pride')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Bottle of ' .. Config.Items.beer_3.label)
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Bottle of ' .. Config.Items.beer_3.label)
 end)
 
 ESX.RegisterUsableItem('bourbon', function(source)
@@ -143,7 +143,7 @@ ESX.RegisterUsableItem('bourbon', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'drunk', Config.Items.bourbon.drunk)
     TriggerClientEvent('esx_optionalneeds:onDrink', source, 'prop_cs_whiskey_bottle')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Bottle of ' .. Config.Items.bourbon.label)
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Bottle of ' .. Config.Items.bourbon.label)
 end)
 
 ESX.RegisterUsableItem('rye', function(source)
@@ -154,7 +154,7 @@ ESX.RegisterUsableItem('rye', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'drunk', Config.Items.rye.drunk)
     TriggerClientEvent('esx_optionalneeds:onDrink', source, 'prop_bottle_richard')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Bottle of ' .. Config.Items.rye.label)
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Bottle of ' .. Config.Items.rye.label)
 end)
 
 ESX.RegisterUsableItem('scotch', function(source)
@@ -165,7 +165,7 @@ ESX.RegisterUsableItem('scotch', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'drunk', Config.Items.scotch.drunk)
     TriggerClientEvent('esx_optionalneeds:onDrink', source, 'ba_prop_battle_whiskey_bottle_s')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Bottle of ' .. Config.Items.scotch.label)
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Bottle of ' .. Config.Items.scotch.label)
 end)
 
 ESX.RegisterUsableItem('tequila', function(source)
@@ -176,7 +176,7 @@ ESX.RegisterUsableItem('tequila', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'drunk', Config.Items.tequila.drunk)
     TriggerClientEvent('esx_optionalneeds:onDrink', source, 'prop_tequila_bottle')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Bottle of ' .. Config.Items.tequila.label .. ' - Drink of The Champs')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Bottle of ' .. Config.Items.tequila.label .. ' - Drink of The Champs')
 end)
 
 ESX.RegisterUsableItem('moonshine', function(source)
@@ -190,11 +190,11 @@ ESX.RegisterUsableItem('moonshine', function(source)
         TriggerClientEvent('esx_status:add', source, 'drunk', Config.Items.moonshine.drunk)
         TriggerClientEvent('esx_status:add', source, 'poison', Config.Items.moonshine.poison)
         TriggerClientEvent('esx_optionalneeds:onDrink', source, 'prop_ceramic_jug_01')
-        TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Jug of ' .. Config.Items.moonshine.label .. ' - And were Poisoned!')
+        TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Jug of ' .. Config.Items.moonshine.label .. ' - And were Poisoned!')
     else
         TriggerClientEvent('esx_status:add', source, 'drunk', Config.Items.moonshine.drunk)
         TriggerClientEvent('esx_optionalneeds:onDrink', source, 'prop_ceramic_jug_01')
-        TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Jug of ' .. Config.Items.moonshine.label .. ' - That\'ll Put Some Hair on Your Chest' )
+        TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Jug of ' .. Config.Items.moonshine.label .. ' - That\'ll Put Some Hair on Your Chest' )
     end
 end)
 
@@ -206,7 +206,7 @@ ESX.RegisterUsableItem('vodka', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'drunk', Config.Items.vodka.drunk)
     TriggerClientEvent('esx_optionalneeds:onDrink', source, 'prop_vodka_bottle')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Bottle of ' .. Config.Items.vodka.label)
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Bottle of ' .. Config.Items.vodka.label)
 end)
 
 ESX.RegisterUsableItem('gin', function(source)
@@ -217,7 +217,7 @@ ESX.RegisterUsableItem('gin', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'drunk', Config.Items.gin.drunk)
     TriggerClientEvent('esx_optionalneeds:onDrink', source, 'ng_proc_brkbottle_02a')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Bottle of ' .. Config.Items.gin.label)
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Bottle of ' .. Config.Items.gin.label)
 end)
 
 ESX.RegisterUsableItem('martini', function(source)
@@ -228,7 +228,7 @@ ESX.RegisterUsableItem('martini', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'drunk', Config.Items.martini.drunk)
     TriggerClientEvent('esx_optionalneeds:onDrink', source, 'prop_tequila')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A ' .. Config.Items.martini.label)
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a ' .. Config.Items.martini.label)
 end)
 
 ESX.RegisterUsableItem('shirley_temple', function(source)
@@ -239,7 +239,7 @@ ESX.RegisterUsableItem('shirley_temple', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'thirst', Config.Items.shirley_temple.thirst)
     TriggerClientEvent('esx_optionalneeds:onDrink', source, 'prop_tequila')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A ' .. Config.Items.shirley_temple.label)
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a ' .. Config.Items.shirley_temple.label)
 end)
 
 ESX.RegisterUsableItem('margarita', function(source)
@@ -250,7 +250,7 @@ ESX.RegisterUsableItem('margarita', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'drunk', Config.Items.margarita.drunk)
     TriggerClientEvent('esx_optionalneeds:onDrink', source, 'prop_tequila')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A ' .. Config.Items.margarita.label)
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a ' .. Config.Items.margarita.label)
 end)
 
 ESX.RegisterUsableItem('grand_cru', function(source)
@@ -261,7 +261,7 @@ ESX.RegisterUsableItem('grand_cru', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'drunk', Config.Items.grand_cru.drunk)
     TriggerClientEvent('esx_optionalneeds:onDrink', source, 'prop_ceramic_jug_01')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Bottle of ' .. Config.Items.grand_cru.label)
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Bottle of ' .. Config.Items.grand_cru.label)
 end)
 
 ESX.RegisterUsableItem('rum', function(source)
@@ -272,5 +272,49 @@ ESX.RegisterUsableItem('rum', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'drunk', Config.Items.rum.drunk)
     TriggerClientEvent('esx_optionalneeds:onDrink', source, 'prop_rum_bottle')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Bottle of ' .. Config.Items.rum.label)
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Bottle of ' .. Config.Items.rum.label)
+end)
+
+ESX.RegisterUsableItem('bloodymary', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('bloodymary', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'drunk', Config.Items.bloodymary.drunk)
+    TriggerClientEvent('esx_optionalneeds:onDrink', source, 'prop_tequila')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a ' .. Config.Items.bloodymary.label)
+end)
+
+ESX.RegisterUsableItem('darkale', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('darkale', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'drunk', Config.Items.darkale.drunk)
+    TriggerClientEvent('esx_optionalneeds:onDrink', source, 'prop_amb_beer_bottle')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Bottle of ' .. Config.Items.darkale.label)
+end)
+
+ESX.RegisterUsableItem('paleale', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('paleale', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'drunk', Config.Items.paleale.drunk)
+    TriggerClientEvent('esx_optionalneeds:onDrink', source, 'prop_amb_beer_bottle')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Bottle of ' .. Config.Items.paleale.label)
+end)
+
+ESX.RegisterUsableItem('tequi-la-sunrise', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('tequi-la-sunrise', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'drunk', Config.Items.sunrise.drunk)
+    TriggerClientEvent('esx_optionalneeds:onDrink', source, 'prop_amb_beer_bottle')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a ' .. Config.Items.sunrise.label)
 end)

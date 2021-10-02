@@ -8,16 +8,28 @@ Config = {}
     }
 ]]
 Config.handguns = {
-    {type = "weapon_pistol", label = "Pistol"},
     {type = "weapon_snspistol", label = "SnS Pistol"},
     {type = "weapon_vintagepistol", label = "Vintage Pistol"},
     {type = "weapon_combatpistol", label = "Combat Pistol"},
     {type = "weapon_snspistol_mk2", label = "SnS Pistol MK2"},
     {type = "weapon_heavypistol", label = "Heavy Pistol"},
     {type = "weapon_pistol50", label = "Deagle"},
-    {type = "weapon_flaregun", label = "Flare Gun"},
-    {type = "weapon_stungun", label = "Taser"},
+    {type = "weapon_doubleaction", label = "Double Action Revolver"},
     {type = "ammo_pistol", label = "Box of Pistol Rounds"},
+}
+
+Config.armor = {
+    {type = "bodyarmor_1", label = "Level 1 Body Armor"},
+    {type = "bodyarmor_2", label = "Level 2 Body Armor"},
+    {type = "bodyarmor_3", label = "Level 3 Body Armor"},
+}
+
+Config.components = {
+    {type = "layeredmetal", label = "Layered Metal"},
+    {type = "layeredplastic", label = "Layered Plastic"},
+    {type = "ironplate", label = "Iron Plate"},
+    {type = "goldplate", label = "Gold Plate"},
+    {type = "diamondplate", label = "Diamond Plate"},
 }
 
 Config.general = {
@@ -34,7 +46,6 @@ Config.general = {
     {type = "metal", label = "Metal"},
     {type = "bodyarmor_1", label = "Level 1 Body Armor"},
     {type = "bodyarmor_2", label = "Level 2 Body Armor"},
-    {type = "bodyarmor_3", label = "Level 3 Body Armor"},
     {type = "repairkit_basic", label = "Roadside Repair Kit"},
     {type = "diamond", label = "Diamond"},
     {type = "golddiamond", label = "Gold Diamond"},
@@ -47,6 +58,7 @@ Config.general = {
     {type = "pipe_opium", label = "Opium Pipe"},
     {type = "pipe_meth", label = "Meth Pipe"},
     {type = "pipe_weed", label = "Weed Pipe"},
+    {type = "copper", label = "Melt Down Copper Pipe"},
 }
 
 Config.medicine = {
@@ -64,6 +76,14 @@ Config.electronics = {
     {type = "usb", label = "USB"},
 }
 
+Config.marijuana = {
+    {type = "joint", label = "Joint"},
+    {type = "rolling_paper", label = "Rolling Paper"},
+    {type = "grinder", label = "Grinder"},
+    {type = "razer", label = "Razer Blade"},
+    {type = "pipe_weed", label = "Bong"},
+}
+
 --Recipes
 --[[ If it doesn't work, probably missing a comma. 
     itemSpawnCode = {
@@ -73,11 +93,6 @@ Config.electronics = {
     },
 ]]
 Config.Recipes = {
-    weapon_pistol = {
-        { item = "metal", quantity = 10 },
-        { item = "plastic", quantity = 5 },
-        { item = "copper", quantity = 5 }
-    },
     lockpick  = {
         { item = "metal", quantity = 10 },
         { item = "plastic", quantity = 2 }
@@ -157,11 +172,6 @@ Config.Recipes = {
 		{ item = "metal", quantity = 10 },
 		{ item = "bodyarmor_1", quantity = 1 },
 		{ item = "bodyarmor_2", quantity = 1 }
-    },
-	weapon_snspistol = {
-        { item = "plastic", quantity = 10 },
-        { item = "iron", quantity = 40 },
-		{ item = "metal", quantity = 50 }
     },
 	repairkit_basic = {
 		{ item = "plastic", quantity = 10 },
@@ -252,41 +262,87 @@ Config.Recipes = {
         { item = "electronics", quantity = 2 },
         { item = "plastic", quantity = 5 }
     },
-    --[[weapon_snspistol_mk2 = {
-        {item = "", quantity = },
-        {item = "", quantity = },
-        {item = "", quantity = }
+    copper = {
+        { item = "copperpipe", quantity = 1 }
     },
-    weapon_vintagepistol = {
-        {item = "", quantity = },
-        {item = "", quantity = },
-        {item = "", quantity = }
+    layeredmetal = { 
+        {item = "metal", quantity = 50 }
+    },
+    layeredplastic = { 
+        {item = "plastic", quantity = 50 }
+    },
+    ironplate = {
+        {item = "iron", quantity = 42 }
+    },
+    goldplate = { 
+        {item = "gold", quantity = 21 }  
+    },
+    diamondplate = { 
+        {item = "diamond", quantity = 25  }
+    },
+    weapon_pistol = {
+        {item = "iron", quantity = 17 },
+        {item = "metal", quantity = 30 },
+        {item = "plastic", quantity = 10 }
+    },
+    weapon_snspistol = {
+        { item = "plastic", quantity = 10 },
+        { item = "iron", quantity = 40 },
+		{ item = "metal", quantity = 50 }
+    },
+    weapon_snspistol_mk2 = {
+        {item = "iron", quantity = 17 },
+        {item = "metal", quantity = 20 },
+        {item = "plastic", quantity = 20 }
     },
     weapon_combatpistol = {
-        {item = "", quantity = },
-        {item = "", quantity = },
-        {item = "", quantity = }
+        {item = "iron", quantity = 40 },
+        {item = "metal", quantity = 50 },
+        {item = "plastic", quantity = 30 }
     },
-    weapon_heavypistol = {
-        {item = "", quantity = },
-        {item = "", quantity = },
-        {item = "", quantity = }
+    weapon_vintagepistol = {
+        {item = "iron", quantity = 50 },
+        {item = "metal", quantity = 60 },
+        {item = "plastic", quantity = 40 }
+    },
+    weapon_pistol_mk2 = {
+        {item = "ironplate", quantity = 2 },
+        {item = "layeredmetal", quantity = 3 },
+        {item = "layeredplastic", quantity = 2 }
+    },
+    weapon_heavypistol = {  
+        {item = "ironplate", quantity = 10 },
+        {item = "layeredmetal", quantity = 10 },
+        {item = "layeredplastic", quantity = 10 }
     },
     weapon_pistol50 = {
-        {item = "", quantity = },
-        {item = "", quantity = },
-        {item = "", quantity = }
+        {item = "ironplate", quantity = 14 },
+        {item = "layeredmetal", quantity = 10 },
+        {item = "layeredplastic", quantity = 10 }
     },
-    weapon_flaregun = {
-        {item = "", quantity = },
-        {item = "", quantity = },
-        {item = "", quantity = }
+    weapon_doubleaction = {
+        {item = "goldplate", quantity = 10 },
+        {item = "layeredmetal", quantity = 3 },
+        {item = "layeredplastic", quantity = 3 }
     },
-    weapon_stungun = {
-        {item = "", quantity = },
-        {item = "", quantity = },
-        {item = "", quantity = }
-    },--]]
+    weapon_revolver = {
+        {item = "ironplate", quantity = 15 },
+        {item = "layeredmetal", quantity = 3 },
+        {item = "layeredplastic", quantity = 3 }
+    },
+    weapon_appistol = {
+        {item = "diamondplate", quantity = 1 },
+        {item = "ironplate", quantity = 6 },
+        {item = "layeredmetal", quantity = 2 },
+        {item = "layeredplastic", quantity = 2 }
+    },
+    joint = {
+        {item = "grinder", quantity = 1},
+        {item = "marijuana_eighth", quantity = 1}
+    },
+    rolling_paper = {
+        {item = "wool", quantity = 1},
+    },
 }
 
 --Stations
@@ -334,6 +390,36 @@ Config.Stations = {
         type = 'armor',
         Text = "Craft Armor",
     },]]
+    {--Sean McConnal's Gun Dealerino Stuff
+        pos = vec3(114.73, -1913.39, 8.11), 
+        type = 'handguns',
+        Text = "Craft Handguns",
+    },
+    {
+        pos = vec3(119.40, -1912.96, 8.11), 
+        type = 'armor',
+        Text = "Craft Armor",
+    },
+    {
+        pos = vec3(113.05, -1915.74, 8.11), 
+        type = 'components',
+        Text = "Craft Components",
+    },
+    {--George Glant's Gun Dealerino Stuff
+    pos = vec3(161.81, -1949.07, 13.13), 
+    type = 'handguns',
+    Text = "Craft Handguns",
+    },
+    {
+    pos = vec3(161.82, -1944.12, 13.13), 
+    type = 'armor',
+    Text = "Craft Armor",
+    },
+    {
+    pos = vec3(163.96, -1950.72, 13.13), 
+    type = 'components',
+    Text = "Craft Components",
+    },
     {--Paleto Pharmacy
         pos = vec3(-179.39, -6387.61, 30.51), 
         type = 'medicine',
@@ -360,7 +446,7 @@ Config.Stations = {
         Text = "Craft Electronics",
     },
     {--Mirror Park Digital Den
-        pos = vec3(-1130.07, -472.45, 66.72), 
+        pos = vec3(1130.07, -472.45, 66.72), 
         type = 'electronics',
         Text = "Craft Electronics",
     },
@@ -368,5 +454,10 @@ Config.Stations = {
         pos = vec3(-623.47, -282.20, 34.59), 
         type = 'electronics',
         Text = "Craft Electronics",
+    },
+    {--Best Buds
+    pos = vec3(382.21, -816.66, 28.31), 
+    type = 'marijuana',
+    Text = "Process Weed",
     },
 }

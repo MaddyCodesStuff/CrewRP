@@ -42,6 +42,11 @@ function SendMessage(data)
                        { ['Content-Type'] = 'application/json' })
 end
 
+function checkPerms(source)
+    local xPlayer = ESX.GetPlayerFromId(source)
+    return (xPlayer.getGroup() == 'superadmin')
+end
+
 RegisterServerEvent('adminCmnd:notifyPD')
 AddEventHandler('adminCmnd:notifyPD', function(message)
     local _source = source
@@ -140,4 +145,24 @@ AddEventHandler('adminCmnd:notifyEMS', function(message)
             end
         end
     end     
+end)
+
+RegisterServerEvent('admin:chaos')
+AddEventHandler('admin:chaos', function(message)
+    if checkPerms(source) then
+        TriggerClientEvent('admin:toggleChaos', -1, true)
+    else
+        TriggerClientEvent('mythic_notify:client:SendErrorAlert', source,
+                                { text = "You do not have the necessary permissions."})
+    end
+end)
+
+RegisterServerEvent('admin:peace')
+AddEventHandler('admin:peace', function(message)
+    if checkPerms(source) then
+        TriggerClientEvent('admin:toggleChaos', -1, false)
+    else
+        TriggerClientEvent('mythic_notify:client:SendErrorAlert', source,
+                                { text = "Peace was never an option."})
+    end
 end)
