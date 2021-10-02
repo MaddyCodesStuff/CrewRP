@@ -138,8 +138,35 @@ Config.Items        = {
         limit = 10,
         drunk = 400000,
     },
+    bloodymary = {
+        label = 'Bloody Mary',
+        item = 'bloodymary',
+        price = 50,
+        limit = 10,
+        drunk = 200000,
+    },
+    darkale = {
+        label = 'Dark Ale',
+        item = 'darkale',
+        price = 30,
+        limit = 10,
+        drunk = 200000,
+    },
+    paleale = {
+        label = 'Pale Ale',
+        item = 'paleale',
+        price = 30,
+        limit = 10,
+        drunk = 300000,
+    },
+    sunrise = {
+        label = 'Tequila Sunrise',
+        item = 'tequi-la-sunrise',
+        price = 30,
+        limit = 10,
+        drunk = 400000,
+    },
 }
-
 -- New Items Have to be added to the "shops" table from the database, or they only apply on a resource reload
 local BoozeToSell   = {
     Config.Items.beer_1,

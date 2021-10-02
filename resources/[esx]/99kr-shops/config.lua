@@ -1020,6 +1020,10 @@ Config = {
             { label = 'Vodka', item = "vodka", price = 60 },
             { label = 'Gin', item = "gin", price = 50 },
             { label = 'Rum', item = "rum", price = 50 },
+            { label = 'Bloody Mary', item = "bloodymary", price = 35 },
+            { label = 'Dark Ale', item = "darkale", price = 10 },
+            { label = 'Pale Ale', item = "paleale", price = 10 },
+            { label = 'Tequila Sunrise', item = "tequi-la-sunrise", price = 30 },
         },
         ["drinks"]      = {
             { label = "E-Cola", item = "cocacola", price = 7 },
@@ -1082,6 +1086,7 @@ Config = {
             { label = "Vegetable Soup", item = "soup2", price = 4 },
             { label = "Crackles O'Dawn Cereal", item = "cereal", price = 4 },
             { label = "Fishy Stix", item = "fishstix", price = 5 },
+            { label = "Frozen Waffles", item = "waffles", price = 7 },
         },
         ["diverse"]     = {
             { label = "Redwood Cigarettes", item = "cigarette", price = 6 },
@@ -1102,6 +1107,7 @@ Config = {
             { label = "Toothpaste", item = "toothpaste", price = 3 },
             { label = "Notepad", item = "notepad", price = 100 },
             { label = "Empty Bottle", item = "empty_bottle", price = 10 },
+            { label = "Pet Treats", item = "pettreats", price = 5 },
             { label = "Pet Food", item = "croquettes", price = 150 },
         },
         ["chemicals"]   = {
@@ -1175,12 +1181,20 @@ Config = {
             { label = "Mocha", item = "mocha", price = 5 },
             { label = "Latte", item = "latte", price = 5 },
             { label = "Frapuccino", item = "frapuccino", price = 5 },
+            { label = "Sweet Tea", item = "sweet_tea", price = 5 },
+            { label = "Iced Tea", item = "iced_tea", price = 5 },
+            { label = "Tea", item = "tea", price = 5 },
+            { label = "Hot Cocoa", item = "hotcoco", price = 5 },       
+            { label = "Fancy Latte", item = "petcoffee", price = 10 },       
         },
         ["tacos"]       = {
             { label = "Al Pastor", item = "tacoalpastor", price = 5 },
             { label = "Barbacacoa", item = "tacobarbacacoa", price = 5 },
             { label = "Carnitas", item = "tacocarnitas", price = 5 },
             { label = "Vegetal", item = "tacovegetal", price = 5 },
+            { label = "Enchiladas", item = "Enchiladas", price = 5 },
+            { label = "Chimichangas", item = "Chimichangas", price = 5 },
+            { label = "Burrito", item = "Burrito", price = 5 },
         },
         ["pharmacy"]    = {
             { label = "Tylenol", item = "tylenol", price = 10 },
@@ -1229,6 +1243,9 @@ Config = {
             { label = "Money Shot Burger", item = "moneyshotburger", price = 6 },
             { label = "Meat Free Burger", item = "meatfreeburger", price = 7 },
             { label = "Pizza", item = "pizza", price = 15 },
+            { label = "Irish Stew", item = "irishstew", price = 20 },        
+            { label = "Bangers and Mash", item = "bangersandmash", price = 20 },     
+            { label = "Shepherds Pie", item = "shepherdspie", price = 20 },      
         },
         ["juice"]       = {
             { label = "Grape Juice", item = "jus_raisin", price = 5 },
@@ -1247,6 +1264,8 @@ Config = {
             { label = "Decaf Coffee", item = "decafcoffee", price = 1 },
             { label = "Sweet Tea", item = "sweet_tea", price = 5 },
             { label = "Iced Tea", item = "iced_tea", price = 5 },
+            { label = "Tea", item = "tea", price = 5 },
+            { label = "Hot Cocoa", item = "hotcoco", price = 5 },            
         },
         ["lockpicks"]       = {
             { label = "Lockpick", item = "lockpick", price = 500 },
