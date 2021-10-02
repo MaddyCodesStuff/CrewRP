@@ -1,3 +1,3 @@
 Config            = {}
 Config.EAS        = {}
-Config.EAS.Volume = 1.0 --(0.2 = 20% Volume)
+Config.EAS.Volume = 0.3 --(0.2 = 20% Volume)

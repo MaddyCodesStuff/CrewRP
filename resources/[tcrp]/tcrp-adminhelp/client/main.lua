@@ -53,3 +53,15 @@ RegisterCommand('notifyEMS', function()
     end)
 end)
 
+RegisterCommand('chaos', function()
+    TriggerServerEvent('admin:chaos')
+end)
+
+RegisterCommand('peace', function()
+    TriggerServerEvent('admin:peace')
+end)
+
+RegisterNetEvent("admin:toggleChaos")
+AddEventHandler("admin:toggleChaos", function(state)
+    SetRiotModeEnabled(state)
+end)

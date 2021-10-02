@@ -1,3 +1,15 @@
+ESX = nil
+
+Citizen.CreateThread(function()
+
+    while ESX == nil do
+        TriggerEvent('esx:getSharedObject', function(obj)
+            ESX = obj
+        end)
+        Citizen.Wait(0)
+    end
+end)
+
 RegisterNetEvent("SendAlert")
 AddEventHandler("SendAlert", function(msg, msg2)
     SendNUIMessage({
@@ -22,7 +34,7 @@ AddEventHandler("alert:Send", function(msg, departments)
                 msg        = departments[i].name
                 local msg2 = GetOnscreenKeyboardResult()
                 TriggerServerEvent("alert:sv", msg, msg2)
-                SendAlert(msg, msg2)
+                TriggerEvent('SendAlert', msg, msg2)
             end
         end
     end
