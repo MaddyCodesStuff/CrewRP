@@ -86,11 +86,12 @@ function SpawnCar()
 						end
 						car = CreateVehicle(vehiclehash, Config.VehicleSpawnPoint.Pos.x, Config.VehicleSpawnPoint.Pos.y,
 											Config.VehicleSpawnPoint.Pos.z, Config.VehicleSpawnPoint.Pos.h, true, false)
+						
 						SetEntityAsMissionEntity(car, true, true)
 
 						--Teleport player in car
 						TaskWarpPedIntoVehicle(GetPlayerPed(-1), car, -1)
-
+						exports["LegacyFuel"]:SetFuel(car, 100)
 						--Set delivery blip
 						deliveryblip = AddBlipForCoord(alldeliveries[randomdelivery].posx,
 													   alldeliveries[randomdelivery].posy,

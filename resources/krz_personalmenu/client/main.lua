@@ -287,6 +287,7 @@ function admin_vehicle_repair()
 
     SetVehicleFixed(car)
     SetVehicleDirtLevel(car, 0.0)
+    exports["LegacyFuel"]:SetFuel(car, 100)
 end
 
 -- Spawn vehicule
