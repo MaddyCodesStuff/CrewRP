@@ -41,7 +41,10 @@ AddEventHandler('chatMessage', function(source, name, msg)
             TriggerClientEvent("alert:Send", source, string.sub(msg, 8), Config.EAS.Departments)
         end
     else
-        TriggerClientEvent('mythic_notify:client:SendErrorAlert', source,
-                                { text = "You do not have the necessary permissions."})
+        if command == "/alert" then
+            local command = stringsplit(msg, " ")[1];
+            TriggerClientEvent('mythic_notify:client:SendErrorAlert', source,
+                                    { text = "You do not have the necessary permissions."})
+        end
     end
 end)
