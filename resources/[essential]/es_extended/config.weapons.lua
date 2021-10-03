@@ -771,6 +771,11 @@ Config.Weapons = {
 		components = {}
 	},
 	{
+		name       = 'WEAPON_HOSE',
+		label      = _U('weapon_hose'),
+		components = {}
+	},
+	{
 		name       = 'WEAPON_PICKAXE',
 		label      = _U('weapon_pickaxe'),
 		components = {}
