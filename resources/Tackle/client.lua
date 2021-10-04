@@ -1,24 +1,17 @@
 -- Default key is E if you wish to change the key then go here: https://docs.fivem.net/game-references/controls/
 --This does not have any permissions in it at all, you'll have to add that yourself.
-local RunningOrSprinting = false
-Citizen.CreateThread(function()
-	while true do
-        RunningOrSprinting = false
-		Citizen.Wait(0)
-
-        if(IsPedRunning(PlayerPedId()) or IsPedSprinting(PlayerPedId())) then
-            RunningOrSprinting = true
-        end
-
-		if (RunningOrSprinting and IsControlJustReleased(0, 38)) then --Change the key for tackling here.
-			if IsPedInAnyVehicle(PlayerPedId()) then
-			else
-				local ForwardVector = GetEntityForwardVector(PlayerPedId())
+oncooldown = false
+local cooldown = 2000
+RegisterCommand('tackle', function()
+	if not oncooldown then
+		local ped = PlayerPedId()
+		oncooldown = true
+		if not IsPedInAnyVehicle(ped, true) then
+			if IsPedRunning(ped) or IsPedSprinting(ped) then
+				local ForwardVector = GetEntityForwardVector(ped)
+				SetPedToRagdollWithFall(ped, 1000, 0, 0, ForwardVector, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0) --how long the tackler will remain down.
 				local Tackled = {}
-
-				SetPedToRagdollWithFall(PlayerPedId(), 1000, 1500, 0, ForwardVector, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0) --how long the tackler will remain down.
-
-				while IsPedRagdoll(PlayerPedId()) do
+				while IsPedRagdoll(ped) do
 					Citizen.Wait(0)
 					for Key, Value in ipairs(getTouchedPlayers()) do
 						if not Tackled[Value] then
@@ -30,28 +23,20 @@ Citizen.CreateThread(function()
 			end
 		end
 	end
+	Citizen.Wait(cooldown)
+	oncooldown = false
 end)
+
+RegisterKeyMapping('tackle', "Tackle", 'keyboard', 'E')
 
 RegisterNetEvent('Tackle:Client:TacklePlayer')
 AddEventHandler('Tackle:Client:TacklePlayer',function(ForwardVector)
 	SetPedToRagdollWithFall(PlayerPedId(), 3000, 3000, 0, ForwardVector, 10.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0) --how long the person being tackled will remain down.
 end)
 
-function getPlayers()
-    local players = {}
-
-    for i = 0, 255 do
-       if NetworkIsPlayerActive(i) then
-            table.insert(players, i)
-       end
-    end
-
-    return players
-end
-
 function getTouchedPlayers()
     local touchedPlayer = {}
-    for Key, Value in ipairs(getPlayers()) do
+    for Key, Value in ipairs(GetActivePlayers()) do
 		if IsEntityTouchingEntity(PlayerPedId(), GetPlayerPed(Value)) then
 			table.insert(touchedPlayer, Value)
 		end

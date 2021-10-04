@@ -87,7 +87,6 @@ AddEventHandler('esx_outlawalert:explosionInProgress', function(targetCoords, st
     if sendCopNotify then
         local pedinterior = nil
         for k,v in pairs(Config.InteriorLocations) do
-            print(k,v)
             for i = 1, #v, 1 do
                 if v[i] == interiorhash then
                     pedinterior = k
@@ -136,7 +135,6 @@ AddEventHandler('esx_outlawalert:citizenDistress', function(targetCoords, street
     else
         TriggerClientEvent('esx_outlawalert:emsDistressNotify', -1, _U('interiorrevive', pedinterior))
     end
-    print(targetCoords, interiorhash, pedinterior)
     TriggerClientEvent('esx_outlawalert:citizenDistress', -1, targetCoords, pedinterior, interiorhash, throwawayvariable)
 end)
 

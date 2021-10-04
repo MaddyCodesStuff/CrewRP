@@ -51,3 +51,11 @@ AddEventHandler("Scene:RecieveCopy", function(T, Override)
 		Scene.State = "Placing"
 	end
 end)
+
+RegisterNetEvent("Scene:RecieveMove")
+AddEventHandler("Scene:RecieveMove", function(T, id, Override)
+	if not Scene.State then
+		IsAdmin = Override
+		StartMoveScene(T, id)
+	end
+end)

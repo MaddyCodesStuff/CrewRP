@@ -676,22 +676,22 @@ Blips.Main        = {
         ["layer"]   = 25,
     },
 
-    --Other Stores--
-    [250]  = {
-        ["name"]    = "Cindy's Flower Shop",
-        ["x"] =  -1183.29, ["y"] =  -1193.05,
-        ["category"]= "Other Stores",
-        ["text"]    = "Flower Shop",
-        ["sprite"]  = 431,
-        ["color"]   = 7,
-        ["scale"]   = 1.0,
-        ["layer"]   = 25,
-        ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Store",
-        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "None",
-        ["Info.dictionary"] = "blip_images",
-        ["Info.image"] = "Cindy's Flowers",
-    },
+    -- --Other Stores--
+    -- [250]  = {
+    --     ["name"]    = "Cindy's Flower Shop",
+    --     ["x"] =  -1183.29, ["y"] =  -1193.05,
+    --     ["category"]= "Other Stores",
+    --     ["text"]    = "Flower Shop",
+    --     ["sprite"]  = 431,
+    --     ["color"]   = 7,
+    --     ["scale"]   = 1.0,
+    --     ["layer"]   = 25,
+    --     ["Info.toggle"] = true,
+    --     ["Info.textLeft"] = "Category", ["Info.textRight"] = "Store",
+    --     ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "None",
+    --     ["Info.dictionary"] = "blip_images",
+    --     ["Info.image"] = "Cindy's Flowers",
+    -- },
     [251]  = {
         ["name"]    = "Bowling Alley",
         ["x"] =  -153.38, ["y"] =  -246.94,
@@ -706,6 +706,22 @@ Blips.Main        = {
         ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "None",
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Bowling Alley",
+    },
+    [252]  = {
+        ["name"]    = "Best Buds",
+        ["x"] =  377.59, ["y"] =  -828.34,
+        ["category"]= "Other Stores",
+        ["text"]    = "Best Buds",
+        ["sprite"]  = 496,
+        ["color"]   = 25,
+        ["scale"]   = 1.0,
+        ["layer"]   = 25,
+        ["Info.toggle"] = true,
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Weed Dispensary",
+        ["Info.nameLeft"] = "Owner",["Info.nameRight"] = "Mark Carter",
+        ["Info.name2Left"] = "Phone",["Info.name2Right"] = "238-5965",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Best Buds",
     },
     
     --Hobbies--
@@ -1074,6 +1090,22 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Paleto Medical",
     },
+    [553]  = {
+        ["name"]    = "Coroner's Office",
+        ["x"] =  240.3, ["y"] =  -1379.96,
+        ["category"]= "Morgue",
+        ["text"]    = "Morgue",
+        ["sprite"]  = 310,
+        ["color"]   = 1,
+        ["layer"]   = 30,
+        ["scale"]   = 1.2,
+        ["Info.toggle"] = true,
+        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Morgue",
+        ["Info.nameLeft"] = "Head Coroner",["Info.nameRight"] = "Bella Lugosi",
+        ["Info.name2Left"] = "Phone Number",["Info.name2Right"] = "469-9744",
+        ["Info.dictionary"] = "blip_images",
+        ["Info.image"] = "Coroners Office",
+    },
 
     -- Fire Stations --
     [610]  = {
@@ -1163,20 +1195,6 @@ Blips.Main        = {
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Bolingbroke Penitentiary",
     },
-    [671]  = {
-        ["name"]    = "San Andreas Parks Deparment",
-        ["x"] =  385.87, ["y"] = 796.18,
-        ["category"]= "Park Rangers",
-        ["text"]    = "Ranger Station",
-        ["sprite"]  = 496,
-        ["color"]   = 25,
-        ["layer"]   = 30,
-        ["scale"]   = 1.2,
-        ["Info.toggle"] = true,
-        ["Info.textLeft"] = "Category", ["Info.textRight"] = "Ranger Station",
-        ["Info.dictionary"] = "blip_images",
-        ["Info.image"] = "Parks Station",
-    },
     
     -- Dealerships --
     [730]  = {
@@ -1229,8 +1247,8 @@ Blips.Main        = {
         ["scale"]   = 1.0,
         ["Info.toggle"] = true,
         ["Info.textLeft"] = "Category", ["Info.textRight"] = "Car Dealership",
-        ["Info.headerLeft"] = "Owner", ["Info.headerRight"] = "~g~Luna Rose",
-        ["Info.iconLeft"] = "Phone", ["Info.iconRight"] = "~h~644-5809", ["Info.iconID"] = 5, ["Info.iconColor"] = 1, ["Info.iconCheckmark"] = false,
+        ["Info.nameLeft"] = "Amelia Jacobs", ["Info.nameRight"] = "673-0216",
+        ["Info.name2Left"] = "Mark Carter", ["Info.name2Right"] = "238-5965",
         ["Info.dictionary"] = "blip_images",
         ["Info.image"] = "Helmuts",
     },
@@ -1528,6 +1546,7 @@ local TRASH = {}
 local HANGAR = {}
 local HARDWARE = {}
 local PETS = {}
+local RENTALS = {}
 Bulkblips = {
     ATM = {
         Config = {
@@ -1744,16 +1763,16 @@ Bulkblips = {
     },
     
     DIGITAL = {
-            Config = {
+        Config = {
             ["text"]    = "Digital Den",
-            ["color"]   = 35,
-            ["sprite"]  = 71,
+            ["color"]   = 14,
+            ["sprite"]  = 521,
             ["layer"]   = 15,
         },
         Blips = {
-            ["x"]      = -633.22, ["y"] = -281.99,
-            ["x"]      = -658.82, ["y"] = -858.82,
-            ["x"]      = 1131.92, ["y"] = -474.17,
+            {["x"] = -0633.22,   ["y"]   =   -0281.99},
+            {["x"] = -0658.82,   ["y"]   =   -0858.82},
+            {["x"] =  1131.92,   ["y"]   =   -0474.17}, 
         },
     },
     
@@ -1798,6 +1817,31 @@ Bulkblips = {
             {['x'] =  -0326.91,  ['y']  =  -0144.82},
             {['x'] =   1695.15,  ['y']  =   4916.51},
             {['x'] =   0103.80,  ['y']  =   6622.60},
+        },
+    },
+
+    RENTALS = {
+        Config = {
+            ["text"]    = "Vehicle Rental",
+            ["sprite"]  = 530,
+            ["layer"]   = 1,
+        },
+        Blips = {
+            {['x'] = -216.24,  ['y']  = 6211.77},
+            {['x'] = 1247.57,  ['y']  = 2716.60},
+            {['x'] = -1028.42,  ['y']  = -2743.67},
+            {['x'] = -17.40,  ['y']  = -1108.86},
+            {['x'] = -1061.39,  ['y']  = -3493.22},
+            {['x'] = 2148.35,  ['y']  = 4794.99},
+            {['x'] = 1727.86,  ['y']  = 3289.52},
+            {['x'] = -3426.70,  ['y']  = 955.66},
+            {['x'] = -800.22,  ['y']  = -1512.83},
+            {['x'] = -281.25,  ['y']  = 6632.10},
+            {['x'] = 3829.39,  ['y']  = 4444.32},
+            {['x'] = 1330.80,  ['y']  = 4226.60},
+            {['x'] = 765.26,  ['y']  = -1224.86},
+            {['x'] = -895.88,  ['y']  = -778.98},
+            {['x'] = -1107.86,  ['y']  = -1693.42},   
         },
     },
 

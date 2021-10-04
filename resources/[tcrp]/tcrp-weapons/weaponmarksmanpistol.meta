@@ -287,7 +287,7 @@
           </AttachPoints>
           <GunFeedBone />
           <TargetSequenceGroup />
-          <WeaponFlags>CarriedInHand Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim AnimReload AnimCrouchFire UsableOnFoot UsableClimbing UsableInCover AllowCloseQuarterKills HasLowCoverReloads HasLowCoverSwaps IgnoreAnimReloadRateModifiers QuitTransitionToIdleIntroOnWeaponChange DisableLeftHandIkWhenOnFoot TorsoIKForWeaponBlock NotAllowedForDriveby UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
+          <WeaponFlags>CarriedInHand Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim AnimReload AnimCrouchFire UsableOnFoot UsableClimbing UsableInCover HasLowCoverReloads HasLowCoverSwaps IgnoreAnimReloadRateModifiers QuitTransitionToIdleIntroOnWeaponChange DisableLeftHandIkWhenOnFoot TorsoIKForWeaponBlock NotAllowedForDriveby UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
           <TintSpecValues ref="TINT_DEFAULT" />
           <FiringPatternAliases ref="FIRING_PATTERN_PISTOL" />
           <ReloadUpperBodyFixupExpressionData ref="default" />

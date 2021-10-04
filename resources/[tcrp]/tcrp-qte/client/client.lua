@@ -57,5 +57,4 @@ AddEventHandler('tcrp-qte:testFinisher', function(result)
     else
         TriggerEvent('tcrp:displayGeneral', "Failed the vibe check")
     end
-
 end)

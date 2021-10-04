@@ -112,3 +112,18 @@ AddEventHandler('esx_garbagecrew:paycrew', function(number)
     TriggerClientEvent('esx_garbagecrew:updatejobs', -1, currentjobs)
     TriggerClientEvent('esx_garbagecrew:selectnextjob', currentboss )
 end)
+
+RegisterNetEvent('esx_garbagecrew:scavenge')
+AddEventHandler('esx_garbagecrew:scavenge', function()
+	local _source = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+
+    local itemNumber = math.random(1, 32)
+    for k, v in pairs(Config.chanceItems) do
+        local randomCount = math.random(v.min, v.max)
+
+        if itemNumber == v.itemNumber then
+            xPlayer.addInventoryItem(k, randomCount)
+        end
+    end
+end)

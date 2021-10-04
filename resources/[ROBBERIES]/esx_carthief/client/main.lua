@@ -85,12 +85,13 @@ function SpawnCar()
 							Citizen.Wait(1)
 						end
 						car = CreateVehicle(vehiclehash, Config.VehicleSpawnPoint.Pos.x, Config.VehicleSpawnPoint.Pos.y,
-											Config.VehicleSpawnPoint.Pos.z, Config.VehicleSpawnPoint.Pos.h,  0.0, true, false)
+											Config.VehicleSpawnPoint.Pos.z, Config.VehicleSpawnPoint.Pos.h, true, false)
+						
 						SetEntityAsMissionEntity(car, true, true)
 
 						--Teleport player in car
 						TaskWarpPedIntoVehicle(GetPlayerPed(-1), car, -1)
-
+						exports["LegacyFuel"]:SetFuel(car, 100)
 						--Set delivery blip
 						deliveryblip = AddBlipForCoord(alldeliveries[randomdelivery].posx,
 													   alldeliveries[randomdelivery].posy,
@@ -213,7 +214,6 @@ Citizen.CreateThread(function()
 		Citizen.Wait(Config.BlipUpdateTime * 1000)
 		if isTaken == 1 and IsPedInAnyVehicle(GetPlayerPed(-1)) and StopTimer <= Config.TrackerTimer then
 			StopTimer = StopTimer + 1
-			print(StopTimer)
 			local coords = GetEntityCoords(GetPlayerPed(-1))
 			TriggerServerEvent('esx_carthief:alertcops', coords)
 		end

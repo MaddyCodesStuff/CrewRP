@@ -1,4 +1,3 @@
-
 #quicktimeprog {
     display: none;
     position: absolute;
@@ -9,13 +8,16 @@
     border-radius:3%;
   }
 
-  #quicktimebar{
+#quicktimeprog {
     display: none;
-    left: 45%;
-    bottom: 175px;
-    position: absolute;
-    width: 150px;
+    position: relative;
+    width: 1%;
+    background-color: greenyellow;
     height: 30px;
+    opacity: 80%;
+  }
+  
+  #quicktimebar{
     opacity: 80%;
     background-color: black;
     border: black;

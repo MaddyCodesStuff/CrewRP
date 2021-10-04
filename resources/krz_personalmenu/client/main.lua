@@ -287,6 +287,7 @@ function admin_vehicle_repair()
 
     SetVehicleFixed(car)
     SetVehicleDirtLevel(car, 0.0)
+    exports["LegacyFuel"]:SetFuel(car, 100)
 end
 
 -- Spawn vehicule
@@ -1051,10 +1052,14 @@ function AddMenuWalkMenu(menu)
         walkItem = NativeUI.CreateItem(a, '')
         walkMenu.SubMenu:AddItem(walkItem)
     end
+    walkCane = NativeUI.CreateItem(_U('walkcane'), '')
+    walkMenu.SubMenu:AddItem(walkCane)
 
     walkMenu.SubMenu.OnItemSelect = function(sender, item)
         if item == walkReset then
             ResetPedMovementClipset(PlayerPedId())
+        elseif item == walkCane then
+            TriggerEvent("tcrp-cane:toggle")
         else
             WalkMenuStart(DP.Walks[item['Text']['_Text']][1])
         end

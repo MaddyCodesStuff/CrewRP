@@ -220,7 +220,6 @@ end)
 
 RegisterNetEvent('esx_outlawalert:gunshotInProgress')
 AddEventHandler('esx_outlawalert:gunshotInProgress', function(targetCoords, fromVehicle, pedinterior, interiorhash)
-    print(targetCoords, fromVehicle, pedinterior, interiorhash)
     if isPlayerWhitelisted and Config.GunshotAlert then
         local message = '[PD] Shots fired'
         local sprite  = 432
@@ -233,7 +232,6 @@ AddEventHandler('esx_outlawalert:gunshotInProgress', function(targetCoords, from
             color = 5
         end
         if pedinterior ~= nil then
-            print(pedinterior)
             message = message .. " inside " .. pedinterior
         end
         local blip = {["x"] = targetCoords.x, ["y"] = targetCoords.y, ["z"] = targetCoords.z, ["text"] = message, ["longrange"] = true, ["sprite"] = sprite, ["color"] = color, ["scale"] = 1.2, ["layer"] = 35, ["flash"] = true, ["flashinterval"] = 1000, ["duration"] = 90}
@@ -260,7 +258,6 @@ end)
 
 RegisterNetEvent('esx_outlawalert:citizenDistress')
 AddEventHandler('esx_outlawalert:citizenDistress', function(targetCoords, pedinterior, interiorhash)
-    print("1",targetCoords, pedinterior, interiorhash)
     if isPlayerEMSWhitelisted then
         local message = "[CID] Citizen In Distress"
         local sprite = 153
@@ -369,7 +366,6 @@ Citizen.CreateThread(function()
                 if (isPlayerWhitelisted and Config.ShowCopsMisbehave) or not isPlayerWhitelisted then
                     DecorSetInt(playerPed, 'isOutlaw', 2)
                     local interiorhash = (GetInteriorFromEntity(PlayerPedId()))
-                    print(interiorhash)
                     TriggerServerEvent('esx_outlawalert:gunshotInProgress', {
                         x = ESX.Math.Round(playerCoords.x, 1),
                         y = ESX.Math.Round(playerCoords.y, 1),
@@ -400,7 +396,6 @@ Citizen.CreateThread(function()
             local coords = lastThrowCoords[i]
             if IsExplosionInSphere(0, coords.x, coords.y, coords.z, 100.0) or IsExplosionInSphere(1, coords.x, coords.y, coords.z, 500.0) or IsExplosionInSphere(2, coords.x, coords.y, coords.z, 250.0) or IsExplosionInSphere(4, coords.x, coords.y, coords.z, 1000.0) or IsExplosionInSphere(5, coords.x, coords.y, coords.z, 100.0) or IsExplosionInSphere(36, coords.x, coords.y, coords.z, 500.0) or IsExplosionInSphere(40, coords.x, coords.y, coords.z, 250.0) or IsExplosionInSphere(43, coords.x, coords.y, coords.z, 500.0) then
                 local interiorhash = (GetInteriorAtCoords(coords.x, coords.y, coords.z))
-                print(interiorhash)
                 local streetName = GetStreetNameFromHashKey(GetStreetNameAtCoord(coords.x, coords.y, coords.z))
                 TriggerServerEvent('esx_outlawalert:explosionInProgress', coords, streetName, true, interiorhash)
                 lastThrowCoords[i] = nil
