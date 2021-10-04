@@ -193,6 +193,7 @@ Locales['en'] = {
 	['weapon_boltsniper']            = 'bolt-action Sniper',
 	['weapon_rifle2']           	 = 'rifle',
 	['weapon_militia']           	 = 'militia rifle',
+	['weapon_heavyrifle']            = 'heavy rifle',
 
 	-- Weapon Components
 	['component_clip_default']       = 'default Grip',
