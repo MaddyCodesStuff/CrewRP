@@ -176,6 +176,7 @@ Locales['en'] = {
 	['weapon_breach']          	 	 = 'breach Hammer',
 	['weapon_broom']          		 = 'broom',
 	['weapon_cleaver']          	 = 'cleaver',
+	['weapon_crutch']          	 	 = 'crutch',
 	['weapon_unicorn']          	 = 'unicorn',
 	['weapon_icicle']          	 	 = 'icicle',
 	['weapon_fire_axe']          	 = 'fire axe',

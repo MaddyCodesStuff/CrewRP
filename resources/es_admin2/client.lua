@@ -2,6 +2,7 @@ local ESX        = nil
 local group      = "user"
 local states     = {}
 local noClipSpeed = 1.00
+local collision = true
 states.frozen    = false
 states.frozenPos = nil
 
@@ -206,7 +207,7 @@ end
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
-
+        
         local ped = GetPlayerPed(-1)
         if (noclip) then
             local ped        = GetPlayerPed(-1)
@@ -234,12 +235,16 @@ Citizen.CreateThread(function()
             SetEntityInvincible(ped, true)
             SetEntityVisible(ped, false, false)
             SetEntityCompletelyDisableCollision(ped, false, false)
+            collision = false
             ClearPedTasksImmediately(ped)
         else
             Citizen.Wait(200)
             SetEntityInvincible(ped, false)
             SetEntityVisible(ped, true, false)
-            SetEntityCompletelyDisableCollision(ped, true, true)
+            if not collision then
+                collision = true
+                SetEntityCompletelyDisableCollision(ped, true, true)
+            end
         end
     end
 end)
