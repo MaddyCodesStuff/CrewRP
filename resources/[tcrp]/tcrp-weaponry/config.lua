@@ -66,6 +66,8 @@ recoils = {
     [1470379660]   = {["kick"] = 0.8, ["shake"] = 0.25,["scope"] = false,}, -- GADGET PISTOL
     [-1853920116]  = {["kick"] = 0.8, ["shake"] = 0.05,["scope"] = false,}, -- NAVY REVOLVER
     [727643628]    = {["kick"] = 0.6, ["shake"] = 0.05,["scope"] = false,}, -- CERAMIC PISTOL
-    [-342794615]  = {["kick"]  = 0.5, ["shake"] = 0.05,["scope"] = false,}, -- RIFLE
+    [-342794615]   = {["kick"] = 0.6, ["shake"] = 0.05,["scope"] = false,}, -- RIFLE
+    [-1839611618]  = {["kick"] = 0.6, ["shake"] = 0.05,["scope"] = false,}, -- MILITIA RIFLE
+    [-947031628]   = {["kick"] = 0.7, ["shake"] = 0.07,["scope"] = false,}, -- HEAVY RIFLE
     [343582324]    = {["kick"] = 1.0, ["shake"] = 0.25,["scope"] = true ,},-- SNIPER RIFLE
 }
