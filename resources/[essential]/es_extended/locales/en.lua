@@ -192,6 +192,8 @@ Locales['en'] = {
 	['weapon_toiletbrush']           = 'toilet Brush',
 	['weapon_boltsniper']            = 'bolt-action Sniper',
 	['weapon_rifle2']           	 = 'rifle',
+	['weapon_militia']           	 = 'militia rifle',
+
 	-- Weapon Components
 	['component_clip_default']       = 'default Grip',
 	['component_clip_extended']      = 'extended Grip',
