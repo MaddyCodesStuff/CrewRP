@@ -3,7 +3,7 @@
     position: absolute;
     width: 1%;
     background-color:#FF5F00;
-    height: 30px;
+    height: 36%;
     opacity: 100%;
     border-radius:3%;
   }
@@ -13,7 +13,7 @@
     position: relative;
     width: 1%;
     background-color: greenyellow;
-    height: 30px;
+    height: 36%;
     opacity: 80%;
   }
   
@@ -34,7 +34,7 @@
     background-color: white;
     display: none;
     position: relative;
-    height: 30px;
+    height: 36%;
     left:40%;
     opacity: 80%;
     color: #0e0e52;
