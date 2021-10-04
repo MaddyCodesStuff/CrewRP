@@ -24,6 +24,10 @@
     border-width: medium;
     padding: .15em;
     border-radius: 3%;
+    left: 45%;
+    bottom: 175px;
+    position: absolute;
+    width: 30%;
   }
   #quicktimegoal{
     width: 15%;
