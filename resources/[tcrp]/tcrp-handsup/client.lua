@@ -7,9 +7,11 @@ end)
 
 RegisterCommand('handsup', function()
     local ped = PlayerPedId()
-    Citizen.Wait(25)
-    TaskPlayAnim(ped, "random@mugging3", "handsup_standing_base", 3.0, 3.0, -1, 49, 0, 0, 0, 0)
-    SetCurrentPedWeapon(ped, 0xA2719263, true)
-end)
+    if not IsPedInAnyVehicle(ped, false) then
+        Citizen.Wait(25)
+        TaskPlayAnim(ped, "random@mugging3", "handsup_standing_base", 3.0, 3.0, -1, 49, 0, 0, 0, 0)
+        SetCurrentPedWeapon(ped, 0xA2719263, true)
+    end
+end)    
 
 RegisterKeyMapping('handsup', "Put Hands Up", 'keyboard', 'X')
