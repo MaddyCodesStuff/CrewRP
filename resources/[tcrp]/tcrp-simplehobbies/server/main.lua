@@ -143,6 +143,6 @@ AddEventHandler('weed:gather', function()
     if quantity >= limit then
         TriggerClientEvent('esx:showNotification', source, 'You can not carry any more weed!')
     else
-        xPlayer.addInventoryItem('marijuana_eighth', 1)
+        xPlayer.addInventoryItem('marijuana', 3)
     end
 end)
