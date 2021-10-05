@@ -906,7 +906,7 @@ Config.DoorList = {
 	{
 		objHash = 746855201,
 		objHeading = 250.0,
-		objCoords = vector3(261.99899291992, 221.50576782227, 106.68346405029),
+		objCoords = vector3(262.70, 222.50576782227, 106.28),
 		authorizedJobs = { 'police', 'fireman' },
 		locked = true,
 		maxDistance = 2.5,
