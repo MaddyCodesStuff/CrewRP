@@ -3027,30 +3027,6 @@ Config.Elevators    = {
         },
     },
     },
-    { -- Weazel News Rooftop Up
-    name    = "Weazel News Up",
-    Pos     = { x = -598.78, y = -929.92, z = 23.86, h = 87.99 }, -- enter
-    options = {
-        {
-            label   = "Rooftop",
-            name    = "Rooftop",
-            pos     = { x = -568.99, y = -927.72, z = 36.83, h = 91.23, }, -- exit
-            heading = 91.23,
-        },
-    },
-    },
-    { -- Weazel News Rooftop Down
-    name    = "Weazel News Down",
-    Pos     = { x = -568.99, y = -927.72, z = 36.83, h = 91.23, },
-    options = {
-        {
-            label   = "Ground Level",
-            name    = "Ground Level",
-            pos     = { x = -598.78, y = -929.92, z = 23.86, h = 87.99 },
-            heading = 87.99,
-        },
-    },
-    },
     { -- Palomino Ave. Apartment Rooftop Up
     name    = "Palomino Ave. Apartment Up",
     Pos     = { x = -670.3, y = -1015.79, z = 18.07, h = 209.88 }, -- enter

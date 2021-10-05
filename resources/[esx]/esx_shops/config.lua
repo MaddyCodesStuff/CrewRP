@@ -537,7 +537,7 @@ Config.Zones            = {
         },
         job       = 'mecano',
     },
-    LifeInvader          = {
+    WeazelNews          = {
         Items     = {
             {
                 label      = 'News Camera',
@@ -566,7 +566,7 @@ Config.Zones            = {
         BlipColor = 27,
         Blip      = 0,
         Pos       = {
-            { x = -1044.339, y = -235.712, z = 37.1 },
+            { x = -592.42, y = -935.07, z = 22.89 },
         },
         job       = 'journalist'
 

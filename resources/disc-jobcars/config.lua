@@ -11,6 +11,7 @@ Config.Markers = {
         parkranger = { r = 73, b = 84, g = 115 },
         cityclerk = { r = 64, g = 52, b = 235 },
         humane = { r = 64, g = 52, b = 235 },
+        journalist = { r = 64, g = 52, b = 235 },
     },
     types = {
         car = {
@@ -155,6 +156,20 @@ Config.HumaneCars = {
     all = {
         { name = 'Mule', model = 'mule2', price = 0 },
         { name = 'Van', model = 'burrito3', price = 0 },
+    }
+}
+
+Config.JournalistCars = {
+    all = {
+        { name = 'Rumpo News Van', model = 'rumpo', price = 0 },
+        { name = 'VIP Sedan', model = 'schafter3', price = 0 },
+    }
+}
+
+Config.JournalistAir = {
+    all = {
+        { name = 'Frogger', model = 'frogger', price = 0 },
+        { name = 'Maverick', model = 'maverick', price = 0 },
     }
 }
 
@@ -727,4 +742,23 @@ Config.Shops      = {
         type       = "car",
         cars       = Config.HumaneCars
     },
+    --Journalists
+    {
+        name       = 'Weazel News',
+        job        = 'journalist',
+        coords     = vector3(-532.52, -889.60, 24.84),
+        heading    = 179.37,
+        shopCoords = vector3(-537.00, -887.46, 25.16),
+        type       = "car",
+        cars       = Config.JournalistCars
+    },
+    {
+        name       = 'Weazel News Helis',
+        job        = 'journalist',
+        coords     = vector3(-583.57, -930.41, 37.00),
+        heading    = 0.00,
+        shopCoords = vector3(-583.57, -930.41, 37.00),
+        type       = "air",
+        cars       = Config.JournalistAir
+    }
 }

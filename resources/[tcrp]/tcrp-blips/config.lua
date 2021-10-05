@@ -726,7 +726,7 @@ Blips.Main        = {
     
     --Hobbies--
     [300]  = {
-        ["name"]    = "Sell Essense",
+        ["name"]    = "Sell Essence",
         ["x"] =  148.09, ["y"] =  -2391.45,
         ["category"]= "Fuel Hobby",
         ["text"]    = "Hobby - Fuel",
@@ -1456,9 +1456,9 @@ Blips.Main        = {
     },
     [860]  = {
         ["name"]    = "Journalism",
-        ["x"] =  -1084.92, ["y"] = -252.97,
+        ["x"] =  -582.86, ["y"] = -935.42,
         ["category"]= "Journalism",
-        ["text"]    = "Journalism",
+        ["text"]    = "Weazel News",
         ["sprite"]  = 184,
         ["color"]   = 0,
         ["layer"]   = 30,
