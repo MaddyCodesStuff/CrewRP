@@ -33,6 +33,25 @@ Config.Garages = {
             ["rotationZ"] = -60.40157422423 
         }
     },
+    ["LSIA (PUBLIC)"] = {
+        ["positions"] = {
+            ["menu"] = {
+                ["position"] = vector3(-1034.87, -2676.14, 13.83)
+            },
+            ["vehicle"] = {
+                ["position"] = vector3(-1037.76, -2667.15, 13.90), 
+                ["heading"] = 239.27
+            }
+        },
+        ["camera"] = {  -- camera is not needed just if you want cool effects.
+            ["x"] = -1038.39, 
+            ["y"] = -2676.99, 
+            ["z"] = 13.83, 
+            ["rotationX"] = 0.0, 
+            ["rotationY"] = 0.0, 
+            ["rotationZ"] = 0.0
+        }
+    },
     ["ALTA (PUBLIC)"] = {
         ["positions"] = {
             ["menu"] = {
