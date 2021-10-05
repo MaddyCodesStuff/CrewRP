@@ -30,18 +30,28 @@ function GunDealerMenu()
        title = "Gun Dealer",
        align = "top-right",
        elements ={
-               {label = "Give Weapon", value = "give_weapon"},
+               {label = "Give Pistol", value = "weapon_pistol"},
+               {label = "Give Hunting Rifle", value = "weapon_rifle"},
                { label = "Issue Invoice", value = 'issue_invoice' }
            }
        }, function(data, menu)
-        if data.current.value == "give_weapon" then
-            local closestPlayer, closestDistance = ESX.Game.GetClosestPlayer()
+            if data.current.value == "weapon_pistol" then
+                local closestPlayer, closestDistance = ESX.Game.GetClosestPlayer()
                 if closestPlayer ~= -1 and closestDistance <= 2.0 then
                     local recipID = GetPlayerServerId(closestPlayer)
-                    TriggerServerEvent('tcrp-gundealer:giveWeapon', recipID)
+                    TriggerServerEvent('tcrp-gundealer:giveWeapon', recipID, "weapon_pistol")
                 else
                     TriggerEvent('mythic_notify:client:SendErrorAlert',
                                  { text = 'No one near by to give a weapon to.' })
+                end
+            elseif data.current.value == "weapon_rifle" then
+                local closestPlayer, closestDistance = ESX.Game.GetClosestPlayer()
+                if closestPlayer ~= -1 and closestDistance <= 2.0 then
+                    local recipID = GetPlayerServerId(closestPlayer)
+                    TriggerServerEvent('tcrp-gundealer:giveWeapon', recipID, "weapon_rifle")
+                else
+                    TriggerEvent('mythic_notify:client:SendErrorAlert',
+                                    { text = 'No one near by to give a weapon to.' })
                 end
             elseif data.current.value == "issue_invoice" then
                 local closestPlayer, closestDistance = ESX.Game.GetClosestPlayer()
