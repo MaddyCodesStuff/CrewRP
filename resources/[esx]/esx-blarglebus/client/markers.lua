@@ -8,13 +8,24 @@ function Markers.StartMarkers()
     Citizen.CreateThread(function()
         while true do
             Citizen.Wait(10)
-
+            
             for _, markerPosition in pairs(Markers.markerPositions) do
-                Markers.DrawMarker(markerPosition, Config.Markers.StartColor)
+            local player = PlayerPedId()
+            local playerCoords = GetEntityCoords(player)
+            local distance = #(playerCoords - vector3(markerPosition.x, markerPosition.y, markerPosition.z))
+                if distance < 20 then
+                    Markers.DrawMarker(markerPosition, Config.Markers.StartColor)
+                end
             end
 
             if Markers.abortMarkerPosition ~= nil then
-                Markers.DrawMarker(Markers.abortMarkerPosition, Config.Markers.AbortColor)
+                local abort = Markers.abortMarkerPosition
+                local player = PlayerPedId()
+                local playerCoords = GetEntityCoords(player)
+                local distance = #(playerCoords - vector3(abort.x, abort.y, abort.z))
+                if distance < 20 then
+                    Markers.DrawMarker(Markers.abortMarkerPosition, Config.Markers.AbortColor)
+                end
             end
         end
     end)
@@ -68,7 +79,7 @@ function Markers.DrawMarker(coords, markerColor)
                markerColor.g, -- green
                markerColor.b, -- blue
                markerColor.a, -- alpha
-               true, -- bobUpAndDown
+               false, -- bobUpAndDown
                true, -- faceCamera
                2, -- p19 "Typically set to 2. Does not seem to matter directly."
                0, -- rotate

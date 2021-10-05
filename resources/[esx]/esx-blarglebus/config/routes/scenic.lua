@@ -6,8 +6,8 @@ ScenicRoute = {
     FirstSeat           = 1,
     -- SpawnPoint = {x = 427.6807, y = -582.7913, z = 28.5165, heading = 135.64},
     SpawnPoint          = { x = 453.9, y = -584.44, z = 28.5165, heading = 97.77 },
-    Payment             = 1000,
-    PaymentPerPassenger = 5,
+    Payment             = 2000,
+    PaymentPerPassenger = 10,
     Lines               = {
         {
             Name     = 'scenic_route',
