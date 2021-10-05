@@ -169,6 +169,7 @@ Config.JournalistCars = {
 Config.JournalistAir = {
     all = {
         { name = 'Frogger', model = 'frogger', price = 0 },
+        { name = 'Maverick', model = 'maverick', price = 0 },
     }
 }
 
