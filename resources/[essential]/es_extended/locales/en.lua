@@ -190,6 +190,7 @@ Locales['en'] = {
 	['weapon_shank']          		 = 'shank',
 	['weapon_shovel']          	 	 = 'shovel',
 	['weapon_sledgehammer']          = 'sledgehammer',
+	['weapon_bonesaw']          	 = 'bonesaw',
 	['weapon_toiletbrush']           = 'toilet Brush',
 	['weapon_boltsniper']            = 'bolt-action Sniper',
 	['weapon_rifle2']           	 = 'rifle',
