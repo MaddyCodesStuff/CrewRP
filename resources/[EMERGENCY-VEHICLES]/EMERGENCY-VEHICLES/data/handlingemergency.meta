@@ -2272,7 +2272,6 @@
 			<Item type="NULL" />
 			<Item type="NULL" />
 		</SubHandlingData>
-	</Item>
 	<Item type="CHandlingData">
 	    <handlingName>TRUSCOUT</handlingName>
 	    <fMass value="2450.000000" />
