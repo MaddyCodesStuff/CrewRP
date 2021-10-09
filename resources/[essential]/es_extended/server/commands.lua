@@ -232,7 +232,6 @@ TriggerEvent('es:addGroupCommand', 'removeweaponcomponent', 'admin', function(so
 				TriggerClientEvent('chat:addMessage', source, { args = { 'Player already has that component' } })
 			else
 				xPlayer.removeWeaponComponent(weaponName, componentName)
-				TriggerEvent('tcrp-watchdog:auditlog','LOG: **'.. sPlayer.name ..'[ID: '.. source ..']** gave weapon component ['.. args[3]..')] to **'.. xPlayer.name ..' [Player ID: '.. args[1] ..']**')
 			end
 		else
 			TriggerClientEvent('chat:addMessage', source, { args = { 'Invalid weapon component' } })
