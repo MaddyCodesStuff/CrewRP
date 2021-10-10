@@ -1494,6 +1494,7 @@ ESX.RegisterUsableItem('shepherdspie', function(source)
     xPlayer.removeInventoryItem('shepherdspie', 1)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 800000)
+    TriggerClientEvent('esx_basicneeds:onEat', source, 'bkr_prop_coke_spoon_01')
     TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'Delicious shepherds pie')
 
 end)
