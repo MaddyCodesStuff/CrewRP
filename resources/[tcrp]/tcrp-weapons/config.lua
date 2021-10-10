@@ -17,6 +17,7 @@ Config.AdditionalModifiers = {
 -- Weapons to pull from belt
 Config.BeltWeapons = {
     GetHashKey('WEAPON_PISTOL'),
+    GetHashKey('WEAPON_PDPISTOL'),
     GetHashKey('WEAPON_PISTOL_MK2'),
     GetHashKey('WEAPON_SNSPISTOL'),
     GetHashKey('WEAPON_SNSPISTOL_MK2'),
@@ -33,6 +34,7 @@ Config.BeltWeapons = {
     GetHashKey('WEAPON_NAVYREVOLVER'),
     GetHashKey('WEAPON_FLASHLIGHT'),
     GetHashKey('WEAPON_NIGHTSTICK'),
+    
 }
 
 --Male T-Shirt Holsters

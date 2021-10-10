@@ -70,4 +70,5 @@ recoils = {
     [-1839611618]  = {["kick"] = 0.6, ["shake"] = 0.05,["scope"] = false,}, -- MILITIA RIFLE
     [-947031628]   = {["kick"] = 0.7, ["shake"] = 0.07,["scope"] = false,}, -- HEAVY RIFLE
     [343582324]    = {["kick"] = 1.0, ["shake"] = 0.25,["scope"] = true ,},-- SNIPER RIFLE
+    [-1760358491]    = {["kick"] = 0.6, ["shake"] = 0.03,["scope"] = false,}, -- PD PISTOL
 }

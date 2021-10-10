@@ -195,6 +195,8 @@ Locales['en'] = {
 	['weapon_rifle2']           	 = 'rifle',
 	['weapon_militia']           	 = 'militia rifle',
 	['weapon_heavyrifle']            = 'heavy rifle',
+	['weapon_pdpistol']            	 = 'police pistol',
+
 
 	-- Weapon Components
 	['component_clip_default']       = 'default Grip',
