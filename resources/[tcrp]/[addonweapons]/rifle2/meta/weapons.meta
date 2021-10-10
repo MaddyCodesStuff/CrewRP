@@ -319,7 +319,7 @@
 					</AttachPoints>
 					<GunFeedBone/>
 					<TargetSequenceGroup/>
-					<WeaponFlags>CarriedInHand Gun CanLockonOnFoot CanLockonInVehicle AllowEarlyExitFromFireAnimAfterBulletFired OnlyFireOneShotPerTriggerPress CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover NoLeftHandIKWhenBlocked AllowCloseQuarterKills HasLowCoverReloads HasLowCoverSwaps LongWeapon UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
+					<WeaponFlags>CarriedInHand Gun CanLockonOnFoot CanLockonInVehicle AllowEarlyExitFromFireAnimAfterBulletFired OnlyFireOneShotPerTriggerPress CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover NoLeftHandIKWhenBlocked HasLowCoverReloads HasLowCoverSwaps LongWeapon UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
 					<TintSpecValues ref="TINT_DEFAULT"/>
 					<FiringPatternAliases ref="FIRING_PATTERN_RIFLE"/>
 					<ReloadUpperBodyFixupExpressionData ref="default"/>
