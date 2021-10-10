@@ -196,6 +196,8 @@ Locales['en'] = {
 	['weapon_militia']           	 = 'militia rifle',
 	['weapon_heavyrifle']            = 'heavy rifle',
 	['weapon_pdpistol']            	 = 'police pistol',
+	['weapon_pdcarbine']             = 'police carbine',
+
 
 
 	-- Weapon Components
