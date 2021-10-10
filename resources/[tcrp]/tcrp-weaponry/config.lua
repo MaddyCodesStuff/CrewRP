@@ -74,6 +74,7 @@ recoils = {
     [-1463795681]  = {["kick"] = 0.2, ["shake"] = 0.02,["scope"] = false,}, -- PD CARBINE
     [296765132]    = {["kick"] = 5.0, ["shake"] = 0.25,["scope"] = false,}, -- PD SHOTGUN
     [1873751801]   = {["kick"] = 0.4, ["shake"] = 0.02,["scope"] = false,}, -- PD SMG
+    [1104863650]   = {["kick"] = 0.8, ["shake"] = 0.05,["scope"] = false,}, -- PD REVOLVER
 
 
 }

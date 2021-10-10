@@ -18,6 +18,7 @@ Config.AdditionalModifiers = {
 Config.BeltWeapons = {
     GetHashKey('WEAPON_PISTOL'),
     GetHashKey('WEAPON_PDPISTOL'),
+    GetHashKey('WEAPON_PDREVOLVER'),
     GetHashKey('WEAPON_PISTOL_MK2'),
     GetHashKey('WEAPON_SNSPISTOL'),
     GetHashKey('WEAPON_SNSPISTOL_MK2'),

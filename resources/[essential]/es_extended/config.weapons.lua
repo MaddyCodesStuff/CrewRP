@@ -864,6 +864,13 @@ Config.Weapons = {
 			{ name = 'suppressor', label = _U('component_suppressor'), hash = GetHashKey('COMPONENT_AT_PI_SUPP') },
 		}
 	},
+	{ 
+		name       = 'WEAPON_PDREVOLVER',
+		label      = _U('weapon_pdrevolver'),
+		components = {
+			{ name = 'clip_default', label = _U('component_clip_default'), hash = GetHashKey('COMPONENT_DOUBLEACTION_CLIP_01') },
+		}
+	},
 	{
 		name       = 'WEAPON_TOILETBRUSH',
 		label      = _U('weapon_toiletbrush'),
