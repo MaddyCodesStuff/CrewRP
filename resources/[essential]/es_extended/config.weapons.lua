@@ -845,6 +845,15 @@ Config.Weapons = {
 			{ name = 'grip', label = _U('component_grip'), hash = GetHashKey('COMPONENT_AT_AR_AFGRIP') },
 		}
 	},
+	{ 
+		name       = 'WEAPON_PDSHOTGUN',
+		label      = _U('weapon_pdshotgun'),
+		components = {
+			{ name = 'clip_default', label = _U('component_clip_default'), hash = GetHashKey('COMPONENT_PDCARBINE_CLIP_01') },
+			{ name = 'flashlight', label = _U('component_flashlight'), hash = GetHashKey('COMPONENT_AT_AR_FLSH') },
+			{ name = 'suppressor', label = _U('component_suppressor'), hash = GetHashKey('COMPONENT_AT_AR_SUPP') },
+		}
+	},
 	{
 		name       = 'WEAPON_TOILETBRUSH',
 		label      = _U('weapon_toiletbrush'),

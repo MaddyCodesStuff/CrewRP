@@ -72,5 +72,7 @@ recoils = {
     [343582324]    = {["kick"] = 1.0, ["shake"] = 0.25,["scope"] = true ,},-- SNIPER RIFLE
     [-1760358491]    = {["kick"] = 0.6, ["shake"] = 0.03,["scope"] = false,}, -- PD PISTOL
     [-1463795681]  = {["kick"] = 0.2, ["shake"] = 0.02,["scope"] = false,}, -- PD CARBINE
+    [296765132]    = {["kick"] = 5.0, ["shake"] = 0.25,["scope"] = false,}, -- PD SHOTGUN
+
 
 }
