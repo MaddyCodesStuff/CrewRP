@@ -4477,7 +4477,7 @@
         <Item>HELI_FROGGER_REAR_RIGHT</Item>
       </firstPersonDrivebyData>
     </Item>
-    <Item>
+      <Item>
       <modelName>truscout</modelName>
       <txdName>truscout</txdName>
       <handlingId>TRUSCOUT</handlingId>
@@ -4611,7 +4611,7 @@
 	<Item>STD_BALLER3_REAR_RIGHT</Item>
       </firstPersonDrivebyData>
     </Item>
-		<Item>
+<Item>
       <modelName>intscout</modelName>
       <txdName>intscout</txdName>
       <handlingId>TRUSCOUT</handlingId>
