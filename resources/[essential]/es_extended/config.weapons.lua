@@ -794,8 +794,8 @@ Config.Weapons = {
 		}
 	},
 	{ 
-		name       = 'WEAPON_RIFLE2',
-		label      = _U('weapon_rifle2'),
+		name       = 'WEAPON_PDRIFLE',
+		label      = _U('weapon_pdrifle'),
 		components = {
 			{ name = 'clip_default', label = _U('component_clip_default'), hash = GetHashKey('COMPONENT_RIFLE2_CLIP_01') },
 			{ name = 'suppressor', label = _U('component_suppressor'), hash = GetHashKey('COMPONENT_AT_RIFLE2_SUPP') },

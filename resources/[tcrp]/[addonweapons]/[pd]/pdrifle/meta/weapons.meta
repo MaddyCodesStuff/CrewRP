@@ -6,7 +6,7 @@
 			<WeaponSlots>
 				<Item>
 					<OrderNumber value="427"/>
-					<Entry>SLOT_WEAPON_RIFLE2</Entry>
+					<Entry>SLOT_WEAPON_PDRIFLE</Entry>
 				</Item>
 			</WeaponSlots>
 		</Item>
@@ -15,10 +15,10 @@
 		<Item>
 			<Infos>
 				<Item type="CWeaponInfo">
-					<Name>WEAPON_RIFLE2</Name>
+					<Name>WEAPON_PDRIFLE</Name>
 					<Model>w_ar_rifle2</Model>
 					<Audio>AUDIO_ITEM_CARBINERIFLE</Audio>
-					<Slot>SLOT_WEAPON_RIFLE2</Slot>
+					<Slot>SLOT_WEAPON_PDRIFLE</Slot>
 					<DamageType>BULLET</DamageType>
 					<Explosion>
 						<Default>DONTCARE</Default>
@@ -242,7 +242,7 @@
 					<FirstPersonReticuleStyleHash/>
 					<PickupHash>PICKUP_WEAPON_CARBINERIFLE</PickupHash>
 					<MPPickupHash>PICKUP_AMMO_BULLET_MP</MPPickupHash>
-					<HumanNameHash>WEAPON_RIFLE2</HumanNameHash>
+					<HumanNameHash>WEAPON_PDRIFLE</HumanNameHash>
 					<MovementModeConditionalIdle>MMI_2Handed</MovementModeConditionalIdle>
 					<StatName>CRBNRIFLE</StatName>
 					<KnockdownCount value="-1"/>

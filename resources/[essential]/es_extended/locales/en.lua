@@ -200,6 +200,8 @@ Locales['en'] = {
 	['weapon_pdshotgun']             = 'police shotgun',
 	['weapon_pdsmg']             	 = 'police smg',
 	['weapon_pdrevolver']            = 'police revolver',
+	['weapon_pdrifle']            	 = 'police rifle',
+
 
 
 
