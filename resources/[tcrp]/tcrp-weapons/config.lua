@@ -25,7 +25,7 @@ Config.BeltWeapons = {
     GetHashKey('WEAPON_COMBATPISTOL'),
     GetHashKey('WEAPON_APPISTOL'),
     GetHashKey('WEAPON_HEAVYPISTOL'),
-    GetHashKey('WEAPON_STUNGUN'),
+    GetHashKey('WEAPON_TASER2'),
     GetHashKey('WEAPON_PISTOL50'),
     GetHashKey('WEAPON_VINTAGEPISTOL'),
     GetHashKey('WEAPON_DOUBLEACTION'),
