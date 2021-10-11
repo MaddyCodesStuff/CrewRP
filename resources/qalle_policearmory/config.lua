@@ -29,6 +29,10 @@ Config.ArmoryWeapons = {
         ["type"] = "pistol",
     },
     {
+        ["hash"] = "weapon_pdrevolver",
+        ["type"] = "pistol",
+    },
+    {
         ["hash"] = "weapon_pdshotgun",
         ["type"] = "rifle",
     },  
