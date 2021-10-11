@@ -13,7 +13,7 @@ Config.ArmoryPed     = { ["x"] = 480.36, ["y"] = -996.62, ["z"] = 30.69, ["h"] =
 -- This is the available weapons you can pick out.
 Config.ArmoryWeapons = {
     {
-        ["hash"] = "weapon_taser",
+        ["hash"] = "weapon_taser2",
         ["type"] = "pistol"
     },
     {
