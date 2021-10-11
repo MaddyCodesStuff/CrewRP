@@ -253,7 +253,7 @@
 							<AttachBone>WAPFlshLasr</AttachBone>
 							<Components>
 								<Item>
-									<Default value="false"/>
+									<Default value="true"/>
 									<Name>COMPONENT_AT_AR_FLSH</Name>
 								</Item>
 							</Components>
@@ -273,46 +273,6 @@
 								<Item>
 									<Default value="false"/>
 									<Name>COMPONENT_AR_RIFLE2_SUPP</Name>
-								</Item>
-							</Components>
-						</Item>
-						<Item>
-							<AttachBone>WAPFlshLasr</AttachBone>
-							<Components>
-								<Item>
-									<Name>COMPONENT_AT_AR_FLSH</Name>
-									<Default value="false"/>
-								</Item>
-								<Item>
-									<Name>COMPONENT_AT_RAILCOVER_01</Name>
-									<Default value="false"/>
-								</Item>
-							</Components>
-						</Item>
-						<Item>
-							<AttachBone>WAPScop</AttachBone>
-							<Components>
-								<Item>
-									<Name>COMPONENT_AT_SCOPE_MEDIUM</Name>
-									<Default value="false"/>
-								</Item>
-							</Components>
-						</Item>
-						<Item>
-							<AttachBone>WAPSupp</AttachBone>
-							<Components>
-								<Item>
-									<Name>COMPONENT_AT_AR_SUPP</Name>
-									<Default value="false"/>
-								</Item>
-							</Components>
-						</Item>
-						<Item>
-							<AttachBone>WAPGrip</AttachBone>
-							<Components>
-								<Item>
-									<Name>COMPONENT_AT_AR_AFGRIP</Name>
-									<Default value="false"/>
 								</Item>
 							</Components>
 						</Item>

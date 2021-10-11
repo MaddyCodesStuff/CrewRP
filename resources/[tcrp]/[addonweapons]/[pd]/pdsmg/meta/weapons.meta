@@ -253,7 +253,7 @@
 							<AttachBone>WAPFlshLasr</AttachBone>
 							<Components>
 								<Item>
-									<Default value="false"/>
+									<Default value="true"/>
 									<Name>COMPONENT_AT_AR_FLSH</Name>
 								</Item>
 							</Components>
