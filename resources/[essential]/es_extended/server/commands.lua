@@ -198,6 +198,50 @@ end, function(source, args, user)
 	TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Insufficient Permissions.' } })
 end)
 
+TriggerEvent('es:addGroupCommand', 'giveweaponcomponent', 'admin', function(source, args, user)
+	local xPlayer    = ESX.GetPlayerFromId(args[1])
+	local sPlayer    = ESX.GetPlayerFromId(source)
+	local weaponName = string.upper(args[2])
+	local componentName = args[3]
+	if xPlayer.hasWeapon(weaponName) then
+		local component = ESX.GetWeaponComponent(weaponName, componentName)
+		if component then
+			if xPlayer.hasWeaponComponent(weaponName, componentName) then
+				TriggerClientEvent('chat:addMessage', source, { args = { 'Player already has that component' } })
+			else
+				xPlayer.addWeaponComponent(weaponName, componentName)
+				TriggerEvent('tcrp-watchdog:auditlog','LOG: **'.. sPlayer.name ..'[ID: '.. source ..']** gave weapon component ['.. args[3]..')] to **'.. xPlayer.name ..' [Player ID: '.. args[1] ..']**')
+			end
+		else
+			TriggerClientEvent('chat:addMessage', source, { args = { 'Invalid weapon component' } })
+		end
+	else
+		TriggerClientEvent('chat:addMessage', source, { args = { 'Player does not have that weapon' } })
+	end
+end, true, { help = _U('giveweapon'), params = { { name = "id", help = _U('id_param') }, { name = "weapon", help = _U('weapon') }, { name = "component", help = "weapon component" } } })
+
+TriggerEvent('es:addGroupCommand', 'removeweaponcomponent', 'admin', function(source, args, user)
+	local xPlayer    = ESX.GetPlayerFromId(args[1])
+	local sPlayer    = ESX.GetPlayerFromId(source)
+	local weaponName = string.upper(args[2])
+	local componentName = args[3]
+	if xPlayer.hasWeapon(weaponName) then
+		local component = ESX.GetWeaponComponent(weaponName, componentName)
+		if component then
+			if not xPlayer.hasWeaponComponent(weaponName, componentName) then
+				TriggerClientEvent('chat:addMessage', source, { args = { "Player doesn't have that component" } })
+			else
+				xPlayer.removeWeaponComponent(weaponName, componentName)
+			end
+		else
+			TriggerClientEvent('chat:addMessage', source, { args = { 'Invalid weapon component' } })
+		end
+	else
+		TriggerClientEvent('chat:addMessage', source, { args = { 'Player does not have that weapon' } })
+	end
+end, true, { help = _U('giveweapon'), params = { { name = "id", help = _U('id_param') }, { name = "weapon", help = _U('weapon') }, { name = "component", help = "weapon component" } } })
+
+
 TriggerEvent('es:addGroupCommand', 'disconnect', 'admin', function(source, args, user)
 	DropPlayer(source, 'You have been disconnected')
 end, function(source, args, user)

@@ -73,11 +73,9 @@ Config.FDCars = {
 
 Config.MDCars = {
     all = {
-        { name = 'LSMD Granger', model = 'lsmd-suv', price = 0 },
         { name = 'LSMD Ambo', model = 'lsmd-ambo1', price = 0 },
         { name = 'LSMD Large Ambo', model = 'lsmd-bigambo', price = 0 },
         { name = 'LSMD Vapid', model = 'lsmd-vanbo', price = 0 },
-        { name = 'LSMD Doctor Vehicle', model = 'lsmd-docto', price = 0 },
         { name = 'LSMD Caracara', model = 'emerg-cara', price = 0 },
     }
 }
@@ -103,8 +101,8 @@ Config.FDAir = {
 
 Config.PDBoats = {
     all = {
-        { name = 'PD Dinghy', model = 'pd-dinghy', price = 0 },
-        { name = 'BCSO Dodo', model = 'county-dodo', price = 0 },
+        { name = 'PD Dinghy', model = 'emerg-dinghy', price = 0 },
+        { name = 'BCSO Dodo', model = 'emerg-dodo', price = 0 },
     }
 }
 
@@ -132,23 +130,6 @@ Config.DOCCars = {
     all = {
         { name = 'Transport Van', model = 'doc-transport', price = 0 },
         { name = 'Prison Bus', model = 'doc-pbus', price = 0 },
-        { name = 'Patrol', model = 'doc-patrol', price = 0 },
-    }
-}
-
-Config.ParkRangerCars = {
-    all = {
-        { name = 'Rancher', model = 'park-ranch', price = 0 },
-        { name = 'Benson', model = 'pr-benson', price = 0 },
-        { name = 'Caracara', model = 'emerg-cara', price = 0 },
-        { name = 'Enduro', model = 'county-dirt', price = 0 },
-    }
-}
-
-Config.ClerkCars = {
-    all = {
-        { name = 'Records Transport', model = 'drd-records', price = 0 },
-        { name = 'Patrol', model = 'drd-patrol', price = 0 },
     }
 }
 
@@ -700,37 +681,6 @@ Config.Shops      = {
         shopCoords = vector3(1796.58, 2633.37, 45.56),
         type       = "car",
         cars       = Config.DOCCars
-    },
-
-    -- Park Rangers
-    {
-        name       = 'Vinewood Hills Cars',
-        job        = 'parkranger',
-        coords     = vector3(370.83, 779.75, 185.35),
-        heading    = 247.0,
-        shopCoords = vector3(370.83, 779.75, 185.35),
-        type       = "car",
-        cars       = Config.ParkRangerCars
-    },
-
-    -- City Clerks
-    {
-        name       = 'Records Office Cars',
-        job        = 'cityclerk',
-        coords     = vector3(2501.38, -313.21, 92.96),
-        heading    = 136.86,
-        shopCoords = vector3(2501.38, -313.21, 92.96),
-        type       = "car",
-        cars       = Config.ClerkCars
-    },
-    {
-        name       = 'City Hall Cars',
-        job        = 'cityclerk',
-        coords     = vector3(-516.53, -293.51, 36.0),
-        heading    = 21.85,
-        shopCoords = vector3(-516.53, -293.51, 36.0),
-        type       = "car",
-        cars       = Config.ClerkCars
     },
     --Humane Job
     {
