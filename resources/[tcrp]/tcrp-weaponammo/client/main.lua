@@ -17,6 +17,7 @@ AddEventHandler('tcrp-ammo:use_ammo', function(ammo)
     if hasWeapon then
         local curAmmo    = GetAmmoInPedWeapon(playerPed, weapon)
         local ammo_type  = GetWeapontypeGroup(weapon)
+        print(ammo_type)
         local _, maxAmmo = GetMaxAmmo(playerPed, weapon)
         local ammoInfo   = Config.ammo_type[ammo]
         if weapon == -364377308 then

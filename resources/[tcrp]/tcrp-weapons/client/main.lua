@@ -116,7 +116,7 @@ Citizen.CreateThread(function()
                     
 
                     if isBeltWeapon(weapon) then
-                        if weapon == GetHashKey('WEAPON_DOUBLEACTION') then
+                        if weapon == GetHashKey('WEAPON_DOUBLEACTION') or GetHashKey('WEAPON_PDREVOLVER') then
                             Citizen.Wait(700)
                         end
                         ClearPedTasks(ped)

@@ -2347,6 +2347,7 @@ function OpenStoreMenu()
 							 { label = 'Box of Shotgun Ammo', value = 'ammo_shotgun' },
 							 { label = 'Box of SMG Ammo', value = 'ammo_smg' },
 							 { label = 'Box of AR Ammo', value = 'ammo_ar' },
+							 { label = 'Taser Cartridge', value = 'ammo_taser' },
 						 }
 					 }, function(data, menu)
 			TriggerServerEvent('esx_policejob:giveItem', data.current.value)
