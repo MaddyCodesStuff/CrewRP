@@ -36,7 +36,7 @@
          <AmbientClipsForFlee>FLEE</AmbientClipsForFlee>
          <AbilityType>SAT_NONE</AbilityType>
          <ThermalBehaviour>TB_WARM</ThermalBehaviour>
-         <SuperlodType>SLOD_HUMAN</SuperlodType>
+         <SuperlodType>SLOD_KEEP_LOWEST</SuperlodType>
          <ScenarioPopStreamingSlot>SCENARIO_POP_STREAMING_NORMAL</ScenarioPopStreamingSlot>
          <DefaultSpawningPreference>DSP_NORMAL</DefaultSpawningPreference>
          <IsStreamedGfx value="false" />
@@ -74,7 +74,7 @@
          <AmbientClipsForFlee>FLEE</AmbientClipsForFlee>
          <AbilityType>SAT_NONE</AbilityType>
          <ThermalBehaviour>TB_WARM</ThermalBehaviour>
-         <SuperlodType>SLOD_HUMAN</SuperlodType>
+         <SuperlodType>SLOD_KEEP_LOWEST</SuperlodType>
          <ScenarioPopStreamingSlot>SCENARIO_POP_STREAMING_NORMAL</ScenarioPopStreamingSlot>
          <DefaultSpawningPreference>DSP_NORMAL</DefaultSpawningPreference>
          <IsStreamedGfx value="false" />
@@ -112,7 +112,7 @@
          <AmbientClipsForFlee>FLEE</AmbientClipsForFlee>
          <AbilityType>SAT_NONE</AbilityType>
          <ThermalBehaviour>TB_WARM</ThermalBehaviour>
-         <SuperlodType>SLOD_HUMAN</SuperlodType>
+         <SuperlodType>SLOD_KEEP_LOWEST</SuperlodType>
          <ScenarioPopStreamingSlot>SCENARIO_POP_STREAMING_NORMAL</ScenarioPopStreamingSlot>
          <DefaultSpawningPreference>DSP_NORMAL</DefaultSpawningPreference>
          <IsStreamedGfx value="false" />
@@ -150,7 +150,7 @@
          <AmbientClipsForFlee>FLEE</AmbientClipsForFlee>
          <AbilityType>SAT_NONE</AbilityType>
          <ThermalBehaviour>TB_WARM</ThermalBehaviour>
-         <SuperlodType>SLOD_HUMAN</SuperlodType>
+         <SuperlodType>SLOD_KEEP_LOWEST</SuperlodType>
          <ScenarioPopStreamingSlot>SCENARIO_POP_STREAMING_NORMAL</ScenarioPopStreamingSlot>
          <DefaultSpawningPreference>DSP_NORMAL</DefaultSpawningPreference>
          <IsStreamedGfx value="false" />
@@ -188,7 +188,7 @@
          <AmbientClipsForFlee>FLEE</AmbientClipsForFlee>
          <AbilityType>SAT_NONE</AbilityType>
          <ThermalBehaviour>TB_WARM</ThermalBehaviour>
-         <SuperlodType>SLOD_HUMAN</SuperlodType>
+         <SuperlodType>SLOD_KEEP_LOWEST</SuperlodType>
          <ScenarioPopStreamingSlot>SCENARIO_POP_STREAMING_NORMAL</ScenarioPopStreamingSlot>
          <DefaultSpawningPreference>DSP_NORMAL</DefaultSpawningPreference>
          <IsStreamedGfx value="false" />
@@ -226,7 +226,7 @@
          <AmbientClipsForFlee>FLEE</AmbientClipsForFlee>
          <AbilityType>SAT_NONE</AbilityType>
          <ThermalBehaviour>TB_WARM</ThermalBehaviour>
-         <SuperlodType>SLOD_HUMAN</SuperlodType>
+         <SuperlodType>SLOD_KEEP_LOWEST</SuperlodType>
          <ScenarioPopStreamingSlot>SCENARIO_POP_STREAMING_NORMAL</ScenarioPopStreamingSlot>
          <DefaultSpawningPreference>DSP_NORMAL</DefaultSpawningPreference>
          <IsStreamedGfx value="false" />
@@ -264,7 +264,7 @@
          <AmbientClipsForFlee>FLEE</AmbientClipsForFlee>
          <AbilityType>SAT_NONE</AbilityType>
          <ThermalBehaviour>TB_WARM</ThermalBehaviour>
-         <SuperlodType>SLOD_HUMAN</SuperlodType>
+         <SuperlodType>SLOD_KEEP_LOWEST</SuperlodType>
          <ScenarioPopStreamingSlot>SCENARIO_POP_STREAMING_NORMAL</ScenarioPopStreamingSlot>
          <DefaultSpawningPreference>DSP_NORMAL</DefaultSpawningPreference>
          <IsStreamedGfx value="false" />
@@ -302,7 +302,7 @@
          <AmbientClipsForFlee>FLEE</AmbientClipsForFlee>
          <AbilityType>SAT_NONE</AbilityType>
          <ThermalBehaviour>TB_WARM</ThermalBehaviour>
-         <SuperlodType>SLOD_HUMAN</SuperlodType>
+         <SuperlodType>SLOD_KEEP_LOWEST</SuperlodType>
          <ScenarioPopStreamingSlot>SCENARIO_POP_STREAMING_NORMAL</ScenarioPopStreamingSlot>
          <DefaultSpawningPreference>DSP_NORMAL</DefaultSpawningPreference>
          <IsStreamedGfx value="false" />
@@ -340,7 +340,7 @@
          <AmbientClipsForFlee>FLEE</AmbientClipsForFlee>
          <AbilityType>SAT_NONE</AbilityType>
          <ThermalBehaviour>TB_WARM</ThermalBehaviour>
-         <SuperlodType>SLOD_HUMAN</SuperlodType>
+         <SuperlodType>SLOD_KEEP_LOWEST</SuperlodType>
          <ScenarioPopStreamingSlot>SCENARIO_POP_STREAMING_NORMAL</ScenarioPopStreamingSlot>
          <DefaultSpawningPreference>DSP_NORMAL</DefaultSpawningPreference>
          <IsStreamedGfx value="false" />
@@ -378,7 +378,7 @@
          <AmbientClipsForFlee>FLEE</AmbientClipsForFlee>
          <AbilityType>SAT_NONE</AbilityType>
          <ThermalBehaviour>TB_WARM</ThermalBehaviour>
-         <SuperlodType>SLOD_HUMAN</SuperlodType>
+         <SuperlodType>SLOD_KEEP_LOWEST</SuperlodType>
          <ScenarioPopStreamingSlot>SCENARIO_POP_STREAMING_NORMAL</ScenarioPopStreamingSlot>
          <DefaultSpawningPreference>DSP_NORMAL</DefaultSpawningPreference>
          <IsStreamedGfx value="false" />
@@ -416,7 +416,7 @@
          <AmbientClipsForFlee>FLEE</AmbientClipsForFlee>
          <AbilityType>SAT_NONE</AbilityType>
          <ThermalBehaviour>TB_WARM</ThermalBehaviour>
-         <SuperlodType>SLOD_HUMAN</SuperlodType>
+         <SuperlodType>SLOD_KEEP_LOWEST</SuperlodType>
          <ScenarioPopStreamingSlot>SCENARIO_POP_STREAMING_NORMAL</ScenarioPopStreamingSlot>
          <DefaultSpawningPreference>DSP_NORMAL</DefaultSpawningPreference>
          <IsStreamedGfx value="false" />
