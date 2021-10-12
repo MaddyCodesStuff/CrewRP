@@ -3,8 +3,8 @@
 <CWeaponComponentInfoBlob>
 	<Infos>
 		<Item type="CWeaponComponentSuppressorInfo">
-			<Name>COMPONENT_AR_RIFLE2_SUPP</Name>
-			<Model>w_ar_rifle2_supp</Model>
+			<Name>COMPONENT_AR_PDRIFLE_SUPP</Name>
+			<Model>w_ar_pdrifle_supp</Model>
 			<LocName>WCT_SUPP</LocName>
 			<LocDesc>WCD_AR_SUPP</LocDesc>
 			<AttachBone>AAPSupp</AttachBone>
@@ -17,7 +17,7 @@
 			<CreateObject value="true"/>
 			<HudDamage value="-5"/>
 			<HudSpeed value="0"/>
-			<HudCapacity value="0"/>
+			<HudCapacity PDRIFLE"0"/>
 			<HudAccuracy value="0"/>
 			<HudRange value="-5"/>
 			<MuzzleBone>Gun_SuMuzzle</MuzzleBone>

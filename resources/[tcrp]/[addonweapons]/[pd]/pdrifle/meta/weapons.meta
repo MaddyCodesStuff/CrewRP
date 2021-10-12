@@ -16,7 +16,7 @@
 			<Infos>
 				<Item type="CWeaponInfo">
 					<Name>WEAPON_PDRIFLE</Name>
-					<Model>w_ar_rifle2</Model>
+					<Model>w_ar_pdrifle</Model>
 					<Audio>AUDIO_ITEM_CARBINERIFLE</Audio>
 					<Slot>SLOT_WEAPON_PDRIFLE</Slot>
 					<DamageType>BULLET</DamageType>
@@ -263,7 +263,7 @@
 							<Components>
 								<Item>
 									<Default value="true"/>
-									<Name>COMPONENT_RIFLE2_CLIP_01</Name>
+									<Name>COMPONENT_PDRIFLE_CLIP_01</Name>
 								</Item>
 							</Components>
 						</Item>
@@ -272,7 +272,7 @@
 							<Components>
 								<Item>
 									<Default value="false"/>
-									<Name>COMPONENT_AR_RIFLE2_SUPP</Name>
+									<Name>COMPONENT_AR_PDRIFLE_SUPP</Name>
 								</Item>
 							</Components>
 						</Item>
