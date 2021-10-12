@@ -8637,10 +8637,10 @@
           <HudRange value="20" />
         </Item>
         <Item type="CWeaponInfo">
-          <Name>WEAPON_STUNGUN</Name>
-          <Model>w_pi_stungun</Model>
+          <Name>WEAPON_INVALID</Name>
+          <Model>INALD</Model>
           <Audio>AUDIO_ITEM_STUNGUN</Audio>
-          <Slot>SLOT_STUNGUN</Slot>
+          <Slot></Slot>
           <DamageType>ELECTRIC</DamageType>
           <Explosion>
             <Default>DONTCARE</Default>

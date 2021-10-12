@@ -13,15 +13,8 @@ Config.ArmoryPed     = { ["x"] = 480.36, ["y"] = -996.62, ["z"] = 30.69, ["h"] =
 -- This is the available weapons you can pick out.
 Config.ArmoryWeapons = {
     {
-        ["hash"] = "weapon_stungun",
+        ["hash"] = "weapon_taser2",
         ["type"] = "pistol"
-    },
-    {
-        ["hash"]       = "weapon_pistol_mk2",
-        ["type"]       = "pistol",
-        ["components"] = {
-            GetHashKey('COMPONENT_AT_PI_FLSH_02'),
-        }
     },
     {
         ["hash"] = "weapon_flashlight",
@@ -32,11 +25,28 @@ Config.ArmoryWeapons = {
         ["type"] = "pistol"
     },
     {
-        ["hash"] = "weapon_pumpshotgun",
+        ["hash"] = "weapon_pdpistol",
+        ["type"] = "pistol",
+    },
+    {
+        ["hash"] = "weapon_pdrevolver",
+        ["type"] = "pistol",
+    },
+    {
+        ["hash"] = "weapon_pdshotgun",
         ["type"] = "rifle",
-        ["components"] = {
-            GetHashKey('COMPONENT_AT_AR_FLSH'),
-        }
+    },  
+    {
+        ["hash"] = "weapon_pdsmg",
+        ["type"] = "rifle",
+    },  
+    {
+        ["hash"] = "weapon_pdrifle",
+        ["type"] = "rifle",
+    },  
+    {
+        ["hash"] = "weapon_pdcarbine",
+        ["type"] = "rifle",
     },  
 }
 

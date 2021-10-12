@@ -224,12 +224,12 @@ TriggerEvent('es:addGroupCommand', 'removeweaponcomponent', 'admin', function(so
 	local xPlayer    = ESX.GetPlayerFromId(args[1])
 	local sPlayer    = ESX.GetPlayerFromId(source)
 	local weaponName = string.upper(args[2])
-	local componentName = string.upper(args[3])
+	local componentName = args[3]
 	if xPlayer.hasWeapon(weaponName) then
 		local component = ESX.GetWeaponComponent(weaponName, componentName)
 		if component then
-			if xPlayer.hasWeaponComponent(weaponName, componentName) then
-				TriggerClientEvent('chat:addMessage', source, { args = { 'Player already has that component' } })
+			if not xPlayer.hasWeaponComponent(weaponName, componentName) then
+				TriggerClientEvent('chat:addMessage', source, { args = { "Player doesn't have that component" } })
 			else
 				xPlayer.removeWeaponComponent(weaponName, componentName)
 			end
