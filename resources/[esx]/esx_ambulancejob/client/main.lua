@@ -315,12 +315,6 @@ function StartDeathTimer()
 				end
 			end
 
-			--if IsControlPressed(0, Keys['E']) then
-			--	timeHeld = timeHeld + 1
-			--else
-			--	timeHeld = 0
-			--end
-
 			DrawGenericTextThisFrame()
 
 			SetTextEntry("STRING")
@@ -416,6 +410,16 @@ AddEventHandler('esx:onPlayerDeath', function(reason)
 	OnPlayerDeath()
 end)
 
+RegisterNetEvent('esx_ambulancejob:givearmor')
+AddEventHandler('esx_ambulancejob:givearmor', function()
+	local playerPed = PlayerPedId()
+	local coords    = GetEntityCoords(playerPed)
+
+	Citizen.CreateThread(function()
+		SetPedArmour(ped, 100)
+	end)
+end)
+
 RegisterNetEvent('esx_ambulancejob:revive')
 AddEventHandler('esx_ambulancejob:revive', function()
 	local playerPed = PlayerPedId()
@@ -457,15 +461,6 @@ AddEventHandler('esx_ambulancejob:revive', function()
 	end)
 end)
 
--- Load unloaded IPLs
-if Config.LoadIpl then
-	Citizen.CreateThread(function()
-		LoadMpDlcMaps()
-		EnableMpDlcMaps(true)
-		RequestIpl('Coroner_Int_on') -- Morgue
-	end)
-end
-
 -- Gets the player's current street.
 -- Aaalso get the current player gender
 Citizen.CreateThread(function()
@@ -477,75 +472,3 @@ Citizen.CreateThread(function()
 		streetName         = GetStreetNameFromHashKey(streetName)
 	end
 end)
-
-Citizen.CreateThread(function()
-	while true do
-		Citizen.Wait(1)
-
-		if PlayerData.job and PlayerData.job.name ~= nil and PlayerData.job.name == 'ambulance' then
-			local coords  = GetEntityCoords(PlayerPedId())
-			local vehicle = ESX.Game.GetClosestVehicle()
-
-			if vehicle ~= nil and checkVehicleCanAccessInventory(GetDisplayNameFromVehicleModel(GetEntityModel(vehicle))) and not IsPedInAnyVehicle(PlayerPedId()) then
-				local vehicleCoords = GetEntityCoords(vehicle)
-
-				if GetDistanceBetweenCoords(coords, vehicleCoords, true) < 3 then
-					ESX.ShowHelpNotification("Press ~INPUT_CONTEXT~ to access the EMS inventory")
-
-					isEMSVehicleInRange = true
-
-					if IsControlJustPressed(0, Keys['E']) then
-						openEMSMenu()
-					end
-				else
-					isEMSVehicleInRange = false
-				end
-			end
-		end
-	end
-end)
-
-Citizen.CreateThread(function()
-	while true do
-		Citizen.Wait(1000)
-		if not isEMSVehicleInRange and ESX.UI.Menu.IsOpen('default', GetCurrentResourceName(), 'emsvehicle_menu') then
-			ESX.UI.Menu.Close('default', GetCurrentResourceName(), 'emsvehicle_menu')
-		end
-	end
-end)
-
-function openEMSMenu()
-
-	local playerPed = PlayerPedId()
-
-	local elements  = {
-		{
-			value = 'items',
-			label = 'Items',
-		},
-	}
-
-	ESX.UI.Menu.CloseAll()
-
-	ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'emsvehicle_menu',
-					 {
-						 title    = 'EMS Vehicle Inventory',
-						 align    = 'top-right',
-						 elements = elements
-					 }, function(data, menu)
-			if data.current.value == 'items' then
-				OpenPharmacyMenu()
-			end
-		end, function(data, menu)
-			menu.close()
-		end)
-end
-
--- Function to see if the vehicle you are trying to use can access inventory
-function checkVehicleCanAccessInventory(vehicle)
-	for i = 1, #Config.VehicleInventory, 1 do
-		if Config.VehicleInventory[i] == vehicle then
-			return true
-		end
-	end
-end
