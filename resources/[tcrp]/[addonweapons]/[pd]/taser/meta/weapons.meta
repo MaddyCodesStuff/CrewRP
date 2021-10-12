@@ -272,7 +272,7 @@
 					<AttachPoints/>
 					<GunFeedBone/>
 					<TargetSequenceGroup>PISTOL</TargetSequenceGroup>
-					<WeaponFlags>CarriedInHand Gun CanLockonOnFoot CanLockonInVehicle OnlyFireOneShotPerTriggerPress AnimReload CanFreeAim AnimCrouchFire DisablePlayerBlockingInMP UsableOnFoot UsableClimbing UsableInCover HasLowCoverReloads HasLowCoverSwaps QuitTransitionToIdleIntroOnWeaponChange DisableLeftHandIkWhenOnFoot UseFPSAimIK AllowEarlyExitFromFireAnimAfterBulletFired</WeaponFlags>
+					<WeaponFlags>CarriedInHand Gun CanLockonOnFoot CanLockonInVehicle OnlyFireOneShotPerTriggerPress Silenced AnimReload CanFreeAim AnimCrouchFire DisablePlayerBlockingInMP UsableOnFoot UsableClimbing UsableInCover HasLowCoverReloads HasLowCoverSwaps QuitTransitionToIdleIntroOnWeaponChange DisableLeftHandIkWhenOnFoot UseFPSAimIK AllowEarlyExitFromFireAnimAfterBulletFired</WeaponFlags>
 					<TintSpecValues ref="TINT_DEFAULT"/>
 					<FiringPatternAliases ref="FIRING_PATTERN_PISTOL"/>
 					<ReloadUpperBodyFixupExpressionData ref="default"/>
