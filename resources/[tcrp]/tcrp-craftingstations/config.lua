@@ -302,8 +302,8 @@ Config.Recipes = {
         {item = "plastic", quantity = 30 }
     },
     weapon_vintagepistol = {
-        {item = "iron", quantity = 50 },
-        {item = "metal", quantity = 60 },
+        {item = "iron", quantity = 42 },
+        {item = "metal", quantity = 50 },
         {item = "plastic", quantity = 40 }
     },
     weapon_pistol_mk2 = {
