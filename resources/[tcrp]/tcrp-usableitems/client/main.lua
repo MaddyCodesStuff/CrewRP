@@ -88,8 +88,8 @@ end)
 ---------------------------------------------------------------------------
 -- Spawn Spikes Event --
 ---------------------------------------------------------------------------
-RegisterNetEvent("Spikes:SpawnSpikes")
-AddEventHandler("Spikes:SpawnSpikes", function(config)
+RegisterNetEvent("usableitems:SpawnSpikes")
+AddEventHandler("usableitems:SpawnSpikes", function(config)
         TriggerEvent('emote:do', 'pickup')
         CreateSpikes(2)
 end)
@@ -97,8 +97,8 @@ end)
 ---------------------------------------------------------------------------
 -- Delete Spikes Event --
 ---------------------------------------------------------------------------
-RegisterNetEvent("Spikes:DeleteSpikes")
-AddEventHandler("Spikes:DeleteSpikes", function(netid)
+RegisterNetEvent("usableitems:DeleteSpikes")
+AddEventHandler("usableitems:DeleteSpikes", function(netid)
     TriggerEvent('emote:do', 'pickup')
     Citizen.CreateThread(function()
         local spike = NetworkGetEntityFromNetworkId(netid)
@@ -140,7 +140,7 @@ end)
 
 function RemoveSpikes()
     for a = 1, #SpawnedSpikes do
-        TriggerServerEvent("Spikes:TriggerDeleteSpikes", SpawnedSpikes[a])
+        TriggerServerEvent("usableitems:TriggerDeleteSpikes", SpawnedSpikes[a])
     end
     SpawnedSpikes = {}
 end
@@ -153,4 +153,18 @@ function DisplayNotification(string)
 	SetTextComponentFormat("STRING")
 	AddTextComponentString(string)
     DisplayHelpTextFromStringLabel(0, 0, 1, -1)
+end
+---------------------------------------------------------------------------
+-- Lighter Event --
+---------------------------------------------------------------------------
+RegisterNetEvent("usableitems:lighter")
+AddEventHandler("usableitems:lighter", function(source)
+        TriggerEvent('emote:do', 'pickup')
+        StartLighterFire(source)
+end)
+
+function StartLighterFire(source)
+    local spawnCoords = GetOffsetFromEntityInWorldCoords(LocalPed(), 0.0, 2.0, 0.0)
+      Wait(2000)
+      StartScriptFire(spawnCoords.x, spawnCoords.y, spawnCoords.z-1, 3, true)
 end
