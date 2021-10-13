@@ -825,7 +825,6 @@ function OpenPoliceActionsMenu()
 						elements = {
 							{ label = 'small cone', value = 'prop_roadcone02b' },
 							{ label = _U('barrier'), value = 'prop_barrier_work05' },
-							{ label = _U('spikestrips'), value = 'p_ld_stinger_s' },
 							{ label = _U('box'), value = 'prop_boxpile_07d' },
 							{ label = _U('cash'), value = 'hei_prop_cash_crate_half_full' },
 							{ label = 'Gazebo', value = 'prop_gazebo_02' },
@@ -1535,19 +1534,6 @@ AddEventHandler('esx_policejob:hasEnteredEntityZone', function(entity)
 		CurrentActionMsg  = _U('remove_prop')
 		CurrentActionData = { entity = entity }
 	end
-
-	if GetEntityModel(entity) == GetHashKey('p_ld_stinger_s') then
-		local playerPed = PlayerPedId()
-		local coords    = GetEntityCoords(playerPed)
-
-		if IsPedInAnyVehicle(playerPed, false) then
-			local vehicle = GetVehiclePedIsIn(playerPed)
-
-			for i = 0, 7, 1 do
-				SetVehicleTyreBurst(vehicle, i, true, 1000)
-			end
-		end
-	end
 end)
 
 AddEventHandler('esx_policejob:hasExitedEntityZone', function(entity)
@@ -2012,8 +1998,8 @@ Citizen.CreateThread(function()
 	local trackedEntities = {
 		'prop_roadcone02a',
 		'prop_roadcone02b',
+		'prop_flamingo',
 		'prop_barrier_work05',
-		'p_ld_stinger_s',
 		'prop_boxpile_07d',
 		'hei_prop_cash_crate_half_full',
 		'prop_gazebo_02',
@@ -2348,6 +2334,7 @@ function OpenStoreMenu()
 							 { label = 'Box of SMG Ammo', value = 'ammo_smg' },
 							 { label = 'Box of AR Ammo', value = 'ammo_ar' },
 							 { label = 'Taser Cartridge', value = 'ammo_taser' },
+							 { label = 'Spike Strips', value = 'spikestrips' },
 						 }
 					 }, function(data, menu)
 			TriggerServerEvent('esx_policejob:giveItem', data.current.value)
