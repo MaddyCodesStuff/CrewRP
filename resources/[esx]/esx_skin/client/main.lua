@@ -153,12 +153,19 @@ function OpenMenu(submitCb, cancelCb, restrict)
 end
 
 function CreateSkinCam()
-    cam = CreateCam('DEFAULT_SCRIPTED_CAMERA', true)
+    if not DoesCamExist(cam) then
+        cam = CreateCam('DEFAULT_SCRIPTED_CAMERA', true)
+    end
+
+    local playerPed = PlayerPedId()
+
     SetCamActive(cam, true)
     RenderScriptCams(true, true, 500, true, true)
+
     isCameraActive = true
+    SetCamCoord(cam, GetEntityCoords(playerPed))
     SetCamRot(cam, 0.0, 0.0, 270.0, true)
-    SetEntityHeading(playerPed, 90.0)
+    SetEntityHeading(playerPed, 0.0)
 end
 
 function DeleteSkinCam()
@@ -171,6 +178,7 @@ end
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
+
         if isCameraActive then
             DisableControlAction(2, 30, true)
             DisableControlAction(2, 31, true)
@@ -178,21 +186,21 @@ Citizen.CreateThread(function()
             DisableControlAction(2, 33, true)
             DisableControlAction(2, 34, true)
             DisableControlAction(2, 35, true)
-
             DisableControlAction(0, 25, true) -- Input Aim
             DisableControlAction(0, 24, true) -- Input Attack
 
-            local playerPed   = GetPlayerPed(-1)
-            local coords      = GetEntityCoords(playerPed)
+            local playerPed = PlayerPedId()
+            local coords    = GetEntityCoords(playerPed)
 
-            local angle       = heading * math.pi / 180.0
-            local theta       = {
+            local angle = heading * math.pi / 180.0
+            local theta = {
                 x = math.cos(angle),
                 y = math.sin(angle)
             }
-            local pos         = {
+
+            local pos = {
                 x = coords.x + (zoomOffset * theta.x),
-                y = coords.y + (zoomOffset * theta.y),
+                y = coords.y + (zoomOffset * theta.y)
             }
 
             local angleToLook = heading - 140.0
@@ -201,112 +209,109 @@ Citizen.CreateThread(function()
             elseif angleToLook < 0 then
                 angleToLook = angleToLook + 360
             end
-            angleToLook       = angleToLook * math.pi / 180.0
+
+            angleToLook = angleToLook * math.pi / 180.0
             local thetaToLook = {
                 x = math.cos(angleToLook),
                 y = math.sin(angleToLook)
             }
-            local posToLook   = {
+
+            local posToLook = {
                 x = coords.x + (zoomOffset * thetaToLook.x),
-                y = coords.y + (zoomOffset * thetaToLook.y),
+                y = coords.y + (zoomOffset * thetaToLook.y)
             }
 
             SetCamCoord(cam, pos.x, pos.y, coords.z + camOffset)
             PointCamAtCoord(cam, posToLook.x, posToLook.y, coords.z + camOffset)
 
-            SetTextComponentFormat("STRING")
-            AddTextComponentString(_U('use_rotate_view'))
-            DisplayHelpTextFromStringLabel(0, 0, 0, -1)
+            ESX.ShowHelpNotification(_U('use_rotate_view'))
+        else
+            Citizen.Wait(500)
         end
     end
 end)
 
 Citizen.CreateThread(function()
     local angle = 90
+
     while true do
         Citizen.Wait(0)
+
         if isCameraActive then
             if IsControlPressed(0, 108) then
                 angle = angle - 1
             elseif IsControlPressed(0, 109) then
                 angle = angle + 1
             end
+
             if angle > 360 then
                 angle = angle - 360
             elseif angle < 0 then
                 angle = angle + 360
             end
+
             heading = angle + 0.0
+        else
+            Citizen.Wait(500)
         end
     end
 end)
 
 function OpenSaveableMenu(submitCb, cancelCb, restrict)
-
-    TriggerEvent('skinchanger:getSkin', function(skin)
-        LastSkin = skin
-    end)
+    TriggerEvent('skinchanger:getSkin', function(skin) lastSkin = skin end)
 
     OpenMenu(function(data, menu)
-
         menu.close()
-
         DeleteSkinCam()
 
         TriggerEvent('skinchanger:getSkin', function(skin)
-
             TriggerServerEvent('esx_skin:save', skin)
 
             if submitCb ~= nil then
                 submitCb(data, menu)
             end
-
         end)
 
     end, cancelCb, restrict)
-
 end
 
-AddEventHandler('playerSpawned', function()
+AddEventHandler('esx_skin:resetFirstSpawn', function()
+    firstSpawn = true
+    skinLoaded = false
+    ESX.PlayerLoaded = false
+end)
 
+AddEventHandler('esx_skin:playerRegistered', function()
     Citizen.CreateThread(function()
-
-        while not PlayerLoaded do
-            Citizen.Wait(0)
+        while not ESX.PlayerLoaded do
+            Citizen.Wait(100)
         end
 
-        if FirstSpawn then
-
+        if firstSpawn then
             ESX.TriggerServerCallback('esx_skin:getPlayerSkin', function(skin, jobSkin)
-
                 if skin == nil then
-                    TriggerEvent('skinchanger:loadSkin', { sex = 0 }, OpenSaveableMenu)
+                    TriggerEvent('skinchanger:loadSkin', {sex = 0}, OpenSaveableMenu)
+                    Citizen.Wait(100)
+                    skinLoaded = true
                 else
                     TriggerEvent('skinchanger:loadSkin', skin)
+                    Citizen.Wait(100)
+                    skinLoaded = true
                 end
-
             end)
 
-            FirstSpawn = false
-
+            firstSpawn = false
         end
-
     end)
-
 end)
 
 RegisterNetEvent('esx:playerLoaded')
 AddEventHandler('esx:playerLoaded', function(xPlayer)
-    PlayerLoaded = true
+    ESX.PlayerLoaded = true
 end)
 
-AddEventHandler('esx_skin:getLastSkin', function(cb)
-    cb(LastSkin)
-end)
-
-AddEventHandler('esx_skin:setLastSkin', function(skin)
-    LastSkin = skin
-end)
+AddEventHandler('esx_skin:getLastSkin', function(cb) cb(lastSkin) end)
+AddEventHandler('esx_skin:setLastSkin', function(skin) lastSkin = skin end)
 
 RegisterNetEvent('esx_skin:openMenu')
 AddEventHandler('esx_skin:openMenu', function(submitCb, cancelCb)
@@ -333,18 +338,4 @@ AddEventHandler('esx_skin:requestSaveSkin', function()
     TriggerEvent('skinchanger:getSkin', function(skin)
         TriggerServerEvent('esx_skin:responseSaveSkin', skin)
     end)
-end)
-
-Citizen.CreateThread(function()
-    while true do
-
-        Citizen.Wait(0)
-
-        local playerPed = GetPlayerPed(-1)
-
-        if IsEntityDead(playerPed) then
-            HasLoadedModel = false
-        end
-
-    end
 end)
