@@ -73,48 +73,6 @@ function OpenAnimationsMenu()
 
 end
 
-function OpenCBMenu()
-    local title    = 'CB Radio'
-    local elements = {
-        {
-            label = 'Toggle CB Channel 1',
-            value = 'cb1',
-        },
-        {
-            label = 'Toggle CB Channel 2',
-            value = 'cb2',
-        },
-        {
-            label = 'Toggle CB Channel 3',
-            value = 'cb3',
-        },
-        {
-            label = 'Toggle CB Channel 4',
-            value = 'cb4',
-        },
-        {
-            label = 'Toggle CB Channel 5',
-            value = 'cb5',
-        },
-    }
-
-    ESX.UI.Menu.Open(
-        'default', GetCurrentResourceName(), 'cb_radio',
-        {
-            title    = title,
-            align    = 'top-right',
-            elements = elements
-        },
-        function(data, menu)
-            print(data.current.value)
-            TriggerEvent('esx-radios:toggleCB', data.current.value)
-        end,
-        function(data, menu)
-            menu.close()
-        end
-    )
-end
-
 function OpenAnimationsSubMenu(menu)
 
     local title    = nil

@@ -64,7 +64,7 @@ Citizen.CreateThread(function()
             for src, info in pairs(ACTIVE_EMERGENCY_PERSONNEL) do
                 local player = GetPlayerFromServerId(src)
                 local ped    = GetPlayerPed(player)
-                if GetPlayerPed(-1) ~= ped true then
+                if --[[GetPlayerPed(-1) ~= ped--]] true then
                     if GetBlipFromEntity(ped) == 0 then
                         local blip = AddBlipForEntity(ped)
                         SetBlipSprite(blip, 1)

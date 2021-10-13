@@ -1085,24 +1085,6 @@ function AddMenuFaceMenu(menu)
     end
 end
 
-function AddMenuRadioMenu(menu)
-    radioMenu  = _menuPool:AddSubMenu(menu, 'CB Radio')
-    radioItems = {}
-    for i = 1, 25, 1 do
-        table.insert(radioItems, NativeUI.CreateItem('CB Radio '..i, 'Toggle CB Channel '..i))
-        radioMenu.SubMenu:AddItem(radioItems[i])
-    end
-
-    radioMenu.SubMenu.OnItemSelect = function(sender, item)
-        for i = 1, #radioItems do
-            if item == radioItems[i] then
-                TriggerEvent('esx-radios:toggleCB', 'cb' .. tostring(i))
-                break ;
-            end
-        end
-    end
-end
-
 function AddMenuClothesMenu(menu)
     clothesMenu     = _menuPool:AddSubMenu(menu, _U('clothes_title'))
 
