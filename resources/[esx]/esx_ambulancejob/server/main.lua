@@ -72,7 +72,6 @@ ESX.RegisterServerCallback('esx_ambulancejob:removeItemsAfterRPDeath', function(
 	if Config.RemoveItemsAfterRPDeath then
 		for i = 1, #xPlayer.inventory, 1 do
 			if xPlayer.inventory[i].count > 0 then
-				print('1')
 				xPlayer.setInventoryItem(xPlayer.inventory[i].name, 0)
 			end
 		end
@@ -80,7 +79,6 @@ ESX.RegisterServerCallback('esx_ambulancejob:removeItemsAfterRPDeath', function(
 
 	local playerLoadout = {}
 	if Config.RemoveWeaponsAfterRPDeath then
-		print('1')
 		for i = 1, #xPlayer.loadout, 1 do
 			xPlayer.removeWeapon(xPlayer.loadout[i].name)
 		end
@@ -147,12 +145,17 @@ end)
 RegisterServerEvent('esx_ambulancejob:giveItem')
 AddEventHandler('esx_ambulancejob:giveItem', function(itemName)
 	local xPlayer = ESX.GetPlayerFromId(source)
+	if xPlayer.job.name ~= 'ambulance' then
+		
+		return
 	elseif (xPlayer.job.grade_name ~= 'physician' and xPlayer.job.grade_name ~= 'sp' and xPlayer.job.grade_name ~= 'gp' and xPlayer.job.grade_name ~= 'studentsurgeon' and
 		xPlayer.job.grade_name ~= 'surgeon' and xPlayer.job.grade_name ~= 'chiefsurgery' and xPlayer.job.grade_name ~= 'cmo' and xPlayer.job.grade_name ~= 'boss') and
 		(itemName == 'morphine' or itemName == 'vicodin' or itemName == 'hydrocodone') then
 		TriggerClientEvent('esx:showNotification', source, 'You Do Not Have a Key for The Drug Locker')
+		
 		return
 	elseif (itemName ~= 'bodyarmor_3' and itemName ~= 'tylenol' and itemName ~= 'scuba' and itemName ~= 'medikit' and itemName ~= 'bandage' and itemName ~= 'gauze' and itemName ~= 'firstaid' and itemName ~= 'morphine' and itemName ~= 'vicodin' and itemName ~= 'hydrocodone' and itemName ~= 'medkit' and itemName ~= 'wheelchair') then
+		
 		return
 	end
 
@@ -175,6 +178,7 @@ end)
 TriggerEvent('es:addGroupCommand', 'revive', 'admin', function(source, args, user)
 	if args[1] ~= nil then
 		if GetPlayerName(tonumber(args[1])) ~= nil then
+			
 			TriggerClientEvent('esx_ambulancejob:revive', tonumber(args[1]))
 		end
 	else
@@ -208,6 +212,9 @@ ESX.RegisterServerCallback('esx_ambulancejob:getDeathStatus', function(source, c
 	MySQL.Async.fetchScalar('SELECT is_dead FROM users WHERE identifier = @identifier', {
 		['@identifier'] = identifier
 	}, function(isDead)
+		if isDead then
+			
+		end
 
 		cb(isDead)
 	end)
