@@ -25,7 +25,7 @@ Config.DoorList = {
 		objHash = -1406685646,
 		objHeading = 0.0,
 		objCoords = vector3(440.5201, -977.6011, 30.82319),
-		authorizedJobs = { 'police', 'fireman', 'offpolice', 'ambulance' },
+		authorizedJobs = { 'police', 'fireman', 'offpolice', 'ambulance', 'parkranger' },
 		locked = true,
 		maxDistance = 1.5,
 		fixText = true,
@@ -37,7 +37,7 @@ Config.DoorList = {
 		objHash = -96679321,
 		objHeading = 180.0,
 		objCoords = vector3(440.5201, -986.2335, 30.82319),
-		authorizedJobs = { 'police', 'fireman', 'offpolice', 'ambulance' },
+		authorizedJobs = { 'police', 'fireman', 'offpolice', 'ambulance', 'parkranger' },
 		locked = true,
 		maxDistance = 1.5,
 		fixText = true,
@@ -45,7 +45,7 @@ Config.DoorList = {
 
 	-- MRPD Atlee Entrance
 	{
-		authorizedJobs = { 'police', 'fireman', 'offpolice', 'ambulance' },
+		authorizedJobs = { 'police', 'fireman', 'offpolice', 'ambulance', 'parkranger' },
 		locked = true,
 		maxDistance = 2.5,
 		doors = {
@@ -58,7 +58,7 @@ Config.DoorList = {
 
 	-- MRPD Vespucci Entrance
 	{
-		authorizedJobs = { 'police', 'fireman', 'offpolice', 'ambulance' },
+		authorizedJobs = { 'police', 'fireman', 'offpolice', 'ambulance', 'parkranger' },
 		locked = true,
 		maxDistance = 2.5,
 		doors = {
@@ -87,7 +87,7 @@ Config.DoorList = {
 		objHash = 149284793,
 		objHeading = 225.0,
 		objCoords = vector3(458.0894, -995.5247, 30.82319),
-		authorizedJobs = { 'police', 'fireman', 'offpolice' },
+		authorizedJobs = { 'police', 'fireman', 'offpolice', 'parkranger' },
 		locked = true,
 		maxDistance = 1.5,
 	},
@@ -98,7 +98,7 @@ Config.DoorList = {
 		objHash = -96679321,
 		objHeading = 270.0,
 		objCoords = vector3(458.6543, -990.6498, 30.82319),
-		authorizedJobs = { 'police', 'fireman' },
+		authorizedJobs = { 'police', 'fireman', 'offpolice' },
 		locked = true,
 		maxDistance = 1.5,
 		fixText = true,
@@ -906,7 +906,7 @@ Config.DoorList = {
 	{
 		objHash = 746855201,
 		objHeading = 250.0,
-		objCoords = vector3(261.99899291992, 221.50576782227, 106.68346405029),
+		objCoords = vector3(262.70, 222.50576782227, 106.28),
 		authorizedJobs = { 'police', 'fireman' },
 		locked = true,
 		maxDistance = 2.5,

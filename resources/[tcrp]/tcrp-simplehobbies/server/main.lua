@@ -112,7 +112,7 @@ AddEventHandler('pearl:gather', function()
 	local xPlayer  = ESX.GetPlayerFromId(_source)
     local quantity = xPlayer.getInventoryItem('pearl').count
     if quantity >= 50 then
-        TriggerClientEvent('esx:showNotification', source, 'You can not carry anymore pearls!')
+        TriggerClientEvent('esx:showNotification', source, 'You can not carry any more pearls!')
     else
         xPlayer.addInventoryItem('pearl', 1)
     end
@@ -130,5 +130,19 @@ AddEventHandler('pearl:sell', function()
         TriggerClientEvent('esx:showNotification', source, 'You sold ' .. quantity .. ' pearls for $' .. payment)	
     else
         TriggerClientEvent('esx:showNotification', source, 'You do not have any pearls!')
+    end
+end)
+
+RegisterServerEvent('weed:gather')
+AddEventHandler('weed:gather', function()
+	local _source = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    local item = xPlayer.getInventoryItem('marijuana_eighth')
+    local quantity = item.count
+    local limit = item.limit
+    if quantity >= limit then
+        TriggerClientEvent('esx:showNotification', source, 'You can not carry any more weed!')
+    else
+        xPlayer.addInventoryItem('marijuana', 3)
     end
 end)

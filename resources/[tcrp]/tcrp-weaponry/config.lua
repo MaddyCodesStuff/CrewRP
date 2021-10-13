@@ -6,6 +6,7 @@ recoils = {
     [-1716589765]  = {["kick"] = 1.0, ["shake"] = 0.15,["scope"] = false,}, -- PISTOL.50
     [324215364]    = {["kick"] = 0.4, ["shake"] = 0.03,["scope"] = false,}, -- MICRO SMG
     [736523883]    = {["kick"] = 0.4, ["shake"] = 0.02,["scope"] = false,}, -- SMG
+    [569418327]    = {["kick"] = 0.1, ["shake"] = 0.02,["scope"] = false,}, -- Vintage SMG
     [2024373456]   = {["kick"] = 0.2, ["shake"] = 0.02,["scope"] = false,}, -- SMG MK2
     [-270015777]   = {["kick"] = 0.4, ["shake"] = 0.03,["scope"] = false,}, -- ASSAULT SMG
     [-1074790547]  = {["kick"] = 0.3, ["shake"] = 0.03,["scope"] = false,}, -- ASSAULT RIFLE
@@ -65,4 +66,15 @@ recoils = {
     [1470379660]   = {["kick"] = 0.8, ["shake"] = 0.25,["scope"] = false,}, -- GADGET PISTOL
     [-1853920116]  = {["kick"] = 0.8, ["shake"] = 0.05,["scope"] = false,}, -- NAVY REVOLVER
     [727643628]    = {["kick"] = 0.6, ["shake"] = 0.05,["scope"] = false,}, -- CERAMIC PISTOL
+    [-342794615]   = {["kick"] = 0.6, ["shake"] = 0.05,["scope"] = false,}, -- RIFLE
+    [-1839611618]  = {["kick"] = 0.6, ["shake"] = 0.05,["scope"] = false,}, -- MILITIA RIFLE
+    [-947031628]   = {["kick"] = 0.7, ["shake"] = 0.07,["scope"] = false,}, -- HEAVY RIFLE
+    [343582324]    = {["kick"] = 1.0, ["shake"] = 0.25,["scope"] = true ,},-- SNIPER RIFLE
+    [-1760358491]  = {["kick"] = 0.6, ["shake"] = 0.03,["scope"] = false,}, -- PD PISTOL
+    [-1463795681]  = {["kick"] = 0.2, ["shake"] = 0.02,["scope"] = false,}, -- PD CARBINE
+    [296765132]    = {["kick"] = 5.0, ["shake"] = 0.25,["scope"] = false,}, -- PD SHOTGUN
+    [1873751801]   = {["kick"] = 0.4, ["shake"] = 0.02,["scope"] = false,}, -- PD SMG
+    [1104863650]   = {["kick"] = 0.8, ["shake"] = 0.05,["scope"] = false,}, -- PD REVOLVER
+
+
 }

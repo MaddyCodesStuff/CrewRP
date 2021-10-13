@@ -17,13 +17,15 @@ Config.AdditionalModifiers = {
 -- Weapons to pull from belt
 Config.BeltWeapons = {
     GetHashKey('WEAPON_PISTOL'),
+    GetHashKey('WEAPON_PDPISTOL'),
+    GetHashKey('WEAPON_PDREVOLVER'),
     GetHashKey('WEAPON_PISTOL_MK2'),
     GetHashKey('WEAPON_SNSPISTOL'),
     GetHashKey('WEAPON_SNSPISTOL_MK2'),
     GetHashKey('WEAPON_COMBATPISTOL'),
     GetHashKey('WEAPON_APPISTOL'),
     GetHashKey('WEAPON_HEAVYPISTOL'),
-    GetHashKey('WEAPON_STUNGUN'),
+    GetHashKey('WEAPON_TASER2'),
     GetHashKey('WEAPON_PISTOL50'),
     GetHashKey('WEAPON_VINTAGEPISTOL'),
     GetHashKey('WEAPON_DOUBLEACTION'),
@@ -33,6 +35,7 @@ Config.BeltWeapons = {
     GetHashKey('WEAPON_NAVYREVOLVER'),
     GetHashKey('WEAPON_FLASHLIGHT'),
     GetHashKey('WEAPON_NIGHTSTICK'),
+    
 }
 
 --Male T-Shirt Holsters
@@ -65,4 +68,28 @@ Config.femaleChainHolster = {
     116,
     118,
     120,
+}
+
+Config.MeleeDamage = {
+    ["WEAPON_UNARMED"]          = 0.5,              
+    --Sharp-- (Pierces Armor)
+    ["WEAPON_KNIFE"]            = 0.5,              
+    ["WEAPON_DAGGER"]           = 0.6,          
+    ["WEAPON_SWITCHBLADE"]      = 0.5,              
+    ["WEAPON_MACHETE"]          = 0.6,          
+    ["WEAPON_BOTTLE"]           = 0.5,          
+    --Blunt--
+    ["WEAPON_NIGHTSTICK"]       = 0.5,           
+    ["WEAPON_HAMMER"]           = 0.5,       
+    ["WEAPON_BAT"]              = 0.6,   
+    ["WEAPON_GOLFCLUB"]         = 0.6,       
+    ["WEAPON_KNUCKLE"]          = 0.5,       
+    ["WEAPON_POOLCUE"]          = 0.6,       
+    ["WEAPON_WRENCH"]           = 0.5,
+    ["WEAPON_FLASHLIGHT"]       = 0.4,
+    --Chop-- 
+    ["WEAPON_BATTLEAXE"]        = 0.6,         
+    ["WEAPON_CROWBAR"]          = 0.5,          
+    ["WEAPON_HATCHET"]          = 0.6,          
+    ["WEAPON_STONE_HATCHET"]    = 0.5,                  
 }

@@ -116,7 +116,7 @@ Citizen.CreateThread(function()
                     
 
                     if isBeltWeapon(weapon) then
-                        if weapon == GetHashKey('WEAPON_DOUBLEACTION') then
+                        if weapon == GetHashKey('WEAPON_DOUBLEACTION') or GetHashKey('WEAPON_PDREVOLVER') then
                             Citizen.Wait(700)
                         end
                         ClearPedTasks(ped)
@@ -182,3 +182,32 @@ AddEventHandler('tcrp-weapons:setDamageModifier', function(modifier)
 end)
 
 exports("getDefaultDamageModifier", getDefaultDamageModifier)
+
+-- Melee Damage
+Citizen.CreateThread(function()
+    for k, v in pairs(Config.MeleeDamage) do
+        SetWeaponDamageModifierThisFrame(GetHashKey(k), v)
+        Citizen.Wait(0)
+    end
+end)
+
+function SetWeaponDrops()
+	local handle, ped = FindFirstPed()
+	local finished = false
+
+	repeat
+		if not IsEntityDead(ped) then
+			SetPedDropsWeaponsWhenDead(ped, false)
+		end
+		finished, ped = FindNextPed(handle)
+	until not finished
+
+	EndFindPed(handle)
+end
+
+Citizen.CreateThread(function()
+	while true do
+		Citizen.Wait(1000)
+		SetWeaponDrops()
+	end
+end)

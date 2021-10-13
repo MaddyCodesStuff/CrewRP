@@ -14,7 +14,7 @@ ESX.RegisterUsableItem('burger', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 400000)
     TriggerClientEvent('esx_basicneeds:onEat', source)
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Bacon Roll')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Bacon Roll')
 end)
 
 ESX.RegisterUsableItem('bread', function(source)
@@ -25,7 +25,7 @@ ESX.RegisterUsableItem('bread', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 335000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_sandwich_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Sandwitch - Just Like Mama Use to Make')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Sandwitch - Just Like Mama Use to Make')
     TriggerClientEvent('esx_status:remove', source, 'drunk', 50000)
 
 end)
@@ -38,7 +38,7 @@ ESX.RegisterUsableItem('pastacarbonara', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 450000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_fork')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Bowl of Pasta Carbonara')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Bowl of Pasta Carbonara')
 
 end)
 
@@ -49,9 +49,8 @@ ESX.RegisterUsableItem('pizza', function(source)
     xPlayer.removeInventoryItem('pizza', 1)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 1000000)
-    TriggerClientEvent('esx_status:remove', source, 'thirst', 250000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_pizza_box_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Whole Pizza - The Cardboard is the Best Part!')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Whole Pizza - The Cardboard is the Best Part!')
 
 end)
 
@@ -63,7 +62,7 @@ ESX.RegisterUsableItem('noodles', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 250000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_fork')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Cup of Chicken Noodle Soup - Tastes Like The End of an Era')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Cup of Chicken Noodle Soup - Tastes Like The End of an Era')
 
 end)
 
@@ -75,7 +74,7 @@ ESX.RegisterUsableItem('noodles2', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 250000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_fork')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Cup of Seafood Noodles - They\'re Better Dry')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Cup of Seafood Noodles - They\'re Better Dry')
 
 end)
 
@@ -88,7 +87,7 @@ ESX.RegisterUsableItem('soup', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 250000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 150000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'bkr_prop_coke_spoon_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Cup of Tomato Soup')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Cup of Tomato Soup')
 
 end)
 
@@ -101,7 +100,7 @@ ESX.RegisterUsableItem('soup2', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 250000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 150000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'bkr_prop_coke_spoon_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Cup of Vegetable Soup')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Cup of Vegetable Soup')
 
 end)
 
@@ -113,7 +112,7 @@ ESX.RegisterUsableItem('cereal', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 250000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'bkr_prop_coke_spoon_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Cup of Dry Cereal - Better With Milk')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Cup of Dry Cereal - Better With Milk')
 
 end)
 
@@ -125,7 +124,7 @@ ESX.RegisterUsableItem('fishstix', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 300000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_food_cb_chips')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Package of Frozen Fishy Stix - Don\'t Tell Diddy')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Package of Frozen Fishy Stix - Don\'t Tell Diddy')
 
 end)
 
@@ -136,9 +135,8 @@ ESX.RegisterUsableItem('cheesebows', function(source)
     xPlayer.removeInventoryItem('cheesebows', 1)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 200000)
-    TriggerClientEvent('esx_status:remove', source, 'thirst', 50000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'v_ret_ml_chips4')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Bag of Cheese Chips')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Bag of Cheese Chips')
 
 end)
 
@@ -149,7 +147,6 @@ ESX.RegisterUsableItem('chips', function(source)
     xPlayer.removeInventoryItem('chips', 1)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 200000)
-    TriggerClientEvent('esx_status:remove', source, 'thirst', 50000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'v_ret_ml_chips3')
     TriggerClientEvent('mythic_notify:client:SendEatAlert', source, "A Bag of Chips")
 
@@ -162,9 +159,8 @@ ESX.RegisterUsableItem('chips2', function(source)
     xPlayer.removeInventoryItem('chips2', 1)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 200000)
-    TriggerClientEvent('esx_status:remove', source, 'thirst', 50000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'v_ret_ml_chips2')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Bag of Habanero Chips')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Bag of Habanero Chips')
 
 end)
 
@@ -175,9 +171,8 @@ ESX.RegisterUsableItem('chips3', function(source)
     xPlayer.removeInventoryItem('chips3', 1)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 200000)
-    TriggerClientEvent('esx_status:remove', source, 'thirst', 50000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'v_ret_ml_chips1p')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Bag of Sticky Rib Chips')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Bag of Sticky Rib Chips')
 
 end)
 -- Sweats
@@ -189,7 +184,7 @@ ESX.RegisterUsableItem('candy', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 100000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_candy_pqs')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A EarthQuakes Candy Bar')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a EarthQuakes Candy Bar')
 end)
 
 ESX.RegisterUsableItem('candy2', function(source)
@@ -200,7 +195,7 @@ ESX.RegisterUsableItem('candy2', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 100000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_candy_pqs')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Captain\'s Log')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Captain\'s Log')
 
 end)
 
@@ -212,7 +207,7 @@ ESX.RegisterUsableItem('candy3', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 100000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_candy_pqs')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Bag of Meteorite Candy')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Bag of Meteorite Candy')
 
 end)
 
@@ -224,7 +219,7 @@ ESX.RegisterUsableItem('candy4', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 100000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_candy_pqs')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Zebrabar')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Zebrabar')
 
 end)
 
@@ -236,7 +231,7 @@ ESX.RegisterUsableItem('candy5', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 100000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_candy_pqs')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Ego Chaser')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Ego Chaser')
 
 end)
 
@@ -249,7 +244,7 @@ ESX.RegisterUsableItem('popsicle', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 50000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 100000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_candy_pqs')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Orange-O-Tang Popsicle')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Orange-O-Tang Popsicle')
 
 end)
 
@@ -262,7 +257,7 @@ ESX.RegisterUsableItem('popsicle2', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 50000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 100000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_candy_pqs')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Creamy Chufty')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Creamy Chufty')
 
 end)
 
@@ -275,7 +270,7 @@ ESX.RegisterUsableItem('popsicle3', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 50000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 100000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_candy_pqs')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Chocolate Starfish')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Chocolate Starfish')
 
 end)
 
@@ -301,7 +296,7 @@ ESX.RegisterUsableItem('popsicle5', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 50000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 100000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_candy_pqs')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Chocolate Chufty')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Chocolate Chufty')
 
 end)
 
@@ -313,7 +308,7 @@ ESX.RegisterUsableItem('donut', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 175000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_donut_02')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Donut')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Donut')
 
 end)
 
@@ -325,7 +320,7 @@ ESX.RegisterUsableItem('donut2', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 175000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_donut_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Birthday Donut - Happy Birthday!')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Birthday Donut - Happy Birthday!')
 
 end)
 -- Fruit
@@ -338,7 +333,7 @@ ESX.RegisterUsableItem('apple', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 200000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 100000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'ng_proc_food_aple2a')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Golden Delicious Apple')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Golden Delicious Apple')
 
 end)
 
@@ -351,7 +346,7 @@ ESX.RegisterUsableItem('redapple', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 200000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 100000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'ng_proc_food_aple2a')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Red Apple of Unknown Variety')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Red Apple of Unknown Variety')
 
 end)
 
@@ -364,7 +359,7 @@ ESX.RegisterUsableItem('greenapple', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 200000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 100000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'ng_proc_food_aple2a')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Green Apple of Unknown Variety')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Green Apple of Unknown Variety')
 
 end)
 
@@ -377,7 +372,7 @@ ESX.RegisterUsableItem('orange', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 200000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 100000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'ng_proc_food_ornge1a')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Juicy Orange')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Juicy Orange')
 
 end)
 
@@ -390,7 +385,7 @@ ESX.RegisterUsableItem('banana', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 175000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 50000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'ng_proc_food_nana1a')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Banana - Better With The Shell')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Banana - Better With The Shell')
 
 end)
 
@@ -403,7 +398,7 @@ ESX.RegisterUsableItem('pineapple', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 350000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 125000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_pineapple')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Pineapple - The Snack That Eats You Back')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Pineapple - The Snack That Eats You Back')
 
 end)
 
@@ -416,7 +411,7 @@ ESX.RegisterUsableItem('pear', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 200000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 100000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'ng_proc_food_aple2a')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Pear')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Pear')
 
 end)
 
@@ -430,7 +425,7 @@ ESX.RegisterUsableItem('water', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'thirst', 1000000)
     TriggerClientEvent('esx_basicneeds:onDrink', source)
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Bottle of Water')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Bottle of Water')
     TriggerClientEvent('esx_status:remove', source, 'drunk', 125000)
 
 end)
@@ -443,7 +438,7 @@ ESX.RegisterUsableItem('cocacola', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'thirst', 335000)
     TriggerClientEvent('esx_basicneeds:onDrink', source, 'ng_proc_sodabot_01a')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Bottle of E-cola')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Bottle of E-cola')
 
 end)
 
@@ -455,7 +450,7 @@ ESX.RegisterUsableItem('fanta', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'thirst', 335000)
     TriggerClientEvent('esx_basicneeds:onDrink', source, 'ng_proc_sodabot_01a')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Bottle of Orange-O-Tang')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Bottle of Orange-O-Tang')
 
 end)
 
@@ -467,7 +462,7 @@ ESX.RegisterUsableItem('sprite', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'thirst', 335000)
     TriggerClientEvent('esx_basicneeds:onDrink', source, 'ng_proc_sodabot_01a')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Bottle of Sprunk')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Bottle of Sprunk')
 
 end)
 
@@ -479,7 +474,7 @@ ESX.RegisterUsableItem('sprite2', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'thirst', 335000)
     TriggerClientEvent('esx_basicneeds:onDrink', source, 'ng_proc_sodabot_01a')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Bottle of Sprunk Lite')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Bottle of Sprunk Lite')
 
 end)
 
@@ -491,7 +486,7 @@ ESX.RegisterUsableItem('milk', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'thirst', 300000)
     TriggerClientEvent('esx_basicneeds:onDrink', source, 'prop_cs_milk_01')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Carton of Milk - What did that stickynote say?')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Carton of Milk - What did that stickynote say?')
 
 end)
 
@@ -503,7 +498,7 @@ ESX.RegisterUsableItem('slushy', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'thirst', 250000)
     TriggerClientEvent('esx_basicneeds:onDrink', source, 'prop_cs_paper_cup')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Sludgie Blue Slushy')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Sludgie Blue Slushy')
 
 end)
 
@@ -515,7 +510,7 @@ ESX.RegisterUsableItem('slushy2', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'thirst', 250000)
     TriggerClientEvent('esx_basicneeds:onDrink', source, 'prop_plastic_cup_02')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Sludgie Green Slushy')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Sludgie Green Slushy')
 
 end)
 
@@ -527,7 +522,7 @@ ESX.RegisterUsableItem('coffee', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'thirst', 250000)
     TriggerClientEvent('esx_basicneeds:onDrink', source, 'p_amb_coffeecup_01')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Basic Coffee - Karen Would be Displeased')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Basic Coffee - Karen Would be Displeased')
 
 end)
 
@@ -539,7 +534,7 @@ ESX.RegisterUsableItem('decafcoffee', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'thirst', 250000)
     TriggerClientEvent('esx_basicneeds:onDrink', source, 'p_amb_coffeecup_01')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Decaf Coffee')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Decaf Coffee')
 
 end)
 
@@ -551,7 +546,7 @@ ESX.RegisterUsableItem('mocha', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'thirst', 250000)
     TriggerClientEvent('esx_basicneeds:onDrink', source, 'p_amb_coffeecup_01')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Mocha')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Mocha')
 
 end)
 
@@ -563,7 +558,7 @@ ESX.RegisterUsableItem('latte', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'thirst', 250000)
     TriggerClientEvent('esx_basicneeds:onDrink', source, 'p_amb_coffeecup_01')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Latte')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Latte')
 
 end)
 
@@ -575,7 +570,7 @@ ESX.RegisterUsableItem('frapuccino', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'thirst', 250000)
     TriggerClientEvent('esx_basicneeds:onDrink', source, 'p_amb_coffeecup_01')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Frapuccino')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Frapuccino')
 
 end)
 
@@ -589,7 +584,7 @@ ESX.RegisterUsableItem('drink', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'thirst', 400000)
     TriggerClientEvent('esx_basicneeds:onDrink', source, 'prop_cs_bs_cup')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Large Fountain Drink - It\'s Already Wattered Down')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Large Fountain Drink - It\'s Already Wattered Down')
 
 end)
 
@@ -601,7 +596,7 @@ ESX.RegisterUsableItem('bleederburger', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 500000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_burger_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Bleeder Burger - Burgerman Approves')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Bleeder Burger - Burgerman Approves')
 
 end)
 
@@ -613,7 +608,7 @@ ESX.RegisterUsableItem('moneyshotburger', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 500000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_burger_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Moneyshot Burger - What, Were you Expecting a Joke Here?')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Moneyshot Burger - What, Were you Expecting a Joke Here?')
 
 end)
 
@@ -625,7 +620,7 @@ ESX.RegisterUsableItem('torpedoburger', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 500000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_burger_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Torpedo Burger')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Torpedo Burger')
 
 end)
 
@@ -637,7 +632,7 @@ ESX.RegisterUsableItem('meatfreeburger', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 500000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_burger_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Meat Free Burger - Or so They Claim')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Meat Free Burger - Or so They Claim')
 
 end)
 
@@ -649,7 +644,7 @@ ESX.RegisterUsableItem('heartstopperburger', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 600000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_burger_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A 6Lb Heartstopper Burger - You Feel Your Arteries Clogging')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a 6Lb Heartstopper Burger - You Feel Your Arteries Clogging')
 
 end)
 
@@ -661,7 +656,7 @@ ESX.RegisterUsableItem('crappyburger', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 500000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_burger_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Crappy Burger - Tasted Better Than it Sounds')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Crappy Burger - Tasted Better Than it Sounds')
 
 end)
 
@@ -672,9 +667,8 @@ ESX.RegisterUsableItem('largefries', function(source)
     xPlayer.removeInventoryItem('largefries', 1)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 200000)
-    TriggerClientEvent('esx_status:remove', source, 'thirst', 50000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_food_bs_chips')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Large Fry - No Supersize Options Here')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Large Fry - No Supersize Options Here')
 
 end)
 
@@ -689,7 +683,7 @@ ESX.RegisterUsableItem('moneyshotmeal', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 700000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 400000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_burger_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Moneyshot Meal - A Burger, Fry and Drink, All in one!')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Moneyshot Meal - A Burger, Fry and Drink, All in one!')
 
 end)
 
@@ -702,7 +696,7 @@ ESX.RegisterUsableItem('bleedermeal', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 700000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 400000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_burger_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Bleeder Meal - A Burger, Fry and Drink, All in one!')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Bleeder Meal - A Burger, Fry and Drink, All in one!')
 
 end)
 
@@ -715,7 +709,7 @@ ESX.RegisterUsableItem('crappymeal', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 700000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 400000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_burger_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Crappy Meal - A Burger, Fry and Drink, All in one!')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Crappy Meal - A Burger, Fry and Drink, All in one!')
 
 end)
 
@@ -728,7 +722,7 @@ ESX.RegisterUsableItem('meatfreemeal', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 700000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 400000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_burger_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Meat Free Meal - A Burger, Fry and Drink, All in one!')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Meat Free Meal - A Burger, Fry and Drink, All in one!')
 
 end)
 
@@ -741,7 +735,7 @@ ESX.RegisterUsableItem('torpedomeal', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 700000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 400000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_burger_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Torpedo Meal - A Burger, Fry and Drink, All in one!')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Torpedo Meal - A Burger, Fry and Drink, All in one!')
 
 end)
 
@@ -754,7 +748,7 @@ ESX.RegisterUsableItem('heartstoppermeal', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 700000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 400000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_burger_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Heartstopper Meal - The Burger Was More Than Enough, You Couldn\t Eat it All')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Heartstopper Meal - The Burger Was More Than Enough, You Couldn\t Eat it All')
 
 end)
 
@@ -768,7 +762,7 @@ ESX.RegisterUsableItem('tacoalpastor', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 500000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_taco_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Al Pastor Taco')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Al Pastor Taco')
 
 end)
 
@@ -780,7 +774,7 @@ ESX.RegisterUsableItem('tacobarbacacoa', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 500000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_taco_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Barbacacoa Taco')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Barbacacoa Taco')
 
 end)
 
@@ -792,7 +786,7 @@ ESX.RegisterUsableItem('tacocarnitas', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 500000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_taco_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Carnitas Taco')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Carnitas Taco')
 
 end)
 
@@ -804,7 +798,7 @@ ESX.RegisterUsableItem('tacovegetal', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 500000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_taco_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Vegetal Taco')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Vegetal Taco')
 
 end)
 
@@ -818,7 +812,7 @@ ESX.RegisterUsableItem('hotdog1', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 500000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_hotdog_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Plain Hotdog - The "meat" is made of something called a "water sausage."')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Plain Hotdog - The "meat" is made of something called a "water sausage."')
 
 end)
 
@@ -830,7 +824,7 @@ ESX.RegisterUsableItem('hotdog2', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 500000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_hotdog_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Cheese Dog')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Cheese Dog')
 
 end)
 
@@ -842,7 +836,7 @@ ESX.RegisterUsableItem('hotdog3', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 500000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_hotdog_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Chilli Dog')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Chilli Dog')
 
 end)
 
@@ -854,7 +848,7 @@ ESX.RegisterUsableItem('hotdog4', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 500000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_hotdog_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A VeggieDog')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a VeggieDog')
 
 end)
 
@@ -866,7 +860,7 @@ ESX.RegisterUsableItem('hotdog5', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 500000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_hotdog_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Hotdog with Onion')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Hotdog with Onion')
 
 end)
 
@@ -879,7 +873,7 @@ ESX.RegisterUsableItem('hotdogmeal1', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 600000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 200000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_hotdog_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Hotdog with the Works Meal - Small Fries and Drink Included')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Hotdog with the Works Meal - Small Fries and Drink Included')
 
 end)
 
@@ -892,7 +886,7 @@ ESX.RegisterUsableItem('hotdogmeal2', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 600000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 200000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_hotdog_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Hotdog with Small Fry - The Drink Is On The House')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Hotdog with Small Fry - The Drink Is On The House')
 
 end)
 
@@ -905,7 +899,7 @@ ESX.RegisterUsableItem('veggiedogmeal', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 600000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 200000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_hotdog_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A VeggieDog Meal - Small Fries and Drink Included')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a VeggieDog Meal - Small Fries and Drink Included')
 
 end)
 
@@ -919,7 +913,7 @@ ESX.RegisterUsableItem('icecream', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 150000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 100000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'bkr_prop_coke_spoon_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Vanilla Ice Cream Cone')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Vanilla Ice Cream Cone')
 
 end)
 
@@ -932,7 +926,7 @@ ESX.RegisterUsableItem('icecream2', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 150000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 100000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'bkr_prop_coke_spoon_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Mint Ice Cream Cone')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Mint Ice Cream Cone')
 
 end)
 
@@ -945,7 +939,7 @@ ESX.RegisterUsableItem('icecream3', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 150000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 100000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'bkr_prop_coke_spoon_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Bowl of Chocolate Ice Cream')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Bowl of Chocolate Ice Cream')
 
 end)
 
@@ -970,7 +964,7 @@ ESX.RegisterUsableItem('milkshake', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 100000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 200000)
     TriggerClientEvent('esx_basicneeds:onDrink', source, 'prop_cs_bs_cup')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Milk Shake')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Milk Shake')
 
 end)
 
@@ -1006,7 +1000,7 @@ ESX.RegisterUsableItem('egg', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 250000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_alien_egg_01')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A REALLY Large Egg')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a REALLY Large Egg')
 
 end)
 
@@ -1020,7 +1014,7 @@ ESX.RegisterUsableItem('cheesecake_slice', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 200000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_fork')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Slice of Delicious Cheesecake - It Tasts a Little Smoky')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Slice of Delicious Cheesecake - It Tasts a Little Smoky')
 
 end)
 
@@ -1032,7 +1026,7 @@ ESX.RegisterUsableItem('cookie', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 125000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_donut_02')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Cookie - It Just Crumbled That Way')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Cookie - It Just Crumbled That Way')
 
 end)
 
@@ -1057,7 +1051,7 @@ ESX.RegisterUsableItem('grapes', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 10000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 10000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'ng_proc_food_aple2a')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Few Grapes')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Few Grapes')
 
 end)
 
@@ -1069,7 +1063,7 @@ ESX.RegisterUsableItem('gum', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 10000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'ng_proc_food_aple2a')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Stick of Gum - Very Rich in Flavor')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Stick of Gum - Very Rich in Flavor')
 
 end)
 
@@ -1106,7 +1100,7 @@ ESX.RegisterUsableItem('marabou', function(source)
     
     TriggerClientEvent('esx_status:add', source, 'hunger', 100000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_candy_pqs')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Foreign Chocolate Bar')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Foreign Chocolate Bar')
 
 end)
 
@@ -1118,7 +1112,7 @@ ESX.RegisterUsableItem('olives', function(source)
     
     TriggerClientEvent('esx_status:add', source, 'hunger', 50000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'ng_proc_food_aple2a')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Handful of Olives')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Handful of Olives')
 
 end)
 
@@ -1131,7 +1125,7 @@ ESX.RegisterUsableItem('peach', function(source)
     TriggerClientEvent('esx_status:add', source, 'hunger', 200000)
     TriggerClientEvent('esx_status:add', source, 'thirst', 150000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'ng_proc_food_aple2a')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Juicy Peach')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Juicy Peach')
 
 end)
 
@@ -1143,7 +1137,7 @@ ESX.RegisterUsableItem('boxchocolate', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 200000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_candy_pqs')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Box of Chocolates - So Romantic')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Box of Chocolates - So Romantic')
 
 end)
 
@@ -1155,7 +1149,7 @@ ESX.RegisterUsableItem('gen_fries', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 200000)
     TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_food_bs_chips')
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Large Fry - No Supersize Options Here')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Large Fry - No Supersize Options Here')
 
 end)
 
@@ -1167,7 +1161,7 @@ ESX.RegisterUsableItem('muffin', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 125000)
     TriggerClientEvent('esx_basicneeds:onEat', source)
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Chocolate Chip Muffin - It\'s Muffin Time')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Chocolate Chip Muffin - It\'s Muffin Time')
 
 end)
 
@@ -1179,7 +1173,7 @@ ESX.RegisterUsableItem('ricebowl', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'hunger', 500000)
     TriggerClientEvent('esx_basicneeds:onEat', source)
-    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'A Ricebowl - The Rice Was Bland, The Rest Was Good')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a Ricebowl - The Rice Was Bland, The Rest Was Good')
 
 end)
 
@@ -1191,7 +1185,7 @@ ESX.RegisterUsableItem('iced_tea', function(source)
     
     TriggerClientEvent('esx_status:add', source, 'thirst', 250000)
     TriggerClientEvent('esx_basicneeds:onDrink', source, 'prop_plastic_cup_02')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Cup of Iced Tea - Strangely, Not Very Icey')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Cup of Iced Tea - Strangely, Not Very Icey')
 
 end)
 
@@ -1203,7 +1197,7 @@ ESX.RegisterUsableItem('sweet_tea', function(source)
     
     TriggerClientEvent('esx_status:add', source, 'thirst', 250000)
     TriggerClientEvent('esx_basicneeds:onDrink', source, 'prop_plastic_cup_02')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Cup of Sweet Tea - Strangely, Not Very Sweet')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Cup of Sweet Tea - Strangely, Not Very Sweet')
 end)
 
 ESX.RegisterUsableItem('largecola', function(source)
@@ -1214,7 +1208,7 @@ ESX.RegisterUsableItem('largecola', function(source)
     
     TriggerClientEvent('esx_status:add', source, 'thirst', 1000000)
     TriggerClientEvent('esx_basicneeds:onDrink', source, 'ng_proc_sodabot_01a')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Large Bottle of E-Cola - 3 Bottles, All in One')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Large Bottle of E-Cola - 3 Bottles, All in One')
 
 end)
 
@@ -1226,7 +1220,7 @@ ESX.RegisterUsableItem('largesprunk', function(source)
     
     TriggerClientEvent('esx_status:add', source, 'thirst', 1000000)
     TriggerClientEvent('esx_basicneeds:onDrink', source, 'ng_proc_sodabot_01a')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Large Bottle of Sprunk - 3 Bottles, All in One')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Large Bottle of Sprunk - 3 Bottles, All in One')
 
 end)
 
@@ -1238,7 +1232,7 @@ ESX.RegisterUsableItem('loka', function(source)
     
     TriggerClientEvent('esx_status:add', source, 'thirst', 150000)
     TriggerClientEvent('esx_basicneeds:onDrink', source, 'prop_ld_can_01b')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Can of Loka Crush')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Can of Loka Crush')
 
 end)
 
@@ -1262,7 +1256,7 @@ ESX.RegisterUsableItem('jus_raisin', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'thirst', 150000)
     TriggerClientEvent('esx_basicneeds:onDrink', source, 'prop_plastic_cup_02')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Cup of Refreshing Grape Juice')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Cup of Refreshing Grape Juice')
 
 end)
 
@@ -1274,7 +1268,7 @@ ESX.RegisterUsableItem('juice', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'thirst', 150000)
     TriggerClientEvent('esx_basicneeds:onDrink', source, 'prop_plastic_cup_02')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Cup of Big O Signature Juice - How big was your O?')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Cup of Big O Signature Juice - How big was your O?')
 
 end)
 
@@ -1286,7 +1280,7 @@ ESX.RegisterUsableItem('applecider', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'thirst', 150000)
     TriggerClientEvent('esx_basicneeds:onDrink', source, 'prop_plastic_cup_02')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Bottle of Apple Cider')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Bottle of Apple Cider')
 
 end)
 
@@ -1298,6 +1292,257 @@ ESX.RegisterUsableItem('gen_drink', function(source)
 
     TriggerClientEvent('esx_status:add', source, 'thirst', 400000)
     TriggerClientEvent('esx_basicneeds:onDrink', source, 'prop_cs_bs_cup')
-    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'A Large Fountain Drink - It\'s Already Watered Down')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a Large Fountain Drink - It\'s Already Watered Down')
+
+end)
+
+ESX.RegisterUsableItem('apple_pie', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('apple_pie', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'hunger', 400000)
+    TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_fork')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a slice of apple pie')
+
+end)
+
+ESX.RegisterUsableItem('Bananacreampie', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('Bananacreampie', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'hunger', 400000)
+    TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_fork')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a slice of banana cream pie')
+
+end)
+
+ESX.RegisterUsableItem('bangersandmash', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('bangersandmash', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'hunger', 500000)
+    TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_fork')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'Some bangers and mash mate')
+
+end)
+
+ESX.RegisterUsableItem('burrito', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('burrito', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'hunger', 500000)
+    TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_taco_01')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a delicious burrito')
+
+end)
+
+ESX.RegisterUsableItem('chimichangas', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('chimichangas', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'hunger', 500000)
+    TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_taco_01')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'Some chimichangas')
+
+end)
+
+ESX.RegisterUsableItem('chocolatecheesecake', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('chocolatecheesecake', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'hunger', 400000)
+    TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_fork')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a slice of chocolate cheesecake')
+
+end)
+
+ESX.RegisterUsableItem('cinnamon_bun', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('cinnamon_bun', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'hunger', 400000)
+    TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_donut_02')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a cinnamon bun')
+
+end)
+
+ESX.RegisterUsableItem('drypetfood', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('drypetfood', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'hunger', 1000000)
+    TriggerClientEvent('esx_status:add', source, 'thirst', 1000000)
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'Some pet food')
+
+end)
+
+ESX.RegisterUsableItem('enchilada', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('enchilada', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'hunger', 500000)
+    TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_taco_01')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'An enchilada')
+
+end)
+
+ESX.RegisterUsableItem('flan', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('flan', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'hunger', 400000)
+    TriggerClientEvent('esx_basicneeds:onEat', source, 'bkr_prop_coke_spoon_01')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'Some flan. Jiggly')
+
+end)
+
+ESX.RegisterUsableItem('hotcoco', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('hotcoco', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'thirst', 400000)
+    TriggerClientEvent('esx_basicneeds:onDrink', source, 'p_amb_coffeecup_01')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'Some hot cocoa')
+
+end)
+
+ESX.RegisterUsableItem('irishstew', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('irishstew', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'thirst', 200000)
+    TriggerClientEvent('esx_status:add', source, 'hunger', 400000)
+    TriggerClientEvent('esx_basicneeds:onEat', source, 'bkr_prop_coke_spoon_01')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'Some hearty Irish stew')
+
+end)
+
+ESX.RegisterUsableItem('pancakes', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('pancakes', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'hunger', 400000)
+    TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_fork')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'Some pancakes')
+
+end)
+
+ESX.RegisterUsableItem('petcoffee', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('petcoffee', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'thirst', 500000)
+    TriggerClientEvent('esx_basicneeds:onDrink', source, 'p_amb_coffeecup_01')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a fancy latte')
+
+end)
+
+ESX.RegisterUsableItem('petcupcake', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('petcupcake', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'hunger', 400000)
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a pet-safe cupcake. Tastes sorta like dog food')
+
+end)
+
+ESX.RegisterUsableItem('pettreats', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('pettreats', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'hunger', 200000)
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a pet treat')
+
+end)
+
+ESX.RegisterUsableItem('shepherdspie', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('shepherdspie', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'hunger', 800000)
+    TriggerClientEvent('esx_basicneeds:onEat', source, 'bkr_prop_coke_spoon_01')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'Delicious shepherds pie')
+
+end)
+
+ESX.RegisterUsableItem('strawberry_shortcake', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('strawberry_shortcake', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'hunger', 500000)
+    TriggerClientEvent('esx_basicneeds:onEat', source, 'bkr_prop_coke_spoon_01')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'Some strawberry shortcake')
+
+end)
+
+ESX.RegisterUsableItem('tea', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('tea', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'thirst', 600000)
+    TriggerClientEvent('esx_basicneeds:onDrink', source, 'p_amb_coffeecup_01')
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'Some hot tea')
+
+end)
+
+ESX.RegisterUsableItem('waffles', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('waffles', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'hunger', 600000)
+    TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_cs_fork')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'Some syrupy waffles')
+
+end)
+
+ESX.RegisterUsableItem('wetpetfood', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('wetpetfood', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'hunger', 1000000)
+    TriggerClientEvent('esx_status:add', source, 'thirst', 1000000)
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'Some canned pet food')
 
 end)

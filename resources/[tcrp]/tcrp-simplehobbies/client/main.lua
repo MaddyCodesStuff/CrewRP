@@ -15,13 +15,16 @@ local Keys = {
 }
 
 local spawnedNodes = 0
-local tailoringNodes = {}
+local woolNodes = {}
 local gatheredNodes   = 0
 local isGathering     = false
+local pearlGathering = false
 local pSpawnedNodes = 0
 local pearlNodes = {}
 local pGatheredNodes   = 0
-
+local wSpawnedNodes = 0
+local weedNodes = {}
+local wGatheredNodes   = 0
 
 for _, v in ipairs(Config.Processing) do
 	if v.onMap then
@@ -39,10 +42,13 @@ end
 
 AddEventHandler('onResourceStop', function(resource)
     if resource == GetCurrentResourceName() then
-        for k, v in pairs(tailoringNodes) do
+        for k, v in pairs(woolNodes) do
             ESX.Game.DeleteObject(v)
         end
         for k, v in pairs(pearlNodes) do
+            ESX.Game.DeleteObject(v)
+        end
+        for k, v in pairs(weedNodes) do
             ESX.Game.DeleteObject(v)
         end
     end
@@ -51,15 +57,18 @@ end)
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
-
-        for k, v in pairs(pearlNodes) do
-            local coords = GetEntityCoords(v)
-            local player = PlayerPedId()
-            local playerCoords = GetEntityCoords(player)
-            if GetDistanceBetweenCoords(coords, playerCoords) < 20 then
-                DrawMarker(0, coords.x, coords.y, coords.z + 1, 0.0, 0.0, 0.0, 0, 0.0, 0.0, .1, .1, .1, 3, 127, 252, 50,
-                            false, true, 2, false, false, false, false)
+        if pearlGathering then
+            for k, v in pairs(Nodes) do
+                local coords = GetEntityCoords(v)
+                local player = PlayerPedId()
+                local playerCoords = GetEntityCoords(player)
+                if GetDistanceBetweenCoords(coords, playerCoords) < 20 then
+                    DrawMarker(0, coords.x, coords.y, coords.z + 1, 0.0, 0.0, 0.0, 0, 0.0, 0.0, .1, .1, .1, 3, 127, 252, 50,
+                                false, true, 2, false, false, false, false)
+                end
             end
+        else
+            Citizen.Wait(500)
         end
     end
 end)
@@ -238,9 +247,9 @@ Citizen.CreateThread(function()
         local coords    = GetEntityCoords(playerPed)
         local nearbyObject, nearbyID
 
-        for i = 1, #tailoringNodes, 1 do
-            if GetDistanceBetweenCoords(coords, GetEntityCoords(tailoringNodes[i]), false) < 1 then
-                nearbyObject, nearbyID = tailoringNodes[i], i
+        for i = 1, #woolNodes, 1 do
+            if GetDistanceBetweenCoords(coords, GetEntityCoords(woolNodes[i]), false) < 1 then
+                nearbyObject, nearbyID = woolNodes[i], i
             end
         end
 
@@ -268,14 +277,11 @@ Citizen.CreateThread(function()
                                                         animDict = 'amb@medic@standing@kneel@idle_a',
                                                         anim = 'idle_a',
                                                         },
-                                                        prop            = {
-                                                            -- model = "prop_tool_pickaxe",
-                                                        }
                                                     }, function(status)
                     if not status then
                         gatheredNodes = gatheredNodes + 1
                         ESX.Game.DeleteObject(nearbyObject)
-                        table.remove(tailoringNodes, nearbyID)
+                        table.remove(woolNodes, nearbyID)
                         spawnedNodes = spawnedNodes - 1
                         TriggerServerEvent('tailor:wool')                                  
                     end
@@ -297,15 +303,15 @@ Citizen.CreateThread(function()
         local nearbyObject, nearbyID
 
         for i = 1, #pearlNodes, 1 do
-            if GetDistanceBetweenCoords(coords, GetEntityCoords(pearlNodes[i]), true) < 2 then
-                nearbyObject, nearbyID = pearlNodes[i], i
+            if GetDistanceBetweenCoords(coords, GetEntityCoords(Nodes[i]), true) < 2 then
+                nearbyObject, nearbyID = Nodes[i], i
             end
         end
 
         if nearbyObject then
 
             if not isGathering then
-                ESX.ShowHelpNotification("Press F to gather Pearl.")
+                ESX.ShowHelpNotification("Press F to gather Pearls.")
             end
 
             if IsControlJustReleased(0, Keys['F']) and not isGathering then
@@ -339,18 +345,79 @@ Citizen.CreateThread(function()
     end
 end)
 
+--Weed Baby
+Citizen.CreateThread(function()
+    while true do
+        Citizen.Wait(0)
+        local playerPed = PlayerPedId()
+        local coords    = GetEntityCoords(playerPed)
+        local nearbyObject, nearbyID
+
+        for i = 1, #weedNodes, 1 do
+            if GetDistanceBetweenCoords(coords, GetEntityCoords(weedNodes[i]), false) < 1 then
+                nearbyObject, nearbyID = weedNodes[i], i
+            end
+        end
+
+        if nearbyObject and IsPedOnFoot(playerPed) then
+
+            if not isGathering then
+                ESX.ShowHelpNotification("Press ~INPUT_CONTEXT~ to pick weed.")
+            end
+
+            if IsControlJustReleased(0, Keys['E']) and not isGathering then
+                isGathering = true                     
+                exports['mythic_progbar']:Progress({
+                                                        name            = "weed_action",
+                                                        duration        = 10000,
+                                                        label           = "Harvesting Weed",
+                                                        useWhileDead    = false,
+                                                        canCancel       = false,
+                                                        controlDisables = {
+                                                            disableMovement    = true,
+                                                            disableCarMovement = true,
+                                                            disableMouse       = false,
+                                                            disableCombat      = true,
+                                                        },
+                                                        animation       = {
+                                                        animDict = 'amb@medic@standing@kneel@idle_a',
+                                                        anim = 'idle_a',
+                                                        },
+                                                    }, function(status)
+                    if not status then
+                        wGatheredNodes = wGatheredNodes + 1
+                        ESX.Game.DeleteObject(nearbyObject)
+                        table.remove(weedNodes, nearbyID)
+                        wSpawnedNodes = wSpawnedNodes - 1
+                        TriggerServerEvent('weed:gather')                                  
+                    end
+                end)
+                isGathering = false                
+            end
+        else
+            Citizen.Wait(500)
+        end
+    end
+end)
+
+
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
         local coords = GetEntityCoords(PlayerPedId())
 
-        if GetDistanceBetweenCoords(coords, Config.Node.coords, true) < 100 then
+        if GetDistanceBetweenCoords(coords, Config.TailoringNode.coords, true) < 100 then
             spawnNodes()
             Citizen.Wait(500)
         elseif GetDistanceBetweenCoords(coords, Config.PearlNode.coords, true) < 100 then
             spawnPearlNodes()
+            pearlGathering = true
+            Citizen.Wait(500)
+        elseif GetDistanceBetweenCoords(coords, Config.WeedNode.coords, true) < 100 then
+            spawnWeedNodes()
             Citizen.Wait(500)
         else
+            pearlGathering = false
             Citizen.Wait(500)
         end
     end
@@ -361,15 +428,15 @@ function spawnNodes()
     local prop
     while spawnedNodes < Config.MaxNodesSpawned do
         Citizen.Wait(0)
-        local nodeCoords = generateNodeCoords()
+        local nodeCoords = generateNodeCoords(Config.TailoringNode.coords)
 
-        prop = Config.NodeModel
+        prop = Config.TailoringNode.prop
 
         ESX.Game.SpawnLocalObject(prop, nodeCoords, function(obj)
             PlaceObjectOnGroundProperly(obj)
             FreezeEntityPosition(obj, true)
 
-            table.insert(tailoringNodes, obj)
+            table.insert(woolNodes, obj)
 
             spawnedNodes = spawnedNodes + 1
         end)
@@ -381,9 +448,9 @@ function spawnPearlNodes()
     local prop
     while pSpawnedNodes < Config.MaxNodesSpawned do
         Citizen.Wait(0)
-        local nodeCoords = generatePearlNodeCoords()
+        local nodeCoords = generatePearlNodeCoords(Config.PearlNode.coords)
 
-        prop = Config.PearlNodeModel
+        prop = Config.PearlNode.prop
 
         ESX.Game.SpawnLocalObject(prop, nodeCoords, function(obj)
             PlaceObjectOnGroundProperly(obj)
@@ -392,6 +459,26 @@ function spawnPearlNodes()
             table.insert(pearlNodes, obj)
 
             pSpawnedNodes = pSpawnedNodes + 1
+        end)
+    end
+end
+
+--Spawn Weed nodes
+function spawnWeedNodes()
+    local prop
+    while wSpawnedNodes < Config.MaxNodesSpawned do
+        Citizen.Wait(0)
+        local nodeCoords = generateWeedNodeCoords(Config.WeedNode.coords)
+
+        prop = Config.WeedNode.prop
+
+        ESX.Game.SpawnLocalObject(prop, nodeCoords, function(obj)
+            PlaceObjectOnGroundProperly(obj)
+            FreezeEntityPosition(obj, true)
+
+            table.insert(weedNodes, obj)
+
+            wSpawnedNodes = wSpawnedNodes + 1
         end)
     end
 end
@@ -411,8 +498,8 @@ function generateNodeCoords()
         math.randomseed(GetGameTimer())
         local modY   = math.random(-30, 30)
 
-        nodeCoordX   = Config.Node.coords.x + modX
-        nodeCoordY   = Config.Node.coords.y + modY
+        nodeCoordX   = Config.TailoringNode.coords.x + modX
+        nodeCoordY   = Config.TailoringNode.coords.y + modY
 
         local coordZ = getCoordZ(nodeCoordX, nodeCoordY)
         local coord  = vector3(nodeCoordX, nodeCoordY, coordZ)
@@ -450,6 +537,32 @@ function generatePearlNodeCoords()
     end
 end
 
+function generateWeedNodeCoords()
+    while true do
+        Citizen.Wait(0)
+
+        local nodeCoordX, nodeCoordY
+
+        math.randomseed(GetGameTimer())
+        local modX = math.random(-20, 20)
+
+        Citizen.Wait(100)
+
+        math.randomseed(GetGameTimer())
+        local modY   = math.random(-30, 30)
+
+        nodeCoordX   = Config.WeedNode.coords.x + modX
+        nodeCoordY   = Config.WeedNode.coords.y + modY
+
+        local coordZ = getCoordZ(nodeCoordX, nodeCoordY)
+        local pcoord  = vector3(nodeCoordX, nodeCoordY, coordZ)
+
+        if validateWeedCoord(pcoord) then
+            return pcoord
+        end
+    end
+end
+
 function getCoordZ(x, y)
     local groundCheckHeights = { 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0 }
 
@@ -469,13 +582,13 @@ function validateCoord(nodeCoord)
     if spawnedNodes > 0 then
         local validate = true
 
-        for k, v in pairs(tailoringNodes) do
+        for k, v in pairs(woolNodes) do
             if GetDistanceBetweenCoords(nodeCoord, GetEntityCoords(v), true) < 5 then
                 validate = false
             end
         end
 
-        if GetDistanceBetweenCoords(nodeCoord, Config.Node.coords, false) > 50 then
+        if GetDistanceBetweenCoords(nodeCoord, Config.TailoringNode.coords, false) > 50 then
             validate = false
         end
 
@@ -497,6 +610,27 @@ function validatePearlCoord(nodeCoord)
         end
 
         if GetDistanceBetweenCoords(nodeCoord, Config.PearlNode.coords, false) > 50 then
+            validate = false
+        end
+
+        return validate
+    else
+        return true
+    end
+end
+
+--Validate Weed Coords
+function validateWeedCoord(nodeCoord)
+    if spawnedNodes > 0 then
+        local validate = true
+
+        for k, v in pairs(weedNodes) do
+            if GetDistanceBetweenCoords(nodeCoord, GetEntityCoords(v), true) < 5 then
+                validate = false
+            end
+        end
+
+        if GetDistanceBetweenCoords(nodeCoord, Config.WeedNode.coords, false) > 50 then
             validate = false
         end
 

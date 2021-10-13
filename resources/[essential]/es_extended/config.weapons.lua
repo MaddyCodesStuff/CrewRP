@@ -490,12 +490,6 @@ Config.Weapons = {
 	},
 
 	{
-		name       = 'WEAPON_HOSE',
-		label      = _U('weapon_hose'),
-		components = {}
-	},
-
-	{
 		name       = 'WEAPON_PETROLCAN',
 		label      = _U('weapon_petrolcan'),
 		components = {}
@@ -538,8 +532,8 @@ Config.Weapons = {
 	},
 
 	{
-		name       = 'WEAPON_STUNGUN',
-		label      = _U('weapon_stungun'),
+		name       = 'WEAPON_TASER2',
+		label      = _U('weapon_taser2'),
 		components = {}
 	},
 
@@ -647,7 +641,7 @@ Config.Weapons = {
 
 	{
 		name       = 'WEAPON_POOLCUE',
-		label      = 'Pool Cue',
+		label      = _U('weapon_poolcue'),
 		components = {}
 	},
 
@@ -686,11 +680,205 @@ Config.Weapons = {
 		label      = _U('weapon_doubleaction'),
 		components = {}
 	},
-
+	{
+		name       = 'WEAPON_GRENADELAUNCHER_SMOKE',
+		label      = _U('weapon_grenadelauncher_smoke'),
+		components = {}
+	},
+	{
+		name       = 'WEAPON_AIRSOFTRIFLE',
+		label      = _U('weapon_airsoftrifle'),
+		components = {}
+	},
+	{
+		name       = 'WEAPON_BAGUETTE',
+		label      = _U('weapon_baguette'),
+		components = {}
+	},
+	{
+		name       = 'WEAPON_BREACH',
+		label      = _U('weapon_breach'),
+		components = {}
+	},
+	{
+		name       = 'WEAPON_BROOM',
+		label      = _U('weapon_broom'),
+		components = {}
+	},
+	{
+		name       = 'WEAPON_CLEAVER',
+		label      = _U('weapon_cleaver'),
+		components = {}
+	},
+	{
+		name       = 'WEAPON_UNICORN',
+		label      = _U('weapon_unicorn'),
+		components = {}
+	},
+	{
+		name       = 'WEAPON_ICICLE',
+		label      = _U('weapon_icicle'),
+		components = {}
+	},
+	{
+		name       = 'WEAPON_KITCHENKNIFE',
+		label      = _U('weapon_kitchenknife'),
+		components = {}
+	},
+	{
+		name       = 'WEAPON_NAILBAT',
+		label      = _U('weapon_nailbat'),
+		components = {}
+	},
+	{
+		name       = 'WEAPON_PIPE',
+		label      = _U('weapon_pipe'),
+		components = {}
+	},
+	{
+		name       = 'WEAPON_KATANA',
+		label      = _U('weapon_katana'),
+		components = {}
+	},
+	{
+		name       = 'WEAPON_CRUTCH',
+		label      = _U('weapon_crutch'),
+		components = {}
+	},
+	{
+		name       = 'WEAPON_SCREWDRIVER',
+		label      = _U('weapon_screwdriver'),
+		components = {}
+	},
+	{
+		name       = 'WEAPON_SHANK',
+		label      = _U('weapon_shank'),
+		components = {}
+	},
+	{
+		name       = 'WEAPON_SHOVEL',
+		label      = _U('weapon_shovel'),
+		components = {}
+	},
+	{
+		name       = 'WEAPON_HOCKEYSTICK',
+		label      = _U('weapon_hockeystick'),
+		components = {}
+	},
+	{
+		name       = 'WEAPON_SLEDGEHAMMER',
+		label      = _U('weapon_sledgehammer'),
+		components = {}
+	},
+	{
+		name       = 'WEAPON_HOSE',
+		label      = _U('weapon_hose'),
+		components = {}
+	},
+	{
+		name       = 'WEAPON_PICKAXE',
+		label      = _U('weapon_pickaxe'),
+		components = {}
+	},
 	{
 		name       = 'WEAPON_FIRE_AXE',
 		label      = _U('weapon_fire_axe'),
 		components = {}
+	},
+	{
+		name       = 'WEAPON_BONESAW',
+		label      = _U('weapon_bonesaw'),
+		components = {}
+	},
+	{
+		name       = 'WEAPON_BOLTSNIPER',
+		label      = _U('weapon_boltsniper'),
+		components = {
+			{ name = 'clip_default', label = _U('component_clip_default'), hash = GetHashKey('COMPONENT_BOLTSNIPER_CLIP_01') },
+			{ name = 'scope', label = _U('component_scope'), hash = GetHashKey('COMPONENT_AT_BOLTSNIPER_SCOPE') },
+		}
+	},
+	{ 
+		name       = 'WEAPON_PDRIFLE',
+		label      = _U('weapon_pdrifle'),
+		components = {
+			{ name = 'clip_default', label = _U('component_clip_default'), hash = GetHashKey('COMPONENT_RIFLE2_CLIP_01') },
+			{ name = 'suppressor', label = _U('component_suppressor'), hash = GetHashKey('COMPONENT_AT_RIFLE2_SUPP') },
+			{ name = 'flashlight', label = _U('component_flashlight'), hash = GetHashKey('COMPONENT_AT_AR_FLSH') },
+		}
+	},
+	{ 
+		name       = 'WEAPON_MILITIA',
+		label      = _U('weapon_militia'),
+		components = {
+			{ name = 'clip_default', label = _U('component_clip_default'), hash = GetHashKey('COMPONENT_MILITIA_CLIP_01') },
+			{ name = 'clip_extended', label = _U('component_clip_extended'), hash = GetHashKey('COMPONENT_MILITIA_CLIP_02') },
+			{ name = 'flashlight', label = _U('component_flashlight'), hash = GetHashKey('COMPONENT_AT_AR_FLSH') },
+			{ name = 'suppressor', label = _U('component_suppressor'), hash = GetHashKey('COMPONENT_AT_AR_SUPP') },
+			{ name = 'grip', label = _U('component_grip'), hash = GetHashKey('COMPONENT_AT_AR_AFGRIP') },
+		}
+	},
+	{ 
+		name       = 'WEAPON_HEAVYRIFLE',
+		label      = _U('weapon_heavyrifle'),
+		components = {
+			{ name = 'clip_default', label = _U('component_clip_default'), hash = GetHashKey('COMPONENT_HEAVYRIFLE_CLIP_01') },
+			{ name = 'clip_extended', label = _U('component_clip_extended'), hash = GetHashKey('COMPONENT_HEAVYRIFLE_CLIP_02') },
+			{ name = 'flashlight', label = _U('component_flashlight'), hash = GetHashKey('COMPONENT_AT_AR_FLSH') },
+			{ name = 'suppressor', label = _U('component_suppressor'), hash = GetHashKey('COMPONENT_AT_AR_SUPP') },
+			{ name = 'grip', label = _U('component_grip'), hash = GetHashKey('COMPONENT_AT_AR_AFGRIP') },
+		}
+	},
+	{ 
+		name       = 'WEAPON_PDPISTOL',
+		label      = _U('weapon_pdpistol'),
+		components = {
+			{ name = 'clip_default', label = _U('component_clip_default'), hash = GetHashKey('COMPONENT_PDPISTOL_CLIP_01') },
+			{ name = 'clip_extended', label = _U('component_clip_extended'), hash = GetHashKey('COMPONENT_PDPISTOL_CLIP_02') },
+			{ name = 'flashlight', label = _U('component_flashlight'), hash = GetHashKey('COMPONENT_AT_PI_FLSH') },
+			{ name = 'suppressor', label = _U('component_suppressor'), hash = GetHashKey('COMPONENT_AT_PI_SUPP') },
+		}
+	},
+	{ 
+		name       = 'WEAPON_PDCARBINE',
+		label      = _U('weapon_pdcarbine'),
+		components = {
+			{ name = 'clip_default', label = _U('component_clip_default'), hash = GetHashKey('COMPONENT_PDCARBINE_CLIP_01') },
+			{ name = 'clip_extended', label = _U('component_clip_extended'), hash = GetHashKey('COMPONENT_PDCARBINE_CLIP_02') },
+			{ name = 'flashlight', label = _U('component_flashlight'), hash = GetHashKey('COMPONENT_AT_AR_FLSH') },
+			{ name = 'suppressor', label = _U('component_suppressor'), hash = GetHashKey('COMPONENT_AT_AR_SUPP') },
+			{ name = 'grip', label = _U('component_grip'), hash = GetHashKey('COMPONENT_AT_AR_AFGRIP') },
+		}
+	},
+	{ 
+		name       = 'WEAPON_PDSHOTGUN',
+		label      = _U('weapon_pdshotgun'),
+		components = {
+			{ name = 'clip_default', label = _U('component_clip_default'), hash = GetHashKey('COMPONENT_PDSHOTGUN_CLIP_01') },
+			{ name = 'flashlight', label = _U('component_flashlight'), hash = GetHashKey('COMPONENT_AT_AR_FLSH') },
+			{ name = 'suppressor', label = _U('component_suppressor'), hash = GetHashKey('COMPONENT_AT_AR_SUPP') },
+		}
+	},
+	{ 
+		name       = 'WEAPON_PDSMG',
+		label      = _U('weapon_pdsmg'),
+		components = {
+			{ name = 'clip_default', label = _U('component_clip_default'), hash = GetHashKey('COMPONENT_PDSMG_CLIP_01') },
+			{ name = 'clip_extended', label = _U('component_clip_extended'), hash = GetHashKey('COMPONENT_PDSMG_CLIP_02') },
+			{ name = 'flashlight', label = _U('component_flashlight'), hash = GetHashKey('COMPONENT_AT_AR_FLSH') },
+			{ name = 'suppressor', label = _U('component_suppressor'), hash = GetHashKey('COMPONENT_AT_PI_SUPP') },
+		}
+	},
+	{ 
+		name       = 'WEAPON_PDREVOLVER',
+		label      = _U('weapon_pdrevolver'),
+		components = {
+			{ name = 'clip_default', label = _U('component_clip_default'), hash = GetHashKey('COMPONENT_DOUBLEACTION_CLIP_01') },
+		}
+	},
+	{
+		name       = 'WEAPON_TOILETBRUSH',
+		label      = _U('weapon_toiletbrush'),
+		components = {}
 	}
-
 }

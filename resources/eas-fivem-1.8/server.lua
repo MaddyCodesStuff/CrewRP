@@ -1,16 +1,12 @@
-local function isAdmin(source)
-    local allowed = false
-    for i, id in ipairs(Config.EAS.admins) do
-        for x, pid in ipairs(GetPlayerIdentifiers(source)) do
-            if string.lower(pid) == string.lower(id) then
-                allowed = true
-            end
-        end
-    end
-    if IsPlayerAceAllowed(source, "lance.eas") then
-        allowed = true
-    end
-    return allowed
+ESX = nil
+
+TriggerEvent('esx:getSharedObject', function(obj)
+    ESX = obj
+end)
+
+function checkPerms(source)
+    local xPlayer = ESX.GetPlayerFromId(source)
+    return (xPlayer.getGroup() == 'superadmin')
 end
 
 local function stringsplit(inputstr, sep)
@@ -28,18 +24,27 @@ end
 
 RegisterServerEvent("alert:sv")
 AddEventHandler("alert:sv", function(msg, msg2)
-    --if (isAdmin(source)) then
-    TriggerClientEvent("SendAlert", -1, msg, msg2)
-    --end
+    if checkPerms(source) then
+        TriggerClientEvent("SendAlert", -1, msg, msg2)
+    else
+        TriggerClientEvent('mythic_notify:client:SendErrorAlert', source,
+                                { text = "You do not have the necessary permissions."})
+    end
 end)
 
 AddEventHandler('chatMessage', function(source, name, msg)
-    --if (isAdmin(source)) then
-    local command = stringsplit(msg, " ")[1];
+    if checkPerms(source) then
+        local command = stringsplit(msg, " ")[1];
 
-    if command == "/alert" then
-        CancelEvent()
-        TriggerClientEvent("alert:Send", source, string.sub(msg, 8), Config.EAS.Departments)
+        if command == "/alert" then
+            CancelEvent()
+            TriggerClientEvent("alert:Send", source, string.sub(msg, 8), Config.EAS.Departments)
+        end
+    else
+        if command == "/alert" then
+            local command = stringsplit(msg, " ")[1];
+            TriggerClientEvent('mythic_notify:client:SendErrorAlert', source,
+                                    { text = "You do not have the necessary permissions."})
+        end
     end
-    --end
 end)

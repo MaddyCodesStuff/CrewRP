@@ -216,7 +216,10 @@ Config.localWeight    = {
     WEAPON_MOLOTOV          = 5000,
     WEAPON_SMOKEGRENADE     = 5000,
     WEAPON_PETROLCAN        = 15000,
-    clothe                  = 1000
+    clothe                  = 1000,
+    metal                   = 250,
+    plastic                 = 250,
+    electronics             = 250
 }
 
 Config.VehicleLimit   = {
