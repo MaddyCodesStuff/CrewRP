@@ -10,6 +10,7 @@ local gurneySpawned = false
 local nearSpikes = false
 local spikesSpawned = false
 local ped = PlayerPedId()
+local chickenhash = GetHashKey('a_c_hen')
 
 ---------------------------------------------------------------------------
 -- Checking Distance To Spikestrips --
@@ -227,4 +228,23 @@ function RemoveGurney()
         TriggerServerEvent("usableitems:TriggerDeleteGurney", SpawnedGurney[a])
     end
     SpawnedGurney = {}
+end
+
+---------------------------------------------------------------------------
+-- Spawn Chicken Event --
+---------------------------------------------------------------------------
+RequestModel(chickenhash)
+while not HasModelLoaded(chickenhash) do Citizen.Wait(0) end
+
+RegisterNetEvent("usableitems:chicken")
+AddEventHandler("usableitems:chicken", function(source)
+        TriggerEvent('emote:do', 'pickup')
+        CreateChicken(source)
+end)
+
+function CreateChicken(source)
+    Wait(1000)
+    local spawnCoords = GetOffsetFromEntityInWorldCoords(LocalPed(), 0.0, 2.0, 0.0)
+    local chickenped = CreatePed(28, chickenhash, spawnCoords.x, spawnCoords.y, spawnCoords.z-1, 0.0, true, true)
+    TaskWanderStandard(chickenped,10.0,10)
 end

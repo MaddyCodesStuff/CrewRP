@@ -50,3 +50,11 @@ ESX.RegisterUsableItem('gurney', function(source)
     TriggerClientEvent("usableitems:SpawnGurney", src)
     TriggerClientEvent('mythic_notify:client:SendErrorAlert', source, { text = "Press Z to Pick Up Gurneys"})
 end)
+
+ESX.RegisterUsableItem('alive_chicken', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+    local src = source
+
+    xPlayer.removeInventoryItem('alive_chicken', 1)
+    TriggerClientEvent("usableitems:chicken", src)
+end)
