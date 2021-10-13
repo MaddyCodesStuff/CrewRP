@@ -13,6 +13,17 @@ AddEventHandler("usableitems:TriggerDeleteSpikes", function(netid)
 end)
 
 ---------------------------------------------------------------------------
+-- Delete Gurney --
+---------------------------------------------------------------------------
+RegisterServerEvent("usableitems:TriggerDeleteGurney")
+AddEventHandler("usableitems:TriggerDeleteGurney", function(netid)
+    local xPlayer = ESX.GetPlayerFromId(source)
+    TriggerClientEvent("usableitems:DeleteGurney", source, netid)
+    xPlayer.addInventoryItem('gurney', 1)
+end)
+
+
+---------------------------------------------------------------------------
 -- Usable Items --
 ---------------------------------------------------------------------------
 ESX.RegisterUsableItem('spikestrips', function(source)
@@ -29,4 +40,13 @@ ESX.RegisterUsableItem('lighter', function(source)
     local src = source
 
     TriggerClientEvent("usableitems:lighter", source)
+end)
+
+ESX.RegisterUsableItem('gurney', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+    local src = source
+
+    xPlayer.removeInventoryItem('gurney', 1)
+    TriggerClientEvent("usableitems:SpawnGurney", src)
+    TriggerClientEvent('mythic_notify:client:SendErrorAlert', source, { text = "Press Z to Pick Up Gurneys"})
 end)

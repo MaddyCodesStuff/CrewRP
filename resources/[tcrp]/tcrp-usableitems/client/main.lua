@@ -2,7 +2,11 @@
 -- Important Variables --
 ---------------------------------------------------------------------------
 local SpawnedSpikes = {}
+local SpawnedGurney = {}
 local spikemodel = "P_ld_stinger_s"
+local gurneymodel = "v_med_bed2"
+local nearGurney = false
+local gurneySpawned = false
 local nearSpikes = false
 local spikesSpawned = false
 local ped = PlayerPedId()
@@ -71,7 +75,7 @@ Citizen.CreateThread(function()
 end)
 
 ---------------------------------------------------------------------------
--- Keypresses Spikes Event --
+-- Keypresses Deletion Event --
 ---------------------------------------------------------------------------
 Citizen.CreateThread(function()
     while true do
@@ -79,6 +83,18 @@ Citizen.CreateThread(function()
             if IsControlPressed(1, 20) then
                 RemoveSpikes()
                 spikesSpawned = false
+            end
+        end
+        Citizen.Wait(0)
+    end
+end)
+
+Citizen.CreateThread(function()
+    while true do
+        if gurneySpawned then
+            if IsControlPressed(1, 20) then
+                RemoveGurney()
+                gurneySpawned = false
             end
         end
         Citizen.Wait(0)
@@ -107,7 +123,7 @@ AddEventHandler("usableitems:DeleteSpikes", function(netid)
 end)
 
 ---------------------------------------------------------------------------
--- Extra Functions --
+-- Extra Functions - Spikes --
 ---------------------------------------------------------------------------
 function CreateSpikes(amount)
     local spawnCoords = GetOffsetFromEntityInWorldCoords(LocalPed(), 0.0, 2.0, 0.0)
@@ -154,8 +170,9 @@ function DisplayNotification(string)
 	AddTextComponentString(string)
     DisplayHelpTextFromStringLabel(0, 0, 1, -1)
 end
+
 ---------------------------------------------------------------------------
--- Lighter Event --
+-- Lighter --
 ---------------------------------------------------------------------------
 RegisterNetEvent("usableitems:lighter")
 AddEventHandler("usableitems:lighter", function(source)
@@ -167,4 +184,47 @@ function StartLighterFire(source)
     local spawnCoords = GetOffsetFromEntityInWorldCoords(LocalPed(), 0.0, 2.0, 0.0)
       Wait(2000)
       StartScriptFire(spawnCoords.x, spawnCoords.y, spawnCoords.z-1, 3, true)
+end
+
+---------------------------------------------------------------------------
+-- Spawn Gurney Event --
+---------------------------------------------------------------------------
+RegisterNetEvent("usableitems:SpawnGurney")
+AddEventHandler("usableitems:SpawnGurney", function(Source)
+        TriggerEvent('emote:do', 'pickup')
+        CreateGurney(1)
+end)
+
+function CreateGurney(amount)
+    local spawnCoords = GetOffsetFromEntityInWorldCoords(LocalPed(), 0.0, 2.0, 0.0)
+    for a = 1, amount do
+        local gurney = CreateObject(GetHashKey(gurneymodel), spawnCoords.x, spawnCoords.y, spawnCoords.z, 1, 1, 1)
+        local netid = NetworkGetNetworkIdFromEntity(gurney)
+        SetNetworkIdExistsOnAllMachines(netid, true)
+        SetNetworkIdCanMigrate(netid, false)
+        SetEntityHeading(gurney, GetEntityHeading(LocalPed()))
+        PlaceObjectOnGroundProperly(gurney)
+        spawnCoords = GetOffsetFromEntityInWorldCoords(gurney, 0.0, 4.0, 0.0)
+        table.insert(SpawnedGurney, netid)
+    end
+    gurneySpawned = true
+end
+
+---------------------------------------------------------------------------
+-- Delete Gurney Event --
+---------------------------------------------------------------------------
+RegisterNetEvent("usableitems:DeleteGurney")
+AddEventHandler("usableitems:DeleteGurney", function(netid)
+    TriggerEvent('emote:do', 'pickup')
+    Citizen.CreateThread(function()
+        local gurney = NetworkGetEntityFromNetworkId(netid)
+        DeleteEntity(gurney)
+    end)
+end)
+
+function RemoveGurney()
+    for a = 1, #SpawnedGurney do
+        TriggerServerEvent("usableitems:TriggerDeleteGurney", SpawnedGurney[a])
+    end
+    SpawnedGurney = {}
 end
