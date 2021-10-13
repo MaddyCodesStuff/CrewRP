@@ -166,3 +166,15 @@ AddEventHandler('admin:peace', function(message)
                                 { text = "Peace was never an option."})
     end
 end)
+
+TriggerEvent('es:addGroupCommand', 'givearmor', 'admin', function(source, args, user)
+	if args[1] ~= nil then
+		if GetPlayerName(tonumber(args[1])) ~= nil then
+			SetPedArmour(tonumber(args[1]), 100)
+		end
+	else
+		SetPedArmour(source, 100)
+	end
+end, function(source, args, user)
+	TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Insufficient Permissions.' } })
+end, { help = ('Give Armor to player'), params = { { name = 'id' } } })
