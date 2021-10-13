@@ -5,7 +5,7 @@ local SpawnedSpikes = {}
 local SpawnedGurney = {}
 local spikemodel = "P_ld_stinger_s"
 local gurneymodel = "v_med_bed2"
-local nearGurney = false
+local gastankmodel = "prop_gascyl_01a"
 local gurneySpawned = false
 local nearSpikes = false
 local spikesSpawned = false
@@ -247,4 +247,26 @@ function CreateChicken(source)
     local spawnCoords = GetOffsetFromEntityInWorldCoords(LocalPed(), 0.0, 2.0, 0.0)
     local chickenped = CreatePed(28, chickenhash, spawnCoords.x, spawnCoords.y, spawnCoords.z-1, 0.0, true, true)
     TaskWanderStandard(chickenped,10.0,10)
+end
+
+---------------------------------------------------------------------------
+-- Spawn Gas Tank Event --
+---------------------------------------------------------------------------
+RegisterNetEvent("usableitems:SpawnGastank")
+AddEventHandler("usableitems:SpawnGastank", function(Source)
+        TriggerEvent('emote:do', 'pickup')
+        CreateGastank(1)
+end)
+
+function CreateGastank(amount)
+    local spawnCoords = GetOffsetFromEntityInWorldCoords(LocalPed(), 0.0, 2.0, 0.0)
+    for a = 1, amount do
+        local gastank = CreateObject(GetHashKey(gastankmodel), spawnCoords.x, spawnCoords.y, spawnCoords.z, 1, 1, 1)
+        local netid = NetworkGetNetworkIdFromEntity(gastank)
+        SetNetworkIdExistsOnAllMachines(netid, true)
+        SetNetworkIdCanMigrate(netid, false)
+        SetEntityHeading(gastank, GetEntityHeading(LocalPed()))
+        PlaceObjectOnGroundProperly(gastank)
+        spawnCoords = GetOffsetFromEntityInWorldCoords(gastank, 0.0, 4.0, 0.0)
+    end
 end

@@ -22,7 +22,6 @@ AddEventHandler("usableitems:TriggerDeleteGurney", function(netid)
     xPlayer.addInventoryItem('gurney', 1)
 end)
 
-
 ---------------------------------------------------------------------------
 -- Usable Items --
 ---------------------------------------------------------------------------
@@ -57,4 +56,12 @@ ESX.RegisterUsableItem('alive_chicken', function(source)
 
     xPlayer.removeInventoryItem('alive_chicken', 1)
     TriggerClientEvent("usableitems:chicken", src)
+end)
+
+ESX.RegisterUsableItem('gastank', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+    local src = source
+
+    xPlayer.removeInventoryItem('gastank', 1)
+    TriggerClientEvent("usableitems:SpawnGastank", source)
 end)
