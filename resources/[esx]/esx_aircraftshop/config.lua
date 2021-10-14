@@ -28,7 +28,7 @@ Config.Zones               = {
         Type    = -1
     },
     ShopOutside   = { -- Marker for Purchasing Vehicles
-        Pos     = { x = -965.25, y = -2983.56, z = 14.55 },
+        Pos     = { x = -981.02, y = -2991.31, z = 19.5 },
         Size    = { x = 1.5, y = 1.5, z = 1.0 },
         Heading = 59.9,
         Type    = -1
