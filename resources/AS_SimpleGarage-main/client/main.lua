@@ -965,8 +965,8 @@ function SetVehicleProperties(vehicle, vehicleProps)
 
     SetVehicleEngineHealth(vehicle, vehicleProps["engineHealth"] and vehicleProps["engineHealth"] + 0.0 or 1000.0)
     SetVehicleBodyHealth(vehicle, vehicleProps["bodyHealth"] and vehicleProps["bodyHealth"] + 0.0 or 1000.0)
-	SetVehicleFuelLevel(vehicle, vehicleProps["fuelLevel"] and vehicleProps["fuelLevel"] + 0.0 or 1000.0)
-	DecorSetFloat(vehicle, "_FUEL_LEVEL", vehicleProps["fuelLevel"] and vehicleProps["fuelLevel"] + 0.0 or 1000.0)
+	SetVehicleFuelLevel(vehicle, vehicleProps["fuelLevel"] and vehicleProps["fuelLevel"] + 0.0 or 100.0)
+	DecorSetFloat(vehicle, "_FUEL_LEVEL", vehicleProps["fuelLevel"] and vehicleProps["fuelLevel"] + 0.0 or 100.0)
 	
 
     if vehicleProps["windows"] then

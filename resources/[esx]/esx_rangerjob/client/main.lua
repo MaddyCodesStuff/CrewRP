@@ -127,11 +127,7 @@ function ParkRangerMenu()
                 TriggerEvent('esx_license:showIssueMenu', Config.LicenseTypes)
             elseif data.current.value == 'revoke_license' then
                 TriggerEvent('esx_license:showRevokeMenu', Config.LicenseTypes)
-            elseif data.current.value == 'parkranger' then
-                TriggerEvent("esx-radios:toggleRadioByName", data.current.value)
-            elseif data.current.value == 'dispatch_menu' then
-                TriggerEvent("esx-radios:toggleRadioByName", 'dispatch')
-             elseif data.current.value == 'flamingo' then
+            elseif data.current.value == 'flamingo' then
 
 						local playerPed = PlayerPedId()
 						local coords    = GetEntityCoords(playerPed)
