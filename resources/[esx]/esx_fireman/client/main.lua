@@ -349,12 +349,6 @@ function OpenFireActionsMenu()
 		{ label = 'Clock Off', value = 'mobile_clockinoff' },
 	}
 
-	if (exports['esx-radios'].isDedicatedDispatch()) then
-		table.insert(menuElements, { label = "PD Radio", value = 'pd_radio_menu' })
-		table.insert(menuElements, { label = "EMS Radio", value = 'ems_radio_menu' })
-		table.insert(menuElements, { label = "DOC Radio", value = 'doc_radio_menu' })
-	end
-
 	ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'fire_actions',
 					 {
 						 title    = 'Firefighter',

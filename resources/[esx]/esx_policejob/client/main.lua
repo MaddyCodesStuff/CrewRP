@@ -497,6 +497,13 @@ function OpenPoliceActionsMenu()
 		{ label = 'Clock Off', value = 'mobile_clockinoff' },
 	}
 
+	ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'police_actions',
+					 {
+						 title    = 'Police',
+						 align    = 'top-right',
+						 elements = menuElements
+					 }, function(data, menu)
+						
 			if data.current.value == 'jail_menu' then
 				local elements = {
 					{ label = "Criminal Fine", value = 'fine' },
