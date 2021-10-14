@@ -211,3 +211,18 @@ Citizen.CreateThread(function()
 		SetWeaponDrops()
 	end
 end)
+
+Citizen.CreateThread(function()
+	while true do
+		Citizen.Wait(5)
+		local ped = PlayerPedId()
+        local hasWeapon, weapon = GetCurrentPedWeapon(ped)
+        if hasWeapon then
+            if weapon == GetHashKey("WEAPON_PDRIFLE") or GetHashKey("WEAPON_HEAVYRIFLE") or GetHashKey("WEAPON_MILITIARIFLE") then
+		        if IsPedInCover(ped, 1) and not IsPedAimingFromCover(ped, 1) then 
+                    DisablePlayerFiring(ped, true)
+		        end		
+            end
+        end
+	end
+end)
