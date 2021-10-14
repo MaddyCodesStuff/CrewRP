@@ -5499,6 +5499,54 @@ Config.Elevators    = {
         },
     },
     },
+    { -- 7 Vesspucci Front Entrance In
+    name    = "7 Vespucci Front In",
+    Pos     = { x = -1070.38, y = -911.48, z = 4.10, h = 210.40, },
+    options = {
+        {
+            label   = "Open Gate",
+            name    = "Open Gate",
+            pos     = { x = -1068.98, y = -913.81, z = 3.07, h = 210.00 },
+            heading = 210.00,
+        },
+    },
+    },
+    { -- 7 Vespucci Front Entrance Out
+    name    = "7 Vespucci Front Out",
+    Pos     = { x = -1068.98, y = -913.81, z = 4.06, h = 30.00 },
+    options = {
+        {
+            label   = "Open Gate",
+            name    = "Open Gate",
+            pos     = { x = -1070.38, y = -911.48, z = 3.11, h = 30.00, },
+            heading = 30.00,
+        },
+    },
+    },
+    { -- 7 Vesspucci Back Entrance In
+    name    = "7 Vespucci Back In",
+    Pos     = { x = -1050.44, y = -940.12, z = 2.25, h = 31.69, },
+    options = {
+        {
+            label   = "Open Gate",
+            name    = "Open Gate",
+            pos     = { x = -1051.80, y = -937.87, z = 1.26, h = 31.69 },
+            heading = 31.69,
+        },
+    },
+    },
+    { -- 7 Vespucci back Entrance Out
+    name    = "7 Vespucci Back Out",
+    Pos     = { x = -1051.80, y = -937.87, z = 2.25, h = 212.73 },
+    options = {
+        {
+            label   = "Open Gate",
+            name    = "Open Gate",
+            pos     = { x = -1050.44, y = -940.12, z = 1.16, h = 212.73, },
+            heading = 212.73,
+        },
+    },
+    },
     { -- Casino Into Cashier
     name    = "Casino Door",
     Pos     = { x = 978.47, y = 32.13, z = 74.28 },
