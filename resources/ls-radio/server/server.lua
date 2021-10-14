@@ -12,22 +12,28 @@ AddEventHandler('ls-radio:enableBlip', function(job)
 
     if job == 'police' then
         color    = 38
-        job_name = "[PD]"
+        job_name = "[Police]"
+        image = "PoliceToken"
     elseif job == 'ambulance' then
         color    = 1
-        job_name = "[EMS]"
+        job_name = "[Medical]"
+        image = "MedicalToken"
     elseif job == 'fireman' then
         color    = 47
-        job_name = "[FD]"
+        job_name = "[Fire]"
+        image = "FireToken"
     elseif job == 'dispatch' then
         color    = 46
         job_name = "[Dispatch]"
+        image = "DefaultTCRP"
     elseif job == 'corrections' then
         color    = 39
         job_name = "[DOC]"
+        image = "DefaultTCRP"
     elseif job == 'parkranger' then
         color    = 25
         job_name = "[Park Ranger]"
+        image = "DefaultTCRP"
     end
 
     local xPlayer = ESX.GetPlayerFromId(source)
@@ -40,7 +46,7 @@ AddEventHandler('ls-radio:enableBlip', function(job)
             local firstname = result[1].firstname
             local lastname  = result[1].lastname
             TriggerEvent('eblips:add',
-                         { name = job_name .. " " .. lastname .. ", " .. firstname, src = _src, color = color })
+                         {job = job_name, name = firstname .. " " .. lastname, src = _src, color = color, image = image })
         end)
     end
 
