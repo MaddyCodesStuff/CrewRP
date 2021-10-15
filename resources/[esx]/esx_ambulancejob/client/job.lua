@@ -1180,7 +1180,7 @@ function OpenPharmacyMenu()
 							 { label = _U('pharmacy_take', 'Tylenol'), value = 'tylenol' },
 							 { label = _U('pharmacy_take', 'Body Armor'), value = 'bodyarmor_3' },
 							 { label = _U('pharmacy_take', 'Scuba Gear'), value = 'scuba' },
-							 { label = _U('pharmacy_take', 'Wheelchair'), value = 'wheelchair' },
+							 { label = _U('pharmacy_take', 'Gurney'), value = 'gurney' },
 						 }
 					 }, function(data, menu)
 			TriggerServerEvent('esx_ambulancejob:giveItem', data.current.value)
