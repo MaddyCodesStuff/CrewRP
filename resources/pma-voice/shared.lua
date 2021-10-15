@@ -7,9 +7,9 @@ voice_defaultCycle = 'F1'
 if GetConvar('voice_useNativeAudio', 'false') == 'true' then
 	-- native audio distance seems to be larger then regular gta units
 	Cfg.voiceModes = {
-		{0.7, "Whisper"}, -- Whisper speech distance in gta distance units
-		{1.5, "Normal"}, -- Normal speech distance in gta distance units
-		{15.0, "Shouting"} -- Shout speech distance in gta distance units
+		{1.3, "Whisper"}, -- Whisper speech distance in gta distance units
+		{5.0, "Normal"}, -- Normal speech distance in gta distance units
+		{10.0, "Shouting"} -- Shout speech distance in gta distance units
 	}
 else
 	Cfg.voiceModes = {
