@@ -2,8 +2,8 @@
 <CVehicleModelInfoVarGlobal>    
   <Kits>
    <Item>
-      <kitName>1010_r820_modkit</kitName>
-      <id value="1010" />	 	  
+      <kitName>1210_r820_modkit</kitName>
+      <id value="1210" />	 	  
       <kitType>MKT_SPECIAL</kitType>
       <visibleMods>
 	  <Item>
@@ -419,28 +419,28 @@
       <statMods>
         <Item>
           <identifier />
+          <modifier value="25" />
+          <audioApply value="1.000000" />
+          <weight value="20" />
+          <type>VMT_ENGINE</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="50" />
+          <audioApply value="1.000000" />
+          <weight value="20" />
+          <type>VMT_ENGINE</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="75" />
+          <audioApply value="1.000000" />
+          <weight value="20" />
+          <type>VMT_ENGINE</type>
+        </Item>
+        <Item>
+          <identifier />
           <modifier value="100" />
-          <audioApply value="1.000000" />
-          <weight value="20" />
-          <type>VMT_ENGINE</type>
-        </Item>
-        <Item>
-          <identifier />
-          <modifier value="150" />
-          <audioApply value="1.000000" />
-          <weight value="20" />
-          <type>VMT_ENGINE</type>
-        </Item>
-        <Item>
-          <identifier />
-          <modifier value="230" />
-          <audioApply value="1.000000" />
-          <weight value="20" />
-          <type>VMT_ENGINE</type>
-        </Item>
-        <Item>
-          <identifier />
-          <modifier value="280" />
           <audioApply value="1.000000" />
           <weight value="20" />
           <type>VMT_ENGINE</type>
@@ -894,7 +894,7 @@
   </Kits>
     <Lights>
 	<Item>
-      <id value="1010" />
+      <id value="1210" />
       <indicator>
         <intensity value="0.400000" />
         <falloffMax value="2.500000" />
