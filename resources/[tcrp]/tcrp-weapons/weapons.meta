@@ -8901,9 +8901,9 @@
           <DamageTime value="0.000000" />
           <DamageTimeInVehicle value="0.000000" />
           <DamageTimeInVehicleHeadShot value="0.000000" />
-          <HitLimbsDamageModifier value="0.500000" />
-          <NetworkHitLimbsDamageModifier value="0.500000" />
-          <LightlyArmouredDamageModifier value="0.750000" />
+          <HitLimbsDamageModifier value="1.000000" />
+          <NetworkHitLimbsDamageModifier value="1.000000" />
+          <LightlyArmouredDamageModifier value="1.000000" />
           <Force value="100.000000" />
           <ForceHitPed value="100.000000" />
           <ForceHitVehicle value="100.000000" />
@@ -9162,9 +9162,9 @@
           <DamageTime value="0.000000" />
           <DamageTimeInVehicle value="0.000000" />
           <DamageTimeInVehicleHeadShot value="0.000000" />
-          <HitLimbsDamageModifier value="0.500000" />
-          <NetworkHitLimbsDamageModifier value="0.500000" />
-          <LightlyArmouredDamageModifier value="0.750000" />
+          <HitLimbsDamageModifier value="1.000000" />
+          <NetworkHitLimbsDamageModifier value="1.000000" />
+          <LightlyArmouredDamageModifier value="1.000000" />
           <Force value="500.000000" />
           <ForceHitPed value="500.000000" />
           <ForceHitVehicle value="500.000000" />
