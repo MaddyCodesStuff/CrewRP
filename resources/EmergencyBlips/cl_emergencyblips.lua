@@ -64,7 +64,7 @@ Citizen.CreateThread(function()
             for src, info in pairs(ACTIVE_EMERGENCY_PERSONNEL) do
                 local player = GetPlayerFromServerId(src)
                 local ped    = GetPlayerPed(player)
-                if --[[GetPlayerPed(-1) ~= ped--]] true then
+                if GetPlayerPed(-1) ~= ped then
                     if GetBlipFromEntity(ped) == 0 then
                         local blip = AddBlipForEntity(ped)
                         SetBlipSprite(blip, 1)
@@ -73,12 +73,13 @@ Citizen.CreateThread(function()
                         SetBlipDisplay(blip, 2)
                         SetBlipPriority(blip, 50)
                         SetBlipShowCone(blip, true)
+                        SetBlipCategory(blip, 7)
                         ShowHeadingIndicatorOnBlip(blip, true)
                         ShowHeightOnBlip(blip, true)
                         exports['blip_info']:SetBlipInfoTitle(blip, info.name, false)
                         exports['blip_info']:SetBlipInfoImage(blip, "blip_images", info.image)
                         exports['blip_info']:AddBlipInfoText(blip, "Job", info.job)
-                        AddTextEntry("EMERGENCY", info.job)
+                        AddTextEntry("EMERGENCY", info.job .. " " .. info.name)
                         BeginTextCommandSetBlipName("EMERGENCY")
                         EndTextCommandSetBlipName(blip)
                     end
