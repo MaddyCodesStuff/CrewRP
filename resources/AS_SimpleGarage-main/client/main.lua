@@ -75,7 +75,7 @@ RegisterNetEvent('garage:giveKeys')
 AddEventHandler('garage:giveKeys', function()
 	local ped = GetPlayerPed(-1)
     local coords = GetEntityCoords(ped)
-	local ClosestVeh = GetClosestVehicle(coords.x, coords.y, coords.z, 5.0, 0, 71)
+	local ClosestVeh = ESX.Game.GetClosestVehicle(coords)
 	local closestPlayer, closestDistance = ESX.Game.GetClosestPlayer()
 	if ClosestVeh ~= 0 then
 		local vehicleProps  = ESX.Game.GetVehicleProperties(ClosestVeh)
