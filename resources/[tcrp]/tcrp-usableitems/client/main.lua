@@ -12,6 +12,13 @@ local spikesSpawned = false
 local ped = PlayerPedId()
 local chickenhash = GetHashKey('a_c_hen')
 
+Citizen.CreateThread(function()
+    while true do
+        RequestTheModel(chickenhash)
+        Citizen.Wait(0)
+    end
+end)
+
 ---------------------------------------------------------------------------
 -- Checking Distance To Spikestrips --
 ---------------------------------------------------------------------------
@@ -233,9 +240,6 @@ end
 ---------------------------------------------------------------------------
 -- Spawn Chicken Event --
 ---------------------------------------------------------------------------
-RequestModel(chickenhash)
-while not HasModelLoaded(chickenhash) do Citizen.Wait(0) end
-
 RegisterNetEvent("usableitems:chicken")
 AddEventHandler("usableitems:chicken", function(source)
         TriggerEvent('emote:do', 'pickup')
@@ -269,4 +273,11 @@ function CreateGastank(amount)
         PlaceObjectOnGroundProperly(gastank)
         spawnCoords = GetOffsetFromEntityInWorldCoords(gastank, 0.0, 4.0, 0.0)
     end
+end
+
+function RequestTheModel(model)
+	RequestModel(model)
+	while not HasModelLoaded(model) do
+		Citizen.Wait(0)
+	end
 end
