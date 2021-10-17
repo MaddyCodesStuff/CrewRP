@@ -84,7 +84,7 @@ end)
 AddEventHandler('onResourceStart', function(resource)
 	if resource ~= GetCurrentResourceName() then return end
 	if true then
-		SetConvarReplicated('voice_use3dAudio', true)
+		SetConvarReplicated('voice_useNativeAudio', true)
 		SetConvarReplicated('voice_defaultCycle', 'F1')
 		SetConvarReplicated('voice_enableSubmix', true)
 		SetConvarReplicated('voice_enableRadioAnim', true)
