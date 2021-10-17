@@ -7,6 +7,7 @@ Config.usePopui = false -- POPUI or Drawmarker Floating Text https://github.com/
 Config.showmarker = true -- Drawmarker and FLoating Text
 Config.DisableRepair = true -- Disable Repairing before Showing Upgrade Menu
 Config.OwnedVehiclesOnly = false -- set this to False if you want to allow modifying of non owned vehicles, AKA local cars, spawned cars
+Config.DoNotShowEmptyMods = true -- hide mod menu if no available mod for current vehicle
 --JOB
 -- Config.job = 'mechanic' -- Default job (job permission if job is not indicated here Config.Customs) -- OBSOLETE , Configure jobs here Config.Customs
 Config.DefaultJobGradePermmission = 0 -- default jobgrade in each job shop (ignored if its indicated at Config.VehicleMod)
@@ -798,6 +799,7 @@ Config.VehicleMod = {
 		percent_cost = 50.0,
         type = 'Wheel Parts',
 		bone = 'wheel_lr',
+		camera = {val = 'middle', x = 2.1, y = 2.1,z = -0.1},
         prop = 'imp_prop_impexp_wheel_03a',
 	},
 ---------Front Wheels---------
@@ -813,8 +815,9 @@ Config.VehicleMod = {
 		percent_cost = 50.0,
 		bone = 'wheel_rf',
         type = 'Wheel Parts',
+		camera = {val = 'middle', x = 2.1, y = 2.1,z = -0.1},
         prop = 'imp_prop_impexp_wheel_03a',
-		list = {WheelType = {Sport = 0, Muscle = 1, Lowrider = 2, SUV = 3, Offroad = 4,Tuner = 5, BikeWheel = 6, HighEnd = 7 , BennysWheel = 8, BespokeWheel = 9, Dragster = 10, Street = 11 } , WheelColor = allcolors, Accessories = { SmokeColor = 1} } -- BennysWheel = 8, BespokeWheel = 9
+		list = {WheelType = {Sport = 0, Muscle = 1, Lowrider = 2, SUV = 3, Offroad = 4,Tuner = 5, BikeWheel = 6, HighEnd = 7 , BennysWheel = 8, BespokeWheel = 9, Dragster = 10, Street = 11 } , WheelColor = allcolors, Accessories = { CustomTire = 1, SmokeColor = 1 } } -- BennysWheel = 8, BespokeWheel = 9
 	},
 ---------Headlights---------
 	[22] = {
@@ -1149,13 +1152,13 @@ Config.VehicleMod = {
 		label = 'Headlights',
 		name = 'headlight',
         index = 101,
-		cost = 250,
+		cost = 150,
 		percent_cost = 50.0,
 		bone = 'boot',
         type = 'Headlights',
 		camera = {val = 'front', x = 0.1, y = 0.6,z = 0.4},
         prop = 'imp_prop_impexp_spoiler_04a',
-		list = {Default = false, XenonLights = true, 
+		list = {Default = true, XenonLights = false, 
 		XenonColor = {
 				Default = -1,
 			},
