@@ -123,12 +123,25 @@ RegisterNUICallback('SetCustomColor', function(data)
 end)
 
 RegisterNUICallback('SelectModIndex', function(data, cb)
-    if data.index == 99 then return end
+    if data.index == 99 or data.index == nil then return end
     local vehicle = GetVehiclePedIsIn(PlayerPedId())
     if Config.VehicleMod[data.index].action ~= nil then
         if Config.VehicleMod[data.index].action == 'openhood' then
             SetVehicleDoorOpen(vehicle,4,false,false)
         end
+    end
+    if not IsCamActive(gameplaycam) then
+        SetCamActive(gameplaycam, false)
+        EnableGameplayCam(false)
+    end
+    if not IsCamActive(cam) then
+        cam = CreateCam("DEFAULT_SCRIPTED_CAMERA",true,2)
+        CreateModCam()
+        ControlCam('front',-2.5,0.1,1.3)
+    else
+        CreateModCam()
+        SetCamActive(cam, true)
+        ControlCam('front',-2.5,0.1,1.3)
     end
     BoneCamera(Config.VehicleMod[data.index].bone,0.0,0.0,0.0)
     if Config.VehicleMod[data.index].camera ~= nil then
@@ -146,6 +159,28 @@ RegisterNUICallback('ToggleTurbo', function(data, cb)
         vehicle = GetVehiclePedIsIn(PlayerPedId(),true)
     end
     ToggleVehicleMod(vehicle,18,data.index)
+    cb(true)
+end)
+
+RegisterNUICallback('ToggleCamera', function(data, cb)
+    RenderScriptCams(false, true, 500, true, true)
+    DestroyCam(cam, true)
+    DestroyCam(gameplaycam, true)
+    ClearFocus()
+    SetNuiFocusKeepInput(true)
+    while true do
+        if IsControlPressed(0,38) then
+            SetCamCoord(cam,GetGameplayCamCoords())
+            SetCamRot(cam, GetGameplayCamRot(2), 2)
+            RenderScriptCams( 0, 1, 1000, 0, 0)
+            SetCamActive(gameplaycam, true)
+            EnableGameplayCam(true)
+            SetCamActive(cam, false)
+            break
+        end
+        Wait(0)
+    end
+    SetNuiFocusKeepInput(false)
     cb(true)
 end)
 
@@ -300,9 +335,19 @@ end)
 
 RegisterNUICallback('Reset', function(data, cb)
     if control == nil or control ~= 'front' then
-        CreateModCam()
-        SetCamActive(cam, true)
-        ControlCam('front',-2.5,0.1,1.3)
+        if not IsCamActive(gameplaycam) then
+            SetCamActive(gameplaycam, false)
+            EnableGameplayCam(false)
+        end
+        if not IsCamActive(cam) then
+            cam = CreateCam("DEFAULT_SCRIPTED_CAMERA",true,2)
+            CreateModCam()
+            ControlCam('front',-2.5,0.1,1.3)
+        else
+            CreateModCam()
+            SetCamActive(cam, true)
+            ControlCam('front',-2.5,0.1,1.3)
+        end
     end
 end)
 
