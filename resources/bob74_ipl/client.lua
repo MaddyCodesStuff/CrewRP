@@ -1,3 +1,4 @@
+
 Citizen.CreateThread(function()
     -- ====================================================================
     -- =--------------------- [GTA V: Single player] ---------------------=
@@ -15,11 +16,20 @@ Citizen.CreateThread(function()
     -- Franklin
     Franklin.LoadDefault()
 
-    --Floyd: -1150.703, -1520.713, 10.633
+    -- Floyd: -1150.703, -1520.713, 10.633
     Floyd.LoadDefault()
 
     -- Trevor: 1985.48132, 3828.76757, 32.5
     TrevorsTrailer.LoadDefault()
+
+    -- Bahama Mamas: -1388.0013, -618.41967, 30.819599
+    BahamaMamas.Enable(true)
+
+    -- Pillbox hospital: 307.1680, -590.807, 43.280
+    PillboxHospital.Enable(true)
+
+    -- Zancudo Gates (GTAO like): -1600.30100000, 2806.73100000, 18.79683000
+    ZancudoGates.LoadDefault()
 
     -- Other
     Ammunations.LoadDefault()
@@ -28,17 +38,14 @@ Citizen.CreateThread(function()
 
     Graffitis.Enable(true)
 
-    -- Zancudo Gates (GTAO like): -1600.30100000, 2806.73100000, 18.79683000
-    ZancudoGates.LoadDefault()
-
     -- UFO
     UFO.Hippie.Enable(false)    -- 2490.47729, 3774.84351, 2414.035
     UFO.Chiliad.Enable(false)   -- 501.52880000, 5593.86500000, 796.23250000
     UFO.Zancudo.Enable(false)   -- -2051.99463, 3237.05835, 1456.97021
-
+    
     -- Red Carpet: 300.5927, 199.7589, 104.3776
     RedCarpet.Enable(false)
-
+    
     -- North Yankton: 3217.697, -4834.826, 111.8152
     NorthYankton.Enable(false)
 
@@ -71,9 +78,8 @@ Citizen.CreateThread(function()
     -- ====================================================================
     -- =-------------------------- [DLC: Heists] -------------------------=
     -- ====================================================================
-    HeistCarrier.Enable(true)   -- 3082.3117, -4717.1191, 15.2622
-    HeistYacht.Enable(true)     -- -2043.974,-1031.582, 11.981
-    HeistYacht.Water.Enable(true) -- Enable the water in the yacht
+    HeistCarrier.Enable(true)       -- 3082.3117, -4717.1191, 15.2622
+    HeistYacht.LoadDefault()        -- -2043.974,-1031.582, 11.981
 
     -- ====================================================================
     -- =--------------- [DLC: Executives & Other Criminals] --------------=
@@ -81,7 +87,7 @@ Citizen.CreateThread(function()
     ExecApartment1.LoadDefault()    -- -787.7805 334.9232 215.8384 (EclipseTowers, Penthouse Suite 1)
     ExecApartment2.LoadDefault()    -- -773.2258 322.8252 194.8862 (EclipseTowers, Penthouse Suite 2)
     ExecApartment3.LoadDefault()    -- -787.7805 334.9232 186.1134 (EclipseTowers, Penthouse Suite 3)
-
+    
     -- ====================================================================
     -- =-------------------- [DLC: Finance  & Felony] --------------------=
     -- ====================================================================
@@ -93,7 +99,7 @@ Citizen.CreateThread(function()
     -- ====================================================================
     -- =-------------------------- [DLC: Bikers] -------------------------=
     -- ====================================================================
-    BikerCocaine.LoadDefault()            -- Cocaine lockup: 1093.6, -3196.6, -38.99841
+    BikerCocaine.LoadDefault()	        -- Cocaine lockup: 1093.6, -3196.6, -38.99841
     BikerCounterfeit.LoadDefault()      -- Counterfeit cash factory: 1121.897, -3195.338, -40.4025
     BikerDocumentForgery.LoadDefault()  -- Document forgery: 1165, -3196.6, -39.01306
     BikerMethLab.LoadDefault()          -- Meth lab: 1009.5, -3196.6, -38.99682
@@ -114,8 +120,8 @@ Citizen.CreateThread(function()
     -- =------------------------ [DLC: Gunrunning] -----------------------=
     -- ====================================================================
     GunrunningBunker.LoadDefault()  -- 892.6384, -3245.8664, -98.2645
-    GunrunningYacht.Enable(true)    -- -1363.724, 6734.108, 2.44598
-
+    GunrunningYacht.LoadDefault()   -- -1363.724, 6734.108, 2.44598
+    
     -- ====================================================================
     -- =---------------------- [DLC: Smuggler's Run] ---------------------=
     -- ====================================================================
@@ -131,5 +137,12 @@ Citizen.CreateThread(function()
     -- ====================================================================
     AfterHoursNightclubs.LoadDefault()          -- -1604.664, -3012.583, -78.000
 
+    -- ====================================================================
+    -- =------------------- [DLC: Diamond Casino Resort] -----------------=
+    -- ====================================================================
+    if GetGameBuildNumber() >= 2060 then
+        DiamondCasino.LoadDefault()                -- 1100.000, 220.000, -50.000
+        DiamondPenthouse.LoadDefault()             -- 976.636, 70.295, 115.164
+    end
 end)
 

@@ -5,8 +5,8 @@ exports('GetZancudoGatesObject', function()
 end)
 
 ZancudoGates = {
-    Gates       = {
-        Open  = function()
+    Gates = {
+        Open = function()
             EnableIpl("CS3_07_MPGates", false)
         end,
         Close = function()
