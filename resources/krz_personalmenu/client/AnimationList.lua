@@ -1453,6 +1453,7 @@ DP.Emotes      = {
     ["cop"]           = { "Scenario", "WORLD_HUMAN_COP_IDLES", "Cop" },
     ["copbeacon"]     = { "MaleScenario", "WORLD_HUMAN_CAR_PARK_ATTENDANT", "Cop Beacon" },
     ["filmshocking"]  = { "Scenario", "WORLD_HUMAN_MOBILE_FILM_SHOCKING", "Film Shocking" },
+    ["fish"]          = { "Scenario", "WORLD_HUMAN_STAND_FISHING", "Fish" },
     ["flex"]          = { "Scenario", "WORLD_HUMAN_MUSCLE_FLEX", "Flex" },
     ["guard"]         = { "Scenario", "WORLD_HUMAN_GUARD_STAND", "Guard" },
     ["hammer"]        = { "Scenario", "WORLD_HUMAN_HAMMERING", "Hammer" },
