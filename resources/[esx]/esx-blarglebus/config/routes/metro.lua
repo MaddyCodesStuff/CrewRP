@@ -39,8 +39,8 @@ MetroRoute = {
     FirstSeat           = 1,
     -- SpawnPoint = {x = 303.1034, y = -1208.9884, z = 29.4169, heading = 356.02},
     SpawnPoint          = { x = 267.72, y = -1216.49, z = 29.35, heading = 269.17 },
-    Payment             = 500,
-    PaymentPerPassenger = 5,
+    Payment             = 1000,
+    PaymentPerPassenger = 10,
     Lines               = {
         {
             Name     = 'metro_yellow',

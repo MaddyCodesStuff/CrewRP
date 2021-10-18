@@ -243,7 +243,7 @@ AddEventHandler('esx_ambulancejob:giveItem', function(itemName)
 		TriggerClientEvent('esx:showNotification', source, 'You Do Not Have a Key for The Drug Locker')
 		print(('esx_ambulancejob: %s attempted to spawn in an item!'):format(xPlayer.identifier))
 		return
-	elseif (itemName ~= 'bodyarmor_3' and itemName ~= 'tylenol' and itemName ~= 'scuba' and itemName ~= 'medikit' and itemName ~= 'bandage' and itemName ~= 'gauze' and itemName ~= 'firstaid' and itemName ~= 'morphine' and itemName ~= 'vicodin' and itemName ~= 'hydrocodone' and itemName ~= 'medkit' and itemName ~= 'wheelchair') then
+	elseif (itemName ~= 'bodyarmor_3' and itemName ~= 'tylenol' and itemName ~= 'scuba' and itemName ~= 'medikit' and itemName ~= 'bandage' and itemName ~= 'gauze' and itemName ~= 'firstaid' and itemName ~= 'morphine' and itemName ~= 'vicodin' and itemName ~= 'hydrocodone' and itemName ~= 'medkit' and itemName ~= 'gurney') then
 		print(('esx_ambulancejob: %s attempted to spawn in an item!'):format(xPlayer.identifier))
 		return
 	end

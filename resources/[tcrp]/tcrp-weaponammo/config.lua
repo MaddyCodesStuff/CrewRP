@@ -2,7 +2,7 @@ Config = {
     ammo_type = {
         ammo_pistol  = {
             weapon_type = 416676503,
-            qty         = 20
+            qty         = 50
         },
         ammo_smg     = {
             weapon_type = -957766203,
@@ -20,9 +20,18 @@ Config = {
             weapon_type = 970310034,
             qty         = 50
         },
+        ammo_taser  = {
+            weapon_type = -2090859502,
+            qty         = 1
+        },
+        ammo_machinegun  = {
+            weapon_type = 1159398588,
+            qty         = 50
+        },
         ammo_shotgun = {
             weapon_type = 860033945,
             qty         = 25
         }
+        
     }
 }

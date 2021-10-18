@@ -19,6 +19,11 @@ AddEventHandler('pma-voice:settingsCallback', function(cb)
 	cb(Cfg)
 end)
 
+AddEventHandler('playerSpawned', function()
+    TriggerEvent('chat:addSuggestion', '/vol', '/vol # radio to change radio volume, /vol # phone to change phone volume.', {
+    })
+end)
+
 -- TODO: Better implementation of this?
 RegisterCommand('vol', function(_, args)
 	if not args[1] then return end
@@ -50,6 +55,7 @@ function setVolume(volume, volumeType)
 		for types, vol in pairs(volumes) do
 			volumes[types] = volume
 			plyState:set(types, volume, GetConvarInt('voice_syncData',1) == 1)
+			TriggerEvent('tcrphud:setRadioVolume', volume)
 		end
 	end
 end

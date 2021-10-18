@@ -117,7 +117,7 @@
           <DropForwardVelocity value="0.000000" />
           <Speed value="2000.000000" />
           <BulletsInBatch value="24" />
-          <BatchSpread value="0.150000" />
+          <BatchSpread value="0.120000" />
           <ReloadTimeMP value="-1.000000" />
           <ReloadTimeSP value="-1.000000" />
           <VehicleReloadTime value="1.000000" />

@@ -82,6 +82,7 @@ Config.marijuana = {
     {type = "grinder", label = "Grinder"},
     {type = "razer", label = "Razer Blade"},
     {type = "pipe_weed", label = "Bong"},
+    {type = "marijuana_eighth", label = "Eighth Ounce of Marijuana"},
 }
 
 --Recipes
@@ -232,8 +233,8 @@ Config.Recipes = {
 		{ item = "vicodin", quantity = 1 }
     },
 	grinder = {
-        { item = "metal", quantity = 12 },
-        { item = "clay", quantity = 8 }
+        { item = "metal", quantity = 2 },
+        { item = "clay", quantity = 2 }
     },
 	razer = {
         { item = "metal", quantity = 5 },
@@ -249,7 +250,7 @@ Config.Recipes = {
     },
 	pipe_weed = {
         { item = "blowtorch", quantity = 1 },
-        { item = "clay", quantity = 13 }
+        { item = "clay", quantity = 10 }
     },
     bandage = {
         {item = "fabric", quantity = 1 },
@@ -301,8 +302,8 @@ Config.Recipes = {
         {item = "plastic", quantity = 30 }
     },
     weapon_vintagepistol = {
-        {item = "iron", quantity = 50 },
-        {item = "metal", quantity = 60 },
+        {item = "iron", quantity = 42 },
+        {item = "metal", quantity = 50 },
         {item = "plastic", quantity = 40 }
     },
     weapon_pistol_mk2 = {
@@ -338,10 +339,14 @@ Config.Recipes = {
     },
     joint = {
         {item = "grinder", quantity = 1},
-        {item = "marijuana_eighth", quantity = 1}
+        {item = "marijuana_eighth", quantity = 1},
+        {item = "rolling_paper", quantity = 1}
     },
     rolling_paper = {
         {item = "wool", quantity = 1},
+    },
+    marijuana_eighth = {
+        {item = "marijuana", quantity = 3},
     },
 }
 

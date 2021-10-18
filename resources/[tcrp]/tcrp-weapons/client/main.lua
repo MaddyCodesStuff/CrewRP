@@ -14,7 +14,7 @@ function isBeltWeapon(weapon)
         if gun == weapon then
             return true
         end
-    end
+    end 
     return false
 end
 
@@ -116,7 +116,7 @@ Citizen.CreateThread(function()
                     
 
                     if isBeltWeapon(weapon) then
-                        if weapon == GetHashKey('WEAPON_DOUBLEACTION') then
+                        if weapon == GetHashKey('WEAPON_DOUBLEACTION') or GetHashKey('WEAPON_PDREVOLVER') then
                             Citizen.Wait(700)
                         end
                         ClearPedTasks(ped)
@@ -189,4 +189,40 @@ Citizen.CreateThread(function()
         SetWeaponDamageModifierThisFrame(GetHashKey(k), v)
         Citizen.Wait(0)
     end
+end)
+
+function SetWeaponDrops()
+	local handle, ped = FindFirstPed()
+	local finished = false
+
+	repeat
+		if not IsEntityDead(ped) then
+			SetPedDropsWeaponsWhenDead(ped, false)
+		end
+		finished, ped = FindNextPed(handle)
+	until not finished
+
+	EndFindPed(handle)
+end
+
+Citizen.CreateThread(function()
+	while true do
+		Citizen.Wait(1000)
+		SetWeaponDrops()
+	end
+end)
+
+Citizen.CreateThread(function()
+	while true do
+		Citizen.Wait(5)
+		local ped = PlayerPedId()
+        local hasWeapon, weapon = GetCurrentPedWeapon(ped)
+        if hasWeapon then
+            if weapon == GetHashKey("WEAPON_PDRIFLE") or GetHashKey("WEAPON_HEAVYRIFLE") or GetHashKey("WEAPON_MILITIARIFLE") then
+		        if IsPedInCover(ped, 1) and not IsPedAimingFromCover(ped, 1) then 
+                    DisablePlayerFiring(ped, true)
+		        end		
+            end
+        end
+	end
 end)

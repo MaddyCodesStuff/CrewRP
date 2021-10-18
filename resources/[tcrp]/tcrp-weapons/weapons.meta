@@ -2820,7 +2820,7 @@
           <AttachPoints />
           <GunFeedBone />
           <TargetSequenceGroup />
-          <WeaponFlags>AllowMeleeBlock CarriedInHand ArmourPenetrating CanLockonOnFoot CanLockonInVehicle MeleeClub UsableOnFoot UsableUnderwater UsableClimbing UsableInCover DoesRevivableDamage AllowCloseQuarterKills HasLowCoverSwaps NoWheelStats DangerousLookingMeleeWeapon QuitTransitionToIdleIntroOnWeaponChange DisableLeftHandIkWhenOnFoot UseFPSAimIK UseFPSSecondaryMotion UseFPSSecondaryMotion</WeaponFlags>
+          <WeaponFlags>AllowMeleeBlock CarriedInHand ArmourPenetrating CanLockonOnFoot CanLockonInVehicle MeleeBlade UsableOnFoot UsableUnderwater UsableClimbing UsableInCover DoesRevivableDamage AllowCloseQuarterKills HasLowCoverSwaps NoWheelStats DangerousLookingMeleeWeapon QuitTransitionToIdleIntroOnWeaponChange DisableLeftHandIkWhenOnFoot UseFPSAimIK UseFPSSecondaryMotion UseFPSSecondaryMotion</WeaponFlags>
           <TintSpecValues ref="TINT_DEFAULT" />
           <FiringPatternAliases ref="NULL" />
           <ReloadUpperBodyFixupExpressionData ref="default" />
@@ -4219,7 +4219,7 @@
           </AttachPoints>
           <GunFeedBone />
           <TargetSequenceGroup>PISTOL</TargetSequenceGroup>
-          <WeaponFlags>CarriedInHand Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim AnimReload AnimCrouchFire UsableOnFoot UsableClimbing UsableInCover AllowCloseQuarterKills HasLowCoverReloads HasLowCoverSwaps QuitTransitionToIdleIntroOnWeaponChange DisableLeftHandIkWhenOnFoot TorsoIKForWeaponBlock UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
+          <WeaponFlags>CarriedInHand Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim AnimReload AnimCrouchFire UsableOnFoot UsableClimbing UsableInCover  HasLowCoverReloads HasLowCoverSwaps QuitTransitionToIdleIntroOnWeaponChange DisableLeftHandIkWhenOnFoot TorsoIKForWeaponBlock UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
           <TintSpecValues ref="TINT_DEFAULT" />
           <FiringPatternAliases ref="FIRING_PATTERN_PISTOL" />
           <ReloadUpperBodyFixupExpressionData ref="default" />
@@ -4512,7 +4512,7 @@
           </AttachPoints>
           <GunFeedBone />
           <TargetSequenceGroup />
-          <WeaponFlags>CarriedInHand Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim AnimReload AnimCrouchFire UsableOnFoot UsableClimbing UsableInCover AllowCloseQuarterKills HasLowCoverReloads HasLowCoverSwaps QuitTransitionToIdleIntroOnWeaponChange DisableLeftHandIkWhenOnFoot TorsoIKForWeaponBlock UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
+          <WeaponFlags>CarriedInHand Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim AnimReload AnimCrouchFire UsableOnFoot UsableClimbing UsableInCover  HasLowCoverReloads HasLowCoverSwaps QuitTransitionToIdleIntroOnWeaponChange DisableLeftHandIkWhenOnFoot TorsoIKForWeaponBlock UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
           <TintSpecValues ref="TINT_DEFAULT" />
           <FiringPatternAliases ref="FIRING_PATTERN_PISTOL" />
           <ReloadUpperBodyFixupExpressionData ref="default" />
@@ -4805,7 +4805,7 @@
           </AttachPoints>
           <GunFeedBone />
           <TargetSequenceGroup />
-          <WeaponFlags>CarriedInHand Automatic Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim AnimReload AnimCrouchFire UsableOnFoot UsableClimbing UsableInCover AllowEarlyExitFromFireAnimAfterBulletFired AllowCloseQuarterKills HasLowCoverReloads HasLowCoverSwaps QuitTransitionToIdleIntroOnWeaponChange DisableLeftHandIkWhenOnFoot TorsoIKForWeaponBlock UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
+          <WeaponFlags>CarriedInHand Automatic Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim AnimReload AnimCrouchFire UsableOnFoot UsableClimbing UsableInCover AllowEarlyExitFromFireAnimAfterBulletFired  HasLowCoverReloads HasLowCoverSwaps QuitTransitionToIdleIntroOnWeaponChange DisableLeftHandIkWhenOnFoot TorsoIKForWeaponBlock UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
           <TintSpecValues ref="TINT_DEFAULT" />
           <FiringPatternAliases ref="FIRING_PATTERN_PISTOL" />
           <ReloadUpperBodyFixupExpressionData ref="default" />
@@ -5098,7 +5098,7 @@
           </AttachPoints>
           <GunFeedBone />
           <TargetSequenceGroup />
-          <WeaponFlags>CarriedInHand Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim AnimReload AnimCrouchFire UsableOnFoot UsableClimbing UsableInCover AllowCloseQuarterKills HasLowCoverReloads HasLowCoverSwaps QuitTransitionToIdleIntroOnWeaponChange DisableLeftHandIkWhenOnFoot TorsoIKForWeaponBlock UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
+          <WeaponFlags>CarriedInHand Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim AnimReload AnimCrouchFire UsableOnFoot UsableClimbing UsableInCover  HasLowCoverReloads HasLowCoverSwaps QuitTransitionToIdleIntroOnWeaponChange DisableLeftHandIkWhenOnFoot TorsoIKForWeaponBlock UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
           <TintSpecValues ref="TINT_DEFAULT" />
           <FiringPatternAliases ref="FIRING_PATTERN_PISTOL" />
           <ReloadUpperBodyFixupExpressionData ref="default" />
@@ -5401,7 +5401,7 @@
           </AttachPoints>
           <GunFeedBone />
           <TargetSequenceGroup />
-          <WeaponFlags>CarriedInHand Automatic Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim AnimReload AnimCrouchFire TreatAsOneHandedInCover UsableOnFoot UsableInCover AllowEarlyExitFromFireAnimAfterBulletFired NoLeftHandIKWhenBlocked AllowCloseQuarterKills HasLowCoverReloads HasLowCoverSwaps UseLeftHandIkWhenAiming QuitTransitionToIdleIntroOnWeaponChange DisableLeftHandIkWhenOnFoot UseFPSAimIK UseFPSSecondaryMotion UseAlternateFPDrivebyClipset FPSOnlyExitFireAnimAfterRecoilEnds</WeaponFlags>
+          <WeaponFlags>CarriedInHand Automatic Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim AnimReload AnimCrouchFire TreatAsOneHandedInCover UsableOnFoot UsableInCover AllowEarlyExitFromFireAnimAfterBulletFired NoLeftHandIKWhenBlocked  HasLowCoverReloads HasLowCoverSwaps UseLeftHandIkWhenAiming QuitTransitionToIdleIntroOnWeaponChange DisableLeftHandIkWhenOnFoot UseFPSAimIK UseFPSSecondaryMotion UseAlternateFPDrivebyClipset FPSOnlyExitFireAnimAfterRecoilEnds</WeaponFlags>
           <TintSpecValues ref="TINT_DEFAULT" />
           <FiringPatternAliases ref="FIRING_PATTERN_SMG" />
           <ReloadUpperBodyFixupExpressionData ref="default" />
@@ -5704,7 +5704,7 @@
           </AttachPoints>
           <GunFeedBone />
           <TargetSequenceGroup />
-          <WeaponFlags>CarriedInHand Automatic Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover AllowEarlyExitFromFireAnimAfterBulletFired AllowCloseQuarterKills HasLowCoverReloads HasLowCoverSwaps TorsoIKForWeaponBlock UseFPSAimIK UseFPSSecondaryMotion FPSOnlyExitFireAnimAfterRecoilEnds</WeaponFlags>
+          <WeaponFlags>CarriedInHand Automatic Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover AllowEarlyExitFromFireAnimAfterBulletFired  HasLowCoverReloads HasLowCoverSwaps TorsoIKForWeaponBlock UseFPSAimIK UseFPSSecondaryMotion FPSOnlyExitFireAnimAfterRecoilEnds</WeaponFlags>
           <TintSpecValues ref="TINT_DEFAULT" />
           <FiringPatternAliases ref="FIRING_PATTERN_SMG" />
           <ReloadUpperBodyFixupExpressionData ref="default" />
@@ -6007,7 +6007,7 @@
           </AttachPoints>
           <GunFeedBone />
           <TargetSequenceGroup />
-          <WeaponFlags>CarriedInHand Automatic Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover AllowEarlyExitFromFireAnimAfterBulletFired AllowCloseQuarterKills HasLowCoverReloads HasLowCoverSwaps UseLeftHandIkWhenAiming TorsoIKForWeaponBlock UseFPSAimIK UseFPSSecondaryMotion FPSOnlyExitFireAnimAfterRecoilEnds</WeaponFlags>
+          <WeaponFlags>CarriedInHand Automatic Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover AllowEarlyExitFromFireAnimAfterBulletFired HasLowCoverReloads HasLowCoverSwaps UseLeftHandIkWhenAiming TorsoIKForWeaponBlock UseFPSAimIK UseFPSSecondaryMotion FPSOnlyExitFireAnimAfterRecoilEnds</WeaponFlags>
           <TintSpecValues ref="TINT_DEFAULT" />
           <FiringPatternAliases ref="FIRING_PATTERN_SMG" />
           <ReloadUpperBodyFixupExpressionData ref="default" />
@@ -6319,7 +6319,7 @@
           </AttachPoints>
           <GunFeedBone />
           <TargetSequenceGroup />
-          <WeaponFlags>CarriedInHand Automatic Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover AllowEarlyExitFromFireAnimAfterBulletFired NoLeftHandIKWhenBlocked AllowCloseQuarterKills HasLowCoverReloads HasLowCoverSwaps TorsoIKForWeaponBlock LongWeapon UseFPSAimIK UseFPSSecondaryMotion FPSOnlyExitFireAnimAfterRecoilEnds</WeaponFlags>
+          <WeaponFlags>CarriedInHand Automatic Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover AllowEarlyExitFromFireAnimAfterBulletFired NoLeftHandIKWhenBlocked  HasLowCoverReloads HasLowCoverSwaps TorsoIKForWeaponBlock LongWeapon UseFPSAimIK UseFPSSecondaryMotion FPSOnlyExitFireAnimAfterRecoilEnds</WeaponFlags>
           <TintSpecValues ref="TINT_DEFAULT" />
           <FiringPatternAliases ref="FIRING_PATTERN_RIFLE" />
           <ReloadUpperBodyFixupExpressionData ref="default" />
@@ -6635,7 +6635,7 @@
           </AttachPoints>
           <GunFeedBone />
           <TargetSequenceGroup />
-          <WeaponFlags>CarriedInHand Automatic Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover AllowEarlyExitFromFireAnimAfterBulletFired NoLeftHandIKWhenBlocked AllowCloseQuarterKills HasLowCoverReloads HasLowCoverSwaps LongWeapon UseFPSAimIK UseFPSSecondaryMotion FPSOnlyExitFireAnimAfterRecoilEnds</WeaponFlags>
+          <WeaponFlags>CarriedInHand Automatic Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover AllowEarlyExitFromFireAnimAfterBulletFired NoLeftHandIKWhenBlocked  HasLowCoverReloads HasLowCoverSwaps LongWeapon UseFPSAimIK UseFPSSecondaryMotion FPSOnlyExitFireAnimAfterRecoilEnds</WeaponFlags>
           <TintSpecValues ref="TINT_DEFAULT" />
           <FiringPatternAliases ref="FIRING_PATTERN_RIFLE" />
           <ReloadUpperBodyFixupExpressionData ref="default" />
@@ -6938,7 +6938,7 @@
           </AttachPoints>
           <GunFeedBone />
           <TargetSequenceGroup />
-          <WeaponFlags>CarriedInHand Automatic Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover AllowEarlyExitFromFireAnimAfterBulletFired NoLeftHandIKWhenBlocked AllowCloseQuarterKills HasLowCoverReloads HasLowCoverSwaps TorsoIKForWeaponBlock UseFPSAimIK UseFPSSecondaryMotion FPSOnlyExitFireAnimAfterRecoilEnds</WeaponFlags>
+          <WeaponFlags>CarriedInHand Automatic Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover AllowEarlyExitFromFireAnimAfterBulletFired NoLeftHandIKWhenBlocked  HasLowCoverReloads HasLowCoverSwaps TorsoIKForWeaponBlock UseFPSAimIK UseFPSSecondaryMotion FPSOnlyExitFireAnimAfterRecoilEnds</WeaponFlags>
           <TintSpecValues ref="TINT_DEFAULT" />
           <FiringPatternAliases ref="FIRING_PATTERN_RIFLE" />
           <ReloadUpperBodyFixupExpressionData ref="default" />
@@ -7223,7 +7223,7 @@
           </AttachPoints>
           <GunFeedBone>Gun_Feed</GunFeedBone>
           <TargetSequenceGroup />
-          <WeaponFlags>CarriedInHand Automatic Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover AllowEarlyExitFromFireAnimAfterBulletFired NoLeftHandIKWhenBlocked AllowCloseQuarterKills HasLowCoverReloads HasLowCoverSwaps LongWeapon UseFPSAimIK UseFPSSecondaryMotion FPSOnlyExitFireAnimAfterRecoilEnds</WeaponFlags>
+          <WeaponFlags>CarriedInHand Automatic Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover AllowEarlyExitFromFireAnimAfterBulletFired NoLeftHandIKWhenBlocked  HasLowCoverReloads HasLowCoverSwaps LongWeapon UseFPSAimIK UseFPSSecondaryMotion FPSOnlyExitFireAnimAfterRecoilEnds</WeaponFlags>
           <TintSpecValues ref="TINT_DEFAULT" />
           <FiringPatternAliases ref="FIRING_PATTERN_MG" />
           <ReloadUpperBodyFixupExpressionData ref="default" />
@@ -7517,7 +7517,7 @@
           </AttachPoints>
           <GunFeedBone>Gun_Feed</GunFeedBone>
           <TargetSequenceGroup />
-          <WeaponFlags>CarriedInHand Automatic Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover AllowEarlyExitFromFireAnimAfterBulletFired NoLeftHandIKWhenBlocked AllowCloseQuarterKills HasLowCoverReloads HasLowCoverSwaps LongWeapon UseFPSAimIK UseFPSSecondaryMotion FPSOnlyExitFireAnimAfterRecoilEnds</WeaponFlags>
+          <WeaponFlags>CarriedInHand Automatic Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover AllowEarlyExitFromFireAnimAfterBulletFired NoLeftHandIKWhenBlocked  HasLowCoverReloads HasLowCoverSwaps LongWeapon UseFPSAimIK UseFPSSecondaryMotion FPSOnlyExitFireAnimAfterRecoilEnds</WeaponFlags>
           <TintSpecValues ref="TINT_DEFAULT" />
           <FiringPatternAliases ref="FIRING_PATTERN_MG" />
           <ReloadUpperBodyFixupExpressionData ref="default" />
@@ -7617,7 +7617,7 @@
           <DropForwardVelocity value="0.000000" />
           <Speed value="2000.000000" />
           <BulletsInBatch value="8" />
-          <BatchSpread value="0.050000" />
+          <BatchSpread value="0.030000" />
           <ReloadTimeMP value="-1.000000" />
           <ReloadTimeSP value="-1.000000" />
           <VehicleReloadTime value="1.000000" />
@@ -7791,7 +7791,7 @@
           </AttachPoints>
           <GunFeedBone />
           <TargetSequenceGroup />
-          <WeaponFlags>CarriedInHand ApplyBulletForce Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover NoLeftHandIKWhenBlocked AllowCloseQuarterKills NeedsGunCockingInCover HasLowCoverReloads HasLowCoverSwaps ProcessGripAnim TorsoIKForWeaponBlock LongWeapon UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
+          <WeaponFlags>CarriedInHand ApplyBulletForce Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover NoLeftHandIKWhenBlocked  NeedsGunCockingInCover HasLowCoverReloads HasLowCoverSwaps ProcessGripAnim TorsoIKForWeaponBlock LongWeapon UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
           <TintSpecValues ref="TINT_DEFAULT" />
           <FiringPatternAliases ref="FIRING_PATTERN_PUMPSHOTGUN" />
           <ReloadUpperBodyFixupExpressionData ref="default" />
@@ -7891,7 +7891,7 @@
           <DropForwardVelocity value="0.000000" />
           <Speed value="2000.000000" />
           <BulletsInBatch value="24" />
-          <BatchSpread value="0.10000" />
+          <BatchSpread value="0.06000" />
           <ReloadTimeMP value="-1.000000" />
           <ReloadTimeSP value="-1.000000" />
           <VehicleReloadTime value="1.500000" />
@@ -8047,7 +8047,7 @@
           </AttachPoints>
           <GunFeedBone />
           <TargetSequenceGroup />
-          <WeaponFlags>CarriedInHand ApplyBulletForce Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover NoLeftHandIKWhenBlocked AllowCloseQuarterKills NeedsGunCockingInCover HasLowCoverReloads HasLowCoverSwaps ProcessGripAnim UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
+          <WeaponFlags>CarriedInHand ApplyBulletForce Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover NoLeftHandIKWhenBlocked NeedsGunCockingInCover HasLowCoverReloads HasLowCoverSwaps ProcessGripAnim UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
           <TintSpecValues ref="TINT_DEFAULT" />
           <FiringPatternAliases ref="FIRING_PATTERN_PUMPSHOTGUN" />
           <ReloadUpperBodyFixupExpressionData ref="default" />
@@ -8334,7 +8334,7 @@
           </AttachPoints>
           <GunFeedBone />
           <TargetSequenceGroup />
-          <WeaponFlags>CarriedInHand ApplyBulletForce Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover AllowEarlyExitFromFireAnimAfterBulletFired NoLeftHandIKWhenBlocked AllowCloseQuarterKills HasLowCoverReloads HasLowCoverSwaps LongWeapon UseFPSAimIK UseFPSSecondaryMotion FPSOnlyExitFireAnimAfterRecoilEnds</WeaponFlags>
+          <WeaponFlags>CarriedInHand ApplyBulletForce Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover AllowEarlyExitFromFireAnimAfterBulletFired NoLeftHandIKWhenBlocked  HasLowCoverReloads HasLowCoverSwaps LongWeapon UseFPSAimIK UseFPSSecondaryMotion FPSOnlyExitFireAnimAfterRecoilEnds</WeaponFlags>
           <TintSpecValues ref="TINT_DEFAULT" />
           <FiringPatternAliases ref="NULL" />
           <ReloadUpperBodyFixupExpressionData ref="default" />
@@ -8434,7 +8434,7 @@
           <DropForwardVelocity value="0.000000" />
           <Speed value="2000.000000" />
           <BulletsInBatch value="8" />
-          <BatchSpread value="0.080000" />
+          <BatchSpread value="0.050000" />
           <ReloadTimeMP value="-1.000000" />
           <ReloadTimeSP value="-1.000000" />
           <VehicleReloadTime value="2.000000" />
@@ -8615,7 +8615,7 @@
           </AttachPoints>
           <GunFeedBone />
           <TargetSequenceGroup />
-          <WeaponFlags>CarriedInHand ApplyBulletForce Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover NoLeftHandIKWhenBlocked AllowCloseQuarterKills NeedsGunCockingInCover HasLowCoverReloads HasLowCoverSwaps LongWeapon UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
+          <WeaponFlags>CarriedInHand ApplyBulletForce Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover NoLeftHandIKWhenBlocked  NeedsGunCockingInCover HasLowCoverReloads HasLowCoverSwaps LongWeapon UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
           <TintSpecValues ref="TINT_DEFAULT" />
           <FiringPatternAliases ref="NULL" />
           <ReloadUpperBodyFixupExpressionData ref="default" />
@@ -8637,10 +8637,10 @@
           <HudRange value="20" />
         </Item>
         <Item type="CWeaponInfo">
-          <Name>WEAPON_STUNGUN</Name>
-          <Model>w_pi_stungun</Model>
+          <Name>WEAPON_INVALID</Name>
+          <Model>INALD</Model>
           <Audio>AUDIO_ITEM_STUNGUN</Audio>
-          <Slot>SLOT_STUNGUN</Slot>
+          <Slot></Slot>
           <DamageType>ELECTRIC</DamageType>
           <Explosion>
             <Default>DONTCARE</Default>
@@ -8901,9 +8901,9 @@
           <DamageTime value="0.000000" />
           <DamageTimeInVehicle value="0.000000" />
           <DamageTimeInVehicleHeadShot value="0.000000" />
-          <HitLimbsDamageModifier value="0.500000" />
-          <NetworkHitLimbsDamageModifier value="0.500000" />
-          <LightlyArmouredDamageModifier value="0.750000" />
+          <HitLimbsDamageModifier value="1.000000" />
+          <NetworkHitLimbsDamageModifier value="1.000000" />
+          <LightlyArmouredDamageModifier value="1.000000" />
           <Force value="100.000000" />
           <ForceHitPed value="100.000000" />
           <ForceHitVehicle value="100.000000" />
@@ -9162,9 +9162,9 @@
           <DamageTime value="0.000000" />
           <DamageTimeInVehicle value="0.000000" />
           <DamageTimeInVehicleHeadShot value="0.000000" />
-          <HitLimbsDamageModifier value="0.500000" />
-          <NetworkHitLimbsDamageModifier value="0.500000" />
-          <LightlyArmouredDamageModifier value="0.750000" />
+          <HitLimbsDamageModifier value="1.000000" />
+          <NetworkHitLimbsDamageModifier value="1.000000" />
+          <LightlyArmouredDamageModifier value="1.000000" />
           <Force value="500.000000" />
           <ForceHitPed value="500.000000" />
           <ForceHitVehicle value="500.000000" />
@@ -9828,7 +9828,7 @@
           </AttachPoints>
           <GunFeedBone />
           <TargetSequenceGroup />
-          <WeaponFlags>CarriedInHand Gun CanFreeAim TwoHanded Launched AnimReload AnimCrouchFire UsableOnFoot UsableInCover Scary AllowCloseQuarterKills HasLowCoverReloads HasLowCoverSwaps DelayedFiringAfterAutoSwap DisableStealth UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
+          <WeaponFlags>CarriedInHand Gun CanFreeAim TwoHanded Launched AnimReload AnimCrouchFire UsableOnFoot UsableInCover Scary  HasLowCoverReloads HasLowCoverSwaps DelayedFiringAfterAutoSwap DisableStealth UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
           <TintSpecValues ref="TINT_DEFAULT" />
           <FiringPatternAliases ref="NULL" />
           <ReloadUpperBodyFixupExpressionData ref="default" />
@@ -10089,7 +10089,7 @@
           </AttachPoints>
           <GunFeedBone />
           <TargetSequenceGroup />
-          <WeaponFlags>CarriedInHand Silenced ArmourPenetrating Gun CanFreeAim TwoHanded Launched AnimReload AnimCrouchFire UsableOnFoot UsableInCover Scary AllowCloseQuarterKills HasLowCoverReloads HasLowCoverSwaps DelayedFiringAfterAutoSwap DisableStealth UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
+          <WeaponFlags>CarriedInHand Silenced ArmourPenetrating Gun CanFreeAim TwoHanded Launched AnimReload AnimCrouchFire UsableOnFoot UsableInCover Scary  HasLowCoverReloads HasLowCoverSwaps DelayedFiringAfterAutoSwap DisableStealth UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
           <TintSpecValues ref="TINT_DEFAULT" />
           <FiringPatternAliases ref="NULL" />
           <ReloadUpperBodyFixupExpressionData ref="default" />

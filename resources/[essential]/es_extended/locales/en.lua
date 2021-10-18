@@ -109,7 +109,7 @@ Locales['en'] = {
 	['weapon_sawnoffshotgun']        = 'sawed off shotgun',
 	['weapon_assaultshotgun']        = 'assault shotgun',
 	['weapon_bullpupshotgun']        = 'bullpup shotgun',
-	['weapon_stungun']               = 'taser',
+	['weapon_taser2']                = 'taser',
 	['weapon_sniperrifle']           = 'sniper rifle',
 	['weapon_heavysniper']           = 'heavy sniper',
 	['weapon_grenadelauncher']       = 'grenade launcher',
@@ -176,6 +176,7 @@ Locales['en'] = {
 	['weapon_breach']          	 	 = 'breach Hammer',
 	['weapon_broom']          		 = 'broom',
 	['weapon_cleaver']          	 = 'cleaver',
+	['weapon_crutch']          	 	 = 'crutch',
 	['weapon_unicorn']          	 = 'unicorn',
 	['weapon_icicle']          	 	 = 'icicle',
 	['weapon_fire_axe']          	 = 'fire axe',
@@ -195,6 +196,17 @@ Locales['en'] = {
 	['weapon_rifle2']           	 = 'rifle',
 	['weapon_militia']           	 = 'militia rifle',
 	['weapon_heavyrifle']            = 'heavy rifle',
+	['weapon_pdpistol']            	 = 'police pistol',
+	['weapon_pdcarbine']             = 'police carbine',
+	['weapon_pdshotgun']             = 'police shotgun',
+	['weapon_pdsmg']             	 = 'police smg',
+	['weapon_pdrevolver']            = 'police revolver',
+	['weapon_pdrifle']            	 = 'police rifle',
+
+
+
+
+
 
 	-- Weapon Components
 	['component_clip_default']       = 'default Grip',

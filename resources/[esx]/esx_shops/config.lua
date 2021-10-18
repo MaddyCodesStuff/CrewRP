@@ -43,16 +43,16 @@ AMMUNATION_GADGET_ITEMS = {
         item             = 'ammo_pistol',
         price            = 350,
         limit            = 5,
-        license_required = 'hunting',
+        license_required = 'weapon',
     },
-    {
-        label            = 'Hunting Rifle',
-        label_real       = 'Hunting Rifle',
-        item             = 'weapon_rifle',
-        price            = 2500,
-        limit            = 1,
-        license_required = 'hunting',
-    },
+    --{
+    --    label            = 'Hunting Rifle',
+    --    label_real       = 'Hunting Rifle',
+    --    item             = 'weapon_rifle',
+    --    price            = 2500,
+    --    limit            = 1,
+    --    license_required = 'hunting',
+    --},
     --{
     --    label            = 'Registered Pistol',
     --    label_real       = 'Registered Pistol',
@@ -537,7 +537,7 @@ Config.Zones            = {
         },
         job       = 'mecano',
     },
-    LifeInvader          = {
+    WeazelNews          = {
         Items     = {
             {
                 label      = 'News Camera',
@@ -566,7 +566,7 @@ Config.Zones            = {
         BlipColor = 27,
         Blip      = 0,
         Pos       = {
-            { x = -1044.339, y = -235.712, z = 37.1 },
+            { x = -592.42, y = -935.07, z = 22.89 },
         },
         job       = 'journalist'
 

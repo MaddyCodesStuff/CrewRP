@@ -497,150 +497,13 @@ function OpenPoliceActionsMenu()
 		{ label = 'Clock Off', value = 'mobile_clockinoff' },
 	}
 
-	if (exports['esx-radios'].isDedicatedDispatch()) then
-		table.insert(menuElements, { label = "EMS Radio", value = 'ems_radio_menu' })
-		table.insert(menuElements, { label = "FD Radio", value = 'fd_radio_menu' })
-		table.insert(menuElements, { label = "DOC Radio", value = 'doc_radio_menu' })
-	end
-
 	ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'police_actions',
 					 {
 						 title    = 'Police',
 						 align    = 'top-right',
 						 elements = menuElements
 					 }, function(data, menu)
-
-			if data.current.value == 'mutual_aid_menu' then
-				local elements = {
-					{ label = "Mutual Aid 1", value = 'mutual_aid_1' },
-					{ label = "Mutual Aid 2", value = 'mutual_aid_2' },
-					{ label = "Mutual Aid 3", value = 'mutual_aid_3' },
-					{ label = "Mutual Aid 4", value = 'mutual_aid_4' },
-				}
-
-				ESX.UI.Menu.Open(
-					'default', GetCurrentResourceName(), 'mutual_aid_menu',
-					{
-						title    = "Mutual Aid",
-						align    = 'top-right',
-						elements = elements
-					}, function(data2, menu2)
-						TriggerEvent("esx-radios:toggleRadioByName", data2.current.value)
-					end, function(_, menu2)
-						menu2.close()
-					end)
-			end
-
-			if data.current.value == 'pd_radio_menu' then
-
-				ESX.UI.Menu.Open(
-					'default', GetCurrentResourceName(), 'pd_radio_menu',
-					{
-						title    = "PD Radio",
-						align    = 'top-right',
-						elements = elements
-					}, function(data2, menu2)
-						TriggerEvent("esx-radios:toggleRadioByName", data2.current.value)
-					end, function(_, menu2)
-						menu2.close()
-					end)
-			end
-
-			if data.current.value == 'ems_radio_menu' then
-				local elements = {
-					{ label = "EMS Radio 1", value = 'ems_radio_1' },
-					{ label = "EMS Radio 2", value = 'ems_radio_2' },
-					{ label = "EMS Radio 3", value = 'ems_radio_3' },
-					{ label = "EMS Radio 4", value = 'ems_radio_4' },
-				}
-
-				ESX.UI.Menu.Open(
-					'default', GetCurrentResourceName(), 'ems_radio_menu',
-					{
-						title    = "EMS Radio",
-						align    = 'top-right',
-						elements = elements
-					}, function(data2, menu2)
-						TriggerEvent("esx-radios:toggleRadioByName", data2.current.value)
-					end, function(_, menu2)
-						menu2.close()
-					end)
-			end
-
-			if data.current.value == 'fd_radio_menu' then
-				local elements = {
-					{ label = "FD Radio 1", value = 'fd_radio_1' },
-					{ label = "FD Radio 2", value = 'fd_radio_2' },
-					{ label = "FD Radio 3", value = 'fd_radio_3' },
-					{ label = "FD Radio 4", value = 'fd_radio_4' },
-				}
-
-				ESX.UI.Menu.Open(
-					'default', GetCurrentResourceName(), 'fd_radio_menu',
-					{
-						title    = "FD Radio",
-						align    = 'top-right',
-						elements = elements
-					}, function(data2, menu2)
-						TriggerEvent("esx-radios:toggleRadioByName", data2.current.value)
-					end, function(_, menu2)
-						menu2.close()
-					end)
-			end
-
-			if data.current.value == 'doc_radio_menu' then
-				local elements = {
-					{ label = "DOC Radio 1", value = 'doc_radio_1' },
-					{ label = "DOC Radio 2", value = 'doc_radio_2' },
-					{ label = "DOC Radio 3", value = 'doc_radio_3' },
-					{ label = "DOC Radio 4", value = 'doc_radio_4' },
-				}
-
-				ESX.UI.Menu.Open(
-					'default', GetCurrentResourceName(), 'doc_radio_menu',
-					{
-						title    = "DOC Radio",
-						align    = 'top-right',
-						elements = elements
-					}, function(data2, menu2)
-						TriggerEvent("esx-radios:toggleRadioByName", data2.current.value)
-					end, function(_, menu2)
-						menu2.close()
-					end)
-			end
-
-			if data.current.value == 'dispatch_menu' then
-				local elements = {
-					{ label = "Regular Dispatch", value = 'dispatch_1' },
-					{ label = "Dedicated Dispatch", value = 'dispatch_2' },
-				}
-
-				if (exports['esx-radios'].isDedicatedDispatch()) then
-					elements = {
-						{ label = "Dedicated Dispatch", value = 'dispatch_2' },
-					}
-				end
-
-				ESX.UI.Menu.Open(
-					'default', GetCurrentResourceName(), 'dispatch_menu',
-					{
-						title    = "Dispatch",
-						align    = 'top-right',
-						elements = elements
-					}, function(data2, menu2)
-						local action = data2.current.value
-						menu2.close()
-						if action == 'dispatch_1' then
-							TriggerEvent("esx-radios:toggleRadioByName", 'dispatch')
-						elseif action == 'dispatch_2' then
-							TriggerEvent("esx-radios:toggleDedicatedDispatch");
-							menu.close()
-						end
-					end, function(data2, menu2)
-						menu2.close()
-					end)
-			end
-
+						
 			if data.current.value == 'jail_menu' then
 				local elements = {
 					{ label = "Criminal Fine", value = 'fine' },
@@ -825,7 +688,6 @@ function OpenPoliceActionsMenu()
 						elements = {
 							{ label = 'small cone', value = 'prop_roadcone02b' },
 							{ label = _U('barrier'), value = 'prop_barrier_work05' },
-							{ label = _U('spikestrips'), value = 'p_ld_stinger_s' },
 							{ label = _U('box'), value = 'prop_boxpile_07d' },
 							{ label = _U('cash'), value = 'hei_prop_cash_crate_half_full' },
 							{ label = 'Gazebo', value = 'prop_gazebo_02' },
@@ -1535,19 +1397,6 @@ AddEventHandler('esx_policejob:hasEnteredEntityZone', function(entity)
 		CurrentActionMsg  = _U('remove_prop')
 		CurrentActionData = { entity = entity }
 	end
-
-	if GetEntityModel(entity) == GetHashKey('p_ld_stinger_s') then
-		local playerPed = PlayerPedId()
-		local coords    = GetEntityCoords(playerPed)
-
-		if IsPedInAnyVehicle(playerPed, false) then
-			local vehicle = GetVehiclePedIsIn(playerPed)
-
-			for i = 0, 7, 1 do
-				SetVehicleTyreBurst(vehicle, i, true, 1000)
-			end
-		end
-	end
 end)
 
 AddEventHandler('esx_policejob:hasExitedEntityZone', function(entity)
@@ -2012,8 +1861,8 @@ Citizen.CreateThread(function()
 	local trackedEntities = {
 		'prop_roadcone02a',
 		'prop_roadcone02b',
+		'prop_flamingo',
 		'prop_barrier_work05',
-		'p_ld_stinger_s',
 		'prop_boxpile_07d',
 		'hei_prop_cash_crate_half_full',
 		'prop_gazebo_02',
@@ -2347,6 +2196,8 @@ function OpenStoreMenu()
 							 { label = 'Box of Shotgun Ammo', value = 'ammo_shotgun' },
 							 { label = 'Box of SMG Ammo', value = 'ammo_smg' },
 							 { label = 'Box of AR Ammo', value = 'ammo_ar' },
+							 { label = 'Taser Cartridge', value = 'ammo_taser' },
+							 { label = 'Spike Strips', value = 'spikestrips' },
 						 }
 					 }, function(data, menu)
 			TriggerServerEvent('esx_policejob:giveItem', data.current.value)

@@ -5,8 +5,8 @@ AirportRoute = {
     Doors               = { 2, 3 },
     FirstSeat           = 1,
     SpawnPoint          = { x = -900.79, y = -2333.05, z = 6.7090, heading = 332.0 },
-    Payment             = 500,
-    PaymentPerPassenger = 5,
+    Payment             = 1000,
+    PaymentPerPassenger = 10,
     Lines               = {
         {
             Name     = 'airport_route',

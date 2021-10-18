@@ -31,8 +31,11 @@ Config.PDMRentals = {
     {car = "monroe", price = 2500},
     {car = "voltic", price = 1000},
     {car = "hakuchou", price = 750},
-    {car = "stryder", price = 750},
+    {car = "surge", price = 750},
     {car = "kuruma", price = 2500},
+    {car = "prairie", price = 500},
+    {car = "minivan", price = 300},
+    {car = "faggio", price = 250},
 }
 
 Config.LarrysRentals = {
@@ -48,6 +51,9 @@ Config.LarrysRentals = {
     {car = "blazer", price = 300},
     {car = "manchez", price = 500},
     {car = "sanchez", price = 500},
+    {car = "bison", price = 500},
+    {car = "minivan", price = 300},
+    {car = "faggio", price = 250},
 }
 
 Config.HelmutsRentals = {
@@ -72,6 +78,8 @@ Config.LSIARentals = {
     {car = "club", price = 500},
     {car = "glendale2", price = 750},
     {car = "sandking", price = 2500},
+    {car = "minivan", price = 300},
+    {car = "faggio", price = 250},
 }
 
 Config.KartRentals = {
@@ -100,7 +108,7 @@ Config.BikeRentals = {
 }
 
 Config.MarkerZones = { 
-    --[[{--Helmut's Rentals 
+    {--Helmut's Rentals 
         Type = "car3",
         Menu = vec3(-216.24, 6211.77, 30.50),
         Spawn = vec3(-216.24, 6211.77, 30.49),
@@ -123,7 +131,7 @@ Config.MarkerZones = {
         Menu = vec3(-17.4, -1108.86, 25.68),
         Spawn = vec3(-17.4, -1108.86, 25.67),
         SpawnHeading = 166.35,
-    },--]]
+    },
     {--LSIA Plane Rentals 
         Type = "plane",
         Menu = vec3(-1061.39, -3493.22, 13.15),
@@ -144,15 +152,15 @@ Config.MarkerZones = {
     },
     {--Kart Track
         Type = "karts",
-		Menu = vec3(-170.73, -2145.09, 15.86), -- Rental Marker
-		Spawn = vec3(-166.61, -2146.29, 16.84), -- Kart Spawn Point
-		SpawnHeading = 237.17, -- Kart Heading
+		Menu = vec3(-170.73, -2145.09, 15.86), 
+		Spawn = vec3(-166.61, -2146.29, 16.84), 
+		SpawnHeading = 237.17, 
 	},
     {--Chumash
         Type = "boats",
-		Menu = vec3(-3426.7,	955.66, 7.35), -- Rental Marker
-		Spawn = vec3(-3426.2, 942.4, 1.1), -- Boat Spawn Point
-		SpawnHeading = 90.0, -- Boat Heading
+		Menu = vec3(-3426.7,	955.66, 7.35), 
+		Spawn = vec3(-3426.2, 942.4, 1.1), 
+		SpawnHeading = 90.0, 
 	},
 	{--Marina
         Type = "boats",
