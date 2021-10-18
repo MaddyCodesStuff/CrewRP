@@ -171,8 +171,8 @@ function GetMaxVals()
 		beard_2			= 10,
 		beard_3			= GetNumHairColors()-1,
 		beard_4			= GetNumHairColors()-1,
-		hair_1			= GetNumberOfPedDrawableVariations		(playerPed, 2) - 1,
-		hair_2			= GetNumberOfPedTextureVariations		(playerPed, 2, Character['hair_1']) - 1,
+		hair_1			= getPropCount(playerPed, 'hair_1'),
+		hair_2			= getPropCount(playerPed, 'hair_2'),
 		hair_color_1	= GetNumHairColors()-1,
 		hair_color_2	= GetNumHairColors()-1,
 		eye_color		= 31,
@@ -209,32 +209,32 @@ function GetMaxVals()
 		bodyb_2			= 10,
 		bodyb_3			= GetNumHeadOverlayValues(12)-1,
 		bodyb_4			= 10,
-		ears_1			= GetNumberOfPedPropDrawableVariations	(playerPed, 2) - 1,
-		ears_2			= GetNumberOfPedPropTextureVariations	(playerPed, 2, Character['ears_1'] - 1),
-		tshirt_1		= GetNumberOfPedDrawableVariations		(playerPed, 8) - 1,
-		tshirt_2		= GetNumberOfPedTextureVariations		(playerPed, 8, Character['tshirt_1']) - 1,
-		torso_1			= GetNumberOfPedDrawableVariations		(playerPed, 11) - 1,
-		torso_2			= GetNumberOfPedTextureVariations		(playerPed, 11, Character['torso_1']) - 1,
-		decals_1		= GetNumberOfPedDrawableVariations		(playerPed, 10) - 1,
-		decals_2		= GetNumberOfPedTextureVariations		(playerPed, 10, Character['decals_1']) - 1,
-		arms			= GetNumberOfPedDrawableVariations		(playerPed, 3) - 1,
+		ears_1			= getPropCount(playerPed, 'ears_1'),
+		ears_2			= getPropCount(playerPed, 'ears_2'),
+		tshirt_1		= getPropCount(playerPed, 'tshirt_1'),
+		tshirt_2		= getPropCount(playerPed, 'tshirt_2'),
+		torso_1			= getPropCount(playerPed, 'torso_1'),
+		torso_2			= getPropCount(playerPed, 'torso_2'),
+		decals_1		= getPropCount(playerPed, 'decals_1'),
+		decals_2		= getPropCount(playerPed, 'decals_2'),
+		arms			= getPropCount(playerPed, 'arms'),
 		arms_2			= 10,
-		pants_1			= GetNumberOfPedDrawableVariations		(playerPed, 4) - 1,
-		pants_2			= GetNumberOfPedTextureVariations		(playerPed, 4, Character['pants_1']) - 1,
-		shoes_1			= GetNumberOfPedDrawableVariations		(playerPed, 6) - 1,
-		shoes_2			= GetNumberOfPedTextureVariations		(playerPed, 6, Character['shoes_1']) - 1,
-		mask_1			= GetNumberOfPedDrawableVariations		(playerPed, 1) - 1,
-		mask_2			= GetNumberOfPedTextureVariations		(playerPed, 1, Character['mask_1']) - 1,
-		bproof_1		= GetNumberOfPedDrawableVariations		(playerPed, 9) - 1,
-		bproof_2		= GetNumberOfPedTextureVariations		(playerPed, 9, Character['bproof_1']) - 1,
-		chain_1			= GetNumberOfPedDrawableVariations		(playerPed, 7) - 1,
-		chain_2			= GetNumberOfPedTextureVariations		(playerPed, 7, Character['chain_1']) - 1,
-		bags_1			= GetNumberOfPedDrawableVariations		(playerPed, 5) - 1,
-		bags_2			= GetNumberOfPedTextureVariations		(playerPed, 5, Character['bags_1']) - 1,
-		helmet_1		= GetNumberOfPedPropDrawableVariations	(playerPed, 0) - 1,
-		helmet_2		= GetNumberOfPedPropTextureVariations	(playerPed, 0, Character['helmet_1']) - 1,
-		glasses_1		= GetNumberOfPedPropDrawableVariations	(playerPed, 1) - 1,
-		glasses_2		= GetNumberOfPedPropTextureVariations	(playerPed, 1, Character['glasses_1'] - 1),
+		pants_1			= getPropCount(playerPed, 'pants_1'),
+		pants_2			= getPropCount(playerPed, 'pants_2'),
+		shoes_1			= getPropCount(playerPed, 'shoes_1'),
+		shoes_2			= getPropCount(playerPed, 'shoes_2'),
+		mask_1			= getPropCount(playerPed, 'mask_1'),
+		mask_2			= getPropCount(playerPed, 'mask_2'),
+		bproof_1		= getPropCount(playerPed, 'bproof_1'),
+		bproof_2		= getPropCount(playerPed, 'bproof_2'),
+		chain_1			= getPropCount(playerPed, 'chain_1'),
+		chain_2			= getPropCount(playerPed, 'chain_2'),
+		bags_1			= getPropCount(playerPed, 'bags_1'),
+		bags_2			= getPropCount(playerPed, 'bags_2'),
+		helmet_1		= getPropCount(playerPed, 'helmet_1'),
+		helmet_2		= getPropCount(playerPed, 'helmet_2'),
+		glasses_1		= getPropCount(playerPed, 'glasses_1'),
+		glasses_2		= getPropCount(playerPed, 'glasses_2'),
 		watches_1		= GetNumberOfPedPropDrawableVariations	(playerPed, 6) - 1,
 		watches_2		= GetNumberOfPedPropTextureVariations	(playerPed, 6, Character['watches_1']) - 1,
 		bracelets_1		= GetNumberOfPedPropDrawableVariations	(playerPed, 7) - 1,
@@ -371,7 +371,7 @@ function ApplySkin(skin, clothes, ped, Gender)
 	SetPedHeadOverlay			(playerPed, 2,		Character['eyebrows_1'],		(Character['eyebrows_2'] / 10) + 0.0)		-- Eyebrows + opacity
 	SetPedHeadOverlay			(playerPed, 4,		Character['makeup_1'],			(Character['makeup_2'] / 10) + 0.0)			-- Makeup + opacity
 	SetPedHeadOverlay			(playerPed, 8,		Character['lipstick_1'],		(Character['lipstick_2'] / 10) + 0.0)		-- Lipstick + opacity
-	SetPedComponentVariation	(playerPed, 2,		Character['hair_1'],			Character['hair_2'], 2)						-- Hair
+	SetPedComponentVariation	(playerPed, 2,		GetActualSkinId('hair_1', playerPed, Gender),GetActualSkinId('hair_2', playerPed, Gender), 2)					-- Hair
 	SetPedHeadOverlayColor		(playerPed, 1, 1,	Character['beard_3'],			Character['beard_4'])						-- Beard Color
 	SetPedHeadOverlayColor		(playerPed, 2, 1,	Character['eyebrows_3'],		Character['eyebrows_4'])					-- Eyebrows Color
 	SetPedHeadOverlayColor		(playerPed, 4, 2,	Character['makeup_3'],			Character['makeup_4'])						-- Makeup Color
@@ -399,30 +399,30 @@ function ApplySkin(skin, clothes, ped, Gender)
 	if Character['ears_1'] == -1 then
 		ClearPedProp(playerPed, 2)
 	else
-		SetPedPropIndex			(playerPed, 2,		Character['ears_1'],			Character['ears_2'], 2)						-- Ears Accessories
+		SetPedPropIndex			(playerPed, 2,		GetActualSkinId('ears_1', playerPed, Gender),	GetActualSkinId('ears_2', playerPed, Gender), 2)						-- Ears Accessories
 	end
 
-	SetPedComponentVariation	(playerPed, 8,		Character['tshirt_1'],			Character['tshirt_2'], 2)					-- Tshirt
-	SetPedComponentVariation	(playerPed, 11,		Character['torso_1'],			Character['torso_2'], 2)					-- torso parts
-	SetPedComponentVariation	(playerPed, 3,		Character['arms'],				Character['arms_2'], 2)						-- Amrs
-	SetPedComponentVariation	(playerPed, 10,		Character['decals_1'],			Character['decals_2'], 2)					-- decals
-	SetPedComponentVariation	(playerPed, 4,		Character['pants_1'],			Character['pants_2'], 2)					-- pants
-	SetPedComponentVariation	(playerPed, 6,		Character['shoes_1'],			Character['shoes_2'], 2)					-- shoes
-	SetPedComponentVariation	(playerPed, 1,		Character['mask_1'],			Character['mask_2'], 2)						-- mask
-	SetPedComponentVariation	(playerPed, 9,		Character['bproof_1'],			Character['bproof_2'], 2)					-- bulletproof
-	SetPedComponentVariation	(playerPed, 7,		Character['chain_1'],			Character['chain_2'], 2)					-- chain
-	SetPedComponentVariation	(playerPed, 5,		Character['bags_1'],			Character['bags_2'], 2)						-- Bag
+	SetPedComponentVariation	(playerPed, 8,		GetActualSkinId('tshirt_1', playerPed, Gender),GetActualSkinId('tshirt_2', playerPed, Gender), 2)				-- Tshirt
+	SetPedComponentVariation	(playerPed, 11,		GetActualSkinId('torso_1', playerPed, Gender),GetActualSkinId('torso_2', playerPed, Gender), 2)					-- torso parts
+	SetPedComponentVariation	(playerPed, 10,		GetActualSkinId('decals_1', playerPed, Gender),	GetActualSkinId('decals_2', playerPed, Gender), 2)					-- decals
+	SetPedComponentVariation	(playerPed, 3,		GetActualSkinId('arms', playerPed, Gender),	GetActualSkinId('arms_2', playerPed, Gender), 2)
+	SetPedComponentVariation	(playerPed, 4,		GetActualSkinId('pants_1', playerPed, Gender),	GetActualSkinId('pants_2', playerPed, Gender), 2)					-- pants
+	SetPedComponentVariation	(playerPed, 6,		GetActualSkinId('shoes_1', playerPed, Gender),	GetActualSkinId('shoes_2', playerPed, Gender), 2)					-- shoes
+	SetPedComponentVariation	(playerPed, 1,		GetActualSkinId('mask_1', playerPed, Gender),	GetActualSkinId('mask_2', playerPed, Gender), 2)						-- mask
+	SetPedComponentVariation	(playerPed, 9,		GetActualSkinId('bproof_1', playerPed, Gender),	GetActualSkinId('bproof_2', playerPed, Gender), 2)					-- bulletproof
+	SetPedComponentVariation	(playerPed, 7,		GetActualSkinId('chain_1', playerPed, Gender),	GetActualSkinId('chain_2', playerPed, Gender), 2)					-- chain
+	SetPedComponentVariation	(playerPed, 5,		GetActualSkinId('bags_1', playerPed, Gender),	GetActualSkinId('bags_2', playerPed, Gender), 2)						-- Bag
 
 	if Character['helmet_1'] == -1 then
 		ClearPedProp(playerPed, 0)
 	else
-		SetPedPropIndex			(playerPed, 0,		Character['helmet_1'],			Character['helmet_2'], 2)					-- Helmet
+		SetPedPropIndex			(playerPed, 0,		GetActualSkinId('helmet_1', playerPed, Gender),	GetActualSkinId('helmet_2', playerPed, Gender), 2)					-- Helmet
 	end
 
 	if Character['glasses_1'] == -1 then
 		ClearPedProp(playerPed, 1)
 	else
-		SetPedPropIndex			(playerPed, 1,		Character['glasses_1'],			Character['glasses_2'], 2)					-- Glasses
+		SetPedPropIndex			(playerPed, 1,		GetActualSkinId('glasses_1', playerPed, Gender),	GetActualSkinId('glasses_2', playerPed, Gender), 2)					-- Glasses
 	end
 
 	if Character['watches_1'] == -1 then
@@ -526,5 +526,99 @@ AddEventHandler('skinchanger:loadClothes', function(playerSkin, clothesSkin)
 
 	LastSex = playerSkin['sex']
 end)
+
+function GetActualSkinId(PropName, playerPed, Gender)
+    if (Gender == nil) then
+        Gender = 'm';
+
+        if (LastSex == 1) then
+            Gender = 'f'
+        end
+    end
+
+    local PropCount    = getPropCount(playerPed, PropName, Gender);
+
+    local VanillaProps = PropCount - Config.CustomLength[Gender][PropName];
+
+    if (Character[PropName] >= Config.CustomStart[Gender][PropName]) then
+        if Character[PropName] > PropCount - Config.CustomLength[Gender][PropName] then
+            return Character[PropName] - VanillaProps + Config.CustomStart[Gender][PropName] - 1
+        else
+            return Character[PropName] + Config.CustomLength[Gender][PropName]
+        end
+    else
+        return Character[PropName]
+    end
+end
+
+function getPropCount(playerPed, PropName, Gender)
+    if Gender == nil then
+        Gender = 'm';
+
+        if (LastSex == 1) then
+            Gender = 'f'
+        end
+    end
+
+	if PropName == 'hair_1' then
+        return GetNumberOfPedDrawableVariations(playerPed, 2) - 1
+    elseif PropName == 'hair_2' then
+        return GetNumberOfPedTextureVariations(playerPed, 2, GetActualSkinId('hair_1', playerPed, Gender)) - 1
+    elseif PropName == 'ears_1' then
+        return GetNumberOfPedPropDrawableVariations(playerPed, 1) - 1
+    elseif PropName == 'ears_2' then
+        return GetNumberOfPedPropTextureVariations(playerPed, 1, GetActualSkinId('ears_1', playerPed, Gender) - 1)
+    elseif PropName == 'tshirt_1' then
+        return GetNumberOfPedDrawableVariations(playerPed, 8) - 1
+    elseif PropName == 'tshirt_2' then
+        return GetNumberOfPedTextureVariations(playerPed, 8, GetActualSkinId('tshirt_1', playerPed, Gender)) - 1
+    elseif PropName == 'torso_1' then
+        return GetNumberOfPedDrawableVariations(playerPed, 11) - 1
+    elseif PropName == 'torso_2' then
+        return GetNumberOfPedTextureVariations(playerPed, 11, GetActualSkinId('torso_1', playerPed, Gender)) - 1
+    elseif PropName == 'decals_1' then
+        return GetNumberOfPedDrawableVariations(playerPed, 10) - 1
+    elseif PropName == 'decals_2' then
+        return GetNumberOfPedTextureVariations(playerPed, 10, GetActualSkinId('decals_1', playerPed, Gender)) - 1
+    elseif PropName == 'arms' then
+        return GetNumberOfPedDrawableVariations(playerPed, 3) - 1
+	elseif PropName == 'arms_2'then
+		return GetNumberOfPedTextureVariations(playerPed, 11, GetActualSkinId('torso_1', playerPed, Gender)) - 1
+    elseif PropName == 'pants_1' then
+        return GetNumberOfPedDrawableVariations(playerPed, 4) - 1
+    elseif PropName == 'pants_2' then
+        return GetNumberOfPedTextureVariations(playerPed, 4, GetActualSkinId('pants_1', playerPed, Gender)) - 1
+    elseif PropName == 'shoes_1' then
+        return GetNumberOfPedDrawableVariations(playerPed, 6) - 1
+    elseif PropName == 'shoes_2' then
+        return GetNumberOfPedTextureVariations(playerPed, 6, GetActualSkinId('shoes_1', playerPed, Gender)) - 1
+    elseif PropName == 'mask_1' then
+        return GetNumberOfPedDrawableVariations(playerPed, 1) - 1
+    elseif PropName == 'mask_2' then
+        return GetNumberOfPedTextureVariations(playerPed, 1, GetActualSkinId('mask_1', playerPed, Gender)) - 1
+    elseif PropName == 'bproof_1' then
+        return GetNumberOfPedDrawableVariations(playerPed, 9) - 1
+    elseif PropName == 'bproof_2' then
+        return GetNumberOfPedTextureVariations(playerPed, 9, GetActualSkinId('bproof_1', playerPed, Gender)) - 1
+    elseif PropName == 'chain_1' then
+        return GetNumberOfPedDrawableVariations(playerPed, 7) - 1
+    elseif PropName == 'chain_2' then
+        return GetNumberOfPedTextureVariations(playerPed, 7, GetActualSkinId('chain_1', playerPed, Gender)) - 1
+    elseif PropName == 'bags_1' then
+        return GetNumberOfPedDrawableVariations(playerPed, 5) - 1
+    elseif PropName == 'bags_2' then
+        return GetNumberOfPedTextureVariations(playerPed, 5, GetActualSkinId('bags_1', playerPed, Gender)) - 1
+    elseif PropName == 'helmet_1' then
+        return GetNumberOfPedPropDrawableVariations(playerPed, 0) - 1
+    elseif PropName == 'helmet_2' then
+        return GetNumberOfPedPropTextureVariations(playerPed, 0, GetActualSkinId('helmet_1', playerPed, Gender)) - 1
+    elseif PropName == 'glasses_1' then
+        return GetNumberOfPedPropDrawableVariations(playerPed, 1) - 1
+    elseif PropName == 'glasses_2' then
+        return GetNumberOfPedPropTextureVariations(playerPed, 1, GetActualSkinId('glasses_1', playerPed, Gender) - 1)
+    else
+        return 0
+    end
+end
 
 exports("ApplySkin", ApplySkin);
