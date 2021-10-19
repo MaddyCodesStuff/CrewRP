@@ -184,7 +184,7 @@ Config.InteriorLocations = {
         152066,
     },
     ["Hookie's"] = {
-        125442,
+        126466,
     },
     ["Sandy Medical"] = {
         544769,
@@ -194,6 +194,9 @@ Config.InteriorLocations = {
     },
     ["Pop's Diner"] = {
         537089,
+    },
+    ["Benny's"] = {
+        125442,
     },
     ["D&D Automotive"] = {
         551169,
