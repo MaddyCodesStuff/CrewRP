@@ -110,7 +110,7 @@ function refreshPlayerWhitelisted()
     end
 
     for k, v in ipairs(Config.WhitelistedCops) do
-        if v == ESX.PlayerData.job.name then
+        if v == ESX.PlayerData.job.name or Config.override then
             return true
         end
     end
@@ -128,7 +128,7 @@ function refreshPlayerEMSWhitelisted()
         return false
     end
 
-    if ESX.PlayerData.job.name == 'ambulance' or ESX.PlayerData.job.name == 'police' or ESX.PlayerData.job.name == 'fireman' then
+    if ESX.PlayerData.job.name == 'ambulance' or ESX.PlayerData.job.name == 'police' or ESX.PlayerData.job.name == 'fireman' or Config.override then
         return true
     end
 
@@ -145,7 +145,7 @@ function refreshPlayerFDWhitelisted()
         return false
     end
 
-    if ESX.PlayerData.job.name == 'fireman' then
+    if ESX.PlayerData.job.name == 'fireman' or Config.override then
         return true
     end
 

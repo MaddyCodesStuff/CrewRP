@@ -1,5 +1,8 @@
 Config                    = {}
 
+-- Overide Notification Permissions - WARNING: Setting this to true will cause all players to recieve all notifications, Do not touch unless you know what you're doing.
+Config.override           = false
+
 Config.Locale             = 'en'
 
 -- Set the time (in minutes) during the player is outlaw
