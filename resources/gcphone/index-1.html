@@ -1,0 +1,217 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Unknown </title></head><body>
+<h1 id="installation">Installation</h1>
+<blockquote>
+<ol>
+<li>Download the release for your ESX version (ESX 1.1 &amp; ESX 1.2) from <a href="https://github.com/Re-Ignited-Development/Re-Ignited-Phone/releases">Releases</a></li>
+<li>Copy/Drag the <strong>gcphone</strong> folder into your server resources folder. (You no longer need esx_addons_gcphone as it was merged with the phone)</li>
+<li>Import the following SQL's: <code>base.sql</code> and <code>twitter.sql</code> <strong>(This is the same as the other versions.)</strong> (Locales available in the sql folder.)</li>
+<li>Add the following to your server.cfg <strong>AFTER es_extended</strong> &amp; <strong>BEFORE any jobs</strong>. (Such as esx_ambulancejob, esx_policejob etc...)</li>
+</ol>
+</blockquote>
+<p><code>ensure gcphone</code></p>
+<blockquote>
+<ol>
+<li>Start your server.</li>
+</ol>
+</blockquote>
+<h1 id="notes">Notes</h1>
+<p>-<strong>No changes to fxmanifest is needed when adding new images to the resource due to Globbing. Can read more about this <a href="https://docs.fivem.net/docs/scripting-reference/resource-manifest/resource-manifest/#globbing" title="FIveM Globbing Information">here</a></strong>.</p>
+<p>-<strong>You need to ensure the resource is started before your jobs otherwise features that interact with them may not work.</strong></p>
+<p>-<strong>The following should remain false<code>"useWebRTCVocal": false</code> as it doesn't work with onesync anymore.</strong></p>
+<p>-<strong>You need <a href="https://github.com/citizenfx/screenshot-basic" title="Screnshot Basic">Screenshot Basic</a> to take selfies/photos. Otherwise, set <code>"enableTakePhoto": true,</code> to <code>false</code></strong></p>
+<h2 id="configuration-keybind">Configuration (Keybind)</h2>
+<blockquote>
+<ol>
+<li>Navigate to <code>gcphone &gt; config.lua</code> line <code>23</code></li>
+<li>Change <code>288</code> to your desired keybind. Default is <code>F1</code>. See <a href="https://docs.fivem.net/docs/game-references/controls/" title="FIveM Key Mapping">FIveM Key Mapping</a> for reference.</li>
+</ol>
+</blockquote>
+<h2 id="configuration-default-language">Configuration (Default Language)</h2>
+<blockquote>
+<ol>
+<li>Navigate to <code>gcphone &gt; html &gt; static &gt; config.json</code> and search for <code>"defaultLanguage": "en_US",</code></li>
+<li>Below that line, you'll see <code>"language": {</code> this is the location of current translations. If you don't see yours here you'll need to add your own translations. Current languages are as followed:
+<code>en_US (English)
+fr_FR (Français)
+de_DE (Deutsch)
+pl_PL (Polish)
+es_ES (Spanish)
+cs_CZ (Čeština)</code></li>
+<li>Choosing one of the above previations, change <code>"defaultLanguage": "en_US",</code> to your desired one.</li>
+</ol>
+</blockquote>
+<h2 id="configuration-cell-provider">Configuration (Cell Provider)</h2>
+<blockquote>
+<ol>
+<li>Navigate to <code>gcphone &gt; html &gt; static &gt; config.json</code> and search for <code>"reseau": "ReIgnited Mobile",</code></li>
+<li>Change <code>"reseau": "ReIgnited Mobile",</code> to your desired carrier.</li>
+</ol>
+</blockquote>
+<h2 id="configuration-number-format">Configuration (Number Format)</h2>
+<blockquote>
+<ol>
+<li>Navigate to <code>gcphone &gt; html &gt; static &gt; config.json</code> and search for <code>"useFormatNumberFrance": false,</code></li>
+<li>Setting it to false gives you a number like <code>xxx-xxxx</code> while true gives you <code>xxxxxxx</code>.</li>
+</ol>
+</blockquote>
+<h2 id="configuration-message-warning">Configuration (Message Warning)</h2>
+<blockquote>
+<ol>
+<li>Navigate to <code>gcphone &gt; html &gt; static &gt; config.json</code> and at the top you'll see <code>"warningMessageCount": 999,</code></li>
+<li>This is the notification a player recieves to delete messahes. It's currently set to max.</li>
+</ol>
+</blockquote>
+<h2 id="configuration-new-ringtone">Configuration (New Ringtone)</h2>
+<blockquote>
+<ol>
+<li>Navigate to <code>gcphone &gt; html &gt; static &gt; sound</code> and save your new sound here. <strong>The sound must be an .ogg or .mp3 file. (.ogg recomended)</strong></li>
+<li>Navigate to <code>gcphone &gt; html &gt; static &gt; config.json</code> and search for <code>"sonido": {</code></li>
+<li>Add your new sound like so <code>"DISPLAYNAME": "FILENAME.FILEFORMAT",</code>. Example:
+<code>"sonido": {
+    "Astronomia": "ring.ogg",
+    "Safaera": "safaera.ogg",
+    "Bella Ciao": "bella_ciao.ogg",
+    "Casa Papel": "casa_papel.ogg",
+    "Iphone 11": "iphone_11.ogg",
+    "Tusa": "tusa.ogg",
+    "OwO": "OwO.ogg",
+    "Dank Ringtone": "dank.ogg",
+    "XXXTentacion": "xtentacion.ogg"
+  },</code></li>
+</ol>
+</blockquote>
+<h2 id="configuration-remove-app">Configuration (Remove App)</h2>
+<blockquote>
+<ol>
+<li>Navigate to <code>gcphone &gt; html &gt; static &gt; config.json</code> and search for the app name.</li>
+<li>Remove the code that corresponds to it. Example:
+<code>{
+      "name": "Bourse",
+      "fr_FR__name": "Bourse",
+      "cs_CZ__name": "Burza",
+      "en_US__name": "Stock Market",
+      "de_DE__name": "Börse",
+      "es_ES__name": "Bolsa",
+      "icons": "/html/static/img/icons_app/bourse.png",
+      "routeName": "bourse",
+      "enabled": true
+    },</code>
+Note: <strong>If "enabled" is an option, can disable by setting it to false - Otherwise you need to remove the full code of that app as seen above.</strong></li>
+</ol>
+</blockquote>
+<h2 id="configuration-new-wallpaper">Configuration (New Wallpaper)</h2>
+<blockquote>
+<ol>
+<li>Navigate to <code>gcphone &gt; html &gt; static &gt; img &gt; background</code></li>
+<li>Place your desired new wallpaper here. Copy the name as you'll need it for step 4.</li>
+<li>Navigate to <code>gcphone &gt; html &gt; static &gt; config.json</code> line <code>42</code>. <strong>This where backgrounds start.</strong></li>
+<li>The wallpaper is done as such: <code>"DISPLAY NAME": "FILENAME.FILEFORMAT",</code>.
+<strong>5. Ensure the file name corresponds correctly with whats inside <code>gcphone &gt; html &gt; static &gt; img &gt; background</code></strong></li>
+</ol>
+</blockquote>
+<h2 id="configuration-replace-app-icons">Configuration (Replace App Icons)</h2>
+<blockquote>
+<ol>
+<li>Navigate to <code>gcphone &gt; html &gt; static &gt; img &gt; icons_app</code> and save your new icon here.  Copy the name as you'll need it for step 3,</li>
+<li>Navigate to <code>gcphone &gt; html &gt; static &gt; config.json</code> and search for <code>"icons":</code>. You'll find 11 results. <strong>Each result corresponds to a specific app.</strong></li>
+<li>Find your desired app and replace it with the one you added in step 1.</li>
+</ol>
+</blockquote>
+<h2 id="configuration-default-settings">Configuration (Default Settings)</h2>
+<p><strong>The following are default settings for new players that are adjustable within <code>gcphone &gt; html &gt; static &gt; config.json</code>:</strong></p>
+<blockquote>
+<p><code>"background_default": {</code> Phone Background</p>
+<p><code>"coque_default": {</code> Phone Style</p>
+<p><code>"sonido_default": {</code> Phone Ringtone</p>
+<p><code>"defaultContacts": [{</code> Default contacts</p>
+<p><code>"defaultLanguage": "en_US",</code> Default Language</p>
+</blockquote>
+<h2 id="configuration-adding-default-contact">Configuration (Adding Default Contact)</h2>
+<blockquote>
+<ol>
+<li>Navigate to <code>gcphone &gt; html &gt; static &gt; config &gt; config.json</code></li>
+<li>Search for <code>defaultContacts</code> This is where you add new Default Contacts. See below for details (You caa use letter + backgroundColor instead of icon if you so desire):</li>
+</ol>
+</blockquote>
+<p>```lua
+  "defaultContacts": [
+    {
+      "number": "ambulance",
+      "display": "Ambulance",
+      "icon": "/html/static/img/icons_app/bank.png"
+    },
+    {
+      "number": "police",
+      "display": "Police",
+      "backgroundColor": "blue",
+      "letter": "P"
+    },
+    {
+      "number": "JOB NAME",
+      "display": "DISPLAY NAME",
+      "icon": "/html/static/img/icons_app/ICON LINK.png" 
+    }
+  ],</p>
+<p>```</p>
+<h2 id="configuration-additional-service-call">Configuration (Additional Service Call)</h2>
+<blockquote>
+<p>This assumes you already have the contact as a default contact.
+1. Navigate to <code>gcphone &gt; html &gt; static &gt; config &gt; config.json</code>
+2. Search for <code>serviceCall</code> This is where you add new prompts. See below for details:
+<code>lua
+  "serviceCall": [{
+      "display": "Police",
+      "icon": "/html/static/img/icons_app/police.png",
+      "subMenu": [{
+          "title": "Send Message",
+          "eventName": "esx_addons_gcphone:call",
+          "type": {
+            "number": "police"
+          }
+        },
+        {
+          "title": "Call Police Station",
+          "eventName": "gcphone:autoCallNumber",
+          "type": {
+            "number": "911"
+          }
+        }
+      ]
+    },
+    {
+      "display": "Ambulance",
+      "backgroundColor": "red",
+      "subMenu": [{
+        "title": "Send Message",
+        "eventName": "esx_addons_gcphone:call",
+        "type": {
+          "number": "ambulance"
+        }
+      }]
+    },
+    {
+      "display": "DISPLAY NAME",
+      "backgroundColor": "COLOR INSTEAD OF ICON",
+      "subMenu": [{
+        "title": "Send Message",
+        "eventName": "esx_addons_gcphone:call",
+        "type": {
+          "number": "JOB NAME"
+        }
+      }]
+    },
+    {
+      "display": "DISPLAY NAME",
+      "icon": "/html/static/img/icons_app/ICONNAME.png",
+      "subMenu": [{
+        "title": "Send Message",
+        "eventName": "esx_addons_gcphone:call",
+        "type": {
+          "number": "JOB NAME"
+        }
+      }]
+    }
+  ],</code>
+3. You will need to edit the config.lua if you would like to add aditional preset locations like payphones/pick up locations similiar to PD.</p>
+</blockquote>
+</body></html>

@@ -11,5 +11,5 @@ Locales['en'] = {
     ["new_tweet"] = "New Tweet!",
 
     -- Warning
-    ["no_phone"] = "You do not have a ~r~phone~s~."
+    ["no_phone"] = "You do not have a phone."
 }
