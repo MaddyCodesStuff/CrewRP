@@ -1,6 +1,6 @@
 ESX                      = nil
 local lastGunAlertInArea = {}
-print("this is just to stop git from being stupid")
+
 TriggerEvent('esx:getSharedObject', function(obj)
     ESX = obj
 end)
