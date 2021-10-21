@@ -255,7 +255,7 @@ Config.Zones            = {
         BlipColor = 27,
         Blip      = 0,
         Pos       = {
-            { x = -620.34, y = -108.55, z = 37.16 },
+            { x = -619.93, y = -108.57, z = 37.16 },
         },
         job       = 'fireman'
 

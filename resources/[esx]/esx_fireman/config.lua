@@ -97,7 +97,7 @@ Config.FireStations          = {
 			Colour  = 64,
 		},
 		Cloakrooms        = {
-			{ x = -627.92, y = -122.19, z = 38.23 }
+			{ x = -628.51, y = -121.31, z = 38.23 }
 		},
 		Armories          = {
 			{ x = -622.0, y = -108.44, z = 37.16 }
