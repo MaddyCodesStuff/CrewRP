@@ -537,9 +537,9 @@ Config.Shops      = {
     {
         name       = 'Rockford FD Cars',
         job        = 'fireman',
-        coords     = vector3(-642.38, -110.25, 37.94),
-        heading    = 126.54,
-        shopCoords = vector3(-642.38, -110.25, 37.94),
+        coords     = vector3(-644.12, -109.52, 37.79),
+        heading    = 118.44,
+        shopCoords = vector3(-644.12, -109.52, 37.79),
         type       = "car",
         cars       = Config.FDCars
     },

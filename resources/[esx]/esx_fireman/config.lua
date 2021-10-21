@@ -97,13 +97,13 @@ Config.FireStations          = {
 			Colour  = 64,
 		},
 		Cloakrooms        = {
-			{ x = -633.82, y = -121.83, z = 38.03 }
+			{ x = -628.51, y = -121.31, z = 38.23 }
 		},
 		Armories          = {
-			{ x = -630.15, y = -96.06, z = 37.08 }
+			{ x = -622.0, y = -108.44, z = 37.16 }
 		},
 		BossActions       = {
-			{ x = -630.20, y = -99.09, z = 37.08 },
+			{ x = -616.24, y = -97.81, z = 44.65 },
 		},
 		AuthorizedWeapons = {
 			{ name = 'WEAPON_FIREEXTINGUISHER', price = 0 },
