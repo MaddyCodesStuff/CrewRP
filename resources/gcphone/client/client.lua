@@ -194,6 +194,25 @@ AddEventHandler('gcPhone:receiveLivePosition', function(sourcePlayerServerId, ti
   end
 end)
 
+Citizen.CreateThread(function()
+  while true do
+      Citizen.Wait(0)
+      -- hasPhone(function (hasPhone)
+      --   if hasPhone == true then
+      if awaitingCall then
+          if IsControlJustPressed(1, 51) then
+              TriggerServerEvent('gcPhone:acceptCall', callInfo)
+              awaitingCall = false
+          elseif IsControlJustPressed(1, 177) then
+              TriggerServerEvent('gcPhone:rejectCall', callInfo)
+              awaitingCall = false
+          end
+      end
+      --   end
+      -- end)
+  end
+end)
+
 --====================================================================================
 --  Activate or Deactivate an application (appName => config.json)
 --====================================================================================
@@ -331,7 +350,6 @@ Citizen.CreateThread(function ()
 end)
 
 function PlaySoundJS (sound, volume)
-  print("playSound")
   SendNUIMessage({ event = 'playSound', sound = sound, volume = volume })
 end
 
@@ -392,9 +410,10 @@ AddEventHandler("gcPhone:receiveMessage", function(message)
         end
       end
     end
-    SetNotificationTextEntry("STRING")
-    AddTextComponentString(text)
-    DrawNotification(false, false)
+    -- SetNotificationTextEntry("STRING")
+    -- AddTextComponentString(text)
+    -- DrawNotification(false, false)
+    TriggerServerEvent('tcrp:textmessage', text);
     PlaySound(-1, "Menu_Accept", "Phone_SoundSet_Default", 0, 0, 1)
     Citizen.Wait(300)
     PlaySound(-1, "Menu_Accept", "Phone_SoundSet_Default", 0, 0, 1)
@@ -472,6 +491,23 @@ AddEventHandler("gcPhone:waitingCall", function(infoCall, initiator)
     if menuIsOpen == false then
       TooglePhone()
     end
+  else
+    hasPhone(function(hasPhone)
+      if hasPhone == true then
+          callInfo = infoCall
+          if Config.ShowNumberNotification == true then
+              text =  callInfo.transmitter_num
+              for _, contact in pairs(contacts) do
+                  if contact.number == callInfo.transmitter_num then
+                      text =  contact.display
+                      break
+                  end
+              end
+          end
+          TriggerServerEvent('tcrp:phonecall', text)
+          awaitingCall = true
+      end
+    end)
   end
 end)
 
@@ -628,7 +664,6 @@ end)
 --  Management of NUI events
 --==================================================================================== 
 RegisterNUICallback('log', function(data, cb)
-  print(data)
   cb()
 end)
 RegisterNUICallback('focus', function(data, cb)

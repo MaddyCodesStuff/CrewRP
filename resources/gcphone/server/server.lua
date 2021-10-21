@@ -485,11 +485,9 @@ AddEventHandler('gcPhone:internal_startCall', function(source, phone_number, rtc
                 TriggerClientEvent('gcPhone:waitingCall', sourcePlayer, AppelsEnCours[indexCall], true)
                 local xPlayer = ESX.GetPlayerFromId(srcTo)
                 local hasPhone  = xPlayer.getInventoryItem('phone').count
-                print(hasPhone)
                 if hasPhone >= 1 and Config.ItemRequired then
                     TriggerClientEvent('gcPhone:waitingCall', srcTo, AppelsEnCours[indexCall], false)
                 elseif hasPhone == 0 then
-                    print("no phone")
                 elseif not Config.ItemRequired then
                     TriggerClientEvent('gcPhone:waitingCall', srcTo, AppelsEnCours[indexCall], false)
                 end
