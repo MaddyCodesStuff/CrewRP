@@ -474,30 +474,7 @@ function OpenCorrectionsActionsMenu()
 					   menu.close()
 		    end)
             end
-            if data.current.value == 'doc_radio_menu' then
-                local elements = {
-                    { label = "DOC Radio 1", value = 'doc_radio_1' },
-                    { label = "DOC Radio 2", value = 'doc_radio_2' },
-                    { label = "DOC Radio 3", value = 'doc_radio_3' },
-                    { label = "DOC Radio 4", value = 'doc_radio_4' },
-                }
-
-                ESX.UI.Menu.Open(
-                    'default', GetCurrentResourceName(), 'doc_radio_menu',
-                    {
-                        title    = "DOC Radio",
-                        align    = 'top-right',
-                        elements = elements
-                    }, function(data2, menu2)
-                        TriggerEvent("esx-radios:toggleRadioByName", data2.current.value)
-                    end, function(_, menu2)
-                        menu2.close()
-                end)
-            end
-            
-            if data.current.value == 'dispatch_menu' then
-                TriggerEvent("esx-radios:toggleRadioByName", 'dispatch')
-            end
+           
             if data.current.value == "jail_menu" then
                 TriggerEvent("esx-qalle-jail:openJailMenu")
             end

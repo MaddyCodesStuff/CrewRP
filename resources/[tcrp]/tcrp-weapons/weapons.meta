@@ -7617,7 +7617,7 @@
           <DropForwardVelocity value="0.000000" />
           <Speed value="2000.000000" />
           <BulletsInBatch value="8" />
-          <BatchSpread value="0.050000" />
+          <BatchSpread value="0.030000" />
           <ReloadTimeMP value="-1.000000" />
           <ReloadTimeSP value="-1.000000" />
           <VehicleReloadTime value="1.000000" />
@@ -7891,7 +7891,7 @@
           <DropForwardVelocity value="0.000000" />
           <Speed value="2000.000000" />
           <BulletsInBatch value="24" />
-          <BatchSpread value="0.10000" />
+          <BatchSpread value="0.06000" />
           <ReloadTimeMP value="-1.000000" />
           <ReloadTimeSP value="-1.000000" />
           <VehicleReloadTime value="1.500000" />
@@ -8434,7 +8434,7 @@
           <DropForwardVelocity value="0.000000" />
           <Speed value="2000.000000" />
           <BulletsInBatch value="8" />
-          <BatchSpread value="0.080000" />
+          <BatchSpread value="0.050000" />
           <ReloadTimeMP value="-1.000000" />
           <ReloadTimeSP value="-1.000000" />
           <VehicleReloadTime value="2.000000" />
@@ -8901,9 +8901,9 @@
           <DamageTime value="0.000000" />
           <DamageTimeInVehicle value="0.000000" />
           <DamageTimeInVehicleHeadShot value="0.000000" />
-          <HitLimbsDamageModifier value="0.500000" />
-          <NetworkHitLimbsDamageModifier value="0.500000" />
-          <LightlyArmouredDamageModifier value="0.750000" />
+          <HitLimbsDamageModifier value="1.000000" />
+          <NetworkHitLimbsDamageModifier value="1.000000" />
+          <LightlyArmouredDamageModifier value="1.000000" />
           <Force value="100.000000" />
           <ForceHitPed value="100.000000" />
           <ForceHitVehicle value="100.000000" />
@@ -9162,9 +9162,9 @@
           <DamageTime value="0.000000" />
           <DamageTimeInVehicle value="0.000000" />
           <DamageTimeInVehicleHeadShot value="0.000000" />
-          <HitLimbsDamageModifier value="0.500000" />
-          <NetworkHitLimbsDamageModifier value="0.500000" />
-          <LightlyArmouredDamageModifier value="0.750000" />
+          <HitLimbsDamageModifier value="1.000000" />
+          <NetworkHitLimbsDamageModifier value="1.000000" />
+          <LightlyArmouredDamageModifier value="1.000000" />
           <Force value="500.000000" />
           <ForceHitPed value="500.000000" />
           <ForceHitVehicle value="500.000000" />

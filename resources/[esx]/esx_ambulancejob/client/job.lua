@@ -46,12 +46,6 @@ function OpenMobileAmbulanceActionsMenu()
 		{ label = 'Clock Off', value = 'mobile_clockinoff' },
 	}
 
-	if (exports['esx-radios'].isDedicatedDispatch()) then
-		table.insert(menuElements, { label = "PD Radio", value = 'pd_radio_menu' })
-		table.insert(menuElements, { label = "FD Radio", value = 'fd_radio_menu' })
-		table.insert(menuElements, { label = "DOC Radio", value = 'doc_radio_menu' })
-	end
-
 	ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'mobile_ambulance_actions',
 					 {
 						 title    = _U('ambulance'),
@@ -59,163 +53,8 @@ function OpenMobileAmbulanceActionsMenu()
 						 elements = menuElements
 					 }, function(data, menu)
 
-			if data.current.value == 'mutual_aid_menu' then
-				local elements = {
-					{ label = "Mutual Aid 1", value = 'mutual_aid_1' },
-					{ label = "Mutual Aid 2", value = 'mutual_aid_2' },
-					{ label = "Mutual Aid 3", value = 'mutual_aid_3' },
-					{ label = "Mutual Aid 4", value = 'mutual_aid_4' },
-				}
-
-				ESX.UI.Menu.Open(
-					'default', GetCurrentResourceName(), 'mutual_aid_menu',
-					{
-						title    = "Mutual Aid",
-						align    = 'top-right',
-						elements = elements
-					}, function(data2, menu2)
-						TriggerEvent("esx-radios:toggleRadioByName", data2.current.value)
-					end, function(_, menu2)
-						menu2.close()
-					end)
-			end
-
-			if data.current.value == 'pd_radio_menu' then
-				local elements = {
-					{ label = "PD Radio 1", value = 'pd_radio_1' },
-					{ label = "PD Radio 2", value = 'pd_radio_2' },
-					{ label = "PD Radio 3", value = 'pd_radio_3' },
-					{ label = "PD Radio 4", value = 'pd_radio_4' },
-				}
-
-				ESX.UI.Menu.Open(
-					'default', GetCurrentResourceName(), 'pd_radio_menu',
-					{
-						title    = "PD Radio",
-						align    = 'top-right',
-						elements = elements
-					}, function(data2, menu2)
-						TriggerEvent("esx-radios:toggleRadioByName", data2.current.value)
-					end, function(_, menu2)
-						menu2.close()
-					end)
-			end
-
-			if data.current.value == 'ems_radio_menu' then
-				local elements = {
-					{ label = "EMS Radio 1", value = 'ems_radio_1' },
-					{ label = "EMS Radio 2", value = 'ems_radio_2' },
-					{ label = "EMS Radio 3", value = 'ems_radio_3' },
-					{ label = "EMS Radio 4", value = 'ems_radio_4' },
-				}
-
-				ESX.UI.Menu.Open(
-					'default', GetCurrentResourceName(), 'ems_radio_menu',
-					{
-						title    = "EMS Radio",
-						align    = 'top-right',
-						elements = elements
-					}, function(data2, menu2)
-						TriggerEvent("esx-radios:toggleRadioByName", data2.current.value)
-					end, function(_, menu2)
-						menu2.close()
-					end)
-			end
-
-			if data.current.value == 'fd_radio_menu' then
-				local elements = {
-					{ label = "FD Radio 1", value = 'fd_radio_1' },
-					{ label = "FD Radio 2", value = 'fd_radio_2' },
-					{ label = "FD Radio 3", value = 'fd_radio_3' },
-					{ label = "FD Radio 4", value = 'fd_radio_4' },
-				}
-
-				ESX.UI.Menu.Open(
-					'default', GetCurrentResourceName(), 'fd_radio_menu',
-					{
-						title    = "FD Radio",
-						align    = 'top-right',
-						elements = elements
-					}, function(data2, menu2)
-						TriggerEvent("esx-radios:toggleRadioByName", data2.current.value)
-					end, function(_, menu2)
-						menu2.close()
-					end)
-			end
-
-			if data.current.value == 'doc_radio_menu' then
-				local elements = {
-					{ label = "DOC Radio 1", value = 'doc_radio_1' },
-					{ label = "DOC Radio 2", value = 'doc_radio_2' },
-					{ label = "DOC Radio 3", value = 'doc_radio_3' },
-					{ label = "DOC Radio 4", value = 'doc_radio_4' },
-				}
-
-				ESX.UI.Menu.Open(
-					'default', GetCurrentResourceName(), 'doc_radio_menu',
-					{
-						title    = "DOC Radio",
-						align    = 'top-right',
-						elements = elements
-					}, function(data2, menu2)
-						TriggerEvent("esx-radios:toggleRadioByName", data2.current.value)
-					end, function(_, menu2)
-						menu2.close()
-					end)
-			end
-
-			if data.current.value == 'dispatch_menu' then
-				local elements = {
-					{ label = "Regular Dispatch", value = 'dispatch_1' },
-					{ label = "Dedicated Dispatch", value = 'dispatch_2' },
-				}
-
-				if (exports['esx-radios'].isDedicatedDispatch()) then
-					elements = {
-						{ label = "Dedicated Dispatch", value = 'dispatch_2' },
-					}
-				end
-
-				ESX.UI.Menu.Open(
-					'default', GetCurrentResourceName(), 'dispatch_menu',
-					{
-						title    = "Dispatch",
-						align    = 'top-right',
-						elements = elements
-					}, function(data2, menu2)
-						local action = data2.current.value
-						menu2.close()
-						if action == 'dispatch_1' then
-							TriggerEvent("esx-radios:toggleRadioByName", 'dispatch')
-						elseif action == 'dispatch_2' then
-							TriggerEvent("esx-radios:toggleDedicatedDispatch");
-							menu.close()
-						end
-					end, function(data2, menu2)
-						menu2.close()
-					end)
-			end
-
-			if data.current.value == 'spawn_menu' then
-				ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'spawn_menu',
-								 {
-									 title    = _U('spawn_menu_title'),
-									 align    = 'top-right',
-									 elements = {
-										 { label = _U('spawn_wheelchair'), value = 'spawn_wheelchair' },
-										 { label = _U('despawn_wheelchair'), value = 'despawn_wheelchair' },
-									 }
-								 }, function(data, menu)
-
-						if data.current.value == 'spawn_wheelchair' then
-							TriggerEvent('qalle-wheelchair:spawnChair')
-						elseif data.current.value == 'despawn_wheelchair' then
-							TriggerEvent('qalle-wheelchair:despawnChair')
-						end
-					end, function(data, menu)
-						menu.close()
-					end)
-			elseif data.current.value == 'citizen_interaction' then
+			
+			if data.current.value == 'citizen_interaction' then
 				ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'citizen_interaction',
 								 {
 									 title    = _U('ems_menu_title'),
@@ -1341,7 +1180,7 @@ function OpenPharmacyMenu()
 							 { label = _U('pharmacy_take', 'Tylenol'), value = 'tylenol' },
 							 { label = _U('pharmacy_take', 'Body Armor'), value = 'bodyarmor_3' },
 							 { label = _U('pharmacy_take', 'Scuba Gear'), value = 'scuba' },
-							 { label = _U('pharmacy_take', 'Wheelchair'), value = 'wheelchair' },
+							 { label = _U('pharmacy_take', 'Gurney'), value = 'gurney' },
 						 }
 					 }, function(data, menu)
 			TriggerServerEvent('esx_ambulancejob:giveItem', data.current.value)
