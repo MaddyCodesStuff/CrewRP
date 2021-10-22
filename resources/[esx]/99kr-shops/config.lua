@@ -1201,6 +1201,7 @@ Config = {
             { label = "Churro", item = "churro", price = 5 },
             { label = "Quesadillas", item = "quesadillas", price = 5 },
             { label = "Tamale", item = "tamale", price = 5 },
+            { label = "Hot Sauce (Do Not Drink)", item = "hotsauce", price = 5 },
         },
         ["pharmacy"]    = {
             { label = "Tylenol", item = "tylenol", price = 10 },
