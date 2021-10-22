@@ -485,11 +485,9 @@ AddEventHandler('gcPhone:internal_startCall', function(source, phone_number, rtc
                 TriggerClientEvent('gcPhone:waitingCall', sourcePlayer, AppelsEnCours[indexCall], true)
                 local xPlayer = ESX.GetPlayerFromId(srcTo)
                 local hasPhone  = xPlayer.getInventoryItem('phone').count
-                print(hasPhone)
                 if hasPhone >= 1 and Config.ItemRequired then
                     TriggerClientEvent('gcPhone:waitingCall', srcTo, AppelsEnCours[indexCall], false)
                 elseif hasPhone == 0 then
-                    print("no phone")
                 elseif not Config.ItemRequired then
                     TriggerClientEvent('gcPhone:waitingCall', srcTo, AppelsEnCours[indexCall], false)
                 end
@@ -673,12 +671,12 @@ function bankTransferOnline(xPlayer, zPlayer, amount)
     
     TriggerClientEvent('esx:showAdvancedNotification', xPlayer.source,
                        'Bank', 'Transfer Money',
-                       'You transfered $' .. amount .. ' to ' .. GetPlayerName(zPlayer.source) .. ' .',
+                       'You transfered ~r~$' .. amount .. '~s~ to ~r~' .. zPlayer.source .. ' .',
                        'CHAR_BANK_MAZE', 9)
     
     TriggerClientEvent('esx:showAdvancedNotification', zPlayer.source,
                         'Bank', 'Transfer Money',
-                        'You received $' .. amount .. ' from ' .. GetPlayerName(xPlayer.source) .. ' .',
+                        'You received ~r~$' .. amount .. '~s~ from ~r~' .. xPlayer.source .. ' .',
                         'CHAR_BANK_MAZE', 9)
 end
 
@@ -695,7 +693,7 @@ function bankTransferOffline(xPlayer, zPlayerIdentifier, phoneNumber, amount)
         if zPlayerCurrentBalance == nil then
             TriggerClientEvent('esx:showAdvancedNotification', xPlayer.source,
                                'Bank', 'Transfer Money',
-                               'Bank transfer of $' .. amount .. ' to ' .. phoneNumber .. ' FAILED.',
+                               'Bank transfer of ~r~$' .. amount .. '~s~ to ~r~' .. phoneNumber .. ' FAILED.',
                                'CHAR_BANK_MAZE', 9)
             return
         end
@@ -709,7 +707,7 @@ function bankTransferOffline(xPlayer, zPlayerIdentifier, phoneNumber, amount)
         })
         TriggerClientEvent('esx:showAdvancedNotification', xPlayer.source,
                            'Bank', 'Transfer Money',
-                           'You transfered $' .. amount .. ' to ' .. phoneNumber .. ' .',
+                           'You transfered ~r~$' .. amount .. '~s~ to ~r~' .. phoneNumber .. ' .',
                            'CHAR_BANK_MAZE', 9)
     end)
 end
