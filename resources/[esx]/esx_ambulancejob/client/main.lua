@@ -84,46 +84,6 @@ AddEventHandler("esx_ambulancejob:getDeadStatus", function(cb)
 
 end)
 
--- Create blips
-Citizen.CreateThread(function()
-	for k, v in pairs(Config.Hospitals) do
-		if v.Blip.Show then
-			local blip = AddBlipForCoord(v.Blip.Pos.x, v.Blip.Pos.y, v.Blip.Pos.z)
-
-			SetBlipSprite(blip, v.Blip.Sprite)
-			SetBlipDisplay(blip, 0)
-			SetBlipScale(blip, v.Blip.Scale)
-			SetBlipColour(blip, v.Blip.Colour)
-			SetBlipAsShortRange(blip, true)
-			SetBlipPriority(blip, 10)
-
-			BeginTextCommandSetBlipName('STRING')
-			-- AddTextComponentSubstringPlayerName(_U('hospital'))
-			AddTextComponentSubstringPlayerName(v.Name)
-			EndTextCommandSetBlipName(blip)
-		end
-	end
-end)
-
--- Create blip for colleagues
-function createBlip(id)
-	local ped  = GetPlayerPed(id)
-	local blip = GetBlipFromEntity(ped)
-
-	if not DoesBlipExist(blip) then
-		-- Add blip and create head display on player
-		blip = AddBlipForEntity(ped)
-		SetBlipSprite(blip, 1)
-		ShowHeadingIndicatorOnBlip(blip, true) -- Player Blip indicator
-		SetBlipRotation(blip, math.ceil(GetEntityHeading(ped))) -- update rotation
-		SetBlipNameToPlayerName(blip, id) -- update blip name
-		SetBlipScale(blip, 1.0) -- set scale
-		SetBlipAsShortRange(blip, true)
-
-		table.insert(blipsAmbulance, blip) -- add blip to array so we can remove it later
-	end
-end
-
 -- Disable most inputs when dead
 Citizen.CreateThread(function()
 	while true do
@@ -141,6 +101,8 @@ Citizen.CreateThread(function()
 			EnableControlAction(0, 288, true)
 			EnableControlAction(0, 322, true)
 			EnableControlAction(0, 289, true)
+			EnableControlAction(0, 170, true)
+			EnableControlAction(0, 199, true)
 			ped = GetPlayerPed(-1)
 			DisablePlayerFiring(ped, true)
 			-- Make player visible to all when dead
@@ -315,12 +277,6 @@ function StartDeathTimer()
 				end
 			end
 
-			--if IsControlPressed(0, Keys['E']) then
-			--	timeHeld = timeHeld + 1
-			--else
-			--	timeHeld = 0
-			--end
-
 			DrawGenericTextThisFrame()
 
 			SetTextEntry("STRING")
@@ -457,15 +413,6 @@ AddEventHandler('esx_ambulancejob:revive', function()
 	end)
 end)
 
--- Load unloaded IPLs
-if Config.LoadIpl then
-	Citizen.CreateThread(function()
-		LoadMpDlcMaps()
-		EnableMpDlcMaps(true)
-		RequestIpl('Coroner_Int_on') -- Morgue
-	end)
-end
-
 -- Gets the player's current street.
 -- Aaalso get the current player gender
 Citizen.CreateThread(function()
@@ -478,74 +425,3 @@ Citizen.CreateThread(function()
 	end
 end)
 
-Citizen.CreateThread(function()
-	while true do
-		Citizen.Wait(1)
-
-		if PlayerData.job and PlayerData.job.name ~= nil and PlayerData.job.name == 'ambulance' then
-			local coords  = GetEntityCoords(PlayerPedId())
-			local vehicle = ESX.Game.GetClosestVehicle()
-
-			if vehicle ~= nil and checkVehicleCanAccessInventory(GetDisplayNameFromVehicleModel(GetEntityModel(vehicle))) and not IsPedInAnyVehicle(PlayerPedId()) then
-				local vehicleCoords = GetEntityCoords(vehicle)
-
-				if GetDistanceBetweenCoords(coords, vehicleCoords, true) < 3 then
-					ESX.ShowHelpNotification("Press ~INPUT_CONTEXT~ to access the EMS inventory")
-
-					isEMSVehicleInRange = true
-
-					if IsControlJustPressed(0, Keys['E']) then
-						openEMSMenu()
-					end
-				else
-					isEMSVehicleInRange = false
-				end
-			end
-		end
-	end
-end)
-
-Citizen.CreateThread(function()
-	while true do
-		Citizen.Wait(1000)
-		if not isEMSVehicleInRange and ESX.UI.Menu.IsOpen('default', GetCurrentResourceName(), 'emsvehicle_menu') then
-			ESX.UI.Menu.Close('default', GetCurrentResourceName(), 'emsvehicle_menu')
-		end
-	end
-end)
-
-function openEMSMenu()
-
-	local playerPed = PlayerPedId()
-
-	local elements  = {
-		{
-			value = 'items',
-			label = 'Items',
-		},
-	}
-
-	ESX.UI.Menu.CloseAll()
-
-	ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'emsvehicle_menu',
-					 {
-						 title    = 'EMS Vehicle Inventory',
-						 align    = 'top-right',
-						 elements = elements
-					 }, function(data, menu)
-			if data.current.value == 'items' then
-				OpenPharmacyMenu()
-			end
-		end, function(data, menu)
-			menu.close()
-		end)
-end
-
--- Function to see if the vehicle you are trying to use can access inventory
-function checkVehicleCanAccessInventory(vehicle)
-	for i = 1, #Config.VehicleInventory, 1 do
-		if Config.VehicleInventory[i] == vehicle then
-			return true
-		end
-	end
-end

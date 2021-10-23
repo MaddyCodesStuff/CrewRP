@@ -54,20 +54,6 @@ Config.Hospitals                  = {
 			{ x = 309.38, y = -568.53, z = 42.32 },
 		},
 
-		Vehicles        = {
-		},
-
-		Helicopters     = {
-			{
-				Spawner    = {},
-				SpawnPoint = {},
-				Heading    = 0.0,
-			}
-		},
-
-		VehicleDeleters = {
-		},
-
 		BossActions     = {
 			{ x = 334.61, y = -593.65, z = 42.32 }
 		},
@@ -90,20 +76,6 @@ Config.Hospitals                  = {
 
 		Pharmacies      = {
 			{ x = 1824.13, y = 3666.47, z = 33.28 },
-		},
-
-		Vehicles        = {
-		},
-
-		Helicopters     = {
-			{
-				Spawner    = {},
-				SpawnPoint = {},
-				Heading    = 0.0,
-			}
-		},
-
-		VehicleDeleters = {
 		},
 
 		BossActions     = {
@@ -130,20 +102,6 @@ Config.Hospitals                  = {
 			{ x = -255.94, y = 6324.85, z = 31.5 },
 		},
 
-		Vehicles        = {
-		},
-
-		Helicopters     = {
-			{
-				Spawner    = {},
-				SpawnPoint = {},
-				Heading    = 0.0,
-			}
-		},
-
-		VehicleDeleters = {
-		},
-
 		BossActions     = {
 			{ x = -252.7, y = 6309.14, z = 31.5 }
 		},
@@ -166,112 +124,11 @@ Config.Hospitals                  = {
 			{ x = -176.17, y = 406.23, z = 109.50 },
 		},
 
-		Vehicles        = {
-		},
-
-		Helicopters     = {
-			{
-				Spawner    = {},
-				SpawnPoint = {},
-				Heading    = 0.0,
-			}
-		},
-
-		VehicleDeleters = {
-		},
-
 		BossActions     = {
 			{ x = -160.52, y = 407.29, z = 110.00 }
 		},
 	},
 
-}
-
-Config.AuthorizedVehicles         = {
-
-	Shared = {
-		{
-			model = 'ambulance',
-			label = 'Ambulance',
-		},
-		{
-			model = 'EMSBox1',
-			label = 'EMS Box Alpha',
-		},
-		{
-			model = 'EMSox2',
-			label = 'EMS Box Bravo',
-		},
-		{
-			model = 'EMSBox3',
-			label = 'EMS Box Charlie',
-		},
-		{
-			model = 'EMSBox4',
-			label = 'EMS Box Delta',
-		},
-		{
-			model = 'EMSBox5',
-			label = 'EMS Box Echo',
-		},
-		{
-			model = 'fdlcsand',
-			label = 'Sandking',
-		},
-		{
-			model = 'firehazmat',
-			label = 'Blood Donation Truck',
-		},
-		{
-			model = 'EMSExplorer',
-			label = 'EMS Explorer',
-		},
-		{
-			model = 'EMSGranger',
-			label = 'Granger'
-		},
-	},
-}
-
-Config.AuthorizedHelicopters      = {
-
-	ambulance    = {},
-
-	doctor       = {
-		{
-			model = 'buzzard2',
-			label = 'Nagasaki Buzzard',
-			price = 150000
-		}
-	},
-
-	chief_doctor = {
-		{
-			model = 'buzzard2',
-			label = 'Nagasaki Buzzard',
-			price = 150000
-		},
-
-		{
-			model = 'seasparrow',
-			label = 'Sea Sparrow',
-			price = 300000
-		}
-	},
-
-	boss         = {
-		{
-			model = 'buzzard2',
-			label = 'Nagasaki Buzzard',
-			price = 100000
-		},
-
-		{
-			model = 'seasparrow',
-			label = 'Sea Sparrow',
-			price = 250000
-		}
-	}
 }
 
 Config.Uniforms                   = {

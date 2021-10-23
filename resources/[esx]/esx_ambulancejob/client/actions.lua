@@ -109,17 +109,11 @@ AddEventHandler('esx_ambulancejob:healRevive', function(closestPlayer)
 
 	TriggerEvent('mythic_notify:client:SendSuccessAlert', { text = 'Reviving ' .. GetPlayerName(closestPlayer) .. '...' })
 
-	local lib, anim = 'mini@cpr@char_a@cpr_str', 'cpr_pumpchest'
-
-	for i = 1, 15, 1 do
-		Citizen.Wait(900)
-
-		ESX.Streaming.RequestAnimDict(lib, function()
-			TaskPlayAnim(PlayerPedId(), lib, anim, 8.0, -8.0, -1, 0, 0, false,
-						 false, false)
-		end)
-	end
-
+	local playerPed = PlayerPedId()
+	
+	TriggerEvent('emote:do', 'medic')
+	Citizen.Wait(10000)
+	TriggerEvent('emote:cancel', true)
 	TriggerServerEvent('esx_ambulancejob:revive',
 					   GetPlayerServerId(closestPlayer))
 	IsBusy = false
