@@ -22,7 +22,9 @@
           </liveries>
         </Item>
       </colors>
-      <kits/>
+         <kits>
+            <Item>0_default_modkit</Item>
+         </kits>
       <windowsWithExposedEdges/>
       <plateProbabilities>
         <Probabilities>
@@ -32,8 +34,8 @@
           </Item>
         </Probabilities>
       </plateProbabilities>
-      <lightSettings value="1"/>
-      <sirenSettings value="33"/>
+      <lightSettings value="12"/>
+      <sirenSettings value="6"/>
     </Item>  
 	  <Item>
       <modelName>pd-caddy</modelName>
@@ -369,7 +371,9 @@
           </liveries>
         </Item>
       </colors>
-      <kits/>
+         <kits>
+            <Item>0_default_modkit</Item>
+         </kits>
       <windowsWithExposedEdges/>
       <plateProbabilities>
         <Probabilities>
