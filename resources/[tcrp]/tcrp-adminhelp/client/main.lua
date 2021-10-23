@@ -64,4 +64,9 @@ end)
 RegisterNetEvent("admin:toggleChaos")
 AddEventHandler("admin:toggleChaos", function(state)
     SetRiotModeEnabled(state)
+    if state == true then
+        StartAudioScene("CHARACTER_CHANGE_IN_SKY_SCENE")
+    else
+        StopAudioScene("CHARACTER_CHANGE_IN_SKY_SCENE")
+    end
 end)
