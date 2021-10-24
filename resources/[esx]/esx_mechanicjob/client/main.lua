@@ -849,39 +849,6 @@ function DetachVehicle()
   attachedVehicle = nil
 end
 
-RegisterCommand("tow", function()
-  if PlayerData.job ~= nil and PlayerData.job.name == 'mecano' or PlayerData.job.name == 'police' or PlayerData.job.name == 'offpolice' then
-    -- if towtruck ~= nil then
-    tow = false
-    for k, v in pairs(flatbeds) do
-      if v == GetEntityModel(GetPlayersLastVehicle()) then
-        tow      = true
-        towtruck = GetPlayersLastVehicle()
-      end
-    end
-
-    if tow then
-      if attachedVehicle == nil then
-        local frontVehicle = GetVehicleInFront()
-
-        if frontVehicle ~= towtruck then
-          if CheckBlacklist(frontVehicle) == false then
-            AttachVehicle(frontVehicle)
-          else
-            TriggerEvent("chatMessage", "^1That is a blacklisted vehicle. You can't attach that...")
-          end
-        end
-      else
-        DetachVehicle()
-        attachedVehicle = nil
-      end
-    else
-      TriggerEvent("chatMessage", "No flatbed tow truck.")
-    end
-  end
-
-end, false)
-
 RegisterCommand("impound", function()
 
   if PlayerData.job ~= nil and PlayerData.job.name == 'mecano' or PlayerData.job.name == 'police' then
