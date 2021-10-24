@@ -56,6 +56,7 @@ Config.PumpModels = {
 
 -- Blacklist certain vehicles. Use names or hashes. https://wiki.gtanet.work/index.php?title=Vehicle_Models
 Config.Blacklist = {
+	"wheelchair"
 	--"Adder",
 	--276773164
 }

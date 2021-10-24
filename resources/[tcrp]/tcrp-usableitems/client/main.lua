@@ -281,3 +281,26 @@ function RequestTheModel(model)
 		Citizen.Wait(0)
 	end
 end
+
+---------------------------------------------------------------------------
+-- Spawn Wheelchair Event --
+---------------------------------------------------------------------------
+RegisterNetEvent("usableitems:SpawnWheelchair")
+AddEventHandler("usableitems:SpawnWheelchair", function()
+    CreateWheelchair()
+end)
+
+function CreateWheelchair()
+    veh = GetHashKey("wheelchair")
+    local x, y, z = table.unpack(GetOffsetFromEntityInWorldCoords(PlayerPedId(), 0.0, 1.0, 0.5))
+    RequestModel(veh)
+    local waiting = 0
+    while not HasModelLoaded(veh) do
+        waiting = waiting + 100
+        Citizen.Wait(100)
+        if waiting > 5000 then
+            break
+        end
+    end
+    CreateVehicle(veh, x, y, z, GetEntityHeading(PlayerPedId()) + 180, 1, 0)
+end

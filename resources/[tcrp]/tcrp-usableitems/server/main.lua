@@ -65,3 +65,11 @@ ESX.RegisterUsableItem('gastank', function(source)
     xPlayer.removeInventoryItem('gastank', 1)
     TriggerClientEvent("usableitems:SpawnGastank", source)
 end)
+
+ESX.RegisterUsableItem('wheelchair', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+    local src = source
+
+    xPlayer.removeInventoryItem('wheelchair', 1)
+    TriggerClientEvent("usableitems:SpawnWheelchair", source)
+end)
