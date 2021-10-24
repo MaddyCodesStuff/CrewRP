@@ -181,7 +181,7 @@ Config.UsableDrugItems       = {
         requries   =  {},
         drug       = "wax",
         drug_power = 166000,
-    }
+    },
     bestbuds_muffin        = {
         requires   = {},
         drug       = "weed",
@@ -206,5 +206,5 @@ Config.UsableDrugItems       = {
         requires   = {},
         drug       = "weed",
         drug_power = 166000,
-    },
+    }
 }
