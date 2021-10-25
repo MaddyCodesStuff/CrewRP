@@ -6210,6 +6210,8 @@
 <Item><Name>emperor</Name><Variations /></Item>
 <Item><Name>fq2</Name><Variations /></Item>
 <Item><Name>fugitive</Name><Variations /></Item>
+<Item><Name>panto</Name><Variations /></Item>
+<Item><Name>tailgater</Name><Variations /></Item>
 <Item><Name>gauntlet</Name><Variations /></Item>
 <Item><Name>glendale</Name><Variations /></Item>
 <Item><Name>granger</Name><Variations /></Item>
@@ -6235,6 +6237,7 @@
 <Item><Name>zion2</Name><Variations /></Item>
 <Item><Name>df8</Name><Variations /></Item>
 <Item><Name>feltzer</Name><Variations /></Item>
+<Item><Name>buffalo2</Name><Variations /></Item>
 <Item><Name>rebla</Name><Variations /></Item>
 <Item><Name>schafter</Name><Variations /></Item>
 <Item><Name>sentinel4</Name><Variations /></Item>
@@ -6276,7 +6279,8 @@
 <Item><Name>fugitive</Name><Variations /></Item>
 <Item><Name>gauntlet</Name><Variations /></Item>
 <Item><Name>glendale</Name><Variations /></Item>
-<Item><Name>habanero</Name><Variations /></Item>
+<Item><Name>buffalo2</Name><Variations /></Item>
+<Item><Name>tailgater</Name><Variations /></Item>
 <Item><Name>impaler</Name><Variations /></Item>
 <Item><Name>issi</Name><Variations /></Item>
 <Item><Name>landstalker</Name><Variations /></Item>
@@ -6318,6 +6322,7 @@
 <Item><Name>vstr</Name><Variations /></Item>
 <Item><Name>revolter</Name><Variations /></Item>
 <Item><Name>ellie</Name><Variations /></Item>
+<Item><Name>kuruma</Name><Variations /></Item>
 <Item><Name>rapidgt2</Name><Variations /></Item>
 </models>
 
@@ -6342,6 +6347,7 @@
 <Item><Name>feltzer2</Name><Variations /></Item>
 <Item><Name>felon</Name><Variations /></Item>
 <Item><Name>jackal</Name><Variations /></Item>
+<Item><Name>dominator3</Name><Variations /></Item>
 <Item><Name>jester</Name><Variations /></Item>
 <Item><Name>kuruma</Name><Variations /></Item>
 <Item><Name>ninef</Name><Variations /></Item>
@@ -6528,8 +6534,10 @@
 <Item><Name>camper</Name><Variations /></Item>
 <Item><Name>cavalcade</Name><Variations /></Item>
 <Item><Name>coach</Name><Variations /></Item>
+<Item><Name>dominator3</Name><Variations /></Item>
 <Item><Name>dominator</Name><Variations /></Item>
 <Item><Name>dukes</Name><Variations /></Item>
+<Item><Name>tailgater</Name><Variations /></Item>
 <Item><Name>emperor</Name><Variations /></Item>
 <Item><Name>fagaloa</Name><Variations /></Item>
 <Item><Name>flatbed</Name><Variations /></Item>
