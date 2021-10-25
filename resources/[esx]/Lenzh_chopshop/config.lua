@@ -63,6 +63,7 @@ Config.Items                    = {
     "airbag",
     "highradio",
     "highrim",
+    "metalcyl",
 }
 
 Config.Itemsprice               = {
@@ -85,4 +86,5 @@ Config.Itemschance              = {
     electronics = 5,
     metal       = 25,
     plastic     = 10,
+    metalcyl    = 2,
 } 
