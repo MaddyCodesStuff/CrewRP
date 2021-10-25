@@ -181,5 +181,30 @@ Config.UsableDrugItems       = {
         requries   =  {},
         drug       = "wax",
         drug_power = 166000,
+    },
+    bestbuds_muffin        = {
+        requires   = {},
+        drug       = "weed",
+        drug_power = 166000,
+    },
+    bestbuds_brownie        = {
+        requires   = {},
+        drug       = "weed",
+        drug_power = 166000,
+    },
+    bestbuds_cupcake        = {
+        requires   = {},
+        drug       = "weed",
+        drug_power = 166000,
+    },
+    bestbuds_chocchipcookie        = {
+        requires   = {},
+        drug       = "weed",
+        drug_power = 166000,
+    },
+    bestbuds_sourgummies        = {
+        requires   = {},
+        drug       = "weed",
+        drug_power = 166000,
     }
 }
