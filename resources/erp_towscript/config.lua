@@ -20,7 +20,7 @@ Config.NeededJob = 'mecano' -- Which Jobs should be allowed to Tow a Vehicle via
 Config.EnableCommand = true -- Enable or disable Towing a Vehicle via command  true = enabled  | false = disabled
 Config.VehicleRange = 35.0 -- Which range should be checked for checking for towable vehicles when trying to tow one
 Config.OnlyStoppedEngines = false -- Should the engine of the vehicle you want to tow be running or not when trying to tow it.  true = Only allow stopped Vehicles | false = Allow started & stopped engines
-Config.FlatbedDistance = -10.0 -- The Distance, a Vehicle should be teleported behind your Flatbed, when unloading it !! DONT MAKE IT TO LOW OR IT WILL BE STUCK IN YOUR FLATBED !!  !! NEEDS TO BE A NEGATIVE NUMBER !! 
+Config.FlatbedDistance = -9.0 -- The Distance, a Vehicle should be teleported behind your Flatbed, when unloading it !! DONT MAKE IT TO LOW OR IT WILL BE STUCK IN YOUR FLATBED !!  !! NEEDS TO BE A NEGATIVE NUMBER !! 
 
 Config.Flatbeds= { -- The Vehicle (spawn-names) of your Flatbed-Vehicles / cars which can load other Vehicles on them.  X, Y, Z - Where should the Vehicle be attached to the Tow-Truck? x = left/right, y = forwards/backwards, z = up/down
     ['flatbed'] = {x = 0.0, y = -2.75, z = 1.15}, -- default GTA V flatbed
