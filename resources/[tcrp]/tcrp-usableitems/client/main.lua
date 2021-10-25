@@ -10,6 +10,7 @@ local gurneySpawned = false
 local nearSpikes = false
 local spikesSpawned = false
 local ped = PlayerPedId()
+local regen = true
 local chickenhash = GetHashKey('a_c_hen')
 
 Citizen.CreateThread(function()
@@ -281,3 +282,38 @@ function RequestTheModel(model)
 		Citizen.Wait(0)
 	end
 end
+
+---------------------------------------------------------------------------
+-- Anti-Vitamin --
+---------------------------------------------------------------------------
+RegisterNetEvent("usableitems:anti-vitamin")
+AddEventHandler("usableitems:anti-vitamin", function(source)
+    regen = true
+    RequestAnimDict("mp_suicide")
+    while not HasAnimDictLoaded("mp_suicide") do
+        Citizen.Wait(5)
+    end
+    TaskPlayAnim(PlayerPedId(),"mp_suicide", "pill", 8.0, 8.0, 2000, 49, -1, false, false, false)
+    Citizen.CreateThread(function()
+        while regen do
+            Citizen.Wait(0)
+            SetPlayerHealthRechargeMultiplier(PlayerId(), 0.0)
+        end
+    end)
+    TriggerEvent('mythic_notify:client:SendAlert', { type = "inform", text = "You natural healing ability stops.", length = 5000 })
+    RemoveAnimSet("mp_suicide")
+end)
+---------------------------------------------------------------------------
+-- Multi-Vitamin --
+---------------------------------------------------------------------------
+RegisterNetEvent("usableitems:multi-vitamin")
+AddEventHandler("usableitems:multi-vitamin", function(source)
+    regen = false
+    RequestAnimDict("mp_suicide")
+    while not HasAnimDictLoaded("mp_suicide") do
+        Citizen.Wait(5)
+    end
+    TaskPlayAnim(PlayerPedId(),"mp_suicide", "pill", 8.0, 8.0, 2000, 49, -1, false, false, false)
+    TriggerEvent('mythic_notify:client:SendAlert', { type = "inform", text = "You natural healing ability returns.", length = 5000 })
+    RemoveAnimSet("mp_suicide")
+end)

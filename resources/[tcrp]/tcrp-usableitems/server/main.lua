@@ -41,6 +41,18 @@ ESX.RegisterUsableItem('lighter', function(source)
     TriggerClientEvent("usableitems:lighter", source)
 end)
 
+ESX.RegisterUsableItem('anti-vitamin', function(source)
+    local xPlayer = ESX.GetPlayerFromId(source)
+    xPlayer.removeInventoryItem('anti-vitamin', 1)
+    TriggerClientEvent("usableitems:anti-vitamin", source)
+end)
+
+ESX.RegisterUsableItem('multi-vitamin', function(source)
+    local xPlayer = ESX.GetPlayerFromId(source)
+    xPlayer.removeInventoryItem('multi-vitamin', 1)
+    TriggerClientEvent("usableitems:multi-vitamin", source)
+end)
+
 ESX.RegisterUsableItem('gurney', function(source)
 	local xPlayer = ESX.GetPlayerFromId(source)
     local src = source
