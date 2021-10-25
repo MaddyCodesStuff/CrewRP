@@ -1,5 +1,8 @@
 Config                    = {}
 
+-- Overide Notification Permissions - WARNING: Setting this to true will cause all players to recieve all notifications, Do not touch unless you know what you're doing.
+Config.override           = false
+
 Config.Locale             = 'en'
 
 -- Set the time (in minutes) during the player is outlaw
@@ -184,7 +187,7 @@ Config.InteriorLocations = {
         152066,
     },
     ["Hookie's"] = {
-        125442,
+        126466,
     },
     ["Sandy Medical"] = {
         544769,
@@ -194,6 +197,9 @@ Config.InteriorLocations = {
     },
     ["Pop's Diner"] = {
         537089,
+    },
+    ["Benny's"] = {
+        125442,
     },
     ["D&D Automotive"] = {
         551169,
