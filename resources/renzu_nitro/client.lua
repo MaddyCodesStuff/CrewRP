@@ -14,7 +14,7 @@ Citizen.CreateThread(function()
 	end
 end)
 
-function SetNitroBoostScreenEffectsEnabled(enabled)
+function SetNitroBoostScreenEffectsEnabled(disabled)
 	if enabled then
 	  --StopScreenEffect('RaceTurbo')
 	  --StartScreenEffect('RaceTurbo', 0, false)
