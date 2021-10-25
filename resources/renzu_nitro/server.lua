@@ -119,21 +119,6 @@ Citizen.CreateThread(function()
     })
     if foundRow[1] == nil then
       local weight = 'limit'
-      if Config.weight_type then
-        SqlFunc(Config.Mysql,'execute',"INSERT INTO items (name, label, weight) VALUES (@name, @label, @weight)", {
-          ['@name'] = "nitro"..nitroname.."",
-          ['@label'] = ""..firstToUpper(nitroname).." Nitro",
-          ['@weight'] = Config.weight
-        })
-        print("Inserting "..nitroname.."")
-      else
-        SqlFunc(Config.Mysql,'execute',"INSERT INTO items (name, label, limit) VALUES (@name, @label, @limit)", {
-          ['@name'] = "nitro"..nitroname.."",
-          ['@label'] = ""..firstToUpper(nitroname).." Nitro",
-          ['@limit'] = 1
-        })
-        print("Inserting "..nitroname.."")
-      end
     end
   end
   while ESX == nil do Wait(10) end

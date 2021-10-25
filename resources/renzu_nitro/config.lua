@@ -1,19 +1,19 @@
 Config = {}
 
 Config.Mysql = 'mysql-async'
-Config.weight_type = false
-Config.weight = 1.5
-Config.jobonly = true
+Config.weight_type = true
+Config.weight = 1
+Config.jobonly = false
 Config.nitrojob = 'mecano'
 
 -- JOB ITEMS --
 Config.nitros = {
-	['50shot'] = {Power = 1.05, Torque = 1.8, value = 15000}, 
-	['100shot'] = {Power = 1.10, Torque = 2.0, value = 25000}, 
-	['200shot'] = {Power = 1.15, Torque = 3.5, value = 45000}, 
+	['50shot'] = {Power = 1.025, Torque = 1.25, value = 15000}, 
+	['100shot'] = {Power = 1.05, Torque = 1.5, value = 25000}, 
+	['200shot'] = {Power = 1.10, Torque = 1.75, value = 45000}, 
 }
 Config.nitro_bottles = {
-	['nitro_bottle'] = {tick = 0.05, weight = 30.0, label = 'Nitro Bottle 10LB'}, -- weight is not the weight of item, its the additional weight to vehicle
+	['nitro_bottle'] = {tick = 0.30, weight = 85.0, label = 'Nitro Bottle 10LB'}, -- weight is not the weight of item, its the additional weight to vehicle
 }
 -- JOB ITEMS --
 
