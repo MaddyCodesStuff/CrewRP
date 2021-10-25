@@ -354,9 +354,9 @@ Config.Recipes = {
     },
     nitro50shot = {
         {item = "essence", quantity = 12 },
-        {item = "metalcyl", quantity = 1 },
         {item = "metal", quantity = 10 },
-        {item = "hoseline", quantity = 2 }
+        {item = "hoseline", quantity = 2 },
+        {item = "metalcyl", quantity = 1 }
     },
     nitro100shot = {
         {item = "nitro50shot", quantity = 1 },
