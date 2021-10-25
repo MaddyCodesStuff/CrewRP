@@ -78,6 +78,13 @@ Config.chanceItems = {
     weapon_crowbar = {min = 1, max = 1, itemNumber = 25},
     weapon_hammer = {min = 1, max = 1, itemNumber = 26},
     weapon_wrench = {min = 1, max = 1, itemNumber = 27},
+    weapon_breachhammer = {min = 1, max = 1, itemNumber = 28},
+    weapon_broom = {min = 1, max = 1, itemNumber = 29},
+    weapon_pickaxe = {min = 1, max = 1, itemNumber = 30},
+    weapon_pipe = {min = 1, max = 1, itemNumber = 31},
+    weapon_screwdriver = {min = 1, max = 1, itemNumber = 32},
+    weapon_shovel = {min = 1, max = 1, itemNumber = 33},
+    weapon_sledgehammer = {min = 1, max = 1, itemNumber = 34},
 }
 
 Config.fenceItems = {
