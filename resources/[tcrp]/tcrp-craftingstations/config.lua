@@ -59,6 +59,10 @@ Config.general = {
     {type = "pipe_meth", label = "Meth Pipe"},
     {type = "pipe_weed", label = "Weed Pipe"},
     {type = "copper", label = "Melt Down Copper Pipe"},
+    {type = "nitro50shot", label = "50 Shot Nitrous Bottle"},
+    {type = "nitro100shot", label = "100 Shot Nitrous Bottle"},
+    {type = "nitro200shot", label = "200 Shot Nitrous Bottle"},
+    {type = "hoseline", label = "Plastic Hose Line"},
 }
 
 Config.medicine = {
@@ -347,6 +351,27 @@ Config.Recipes = {
     },
     marijuana_eighth = {
         {item = "marijuana", quantity = 3},
+    },
+    nitro50shot = {
+        {item = "essence", quantity = 12 },
+        {item = "metalcyl", quantity = 1 },
+        {item = "metal", quantity = 10 },
+        {item = "hoseline", quantity = 2 }
+    },
+    nitro100shot = {
+        {item = "nitro50shot", quantity = 1 },
+        {item = "essence", quantity = 12 },
+        {item = "metal", quantity = 15 },
+        {item = "hoseline", quantity = 1 }
+    },
+    nitro200shot = {
+        {item = "nitro100shot", quantity = 1 },
+        {item = "essence", quantity = 12 },
+        {item = "metal", quantity = 25 },
+        {item = "hoseline", quantity = 1 }
+    },
+    hoseline = {
+        {item = "plastic", quantity = 5 }
     },
 }
 
