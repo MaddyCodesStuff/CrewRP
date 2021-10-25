@@ -85,6 +85,7 @@ Config.chanceItems = {
     weapon_screwdriver = {min = 1, max = 1, itemNumber = 32},
     weapon_shovel = {min = 1, max = 1, itemNumber = 33},
     weapon_sledgehammer = {min = 1, max = 1, itemNumber = 34},
+    hoseline = {min = 1, max = 3, itemNumber = 35},
 }
 
 Config.fenceItems = {
@@ -110,4 +111,5 @@ Config.fenceItems = {
     blowtorch = 500,    
     razer = 60,
     wood = 25,
+    hoseline = 20,
 }
