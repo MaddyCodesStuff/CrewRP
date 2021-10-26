@@ -28,7 +28,6 @@ RegisterNetEvent("orbital_cannon:toggle")
 AddEventHandler("orbital_cannon:toggle", function()
 	toggle = not toggle
 	if toggle then
-		
 		TriggerEvent('mythic_notify:client:SendAlert', { type = "inform", text = "ORBITAL CANNON ACTIVE [F1]", duration = 5000} )
 	else
 		TriggerEvent('mythic_notify:client:SendAlert', { type = "inform", text = "Orbital Cannon Deactivated", duration = 5000 } )
@@ -224,6 +223,7 @@ local rx,ry,rz = 0,0,0
 			if IsControlJustPressed(2,288) then
 				oc = not oc
 				if oc then
+					TriggerEvent("emote:do", "tablet2")
 					OCmenu:Open()
 					local ped = GetPlayerPed(-1)
 					local pos = GetEntityCoords(ped)
