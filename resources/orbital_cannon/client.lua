@@ -21,14 +21,13 @@ local toggle = false
 OCmenu = Menu.new("Orbital Cannon","",0.15,0.1,0.28,0.4,0)
 OCmenu.config.pcontrol = false
 OCmenu:addButton("Surveillance","Observe San Andreas using the optics of the Orbital Cannon. No firing capabilities.")
-OCmenu:addButton("Manual Targetting","Fire the Orbital Cannon on a manually tracked target.")
-OCmenu:addSubMenu("TARGET SELECT", "automatictargetting","Fire the Orbital Cannon on an automatically tracked target.","Automatic Targetting")
+OCmenu:addButton("Cannon","Fire the Orbital Cannon on a manually tracked target.")
 
 RegisterNetEvent("orbital_cannon:toggle")
 AddEventHandler("orbital_cannon:toggle", function()
 	toggle = not toggle
 	if toggle then
-		TriggerEvent('mythic_notify:client:SendAlert', { type = "inform", text = "ORBITAL CANNON ACTIVE [F1]", duration = 5000} )
+		TriggerEvent('mythic_notify:client:SendAlert', { type = "inform", text = "ORBITAL CANNON ACTIVE [[]", duration = 5000} )
 	else
 		TriggerEvent('mythic_notify:client:SendAlert', { type = "inform", text = "Orbital Cannon Deactivated", duration = 5000 } )
 	end
@@ -100,7 +99,7 @@ function OCmenu:OnMenuChange(last,current)
 end
 
 function OCmenu:onButtonSelected(name,btn)
-	if name == "Manual Targetting" then
+	if name == "Cannon" then
 		Setibuttons({	
 			{GetControlInstructionalButton(2,194,0), "Back"},
 			{GetControlInstructionalButton(1,15,0),"Zoom In"},
@@ -142,13 +141,6 @@ end
 function FireOrbitalCannon(lock,var)
 	if lock then
 		Citizen.CreateThread(function()
-			oc_countdown = true
-			oc_countdown_text = 3
-			Citizen.Wait(1000)
-			oc_countdown_text = 2
-			Citizen.Wait(1000)
-			oc_countdown_text = 1
-			Citizen.Wait(1000)
 			oc_countdown = false
 			local ped = var
 			local pos = GetEntityCoords(ped)
@@ -159,7 +151,6 @@ function FireOrbitalCannon(lock,var)
 					Citizen.Wait(0)
 				end
 			end
-			
 			local offset = GetObjectOffsetFromCoords(pos.x,pos.y,pos.z,heading,0,0,0)
 			RequestCollisionAtCoord(offset)
 			offset = GetObjectOffsetFromCoords(pos.x,pos.y,pos.z,heading,0,0,0)
@@ -179,16 +170,12 @@ function FireOrbitalCannon(lock,var)
 			else
 				OCmenu:showNotification("~r~Obliteration failed. Target survived.")
 			end
+			streetName, _      = GetStreetNameAtCoord(pos.x, pos.y, pos.z)
+			streetName         = GetStreetNameFromHashKey(streetName)
+			TriggerServerEvent('esx_outlawalert:explosionInProgress', pos, streetName, true, nil)
 		end)
 	else
 		Citizen.CreateThread(function()
-			oc_countdown = true
-			oc_countdown_text = 3
-			Citizen.Wait(1000)
-			oc_countdown_text = 2
-			Citizen.Wait(1000)
-			oc_countdown_text = 1
-			Citizen.Wait(1000)
 			oc_countdown = false
 			local pos = oc_pos
 			local heading = 0
@@ -211,6 +198,9 @@ function FireOrbitalCannon(lock,var)
 			ShootSingleBulletBetweenCoords(offset+vector3(0,0,5), offset, 5000, 0, GetHashKey("WEAPON_VEHICLE_ROCKET"), GetPlayerPed(-1), 1, 0, f(9000))
 			offset = GetObjectOffsetFromCoords(pos.x,pos.y,pos.z,heading,0,f(3),0)
 			ShootSingleBulletBetweenCoords(offset+vector3(0,0,5), offset, 5000, 0, GetHashKey("WEAPON_VEHICLE_ROCKET"), GetPlayerPed(-1), 1, 0, f(9000))
+			streetName, _      = GetStreetNameAtCoord(pos.x, pos.y, pos.z)
+			streetName         = GetStreetNameFromHashKey(streetName)
+			TriggerServerEvent('esx_outlawalert:explosionInProgress', pos, streetName, true, nil)
 		end)
 	end
 end
@@ -220,7 +210,7 @@ local rx,ry,rz = 0,0,0
 	while true do
 		Citizen.Wait(0)
 		if toggle then 
-			if IsControlJustPressed(2,288) then
+			if IsControlJustPressed(2,100) then
 				oc = not oc
 				if oc then
 					TriggerEvent("emote:do", "tablet2")
@@ -283,6 +273,7 @@ local rx,ry,rz = 0,0,0
 					SetFocusEntity(ped)
 				end
 				DisableControlAction(2, 26, true)
+				DisableControlAction(2, 24, true)
 				DisableControlAction(2, 16, true)
 				DisableControlAction(2, 17, true)
 				if not HasStreamedTextureDictLoaded("helicopterhud") then
@@ -412,7 +403,7 @@ local rx,ry,rz = 0,0,0
 							end
 							if oc_manual then
 								oc_pos = vector3(position.x,position.y,g)
-								if IsDisabledControlJustPressed(2,201) or IsDisabledControlJustPressed(2,24) then
+								if IsDisabledControlJustPressed(2,201) then
 									if oc_countdown == false then
 										FireOrbitalCannon(false)
 									end
