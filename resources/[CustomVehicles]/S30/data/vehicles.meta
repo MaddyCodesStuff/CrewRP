@@ -16,7 +16,7 @@
       <animConvRoofWindowsAffected />
       <ptfxAssetName>null</ptfxAssetName>
       <audioNameHash>SULTANRS</audioNameHash>
-      <layout>LAYOUT_LOW_RHD</layout>
+      <layout>LAYOUT_LOW_NSX</layout>
       <coverBoundOffsets>COQUETTE_COVER_OFFSET_INFO</coverBoundOffsets>
       <explosionInfo>EXPLOSION_INFO_DEFAULT</explosionInfo>
       <scenarioLayout />

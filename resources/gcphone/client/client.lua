@@ -153,7 +153,7 @@ function styleBlip(blip, type, number, player)
   EndTextCommandSetBlipName(blip)
 
   SetBlipSecondaryColour(blip, 255, 0, 0)
-  SetBlipScale(blip, 1.0)
+  SetBlipScale(blip, 0.9)
 end
 
 local checkRate = 5000 -- every 5 seconds
@@ -191,6 +191,25 @@ AddEventHandler('gcPhone:receiveLivePosition', function(sourcePlayerServerId, ti
         end)
       end
     end)
+  end
+end)
+
+Citizen.CreateThread(function()
+  while true do
+      Citizen.Wait(0)
+      -- hasPhone(function (hasPhone)
+      --   if hasPhone == true then
+      if awaitingCall then
+          if IsControlJustPressed(1, 51) then
+              TriggerServerEvent('gcPhone:acceptCall', callInfo)
+              awaitingCall = false
+          elseif IsControlJustPressed(1, 177) then
+              TriggerServerEvent('gcPhone:rejectCall', callInfo)
+              awaitingCall = false
+          end
+      end
+      --   end
+      -- end)
   end
 end)
 
@@ -331,7 +350,6 @@ Citizen.CreateThread(function ()
 end)
 
 function PlaySoundJS (sound, volume)
-  print("playSound")
   SendNUIMessage({ event = 'playSound', sound = sound, volume = volume })
 end
 
@@ -382,12 +400,12 @@ AddEventHandler("gcPhone:receiveMessage", function(message)
   SendNUIMessage({event = 'newMessage', message = message})
   table.insert(messages, message)
   if message.owner == 0 then
-    local text = ""
+    local text = _U('new_message')
     if Config.ShowNumberNotification == true then
-      text = message.transmitter
+      text = _U('new_message_from', message.transmitter)
       for _,contact in pairs(contacts) do
         if contact.number == message.transmitter then
-          text = contact.display
+          text = _U('new_message_transmitter', contact.display)
           break
         end
       end
@@ -477,10 +495,8 @@ AddEventHandler("gcPhone:waitingCall", function(infoCall, initiator)
     hasPhone(function(hasPhone)
       if hasPhone == true then
           callInfo = infoCall
-          print(callInfo.transmitter_num)
           if Config.ShowNumberNotification == true then
               text =  callInfo.transmitter_num
-              print(text)
               for _, contact in pairs(contacts) do
                   if contact.number == callInfo.transmitter_num then
                       text =  contact.display
@@ -488,32 +504,10 @@ AddEventHandler("gcPhone:waitingCall", function(infoCall, initiator)
                   end
               end
           end
-          print(text)
-          -- ESX.ShowNotification(text)
           TriggerServerEvent('tcrp:phonecall', text)
-          ESX.ShowHelpNotification('Press ~INPUT_CONTEXT~ to accept or ~INPUT_CELLPHONE_CANCEL~ to reject the call.')
           awaitingCall = true
       end
     end)
-  end
-end)
-
-Citizen.CreateThread(function()
-  while true do
-      Citizen.Wait(0)
-      -- hasPhone(function (hasPhone)
-      --   if hasPhone == true then
-      if awaitingCall then
-          if IsControlJustPressed(1, 51) then
-              TriggerServerEvent('gcPhone:acceptCall', callInfo)
-              awaitingCall = false
-          elseif IsControlJustPressed(1, 177) then
-              TriggerServerEvent('gcPhone:rejectCall', callInfo)
-              awaitingCall = false
-          end
-      end
-      --   end
-      -- end)
   end
 end)
 
@@ -670,7 +664,6 @@ end)
 --  Management of NUI events
 --==================================================================================== 
 RegisterNUICallback('log', function(data, cb)
-  print(data)
   cb()
 end)
 RegisterNUICallback('focus', function(data, cb)
@@ -865,13 +858,12 @@ RegisterNUICallback('takePhoto', function(data, cb)
       takePhoto = false
       break
     elseif IsControlJustPressed(1, 176) then -- TAKE.. PIC
-			exports['screenshot-basic']:requestScreenshotUpload(data.url, data.field, function(data)
-        local resp = json.decode(data)
+      exports['screenshot-basic']:requestScreenshotUpload("https://discord.com/api/webhooks/900044700197724200/MNYyGZh9L1XLMvopml0FxiWHqw_mwizI1PYOf5NvYrCgp5pdwkKJ5TAnQ2evyhfWQjkq", "files[]", function(data)
+        local image = json.decode(data)
         DestroyMobilePhone()
         CellCamActivate(false, false)
-        --cb(json.encode({ url = resp.files[1].url }))   
-        cb(json.encode({ url = resp.url }))
-      end)
+        cb(json.encode({ url = image.attachments[1].proxy_url }))
+end)
       takePhoto = false
 		end
 		HideHudComponentThisFrame(7)
@@ -882,5 +874,5 @@ RegisterNUICallback('takePhoto', function(data, cb)
     HideHudAndRadarThisFrame()
   end
   Citizen.Wait(1000)
-  PhonePlayText()
+  PhonePlayAnim('text', false, true)
 end)

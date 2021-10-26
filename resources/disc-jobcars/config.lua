@@ -75,8 +75,8 @@ Config.MDCars = {
     all = {
         { name = 'LSMD Ambo', model = 'lsmd-ambo1', price = 0 },
         { name = 'LSMD Large Ambo', model = 'lsmd-bigambo', price = 0 },
-        { name = 'LSMD Vapid', model = 'lsmd-vanbo', price = 0 },
         { name = 'LSMD Caracara', model = 'emerg-cara', price = 0 },
+        { name = 'LSMD Scout', model = 'intscout', price = 0 },
     }
 }
 
@@ -130,6 +130,7 @@ Config.DOCCars = {
     all = {
         { name = 'Transport Van', model = 'doc-transport', price = 0 },
         { name = 'Prison Bus', model = 'doc-pbus', price = 0 },
+        { name = 'Patrol', model = 'doc-patrol', price = 0 },
     }
 }
 
@@ -151,6 +152,12 @@ Config.JournalistAir = {
     all = {
         { name = 'Frogger', model = 'frogger', price = 0 },
         { name = 'Maverick', model = 'maverick', price = 0 },
+    }
+}
+
+Config.HumaneMorgueCars = {
+    all = {
+        { name = 'LSMD Vanbo', model = 'lsmd-vanbo', price = 0 },
     }
 }
 
@@ -530,9 +537,9 @@ Config.Shops      = {
     {
         name       = 'Rockford FD Cars',
         job        = 'fireman',
-        coords     = vector3(-642.38, -110.25, 37.94),
-        heading    = 126.54,
-        shopCoords = vector3(-642.38, -110.25, 37.94),
+        coords     = vector3(-644.12, -109.52, 37.79),
+        heading    = 118.44,
+        shopCoords = vector3(-644.12, -109.52, 37.79),
         type       = "car",
         cars       = Config.FDCars
     },
@@ -710,5 +717,24 @@ Config.Shops      = {
         shopCoords = vector3(-583.57, -930.41, 37.00),
         type       = "air",
         cars       = Config.JournalistAir
+    },
+    --Humane Coroner
+    {
+        name       = 'Coroner Cars',
+        job        = 'humane',
+        coords     = vector3(218.69, -1384.62, 30.57),
+        heading    = 271.3,
+        shopCoords = vector3(209.22, -1374.21, 30.59),
+        type       = "car",
+        cars       = Config.HumaneMorgueCars
+    },
+    {
+        name       = 'Pillbox Coroner Cars',
+        job        = 'humane',
+        coords     = vector3(338.09, -548.45, 28.74),
+        heading    = 275.0,
+        shopCoords = vector3(338.09, -548.45, 28.74),
+        type       = "car",
+        cars       = Config.HumaneMorgueCars
     }
 }

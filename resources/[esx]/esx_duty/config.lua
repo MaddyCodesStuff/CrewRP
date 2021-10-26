@@ -77,7 +77,7 @@ Config.Zones        = {
     },
 
     FireDutyLS_CityHall = {
-        Pos   = { x = -634.62, y = -126.62, z = 38.03 },
+        Pos   = { x = -630.57, y = -124.36, z = 38.23 },
         Size  = { x = 1.5, y = 1.5, z = 1.5 },
         Color = { r = 255, g = 255, b = 0 },
         Type  = 27,

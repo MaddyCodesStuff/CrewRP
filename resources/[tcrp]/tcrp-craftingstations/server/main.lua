@@ -22,7 +22,11 @@ AddEventHandler("crafting:CraftItem", function(item, code)
             xPlayer.removeInventoryItem(required_items[i].item, required_items[i].quantity)
         end
         if string.match(string.lower(code), "weapon_") then
-            xPlayer.addWeapon(code, 0)
+            if string.match(string.lower(code), "weapon_molotov") then
+                xPlayer.addWeapon(code, 3)
+            else
+                xPlayer.addWeapon(code, 0)
+            end
         else
             xPlayer.addInventoryItem(code, 1)
         end

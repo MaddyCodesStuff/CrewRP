@@ -1,6 +1,6 @@
 {
-  "reseau": "TCRP 5G",
-  "warningMessageCount": 999,
+  "reseau": "TCRP Mobile",
+  "warningMessageCount": 9999,
   "themeColor": "#d08335",
   "themeColorTitle": "#f7f7f7",
   "colors": [
@@ -41,6 +41,15 @@
 
   "background": {
     "TheCrewRP-1": "tcrpPhone.jpg",
+    "TheCrewRP-2": "tcrpPhone2.jpg",
+    "TheCrewRP-3": "tcrpPhone3.jpg",
+    "TheCrewRP-4": "tcrpPhone4.jpg",
+    "TheCrewRP-5": "tcrpPhone5.jpg",
+    "TheCrewRP-6": "tcrpPhone6.jpg",
+    "TheCrewRP-7": "tcrpPhone7.jpg",
+    "TheCrewRP-8": "tcrpPhone8.jpg",
+    "TheCrewRP-9": "tcrpPhone9.jpg",
+    "TheCrewRP-10": "tcrpPhone10.jpg",
     "Custom URL": "URL"
 	
   },
@@ -85,149 +94,150 @@
   },
 
   "serviceCall": [{
-      "display": "Police",
-      "icon": "/html/static/img/icons_app/police.png",
-      "subMenu": [{
-          "title": "Send Message",
-          "action": "sendMessage",
-          "eventName": "esx_addons_gcphone:call",
-          "icons": "fa-comments",
-          "type": {
-            "number": "police"
-          }
-        },
-        {
-          "title": "Call Police Station",
-          "action": "call",
-          "eventName": "gcphone:autoCallNumber",
-          "icons": "fa-phone",
-          "type": {
-            "number": "911"
-          }
+    "display": "Police",
+    "icon": "/html/static/img/icons_app/police.png",
+    "subMenu": [{
+        "title": "Send Message",
+        "action": "sendMessage",
+        "eventName": "esx_addons_gcphone:call",
+        "icons": "fa-comments",
+        "type": {
+          "number": "police"
         }
-      ]
-    },
-	{
-      "display": "Ambulance",
-      "icon": "/html/static/img/icons_app/ems.png",
-      "subMenu": [{
-          "title": "Send Message",
-          "action": "sendMessage",
-          "eventName": "esx_addons_gcphone:call",
-          "icons": "fa-comments",
-          "type": {
-            "number": "ambulance"
-          }
-        },
-        {
-          "title": "Call Ambulance",
-          "action": "call",
-          "eventName": "gcphone:autoCallNumber",
-          "icons": "fa-phone",
-          "type": {
-            "number": "311"
-          }
+      },
+      {
+        "title": "Call Police Station",
+        "action": "call",
+        "eventName": "gcphone:autoCallNumber",
+        "icons": "fa-phone",
+        "type": {
+          "number": "911"
         }
-      ]
-    },
-	{
-      "display": "Fire/EMS",
-      "icon": "/html/static/img/icons_app/fire.png",
-      "subMenu": [{
-          "title": "Send Message",
-          "action": "sendMessage",
-          "eventName": "esx_addons_gcphone:call",
-          "icons": "fa-comments",
-          "type": {
-            "number": "fireman"
-          }
-        }
-      ]
-    },
-	{
-      "display": "Park Ranger",
-      "icon": "/html/static/img/icons_app/park.png",
-      "subMenu": [{
-          "title": "Send Message",
-          "action": "sendMessage",
-          "eventName": "esx_addons_gcphone:call",
-          "icons": "fa-comments",
-          "type": {
-            "number": "parkranger"
-          }
-        }
-      ]
-    },
-	{
-      "display": "Journalist",
-      "icon": "/html/static/img/icons_app/park.png",
-      "subMenu": [{
-          "title": "Send Message",
-          "action": "sendMessage",
-          "eventName": "esx_addons_gcphone:call",
-          "icons": "fa-comments",
-          "type": {
-            "number": "journalist"
-          }
-        }
-      ]
-    },
-  {
-      "display": "Taxi",
-      "icon": "/html/static/img/icons_app/taxi.png",
-      "subMenu": [{
-          "title": "Send Message",
-          "action": "sendMessage",
-          "eventName": "esx_addons_gcphone:call",
-          "icons": "fa-comments",
-          "type": {
-            "number": "taxi"
-          }
-        },
-        {
-          "title": "Call Taxi",
-          "action": "call",
-          "eventName": "gcphone:autoCallNumber",
-          "icons": "fa-phone",
-          "type": {
-            "number": "511"
-          }
-        }
-      ]
-    }
-  ],
-
-  "defaultContacts": [{
-      "number": "ambulance",
-      "display": "Ambulance",
-      "icon": "/html/static/img/icons_app/ems.png"
-    },
-    {
-      "number": "fireman",
-      "display": "Fire",
-      "icon": "/html/static/img/icons_app/fire.png"
-    },
-	{
-      "number": "parkranger",
-      "display": "Park Ranger",
-      "icon": "/html/static/img/icons_app/park.png"
-    },
-  {
-    "number": "journalist",
-    "display": "Journalists",
-    "icon": " "
+      }
+    ]
   },
-	{
-      "number": "police",
-      "display": "Police",
-      "icon": "/html/static/img/icons_app/police.png"
-    },
-	{
-      "number": "taxi",
-      "display": "Taxi",
-      "icon": "/html/static/img/icons_app/taxi.png"
-    }	
-  ],
+{
+    "display": "Ambulance",
+    "icon": "/html/static/img/icons_app/ems.png",
+    "subMenu": [{
+        "title": "Send Message",
+        "action": "sendMessage",
+        "eventName": "esx_addons_gcphone:call",
+        "icons": "fa-comments",
+        "type": {
+          "number": "ambulance"
+        }
+      },
+      {
+        "title": "Call Ambulance",
+        "action": "call",
+        "eventName": "gcphone:autoCallNumber",
+        "icons": "fa-phone",
+        "type": {
+          "number": "311"
+        }
+      }
+    ]
+  },
+{
+    "display": "Fire/EMS",
+    "icon": "/html/static/img/icons_app/fire.png",
+    "subMenu": [{
+        "title": "Send Message",
+        "action": "sendMessage",
+        "eventName": "esx_addons_gcphone:call",
+        "icons": "fa-comments",
+        "type": {
+          "number": "fireman"
+        }
+      }
+    ]
+  },
+{
+    "display": "Park Ranger",
+    "icon": "/html/static/img/icons_app/park.png",
+    "subMenu": [{
+        "title": "Send Message",
+        "action": "sendMessage",
+        "eventName": "esx_addons_gcphone:call",
+        "icons": "fa-comments",
+        "type": {
+          "number": "parkranger"
+        }
+      }
+    ]
+  },
+{
+    "display": "Journalist",
+    "icon": "/html/static/img/icons_app/park.png",
+    "subMenu": [{
+        "title": "Send Message",
+        "action": "sendMessage",
+        "eventName": "esx_addons_gcphone:call",
+        "icons": "fa-comments",
+        "type": {
+          "number": "journalist"
+        }
+      }
+    ]
+  },
+{
+    "display": "Taxi",
+    "icon": "/html/static/img/icons_app/taxi.png",
+    "subMenu": [{
+        "title": "Send Message",
+        "action": "sendMessage",
+        "eventName": "esx_addons_gcphone:call",
+        "icons": "fa-comments",
+        "type": {
+          "number": "taxi"
+        }
+      },
+      {
+        "title": "Call Taxi",
+        "action": "call",
+        "eventName": "gcphone:autoCallNumber",
+        "icons": "fa-phone",
+        "type": {
+          "number": "511"
+        }
+      }
+    ]
+  }
+],
+
+
+"defaultContacts": [{
+  "number": "ambulance",
+  "display": "Ambulance",
+  "icon": "/html/static/img/icons_app/ems.png"
+},
+{
+  "number": "fireman",
+  "display": "Fire",
+  "icon": "/html/static/img/icons_app/fire.png"
+},
+{
+  "number": "parkranger",
+  "display": "Park Ranger",
+  "icon": "/html/static/img/icons_app/park.png"
+},
+{
+"number": "journalist",
+"display": "Journalists",
+"icon": " "
+},
+{
+  "number": "police",
+  "display": "Police",
+  "icon": "/html/static/img/icons_app/police.png"
+},
+{
+  "number": "taxi",
+  "display": "Taxi",
+  "icon": "/html/static/img/icons_app/taxi.png"
+}	
+],
 
 "apps": [
     {
@@ -535,6 +545,7 @@
       "APP_PHONE_DELETE_ALL": "Delete All",
       "APP_PHONE_CANCEL": "Cancel",
       "APP_PHONE_ADD": "Add Contact",
+      "APP_PHONE_CALL_IGNORE": "Ignore Call",
       "APP_PHONE_TITLE": "Telephone Number",
       "APP_PHONE_MENU_FAVORITES": "Favorites",
       "APP_PHONE_MENU_RECENTS": "Recent",

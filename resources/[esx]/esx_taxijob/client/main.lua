@@ -149,7 +149,6 @@ function OpenTaxiActionsMenu()
     { label = _U('spawn_veh'), value = 'spawn_vehicle' },
     { label = _U('deposit_stock'), value = 'put_stock' },
     { label = _U('take_stock'), value = 'get_stock' },
-    { label = "Radio ON/OFF", value = 'radio_menu' },
   }
 
   if Config.EnablePlayerManagement and PlayerData.job ~= nil and PlayerData.job.grade_name == 'boss' then
@@ -166,9 +165,6 @@ function OpenTaxiActionsMenu()
     },
     function(data, menu)
 
-      if data.current.value == 'radio_menu' then
-        TriggerEvent("esx-radios:toggleRadio")
-      end
 
       if data.current.value == 'put_stock' then
         OpenPutStocksMenu()

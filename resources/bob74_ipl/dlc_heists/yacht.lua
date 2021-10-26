@@ -1,3 +1,4 @@
+
 -- Heist Yatch: -2043.974,-1031.582, 11.981
 
 exports('GetHeistYachtObject', function()
@@ -5,7 +6,7 @@ exports('GetHeistYachtObject', function()
 end)
 
 HeistYacht = {
-    ipl    = {
+    ipl = {
         "hei_yacht_heist",
         "hei_yacht_heist_bar",
         "hei_yacht_heist_bar_lod",
@@ -20,15 +21,12 @@ HeistYacht = {
         "hei_yacht_heist_lounge_lod",
         "hei_yacht_heist_slod"
     },
-    Enable = function(state)
-        EnableIpl(HeistYacht.ipl, state)
-    end,
-    Water  = {
+    Enable = function(state) EnableIpl(HeistYacht.ipl, state) end,
+    Water = {
         modelHash = GetHashKey("apa_mp_apa_yacht_jacuzzi_ripple1"),
 
-        Enable    = function(state)
-            local handle = GetClosestObjectOfType(-2023.773, -1038.0, 5.40, 5.0, HeistYacht.Water.modelHash, false,
-                                                  false, false)
+        Enable = function(state)
+            local handle = GetClosestObjectOfType(-2023.773, -1038.0, 5.40, 5.0, HeistYacht.Water.modelHash, false, false, false)
 
             if (state) then
                 -- Enable
@@ -37,9 +35,8 @@ HeistYacht = {
                     while not HasModelLoaded(HeistYacht.Water.modelHash) do
                         Wait(0)
                     end
-
-                    local water = CreateObjectNoOffset(HeistYacht.Water.modelHash, -2023.773, -1038.0, 5.40, true, true,
-                                                       false)
+        
+                    local water = CreateObjectNoOffset(HeistYacht.Water.modelHash, -2023.773, -1038.0, 5.40, true, true, false)
                     SetEntityAsMissionEntity(water, false, false)
                 end
             else
@@ -51,5 +48,8 @@ HeistYacht = {
             end
         end
     },
+    LoadDefault = function()
+        HeistYacht.Enable(true)
+    end
 }
 

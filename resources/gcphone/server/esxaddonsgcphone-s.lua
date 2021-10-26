@@ -15,16 +15,13 @@ TriggerEvent('esx:getSharedObject', function(obj)
   ESX = obj
 end)
 
-function notifyAlertSMS (number, alert, listSrc, anon)
+function notifyAlertSMS (number, alert, listSrc)
   if PhoneNumbers[number] ~= nil then
     local messText = alert.message
     if (messText == '%posrealtime%') then
       messText = 'GPS Live Position'
     end
-    local mess =  messText
-    if anon == nil or not anon then
-      mess = 'From #' .. alert.numero  .. ' : ' .. mess
-    end
+    local mess = 'From #' .. alert.numero  .. ' : ' .. messText
     if alert.coords ~= nil then
       mess = mess .. ' ' .. alert.coords.x .. ', ' .. alert.coords.y 
     end
@@ -93,16 +90,16 @@ AddEventHandler('gcPhone:sendMessage', function(number, message)
 end)
 
 RegisterServerEvent('esx_addons_gcphone:startCall')
-AddEventHandler('esx_addons_gcphone:startCall', function (number, message, coords, anon)
+AddEventHandler('esx_addons_gcphone:startCall', function (number, message, coords)
   local sourcePlayer = tonumber(source)
   if PhoneNumbers[number] ~= nil then
-    getPhoneNumber(source, function (phone)
+    getPhoneNumber(source, function (phone) 
       notifyAlertSMS(number, {
         message = message,
         coords = coords,
         numero = phone,
         source = sourcePlayer
-      }, PhoneNumbers[number].sources, anon)
+      }, PhoneNumbers[number].sources)
     end)
   else
     print('= WARNING = Trying to call an unregistered service => numero : ' .. number)

@@ -84,10 +84,11 @@ end)
 AddEventHandler('onResourceStart', function(resource)
 	if resource ~= GetCurrentResourceName() then return end
 	if true then
-		SetConvarReplicated('voice_use3dAudio', true)
+		SetConvarReplicated('voice_useNativeAudio', true)
+		SetConvarReplicated('voice_use2dAudio', false)
 		SetConvarReplicated('voice_defaultCycle', 'F1')
-		SetConvarReplicated('voice_enableSubmix', true)
-		SetConvarReplicated('voice_enableRadioAnim', true)
+		SetConvarReplicated('voice_enableSubmix', 1)
+		SetConvarReplicated('voice_enableRadioAnim', 1)
 		SetConvarReplicated('voice_useSendingRangeOnly',true)
 		local players = GetPlayers()
 		for i = 1, #players do

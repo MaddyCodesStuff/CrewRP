@@ -1546,3 +1546,76 @@ ESX.RegisterUsableItem('wetpetfood', function(source)
     TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'Some canned pet food')
 
 end)
+
+ESX.RegisterUsableItem('chipsandguac', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('chipsandguac', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'hunger', 500000)
+    TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_taco_01')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'some chips and guac')
+
+end)
+
+ESX.RegisterUsableItem('chipsandsalsa', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('chipsandsalsa', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'hunger', 500000)
+    TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_taco_01')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'some chips and salsa')
+
+end)
+
+ESX.RegisterUsableItem('churro', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('churro', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'hunger', 500000)
+    TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_taco_01')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a churro')
+
+end)
+
+ESX.RegisterUsableItem('quesadillas', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('quesadillas', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'hunger', 500000)
+    TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_taco_01')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'some quesadillas')
+
+end)
+
+ESX.RegisterUsableItem('tamale', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('tamale', 1)
+
+    TriggerClientEvent('esx_status:add', source, 'hunger', 500000)
+    TriggerClientEvent('esx_basicneeds:onEat', source, 'prop_taco_01')
+    TriggerClientEvent('mythic_notify:client:SendEatAlert', source, 'a tamale')
+
+end)
+
+ESX.RegisterUsableItem('hotsauce', function(source)
+
+    local xPlayer = ESX.GetPlayerFromId(source)
+
+    xPlayer.removeInventoryItem('hotsauce', 1)
+
+    TriggerClientEvent('esx_status:remove', source, 'thirst', 500000)
+    TriggerClientEvent('esx_basicneeds:onDrink', source)
+    TriggerClientEvent('mythic_notify:client:SendDrinkAlert', source, 'a bottle of hot sauce. What is wrong with you?')
+    TriggerClientEvent('esx_status:remove', source, 'drunk', 125000)
+
+end)

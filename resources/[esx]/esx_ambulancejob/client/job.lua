@@ -53,8 +53,6 @@ function OpenMobileAmbulanceActionsMenu()
 						 elements = menuElements
 					 }, function(data, menu)
 
-				
-
 			if data.current.value == 'citizen_interaction' then
 				ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'citizen_interaction',
 								 {
@@ -560,6 +558,7 @@ function OpenPharmacyMenu()
 							 { label = _U('pharmacy_take', 'Tylenol'), value = 'tylenol' },
 							 { label = _U('pharmacy_take', 'Body Armor'), value = 'bodyarmor_3' },
 							 { label = _U('pharmacy_take', 'Scuba Gear'), value = 'scuba' },
+							 { label = _U('pharmacy_take', 'Gurney'), value = 'gurney' },
 						 }
 					 }, function(data, menu)
 			TriggerServerEvent('esx_ambulancejob:giveItem', data.current.value)
