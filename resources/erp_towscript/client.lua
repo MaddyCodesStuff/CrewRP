@@ -37,15 +37,10 @@ Citizen.CreateThread(function()
     calculateAccess()
 end)
 
-RegisterNetEvent('esx:setJob')
-AddEventHandler('esx:setJob', function(job)
-    PlayerData.job = job
-    calculateAccess()
-end)
 
 function calculateAccess()
     if Config.JobRestriction then
-        if PlayerData.job.name:lower() == Config.NeededJob:lower() then
+        if PlayerData.job.name == Config.NeededJob then
             isAllowedToTow = true
         else
             isAllowedToTow = false
@@ -62,7 +57,7 @@ AddEventHandler('erp_towscirpt:tow', function()
 
     if isAllowedToTow then
 
-        local vehicle = GetLastDrivenVehicle()
+        local vehicle = GetPlayersLastVehicle()
 
         
         if isThisAFlatbed(vehicle) then
