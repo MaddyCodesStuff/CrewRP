@@ -1,3 +1,15 @@
+ESX = nil
+
+Citizen.CreateThread(function()
+
+    while ESX == nil do
+        TriggerEvent('esx:getSharedObject', function(obj)
+            ESX = obj
+        end)
+        Citizen.Wait(0)
+    end
+end)
+
 ---------------------------------------------------------------------------
 -- Important Variables --
 ---------------------------------------------------------------------------
@@ -274,6 +286,87 @@ function CreateGastank(amount)
         spawnCoords = GetOffsetFromEntityInWorldCoords(gastank, 0.0, 4.0, 0.0)
     end
 end
+
+RegisterNetEvent("usableitems:revive")
+AddEventHandler("usableitems:revive", function(Source)
+    local closestPlayer, closestDistance = ESX.Game.GetClosestPlayer()
+    if closestPlayer == -1 or closestDistance > 5.0 then
+        ESX.ShowNotification('No Players Nearby')
+    else
+        TriggerEvent('emote:do', 'cpr')
+        Citizen.Wait(5000)
+        TriggerServerEvent('usableitem:revive', GetPlayerServerId(closestPlayer))
+        TriggerEvent('emote:cancel')
+    end
+end)
+
+RegisterNetEvent("usableitems:splint")
+AddEventHandler("usableitems:splint", function(Source)
+    local closestPlayer, closestDistance = ESX.Game.GetClosestPlayer()
+    if closestPlayer == -1 or closestDistance > 5.0 then
+        ESX.ShowNotification('No Players Nearby')
+    else
+        exports['mythic_progbar']:Progress({
+            name            = "splint_action",
+            duration        = 10000,
+            label           = "Applying Splint",
+            useWhileDead    = false,
+            canCancel       = true,
+            controlDisables = {
+                disableMovement    = false,
+                disableCarMovement = false,
+                disableMouse       = false,
+                disableCombat      = true,
+            },
+            animation       = {
+                animDict = "missheistdockssetup1clipboard@idle_a",
+                anim     = "idle_a",
+                flags    = 49,
+            },
+            prop            = {
+                model = "prop_stat_pack_01"
+            },
+        }, function(status)
+            if not status then
+                TriggerServerEvent('usableitem:splint', GetPlayerServerId(closestPlayer))
+            end
+        end)
+    end
+end)
+
+RegisterNetEvent("usableitems:bandage")
+AddEventHandler("usableitems:bandage", function(Source)
+    local closestPlayer, closestDistance = ESX.Game.GetClosestPlayer()
+    if closestPlayer == -1 or closestDistance > 5.0 then
+        ESX.ShowNotification('No Players Nearby')
+    else
+        exports['mythic_progbar']:Progress({
+            name            = "bandage_action",
+            duration        = 10000,
+            label           = "Applying Compression Bandage",
+            useWhileDead    = false,
+            canCancel       = true,
+            controlDisables = {
+                disableMovement    = false,
+                disableCarMovement = false,
+                disableMouse       = false,
+                disableCombat      = true,
+            },
+            animation       = {
+                animDict = "missheistdockssetup1clipboard@idle_a",
+                anim     = "idle_a",
+                flags    = 49,
+            },
+            prop            = {
+                model = "prop_stat_pack_01"
+            },
+        }, function(status)
+            if not status then
+                TriggerServerEvent('usableitem:bandage', GetPlayerServerId(closestPlayer))
+            end
+        end)
+    end
+end)
 
 function RequestTheModel(model)
 	RequestModel(model)
