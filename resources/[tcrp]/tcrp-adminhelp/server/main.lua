@@ -176,5 +176,28 @@ TriggerEvent('es:addGroupCommand', 'givearmor', 'admin', function(source, args, 
 		SetPedArmour(source, 100)
 	end
 end, function(source, args, user)
-	TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Insufficient Permissions.' } })
+    TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Insufficient Permissions.' } })
 end, { help = ('Give Armor to player'), params = { { name = 'id' } } })
+
+TriggerEvent('es:addGroupCommand', 'godmode', 'admin', function(source)
+	if checkPerms(source) then
+        TriggerClientEvent('admin:godmode', -1)
+    else
+        TriggerClientEvent('mythic_notify:client:SendErrorAlert', source,
+                                { text = "How dare you attempt to enter the realm of the gods."})
+        TriggerClientEvent('es_admin:quick', source, "slay")
+    end
+end, function(source)
+	TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Insufficient Permissions.' } })
+end, { help = ('Toggle God Mode On') })
+
+TriggerEvent('es:addGroupCommand', 'godmodeoff', 'admin', function(source)
+	if checkPerms(source) then
+        TriggerClientEvent('admin:godmodeoff', -1)
+    else
+        TriggerClientEvent('mythic_notify:client:SendErrorAlert', source,
+                                { text = "How dare you attempt to enter the realm of the gods."})
+    end
+end, function(source)
+	TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Insufficient Permissions.' } })
+end, { help = ('Toggle God Mode Off') })

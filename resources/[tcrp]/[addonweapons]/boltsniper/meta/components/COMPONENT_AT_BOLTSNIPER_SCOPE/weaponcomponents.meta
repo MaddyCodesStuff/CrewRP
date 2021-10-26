@@ -18,10 +18,10 @@
 			<HudCapacity value="0"/>
 			<HudAccuracy value="10"/>
 			<HudRange value="0"/>
-			<CameraHash>SNIPER_AIM_CAMERA</CameraHash>
+			<CameraHash>SNIPER_FIXED_ZOOM_AIM_CAMERA</CameraHash>
 			<RecoilShakeAmplitude value="0.280000"/>
 			<ExtraZoomFactorForAccurateMode value="0.000000"/>
-			<ReticuleHash>SNIPER_MAX</ReticuleHash>
+			<ReticuleHash>SNIPER_LARGE</ReticuleHash>
 		</Item>
 	</Infos>
 	<InfoBlobName/>

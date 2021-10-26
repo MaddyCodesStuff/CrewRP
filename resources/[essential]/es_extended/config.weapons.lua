@@ -881,6 +881,26 @@ Config.Weapons = {
 			{ name = 'clip_default', label = _U('component_clip_default'), hash = GetHashKey('COMPONENT_DOUBLEACTION_CLIP_01') },
 		}
 	},
+	{ 
+		name       = 'WEAPON_MILITARYRIFLE',
+		label      = _U('weapon_militaryrifle'),
+		components = {
+			{ name = 'clip_default', label = _U('component_clip_default'), hash = GetHashKey('COMPONENT_MILITARYRIFLE_CLIP_01') },
+			{ name = 'clip_extended', label = _U('component_clip_extended'), hash = GetHashKey('COMPONENT_MILITARYRIFLE_CLIP_02') },
+			{ name = 'flashlight', label = _U('component_flashlight'), hash = GetHashKey('COMPONENT_AT_AR_FLSH') },
+			{ name = 'suppressor', label = _U('component_suppressor'), hash = GetHashKey('COMPONENT_AT_AR_SUPP') },
+			{ name = 'scope', label = _U('component_scope'), hash = GetHashKey('COMPONENT_AT_SCOPE_SMALL') },
+		}
+	},
+	{ 
+		name       = 'WEAPON_COMBATSHOTGUN',
+		label      = _U('weapon_combatshotgun'),
+		components = {
+			{ name = 'clip_default', label = _U('component_clip_default'), hash = GetHashKey('COMPONENT_MILITARYRIFLE_CLIP_01') },
+			{ name = 'flashlight', label = _U('component_flashlight'), hash = GetHashKey('COMPONENT_AT_AR_FLSH') },
+			{ name = 'suppressor', label = _U('component_suppressor'), hash = GetHashKey('COMPONENT_AT_AR_SUPP') },
+		}
+	},
 	{
 		name       = 'WEAPON_TOILETBRUSH',
 		label      = _U('weapon_toiletbrush'),

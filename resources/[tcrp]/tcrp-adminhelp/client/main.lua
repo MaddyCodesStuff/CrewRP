@@ -70,3 +70,15 @@ AddEventHandler("admin:toggleChaos", function(state)
         StopAudioScene("CHARACTER_CHANGE_IN_SKY_SCENE")
     end
 end)
+
+RegisterNetEvent("admin:godmode")
+AddEventHandler("admin:godmode", function()
+    exports['mythic_notify']:SendAlert('success', 'God Mode Activated')
+    SetEntityProofs(GetPlayerPed(-1), true, true, true, true, true, true, true, true)
+end)
+
+RegisterNetEvent("admin:godmodeoff")
+AddEventHandler("admin:godmodeoff", function()
+    exports['mythic_notify']:SendAlert('error', 'God Mode Deactivated')
+    SetEntityProofs(GetPlayerPed(-1), false, false, false, false, false, false, false, false)
+end)
