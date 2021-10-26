@@ -65,3 +65,42 @@ ESX.RegisterUsableItem('gastank', function(source)
     xPlayer.removeInventoryItem('gastank', 1)
     TriggerClientEvent("usableitems:SpawnGastank", source)
 end)
+
+ESX.RegisterUsableItem('defib', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+    local src = source
+
+    xPlayer.removeInventoryItem('defib', 1)
+    TriggerClientEvent("usableitems:revive", source)
+end)
+
+ESX.RegisterUsableItem('splint', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+    local src = source
+
+    xPlayer.removeInventoryItem('splint', 1)
+    TriggerClientEvent("usableitems:splint", source)
+end)
+
+ESX.RegisterUsableItem('compression_bandage', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+    local src = source
+
+    xPlayer.removeInventoryItem('compression_bandage', 1)
+    TriggerClientEvent("usableitems:bandage", source)
+end)
+
+RegisterServerEvent('usableitem:revive')
+AddEventHandler('usableitem:revive', function(target)
+	TriggerClientEvent('esx_ambulancejob:revive', target)
+end)
+
+RegisterServerEvent('usableitem:bandage')
+AddEventHandler('usableitem:bandage', function(target)
+	TriggerEvent('mythic_hospital:server:RemoveBleed', target)
+end)
+
+RegisterServerEvent('usableitem:splint')
+AddEventHandler('usableitem:splint', function(target)
+	TriggerEvent('mythic_hospital:server:ResetLimbs', target)
+end)
