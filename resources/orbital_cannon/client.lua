@@ -103,7 +103,7 @@ end
 function OCmenu:onButtonSelected(name,btn)
 	if name == "Manual Targetting" then
 		Setibuttons({	
-			{GetControlInstructionalButton(2,202,0), "Back"},
+			{GetControlInstructionalButton(2,194,0), "Back"},
 			{GetControlInstructionalButton(1,15,0),"Zoom In"},
 			{GetControlInstructionalButton(1,16,0),"Zoom Out"},
 			{GetControlInstructionalButton(2,201,0),"Fire"},
@@ -112,7 +112,7 @@ function OCmenu:onButtonSelected(name,btn)
 		OCmenu:Close()
 	elseif name == "Surveillance" then
 		Setibuttons({	
-			{GetControlInstructionalButton(2,202,0), "Back"},
+			{GetControlInstructionalButton(2,194,0), "Back"},
 			{GetControlInstructionalButton(1,15,0),"Zoom In"},
 			{GetControlInstructionalButton(1,16,0),"Zoom Out"},
 		}, 0)
