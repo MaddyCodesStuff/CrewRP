@@ -66,7 +66,6 @@ function ManageReticle(weapon)
             HideHudComponentThisFrame(14)
         end
     else
-        print(weapon)
         HideHudComponentThisFrame(14)
     end
 end
