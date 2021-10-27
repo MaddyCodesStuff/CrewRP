@@ -43,9 +43,9 @@ Citizen.CreateThread(function()
         else
             if Tornado then		
 				--Tornado._position = vec3(10000.0, 10000.0, 0.0)
-                print('hi')
+                --print('hi')
                 Tornado._position = TriggerServerEvent("tornado:update")
-                print(Tornado._position)
+               -- print(Tornado._position)
                 Script:OnUpdate(GetGameTimer())
                 Tornado = nil
             end

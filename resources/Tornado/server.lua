@@ -23,9 +23,7 @@ AddEventHandler("tornado:summon", function(source)
 	local player = source
     ped = GetPlayerPed(player)
     pos = GetEntityCoords(ped)
-    print(ped)
-    print(source)
-    print(pos)
+    
     local start = pos
     local destination = pos
     if start==destination then
@@ -68,7 +66,7 @@ end)
 
 
 
-AddEventHandler("onResourceStart", function(name)
+--[[AddEventHandler("onResourceStart", function(name)
     if name == GetCurrentResourceName() then
         ProcessAces()
         if debug then print("[DEBUG][" .. GetCurrentResourceName() .. "] ^6Resource [ " .. GetCurrentResourceName() .. " ] was (re)started, syncing aces to all players.^0") end
@@ -101,7 +99,7 @@ end
 RegisterNetEvent("admincheck")
 AddEventHandler("admincheck", function(state)
     isAdmin = state
-end)
+end)]]--
 
 RegisterServerEvent("tornado:delete")
 AddEventHandler("tornado:delete", function()

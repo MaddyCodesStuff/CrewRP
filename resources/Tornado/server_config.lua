@@ -25,7 +25,3 @@ Config.EAS.Departments = {
     
     }
 }
-Config.EAS.admins = 
-{
-    'steam:76561198126298504', -- Add your steam hex here
-}
