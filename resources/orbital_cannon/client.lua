@@ -104,7 +104,9 @@ function OCmenu:onButtonSelected(name,btn)
 			{GetControlInstructionalButton(2,194,0), "Back"},
 			{GetControlInstructionalButton(1,15,0),"Zoom In"},
 			{GetControlInstructionalButton(1,16,0),"Zoom Out"},
+			{GetControlInstructionalButton(1,206,0),"Reset Zoom"},
 			{GetControlInstructionalButton(2,201,0),"Fire"},
+			{GetControlInstructionalButton(2,205,0),"Fire Incidiary"},
 		}, 0)
 		oc_manual = true
 		OCmenu:Close()
@@ -113,6 +115,7 @@ function OCmenu:onButtonSelected(name,btn)
 			{GetControlInstructionalButton(2,194,0), "Back"},
 			{GetControlInstructionalButton(1,15,0),"Zoom In"},
 			{GetControlInstructionalButton(1,16,0),"Zoom Out"},
+			{GetControlInstructionalButton(1,206,0),"Reset Zoom"},
 		}, 0)
 		oc_surveillance = true
 		OCmenu:Close()
@@ -203,6 +206,18 @@ function FireOrbitalCannon(lock,var)
 			TriggerServerEvent('esx_outlawalert:explosionInProgress', pos, streetName, true, nil)
 		end)
 	end
+end
+
+function FireOrbitalIncidiary(var)
+	Citizen.CreateThread(function()
+		oc_countdown = false
+		local pos = oc_pos
+		local heading = 0
+		SetFocusArea(pos, 0, 0, 0)
+		local offset = GetObjectOffsetFromCoords(pos.x,pos.y,pos.z,heading,0,0,0)
+		RequestCollisionAtCoord(offset)
+		TriggerServerEvent("orbital_cannon:fire", offset)
+	end)
 end
 
 Citizen.CreateThread(function()
@@ -366,18 +381,23 @@ local rx,ry,rz = 0,0,0
 							local g = Citizen.InvokeNative(0xC906A7DAB05C8D2B,position,Citizen.PointerValueFloat(),0)
 							SetFocusArea(position.x,position.y,g, 0, 0, 0)
 							if IsDisabledControlPressed(2,15) or IsControlPressed(2,15) then
-								if oc_height > 250 then
+								if oc_height > -50 then
 									oc_height = oc_height - oc_speed*2
 									SetCamCoord(cam,vector3(position.x,position.y,oc_height))
 									RenderScriptCams(1, 1, 0, 0, 0)
 								end
 							end
 							if IsDisabledControlPressed(2,16) or IsControlPressed(2,16) then
-								if oc_height < 1000 then
+								if oc_height < 5000 then
 									oc_height = oc_height + oc_speed*2
 									SetCamCoord(cam,vector3(position.x,position.y,oc_height))
 									RenderScriptCams(1, 1, 0, 0, 0)
 								end
+							end
+							if IsDisabledControlPressed(2,206) then
+								oc_height = 1000
+								SetCamCoord(cam,vector3(position.x,position.y,oc_height))
+								RenderScriptCams(1, 1, 0, 0, 0)
 							end
 							if IsDisabledControlPressed(2,33) then
 								SetCamCoord(cam,GetObjectOffsetFromCoords(position.x,position.y,position.z,heading, 0,-oc_speed,0))
@@ -406,6 +426,11 @@ local rx,ry,rz = 0,0,0
 								if IsDisabledControlJustPressed(2,201) then
 									if oc_countdown == false then
 										FireOrbitalCannon(false)
+									end
+								end
+								if IsDisabledControlJustPressed(2,205) then
+									if oc_countdown == false then
+										FireOrbitalIncidiary()
 									end
 								end
 							end
