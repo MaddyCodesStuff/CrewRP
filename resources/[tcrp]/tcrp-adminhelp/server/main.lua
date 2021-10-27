@@ -42,9 +42,14 @@ function SendMessage(data)
                        { ['Content-Type'] = 'application/json' })
 end
 
-function checkPerms(source)
+function checkSuperPerms(source)
     local xPlayer = ESX.GetPlayerFromId(source)
     return (xPlayer.getGroup() == 'superadmin')
+end
+
+function checkPerms(source)
+    local xPlayer = ESX.GetPlayerFromId(source)
+    return (xPlayer.getGroup() == 'admin')
 end
 
 RegisterServerEvent('adminCmnd:notifyPD')
@@ -149,7 +154,7 @@ end)
 
 RegisterServerEvent('admin:chaos')
 AddEventHandler('admin:chaos', function(message)
-    if checkPerms(source) then
+    if checkSuperPerms(source) then
         TriggerClientEvent('admin:toggleChaos', -1, true)
     else
         TriggerClientEvent('mythic_notify:client:SendErrorAlert', source,
@@ -159,7 +164,7 @@ end)
 
 RegisterServerEvent('admin:peace')
 AddEventHandler('admin:peace', function(message)
-    if checkPerms(source) then
+    if checkSuperPerms(source) then
         TriggerClientEvent('admin:toggleChaos', -1, false)
     else
         TriggerClientEvent('mythic_notify:client:SendErrorAlert', source,
@@ -179,25 +184,23 @@ end, function(source, args, user)
     TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Insufficient Permissions.' } })
 end, { help = ('Give Armor to player'), params = { { name = 'id' } } })
 
-TriggerEvent('es:addGroupCommand', 'godmode', 'admin', function(source)
+TriggerEvent('es:addGroupCommand', 'godmode', 'admin', function(source, args, user)
 	if checkPerms(source) then
-        TriggerClientEvent('admin:godmode', -1)
+        TriggerClientEvent('admin:godmode', source)
     else
         TriggerClientEvent('mythic_notify:client:SendErrorAlert', source,
-                                { text = "How dare you attempt to enter the realm of the gods."})
+                                { text = "How dare you attempt to enter the Realm of the Gods!"})
         TriggerClientEvent('es_admin:quick', source, "slay")
     end
-end, function(source)
-	TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Insufficient Permissions.' } })
+end, function(source, args, user)
 end, { help = ('Toggle God Mode On') })
 
 TriggerEvent('es:addGroupCommand', 'godmodeoff', 'admin', function(source)
 	if checkPerms(source) then
-        TriggerClientEvent('admin:godmodeoff', -1)
+        TriggerClientEvent('admin:godmodeoff', source)
     else
         TriggerClientEvent('mythic_notify:client:SendErrorAlert', source,
-                                { text = "How dare you attempt to enter the realm of the gods."})
+                                { text = "You have been cast from the Halls of Olympus!"})
     end
-end, function(source)
-	TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Insufficient Permissions.' } })
+end, function(source, args, user)
 end, { help = ('Toggle God Mode Off') })
