@@ -105,6 +105,7 @@ function OCmenu:onButtonSelected(name,btn)
 			{GetControlInstructionalButton(1,15,0),"Zoom In"},
 			{GetControlInstructionalButton(1,16,0),"Zoom Out"},
 			{GetControlInstructionalButton(1,206,0),"Reset Zoom"},
+			{GetControlInstructionalButton(1,192,0),"Toggle Speed"},
 			{GetControlInstructionalButton(2,201,0),"Fire"},
 			{GetControlInstructionalButton(2,205,0),"Fire Incidiary"},
 		}, 0)
@@ -116,6 +117,7 @@ function OCmenu:onButtonSelected(name,btn)
 			{GetControlInstructionalButton(1,15,0),"Zoom In"},
 			{GetControlInstructionalButton(1,16,0),"Zoom Out"},
 			{GetControlInstructionalButton(1,206,0),"Reset Zoom"},
+			{GetControlInstructionalButton(1,192,0),"Toggle Speed"},
 		}, 0)
 		oc_surveillance = true
 		OCmenu:Close()
@@ -398,6 +400,14 @@ local rx,ry,rz = 0,0,0
 								oc_height = 1000
 								SetCamCoord(cam,vector3(position.x,position.y,oc_height))
 								RenderScriptCams(1, 1, 0, 0, 0)
+							end
+							if IsDisabledControlJustReleased(2,192) then
+								if oc_speed == f(1) then
+									oc_speed = f(12)
+								else
+									oc_speed = oc_speed - 1
+									print("Orbital Cannon Speed: ".. oc_speed)
+								end
 							end
 							if IsDisabledControlPressed(2,33) then
 								SetCamCoord(cam,GetObjectOffsetFromCoords(position.x,position.y,position.z,heading, 0,-oc_speed,0))
