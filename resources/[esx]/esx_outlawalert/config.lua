@@ -81,7 +81,7 @@ Config.WhitelistedWeapons = {
     'WEAPON_RAILGUN',
     'WEAPON_HOMINGLAUNCHER',
     'WEAPON_COMPACTLAUNCHER',
-
+    'WEAPON_UNARMED'
 }
 
 Config.GunshotAlertDelay  = 10

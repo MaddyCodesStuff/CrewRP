@@ -17,5 +17,5 @@ Config.Show =	{
 	taxi			= true,
 	dispatch		= true,
 	corrections		= true,
-    parkranger      = true,
+    parkranger      = false,
 }
