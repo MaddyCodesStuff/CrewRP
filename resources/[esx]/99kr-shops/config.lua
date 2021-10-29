@@ -1209,6 +1209,9 @@ Config = {
             { label = "Gauze", item = "gauze", price = 7 },
             { label = "Chill Pill", item = "chillpill", price = 25 },
             { label = "Dechill Pill", item = "dechillpill", price = 25},
+            { label = "Multi-Vitamin", item = "multi-vitamin", price = 25},
+            { label = "Anti-Vitamin", item = "anti-vitamin", price = 25},
+
         },
         ["prison"]      = {
             { label = "Tomato Soup", item = "soup", price = 4 },
