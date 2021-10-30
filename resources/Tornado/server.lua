@@ -114,7 +114,7 @@ end)
 RegisterCommand('tornado:summon', function(source, args, raw)
     local player = source
     if checkPerms(source) then
-        print(source)
+        --print(source)
         
         TriggerEvent("tornado:summon", player)
     end
