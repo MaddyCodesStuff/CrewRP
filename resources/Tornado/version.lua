@@ -1,5 +1,5 @@
 -- Version Checker do not remove --
-
+--[[
 function GetCurrentVersion()
 	return GetResourceMetadata( GetCurrentResourceName(), "version" )
 end
@@ -15,7 +15,7 @@ local branding =
 	 ||																 | |        
 	 ||																 |_|        
 	 ||                        Created by Rhys19
-	 ||]]
+	 ||
 
 -- Grabs the latest version number from the web GitHub
 PerformHttpRequest( "https://rhys19.github.io/tornado-script-web/version.txt", function( err, text, headers )
@@ -44,4 +44,4 @@ PerformHttpRequest( "https://rhys19.github.io/tornado-script-web/version.txt", f
 		-- In case the version can not be requested, print out an error message
 		print( "  ||    ^1There was an error getting the latest version information.\n^0  ||\n  \\\\\n" )
 	end
-end )
+end )]]
