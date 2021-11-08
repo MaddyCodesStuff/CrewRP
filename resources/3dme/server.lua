@@ -1,13 +1,15 @@
-RegisterCommand('me', function(source, args)
-    local text = ''
-    for i = 1, #args do
-        text = text .. '  ' .. args[i]
-    end
-    text = text .. '  '
-    TriggerClientEvent('3dme:triggerDisplay', -1, text, source)
-end)
+-- @desc Server-side /me handling
+-- @author Elio
+-- @version 3.0
 
-RegisterNetEvent('3dme:shareDisplay')
-AddEventHandler('3dme:shareDisplay', function(text)
-    TriggerClientEvent('3dme:triggerDisplay', -1, text, source)
-end)
+-- Pre-load the language
+local lang = Languages[Config.language]
+
+-- @desc Handle /me command
+local function onMeCommand(source, args)
+    local text = "" .. lang.prefix .. table.concat(args, " ") .. ""
+    TriggerClientEvent('3dme:shareDisplay', -1, text, source)
+end
+
+-- Register the command
+RegisterCommand(lang.commandName, onMeCommand)
