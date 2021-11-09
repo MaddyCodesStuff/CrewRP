@@ -184,7 +184,7 @@ end, function(source, args, user)
 end, { help = ('Give Armor to player'), params = { { name = 'id' } } })
 
 TriggerEvent('es:addGroupCommand', 'godmode', 'admin', function(source, args, user)
-	if checkPerms(source) then
+	if checkPerms(source) or checkSuperPerms(source) then
         TriggerClientEvent('admin:godmode', source)
     else
         TriggerClientEvent('mythic_notify:client:SendErrorAlert', source,
@@ -195,7 +195,7 @@ end, function(source, args, user)
 end, { help = ('Toggle God Mode On') })
 
 TriggerEvent('es:addGroupCommand', 'godmodeoff', 'admin', function(source)
-	if checkPerms(source) then
+	if checkPerms(source) or checkSuperPerms(source) then
         TriggerClientEvent('admin:godmodeoff', source)
     else
         TriggerClientEvent('mythic_notify:client:SendErrorAlert', source,
