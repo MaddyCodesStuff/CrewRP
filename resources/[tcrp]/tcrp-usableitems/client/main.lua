@@ -1,3 +1,15 @@
+ESX = nil
+
+Citizen.CreateThread(function()
+
+    while ESX == nil do
+        TriggerEvent('esx:getSharedObject', function(obj)
+            ESX = obj
+        end)
+        Citizen.Wait(0)
+    end
+end)
+
 ---------------------------------------------------------------------------
 -- Important Variables --
 ---------------------------------------------------------------------------
@@ -10,6 +22,7 @@ local gurneySpawned = false
 local nearSpikes = false
 local spikesSpawned = false
 local ped = PlayerPedId()
+local regen = true
 local chickenhash = GetHashKey('a_c_hen')
 
 Citizen.CreateThread(function()
@@ -275,9 +288,127 @@ function CreateGastank(amount)
     end
 end
 
+RegisterNetEvent("usableitems:revive")
+AddEventHandler("usableitems:revive", function(Source)
+    local closestPlayer, closestDistance = ESX.Game.GetClosestPlayer()
+    if closestPlayer == -1 or closestDistance > 5.0 then
+        ESX.ShowNotification('No Players Nearby')
+    else
+        TriggerEvent('emote:do', 'cpr')
+        Citizen.Wait(5000)
+        TriggerServerEvent('usableitem:revive', GetPlayerServerId(closestPlayer))
+        TriggerEvent('emote:cancel')
+    end
+end)
+
+RegisterNetEvent("usableitems:splint")
+AddEventHandler("usableitems:splint", function(Source)
+    local closestPlayer, closestDistance = ESX.Game.GetClosestPlayer()
+    if closestPlayer == -1 or closestDistance > 5.0 then
+        ESX.ShowNotification('No Players Nearby')
+    else
+        exports['mythic_progbar']:Progress({
+            name            = "splint_action",
+            duration        = 10000,
+            label           = "Applying Splint",
+            useWhileDead    = false,
+            canCancel       = true,
+            controlDisables = {
+                disableMovement    = false,
+                disableCarMovement = false,
+                disableMouse       = false,
+                disableCombat      = true,
+            },
+            animation       = {
+                animDict = "missheistdockssetup1clipboard@idle_a",
+                anim     = "idle_a",
+                flags    = 49,
+            },
+            prop            = {
+                model = "prop_stat_pack_01"
+            },
+        }, function(status)
+            if not status then
+                TriggerServerEvent('usableitem:splint', GetPlayerServerId(closestPlayer))
+            end
+        end)
+    end
+end)
+
+RegisterNetEvent("usableitems:bandage")
+AddEventHandler("usableitems:bandage", function(Source)
+    local closestPlayer, closestDistance = ESX.Game.GetClosestPlayer()
+    if closestPlayer == -1 or closestDistance > 5.0 then
+        ESX.ShowNotification('No Players Nearby')
+    else
+        exports['mythic_progbar']:Progress({
+            name            = "bandage_action",
+            duration        = 10000,
+            label           = "Applying Compression Bandage",
+            useWhileDead    = false,
+            canCancel       = true,
+            controlDisables = {
+                disableMovement    = false,
+                disableCarMovement = false,
+                disableMouse       = false,
+                disableCombat      = true,
+            },
+            animation       = {
+                animDict = "missheistdockssetup1clipboard@idle_a",
+                anim     = "idle_a",
+                flags    = 49,
+            },
+            prop            = {
+                model = "prop_stat_pack_01"
+            },
+        }, function(status)
+            if not status then
+                TriggerServerEvent('usableitem:bandage', GetPlayerServerId(closestPlayer))
+            end
+        end)
+    end
+end)
+
 function RequestTheModel(model)
 	RequestModel(model)
 	while not HasModelLoaded(model) do
 		Citizen.Wait(0)
 	end
 end
+
+---------------------------------------------------------------------------
+-- Anti-Vitamin --
+---------------------------------------------------------------------------
+RegisterNetEvent("usableitems:anti-vitamin")
+AddEventHandler("usableitems:anti-vitamin", function(source)
+    regen = true
+    RequestAnimDict("mp_suicide")
+    while not HasAnimDictLoaded("mp_suicide") do
+        Citizen.Wait(5)
+    end
+    TaskPlayAnim(PlayerPedId(),"mp_suicide", "pill", 8.0, 8.0, 2000, 49, -1, false, false, false)
+    Citizen.CreateThread(function()
+        while regen do
+            Citizen.Wait(0)
+            SetPlayerHealthRechargeMultiplier(PlayerId(), 0.0)
+        end
+    end)
+    TriggerEvent('mythic_notify:client:SendAlert', { type = "inform", text = "You natural healing ability stops.", length = 5000 })
+    RemoveAnimSet("mp_suicide")
+end)
+---------------------------------------------------------------------------
+-- Multi-Vitamin --
+---------------------------------------------------------------------------
+RegisterNetEvent("usableitems:multi-vitamin")
+AddEventHandler("usableitems:multi-vitamin", function(source)
+    if regen == true then
+        TriggerEvent('mythic_notify:client:SendAlert', { type = "inform", text = "You natural healing ability returns.", length = 5000 })
+    end
+    regen = false
+    RequestAnimDict("mp_suicide")
+    while not HasAnimDictLoaded("mp_suicide") do
+        Citizen.Wait(5)
+    end
+    TaskPlayAnim(PlayerPedId(),"mp_suicide", "pill", 8.0, 8.0, 2000, 49, -1, false, false, false)
+    RemoveAnimSet("mp_suicide")
+end)

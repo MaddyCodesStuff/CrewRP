@@ -1,9 +1,10 @@
-fx_version 'adamant'
+fx_version 'cerulean'
 game 'gta5'
 
-author 'Avarian Knight'
-description '/me with word filtering & OneSync Infinity support'
-version '1.0'
+author 'Elio'
+description '/me command but it\'s 3D printed'
+version '3.0'
 
-client_script 'client/client.lua'
-server_script 'server/server.js'
+shared_script 'config.lua'
+client_script 'client.lua'
+server_script 'server.lua'

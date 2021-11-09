@@ -42,7 +42,7 @@ AddEventHandler('constructionHeist:scavenge', function()
             TriggerClientEvent('tcrp:displayGeneral', source, "Cannot Hold Anymore " .. k)
         end
     end
-    local itemNumber = math.random(1, 27)
+    local itemNumber = math.random(1, 35)
     for k, v in pairs(Config.chanceItems) do
         local randomCount = math.random(v.min, v.max)
         
