@@ -15,7 +15,7 @@
 Config = {}
 
 Config.Locale = 'en' -- Change to your preferred Language (de, en, nl, tr)
-Config.JobRestriction = true -- Should the Tow Command & Event be restricted to Players with a specific Job?  true = restricted   | false = not restricted
+Config.JobRestriction = false -- Should the Tow Command & Event be restricted to Players with a specific Job?  true = restricted   | false = not restricted
 Config.NeededJob = 'mecano' -- Which Jobs should be allowed to Tow a Vehicle via Command/Event  !! ONLY WORKS WHEN "JobRestriction = true" !!
 Config.EnableCommand = true -- Enable or disable Towing a Vehicle via command  true = enabled  | false = disabled
 Config.VehicleRange = 35.0 -- Which range should be checked for checking for towable vehicles when trying to tow one
