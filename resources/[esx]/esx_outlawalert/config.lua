@@ -81,7 +81,7 @@ Config.WhitelistedWeapons = {
     'WEAPON_RAILGUN',
     'WEAPON_HOMINGLAUNCHER',
     'WEAPON_COMPACTLAUNCHER',
-
+    'WEAPON_UNARMED'
 }
 
 Config.GunshotAlertDelay  = 10
@@ -141,7 +141,7 @@ Config.InteriorLocations = {
         536065,
     },
     ["Quinn's Bakery"] = {
-        124930,
+        126466,
     },
     ["the Lifeinvader Building"] = {
         3330,
@@ -187,7 +187,7 @@ Config.InteriorLocations = {
         152066,
     },
     ["Hookie's"] = {
-        126466,
+        126978,
     },
     ["Sandy Medical"] = {
         544769,
@@ -199,7 +199,7 @@ Config.InteriorLocations = {
         537089,
     },
     ["Benny's"] = {
-        125442,
+        125698,
     },
     ["D&D Automotive"] = {
         551169,
@@ -225,6 +225,12 @@ Config.InteriorLocations = {
     },
     ["Capital Fire Station"] = {
         251393,
+    },
+    ["Hayes Auto Body Shop"] = {
+        125186,
+    },
+    ["Best Buds"] = {
+        545537,
     },
     -- Teleport Interiors --
     ["the Morgue"] = {

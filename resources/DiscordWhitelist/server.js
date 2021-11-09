@@ -8,7 +8,7 @@ var guild = "605529539032121407";
 var botToken = "ODk5NzMxNjM4MTUyNDgyODY2.YW3CYg.HmMNfcZf3HHWVpuUHuVv7nHfbNM";
 
 var whitelistRoles = [ // Roles by ID that are whitelisted.
-    "605535764977156148"
+    "904938962278301696"
 ]
 
 var blacklistRoles = [ // Roles by Id that are blacklisted.

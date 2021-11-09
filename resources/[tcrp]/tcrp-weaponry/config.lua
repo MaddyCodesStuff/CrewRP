@@ -60,9 +60,7 @@ recoils = {
     [317205821]    = {["kick"] = 5.0, ["shake"] = 0.20,["scope"] = false,}, -- AUTO SHOTGUN
     [125959754]    = {["kick"] = 1.0, ["shake"] = 0.02,["scope"] = false,}, -- COMPACT LAUNCHER
     [-1121678507]  = {["kick"] = 0.2, ["shake"] = 0.03,["scope"] = false,}, -- MINI SMG
-    [-364377308]   = {["kick"] = 0.2, ["shake"] = 0.02,["scope"] = true,},-- HUNTING RIFLE
-    [-1658906650]  = {["kick"] = 0.3, ["shake"] = 0.03,["scope"] = false,}, -- MILITARY RIFLE
-    [94989220]     = {["kick"] = 0.8, ["shake"] = 0.25,["scope"] = false,}, -- COMBAT SHOTGUN
+    [-364377308]   = {["kick"] = 0.2, ["shake"] = 0.02,["scope"] = true ,},-- HUNTING RIFLE
     [1470379660]   = {["kick"] = 0.8, ["shake"] = 0.25,["scope"] = false,}, -- GADGET PISTOL
     [-1853920116]  = {["kick"] = 0.8, ["shake"] = 0.05,["scope"] = false,}, -- NAVY REVOLVER
     [727643628]    = {["kick"] = 0.6, ["shake"] = 0.05,["scope"] = false,}, -- CERAMIC PISTOL
@@ -75,6 +73,8 @@ recoils = {
     [296765132]    = {["kick"] = 5.0, ["shake"] = 0.25,["scope"] = false,}, -- PD SHOTGUN
     [1873751801]   = {["kick"] = 0.4, ["shake"] = 0.02,["scope"] = false,}, -- PD SMG
     [1104863650]   = {["kick"] = 0.8, ["shake"] = 0.05,["scope"] = false,}, -- PD REVOLVER
+    [-1569615261]  = {["kick"] = 0.8, ["shake"] = 0.08,["scope"] = false,}, -- MILITARY RIFLE
+    [94989220]     = {["kick"] = 3.0, ["shake"] = 0.15,["scope"] = false,}, -- COMBAT SHOTGUN
 
 
 }

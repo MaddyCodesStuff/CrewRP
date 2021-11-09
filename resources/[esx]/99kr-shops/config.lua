@@ -962,6 +962,19 @@ Config = {
             },
                 ["rob_dist"] = 16.5,
             },
+        [54] = { --Limey's Juice & Smoothies (Boardwalk Area)
+            ["shelfs"]   = {
+                { ["x"] = -1253.57, ["y"] = -743.76, ["z"] = 20.83, ["value"] = "checkout" },
+                { ["x"] = -1252.59, ["y"] = -743.06, ["z"] = 20.83, ["value"] = "assorteddrinks" },
+            },
+            ["blip"]     = {
+                ["sprite"] = 628,
+                ["color"]  = 73,
+                ["x"]      = -1242.74, ["y"] = -278.82, ["z"] = 37.58,
+                ["text"]   = "Limey's",
+            },
+                ["rob_dist"] = 16.5,
+            },
     },
 
     --[[
@@ -1006,6 +1019,7 @@ Config = {
         ["limeys"]      = "Order Food",
         ["lockpicks"]   = "Lockpicks",
         ["limeysdrinks"] = "Quinn's Drinks",
+        ["assorteddrinks"] = "Boutique Drinks",
     },
 
     Items              = {
@@ -1209,6 +1223,9 @@ Config = {
             { label = "Gauze", item = "gauze", price = 7 },
             { label = "Chill Pill", item = "chillpill", price = 25 },
             { label = "Dechill Pill", item = "dechillpill", price = 25},
+            { label = "Multi-Vitamin", item = "multi-vitamin", price = 25},
+            { label = "Anti-Vitamin", item = "anti-vitamin", price = 25},
+
         },
         ["prison"]      = {
             { label = "Tomato Soup", item = "soup", price = 4 },
@@ -1263,6 +1280,18 @@ Config = {
             { label = "Sludgie Green Slushy", item = "slushy2", price = 3 },
         },
         ["limeysdrinks"]       = {
+            { label = "Grape Juice", item = "jus_raisin", price = 5 },
+            { label = "Juice", item = "juice", price = 7 },
+            { label = "Sludgie Blue Slushy", item = "slushy", price = 3 },
+            { label = "Sludgie Green Slushy", item = "slushy2", price = 3 },
+            { label = "Regular Coffee", item = "coffee", price = 1 },
+            { label = "Decaf Coffee", item = "decafcoffee", price = 1 },
+            { label = "Sweet Tea", item = "sweet_tea", price = 5 },
+            { label = "Iced Tea", item = "iced_tea", price = 5 },
+            { label = "Tea", item = "tea", price = 5 },
+            { label = "Hot Cocoa", item = "hotcoco", price = 5 },            
+        },
+        ["assorteddrinks"]       = {
             { label = "Grape Juice", item = "jus_raisin", price = 5 },
             { label = "Juice", item = "juice", price = 7 },
             { label = "Sludgie Blue Slushy", item = "slushy", price = 3 },
