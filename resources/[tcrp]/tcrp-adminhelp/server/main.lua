@@ -73,7 +73,6 @@ AddEventHandler('adminCmnd:notifyPD', function(message)
         end
     else
         for i = 1, #xPlayers, 1 do
-            print('goodbye')
             local xPlayer = ESX.GetPlayerFromId(xPlayers[i])
             if xPlayer and xPlayer.job and xPlayer.job.name == 'police' then
                 local blip = {["x"] = coords.x, ["y"] = coords.y, ["z"] = coords.z, ["longrange"] = true, 
